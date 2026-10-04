@@ -1,0 +1,461 @@
+{
+  "subject": {
+    "code": "0580",
+    "name": "Mathematics",
+    "qualification": "IGCSE",
+    "syllabusYears": "2025-2027",
+    "description": "Cambridge IGCSE Mathematics (Extended). Sample content: the questions below are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "topics": [
+    { "ref": "1", "title": "Number", "summary": "Types of number, fractions, decimals and percentages, standard form, bounds, ratio and proportion, compound interest." },
+    { "ref": "2", "title": "Algebra and graphs", "summary": "Algebraic manipulation, equations and inequalities, sequences, functions, graphs and differentiation." },
+    { "ref": "3", "title": "Coordinate geometry", "summary": "Gradients, midpoints, lengths of line segments and equations of straight lines." },
+    { "ref": "4", "title": "Geometry", "summary": "Angle properties, similarity, symmetry and circle theorems." },
+    { "ref": "5", "title": "Mensuration", "summary": "Perimeter, area, surface area and volume, arcs and sectors." },
+    { "ref": "6", "title": "Trigonometry", "summary": "Pythagoras' theorem, right-angled trigonometry, sine and cosine rules, 3D problems." },
+    { "ref": "7", "title": "Transformations and vectors", "summary": "Reflections, rotations, translations, enlargements and vector geometry." },
+    { "ref": "8", "title": "Probability", "summary": "Probability of single and combined events, tree diagrams, conditional probability." },
+    { "ref": "9", "title": "Statistics", "summary": "Averages and range, grouped data, cumulative frequency and histograms." }
+  ],
+  "components": [
+    { "ref": "2", "title": "Paper 2 (Extended, non-calculator)", "durationMin": 120, "totalMarks": 100 },
+    { "ref": "4", "title": "Paper 4 (Extended, calculator)", "durationMin": 120, "totalMarks": 100 }
+  ],
+  "papers": [
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Amira invests $2500 in a savings account paying compound interest at a rate of 3.2% per year.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1",
+              "prompt": "Calculate the value of the investment at the end of 4 years. Give your answer correct to the nearest cent.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2835.69",
+              "tolerance": 0.01,
+              "markingPoints": [
+                { "text": "M1 for 2500 × 1.032^4 oe", "marks": 1 },
+                { "text": "A1 for 2835.69 cao", "marks": 1 }
+              ],
+              "examinerComment": "Most candidates used the multiplier 1.032 correctly. A common error was to calculate simple interest (2500 × 0.032 × 4) and add it to the principal, giving 2820."
+            },
+            {
+              "label": "(b)",
+              "topic": "1",
+              "prompt": "Find the smallest whole number of years after which the investment will first be worth more than $3000.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                { "text": "M1 for a trial such as 2500 × 1.032^n with n = 5 or 6, or a correct logarithmic method", "marks": 1 },
+                { "text": "A1 for 6", "marks": 1 }
+              ],
+              "examinerComment": "Candidates who showed their trials clearly usually earned the method mark even when they misread their calculator display. Some stopped at 5 years without checking the value exceeded $3000."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1",
+              "prompt": "Write 0.000 047 3 in standard form.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["4.73 × 10^-5", "4.73x10^-5", "4.73 x 10^-5", "4.73*10^-5", "4.73e-5", "4.73 × 10⁻⁵"],
+              "markingPoints": [{ "text": "B1 for 4.73 × 10^-5", "marks": 1 }],
+              "examinerComment": "Well answered. Errors included 47.3 × 10^-6, which is not in standard form, and sign errors in the power."
+            },
+            {
+              "label": "(b)",
+              "topic": "1",
+              "prompt": "The length of a rod is 12.4 cm, correct to the nearest millimetre. Write down the lower bound of the length.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "12.35",
+              "markingPoints": [{ "text": "B1 for 12.35", "marks": 1 }],
+              "examinerComment": "Many candidates gave 12.3 or 12.45. Remember the bounds are half a unit of accuracy either side of the stated value."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2",
+              "prompt": "Solve the equation 5(x − 3) = 2x + 9.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "markingPoints": [
+                { "text": "M1 for expanding brackets: 5x − 15", "marks": 1 },
+                { "text": "M1 for collecting terms correctly: 3x = 24", "marks": 1 },
+                { "text": "A1 for x = 8", "marks": 1 }
+              ],
+              "examinerComment": "Generally well done. Weaker candidates expanded 5(x − 3) as 5x − 3."
+            },
+            {
+              "label": "(b)",
+              "topic": "2",
+              "prompt": "Factorise completely 6x² − 15xy.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["3x(2x - 5y)", "3x(2x − 5y)", "3x(2x-5y)"],
+              "markingPoints": [
+                { "text": "B2 for 3x(2x − 5y)", "marks": 2 },
+                { "text": "or B1 for a correct partial factorisation such as 3(2x² − 5xy) or x(6x − 15y)", "marks": 1 }
+              ],
+              "examinerComment": "The word 'completely' signals that all common factors must be taken out. Many candidates removed only 3 or only x."
+            },
+            {
+              "label": "(c)",
+              "topic": "2",
+              "prompt": "Find the nth term of the sequence 7, 11, 15, 19, …",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["4n + 3", "4n+3", "3 + 4n", "3+4n"],
+              "markingPoints": [
+                { "text": "B2 for 4n + 3 oe", "marks": 2 },
+                { "text": "or B1 for 4n + k (k ≠ 3) or jn + 3 (j ≠ 0)", "marks": 1 }
+              ],
+              "examinerComment": "Common errors were n + 4 and 4n + 7, the latter from using the first term as the constant."
+            },
+            {
+              "label": "(d)",
+              "topic": "2",
+              "prompt": "Solve the simultaneous equations. Show all your working.\n3x + 2y = 16\n x − 2y = 0",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "M1 for adding the equations to eliminate y (4x = 16) or a correct substitution", "marks": 1 },
+                { "text": "A1 for x = 4", "marks": 1 },
+                { "text": "A1 for y = 2", "marks": 1 }
+              ],
+              "examinerComment": "Candidates who showed the elimination step clearly were most successful. Answers without working could only gain the accuracy marks if both values were correct."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "A is the point (2, 5) and B is the point (8, −3).",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3",
+              "prompt": "Find the gradient of the line AB.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-1.3333333",
+              "tolerance": 0.001,
+              "markingPoints": [
+                { "text": "M1 for (−3 − 5) ÷ (8 − 2)", "marks": 1 },
+                { "text": "A1 for −4/3 oe", "marks": 1 }
+              ],
+              "examinerComment": "A frequent error was inverting the fraction (change in x over change in y). Sign errors were also common."
+            },
+            {
+              "label": "(b)",
+              "topic": "3",
+              "prompt": "Find the length of AB.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "markingPoints": [
+                { "text": "M1 for 6² + 8² or (8 − 2)² + (−3 − 5)²", "marks": 1 },
+                { "text": "M1 for square root of their sum", "marks": 1 },
+                { "text": "A1 for 10", "marks": 1 }
+              ],
+              "examinerComment": "Well answered by most. Some candidates added the coordinates instead of subtracting."
+            },
+            {
+              "label": "(c)",
+              "topic": "3",
+              "prompt": "Find the coordinates of the midpoint of AB. Give your answer in the form (x, y).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["(5, 1)", "(5,1)", "5, 1", "5,1"],
+              "markingPoints": [
+                { "text": "B2 for (5, 1)", "marks": 2 },
+                { "text": "or B1 for one correct coordinate", "marks": 1 }
+              ],
+              "examinerComment": "Very well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4",
+              "prompt": "Each interior angle of a regular polygon is 156°. Find the number of sides of the polygon.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "15",
+              "markingPoints": [
+                { "text": "M1 for 360 ÷ (180 − 156)", "marks": 1 },
+                { "text": "A1 for 15", "marks": 1 }
+              ],
+              "examinerComment": "Using the exterior angle is the most efficient method. Candidates using (n − 2) × 180 = 156n often made algebraic slips."
+            },
+            {
+              "label": "(b)",
+              "topic": "4",
+              "prompt": "A, B and C are points on a circle with centre O. Angle AOC = 128°. Find angle ABC, where B is on the major arc. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "B1 for 64°", "marks": 1 },
+                { "text": "B1 for reason: the angle at the centre is twice the angle at the circumference", "marks": 1 }
+              ],
+              "examinerComment": "Reasons must use correct geometrical language. 'Angle at centre is double' without reference to the circumference did not earn the mark."
+            },
+            {
+              "label": "(c)",
+              "topic": "4",
+              "prompt": "Two similar bottles have heights 12 cm and 18 cm. The smaller bottle holds 400 ml. Calculate the volume the larger bottle holds, in ml.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1350",
+              "markingPoints": [
+                { "text": "M1 for 400 × (18/12)³ oe", "marks": 1 },
+                { "text": "A1 for 1350", "marks": 1 }
+              ],
+              "examinerComment": "Many candidates used the linear or area scale factor instead of cubing the length ratio for volume."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5",
+              "prompt": "A sector of a circle has radius 9 cm and angle 40°. Calculate the arc length, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6.283",
+              "tolerance": 0.01,
+              "markingPoints": [
+                { "text": "M1 for (40/360) × 2 × π × 9", "marks": 1 },
+                { "text": "A1 for 6.28 or 6.283…", "marks": 1 }
+              ],
+              "examinerComment": "Some candidates calculated the sector area instead of the arc length."
+            },
+            {
+              "label": "(b)",
+              "topic": "5",
+              "prompt": "A solid cylinder has radius 4 cm and height 10 cm. Calculate its total surface area, in cm².",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "351.86",
+              "tolerance": 0.5,
+              "markingPoints": [
+                { "text": "M1 for curved surface 2 × π × 4 × 10", "marks": 1 },
+                { "text": "M1 for 2 × π × 4²", "marks": 1 },
+                { "text": "A1 for 351.9 or 352 (accept 351.8 to 352)", "marks": 1 }
+              ],
+              "examinerComment": "The most common error was to include only one circular end."
+            },
+            {
+              "label": "(c)",
+              "topic": "5",
+              "prompt": "A cone has volume 300 cm³ and base radius 6 cm. Calculate the height of the cone, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7.958",
+              "tolerance": 0.01,
+              "markingPoints": [
+                { "text": "M1 for (1/3) × π × 6² × h = 300", "marks": 1 },
+                { "text": "A1 for 7.96 or 7.957…", "marks": 1 }
+              ],
+              "examinerComment": "Candidates who forgot the 1/3 obtained 2.65."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "In triangle PQR, angle Q = 90°, PQ = 7 cm and QR = 11 cm. Calculate angle QPR, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "57.53",
+              "tolerance": 0.05,
+              "markingPoints": [
+                { "text": "M1 for tan QPR = 11/7", "marks": 1 },
+                { "text": "A1 for 57.5 or 57.52…", "marks": 1 }
+              ],
+              "examinerComment": "Labelling the opposite and adjacent sides on a sketch helped candidates choose the correct ratio."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "In triangle ABC, AB = 8 cm, AC = 13 cm and angle BAC = 60°. Calculate the length of BC, in cm.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "11.36",
+              "tolerance": 0.01,
+              "markingPoints": [
+                { "text": "M2 for 8² + 13² − 2 × 8 × 13 × cos 60", "marks": 2 },
+                { "text": "A1 for 11.4 or 11.35…", "marks": 1 }
+              ],
+              "examinerComment": "A common error was evaluating (8² + 13² − 2 × 8 × 13) × cos 60, which shows a misunderstanding of the order of operations."
+            },
+            {
+              "label": "(c)",
+              "topic": "6",
+              "prompt": "Find the area of triangle ABC in part (b), in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "45.03",
+              "tolerance": 0.05,
+              "markingPoints": [
+                { "text": "M1 for 0.5 × 8 × 13 × sin 60", "marks": 1 },
+                { "text": "A1 for 45.0 or 45.03…", "marks": 1 }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "7",
+              "prompt": "Describe fully the single transformation that maps triangle T with vertices (1, 1), (3, 1), (1, 2) onto triangle U with vertices (−1, 1), (−1, 3), (−2, 1).",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "B1 for 'Rotation'", "marks": 1 },
+                { "text": "B1 for '90° anticlockwise' oe", "marks": 1 },
+                { "text": "B1 for 'centre (0, 0)' or 'about the origin'", "marks": 1 }
+              ],
+              "examinerComment": "Candidates must give a single transformation. Combinations of transformations scored zero. Many omitted the centre of rotation."
+            },
+            {
+              "label": "(b)",
+              "topic": "7",
+              "prompt": "a = (3, −2) and b = (−1, 4) written as column vectors. Find |2a + b|, giving your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                { "text": "B1 for 2a + b = (5, 0)", "marks": 1 },
+                { "text": "M1 for √(5² + 0²)", "marks": 1 },
+                { "text": "A1 for 5", "marks": 1 }
+              ],
+              "examinerComment": "Most candidates found 2a + b correctly. Some then gave the vector rather than its magnitude."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "A bag contains 5 red counters and 3 blue counters. Two counters are taken at random without replacement.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "8",
+              "prompt": "Find the probability that both counters are red. Give your answer as a fraction.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["5/14", "20/56", "10/28"],
+              "markingPoints": [
+                { "text": "M1 for (5/8) × (4/7)", "marks": 1 },
+                { "text": "A1 for 5/14 oe", "marks": 1 }
+              ],
+              "examinerComment": "Many candidates treated the selection as with replacement and gave 25/64."
+            },
+            {
+              "label": "(b)",
+              "topic": "8",
+              "prompt": "Find the probability that the two counters are different colours. Give your answer as a fraction.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["15/28", "30/56"],
+              "markingPoints": [
+                { "text": "M1 for (5/8) × (3/7)", "marks": 1 },
+                { "text": "M1 for adding (3/8) × (5/7), or doubling", "marks": 1 },
+                { "text": "A1 for 15/28 oe", "marks": 1 }
+              ],
+              "examinerComment": "Candidates who drew a tree diagram were more likely to consider both orders."
+            },
+            {
+              "label": "(c)",
+              "topic": "8",
+              "prompt": "Given that at least one counter is red, find the probability that both are red. Give your answer as a fraction.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["2/5", "0.4", "10/25", "20/50"],
+              "markingPoints": [
+                { "text": "M1 for (5/14) ÷ (1 − 3/28) or (5/14) ÷ (25/28)", "marks": 1 },
+                { "text": "A1 for 2/5 oe", "marks": 1 }
+              ],
+              "examinerComment": "Conditional probability remains challenging. The condition reduces the sample space, so the denominator is P(at least one red)."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "The masses, m kg, of 40 parcels are recorded.\n0 < m ≤ 2: 6 parcels\n2 < m ≤ 4: 14 parcels\n4 < m ≤ 8: 12 parcels\n8 < m ≤ 12: 8 parcels",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "9",
+              "prompt": "Calculate an estimate of the mean mass, in kg.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "tolerance": 0.001,
+              "markingPoints": [
+                { "text": "M1 for using midpoints 1, 3, 6, 10", "marks": 1 },
+                { "text": "M1 for Σfx = 6 + 42 + 72 + 80 (= 200)", "marks": 1 },
+                { "text": "M1 dep for their Σfx ÷ 40", "marks": 1 },
+                { "text": "A1 for 5", "marks": 1 }
+              ],
+              "examinerComment": "Common errors included using class widths or upper bounds instead of midpoints, and dividing by 4 (the number of classes)."
+            },
+            {
+              "label": "(b)",
+              "topic": "9",
+              "prompt": "On a histogram, find the frequency density for the class 4 < m ≤ 8.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [{ "text": "B1 for 3", "marks": 1 }],
+              "examinerComment": "Frequency density = frequency ÷ class width. Some candidates divided by the upper class boundary."
+            },
+            {
+              "label": "(c)",
+              "topic": "9",
+              "prompt": "Write down the modal class.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["2 < m ≤ 4", "2<m≤4", "2 < m <= 4", "2-4", "2 to 4"],
+              "markingPoints": [{ "text": "B1 for 2 < m ≤ 4", "marks": 1 }],
+              "examinerComment": "With unequal class widths the modal class is the one with the highest frequency density. Here 2 < m ≤ 4 has density 7, the highest."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "subject": {
+    "code": "0610",
+    "name": "Biology",
+    "qualification": "IGCSE",
+    "syllabusYears": "2026-2028",
+    "description": "Cambridge IGCSE Biology (Extended). Sample content covers the first five syllabus topics. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "topics": [
+    { "ref": "1", "title": "Characteristics and classification of living organisms", "summary": "Characteristics of living organisms, the concept and uses of classification systems, features of organisms, dichotomous keys." },
+    { "ref": "2", "title": "Organisation of the organism", "summary": "Cell structure, specialised cells, tissues and organs, size of specimens and magnification." },
+    { "ref": "3", "title": "Movement into and out of cells", "summary": "Diffusion, osmosis and active transport." },
+    { "ref": "4", "title": "Biological molecules", "summary": "Carbohydrates, fats, proteins, food tests and the structure of DNA." },
+    { "ref": "5", "title": "Enzymes", "summary": "Enzyme action, specificity, and the effects of temperature and pH." },
+    { "ref": "6", "title": "Plant nutrition", "summary": "Photosynthesis, leaf structure and mineral requirements." },
+    { "ref": "7", "title": "Human nutrition", "summary": "Diet, digestive system, physical and chemical digestion, absorption." },
+    { "ref": "8", "title": "Transport in plants", "summary": "Xylem and phloem, water uptake, transpiration and translocation." },
+    { "ref": "9", "title": "Transport in animals", "summary": "Circulatory systems, the heart, blood vessels and blood." },
+    { "ref": "10", "title": "Diseases and immunity", "summary": "Pathogens, transmission, defences and the immune response." },
+    { "ref": "11", "title": "Gas exchange in humans", "summary": "Gas exchange surfaces, breathing and the effect of exercise." },
+    { "ref": "12", "title": "Respiration", "summary": "Aerobic and anaerobic respiration." },
+    { "ref": "13", "title": "Excretion in humans", "summary": "Excretory products, the kidney and the liver." },
+    { "ref": "14", "title": "Coordination and response", "summary": "The nervous system, sense organs, hormones, homeostasis and tropic responses." },
+    { "ref": "15", "title": "Drugs", "summary": "Medicinal drugs and antibiotics." },
+    { "ref": "16", "title": "Reproduction", "summary": "Asexual and sexual reproduction in plants and humans, sex hormones, sexually transmitted infections." },
+    { "ref": "17", "title": "Inheritance", "summary": "Chromosomes, genes and proteins, mitosis, meiosis and monohybrid inheritance." },
+    { "ref": "18", "title": "Variation and selection", "summary": "Variation, adaptive features, natural and artificial selection." },
+    { "ref": "19", "title": "Organisms and their environment", "summary": "Energy flow, food chains and webs, nutrient cycles and populations." },
+    { "ref": "20", "title": "Human influences on ecosystems", "summary": "Food supply, habitat destruction, pollution and conservation." },
+    { "ref": "21", "title": "Biotechnology and genetic engineering", "summary": "Biotechnology and genetic modification." }
+  ],
+  "components": [
+    { "ref": "2", "title": "Paper 2 (Multiple Choice, Extended)", "durationMin": 45, "totalMarks": 40 },
+    { "ref": "4", "title": "Paper 4 (Theory, Extended)", "durationMin": 75, "totalMarks": 80 }
+  ],
+  "papers": [
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which characteristic of living organisms is described as 'the chemical reactions in cells that break down nutrient molecules and release energy for metabolism'?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "excretion" },
+                { "key": "B", "text": "nutrition" },
+                { "key": "C", "text": "respiration" },
+                { "key": "D", "text": "sensitivity" }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [{ "text": "C – respiration", "marks": 1 }],
+              "examinerComment": "Candidates confused respiration with nutrition. Nutrition is taking in materials for energy, growth and development; respiration releases the energy."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "In the binomial system, which part of the name Panthera leo indicates the genus?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "Panthera" },
+                { "key": "B", "text": "leo" },
+                { "key": "C", "text": "both words together" },
+                { "key": "D", "text": "neither word" }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [{ "text": "A – the first word is the genus", "marks": 1 }],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "An organism has a body divided into three parts, three pairs of jointed legs and one pair of antennae. To which group does it belong?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "arachnids" },
+                { "key": "B", "text": "crustaceans" },
+                { "key": "C", "text": "insects" },
+                { "key": "D", "text": "myriapods" }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [{ "text": "C – insects", "marks": 1 }],
+              "examinerComment": "Arachnids have four pairs of legs and no antennae, a frequent distractor."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which structure is found in a plant cell but not in an animal cell?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "cell membrane" },
+                { "key": "B", "text": "cell wall" },
+                { "key": "C", "text": "mitochondrion" },
+                { "key": "D", "text": "ribosome" }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [{ "text": "B – cell wall", "marks": 1 }],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "A cell is 0.05 mm long. In a drawing it is 40 mm long. What is the magnification of the drawing?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "×2" },
+                { "key": "B", "text": "×80" },
+                { "key": "C", "text": "×200" },
+                { "key": "D", "text": "×800" }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [{ "text": "D – 40 ÷ 0.05 = 800", "marks": 1 }],
+              "examinerComment": "Magnification = image size ÷ actual size, with both in the same units."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Pieces of potato are placed in a concentrated sugar solution for one hour. What happens to the potato pieces?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "They gain mass because water enters by osmosis." },
+                { "key": "B", "text": "They gain mass because sugar enters by diffusion." },
+                { "key": "C", "text": "They lose mass because water leaves by osmosis." },
+                { "key": "D", "text": "They lose mass because sugar leaves by active transport." }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [{ "text": "C – water moves from higher water potential (in the cells) to lower water potential (the solution)", "marks": 1 }],
+              "examinerComment": "Answers should refer to water potential, not 'sugar concentration', when explaining osmosis."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Root hair cells take up mineral ions from soil where the ion concentration is lower than inside the cell. Which process is used?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "active transport" },
+                { "key": "B", "text": "diffusion" },
+                { "key": "C", "text": "osmosis" },
+                { "key": "D", "text": "transpiration" }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [{ "text": "A – active transport moves ions against a concentration gradient using energy from respiration", "marks": 1 }],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "A food sample turns biuret solution from blue to purple. Which nutrient is present?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "fat" },
+                { "key": "B", "text": "protein" },
+                { "key": "C", "text": "reducing sugar" },
+                { "key": "D", "text": "starch" }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [{ "text": "B – protein", "marks": 1 }],
+              "examinerComment": "Candidates should learn each food test with its positive result."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "In DNA, which base pairs with adenine?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "adenine" },
+                { "key": "B", "text": "cytosine" },
+                { "key": "C", "text": "guanine" },
+                { "key": "D", "text": "thymine" }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [{ "text": "D – thymine", "marks": 1 }],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Why does the rate of an enzyme-controlled reaction decrease above the optimum temperature?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                { "key": "A", "text": "The enzyme molecules have less kinetic energy." },
+                { "key": "B", "text": "The active site changes shape so the substrate no longer fits." },
+                { "key": "C", "text": "The substrate is used up more quickly." },
+                { "key": "D", "text": "The enzyme is killed." }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [{ "text": "B – denaturation changes the shape of the active site", "marks": 1 }],
+              "examinerComment": "Enzymes are proteins, not living organisms, so they are denatured, not 'killed'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "A student investigates the effect of temperature on the activity of amylase.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5",
+              "prompt": "State the substrate and the product of amylase.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "substrate: starch", "marks": 1 },
+                { "text": "product: maltose / simple reducing sugar", "marks": 1 }
+              ],
+              "examinerComment": "Many candidates gave 'glucose' as the product, which was not accepted."
+            },
+            {
+              "label": "(b)",
+              "topic": "5",
+              "prompt": "Explain why the activity of amylase increases as the temperature increases from 20 °C to 35 °C.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "molecules gain kinetic energy / move faster", "marks": 1 },
+                { "text": "more (successful) collisions between enzyme and substrate", "marks": 1 },
+                { "text": "more enzyme–substrate complexes formed (per unit time)", "marks": 1 }
+              ],
+              "examinerComment": "Strong answers used the terms kinetic energy, collisions and enzyme–substrate complex. Vague references to enzymes 'working harder' gained no credit."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3",
+              "prompt": "Define the term osmosis.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "net movement of water molecules", "marks": 1 },
+                { "text": "from a region of higher water potential to lower water potential", "marks": 1 },
+                { "text": "through a partially permeable membrane", "marks": 1 }
+              ],
+              "examinerComment": "Definitions must refer to water molecules and a partially permeable membrane. 'Semi-permeable' was accepted."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

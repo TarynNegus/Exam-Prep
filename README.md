@@ -1,0 +1,147 @@
+# ExamPrep
+
+A subscription-based web platform that helps students prepare for **Cambridge IGCSE** and **Cambridge International AS & A Level** exams.
+
+Each subject is broken into the content sections of its Cambridge syllabus. Students:
+
+1. **Work through the syllabus topic by topic.** Topics unlock in syllabus order.
+2. **Practise exam-style questions** taken from past papers and tagged by topic.
+3. **Get feedback from the mark scheme and the examiner's report** after every answer.
+4. **Sit full, timed past papers** once every topic is complete. Results are broken down by syllabus topic.
+
+## How it works
+
+### Content model
+
+```
+Subject (e.g. 0580 Mathematics, syllabus 2025-2027, IGCSE)
+ ├─ Topic        syllabus content sections, in order; this is the learning path
+ └─ Component    the assessed papers (Paper 2, Paper 4 …)
+      └─ PastPaper   one exam series/variant
+           └─ Question → QuestionPart
+                          ├─ topic            which syllabus section it assesses
+                          ├─ answerType       MULTIPLE_CHOICE | NUMERIC | SHORT_TEXT | EXTENDED
+                          ├─ markingPoints    the mark scheme, e.g. "M1 for …", "A1 for …"
+                          └─ examinerComment  commentary from the examiner's report
+```
+
+Every question part is tagged with a syllabus topic. The same past paper question is used in two places: in **topic practice** (only the parts for that topic are shown) and in **full past paper** mode.
+
+### Marking
+
+- **Multiple choice** is marked automatically.
+- **Numeric** answers are marked automatically, within a tolerance, and accept forms like `1,250`, `3/4` and `12 cm`. If the final answer is wrong, the student checks their working against the mark scheme so they can still claim method marks.
+- **Short text** is marked automatically when it matches an accepted answer. Otherwise it goes to self-marking.
+- **Extended** written answers are self-marked: the student ticks each mark scheme point their answer meets.
+
+After answering, the student always sees the answer, the mark scheme points and the examiner's report comment.
+
+### Progress and unlocking (`src/lib/progress.ts`)
+
+- A topic is **complete** when the student has answered at least 3 of its questions (or all of them, if it has fewer) with an overall score of at least 60%. The latest attempt at each question counts.
+- Completing a topic unlocks the next one.
+- **Full past papers** unlock when every topic in the subject is complete. They require a subscription.
+- **Free plan:** the first 2 topics of every subject. **Subscription:** everything.
+
+All of these thresholds are constants at the top of `src/lib/progress.ts`.
+
+### Subscriptions
+
+Billing uses Stripe Checkout, the Stripe customer portal and a webhook (`/api/stripe/webhook`) that keeps each user's subscription status in sync. When Stripe isn't configured in development, `DEV_FAKE_BILLING=true` lets the Subscribe button activate a plan without payment. This shortcut is always disabled in production.
+
+## Tech stack
+
+- **Next.js 15** (App Router, server actions) + **React 19** + **Tailwind CSS 4**
+- **PostgreSQL** via **Prisma 6**
+- Email and password authentication: bcrypt hashes and a signed, HTTP-only JWT session cookie (`jose`)
+- **Stripe** for subscriptions
+- **Vitest** for unit tests
+
+## Getting started
+
+Requirements: Node.js 20+ and PostgreSQL 14+.
+
+```bash
+npm install
+cp .env.example .env            # set DATABASE_URL and SESSION_SECRET
+npx prisma migrate deploy       # create the database tables
+npm run content:import          # load every JSON file in /content
+npm run dev                     # http://localhost:3000
+```
+
+Other commands:
+
+| Command | What it does |
+| --- | --- |
+| `npm test` | Unit tests for marking, progress rules, and validation of all content files |
+| `npm run lint` | TypeScript type check |
+| `npm run build` | Production build |
+| `npm run content:import -- path/to/file.json` | Import specific content files |
+
+### Setting up Stripe
+
+1. Create a product with a monthly and an annual recurring price. Put the price ids in `STRIPE_PRICE_MONTHLY` and `STRIPE_PRICE_ANNUAL`.
+2. Set `STRIPE_SECRET_KEY`.
+3. Add a webhook endpoint at `https://<your-domain>/api/stripe/webhook` for these events: `checkout.session.completed`, `customer.subscription.created`, `customer.subscription.updated` and `customer.subscription.deleted`. Put its signing secret in `STRIPE_WEBHOOK_SECRET`.
+4. For local testing: `stripe listen --forward-to localhost:3000/api/stripe/webhook`.
+
+## Adding content
+
+Content lives in `/content`, one JSON file per subject syllabus. The format is defined and validated in `src/lib/content-schema.ts`. Importing is idempotent: re-importing a file updates content in place and keeps students' answers.
+
+```jsonc
+{
+  "subject":    { "code": "0580", "name": "Mathematics", "qualification": "IGCSE", "syllabusYears": "2025-2027" },
+  "topics":     [{ "ref": "1", "title": "Number", "summary": "…" }],
+  "components": [{ "ref": "4", "title": "Paper 4 (Extended, calculator)", "durationMin": 120, "totalMarks": 100 }],
+  "papers": [{
+    "component": "4", "series": "June 2024", "variant": "42", "title": "June 2024 Paper 42",
+    "questions": [{
+      "number": 1, "stem": "Shared context for all parts",
+      "parts": [{
+        "label": "(a)", "topic": "1", "prompt": "…", "marks": 2,
+        "answerType": "NUMERIC", "correctAnswer": "2835.69", "tolerance": 0.01,
+        "markingPoints": [{ "text": "M1 for 2500 × 1.032^4", "marks": 1 }, { "text": "A1 for 2835.69", "marks": 1 }],
+        "examinerComment": "Common errors were …"
+      }]
+    }]
+  }]
+}
+```
+
+The content tests (`tests/content.test.ts`) run on every file in `/content`. They check that each mark scheme covers the part's marks and that each auto-marked part accepts its own model answer.
+
+## ⚠️ Licensing of Cambridge material
+
+Cambridge past papers, mark schemes, examiner reports and syllabus documents are **copyright of Cambridge University Press & Assessment**. Using them in a commercial, subscription product needs **written permission or a licence from Cambridge**. Do not import real past paper content until you have that permission.
+
+The sample content in `/content` (0580 Mathematics, 0610 Biology and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
+
+The site footer states that the product is not affiliated with or endorsed by Cambridge.
+
+## Project layout
+
+```
+content/                 subject content (JSON)
+prisma/                  database schema and migrations
+scripts/import-content.ts
+src/
+  app/                   pages: landing, auth, dashboard, subjects, practice, papers, attempts, billing
+  app/api/stripe/webhook Stripe webhook
+  components/            UI: answer input, feedback panel, timed exam, etc.
+  lib/
+    marking.ts           pure marking logic
+    progress.ts          pure progress, unlocking and plan rules
+    subject-progress.ts  loads a student's progress for a subject
+    *-actions.ts         server actions (auth, practice, papers, billing, enrolment)
+tests/                   Vitest unit tests
+```
+
+## Roadmap ideas
+
+- **AI-assisted marking** of written answers against the mark scheme, using the Claude API, alongside self-marking
+- An admin interface for content authors, and PDF-to-JSON import tooling for licensed past papers
+- Images and diagrams in questions; LaTeX/maths rendering
+- Spaced-repetition review of weak topics, and grade estimates using published grade thresholds
+- Teacher and school accounts with class progress dashboards
+- Email verification and password reset

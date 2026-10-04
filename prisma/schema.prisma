@@ -1,0 +1,197 @@
+// Data model for the Cambridge exam-prep platform.
+//
+// Content hierarchy:
+//   Qualification (IGCSE / AS & A Level)
+//     └─ Subject (e.g. 0580 Mathematics), tied to a syllabus version
+//          ├─ Topic        – syllabus content sections, ordered; the learning path
+//          └─ Component    – assessed papers (Paper 2, Paper 4 ...)
+//               └─ PastPaper – one exam series/variant of a component
+//                    └─ Question → QuestionPart (each part tagged with a Topic)
+//
+// Feedback for every part comes from the mark scheme (markingPoints) and the
+// examiner's report (examinerComment).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Qualification {
+  IGCSE
+  AS_A_LEVEL
+}
+
+enum AnswerType {
+  MULTIPLE_CHOICE
+  NUMERIC
+  SHORT_TEXT
+  EXTENDED
+}
+
+enum SubscriptionStatus {
+  NONE
+  TRIALING
+  ACTIVE
+  PAST_DUE
+  CANCELED
+}
+
+enum AttemptMode {
+  PRACTICE
+  FULL_PAPER
+}
+
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+model User {
+  id                   String             @id @default(cuid())
+  email                String             @unique
+  name                 String
+  passwordHash         String
+  role                 Role               @default(STUDENT)
+  stripeCustomerId     String?            @unique
+  subscriptionStatus   SubscriptionStatus @default(NONE)
+  subscriptionPlan     String?
+  currentPeriodEnd     DateTime?
+  createdAt            DateTime           @default(now())
+  enrolments           Enrolment[]
+  answers              Answer[]
+  paperAttempts        PaperAttempt[]
+}
+
+model Subject {
+  id              String        @id @default(cuid())
+  code            String        // Cambridge syllabus code, e.g. "0580"
+  name            String
+  qualification   Qualification
+  syllabusYears   String        // e.g. "2025-2027"
+  description     String        @default("")
+  topics          Topic[]
+  components      Component[]
+  enrolments      Enrolment[]
+
+  @@unique([code, syllabusYears])
+}
+
+model Topic {
+  id          String         @id @default(cuid())
+  subjectId   String
+  subject     Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  ref         String         // syllabus reference, e.g. "1" or "C2"
+  title       String
+  summary     String         @default("")
+  position    Int
+  parts       QuestionPart[]
+
+  @@unique([subjectId, ref])
+  @@index([subjectId, position])
+}
+
+model Component {
+  id          String      @id @default(cuid())
+  subjectId   String
+  subject     Subject     @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  ref         String      // e.g. "2" for Paper 2
+  title       String      // e.g. "Paper 2 (Extended)"
+  durationMin Int
+  totalMarks  Int
+  papers      PastPaper[]
+
+  @@unique([subjectId, ref])
+}
+
+model PastPaper {
+  id           String         @id @default(cuid())
+  componentId  String
+  component    Component      @relation(fields: [componentId], references: [id], onDelete: Cascade)
+  series       String         // e.g. "June 2024" or "Sample"
+  variant      String         // e.g. "22"
+  title        String
+  questions    Question[]
+  attempts     PaperAttempt[]
+
+  @@unique([componentId, series, variant])
+}
+
+model Question {
+  id         String         @id @default(cuid())
+  paperId    String
+  paper      PastPaper      @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  number     Int
+  stem       String         @default("") // shared context for all parts
+  parts      QuestionPart[]
+
+  @@unique([paperId, number])
+}
+
+model QuestionPart {
+  id              String     @id @default(cuid())
+  questionId      String
+  question        Question   @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  topicId         String
+  topic           Topic      @relation(fields: [topicId], references: [id])
+  label           String     // e.g. "(a)(i)"
+  position        Int
+  prompt          String
+  marks           Int
+  answerType      AnswerType
+  options         Json?      // MULTIPLE_CHOICE: [{ key: "A", text: "..." }]
+  correctAnswer   String?    // MULTIPLE_CHOICE key, NUMERIC value
+  tolerance       Float?     // NUMERIC absolute tolerance
+  acceptedAnswers String[]   @default([]) // SHORT_TEXT accepted responses
+  markingPoints   Json       // mark scheme: [{ text: "...", marks: 1 }]
+  examinerComment String     @default("") // examiner's report commentary
+  answers         Answer[]
+
+  @@unique([questionId, position])
+  @@index([topicId])
+}
+
+model Enrolment {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subjectId String
+  subject   Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, subjectId])
+}
+
+model Answer {
+  id             String        @id @default(cuid())
+  userId         String
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  partId         String
+  part           QuestionPart  @relation(fields: [partId], references: [id], onDelete: Cascade)
+  mode           AttemptMode
+  paperAttemptId String?
+  paperAttempt   PaperAttempt? @relation(fields: [paperAttemptId], references: [id], onDelete: Cascade)
+  response       String
+  awardedMarks   Int
+  selfMarked     Boolean       @default(false)
+  pendingReview  Boolean       @default(false) // awaiting student self-marking
+  createdAt      DateTime      @default(now())
+
+  @@index([userId, partId, createdAt])
+}
+
+model PaperAttempt {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  paperId     String
+  paper       PastPaper @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  startedAt   DateTime  @default(now())
+  submittedAt DateTime?
+  answers     Answer[]
+
+  @@index([userId, paperId])
+}

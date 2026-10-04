@@ -1,0 +1,294 @@
+{
+  "subject": {
+    "code": "9709",
+    "name": "Mathematics",
+    "qualification": "AS_A_LEVEL",
+    "syllabusYears": "2026-2027",
+    "description": "Cambridge International AS & A Level Mathematics. This sample covers Paper 1 (Pure Mathematics 1) only. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "topics": [
+    { "ref": "1.1", "title": "Quadratics", "summary": "Completing the square, the discriminant, solving quadratic equations and inequalities." },
+    { "ref": "1.2", "title": "Functions", "summary": "Domain and range, composite and inverse functions, transformations of graphs." },
+    { "ref": "1.3", "title": "Coordinate geometry", "summary": "Equations of lines and circles, intersections of lines and curves." },
+    { "ref": "1.4", "title": "Circular measure", "summary": "Radians, arc length and sector area." },
+    { "ref": "1.5", "title": "Trigonometry", "summary": "Graphs of trigonometric functions, exact values, identities and equations." },
+    { "ref": "1.6", "title": "Series", "summary": "Binomial expansion, arithmetic and geometric progressions, sum to infinity." },
+    { "ref": "1.7", "title": "Differentiation", "summary": "Gradients, the chain rule, tangents and normals, stationary points, rates of change." },
+    { "ref": "1.8", "title": "Integration", "summary": "Integration as the reverse of differentiation, definite integrals, areas and volumes of revolution." }
+  ],
+  "components": [
+    { "ref": "1", "title": "Paper 1 (Pure Mathematics 1)", "durationMin": 110, "totalMarks": 75 }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.1",
+              "prompt": "Express 2x² − 12x + 7 in the form a(x + b)² + c. Give your answer in that form.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["2(x - 3)^2 - 11", "2(x-3)^2-11", "2(x − 3)² − 11", "2(x-3)²-11"],
+              "markingPoints": [
+                { "text": "B1 for a = 2", "marks": 1 },
+                { "text": "B1 for b = −3", "marks": 1 },
+                { "text": "B1 for c = −11", "marks": 1 }
+              ],
+              "examinerComment": "Candidates who first took out the factor of 2 from the x terms were usually successful. A common error was c = −2, from failing to multiply 9 by 2."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.1",
+              "prompt": "Find the set of values of k for which the equation x² + kx + 9 = 0 has no real roots. Show your working.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "M1 for using the discriminant: k² − 36", "marks": 1 },
+                { "text": "M1 for setting k² − 36 < 0 and finding critical values ±6", "marks": 1 },
+                { "text": "A1 for −6 < k < 6", "marks": 1 }
+              ],
+              "examinerComment": "Many candidates found the critical values but then gave the incorrect region k < −6, k > 6, or used ≤."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "The functions f and g are defined by f(x) = 3x − 2 for x ∈ ℝ and g(x) = 1/(x + 1) for x > −1.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.2",
+              "prompt": "Find the value of fg(1).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-0.5",
+              "markingPoints": [
+                { "text": "M1 for g(1) = 1/2", "marks": 1 },
+                { "text": "A1 for −1/2", "marks": 1 }
+              ],
+              "examinerComment": "Some candidates found gf(1) instead. fg(x) means apply g first."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.2",
+              "prompt": "Find an expression for f⁻¹(x).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": ["(x + 2)/3", "(x+2)/3", "x/3 + 2/3"],
+              "markingPoints": [
+                { "text": "M1 for a correct first step, e.g. x = 3y − 2", "marks": 1 },
+                { "text": "A1 for (x + 2)/3", "marks": 1 }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "A circle has equation x² + y² − 6x + 4y − 12 = 0.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.3",
+              "prompt": "Find the radius of the circle.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                { "text": "M1 for (x − 3)² + (y + 2)² = 25", "marks": 1 },
+                { "text": "A1 for radius 5", "marks": 1 }
+              ],
+              "examinerComment": "Most candidates completed the square correctly. Sign errors in the centre were common."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.3",
+              "prompt": "Find the equation of the tangent to the circle at the point (6, 2). Show your working.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "B1 for centre (3, −2)", "marks": 1 },
+                { "text": "M1 for gradient of radius = 4/3", "marks": 1 },
+                { "text": "M1 for tangent gradient = −3/4 and use of (6, 2)", "marks": 1 },
+                { "text": "A1 for y − 2 = −3/4(x − 6) oe, e.g. 3x + 4y = 26", "marks": 1 }
+              ],
+              "examinerComment": "Candidates should remember the tangent is perpendicular to the radius at the point of contact."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "A sector OAB of a circle has centre O, radius 8 cm and angle AOB = 1.2 radians.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.4",
+              "prompt": "Find the area of the sector, in cm².",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "38.4",
+              "markingPoints": [{ "text": "B1 for ½ × 8² × 1.2 = 38.4", "marks": 1 }],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.4",
+              "prompt": "Find the area of the segment bounded by the arc AB and the chord AB, in cm², correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8.57",
+              "tolerance": 0.01,
+              "markingPoints": [
+                { "text": "M1 for triangle area ½ × 8² × sin 1.2", "marks": 1 },
+                { "text": "M1 for sector area − triangle area", "marks": 1 },
+                { "text": "A1 for 8.57", "marks": 1 }
+              ],
+              "examinerComment": "A significant number of candidates had their calculators in degree mode, giving sin 1.2° and an incorrect answer."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.5",
+              "prompt": "Solve 2sin²θ − sin θ − 1 = 0 for 0° ≤ θ ≤ 360°. Show your working.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "M1 for factorising: (2 sin θ + 1)(sin θ − 1) = 0", "marks": 1 },
+                { "text": "A1 for sin θ = 1 giving θ = 90°", "marks": 1 },
+                { "text": "A1 for sin θ = −1/2 giving θ = 210°", "marks": 1 },
+                { "text": "A1 for θ = 330° and no extra solutions in range", "marks": 1 }
+              ],
+              "examinerComment": "Most candidates factorised correctly. Many lost the final mark by missing 330° or including extra solutions."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.5",
+              "prompt": "Find the exact value of tan(π/3) − 2cos(π/6).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0",
+              "markingPoints": [
+                { "text": "M1 for √3 − 2 × (√3/2)", "marks": 1 },
+                { "text": "A1 for 0", "marks": 1 }
+              ],
+              "examinerComment": "Exact values should be recalled rather than found by calculator."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.6",
+              "prompt": "Find the coefficient of x³ in the expansion of (2 − x)⁶.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-160",
+              "markingPoints": [
+                { "text": "M1 for ⁶C₃ × 2³ × (−x)³", "marks": 1 },
+                { "text": "A1 for −160", "marks": 1 }
+              ],
+              "examinerComment": "The negative sign was frequently lost."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "A geometric progression has first term 24 and common ratio 0.75. Find the sum to infinity.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "96",
+              "markingPoints": [
+                { "text": "M1 for 24 ÷ (1 − 0.75)", "marks": 1 },
+                { "text": "A1 for 96", "marks": 1 }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "A curve has equation y = x³ − 6x² + 9x + 2.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.7",
+              "prompt": "Find the gradient of the curve at the point where x = 4.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "9",
+              "markingPoints": [
+                { "text": "M1 for dy/dx = 3x² − 12x + 9", "marks": 1 },
+                { "text": "A1 for 9", "marks": 1 }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.7",
+              "prompt": "Find the coordinates of the stationary points and determine their nature. Show your working.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                { "text": "M1 for setting 3x² − 12x + 9 = 0", "marks": 1 },
+                { "text": "A1 for x = 1 and x = 3", "marks": 1 },
+                { "text": "A1 for (1, 6) and (3, 2)", "marks": 1 },
+                { "text": "M1 for using d²y/dx² = 6x − 12 or another valid method", "marks": 1 },
+                { "text": "A1 for (1, 6) maximum and (3, 2) minimum", "marks": 1 }
+              ],
+              "examinerComment": "Candidates must give a reason for the nature of each point; stating 'maximum' without justification did not earn the final mark."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.8",
+              "prompt": "Evaluate the integral of (6x² − 4x) with respect to x, from x = 1 to x = 3.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "36",
+              "markingPoints": [
+                { "text": "B1 for 2x³ − 2x²", "marks": 1 },
+                { "text": "M1 for substituting limits correctly", "marks": 1 },
+                { "text": "A1 for 36", "marks": 1 }
+              ],
+              "examinerComment": "Arithmetic errors when substituting the lower limit were common."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.8",
+              "prompt": "The region bounded by y = √x, the x-axis and the line x = 4 is rotated through 360° about the x-axis. Find the exact volume of the solid formed, as a multiple of π. Enter the multiple only (e.g. for 5π enter 5).",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "markingPoints": [
+                { "text": "M1 for π ∫ x dx", "marks": 1 },
+                { "text": "M1 for π[x²/2] from 0 to 4", "marks": 1 },
+                { "text": "A1 for 8π", "marks": 1 }
+              ],
+              "examinerComment": "Some candidates integrated √x rather than (√x)². The volume formula requires y²."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
