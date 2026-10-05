@@ -4,24 +4,970 @@
     "name": "Mathematics",
     "qualification": "IGCSE",
     "syllabusYears": "2025-2027",
-    "description": "Cambridge IGCSE Mathematics (Extended). Sample content: the questions below are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+    "description": "Cambridge IGCSE Mathematics. Core students take Papers 1 and 3; Extended students take Papers 2 and 4. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
   },
+  "routes": [
+    {
+      "id": "core",
+      "name": "Core: Papers 1 and 3",
+      "components": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "id": "extended",
+      "name": "Extended: Papers 2 and 4",
+      "components": [
+        "2",
+        "4"
+      ]
+    }
+  ],
   "topics": [
-    { "ref": "1", "title": "Number", "summary": "Types of number, fractions, decimals and percentages, standard form, bounds, ratio and proportion, compound interest." },
-    { "ref": "2", "title": "Algebra and graphs", "summary": "Algebraic manipulation, equations and inequalities, sequences, functions, graphs and differentiation." },
-    { "ref": "3", "title": "Coordinate geometry", "summary": "Gradients, midpoints, lengths of line segments and equations of straight lines." },
-    { "ref": "4", "title": "Geometry", "summary": "Angle properties, similarity, symmetry and circle theorems." },
-    { "ref": "5", "title": "Mensuration", "summary": "Perimeter, area, surface area and volume, arcs and sectors." },
-    { "ref": "6", "title": "Trigonometry", "summary": "Pythagoras' theorem, right-angled trigonometry, sine and cosine rules, 3D problems." },
-    { "ref": "7", "title": "Transformations and vectors", "summary": "Reflections, rotations, translations, enlargements and vector geometry." },
-    { "ref": "8", "title": "Probability", "summary": "Probability of single and combined events, tree diagrams, conditional probability." },
-    { "ref": "9", "title": "Statistics", "summary": "Averages and range, grouped data, cumulative frequency and histograms." }
+    {
+      "ref": "1",
+      "title": "Number",
+      "summary": "Types of number, fractions, decimals and percentages, standard form, bounds, ratio and proportion, compound interest."
+    },
+    {
+      "ref": "2",
+      "title": "Algebra and graphs",
+      "summary": "Algebraic manipulation, equations and inequalities, sequences, functions, graphs and differentiation."
+    },
+    {
+      "ref": "3",
+      "title": "Coordinate geometry",
+      "summary": "Gradients, midpoints, lengths of line segments and equations of straight lines."
+    },
+    {
+      "ref": "4",
+      "title": "Geometry",
+      "summary": "Angle properties, similarity, symmetry and circle theorems."
+    },
+    {
+      "ref": "5",
+      "title": "Mensuration",
+      "summary": "Perimeter, area, surface area and volume, arcs and sectors."
+    },
+    {
+      "ref": "6",
+      "title": "Trigonometry",
+      "summary": "Pythagoras' theorem, right-angled trigonometry, sine and cosine rules, 3D problems."
+    },
+    {
+      "ref": "7",
+      "title": "Transformations and vectors",
+      "summary": "Reflections, rotations, translations, enlargements and vector geometry."
+    },
+    {
+      "ref": "8",
+      "title": "Probability",
+      "summary": "Probability of single and combined events, tree diagrams, conditional probability."
+    },
+    {
+      "ref": "9",
+      "title": "Statistics",
+      "summary": "Averages and range, grouped data, cumulative frequency and histograms."
+    }
   ],
   "components": [
-    { "ref": "2", "title": "Paper 2 (Extended, non-calculator)", "durationMin": 120, "totalMarks": 100 },
-    { "ref": "4", "title": "Paper 4 (Extended, calculator)", "durationMin": 120, "totalMarks": 100 }
+    {
+      "ref": "1",
+      "title": "Paper 1 (Core, non-calculator)",
+      "durationMin": 90,
+      "totalMarks": 80
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Extended, non-calculator)",
+      "durationMin": 120,
+      "totalMarks": 100
+    },
+    {
+      "ref": "3",
+      "title": "Paper 3 (Core, calculator)",
+      "durationMin": 90,
+      "totalMarks": 80
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (Extended, calculator)",
+      "durationMin": 120,
+      "totalMarks": 100
+    }
   ],
   "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1",
+              "prompt": "Write 0.35 as a fraction in its simplest form.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "7/20"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 35/100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7/20",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates did not simplify fully."
+            },
+            {
+              "label": "(b)",
+              "topic": "1",
+              "prompt": "Work out 15% of 240.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "36",
+              "markingPoints": [
+                {
+                  "text": "M1 for 10% = 24 and 5% = 12, or equivalent",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 36",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2",
+              "prompt": "Simplify 3a + 5b − a + 2b.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2a + 7b",
+                "2a+7b",
+                "7b + 2a",
+                "7b+2a"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 2a",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 7b",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sign errors when collecting −a were common."
+            },
+            {
+              "label": "(b)",
+              "topic": "2",
+              "prompt": "Solve 4x − 7 = 13.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "M1 for 4x = 20",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3",
+              "prompt": "Find the gradient of the line through (1, 2) and (3, 8).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "M1 for (8 − 2) ÷ (3 − 1)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates divided the change in x by the change in y."
+            },
+            {
+              "label": "(b)",
+              "topic": "3",
+              "prompt": "Write down the y-intercept of the line y = 2x − 5.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-5",
+              "markingPoints": [
+                {
+                  "text": "B1 for −5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4",
+              "prompt": "Two angles of a triangle are 47° and 68°. Find the third angle, in degrees.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "65",
+              "markingPoints": [
+                {
+                  "text": "B1 for 65",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "4",
+              "prompt": "Find the sum of the interior angles of a pentagon, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "540",
+              "markingPoints": [
+                {
+                  "text": "M1 for (5 − 2) × 180",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 540",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5",
+              "prompt": "Find the area of a triangle with base 8 cm and perpendicular height 5 cm, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "20",
+              "markingPoints": [
+                {
+                  "text": "M1 for ½ × 8 × 5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 20",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Forgetting the ½ was the most common error."
+            },
+            {
+              "label": "(b)",
+              "topic": "5",
+              "prompt": "Find the volume of a cuboid measuring 3 cm by 4 cm by 5 cm, in cm³.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "60",
+              "markingPoints": [
+                {
+                  "text": "B1 for 60",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "A right-angled triangle has shorter sides 6 cm and 8 cm. Find the length of the hypotenuse, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "markingPoints": [
+                {
+                  "text": "M1 for 6² + 8²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 10",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "The bearing of B from A is 070°. Find the bearing of A from B, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "250",
+              "markingPoints": [
+                {
+                  "text": "M1 for 70 + 180",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 250",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sketch with north lines at both points helps."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "7",
+              "prompt": "The point (3, −2) is translated by the vector (−5, 4). Write down the coordinates of its image.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(-2, 2)",
+                "(-2,2)",
+                "(−2, 2)",
+                "(−2,2)",
+                "-2, 2"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for x = −2",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y = 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "7",
+              "prompt": "The point (4, 1) is reflected in the x-axis. Write down the coordinates of its image.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(4, -1)",
+                "(4,-1)",
+                "(4, −1)",
+                "(4,−1)",
+                "4, -1"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for (4, −1)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Reflecting in the y-axis instead was a common error."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "8",
+              "prompt": "The probability that it rains tomorrow is 0.35. Find the probability that it does not rain.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.65",
+              "markingPoints": [
+                {
+                  "text": "B1 for 0.65",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "8",
+              "prompt": "A fair six-sided dice is thrown. Find the probability of getting a number greater than 4. Give your answer as a fraction.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "1/3",
+                "2/6"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 2/6 or 1/3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Greater than 4' means 5 or 6, not 4, 5 or 6."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "9",
+              "prompt": "Find the mode of 3, 5, 5, 6, 8, 5, 2.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "B1 for 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "9",
+              "prompt": "Find the range of 12, 7, 19, 4, 15.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "15",
+              "markingPoints": [
+                {
+                  "text": "B1 for 15",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The range is a single value, not '4 to 19'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Find the value of 27^(2/3).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "9",
+              "markingPoints": [
+                {
+                  "text": "M1 for ∛27 = 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 9",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Find the root first, then the power."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Expand and simplify (2x − 3)(x + 5).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2x^2 + 7x - 15",
+                "2x² + 7x − 15",
+                "2x^2+7x-15",
+                "2x²+7x-15",
+                "2x^2 + 7x − 15"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 3 correct terms out of 2x², 10x, −3x, −15",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2x² + 7x − 15",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the equation of the line with gradient −2 that passes through (0, 3). Give your answer in the form y = mx + c.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "y = -2x + 3",
+                "y=-2x+3",
+                "y = −2x + 3",
+                "y = 3 - 2x",
+                "y=3-2x"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for m = −2",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for c = 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Find the exterior angle of a regular 12-sided polygon, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "markingPoints": [
+                {
+                  "text": "M1 for 360 ÷ 12",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 30",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Find the volume of a sphere of radius 3 cm as a multiple of π. Enter the multiple only (for 10π enter 10).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "36",
+              "markingPoints": [
+                {
+                  "text": "M1 for (4/3) × π × 3³",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 36π",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Find the exact value of sin 30° + cos 60°.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "B1 for sin 30° = ½ and cos 60° = ½",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Exact values should be learned."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "a = (2, −1) and b = (−3, 4) as column vectors. Find 3a − 2b, giving your answer as (x, y).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(12, -11)",
+                "(12,-11)",
+                "(12, −11)",
+                "(12,−11)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 3a = (6, −3) or 2b = (−6, 8)",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for (12, −11)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Subtracting a negative component caused errors."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "P(A) = 1/3 and P(B) = 1/4. A and B are independent. Find P(A and B), as a fraction.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "1/12"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 1/3 × 1/4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1/12",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some added the probabilities."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "From a cumulative frequency curve, the lower quartile is 23 and the upper quartile is 41. Find the interquartile range.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "18",
+              "markingPoints": [
+                {
+                  "text": "B1 for 18",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "3",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 3A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Share $360 in the ratio 4 : 5. Find the larger share, in dollars.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "200",
+              "markingPoints": [
+                {
+                  "text": "M1 for 360 ÷ 9",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 200",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Find the value of 3x² − 2 when x = −4.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "46",
+              "markingPoints": [
+                {
+                  "text": "M1 for 3 × (−4)²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 46",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Calculating (3 × −4)² gave 142, an order of operations error."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the midpoint of (−2, 6) and (4, 0). Give your answer in the form (x, y).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(1, 3)",
+                "(1,3)",
+                "1, 3",
+                "1,3"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for x = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y = 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "How many lines of symmetry does a regular hexagon have?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "B1 for 6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Find the circumference of a circle of radius 7 cm, correct to 1 decimal place, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "43.98",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "M1 for 2 × π × 7",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 44.0",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using the diameter formula with the radius halved the answer."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "In a right-angled triangle the hypotenuse is 12 cm and one angle is 35°. Find the side opposite the 35° angle, correct to 1 decimal place, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6.883",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "M1 for 12 × sin 35°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.9",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Labelling the sides before choosing sin, cos or tan helps."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A shape is enlarged by scale factor 3. One side is 2.5 cm long. Find the length of the corresponding side of the image, in cm.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7.5",
+              "markingPoints": [
+                {
+                  "text": "B1 for 7.5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "The probability that a spinner lands on red is 0.2. It is spun 150 times. Find the expected number of times it lands on red.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "markingPoints": [
+                {
+                  "text": "B1 for 30",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Find the mean of 4.2, 5.6, 3.8 and 6.4.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "M1 for 20.0 ÷ 4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
     {
       "component": "4",
       "series": "Sample",
@@ -41,8 +987,14 @@
               "correctAnswer": "2835.69",
               "tolerance": 0.01,
               "markingPoints": [
-                { "text": "M1 for 2500 × 1.032^4 oe", "marks": 1 },
-                { "text": "A1 for 2835.69 cao", "marks": 1 }
+                {
+                  "text": "M1 for 2500 × 1.032^4 oe",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2835.69 cao",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Most candidates used the multiplier 1.032 correctly. A common error was to calculate simple interest (2500 × 0.032 × 4) and add it to the principal, giving 2820."
             },
@@ -54,8 +1006,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "6",
               "markingPoints": [
-                { "text": "M1 for a trial such as 2500 × 1.032^n with n = 5 or 6, or a correct logarithmic method", "marks": 1 },
-                { "text": "A1 for 6", "marks": 1 }
+                {
+                  "text": "M1 for a trial such as 2500 × 1.032^n with n = 5 or 6, or a correct logarithmic method",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates who showed their trials clearly usually earned the method mark even when they misread their calculator display. Some stopped at 5 years without checking the value exceeded $3000."
             }
@@ -71,8 +1029,20 @@
               "prompt": "Write 0.000 047 3 in standard form.",
               "marks": 1,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["4.73 × 10^-5", "4.73x10^-5", "4.73 x 10^-5", "4.73*10^-5", "4.73e-5", "4.73 × 10⁻⁵"],
-              "markingPoints": [{ "text": "B1 for 4.73 × 10^-5", "marks": 1 }],
+              "acceptedAnswers": [
+                "4.73 × 10^-5",
+                "4.73x10^-5",
+                "4.73 x 10^-5",
+                "4.73*10^-5",
+                "4.73e-5",
+                "4.73 × 10⁻⁵"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 4.73 × 10^-5",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered. Errors included 47.3 × 10^-6, which is not in standard form, and sign errors in the power."
             },
             {
@@ -82,7 +1052,12 @@
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "12.35",
-              "markingPoints": [{ "text": "B1 for 12.35", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B1 for 12.35",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Many candidates gave 12.3 or 12.45. Remember the bounds are half a unit of accuracy either side of the stated value."
             }
           ]
@@ -99,9 +1074,18 @@
               "answerType": "NUMERIC",
               "correctAnswer": "8",
               "markingPoints": [
-                { "text": "M1 for expanding brackets: 5x − 15", "marks": 1 },
-                { "text": "M1 for collecting terms correctly: 3x = 24", "marks": 1 },
-                { "text": "A1 for x = 8", "marks": 1 }
+                {
+                  "text": "M1 for expanding brackets: 5x − 15",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for collecting terms correctly: 3x = 24",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 8",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Generally well done. Weaker candidates expanded 5(x − 3) as 5x − 3."
             },
@@ -111,10 +1095,20 @@
               "prompt": "Factorise completely 6x² − 15xy.",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["3x(2x - 5y)", "3x(2x − 5y)", "3x(2x-5y)"],
+              "acceptedAnswers": [
+                "3x(2x - 5y)",
+                "3x(2x − 5y)",
+                "3x(2x-5y)"
+              ],
               "markingPoints": [
-                { "text": "B2 for 3x(2x − 5y)", "marks": 2 },
-                { "text": "or B1 for a correct partial factorisation such as 3(2x² − 5xy) or x(6x − 15y)", "marks": 1 }
+                {
+                  "text": "B2 for 3x(2x − 5y)",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for a correct partial factorisation such as 3(2x² − 5xy) or x(6x − 15y)",
+                  "marks": 1
+                }
               ],
               "examinerComment": "The word 'completely' signals that all common factors must be taken out. Many candidates removed only 3 or only x."
             },
@@ -124,10 +1118,21 @@
               "prompt": "Find the nth term of the sequence 7, 11, 15, 19, …",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["4n + 3", "4n+3", "3 + 4n", "3+4n"],
+              "acceptedAnswers": [
+                "4n + 3",
+                "4n+3",
+                "3 + 4n",
+                "3+4n"
+              ],
               "markingPoints": [
-                { "text": "B2 for 4n + 3 oe", "marks": 2 },
-                { "text": "or B1 for 4n + k (k ≠ 3) or jn + 3 (j ≠ 0)", "marks": 1 }
+                {
+                  "text": "B2 for 4n + 3 oe",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for 4n + k (k ≠ 3) or jn + 3 (j ≠ 0)",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Common errors were n + 4 and 4n + 7, the latter from using the first term as the constant."
             },
@@ -138,9 +1143,18 @@
               "marks": 3,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "M1 for adding the equations to eliminate y (4x = 16) or a correct substitution", "marks": 1 },
-                { "text": "A1 for x = 4", "marks": 1 },
-                { "text": "A1 for y = 2", "marks": 1 }
+                {
+                  "text": "M1 for adding the equations to eliminate y (4x = 16) or a correct substitution",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = 2",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates who showed the elimination step clearly were most successful. Answers without working could only gain the accuracy marks if both values were correct."
             }
@@ -159,8 +1173,14 @@
               "correctAnswer": "-1.3333333",
               "tolerance": 0.001,
               "markingPoints": [
-                { "text": "M1 for (−3 − 5) ÷ (8 − 2)", "marks": 1 },
-                { "text": "A1 for −4/3 oe", "marks": 1 }
+                {
+                  "text": "M1 for (−3 − 5) ÷ (8 − 2)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −4/3 oe",
+                  "marks": 1
+                }
               ],
               "examinerComment": "A frequent error was inverting the fraction (change in x over change in y). Sign errors were also common."
             },
@@ -172,9 +1192,18 @@
               "answerType": "NUMERIC",
               "correctAnswer": "10",
               "markingPoints": [
-                { "text": "M1 for 6² + 8² or (8 − 2)² + (−3 − 5)²", "marks": 1 },
-                { "text": "M1 for square root of their sum", "marks": 1 },
-                { "text": "A1 for 10", "marks": 1 }
+                {
+                  "text": "M1 for 6² + 8² or (8 − 2)² + (−3 − 5)²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for square root of their sum",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 10",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Well answered by most. Some candidates added the coordinates instead of subtracting."
             },
@@ -184,10 +1213,21 @@
               "prompt": "Find the coordinates of the midpoint of AB. Give your answer in the form (x, y).",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["(5, 1)", "(5,1)", "5, 1", "5,1"],
+              "acceptedAnswers": [
+                "(5, 1)",
+                "(5,1)",
+                "5, 1",
+                "5,1"
+              ],
               "markingPoints": [
-                { "text": "B2 for (5, 1)", "marks": 2 },
-                { "text": "or B1 for one correct coordinate", "marks": 1 }
+                {
+                  "text": "B2 for (5, 1)",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for one correct coordinate",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Very well answered."
             }
@@ -205,8 +1245,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "15",
               "markingPoints": [
-                { "text": "M1 for 360 ÷ (180 − 156)", "marks": 1 },
-                { "text": "A1 for 15", "marks": 1 }
+                {
+                  "text": "M1 for 360 ÷ (180 − 156)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 15",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Using the exterior angle is the most efficient method. Candidates using (n − 2) × 180 = 156n often made algebraic slips."
             },
@@ -217,8 +1263,14 @@
               "marks": 2,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "B1 for 64°", "marks": 1 },
-                { "text": "B1 for reason: the angle at the centre is twice the angle at the circumference", "marks": 1 }
+                {
+                  "text": "B1 for 64°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for reason: the angle at the centre is twice the angle at the circumference",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Reasons must use correct geometrical language. 'Angle at centre is double' without reference to the circumference did not earn the mark."
             },
@@ -230,8 +1282,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "1350",
               "markingPoints": [
-                { "text": "M1 for 400 × (18/12)³ oe", "marks": 1 },
-                { "text": "A1 for 1350", "marks": 1 }
+                {
+                  "text": "M1 for 400 × (18/12)³ oe",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1350",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Many candidates used the linear or area scale factor instead of cubing the length ratio for volume."
             }
@@ -250,8 +1308,14 @@
               "correctAnswer": "6.283",
               "tolerance": 0.01,
               "markingPoints": [
-                { "text": "M1 for (40/360) × 2 × π × 9", "marks": 1 },
-                { "text": "A1 for 6.28 or 6.283…", "marks": 1 }
+                {
+                  "text": "M1 for (40/360) × 2 × π × 9",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.28 or 6.283…",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Some candidates calculated the sector area instead of the arc length."
             },
@@ -264,9 +1328,18 @@
               "correctAnswer": "351.86",
               "tolerance": 0.5,
               "markingPoints": [
-                { "text": "M1 for curved surface 2 × π × 4 × 10", "marks": 1 },
-                { "text": "M1 for 2 × π × 4²", "marks": 1 },
-                { "text": "A1 for 351.9 or 352 (accept 351.8 to 352)", "marks": 1 }
+                {
+                  "text": "M1 for curved surface 2 × π × 4 × 10",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 2 × π × 4²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 351.9 or 352 (accept 351.8 to 352)",
+                  "marks": 1
+                }
               ],
               "examinerComment": "The most common error was to include only one circular end."
             },
@@ -279,8 +1352,14 @@
               "correctAnswer": "7.958",
               "tolerance": 0.01,
               "markingPoints": [
-                { "text": "M1 for (1/3) × π × 6² × h = 300", "marks": 1 },
-                { "text": "A1 for 7.96 or 7.957…", "marks": 1 }
+                {
+                  "text": "M1 for (1/3) × π × 6² × h = 300",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7.96 or 7.957…",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates who forgot the 1/3 obtained 2.65."
             }
@@ -299,8 +1378,14 @@
               "correctAnswer": "57.53",
               "tolerance": 0.05,
               "markingPoints": [
-                { "text": "M1 for tan QPR = 11/7", "marks": 1 },
-                { "text": "A1 for 57.5 or 57.52…", "marks": 1 }
+                {
+                  "text": "M1 for tan QPR = 11/7",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 57.5 or 57.52…",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Labelling the opposite and adjacent sides on a sketch helped candidates choose the correct ratio."
             },
@@ -313,8 +1398,14 @@
               "correctAnswer": "11.36",
               "tolerance": 0.01,
               "markingPoints": [
-                { "text": "M2 for 8² + 13² − 2 × 8 × 13 × cos 60", "marks": 2 },
-                { "text": "A1 for 11.4 or 11.35…", "marks": 1 }
+                {
+                  "text": "M2 for 8² + 13² − 2 × 8 × 13 × cos 60",
+                  "marks": 2
+                },
+                {
+                  "text": "A1 for 11.4 or 11.35…",
+                  "marks": 1
+                }
               ],
               "examinerComment": "A common error was evaluating (8² + 13² − 2 × 8 × 13) × cos 60, which shows a misunderstanding of the order of operations."
             },
@@ -327,8 +1418,14 @@
               "correctAnswer": "45.03",
               "tolerance": 0.05,
               "markingPoints": [
-                { "text": "M1 for 0.5 × 8 × 13 × sin 60", "marks": 1 },
-                { "text": "A1 for 45.0 or 45.03…", "marks": 1 }
+                {
+                  "text": "M1 for 0.5 × 8 × 13 × sin 60",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 45.0 or 45.03…",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Well answered."
             }
@@ -345,9 +1442,18 @@
               "marks": 3,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "B1 for 'Rotation'", "marks": 1 },
-                { "text": "B1 for '90° anticlockwise' oe", "marks": 1 },
-                { "text": "B1 for 'centre (0, 0)' or 'about the origin'", "marks": 1 }
+                {
+                  "text": "B1 for 'Rotation'",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for '90° anticlockwise' oe",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 'centre (0, 0)' or 'about the origin'",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates must give a single transformation. Combinations of transformations scored zero. Many omitted the centre of rotation."
             },
@@ -359,9 +1465,18 @@
               "answerType": "NUMERIC",
               "correctAnswer": "5",
               "markingPoints": [
-                { "text": "B1 for 2a + b = (5, 0)", "marks": 1 },
-                { "text": "M1 for √(5² + 0²)", "marks": 1 },
-                { "text": "A1 for 5", "marks": 1 }
+                {
+                  "text": "B1 for 2a + b = (5, 0)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for √(5² + 0²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Most candidates found 2a + b correctly. Some then gave the vector rather than its magnitude."
             }
@@ -377,10 +1492,20 @@
               "prompt": "Find the probability that both counters are red. Give your answer as a fraction.",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["5/14", "20/56", "10/28"],
+              "acceptedAnswers": [
+                "5/14",
+                "20/56",
+                "10/28"
+              ],
               "markingPoints": [
-                { "text": "M1 for (5/8) × (4/7)", "marks": 1 },
-                { "text": "A1 for 5/14 oe", "marks": 1 }
+                {
+                  "text": "M1 for (5/8) × (4/7)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5/14 oe",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Many candidates treated the selection as with replacement and gave 25/64."
             },
@@ -390,11 +1515,23 @@
               "prompt": "Find the probability that the two counters are different colours. Give your answer as a fraction.",
               "marks": 3,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["15/28", "30/56"],
+              "acceptedAnswers": [
+                "15/28",
+                "30/56"
+              ],
               "markingPoints": [
-                { "text": "M1 for (5/8) × (3/7)", "marks": 1 },
-                { "text": "M1 for adding (3/8) × (5/7), or doubling", "marks": 1 },
-                { "text": "A1 for 15/28 oe", "marks": 1 }
+                {
+                  "text": "M1 for (5/8) × (3/7)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for adding (3/8) × (5/7), or doubling",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 15/28 oe",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates who drew a tree diagram were more likely to consider both orders."
             },
@@ -404,10 +1541,21 @@
               "prompt": "Given that at least one counter is red, find the probability that both are red. Give your answer as a fraction.",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["2/5", "0.4", "10/25", "20/50"],
+              "acceptedAnswers": [
+                "2/5",
+                "0.4",
+                "10/25",
+                "20/50"
+              ],
               "markingPoints": [
-                { "text": "M1 for (5/14) ÷ (1 − 3/28) or (5/14) ÷ (25/28)", "marks": 1 },
-                { "text": "A1 for 2/5 oe", "marks": 1 }
+                {
+                  "text": "M1 for (5/14) ÷ (1 − 3/28) or (5/14) ÷ (25/28)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2/5 oe",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Conditional probability remains challenging. The condition reduces the sample space, so the denominator is P(at least one red)."
             }
@@ -426,10 +1574,22 @@
               "correctAnswer": "5",
               "tolerance": 0.001,
               "markingPoints": [
-                { "text": "M1 for using midpoints 1, 3, 6, 10", "marks": 1 },
-                { "text": "M1 for Σfx = 6 + 42 + 72 + 80 (= 200)", "marks": 1 },
-                { "text": "M1 dep for their Σfx ÷ 40", "marks": 1 },
-                { "text": "A1 for 5", "marks": 1 }
+                {
+                  "text": "M1 for using midpoints 1, 3, 6, 10",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for Σfx = 6 + 42 + 72 + 80 (= 200)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 dep for their Σfx ÷ 40",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Common errors included using class widths or upper bounds instead of midpoints, and dividing by 4 (the number of classes)."
             },
@@ -440,7 +1600,12 @@
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "3",
-              "markingPoints": [{ "text": "B1 for 3", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B1 for 3",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Frequency density = frequency ÷ class width. Some candidates divided by the upper class boundary."
             },
             {
@@ -449,8 +1614,19 @@
               "prompt": "Write down the modal class.",
               "marks": 1,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["2 < m ≤ 4", "2<m≤4", "2 < m <= 4", "2-4", "2 to 4"],
-              "markingPoints": [{ "text": "B1 for 2 < m ≤ 4", "marks": 1 }],
+              "acceptedAnswers": [
+                "2 < m ≤ 4",
+                "2<m≤4",
+                "2 < m <= 4",
+                "2-4",
+                "2 to 4"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 2 < m ≤ 4",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "With unequal class widths the modal class is the one with the highest frequency density. Here 2 < m ≤ 4 has density 7, the highest."
             }
           ]
