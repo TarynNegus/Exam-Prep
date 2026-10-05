@@ -1,0 +1,2651 @@
+{
+  "subject": {
+    "code": "0620",
+    "name": "Chemistry",
+    "qualification": "IGCSE",
+    "syllabusYears": "2026-2028",
+    "description": "Cambridge IGCSE Chemistry. Core students take Papers 1 and 3; Extended students take Papers 2 and 4. The practical papers (5 and 6) are not included. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "routes": [
+    {
+      "id": "core",
+      "name": "Core: Papers 1 and 3",
+      "components": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "id": "extended",
+      "name": "Extended: Papers 2 and 4",
+      "components": [
+        "2",
+        "4"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "ref": "1",
+      "title": "States of matter",
+      "summary": "Solids, liquids and gases, changes of state, diffusion."
+    },
+    {
+      "ref": "2",
+      "title": "Atoms, elements and compounds",
+      "summary": "Atomic structure, isotopes, ions and ionic bonds, covalent bonds, giant structures, metallic bonding."
+    },
+    {
+      "ref": "3",
+      "title": "Stoichiometry",
+      "summary": "Formulae, equations, relative masses and the mole."
+    },
+    {
+      "ref": "4",
+      "title": "Electrochemistry",
+      "summary": "Electrolysis, hydrogen–oxygen fuel cells."
+    },
+    {
+      "ref": "5",
+      "title": "Chemical energetics",
+      "summary": "Exothermic and endothermic reactions, bond energies."
+    },
+    {
+      "ref": "6",
+      "title": "Chemical reactions",
+      "summary": "Physical and chemical changes, rate of reaction, reversible reactions and equilibrium, redox."
+    },
+    {
+      "ref": "7",
+      "title": "Acids, bases and salts",
+      "summary": "Properties of acids and bases, oxides, preparation of salts."
+    },
+    {
+      "ref": "8",
+      "title": "The Periodic Table",
+      "summary": "Arrangement of elements, Group I, Group VII, transition elements, noble gases."
+    },
+    {
+      "ref": "9",
+      "title": "Metals",
+      "summary": "Properties and uses, alloys, reactivity series, corrosion, extraction."
+    },
+    {
+      "ref": "10",
+      "title": "Chemistry of the environment",
+      "summary": "Water, fertilisers, air quality and climate."
+    },
+    {
+      "ref": "11",
+      "title": "Organic chemistry",
+      "summary": "Formulae and homologous series, alkanes, alkenes, alcohols, carboxylic acids, polymers."
+    },
+    {
+      "ref": "12",
+      "title": "Experimental techniques and chemical analysis",
+      "summary": "Experimental design, titrations, chromatography, separation and purification, identification of ions and gases."
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Multiple Choice, Core)",
+      "durationMin": 45,
+      "totalMarks": 40
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Multiple Choice, Extended)",
+      "durationMin": 45,
+      "totalMarks": 40
+    },
+    {
+      "ref": "3",
+      "title": "Paper 3 (Theory, Core)",
+      "durationMin": 75,
+      "totalMarks": 80
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (Theory, Extended)",
+      "durationMin": 75,
+      "totalMarks": 80
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which change of state is a solid turning directly into a gas?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "condensation"
+                },
+                {
+                  "key": "B",
+                  "text": "freezing"
+                },
+                {
+                  "key": "C",
+                  "text": "melting"
+                },
+                {
+                  "key": "D",
+                  "text": "sublimation"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – sublimation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sublimation is the direct change from solid to gas, as with solid carbon dioxide."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which gas diffuses fastest at the same temperature?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "chlorine"
+                },
+                {
+                  "key": "C",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "D",
+                  "text": "ammonia"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – hydrogen",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Gases with a lower relative molecular mass diffuse faster. Hydrogen has Mᵣ = 2."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "An atom has 11 protons and 12 neutrons. What is its nucleon number?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "11"
+                },
+                {
+                  "key": "B",
+                  "text": "12"
+                },
+                {
+                  "key": "C",
+                  "text": "23"
+                },
+                {
+                  "key": "D",
+                  "text": "34"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 23",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Nucleon number = protons + neutrons."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which substance has a giant covalent structure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "copper"
+                },
+                {
+                  "key": "B",
+                  "text": "diamond"
+                },
+                {
+                  "key": "C",
+                  "text": "methane"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium chloride"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – diamond",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sodium chloride is giant ionic; methane is simple molecular; copper is metallic."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "What is the relative formula mass of calcium carbonate, CaCO₃?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "68"
+                },
+                {
+                  "key": "B",
+                  "text": "84"
+                },
+                {
+                  "key": "C",
+                  "text": "100"
+                },
+                {
+                  "key": "D",
+                  "text": "116"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 100",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "40 + 12 + (3 × 16) = 100."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "What volume does 0.50 mol of a gas occupy at room temperature and pressure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "6.0 dm³"
+                },
+                {
+                  "key": "B",
+                  "text": "12 dm³"
+                },
+                {
+                  "key": "C",
+                  "text": "24 dm³"
+                },
+                {
+                  "key": "D",
+                  "text": "48 dm³"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 12 dm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "One mole of any gas occupies 24 dm³ at r.t.p."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Molten lead(II) bromide is electrolysed. What forms at the cathode?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "bromine"
+                },
+                {
+                  "key": "B",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "lead"
+                },
+                {
+                  "key": "D",
+                  "text": "oxygen"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – lead",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Positive lead ions are attracted to the negative cathode and gain electrons."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Concentrated aqueous sodium chloride is electrolysed. What forms at the anode?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chlorine"
+                },
+                {
+                  "key": "B",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – chlorine",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hydrogen forms at the cathode. Sodium is never produced from aqueous solutions."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "What happens to the temperature of the surroundings during an exothermic reaction?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It decreases, then increases."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It increases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Exothermic reactions transfer thermal energy to the surroundings."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Which statement about bonds is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Bond breaking is endothermic."
+                },
+                {
+                  "key": "B",
+                  "text": "Bond breaking is exothermic."
+                },
+                {
+                  "key": "C",
+                  "text": "Bond making is endothermic."
+                },
+                {
+                  "key": "D",
+                  "text": "Bond making needs energy."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Bond breaking is endothermic.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Energy is needed to break bonds; energy is released when bonds form."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Why does increasing the temperature increase the rate of a reaction?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "The activation energy decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "The particles are closer together."
+                },
+                {
+                  "key": "C",
+                  "text": "Particles have more kinetic energy, so there are more frequent successful collisions."
+                },
+                {
+                  "key": "D",
+                  "text": "The concentration of the reactants increases."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – Particles have more kinetic energy, so there are more frequent successful collisions.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should refer to more collisions per second with energy greater than the activation energy."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "What is oxidation in terms of electrons?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "gain of electrons"
+                },
+                {
+                  "key": "B",
+                  "text": "gain of protons"
+                },
+                {
+                  "key": "C",
+                  "text": "loss of electrons"
+                },
+                {
+                  "key": "D",
+                  "text": "loss of protons"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – loss of electrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Remember OIL RIG: oxidation is loss, reduction is gain."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "What is the pH of a neutral solution?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0"
+                },
+                {
+                  "key": "B",
+                  "text": "1"
+                },
+                {
+                  "key": "C",
+                  "text": "7"
+                },
+                {
+                  "key": "D",
+                  "text": "14"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 7",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Which salt is made when dilute sulfuric acid reacts with aqueous sodium hydroxide?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "sodium chloride"
+                },
+                {
+                  "key": "B",
+                  "text": "sodium nitrate"
+                },
+                {
+                  "key": "C",
+                  "text": "sodium sulfate"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium sulfide"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – sodium sulfate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sulfuric acid forms sulfates; sulfides contain no oxygen."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "How does the reactivity of Group I metals change down the group?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It increases, then decreases."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It increases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The outer electron is further from the nucleus and is lost more easily."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Why are the noble gases unreactive?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They are gases."
+                },
+                {
+                  "key": "B",
+                  "text": "They have a full outer shell of electrons."
+                },
+                {
+                  "key": "C",
+                  "text": "They have high melting points."
+                },
+                {
+                  "key": "D",
+                  "text": "They form diatomic molecules."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – They have a full outer shell of electrons.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Noble gases are monatomic, so option D is wrong."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which metal is extracted from bauxite by electrolysis?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "aluminium"
+                },
+                {
+                  "key": "B",
+                  "text": "copper"
+                },
+                {
+                  "key": "C",
+                  "text": "iron"
+                },
+                {
+                  "key": "D",
+                  "text": "zinc"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – aluminium",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Iron and zinc are extracted by reduction with carbon."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "What is needed for iron to rust?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "oxygen only"
+                },
+                {
+                  "key": "B",
+                  "text": "water only"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen and water"
+                },
+                {
+                  "key": "D",
+                  "text": "carbon dioxide and water"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – oxygen and water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Experiments with drying agents and boiled water show both are needed."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Which gas is the main cause of acid rain?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "methane"
+                },
+                {
+                  "key": "C",
+                  "text": "nitrogen"
+                },
+                {
+                  "key": "D",
+                  "text": "sulfur dioxide"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – sulfur dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Carbon dioxide contributes to climate change, not significantly to acid rain."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Approximately what percentage of clean, dry air is nitrogen?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1%"
+                },
+                {
+                  "key": "B",
+                  "text": "21%"
+                },
+                {
+                  "key": "C",
+                  "text": "78%"
+                },
+                {
+                  "key": "D",
+                  "text": "99%"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 78%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Oxygen is about 21%."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What is the general formula of the alkanes?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "CₙH₂ₙ"
+                },
+                {
+                  "key": "B",
+                  "text": "CₙH₂ₙ₊₂"
+                },
+                {
+                  "key": "C",
+                  "text": "CₙH₂ₙ₊₁OH"
+                },
+                {
+                  "key": "D",
+                  "text": "CₙH₂ₙ₋₂"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – CₙH₂ₙ₊₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "CₙH₂ₙ is the general formula of the alkenes."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Which observation shows that a hydrocarbon is an alkene?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It burns with a blue flame."
+                },
+                {
+                  "key": "B",
+                  "text": "It decolourises aqueous bromine."
+                },
+                {
+                  "key": "C",
+                  "text": "It turns limewater milky."
+                },
+                {
+                  "key": "D",
+                  "text": "It turns blue litmus red."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It decolourises aqueous bromine.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Aqueous bromine changes from orange to colourless."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Which method separates sand from water?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chromatography"
+                },
+                {
+                  "key": "B",
+                  "text": "crystallisation"
+                },
+                {
+                  "key": "C",
+                  "text": "distillation"
+                },
+                {
+                  "key": "D",
+                  "text": "filtration"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – filtration",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "How is the Rf value in chromatography calculated?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "distance moved by solvent ÷ distance moved by substance"
+                },
+                {
+                  "key": "B",
+                  "text": "distance moved by substance ÷ distance moved by solvent"
+                },
+                {
+                  "key": "C",
+                  "text": "distance moved by substance − distance moved by solvent"
+                },
+                {
+                  "key": "D",
+                  "text": "distance moved by substance × distance moved by solvent"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – distance moved by substance ÷ distance moved by solvent",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Rf values are always less than 1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which change of state is a solid turning directly into a gas?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "condensation"
+                },
+                {
+                  "key": "B",
+                  "text": "freezing"
+                },
+                {
+                  "key": "C",
+                  "text": "melting"
+                },
+                {
+                  "key": "D",
+                  "text": "sublimation"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – sublimation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sublimation is the direct change from solid to gas, as with solid carbon dioxide."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which gas diffuses fastest at the same temperature?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "chlorine"
+                },
+                {
+                  "key": "C",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "D",
+                  "text": "ammonia"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – hydrogen",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Gases with a lower relative molecular mass diffuse faster. Hydrogen has Mᵣ = 2."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "An atom has 11 protons and 12 neutrons. What is its nucleon number?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "11"
+                },
+                {
+                  "key": "B",
+                  "text": "12"
+                },
+                {
+                  "key": "C",
+                  "text": "23"
+                },
+                {
+                  "key": "D",
+                  "text": "34"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 23",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Nucleon number = protons + neutrons."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which substance has a giant covalent structure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "copper"
+                },
+                {
+                  "key": "B",
+                  "text": "diamond"
+                },
+                {
+                  "key": "C",
+                  "text": "methane"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium chloride"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – diamond",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sodium chloride is giant ionic; methane is simple molecular; copper is metallic."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "What is the relative formula mass of calcium carbonate, CaCO₃?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "68"
+                },
+                {
+                  "key": "B",
+                  "text": "84"
+                },
+                {
+                  "key": "C",
+                  "text": "100"
+                },
+                {
+                  "key": "D",
+                  "text": "116"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 100",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "40 + 12 + (3 × 16) = 100."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "What volume does 0.50 mol of a gas occupy at room temperature and pressure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "6.0 dm³"
+                },
+                {
+                  "key": "B",
+                  "text": "12 dm³"
+                },
+                {
+                  "key": "C",
+                  "text": "24 dm³"
+                },
+                {
+                  "key": "D",
+                  "text": "48 dm³"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 12 dm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "One mole of any gas occupies 24 dm³ at r.t.p."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Molten lead(II) bromide is electrolysed. What forms at the cathode?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "bromine"
+                },
+                {
+                  "key": "B",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "lead"
+                },
+                {
+                  "key": "D",
+                  "text": "oxygen"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – lead",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Positive lead ions are attracted to the negative cathode and gain electrons."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Concentrated aqueous sodium chloride is electrolysed. What forms at the anode?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chlorine"
+                },
+                {
+                  "key": "B",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – chlorine",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hydrogen forms at the cathode. Sodium is never produced from aqueous solutions."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "What happens to the temperature of the surroundings during an exothermic reaction?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It decreases, then increases."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It increases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Exothermic reactions transfer thermal energy to the surroundings."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Which statement about bonds is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Bond breaking is endothermic."
+                },
+                {
+                  "key": "B",
+                  "text": "Bond breaking is exothermic."
+                },
+                {
+                  "key": "C",
+                  "text": "Bond making is endothermic."
+                },
+                {
+                  "key": "D",
+                  "text": "Bond making needs energy."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Bond breaking is endothermic.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Energy is needed to break bonds; energy is released when bonds form."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Why does increasing the temperature increase the rate of a reaction?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "The activation energy decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "The particles are closer together."
+                },
+                {
+                  "key": "C",
+                  "text": "Particles have more kinetic energy, so there are more frequent successful collisions."
+                },
+                {
+                  "key": "D",
+                  "text": "The concentration of the reactants increases."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – Particles have more kinetic energy, so there are more frequent successful collisions.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should refer to more collisions per second with energy greater than the activation energy."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "What is oxidation in terms of electrons?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "gain of electrons"
+                },
+                {
+                  "key": "B",
+                  "text": "gain of protons"
+                },
+                {
+                  "key": "C",
+                  "text": "loss of electrons"
+                },
+                {
+                  "key": "D",
+                  "text": "loss of protons"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – loss of electrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Remember OIL RIG: oxidation is loss, reduction is gain."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "What is the pH of a neutral solution?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0"
+                },
+                {
+                  "key": "B",
+                  "text": "1"
+                },
+                {
+                  "key": "C",
+                  "text": "7"
+                },
+                {
+                  "key": "D",
+                  "text": "14"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 7",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Which salt is made when dilute sulfuric acid reacts with aqueous sodium hydroxide?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "sodium chloride"
+                },
+                {
+                  "key": "B",
+                  "text": "sodium nitrate"
+                },
+                {
+                  "key": "C",
+                  "text": "sodium sulfate"
+                },
+                {
+                  "key": "D",
+                  "text": "sodium sulfide"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – sodium sulfate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sulfuric acid forms sulfates; sulfides contain no oxygen."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "How does the reactivity of Group I metals change down the group?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It increases, then decreases."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It increases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The outer electron is further from the nucleus and is lost more easily."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Why are the noble gases unreactive?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They are gases."
+                },
+                {
+                  "key": "B",
+                  "text": "They have a full outer shell of electrons."
+                },
+                {
+                  "key": "C",
+                  "text": "They have high melting points."
+                },
+                {
+                  "key": "D",
+                  "text": "They form diatomic molecules."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – They have a full outer shell of electrons.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Noble gases are monatomic, so option D is wrong."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which metal is extracted from bauxite by electrolysis?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "aluminium"
+                },
+                {
+                  "key": "B",
+                  "text": "copper"
+                },
+                {
+                  "key": "C",
+                  "text": "iron"
+                },
+                {
+                  "key": "D",
+                  "text": "zinc"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – aluminium",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Iron and zinc are extracted by reduction with carbon."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "What is needed for iron to rust?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "oxygen only"
+                },
+                {
+                  "key": "B",
+                  "text": "water only"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen and water"
+                },
+                {
+                  "key": "D",
+                  "text": "carbon dioxide and water"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – oxygen and water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Experiments with drying agents and boiled water show both are needed."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Which gas is the main cause of acid rain?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "methane"
+                },
+                {
+                  "key": "C",
+                  "text": "nitrogen"
+                },
+                {
+                  "key": "D",
+                  "text": "sulfur dioxide"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – sulfur dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Carbon dioxide contributes to climate change, not significantly to acid rain."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Approximately what percentage of clean, dry air is nitrogen?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1%"
+                },
+                {
+                  "key": "B",
+                  "text": "21%"
+                },
+                {
+                  "key": "C",
+                  "text": "78%"
+                },
+                {
+                  "key": "D",
+                  "text": "99%"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 78%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Oxygen is about 21%."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What is the general formula of the alkanes?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "CₙH₂ₙ"
+                },
+                {
+                  "key": "B",
+                  "text": "CₙH₂ₙ₊₂"
+                },
+                {
+                  "key": "C",
+                  "text": "CₙH₂ₙ₊₁OH"
+                },
+                {
+                  "key": "D",
+                  "text": "CₙH₂ₙ₋₂"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – CₙH₂ₙ₊₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "CₙH₂ₙ is the general formula of the alkenes."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Which observation shows that a hydrocarbon is an alkene?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It burns with a blue flame."
+                },
+                {
+                  "key": "B",
+                  "text": "It decolourises aqueous bromine."
+                },
+                {
+                  "key": "C",
+                  "text": "It turns limewater milky."
+                },
+                {
+                  "key": "D",
+                  "text": "It turns blue litmus red."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It decolourises aqueous bromine.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Aqueous bromine changes from orange to colourless."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Which method separates sand from water?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chromatography"
+                },
+                {
+                  "key": "B",
+                  "text": "crystallisation"
+                },
+                {
+                  "key": "C",
+                  "text": "distillation"
+                },
+                {
+                  "key": "D",
+                  "text": "filtration"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – filtration",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "How is the Rf value in chromatography calculated?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "distance moved by solvent ÷ distance moved by substance"
+                },
+                {
+                  "key": "B",
+                  "text": "distance moved by substance ÷ distance moved by solvent"
+                },
+                {
+                  "key": "C",
+                  "text": "distance moved by substance − distance moved by solvent"
+                },
+                {
+                  "key": "D",
+                  "text": "distance moved by substance × distance moved by solvent"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – distance moved by substance ÷ distance moved by solvent",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Rf values are always less than 1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "3",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 3A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Describe the arrangement and motion of the particles in a liquid.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "close together, in an irregular (random) arrangement",
+                  "marks": 1
+                },
+                {
+                  "text": "particles move / slide past each other",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates described a gas. Liquid particles are still touching."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "An atom of chlorine is represented by ³⁷₁₇Cl. State the number of protons, neutrons and electrons in this atom.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "17 protons",
+                  "marks": 1
+                },
+                {
+                  "text": "20 neutrons",
+                  "marks": 1
+                },
+                {
+                  "text": "17 electrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The neutron number is 37 − 17."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Calculate the relative formula mass of ammonium sulfate, (NH₄)₂SO₄.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "132",
+              "markingPoints": [
+                {
+                  "text": "M1 for 2 × (14 + 4) + 32 + (4 × 16)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 132",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Multiplying the whole NH₄ group by 2 was essential."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "State what is meant by electrolysis.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "decomposition of an ionic compound",
+                  "marks": 1
+                },
+                {
+                  "text": "when molten or in aqueous solution, by the passage of an electric current",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers must state that the compound is broken down."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "The temperature of a reaction mixture rises from 21 °C to 34 °C. State the temperature change and whether the reaction is exothermic or endothermic.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "13 °C",
+                  "marks": 1
+                },
+                {
+                  "text": "exothermic",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Marble chips react with dilute hydrochloric acid. State two ways to increase the rate of this reaction.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "use smaller pieces / powdered marble",
+                  "marks": 1
+                },
+                {
+                  "text": "increase the concentration of the acid",
+                  "marks": 1
+                },
+                {
+                  "text": "increase the temperature",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Add more acid' is not the same as increasing its concentration."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Name the gas produced when zinc reacts with dilute hydrochloric acid, and give a test for it.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "hydrogen",
+                  "marks": 1
+                },
+                {
+                  "text": "a lighted splint gives a squeaky pop",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A glowing splint is the test for oxygen."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Name the two products formed when potassium reacts with water.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "potassium hydroxide",
+                  "marks": 1
+                },
+                {
+                  "text": "hydrogen",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Explain why alloys are often used instead of pure metals.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "alloys are harder / stronger",
+                  "marks": 1
+                },
+                {
+                  "text": "different-sized atoms disrupt the layers so they cannot slide easily",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best answers explained the structure as well as stating the property."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Describe a chemical test for water.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "anhydrous copper(II) sulfate",
+                  "marks": 1
+                },
+                {
+                  "text": "turns from white to blue (or cobalt(II) chloride from blue to pink)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both the reagent and the colour change are needed."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Name the functional group present in ethanol.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "hydroxyl",
+                "hydroxyl group",
+                "-OH",
+                "OH",
+                "–OH",
+                "hydroxy"
+              ],
+              "markingPoints": [
+                {
+                  "text": "hydroxyl (–OH)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Hydroxide' is incorrect: that is an ion."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "In a chromatography experiment, a spot moves 3.0 cm and the solvent front moves 7.5 cm. Calculate the Rf value.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.4",
+              "markingPoints": [
+                {
+                  "text": "M1 for 3.0 ÷ 7.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Ammonia and hydrogen chloride gases are released at opposite ends of a long tube. A white ring of ammonium chloride forms nearer the hydrogen chloride end. Explain why.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ammonia has a lower Mᵣ (17) than hydrogen chloride (36.5)",
+                  "marks": 1
+                },
+                {
+                  "text": "ammonia molecules move / diffuse faster",
+                  "marks": 1
+                },
+                {
+                  "text": "so ammonia travels further before the gases meet",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should compare relative molecular masses using numbers."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Explain why sodium chloride has a high melting point.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "giant ionic lattice",
+                  "marks": 1
+                },
+                {
+                  "text": "strong electrostatic attraction between oppositely charged ions",
+                  "marks": 1
+                },
+                {
+                  "text": "a lot of energy is needed to overcome these forces",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "References to 'strong bonds' without saying what type did not earn full credit."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Calcium carbonate decomposes on heating: CaCO₃ → CaO + CO₂. Calculate the mass of calcium oxide formed from 25 g of calcium carbonate, in g.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "14",
+              "markingPoints": [
+                {
+                  "text": "M1 for moles CaCO₃ = 25 ÷ 100 = 0.25",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for moles CaO = 0.25",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.25 × 56 = 14 g",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Write the ionic half-equation for the reaction at the cathode when copper is deposited from aqueous copper(II) sulfate.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Cu²⁺ and e⁻ on the left, Cu on the right",
+                  "marks": 1
+                },
+                {
+                  "text": "balanced: Cu²⁺ + 2e⁻ → Cu",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Electrons must be gained at the cathode."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Use the bond energies to calculate the energy change for H₂ + Cl₂ → 2HCl, in kJ/mol. Bond energies: H–H 436, Cl–Cl 242, H–Cl 431 kJ/mol.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-184",
+              "markingPoints": [
+                {
+                  "text": "M1 for bonds broken = 678",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for bonds made = 862",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −184 (sign required)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The negative sign shows the reaction is exothermic and is required."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "In the Haber process, N₂ + 3H₂ ⇌ 2NH₃ and the forward reaction is exothermic. State and explain the effect on the yield of ammonia of increasing the pressure.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "yield increases",
+                  "marks": 1
+                },
+                {
+                  "text": "the position of equilibrium shifts to the right",
+                  "marks": 1
+                },
+                {
+                  "text": "because there are fewer moles of gas on the right (2 compared with 4)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should refer to the number of moles of gas on each side."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "25.0 cm³ of aqueous sodium hydroxide is neutralised by 20.0 cm³ of 0.100 mol/dm³ hydrochloric acid. Calculate the concentration of the sodium hydroxide, in mol/dm³.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.08",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for moles HCl = 0.100 × 20.0/1000 = 0.00200",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for moles NaOH = 0.00200 (1 : 1 ratio)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.0800 mol/dm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting cm³ to dm³ was the most common source of error."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Chlorine is bubbled into aqueous potassium bromide. Explain what happens and write the ionic equation.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "chlorine is more reactive than bromine, so it displaces it",
+                  "marks": 1
+                },
+                {
+                  "text": "the solution turns orange / brown",
+                  "marks": 1
+                },
+                {
+                  "text": "Cl₂ + 2Br⁻ → 2Cl⁻ + Br₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Potassium ions are spectator ions and are left out of the ionic equation."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Write the balanced equation for the reduction of iron(III) oxide by carbon monoxide in the blast furnace.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "correct formulae: Fe₂O₃, CO, Fe, CO₂",
+                  "marks": 1
+                },
+                {
+                  "text": "balanced: Fe₂O₃ + 3CO → 2Fe + 3CO₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Explain how a catalytic converter reduces air pollution from car engines.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "carbon monoxide is converted to carbon dioxide",
+                  "marks": 1
+                },
+                {
+                  "text": "oxides of nitrogen are converted to nitrogen",
+                  "marks": 1
+                },
+                {
+                  "text": "e.g. 2CO + 2NO → 2CO₂ + N₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both pollutants and their products were needed for full marks."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Ethanoic acid reacts with ethanol to form an ester. Name the ester and state the conditions needed.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ethyl ethanoate",
+                  "marks": 1
+                },
+                {
+                  "text": "concentrated sulfuric acid as a catalyst, with heating",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Ethanoyl ethanol' and 'ethyl ethanol' were common incorrect names."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Describe a test for ammonium ions in a solution.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "add aqueous sodium hydroxide and warm",
+                  "marks": 1
+                },
+                {
+                  "text": "ammonia gas is given off",
+                  "marks": 1
+                },
+                {
+                  "text": "which turns damp red litmus paper blue",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The litmus paper must be damp."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
