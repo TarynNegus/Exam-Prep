@@ -1,0 +1,3030 @@
+{
+  "subject": {
+    "code": "9701",
+    "name": "Chemistry",
+    "qualification": "AS_A_LEVEL",
+    "syllabusYears": "2025-2027",
+    "description": "Cambridge International AS & A Level Chemistry. AS Level students take Papers 1 and 2 (topics 1–22); A Level students also take Paper 4 (topics 23–37). Calculations use values from the Cambridge Data Booklet. The practical papers (3 and 5) are not included. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "routes": [
+    {
+      "id": "as",
+      "name": "AS Level: Papers 1 and 2",
+      "components": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "a-level",
+      "name": "A Level: Papers 1, 2 and 4",
+      "components": [
+        "1",
+        "2",
+        "4"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "ref": "1",
+      "title": "Atomic structure",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "2",
+      "title": "Atoms, molecules and stoichiometry",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "3",
+      "title": "Chemical bonding",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "4",
+      "title": "States of matter",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "5",
+      "title": "Chemical energetics",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "6",
+      "title": "Electrochemistry",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "7",
+      "title": "Equilibria",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "8",
+      "title": "Reaction kinetics",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "9",
+      "title": "The Periodic Table: chemical periodicity",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "10",
+      "title": "Group 2",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "11",
+      "title": "Group 17",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "12",
+      "title": "Nitrogen and sulfur",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "13",
+      "title": "An introduction to AS Level organic chemistry",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "14",
+      "title": "Hydrocarbons",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "15",
+      "title": "Halogen compounds",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "16",
+      "title": "Hydroxy compounds",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "17",
+      "title": "Carbonyl compounds",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "18",
+      "title": "Carboxylic acids and derivatives",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "19",
+      "title": "Nitrogen compounds",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "20",
+      "title": "Polymerisation",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "21",
+      "title": "Organic synthesis",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "22",
+      "title": "Analytical techniques",
+      "summary": "",
+      "section": "AS Level"
+    },
+    {
+      "ref": "23",
+      "title": "Chemical energetics",
+      "summary": "Lattice energy, Born–Haber cycles, entropy and Gibbs free energy.",
+      "section": "A Level"
+    },
+    {
+      "ref": "24",
+      "title": "Electrochemistry",
+      "summary": "Electrolysis, standard electrode potentials, the Nernst equation.",
+      "section": "A Level"
+    },
+    {
+      "ref": "25",
+      "title": "Equilibria",
+      "summary": "Acids and bases, pH, buffers, solubility product, partition coefficients.",
+      "section": "A Level"
+    },
+    {
+      "ref": "26",
+      "title": "Reaction kinetics",
+      "summary": "Rate equations, orders, half-life, mechanisms, catalysis.",
+      "section": "A Level"
+    },
+    {
+      "ref": "27",
+      "title": "Group 2",
+      "summary": "Thermal stability and solubility of Group 2 compounds.",
+      "section": "A Level"
+    },
+    {
+      "ref": "28",
+      "title": "Chemistry of transition elements",
+      "summary": "Properties, complexes, colour and redox of transition elements.",
+      "section": "A Level"
+    },
+    {
+      "ref": "29",
+      "title": "An introduction to A Level organic chemistry",
+      "summary": "Formulae and isomerism, including optical isomerism and arenes.",
+      "section": "A Level"
+    },
+    {
+      "ref": "30",
+      "title": "Hydrocarbons",
+      "summary": "Arenes and electrophilic substitution.",
+      "section": "A Level"
+    },
+    {
+      "ref": "31",
+      "title": "Halogen compounds",
+      "summary": "Halogenoarenes and SN1/SN2 mechanisms.",
+      "section": "A Level"
+    },
+    {
+      "ref": "32",
+      "title": "Hydroxy compounds",
+      "summary": "Alcohols and phenol.",
+      "section": "A Level"
+    },
+    {
+      "ref": "33",
+      "title": "Carboxylic acids and derivatives",
+      "summary": "Acidity, acyl chlorides, esters.",
+      "section": "A Level"
+    },
+    {
+      "ref": "34",
+      "title": "Nitrogen compounds",
+      "summary": "Amines, phenylamine, azo compounds, amides, amino acids.",
+      "section": "A Level"
+    },
+    {
+      "ref": "35",
+      "title": "Polymerisation",
+      "summary": "Condensation polymers and degradable polymers.",
+      "section": "A Level"
+    },
+    {
+      "ref": "36",
+      "title": "Organic synthesis",
+      "summary": "Synthetic routes and chiral drugs.",
+      "section": "A Level"
+    },
+    {
+      "ref": "37",
+      "title": "Analytical techniques",
+      "summary": "Thin-layer and gas chromatography, carbon-13 and proton NMR.",
+      "section": "A Level"
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Multiple Choice)",
+      "durationMin": 75,
+      "totalMarks": 40,
+      "section": "AS Level"
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (AS Level Structured Questions)",
+      "durationMin": 75,
+      "totalMarks": 60,
+      "section": "AS Level"
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (A Level Structured Questions)",
+      "durationMin": 120,
+      "totalMarks": 100,
+      "section": "A Level"
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "How many neutrons are in the ion ⁸¹Br⁻?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "35"
+                },
+                {
+                  "key": "B",
+                  "text": "36"
+                },
+                {
+                  "key": "C",
+                  "text": "46"
+                },
+                {
+                  "key": "D",
+                  "text": "81"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 46",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Neutrons = nucleon number − proton number = 81 − 35. The charge does not affect the nucleus."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "What is the Mᵣ of hydrated copper(II) sulfate, CuSO₄•5H₂O?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "159.6"
+                },
+                {
+                  "key": "B",
+                  "text": "177.6"
+                },
+                {
+                  "key": "C",
+                  "text": "231.6"
+                },
+                {
+                  "key": "D",
+                  "text": "249.6"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 249.6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Include all five water molecules."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "What is the shape of an ammonia molecule?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "bent"
+                },
+                {
+                  "key": "B",
+                  "text": "tetrahedral"
+                },
+                {
+                  "key": "C",
+                  "text": "trigonal planar"
+                },
+                {
+                  "key": "D",
+                  "text": "trigonal pyramidal"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – trigonal pyramidal",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Three bonding pairs and one lone pair give a trigonal pyramidal shape with a bond angle of about 107°."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Which is an assumption of the ideal gas model?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Molecules have significant volume."
+                },
+                {
+                  "key": "B",
+                  "text": "There are no intermolecular forces."
+                },
+                {
+                  "key": "C",
+                  "text": "Collisions are inelastic."
+                },
+                {
+                  "key": "D",
+                  "text": "Molecules move in fixed directions."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – There are no intermolecular forces.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Real gases deviate most at high pressure and low temperature."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Which process is always exothermic?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "bond breaking"
+                },
+                {
+                  "key": "B",
+                  "text": "bond formation"
+                },
+                {
+                  "key": "C",
+                  "text": "boiling"
+                },
+                {
+                  "key": "D",
+                  "text": "melting"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – bond formation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Energy is released when bonds form."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "What is the oxidation number of manganese in KMnO₄?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "+2"
+                },
+                {
+                  "key": "B",
+                  "text": "+4"
+                },
+                {
+                  "key": "C",
+                  "text": "+6"
+                },
+                {
+                  "key": "D",
+                  "text": "+7"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – +7",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "+1 + x + 4(−2) = 0."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "What is the effect of adding a catalyst to a system at equilibrium?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "The position of equilibrium moves to the right."
+                },
+                {
+                  "key": "B",
+                  "text": "The position of equilibrium moves to the left."
+                },
+                {
+                  "key": "C",
+                  "text": "Equilibrium is reached faster but its position does not change."
+                },
+                {
+                  "key": "D",
+                  "text": "The equilibrium constant increases."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – Equilibrium is reached faster but its position does not change.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A catalyst speeds up the forward and reverse reactions equally."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "How does a catalyst increase the rate of a reaction?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It increases the energy of the molecules."
+                },
+                {
+                  "key": "B",
+                  "text": "It provides an alternative route with a lower activation energy."
+                },
+                {
+                  "key": "C",
+                  "text": "It increases the number of collisions."
+                },
+                {
+                  "key": "D",
+                  "text": "It shifts the equilibrium."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It provides an alternative route with a lower activation energy.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "How does the atomic radius change across Period 3 from sodium to chlorine?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It increases, then decreases."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – It decreases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Nuclear charge increases while shielding stays similar, so electrons are pulled closer."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "How does the solubility of the Group 2 hydroxides change down the group?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It decreases, then increases."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It increases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Contrast this with the sulfates, whose solubility decreases down the group."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "How does the volatility of the halogens change down Group 17?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It decreases."
+                },
+                {
+                  "key": "B",
+                  "text": "It increases."
+                },
+                {
+                  "key": "C",
+                  "text": "It stays the same."
+                },
+                {
+                  "key": "D",
+                  "text": "It increases, then decreases."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – It decreases.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger instantaneous dipole–induced dipole forces raise the boiling point."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Why is nitrogen gas unreactive?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It is non-polar."
+                },
+                {
+                  "key": "B",
+                  "text": "Its molecules are small."
+                },
+                {
+                  "key": "C",
+                  "text": "The N≡N triple bond is very strong."
+                },
+                {
+                  "key": "D",
+                  "text": "It has a full outer shell."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – The N≡N triple bond is very strong.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Which functional group is present in propanone, CH₃COCH₃?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "aldehyde"
+                },
+                {
+                  "key": "B",
+                  "text": "carboxylic acid"
+                },
+                {
+                  "key": "C",
+                  "text": "ester"
+                },
+                {
+                  "key": "D",
+                  "text": "ketone"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – ketone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "What is the mechanism of the reaction between ethene and bromine?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "electrophilic addition"
+                },
+                {
+                  "key": "B",
+                  "text": "electrophilic substitution"
+                },
+                {
+                  "key": "C",
+                  "text": "free-radical substitution"
+                },
+                {
+                  "key": "D",
+                  "text": "nucleophilic addition"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – electrophilic addition",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Which reagent and condition convert bromoethane into ethanol?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "NaOH in ethanol, heat"
+                },
+                {
+                  "key": "B",
+                  "text": "NaOH(aq), heat"
+                },
+                {
+                  "key": "C",
+                  "text": "concentrated H₂SO₄"
+                },
+                {
+                  "key": "D",
+                  "text": "KCN in ethanol"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – NaOH(aq), heat",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Ethanolic NaOH favours elimination to give ethene."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "What is produced when propan-2-ol is heated with acidified potassium dichromate(VI)?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "propanal"
+                },
+                {
+                  "key": "B",
+                  "text": "propanoic acid"
+                },
+                {
+                  "key": "C",
+                  "text": "propanone"
+                },
+                {
+                  "key": "D",
+                  "text": "propene"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – propanone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Secondary alcohols are oxidised to ketones."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Which compounds give an orange precipitate with 2,4-dinitrophenylhydrazine (2,4-DNPH)?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "aldehydes only"
+                },
+                {
+                  "key": "B",
+                  "text": "ketones only"
+                },
+                {
+                  "key": "C",
+                  "text": "both aldehydes and ketones"
+                },
+                {
+                  "key": "D",
+                  "text": "carboxylic acids"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – both aldehydes and ketones",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Tollens' reagent is then used to tell aldehydes from ketones."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Which gas is produced when ethanoic acid reacts with sodium carbonate?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "hydrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "D",
+                  "text": "water vapour"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – carbon dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "Bromoethane is heated with KCN in ethanol. What is the organic product?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ethanamine"
+                },
+                {
+                  "key": "B",
+                  "text": "ethanenitrile"
+                },
+                {
+                  "key": "C",
+                  "text": "propanenitrile"
+                },
+                {
+                  "key": "D",
+                  "text": "propanoic acid"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – propanenitrile",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The CN group adds a carbon atom, so the chain grows from two to three carbons."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "What type of polymer is poly(ethene)?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "addition"
+                },
+                {
+                  "key": "B",
+                  "text": "condensation"
+                },
+                {
+                  "key": "C",
+                  "text": "polyamide"
+                },
+                {
+                  "key": "D",
+                  "text": "polyester"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – addition",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Which two-step route converts ethene into ethanoic acid?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "steam with H₃PO₄ catalyst, then heat under reflux with acidified K₂Cr₂O₇"
+                },
+                {
+                  "key": "B",
+                  "text": "HBr, then NaOH(aq)"
+                },
+                {
+                  "key": "C",
+                  "text": "hydrogen with nickel, then chlorine in UV light"
+                },
+                {
+                  "key": "D",
+                  "text": "KMnO₄, then HCl"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – steam with H₃PO₄ catalyst, then heat under reflux with acidified K₂Cr₂O₇",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Heating under reflux ensures complete oxidation to the acid."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "22",
+              "prompt": "A compound shows a strong infrared absorption at about 1700 cm⁻¹. Which bond is present?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "C–H"
+                },
+                {
+                  "key": "B",
+                  "text": "C=O"
+                },
+                {
+                  "key": "C",
+                  "text": "C–O"
+                },
+                {
+                  "key": "D",
+                  "text": "O–H"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – C=O",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The Data Booklet gives characteristic infrared absorption ranges."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1",
+              "prompt": "Write the full electronic configuration of the Fe²⁺ ion.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "1s2 2s2 2p6 3s2 3p6 3d6",
+                "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶",
+                "[Ar]3d6",
+                "[Ar] 3d6",
+                "[Ar]3d⁶",
+                "[Ar] 3d⁶",
+                "1s22s22p63s23p63d6"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The 4s electrons are lost before the 3d electrons."
+            },
+            {
+              "label": "(b)",
+              "topic": "1",
+              "prompt": "Explain why the first ionisation energy of aluminium is lower than that of magnesium.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the outer electron of Al is in a 3p orbital, which is higher in energy (further from the nucleus)",
+                  "marks": 1
+                },
+                {
+                  "text": "and is shielded by the 3s electrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers referring only to nuclear charge did not explain the anomaly."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2",
+              "prompt": "A sample of chlorine contains 75.0% ³⁵Cl and 25.0% ³⁷Cl. Calculate the relative atomic mass of chlorine.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "35.5",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "M1 for (75 × 35 + 25 × 37) ÷ 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 35.5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2",
+              "prompt": "A hydrocarbon contains 85.7% carbon and 14.3% hydrogen by mass. Find its empirical formula.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "CH2",
+                "CH₂"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 85.7/12.0 and 14.3/1.0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for CH₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Divide by the relative atomic masses, not the percentages by each other."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3",
+              "prompt": "State the H–O–H bond angle in a water molecule, in degrees.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "104.5",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "B1 for 104.5° (accept 104–105°)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each lone pair reduces the angle by about 2.5°."
+            },
+            {
+              "label": "(b)",
+              "topic": "3",
+              "prompt": "Explain why hydrogen fluoride has a much higher boiling point than hydrogen chloride.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "hydrogen bonds form between HF molecules",
+                  "marks": 1
+                },
+                {
+                  "text": "these are stronger than the permanent dipole forces between HCl molecules, so more energy is needed to separate them",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hydrogen bonds are intermolecular; no covalent bonds break on boiling."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4",
+              "prompt": "Calculate the pressure of 0.500 mol of an ideal gas at 300 K in a volume of 0.0100 m³, in Pa.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "124600",
+              "tolerance": 500,
+              "markingPoints": [
+                {
+                  "text": "M1 for p = nRT/V",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.25 × 10⁵ Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Volumes must be in m³. Answers can be typed as 1.25e5."
+            },
+            {
+              "label": "(b)",
+              "topic": "4",
+              "prompt": "0.320 g of a gas occupies 240 cm³ at room conditions. Calculate its Mᵣ. (1 mol of gas occupies 24.0 dm³ at room conditions.)",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "32",
+              "tolerance": 0.1,
+              "markingPoints": [
+                {
+                  "text": "M1 for n = 0.240/24.0 = 0.0100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 32.0",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5",
+              "prompt": "In a calorimetry experiment, the temperature of 50.0 g of water rises by 6.0 °C. Calculate the energy transferred, in J. (c = 4.18 J g⁻¹ K⁻¹)",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1254",
+              "tolerance": 2,
+              "markingPoints": [
+                {
+                  "text": "M1 for q = mcΔT",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1254 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "5",
+              "prompt": "This energy is released when 0.0250 mol of the reactant is used. Calculate the enthalpy change, in kJ mol⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-50.16",
+              "tolerance": 0.1,
+              "markingPoints": [
+                {
+                  "text": "M1 for 1254 ÷ 0.0250 ÷ 1000",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −50.2 (sign required)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The negative sign shows the reaction is exothermic."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "Deduce the oxidation number of sulfur in Na₂S₂O₃.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "B1 for +2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "2(+1) + 2x + 3(−2) = 0."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "Write the half-equation for the reduction of MnO₄⁻ to Mn²⁺ in acidic solution.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "correct species: MnO₄⁻, H⁺, e⁻ → Mn²⁺, H₂O",
+                  "marks": 1
+                },
+                {
+                  "text": "balanced: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Check that charges balance as well as atoms."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "7",
+              "prompt": "For H₂(g) + I₂(g) ⇌ 2HI(g), the equilibrium concentrations are [H₂] = 0.10, [I₂] = 0.10 and [HI] = 0.70 mol dm⁻³. Calculate Kc.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "49",
+              "markingPoints": [
+                {
+                  "text": "M1 for Kc = [HI]² / ([H₂][I₂])",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 49",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Kc has no units here because the units cancel."
+            },
+            {
+              "label": "(b)",
+              "topic": "7",
+              "prompt": "Calculate the pH of 0.010 mol dm⁻³ hydrochloric acid.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "B1 for 2.0",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong acids are fully dissociated."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "8",
+              "prompt": "Fig. 8.1 shows the Boltzmann distribution of molecular energies at two temperatures. Use it to explain why the rate of reaction increases at the higher temperature.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "at T₂ the curve shifts to the right / more molecules have higher energies",
+                  "marks": 1
+                },
+                {
+                  "text": "a greater proportion of molecules have energy ≥ Eₐ (larger area beyond Eₐ)",
+                  "marks": 1
+                },
+                {
+                  "text": "so there are more successful collisions per unit time",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many described more collisions but did not refer to the activation energy.",
+              "figures": [
+                {
+                  "src": "9701/boltzmann.svg",
+                  "alt": "Boltzmann distribution curves at temperatures T1 and a higher T2, with the activation energy Ea marked; the T2 curve is flatter with more molecules beyond Ea.",
+                  "caption": "Fig. 8.1"
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "topic": "8",
+              "prompt": "State what is represented by the area under the curve to the right of Eₐ.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the number of molecules with energy greater than or equal to the activation energy",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "9",
+              "prompt": "Explain why silicon has a very high melting point.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "giant covalent (macromolecular) structure",
+                  "marks": 1
+                },
+                {
+                  "text": "many strong covalent bonds must be broken",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "9",
+              "prompt": "Write an equation for the reaction of sodium oxide with water and state the approximate pH of the solution.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Na₂O + H₂O → 2NaOH",
+                  "marks": 1
+                },
+                {
+                  "text": "pH 13–14",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "10",
+              "prompt": "Describe and explain the trend in thermal stability of the Group 2 carbonates down the group.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "thermal stability increases down the group",
+                  "marks": 1
+                },
+                {
+                  "text": "cation radius increases / charge density decreases",
+                  "marks": 1
+                },
+                {
+                  "text": "so the carbonate ion is polarised less",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers must refer to polarisation of the anion."
+            },
+            {
+              "label": "(b)",
+              "topic": "10",
+              "prompt": "Write an equation for the reaction of calcium with water.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Ca + 2H₂O → Ca(OH)₂ + H₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "11",
+              "prompt": "Describe a test for bromide ions, giving the observations.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "add aqueous silver nitrate (after dilute nitric acid): cream precipitate",
+                  "marks": 1
+                },
+                {
+                  "text": "precipitate soluble in concentrated ammonia but not dilute",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "11",
+              "prompt": "Chlorine reacts with cold aqueous sodium hydroxide. Write the equation and explain why this is a disproportionation reaction.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Cl₂ + 2NaOH → NaCl + NaClO + H₂O",
+                  "marks": 1
+                },
+                {
+                  "text": "chlorine is both oxidised (0 to +1)",
+                  "marks": 1
+                },
+                {
+                  "text": "and reduced (0 to −1)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Oxidation numbers are needed in the explanation."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "12",
+              "prompt": "State the shape of the ammonium ion, NH₄⁺, and its bond angle.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "tetrahedral, 109.5°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "12",
+              "prompt": "Explain how oxides of nitrogen from car engines can harm the environment, and how catalytic converters reduce this.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "NOx contributes to acid rain or photochemical smog",
+                  "marks": 1
+                },
+                {
+                  "text": "catalytic converters reduce NOx to N₂ (e.g. 2CO + 2NO → 2CO₂ + N₂)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "13",
+              "prompt": "Name the compound whose skeletal formula is shown in Fig. 13.1.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2-methylbutane",
+                "2 methylbutane",
+                "methylbutane"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 2-methylbutane",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Number the longest chain from the end nearer the branch.",
+              "figures": [
+                {
+                  "src": "9701/2-methylbutane.svg",
+                  "alt": "Skeletal formula of a five-carbon alkane: a four-carbon chain with a methyl branch on the second carbon.",
+                  "caption": "Fig. 13.1"
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "topic": "13",
+              "prompt": "How many structural isomers have the molecular formula C₄H₁₀?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "B1 for 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Butane and 2-methylpropane."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "14",
+              "prompt": "State the conditions and the type of mechanism for the reaction of methane with chlorine.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "UV light",
+                  "marks": 1
+                },
+                {
+                  "text": "free-radical substitution",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "14",
+              "prompt": "Name the major product of the reaction of propene with hydrogen bromide.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2-bromopropane",
+                "2 bromopropane"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 2-bromopropane",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The more stable secondary carbocation forms."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "15",
+              "prompt": "Name the mechanism of the reaction of bromoethane with aqueous sodium hydroxide.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "nucleophilic substitution",
+                "SN2",
+                "nucleophilic substitution (SN2)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for nucleophilic substitution",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "15",
+              "prompt": "Explain why iodoethane is hydrolysed faster than chloroethane.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the C–I bond is weaker (lower bond energy) than the C–Cl bond",
+                  "marks": 1
+                },
+                {
+                  "text": "so it is broken more easily",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Bond strength, not bond polarity, is the deciding factor."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "16",
+              "prompt": "Classify the alcohol shown in Fig. 16.1 as primary, secondary or tertiary.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "secondary",
+                "secondary alcohol"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for secondary",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The carbon bearing the OH is bonded to two other carbons.",
+              "figures": [
+                {
+                  "src": "9701/butan-2-ol.svg",
+                  "alt": "Skeletal formula of butan-2-ol: a four-carbon chain with an OH group on the second carbon.",
+                  "caption": "Fig. 16.1"
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "topic": "16",
+              "prompt": "State the colour change when a primary alcohol is warmed with acidified potassium dichromate(VI).",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "orange to green",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "17",
+              "prompt": "Describe how Tollens' reagent can distinguish propanal from propanone.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "warm each with Tollens' reagent",
+                  "marks": 1
+                },
+                {
+                  "text": "propanal gives a silver mirror; propanone shows no change",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "17",
+              "prompt": "Name a reducing agent used to reduce aldehydes and ketones to alcohols.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "NaBH4",
+                "NaBH₄",
+                "sodium tetrahydridoborate",
+                "sodium borohydride",
+                "LiAlH4",
+                "LiAlH₄"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for NaBH₄ (or LiAlH₄)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "18",
+              "prompt": "Name the ester formed from methanol and propanoic acid.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "methyl propanoate"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for methyl propanoate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The alcohol part is named first."
+            },
+            {
+              "label": "(b)",
+              "topic": "18",
+              "prompt": "Give the reagents and conditions for the hydrolysis of an ester.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "heat under reflux",
+                  "marks": 1
+                },
+                {
+                  "text": "with dilute acid or aqueous sodium hydroxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "19",
+              "prompt": "State the product formed when propanenitrile is heated under reflux with dilute hydrochloric acid.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "propanoic acid (and ammonium chloride)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "19",
+              "prompt": "Name a reagent that reduces nitriles to amines.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "LiAlH4",
+                "LiAlH₄",
+                "lithium aluminium hydride",
+                "lithium tetrahydridoaluminate",
+                "H2/Ni",
+                "hydrogen with nickel"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for LiAlH₄ (or H₂ with Ni catalyst)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "20",
+              "prompt": "Draw or describe the repeat unit of poly(propene).",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "–CH₂–CH(CH₃)– with continuation bonds",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The methyl group is a side chain, not part of the backbone."
+            },
+            {
+              "label": "(b)",
+              "topic": "20",
+              "prompt": "Explain why poly(alkenes) are not biodegradable.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "they are saturated / have strong non-polar C–C and C–H bonds",
+                  "marks": 1
+                },
+                {
+                  "text": "so they are unreactive and not broken down by microorganisms",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "21",
+              "prompt": "Describe a two-step synthesis of ethanal from bromoethane, giving reagents and conditions.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "step 1: NaOH(aq), heat, to give ethanol",
+                  "marks": 1
+                },
+                {
+                  "text": "step 2: acidified K₂Cr₂O₇",
+                  "marks": 1
+                },
+                {
+                  "text": "heat and distil off the ethanal as it forms",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Heating under reflux would oxidise the ethanal further to ethanoic acid."
+            },
+            {
+              "label": "(b)",
+              "topic": "21",
+              "prompt": "How many chiral centres are present in 2-bromobutane?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "B1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "22",
+              "prompt": "Fig. 22.1 shows the mass spectrum of a compound. Explain what the peaks at m/e 108 and 110 show about the compound.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "two molecular ion peaks of almost equal height, 2 units apart",
+                  "marks": 1
+                },
+                {
+                  "text": "show the compound contains one bromine atom (⁷⁹Br and ⁸¹Br in a 1 : 1 ratio)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Chlorine would give M and M+2 peaks in a 3 : 1 ratio.",
+              "figures": [
+                {
+                  "src": "9701/mass-spectrum.svg",
+                  "alt": "Mass spectrum with a base peak at m/e 29 and molecular ion peaks of almost equal height at m/e 108 and 110.",
+                  "caption": "Fig. 22.1"
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "topic": "22",
+              "prompt": "In another compound's mass spectrum, the M+1 peak is 3.3% of the height of the M peak. Calculate the number of carbon atoms in the molecule.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "B1 for 3.3 ÷ 1.1 = 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each carbon contributes about 1.1% to the M+1 peak."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "23",
+              "prompt": "For a reaction, ΔH = +178 kJ mol⁻¹ and ΔS = +161 J K⁻¹ mol⁻¹. Calculate ΔG at 298 K, in kJ mol⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "130",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "M1 for ΔG = ΔH − TΔS with ΔS in kJ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for +130",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting ΔS to kJ K⁻¹ mol⁻¹ is essential."
+            },
+            {
+              "label": "(b)",
+              "topic": "23",
+              "prompt": "Calculate the minimum temperature, in K, above which this reaction is feasible.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1106",
+              "tolerance": 5,
+              "markingPoints": [
+                {
+                  "text": "M1 for T = ΔH ÷ ΔS",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1110 K (1106)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "23",
+              "prompt": "Define lattice energy.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the energy change when one mole of an ionic solid is formed",
+                  "marks": 1
+                },
+                {
+                  "text": "from its gaseous ions under standard conditions",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Lattice energy is exothermic."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "24",
+              "prompt": "Calculate the standard cell potential for a cell made from Zn²⁺/Zn (E° = −0.76 V) and Cu²⁺/Cu (E° = +0.34 V), in V.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.1",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for 1.10 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "24",
+              "prompt": "A current of 0.500 A is passed through aqueous copper(II) sulfate for 30.0 minutes. Calculate the mass of copper deposited, in g. (F = 96 500 C mol⁻¹)",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.2961",
+              "tolerance": 0.002,
+              "markingPoints": [
+                {
+                  "text": "M1 for Q = 900 C",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for moles Cu = 900 ÷ 96 500 ÷ 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.296 g",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Two moles of electrons are needed per mole of copper."
+            },
+            {
+              "label": "(c)",
+              "topic": "24",
+              "prompt": "Use the Nernst equation to calculate the electrode potential of Cu²⁺/Cu when [Cu²⁺] = 0.010 mol dm⁻³, in V. E = E° + (0.059/z) log[oxidised form]",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.281",
+              "tolerance": 0.002,
+              "markingPoints": [
+                {
+                  "text": "M1 for 0.34 + (0.059/2) log 0.010",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.281 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "25",
+              "prompt": "Calculate the pH of 0.100 mol dm⁻³ ethanoic acid. (Ka = 1.74 × 10⁻⁵ mol dm⁻³)",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.88",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "M1 for [H⁺] = √(Ka × c)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.88",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "25",
+              "prompt": "Calculate the pH of a buffer containing 0.10 mol dm⁻³ ethanoic acid and 0.20 mol dm⁻³ sodium ethanoate.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5.06",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "M1 for [H⁺] = Ka × [acid]/[salt]",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.06",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "25",
+              "prompt": "The solubility of silver chloride is 1.3 × 10⁻⁵ mol dm⁻³. Calculate its solubility product, Ksp.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.69e-10",
+              "tolerance": 2e-12,
+              "markingPoints": [
+                {
+                  "text": "M1 for Ksp = [Ag⁺][Cl⁻] = s²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.7 × 10⁻¹⁰ mol² dm⁻⁶",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers can be typed as 1.69e-10."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "26",
+              "prompt": "A reaction has the rate equation rate = k[A][B]². By what factor does the rate increase if [B] is doubled?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "markingPoints": [
+                {
+                  "text": "B1 for 4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "26",
+              "prompt": "A first-order reaction has a rate constant of 0.0231 s⁻¹. Calculate its half-life, in s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30.01",
+              "tolerance": 0.2,
+              "markingPoints": [
+                {
+                  "text": "M1 for t½ = ln 2 ÷ k",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 30.0 s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "26",
+              "prompt": "Explain what is meant by the rate-determining step.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the slowest step in a reaction mechanism",
+                  "marks": 1
+                },
+                {
+                  "text": "which controls the overall rate of reaction",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "27",
+              "prompt": "Explain why the solubility of the Group 2 sulfates decreases down the group.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "both lattice energy and hydration enthalpy become less exothermic",
+                  "marks": 1
+                },
+                {
+                  "text": "hydration enthalpy decreases more because the cation gets much larger while the large sulfate ion dominates the lattice energy",
+                  "marks": 1
+                },
+                {
+                  "text": "so the enthalpy change of solution becomes more endothermic",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "This is one of the most demanding explanations at A Level."
+            },
+            {
+              "label": "(b)",
+              "topic": "27",
+              "prompt": "Write an equation for the thermal decomposition of magnesium nitrate.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "correct products: MgO, NO₂, O₂",
+                  "marks": 1
+                },
+                {
+                  "text": "balanced: 2Mg(NO₃)₂ → 2MgO + 4NO₂ + O₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "27",
+              "prompt": "Which carbonate is the most thermally stable: MgCO₃, CaCO₃ or BaCO₃?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "BaCO3",
+                "BaCO₃",
+                "barium carbonate"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for BaCO₃",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "28",
+              "prompt": "Give the electronic configuration of the Cu²⁺ ion, using [Ar] for the core.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "[Ar]3d9",
+                "[Ar] 3d9",
+                "[Ar]3d⁹",
+                "[Ar] 3d⁹"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for [Ar] 3d⁹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "28",
+              "prompt": "Explain why the [Cu(H₂O)₆]²⁺ ion is coloured.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ligands split the d orbitals into two energy levels",
+                  "marks": 1
+                },
+                {
+                  "text": "an electron absorbs light energy (of a particular frequency) and is promoted to the higher level",
+                  "marks": 1
+                },
+                {
+                  "text": "the colour seen is the complementary colour of the light absorbed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers referring to emission of light were not credited."
+            },
+            {
+              "label": "(c)",
+              "topic": "28",
+              "prompt": "State the coordination number of cobalt in [Co(NH₃)₆]³⁺.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "B1 for 6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "29",
+              "prompt": "A molecule has two different chiral centres and no plane of symmetry. How many stereoisomers does it have?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "markingPoints": [
+                {
+                  "text": "B1 for 4 (2²)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "29",
+              "prompt": "Describe the bonding in benzene.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "each carbon uses three electrons in σ bonds and one p electron",
+                  "marks": 1
+                },
+                {
+                  "text": "p orbitals overlap to form a delocalised π system above and below the ring",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "29",
+              "prompt": "Name the type of stereoisomerism shown by but-2-ene.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "geometric",
+                "geometrical",
+                "cis-trans",
+                "cis/trans",
+                "E/Z",
+                "geometric isomerism",
+                "cis-trans isomerism"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for geometrical (cis/trans) isomerism",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "30",
+              "prompt": "Name the mechanism of the nitration of benzene.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "electrophilic substitution"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for electrophilic substitution",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "30",
+              "prompt": "Write an equation to show how the electrophile is formed in the nitration of benzene.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "NO₂⁺ formed from concentrated HNO₃ and H₂SO₄",
+                  "marks": 1
+                },
+                {
+                  "text": "HNO₃ + 2H₂SO₄ → NO₂⁺ + H₃O⁺ + 2HSO₄⁻ (or HNO₃ + H₂SO₄ → NO₂⁺ + HSO₄⁻ + H₂O)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "30",
+              "prompt": "Explain why benzene undergoes substitution rather than addition reactions.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "addition would destroy the delocalised π system",
+                  "marks": 1
+                },
+                {
+                  "text": "substitution keeps the stable delocalised ring",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "31",
+              "prompt": "Explain why chlorobenzene does not undergo nucleophilic substitution with aqueous NaOH.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a lone pair on Cl is delocalised into the ring",
+                  "marks": 1
+                },
+                {
+                  "text": "so the C–Cl bond is stronger / has partial double-bond character",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "31",
+              "prompt": "State whether a tertiary halogenoalkane is hydrolysed mainly by an SN1 or SN2 mechanism.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "SN1",
+                "S N 1",
+                "SN 1"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for SN1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The tertiary carbocation is stabilised by alkyl groups."
+            },
+            {
+              "label": "(c)",
+              "topic": "31",
+              "prompt": "How many steps are there in an SN2 mechanism?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "B1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "32",
+              "prompt": "Describe what is observed when bromine water is added to phenol, and name the product.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "orange colour disappears and a white precipitate forms",
+                  "marks": 1
+                },
+                {
+                  "text": "2,4,6-tribromophenol",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "32",
+              "prompt": "Explain why phenol is a stronger acid than ethanol.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the negative charge on the phenoxide ion is delocalised into the ring",
+                  "marks": 1
+                },
+                {
+                  "text": "so the phenoxide ion is more stable than the ethoxide ion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "32",
+              "prompt": "Name the organic product formed when phenol reacts with aqueous sodium hydroxide.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "sodium phenoxide"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for sodium phenoxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "33",
+              "prompt": "Name the products formed when ethanoyl chloride reacts with water.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ethanoic acid",
+                  "marks": 1
+                },
+                {
+                  "text": "hydrogen chloride",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Steamy fumes of HCl are observed."
+            },
+            {
+              "label": "(b)",
+              "topic": "33",
+              "prompt": "Explain why chloroethanoic acid is a stronger acid than ethanoic acid.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "chlorine is electron-withdrawing",
+                  "marks": 1
+                },
+                {
+                  "text": "which stabilises the carboxylate anion by spreading its negative charge",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "33",
+              "prompt": "Name the organic product of the reaction between ethanoyl chloride and ammonia.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "ethanamide"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for ethanamide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "34",
+              "prompt": "Explain why phenylamine is a weaker base than ethylamine.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the nitrogen lone pair is delocalised into the benzene ring",
+                  "marks": 1
+                },
+                {
+                  "text": "so it is less available to accept a proton",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "34",
+              "prompt": "Give the reagents and conditions for making a diazonium salt from phenylamine.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "NaNO₂ and dilute HCl (nitrous acid)",
+                  "marks": 1
+                },
+                {
+                  "text": "below 10 °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Above 10 °C the diazonium salt decomposes."
+            },
+            {
+              "label": "(c)",
+              "topic": "34",
+              "prompt": "What is a zwitterion?",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "an ion with both a positive and a negative charge but no overall charge, e.g. ⁺H₃N–CH₂–COO⁻",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "35",
+              "prompt": "What type of polymerisation forms nylon-6,6?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "condensation",
+                "condensation polymerisation"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for condensation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "35",
+              "prompt": "Name the small molecule eliminated when a polyester forms from a diol and a dicarboxylic acid.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "water",
+                "H2O",
+                "H₂O"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using a diacyl chloride eliminates HCl instead."
+            },
+            {
+              "label": "(c)",
+              "topic": "35",
+              "prompt": "Explain why polyamides can be broken down by hydrolysis but poly(alkenes) cannot.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "polyamides contain polar amide links",
+                  "marks": 1
+                },
+                {
+                  "text": "which can be hydrolysed by acid or alkali; poly(alkenes) have only non-polar C–C and C–H bonds",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "36",
+              "prompt": "Give the reagents and conditions for converting benzene into methylbenzene.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "CH₃Cl (chloromethane)",
+                  "marks": 1
+                },
+                {
+                  "text": "with an AlCl₃ catalyst, anhydrous (Friedel–Crafts alkylation)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "36",
+              "prompt": "Explain why pharmaceutical companies often produce only one enantiomer of a chiral drug.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the other enantiomer may be inactive or have harmful side effects",
+                  "marks": 1
+                },
+                {
+                  "text": "so a smaller dose is needed / fewer side effects",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "36",
+              "prompt": "How many carbon atoms are added to a chain when a halogenoalkane reacts with KCN?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "B1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "This is a useful way to lengthen a carbon chain."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "37",
+              "prompt": "Fig. 37.1 shows the ¹H NMR spectrum of ethanol. How many different proton environments are there?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "B1 for 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each environment gives one set of peaks.",
+              "figures": [
+                {
+                  "src": "9701/nmr-ethanol.svg",
+                  "alt": "Proton NMR spectrum of ethanol: a triplet at 1.2 ppm (3H), a singlet at 2.6 ppm (1H) and a quartet at 3.7 ppm (2H).",
+                  "caption": "Fig. 37.1"
+                }
+              ]
+            },
+            {
+              "label": "(b)",
+              "topic": "37",
+              "prompt": "State the splitting pattern of the CH₃ protons in the ¹H NMR spectrum of ethanol.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "triplet"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for triplet (n + 1 rule, 2 neighbouring H)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "37",
+              "prompt": "How many peaks are there in the ¹³C NMR spectrum of propanone?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "B1 for 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The two methyl carbons are equivalent."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
