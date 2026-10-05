@@ -1,9 +1,25 @@
 import type { PrismaClient } from "@prisma/client";
 import { contentFileSchema } from "./content-schema";
 
+/** JSON with object keys sorted, so values read back from jsonb columns compare equal. */
+function canonical(value: unknown): string {
+  return JSON.stringify(value ?? null, (_, v) =>
+    v && typeof v === "object" && !Array.isArray(v)
+      ? Object.fromEntries(Object.keys(v).sort().map((k) => [k, v[k]]))
+      : v,
+  );
+}
+
+/** True when every field in `wanted` already has that value in `stored`. */
+function unchanged(stored: Record<string, unknown>, wanted: Record<string, unknown>): boolean {
+  return Object.keys(wanted).every((key) => canonical(stored[key]) === canonical(wanted[key]));
+}
+
 /**
  * Validates a content file and upserts it into the database. Re-importing the
  * same file updates content in place, so students' answers are preserved.
+ * Papers, questions and parts that are already up to date are skipped, so a
+ * re-import over a remote connection only pays for what changed.
  */
 export async function importContent(db: PrismaClient, raw: unknown) {
   const content = contentFileSchema.parse(raw);
@@ -37,20 +53,39 @@ export async function importContent(db: PrismaClient, raw: unknown) {
         componentIds.set(c.ref, component.id);
       }
 
+      // Everything already stored for this subject's papers, read in one query.
+      const existingPapers = await tx.pastPaper.findMany({
+        where: { componentId: { in: [...componentIds.values()] } },
+        include: { questions: { include: { parts: true } } },
+      });
+      const storedPaper = new Map(existingPapers.map((p) => [`${p.componentId}|${p.series}|${p.variant}`, p]));
+
       let partCount = 0;
       for (const p of content.papers) {
         const componentId = componentIds.get(p.component)!;
-        const paper = await tx.pastPaper.upsert({
-          where: { componentId_series_variant: { componentId, series: p.series, variant: p.variant } },
-          update: { title: p.title, questionBank: p.questionBank },
-          create: { componentId, series: p.series, variant: p.variant, title: p.title, questionBank: p.questionBank },
-        });
+        const paperData = { title: p.title, questionBank: p.questionBank };
+        const existingPaper = storedPaper.get(`${componentId}|${p.series}|${p.variant}`);
+        const paper =
+          existingPaper && unchanged(existingPaper, paperData)
+            ? existingPaper
+            : await tx.pastPaper.upsert({
+                where: { componentId_series_variant: { componentId, series: p.series, variant: p.variant } },
+                update: paperData,
+                create: { componentId, series: p.series, variant: p.variant, ...paperData },
+              });
+        const storedQuestion = new Map((existingPaper?.questions ?? []).map((q) => [q.number, q]));
         for (const q of p.questions) {
-          const question = await tx.question.upsert({
-            where: { paperId_number: { paperId: paper.id, number: q.number } },
-            update: { stem: q.stem, figures: q.figures },
-            create: { paperId: paper.id, number: q.number, stem: q.stem, figures: q.figures },
-          });
+          const questionData = { stem: q.stem, figures: q.figures };
+          const existingQuestion = storedQuestion.get(q.number);
+          const question =
+            existingQuestion && unchanged(existingQuestion, questionData)
+              ? existingQuestion
+              : await tx.question.upsert({
+                  where: { paperId_number: { paperId: paper.id, number: q.number } },
+                  update: questionData,
+                  create: { paperId: paper.id, number: q.number, ...questionData },
+                });
+          const storedPart = new Map((existingQuestion?.parts ?? []).map((part) => [part.position, part]));
           for (const [position, part] of q.parts.entries()) {
             const data = {
               topicId: topicIds.get(part.topic)!,
@@ -69,12 +104,14 @@ export async function importContent(db: PrismaClient, raw: unknown) {
               answerExpression: part.answerExpression ?? null,
               relativeTolerance: part.relativeTolerance ?? null,
             };
+            partCount += 1;
+            const existingPart = storedPart.get(position);
+            if (existingPart && unchanged(existingPart, data)) continue;
             await tx.questionPart.upsert({
               where: { questionId_position: { questionId: question.id, position } },
               update: data,
               create: { ...data, questionId: question.id, position },
             });
-            partCount += 1;
           }
         }
       }

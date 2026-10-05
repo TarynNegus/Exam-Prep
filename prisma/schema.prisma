@@ -162,7 +162,7 @@ model QuestionPart {
   markingPoints   Json       // mark scheme: [{ text: "...", marks: 1 }]
   examinerComment String     @default("") // examiner's report commentary
   figures         Json       @default("[]") // [{ src, alt, caption }] shown with the prompt
-  // Number variants: {{name}} placeholders in the text take values from
+  // Number variants: {name} and {=expression} placeholders in the text take values from
   // variables ({ name: { min, max, step, value } }); answerExpression gives
   // the answer for any set of values.
   variables         Json     @default("{}")
