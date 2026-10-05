@@ -32,7 +32,7 @@ export function AnswerInput({ part, value, onChange, disabled }: Props) {
               className="mt-0.5"
             />
             <span>
-              <span className="font-semibold">{option.key}</span> {option.text}
+              <span className="font-semibold">{option.displayKey}</span> {option.text}
             </span>
           </label>
         ))}

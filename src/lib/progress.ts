@@ -5,8 +5,8 @@
 export const TOPIC_PASS_PERCENT = 60;
 /** Minimum number of parts attempted before a topic can be complete. */
 export const TOPIC_MIN_PARTS = 3;
-/** Number of topics per subject available without a subscription. */
-export const FREE_TOPICS_PER_SUBJECT = 2;
+/** Number of topics per section available without a subscription. */
+export const FREE_TOPICS_PER_SECTION = 2;
 
 export type TopicStatus = "NOT_STARTED" | "IN_PROGRESS" | "COMPLETE";
 
@@ -77,28 +77,59 @@ export function computeTopicProgress(
   return result;
 }
 
-/** Topics unlock in syllabus order: each requires the previous one complete. */
-export function unlockedTopicIds(orderedTopicIds: string[], progress: Map<string, TopicProgress>): Set<string> {
+/**
+ * Topics unlock in syllabus order within their section: each requires the
+ * previous topic in the same section to be complete. Sections are independent,
+ * so students can follow the papers they are taking.
+ */
+export function unlockedTopicIds(
+  orderedTopics: { id: string; section: string }[],
+  progress: Map<string, TopicProgress>,
+): Set<string> {
   const unlocked = new Set<string>();
-  for (const topicId of orderedTopicIds) {
-    unlocked.add(topicId);
-    if (progress.get(topicId)?.status !== "COMPLETE") break;
+  const blocked = new Set<string>();
+  for (const { id, section } of orderedTopics) {
+    if (blocked.has(section)) continue;
+    unlocked.add(id);
+    if (progress.get(id)?.status !== "COMPLETE") blocked.add(section);
   }
   return unlocked;
 }
 
-/** Without a subscription only the first few topics of a subject are open. */
-export function isTopicInPlan(topicIndex: number, hasSubscription: boolean): boolean {
-  return hasSubscription || topicIndex < FREE_TOPICS_PER_SUBJECT;
+/** Without a subscription only the first few topics of each section are open. */
+export function isTopicInPlan(indexInSection: number, hasSubscription: boolean): boolean {
+  return hasSubscription || indexInSection < FREE_TOPICS_PER_SECTION;
 }
 
-/** Full past papers open once every topic in the syllabus is complete. */
-export function fullPapersUnlocked(progress: Map<string, TopicProgress>): boolean {
-  return [...progress.values()].every((p) => p.status === "COMPLETE");
+/** A full past paper opens once every topic it assesses is complete. */
+export function paperUnlocked(paperTopicIds: Iterable<string>, progress: Map<string, TopicProgress>): boolean {
+  return [...paperTopicIds].every((id) => progress.get(id)?.status === "COMPLETE");
 }
 
 export function overallPercent(progress: Map<string, TopicProgress>): number {
   const all = [...progress.values()];
   if (all.length === 0) return 0;
   return Math.round((all.filter((p) => p.status === "COMPLETE").length / all.length) * 100);
+}
+
+export interface Route {
+  id: string;
+  name: string;
+  components: string[];
+}
+
+/**
+ * The components and topic sections a student studies. Subjects without routes
+ * include everything; with routes, only the chosen papers and the sections they assess.
+ */
+export function routeScope<C extends { ref: string; section: string }>(
+  route: Route | null,
+  components: C[],
+): { components: C[]; includesSection: (section: string) => boolean } {
+  if (!route) return { components, includesSection: () => true };
+  const chosen = components.filter((c) => route.components.includes(c.ref));
+  // A component without a section (e.g. a Core or Extended tier paper) assesses every topic.
+  if (chosen.some((c) => c.section === "")) return { components: chosen, includesSection: () => true };
+  const sections = new Set(chosen.map((c) => c.section));
+  return { components: chosen, includesSection: (section) => sections.has(section) };
 }

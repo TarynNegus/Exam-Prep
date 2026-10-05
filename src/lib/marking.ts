@@ -14,6 +14,8 @@ export interface MarkablePart {
   marks: number;
   correctAnswer: string | null;
   tolerance: number | null;
+  /** Extra tolerance as a fraction of the answer, for questions whose numbers vary. */
+  relativeTolerance?: number | null;
   acceptedAnswers: string[];
 }
 
@@ -24,16 +26,41 @@ export interface MarkResult {
   autoMarked: boolean;
 }
 
-/** Parses "1,250", "-3.5", "3/4", "12 cm" etc. Returns null if no number found. */
+const SUPERSCRIPTS: Record<string, string> = {
+  "⁰": "0",
+  "¹": "1",
+  "²": "2",
+  "³": "3",
+  "⁴": "4",
+  "⁵": "5",
+  "⁶": "6",
+  "⁷": "7",
+  "⁸": "8",
+  "⁹": "9",
+  "⁻": "-",
+  "⁺": "+",
+};
+
+/**
+ * Parses "1,250", "-3.5", "3/4", "12 cm", "$31,667", and standard form such as "2.0e11",
+ * "2.0 × 10^11", "2.0x10^-5" or "2.0 × 10⁻⁵". Returns null if no number is found.
+ */
 export function parseNumeric(raw: string): number | null {
-  const text = raw.trim().replace(/[\s,]/g, "");
+  const text = raw
+    .trim()
+    .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]+/g, (sup) => "^" + [...sup].map((c) => SUPERSCRIPTS[c]).join(""))
+    .replace(/[\s,]/g, "")
+    .replace(/[−–]/g, "-")
+    .replace(/^(-?)[$£€¥]/, "$1"); // currency sign before the number
   const fraction = text.match(/^(-?\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?)/);
   if (fraction) {
     const denominator = Number(fraction[2]);
     return denominator === 0 ? null : Number(fraction[1]) / denominator;
   }
-  const number = text.match(/^-?(?:\d+(?:\.\d*)?|\.\d+)/);
-  return number ? Number(number[0]) : null;
+  const number = text.match(/^(-?(?:\d+(?:\.\d*)?|\.\d+))(?:[eE]([+-]?\d+)|[x×*]10\^?([+-]?\d+))?/);
+  if (!number) return null;
+  const exponent = number[2] ?? number[3];
+  return Number(exponent === undefined ? number[1] : `${number[1]}e${exponent}`);
 }
 
 export function normaliseText(raw: string): string {
@@ -54,7 +81,14 @@ export function markResponse(part: MarkablePart, response: string): MarkResult {
     case "NUMERIC": {
       const value = parseNumeric(response);
       const expected = parseNumeric(part.correctAnswer ?? "");
-      if (value !== null && expected !== null && Math.abs(value - expected) <= (part.tolerance ?? 0) + 1e-9) {
+      // The tiny relative allowance absorbs floating-point error without
+      // accepting wrong answers to very small quantities.
+      if (
+        value !== null &&
+        expected !== null &&
+        Math.abs(value - expected) <=
+          (part.tolerance ?? 0) + Math.abs(expected) * ((part.relativeTolerance ?? 0) + 1e-9)
+      ) {
         return { awardedMarks: part.marks, autoMarked: true };
       }
       // A wrong final answer may still earn method marks, so let the student

@@ -10,10 +10,10 @@ export async function accessibleTopic(user: User, topicId: string) {
   const data = await loadSubjectProgress(topic.subjectId, user);
   const view = data?.topics.find((t) => t.id === topicId);
   if (!data || !view || !view.unlocked || !view.inPlan) return null;
-  return { topic, view, subject: data.subject };
+  return { topic, view, subject: data.subject, componentIds: data.componentIds };
 }
 
-/** Full papers require a subscription and every topic in the subject complete. */
+/** Full papers require a subscription and every topic the paper assesses complete. */
 export async function canSitPaper(user: User, paperId: string) {
   const paper = await db.pastPaper.findUnique({
     where: { id: paperId },
@@ -21,5 +21,13 @@ export async function canSitPaper(user: User, paperId: string) {
   });
   if (!paper) return false;
   const data = await loadSubjectProgress(paper.component.subjectId, user);
-  return !!data?.papersUnlocked;
+  return !!data?.unlockedPapers.has(paperId);
+}
+
+/** Returns the component if the user may start a randomised practice test for it. */
+export async function canStartPracticeTest(user: User, componentId: string) {
+  const component = await db.component.findUnique({ where: { id: componentId } });
+  if (!component) return null;
+  const data = await loadSubjectProgress(component.subjectId, user);
+  return data?.unlockedComponents.has(componentId) ? component : null;
 }

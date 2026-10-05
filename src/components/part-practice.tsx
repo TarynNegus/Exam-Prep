@@ -3,8 +3,9 @@
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
-import { submitPracticeAnswer, submitSelfMark, type PracticeResult } from "@/lib/practice-actions";
+import { newPracticeVariant, submitPracticeAnswer, submitSelfMark, type PracticeResult } from "@/lib/practice-actions";
 import { AnswerInput } from "./answer-input";
+import { Figures } from "./figures";
 import { FeedbackPanel } from "./feedback-panel";
 
 interface Props {
@@ -12,7 +13,9 @@ interface Props {
   lastScore: number | null;
 }
 
-export function PartPractice({ part, lastScore }: Props) {
+export function PartPractice({ part: initialPart, lastScore }: Props) {
+  // The version on screen: "Try again" swaps in a new one with different numbers.
+  const [part, setPart] = useState(initialPart);
   const [response, setResponse] = useState("");
   const [result, setResult] = useState<PracticeResult | null>(null);
   const [awarded, setAwarded] = useState<number | null>(null);
@@ -24,7 +27,7 @@ export function PartPractice({ part, lastScore }: Props) {
     setError(null);
     startTransition(async () => {
       try {
-        const r = await submitPracticeAnswer(part.id, response);
+        const r = await submitPracticeAnswer(part.id, response, part.seed);
         setResult(r);
         setAwarded(r.autoMarked ? r.awardedMarks : null);
         if (r.autoMarked) router.refresh(); // update topic progress
@@ -42,9 +45,17 @@ export function PartPractice({ part, lastScore }: Props) {
   }
 
   function retry() {
-    setResponse("");
-    setResult(null);
-    setAwarded(null);
+    setError(null);
+    startTransition(async () => {
+      try {
+        setPart(await newPracticeVariant(part.id));
+      } catch {
+        // Keep the current version if a new one cannot be loaded.
+      }
+      setResponse("");
+      setResult(null);
+      setAwarded(null);
+    });
   }
 
   return (
@@ -56,8 +67,13 @@ export function PartPractice({ part, lastScore }: Props) {
         </p>
         <span className="shrink-0 text-sm text-slate-500">[{part.marks}]</span>
       </div>
+      <div className="mb-3">
+        <Figures figures={part.figures} />
+      </div>
       {lastScore !== null && !result && (
-        <p className="mb-2 text-xs text-slate-500">Last attempt: {lastScore}/{part.marks}</p>
+        <p className="mb-2 text-xs text-slate-500">
+          Last attempt: {lastScore}/{part.marks}
+        </p>
       )}
 
       <AnswerInput part={part} value={response} onChange={setResponse} disabled={!!result} />
@@ -76,7 +92,9 @@ export function PartPractice({ part, lastScore }: Props) {
             onSelfMark={selfMark}
           />
           {awarded !== null && (
-            <button className="btn-secondary mt-3" onClick={retry}>Try again</button>
+            <button className="btn-secondary mt-3" onClick={retry}>
+              Try again
+            </button>
           )}
         </>
       )}

@@ -13,11 +13,13 @@ jobs:
       DIRECT_URL: postgresql://user:pass@localhost:5432/db
       SESSION_SECRET: ci-secret-0123456789abcdef0123456789abcdef
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
+      # pdftoppm (poppler) renders PDF pages for the paper converter's figure cropping.
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - run: npm ci
       - run: npm run lint
       - run: npm test

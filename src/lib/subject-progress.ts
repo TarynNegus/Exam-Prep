@@ -4,10 +4,12 @@ import { hasSubscription } from "./access";
 import { db } from "./db";
 import {
   computeTopicProgress,
-  fullPapersUnlocked,
   isTopicInPlan,
   overallPercent,
+  paperUnlocked,
+  routeScope,
   unlockedTopicIds,
+  type Route,
   type TopicProgress,
 } from "./progress";
 
@@ -30,6 +32,7 @@ export interface TopicView {
   ref: string;
   title: string;
   summary: string;
+  section: string;
   progress: TopicProgress;
   unlocked: boolean;
   inPlan: boolean;
@@ -42,40 +45,118 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
       topics: { orderBy: { position: "asc" } },
       components: {
         orderBy: { ref: "asc" },
-        include: { papers: { orderBy: [{ series: "asc" }, { variant: "asc" }] } },
+        // Question banks feed practice and randomised tests but are not listed as full papers.
+        include: { papers: { where: { questionBank: false }, orderBy: [{ series: "asc" }, { variant: "asc" }] } },
       },
     },
   });
   if (!subject) return null;
 
+  // Subjects with routes only show the papers in the student's chosen combination.
+  const routes = (subject.routes ?? []) as unknown as Route[];
+  const enrolment = await db.enrolment.findUnique({
+    where: { userId_subjectId: { userId: user.id, subjectId } },
+  });
+  const route = routes.find((r) => r.id === enrolment?.routeId) ?? null;
+  const needsRoute = routes.length > 0 && !route;
+  const scope = routeScope(route, subject.components);
+  const scopedTopics = needsRoute ? [] : subject.topics.filter((t) => scope.includesSection(t.section));
+  const scopedTopicIds = scopedTopics.map((t) => t.id);
+  // Only questions from the student's papers count, e.g. Core students practise Core papers.
+  const componentIds = (needsRoute ? [] : scope.components).map((c) => c.id);
+
   const parts = await db.questionPart.findMany({
-    where: { topic: { subjectId } },
-    select: { id: true, topicId: true, marks: true },
+    where: { topicId: { in: scopedTopicIds }, question: { paper: { componentId: { in: componentIds } } } },
+    select: {
+      id: true,
+      topicId: true,
+      marks: true,
+      question: { select: { paperId: true, paper: { select: { componentId: true, questionBank: true } } } },
+    },
   });
   const latest = await latestAwardedByPart(
     user.id,
     parts.map((p) => p.id),
   );
-  const topicIds = subject.topics.map((t) => t.id);
-  const progress = computeTopicProgress(topicIds, parts, latest);
-  const unlocked = unlockedTopicIds(topicIds, progress);
+  const progress = computeTopicProgress(scopedTopicIds, parts, latest);
+  const unlocked = unlockedTopicIds(scopedTopics, progress);
   const subscribed = hasSubscription(user);
 
-  const topics: TopicView[] = subject.topics.map((topic, index) => ({
-    id: topic.id,
-    ref: topic.ref,
-    title: topic.title,
-    summary: topic.summary,
-    progress: progress.get(topic.id)!,
-    unlocked: unlocked.has(topic.id),
-    inPlan: isTopicInPlan(index, subscribed),
-  }));
+  const sectionCounts = new Map<string, number>();
+  const topics: TopicView[] = scopedTopics.map((topic) => {
+    const indexInSection = sectionCounts.get(topic.section) ?? 0;
+    sectionCounts.set(topic.section, indexInSection + 1);
+    return {
+      id: topic.id,
+      ref: topic.ref,
+      title: topic.title,
+      summary: topic.summary,
+      section: topic.section,
+      progress: progress.get(topic.id)!,
+      unlocked: unlocked.has(topic.id),
+      inPlan: isTopicInPlan(indexInSection, subscribed),
+    };
+  });
+
+  // Each full paper opens when every topic it assesses is complete.
+  const topicsByPaper = new Map<string, Set<string>>();
+  for (const part of parts) {
+    if (part.question.paper.questionBank) continue;
+    const set = topicsByPaper.get(part.question.paperId) ?? new Set<string>();
+    set.add(part.topicId);
+    topicsByPaper.set(part.question.paperId, set);
+  }
+  // A component's randomised practice test opens when every topic in its question pool is complete.
+  const topicsByComponent = new Map<string, Set<string>>();
+  for (const part of parts) {
+    const set = topicsByComponent.get(part.question.paper.componentId) ?? new Set<string>();
+    set.add(part.topicId);
+    topicsByComponent.set(part.question.paper.componentId, set);
+  }
+  const unlockedComponents = new Set(
+    subscribed
+      ? [...topicsByComponent].filter(([, ids]) => paperUnlocked(ids, progress)).map(([componentId]) => componentId)
+      : [],
+  );
+  const unlockedPapers = new Set(
+    subscribed ? [...topicsByPaper].filter(([, ids]) => paperUnlocked(ids, progress)).map(([paperId]) => paperId) : [],
+  );
 
   return {
     subject,
+    routes,
+    route,
+    needsRoute,
+    components: needsRoute ? [] : scope.components,
+    componentIds,
+    enrolled: !!enrolment,
     topics,
     subscribed,
     overallPercent: overallPercent(progress),
-    papersUnlocked: subscribed && fullPapersUnlocked(progress),
+    unlockedPapers,
+    unlockedComponents,
   };
+}
+
+/**
+ * Each part's most recent marked score as a fraction of its marks, counting only
+ * answers given before a moment (e.g. when a practice set was dealt).
+ */
+export async function latestScoresBefore(
+  userId: string,
+  parts: { id: string; marks: number }[],
+  before: Date,
+): Promise<Map<string, number>> {
+  const marks = new Map(parts.map((p) => [p.id, p.marks]));
+  const answers = await db.answer.findMany({
+    where: { userId, partId: { in: [...marks.keys()] }, pendingReview: false, createdAt: { lt: before } },
+    orderBy: { createdAt: "desc" },
+    select: { partId: true, awardedMarks: true },
+  });
+  const scores = new Map<string, number>();
+  for (const answer of answers) {
+    if (!scores.has(answer.partId))
+      scores.set(answer.partId, answer.awardedMarks / Math.max(1, marks.get(answer.partId)!));
+  }
+  return scores;
 }

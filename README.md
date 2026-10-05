@@ -25,7 +25,18 @@ Subject (e.g. 0580 Mathematics, syllabus 2025-2027, IGCSE)
                           └─ examinerComment  commentary from the examiner's report
 ```
 
-Every question part is tagged with a syllabus topic. The same past paper question is used in two places: in **topic practice** (only the parts for that topic are shown) and in **full past paper** mode.
+Every question part is tagged with a syllabus topic. The same past paper question is used in two places: in **topic practice** (only the parts for that topic are shown) and in **full past paper** mode. Papers marked `questionBank` hold extra questions that feed topic practice and randomised tests but are never sat as a full paper.
+
+### Keeping practice fresh (`src/lib/variants.ts`, `src/lib/practice-set.ts`)
+
+So that students can't simply learn the answers:
+
+- **Practice sets.** Each visit to a topic deals a set of 5 questions from every question on that topic, starting with ones the student hasn't tried or scored lowest on. The set lives in the URL (`?set=<seed>-<time>`), so reloading after answering shows the same set. **New set** deals another.
+- **Shuffled options.** Multiple-choice options appear in a different order in each set, relabelled A–D. The mark scheme line is relabelled to match.
+- **Number variants.** A numeric part can be a template whose numbers change in each set and when the student presses **Try again**. The answer and mark scheme are recalculated for the numbers shown.
+- **Randomised practice tests.** Once every topic a component covers is complete, subscribers can start a timed practice test. Questions are drawn at random from that component's papers and question banks, and use shuffled options and new numbers.
+
+Seed 0 always means "as published". Full past papers are sat exactly as published. Each answer stores the seed of the version the student saw, so it can be re-marked and reviewed later.
 
 ### Marking
 
@@ -39,9 +50,10 @@ After answering, the student always sees the answer, the mark scheme points and 
 ### Progress and unlocking (`src/lib/progress.ts`)
 
 - A topic is **complete** when the student has answered at least 3 of its questions (or all of them, if it has fewer) with an overall score of at least 60%. The latest attempt at each question counts.
-- Completing a topic unlocks the next one.
-- **Full past papers** unlock when every topic in the subject is complete. They require a subscription.
-- **Free plan:** the first 2 topics of every subject. **Subscription:** everything.
+- **Paper combinations:** a subject can list the combinations of papers students may take (`routes` in the content file). 9709 offers Papers 1+2, 1+4 or 1+5 at AS Level, and 1+3+4+5 or 1+3+5+6 at A Level. IGCSE Chemistry, Physics and Mathematics offer Core and Extended tiers, and students only practise questions from their own papers. Students choose theirs when they add the subject and only see those topics and papers.
+- Completing a topic unlocks the next one. Topics can be grouped into **sections** (for example one per 9709 paper), and each section unlocks independently, so students can follow the papers they are taking.
+- **Full past papers** each unlock when every topic that paper assesses is complete. They require a subscription.
+- **Free plan:** the first 2 topics of each section. **Subscription:** everything.
 
 All of these thresholds are constants at the top of `src/lib/progress.ts`.
 
@@ -128,7 +140,7 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
 ```jsonc
 {
   "subject":    { "code": "0580", "name": "Mathematics", "qualification": "IGCSE", "syllabusYears": "2025-2027" },
-  "topics":     [{ "ref": "1", "title": "Number", "summary": "…" }],
+  "topics":     [{ "ref": "1", "title": "Number", "summary": "…", "section": "" }],  // section is optional
   "components": [{ "ref": "4", "title": "Paper 4 (Extended, calculator)", "durationMin": 120, "totalMarks": 100 }],
   "papers": [{
     "component": "4", "series": "June 2024", "variant": "42", "title": "June 2024 Paper 42",
@@ -145,13 +157,60 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
 }
 ```
 
+### Number templates
+
+A numeric part becomes a template by adding `variables` and an `answerExpression`. In the prompt, marking points, options and examiner comment, `{name}` shows a variable and `{=expression}` shows a calculated value (evaluated with [mathjs](https://mathjs.org)):
+
+```jsonc
+{
+  "prompt": "A car of mass {m} kg travels at {v} m/s. Calculate its kinetic energy.",
+  "answerType": "NUMERIC",
+  "variables": { "m": { "min": 800, "max": 1600, "step": 100, "value": 1200 }, "v": { "min": 10, "max": 30, "step": 1, "value": 15 } },
+  "answerExpression": "0.5 * m * v^2",
+  "correctAnswer": "135000",          // the answer at the published values
+  "relativeTolerance": 0.005,         // accepts answers to 3 significant figures
+  "markingPoints": [{ "text": "KE = ½ × {m} × {v}² = {=0.5*m*v^2} J", "marks": 2 }]
+}
+```
+
+`value` is the number used in the published version. The content tests render 40 versions of every template. They check that no placeholders are left and that each version's own answer earns full marks. `python3 scripts/content_coverage.py content/<file>.json` reports how many parts each topic has on each paper route.
+
+### Figures (diagrams, graphs and maps)
+
+Questions and parts can include figures. Image files (SVG, PNG, JPEG or WebP) live in `public/figures/<subject code>/`, and a question or part lists them:
+
+```jsonc
+"figures": [{ "src": "0625/series-circuit.svg", "alt": "Circuit diagram: a 12 V cell in series with…", "caption": "Fig. 1" }]
+```
+
+`alt` is required: it describes the figure for students using screen readers. The content tests check that every figure file exists. The sample diagrams are original and are drawn by the scripts in `scripts/figures/` (Python with matplotlib, and RDKit for skeletal formulae), so the values in each graph match its mark scheme.
+
+### Converting licensed Cambridge papers
+
+Once you have permission from Cambridge, a question paper, its mark scheme and its examiner report can be converted with Claude instead of being typed in by hand. You need an `ANTHROPIC_API_KEY` in `.env`.
+
+```bash
+npm run content:convert -- \
+  --subject content/igcse-0610-biology.json --component 2 --series "June 2024" --variant 22 \
+  --paper 0610_s24_qp_22.pdf --mark-scheme 0610_s24_ms_22.pdf --examiner-report 0610_s24_er.pdf
+```
+
+This writes a draft to `content/drafts/` and cuts each diagram, graph or map out of the question paper into `public/figures/` (Claude finds each figure's page and position; `pdftoppm` from poppler renders the page). The draft's `review` section lists anything that could not be converted, points Claude was unsure about, and validation problems. Check that each cropped figure includes its labels and nothing from neighbouring questions. Check the draft against the PDFs, then add it to the subject:
+
+```bash
+npm run content:merge -- content/drafts/0610-june-2024-22.json
+npm run content:import
+```
+
+Each conversion is one Claude API request using Claude Opus 5.5. It typically costs about $1–3 per paper, depending on how many pages the three PDFs have.
+
 The content tests (`tests/content.test.ts`) run on every file in `/content`. They check that each mark scheme covers the part's marks and that each auto-marked part accepts its own model answer.
 
 ## ⚠️ Licensing of Cambridge material
 
 Cambridge past papers, mark schemes, examiner reports and syllabus documents are **copyright of Cambridge University Press & Assessment**. Using them in a commercial, subscription product needs **written permission or a licence from Cambridge**. Do not import real past paper content until you have that permission.
 
-The sample content in `/content` (0580 Mathematics, 0610 Biology and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
+The sample content in `/content` (IGCSE 0460 Geography, 0500 First Language English, 0580 Mathematics, 0610 Biology, 0620 Chemistry and 0625 Physics; AS Level 8021 English General Paper; AS & A Level 9701 Chemistry, 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
 
 The site footer states that the product is not affiliated with or endorsed by Cambridge.
 

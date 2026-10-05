@@ -16,6 +16,7 @@ async function main() {
   const db = new PrismaClient();
   try {
     for (const file of files) {
+      console.log(`Importing ${file}…`);
       const summary = await importContent(db, JSON.parse(readFileSync(file, "utf8")));
       console.log(`Imported ${summary.subject}: ${summary.topics} topics, ${summary.parts} question parts`);
     }

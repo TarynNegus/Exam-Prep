@@ -77,6 +77,9 @@ model Subject {
   qualification   Qualification
   syllabusYears   String        // e.g. "2025-2027"
   description     String        @default("")
+  // Allowed combinations of papers, e.g. [{ id, name, components: ["1", "3", "4", "5"] }].
+  // Empty when every student takes every component.
+  routes          Json          @default("[]")
   topics          Topic[]
   components      Component[]
   enrolments      Enrolment[]
@@ -91,6 +94,7 @@ model Topic {
   ref         String         // syllabus reference, e.g. "1" or "C2"
   title       String
   summary     String         @default("")
+  section     String         @default("") // e.g. "Pure Mathematics 1"; topics unlock in order within a section
   position    Int
   parts       QuestionPart[]
 
@@ -106,7 +110,9 @@ model Component {
   title       String      // e.g. "Paper 2 (Extended)"
   durationMin Int
   totalMarks  Int
+  section     String      @default("") // topic section this component assesses, if topics are grouped by paper
   papers      PastPaper[]
+  attempts    PaperAttempt[]
 
   @@unique([subjectId, ref])
 }
@@ -118,6 +124,8 @@ model PastPaper {
   series       String         // e.g. "June 2024" or "Sample"
   variant      String         // e.g. "22"
   title        String
+  /// Extra questions for practice and randomised tests, not sat as a full paper.
+  questionBank Boolean        @default(false)
   questions    Question[]
   attempts     PaperAttempt[]
 
@@ -130,6 +138,7 @@ model Question {
   paper      PastPaper      @relation(fields: [paperId], references: [id], onDelete: Cascade)
   number     Int
   stem       String         @default("") // shared context for all parts
+  figures    Json           @default("[]") // [{ src, alt, caption }] shown with the stem
   parts      QuestionPart[]
 
   @@unique([paperId, number])
@@ -152,6 +161,13 @@ model QuestionPart {
   acceptedAnswers String[]   @default([]) // SHORT_TEXT accepted responses
   markingPoints   Json       // mark scheme: [{ text: "...", marks: 1 }]
   examinerComment String     @default("") // examiner's report commentary
+  figures         Json       @default("[]") // [{ src, alt, caption }] shown with the prompt
+  // Number variants: {{name}} placeholders in the text take values from
+  // variables ({ name: { min, max, step, value } }); answerExpression gives
+  // the answer for any set of values.
+  variables         Json     @default("{}")
+  answerExpression  String?
+  relativeTolerance Float?   // NUMERIC: tolerance as a fraction of the answer
   answers         Answer[]
 
   @@unique([questionId, position])
@@ -164,6 +180,7 @@ model Enrolment {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   subjectId String
   subject   Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  routeId   String?  // chosen combination of papers, for subjects with routes
   createdAt DateTime @default(now())
 
   @@unique([userId, subjectId])
@@ -182,6 +199,7 @@ model Answer {
   awardedMarks   Int
   selfMarked     Boolean       @default(false)
   pendingReview  Boolean       @default(false) // awaiting student self-marking
+  variantSeed    Int           @default(0)     // which version of the question was shown (0 = as published)
   createdAt      DateTime      @default(now())
 
   @@index([userId, partId, createdAt])
@@ -191,9 +209,15 @@ model PaperAttempt {
   id          String    @id @default(cuid())
   userId      String
   user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  paperId     String
-  paper       PastPaper @relation(fields: [paperId], references: [id], onDelete: Cascade)
-  startedAt   DateTime  @default(now())
+  // A fixed past paper (paperId), or a randomised test drawn from a
+  // component's question pool (componentId + questionIds).
+  paperId     String?
+  paper       PastPaper? @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  componentId String?
+  component   Component? @relation(fields: [componentId], references: [id], onDelete: Cascade)
+  questionIds Json       @default("[]")
+  seed        Int        @default(0) // 0 = as published; otherwise numbers and option order vary
+  startedAt   DateTime   @default(now())
   submittedAt DateTime?
   answers     Answer[]
 

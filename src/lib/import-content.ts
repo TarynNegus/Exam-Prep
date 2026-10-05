@@ -13,15 +13,15 @@ export async function importContent(db: PrismaClient, raw: unknown) {
     async (tx) => {
       const subject = await tx.subject.upsert({
         where: { code_syllabusYears: { code: s.code, syllabusYears: s.syllabusYears } },
-        update: { name: s.name, qualification: s.qualification, description: s.description },
-        create: s,
+        update: { name: s.name, qualification: s.qualification, description: s.description, routes: content.routes },
+        create: { ...s, routes: content.routes },
       });
 
       const topicIds = new Map<string, string>();
       for (const [position, t] of content.topics.entries()) {
         const topic = await tx.topic.upsert({
           where: { subjectId_ref: { subjectId: subject.id, ref: t.ref } },
-          update: { title: t.title, summary: t.summary, position },
+          update: { title: t.title, summary: t.summary, section: t.section, position },
           create: { ...t, position, subjectId: subject.id },
         });
         topicIds.set(t.ref, topic.id);
@@ -31,7 +31,7 @@ export async function importContent(db: PrismaClient, raw: unknown) {
       for (const c of content.components) {
         const component = await tx.component.upsert({
           where: { subjectId_ref: { subjectId: subject.id, ref: c.ref } },
-          update: { title: c.title, durationMin: c.durationMin, totalMarks: c.totalMarks },
+          update: { title: c.title, durationMin: c.durationMin, totalMarks: c.totalMarks, section: c.section },
           create: { ...c, subjectId: subject.id },
         });
         componentIds.set(c.ref, component.id);
@@ -42,14 +42,14 @@ export async function importContent(db: PrismaClient, raw: unknown) {
         const componentId = componentIds.get(p.component)!;
         const paper = await tx.pastPaper.upsert({
           where: { componentId_series_variant: { componentId, series: p.series, variant: p.variant } },
-          update: { title: p.title },
-          create: { componentId, series: p.series, variant: p.variant, title: p.title },
+          update: { title: p.title, questionBank: p.questionBank },
+          create: { componentId, series: p.series, variant: p.variant, title: p.title, questionBank: p.questionBank },
         });
         for (const q of p.questions) {
           const question = await tx.question.upsert({
             where: { paperId_number: { paperId: paper.id, number: q.number } },
-            update: { stem: q.stem },
-            create: { paperId: paper.id, number: q.number, stem: q.stem },
+            update: { stem: q.stem, figures: q.figures },
+            create: { paperId: paper.id, number: q.number, stem: q.stem, figures: q.figures },
           });
           for (const [position, part] of q.parts.entries()) {
             const data = {
@@ -64,6 +64,10 @@ export async function importContent(db: PrismaClient, raw: unknown) {
               acceptedAnswers: part.acceptedAnswers ?? [],
               markingPoints: part.markingPoints,
               examinerComment: part.examinerComment,
+              figures: part.figures,
+              variables: part.variables,
+              answerExpression: part.answerExpression ?? null,
+              relativeTolerance: part.relativeTolerance ?? null,
             };
             await tx.questionPart.upsert({
               where: { questionId_position: { questionId: question.id, position } },
@@ -77,6 +81,8 @@ export async function importContent(db: PrismaClient, raw: unknown) {
 
       return { subject: `${s.code} ${s.name} (${s.syllabusYears})`, topics: content.topics.length, parts: partCount };
     },
-    { timeout: 60_000 },
+    // Each part is a separate round trip, so a large subject over a remote
+    // connection pooler can take a few minutes.
+    { timeout: 600_000, maxWait: 60_000 },
   );
 }

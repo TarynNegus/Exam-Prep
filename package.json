@@ -13,18 +13,24 @@
     "db:deploy": "prisma migrate deploy",
     "content:import": "tsx scripts/import-content.ts",
     "postinstall": "prisma generate",
-    "db:setup": "prisma migrate deploy && tsx scripts/import-content.ts"
+    "db:setup": "node --env-file-if-exists=.env scripts/check-db-url.mjs && prisma migrate deploy && tsx scripts/import-content.ts",
+    "db:check": "node --env-file-if-exists=.env scripts/check-db-url.mjs",
+    "content:convert": "tsx --env-file-if-exists=.env scripts/convert-paper.ts",
+    "content:merge": "tsx scripts/merge-draft.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
     "@prisma/client": "6.19.3",
     "bcryptjs": "^3.0.2",
     "jose": "^6.0.0",
+    "mathjs": "^15.2.0",
     "next": "15.5.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.5",
     "stripe": "^19.0.0",
-    "zod": "3.25.76",
-    "server-only": "^0.0.1"
+    "zod": "3.25.76"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.3.3",

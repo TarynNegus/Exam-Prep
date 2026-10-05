@@ -1,10 +1,12 @@
 "use server";
 
 import { db } from "./db";
-import { partFeedback, type PartFeedback } from "./feedback";
+import { partFeedback, publicPart, type PartFeedback, type PublicPart } from "./feedback";
 import { markResponse, selfMarkScore, type MarkingPoint } from "./marking";
+import { resolvePart } from "./resolve-part";
 import { requireUser } from "./session";
 import { accessibleTopic } from "./topic-access";
+import { MAX_SEED, randomSeed } from "./variants";
 
 export interface PracticeResult extends PartFeedback {
   answerId: string;
@@ -13,10 +15,27 @@ export interface PracticeResult extends PartFeedback {
   marks: number;
 }
 
-export async function submitPracticeAnswer(partId: string, response: string): Promise<PracticeResult> {
+async function practisablePart(partId: string) {
   const user = await requireUser();
-  const part = await db.questionPart.findUnique({ where: { id: partId } });
-  if (!part || !(await accessibleTopic(user, part.topicId))) throw new Error("Question not available");
+  const part = await db.questionPart.findUnique({
+    where: { id: partId },
+    include: { question: { select: { paper: { select: { componentId: true } } } } },
+  });
+  const access = part && (await accessibleTopic(user, part.topicId));
+  if (!part || !access || !access.componentIds.includes(part.question.paper.componentId)) {
+    throw new Error("Question not available");
+  }
+  return { user, part };
+}
+
+/**
+ * Marks a practice answer against the version of the question the student saw
+ * (identified by its seed: the numbers and option order are re-created from it).
+ */
+export async function submitPracticeAnswer(partId: string, response: string, seed: number): Promise<PracticeResult> {
+  const { user, part: stored } = await practisablePart(partId);
+  const variantSeed = Number.isInteger(seed) && seed >= 0 && seed <= MAX_SEED ? seed : 0;
+  const part = resolvePart(stored, variantSeed);
 
   const trimmed = response.slice(0, 10_000);
   const result = markResponse(part, trimmed);
@@ -28,9 +47,16 @@ export async function submitPracticeAnswer(partId: string, response: string): Pr
       response: trimmed,
       awardedMarks: result.awardedMarks,
       pendingReview: !result.autoMarked,
+      variantSeed,
     },
   });
   return { answerId: answer.id, ...result, marks: part.marks, ...partFeedback(part) };
+}
+
+/** A new version of a part (new numbers, new option order) for "Try again". */
+export async function newPracticeVariant(partId: string): Promise<PublicPart> {
+  const { part } = await practisablePart(partId);
+  return publicPart(resolvePart(part, randomSeed()));
 }
 
 /** Records the marking points a student awarded themselves for a written answer. */
