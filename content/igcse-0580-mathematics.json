@@ -489,6 +489,73 @@
               "examinerComment": "The range is a single value, not '4 to 19'."
             }
           ]
+        },
+        {
+          "number": 10,
+          "stem": "The bar chart shows the number of pets owned by each of 30 students.",
+          "figures": [
+            {
+              "src": "0580/pets-bar-chart.svg",
+              "alt": "Bar chart of number of pets owned by 30 students: 0 pets 6, 1 pet 11, 2 pets 8, 3 pets 3, 4 pets 2.",
+              "caption": ""
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "9",
+              "prompt": "Write down the mode.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "B1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The mode is the value with the highest frequency, not the frequency itself."
+            },
+            {
+              "label": "(b)",
+              "topic": "9",
+              "prompt": "How many students own 3 or more pets?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "B1 for 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "9",
+              "prompt": "Calculate the mean number of pets per student, correct to 1 decimal place.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.467",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "M1 for Σfx = 44",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 44 ÷ 30",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Dividing by 5 (the number of bars) was a common error."
+            }
+          ]
         }
       ]
     },
@@ -737,6 +804,37 @@
               "examinerComment": "Well answered."
             }
           ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "figures": [
+            {
+              "src": "0580/circle-theorem.svg",
+              "alt": "Circle with centre O. A, B and C lie on the circle. Angle AOB at the centre is 110°. C is on the major arc. Not to scale.",
+              "caption": ""
+            }
+          ],
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "A, B and C are points on a circle, centre O. Angle AOB = 110°. Find angle ACB. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for 55°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for the angle at the centre is twice the angle at the circumference",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The reason must use the correct theorem."
+            }
+          ]
         }
       ]
     },
@@ -959,6 +1057,38 @@
                 },
                 {
                   "text": "A1 for 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "figures": [
+            {
+              "src": "0580/right-triangle.svg",
+              "alt": "Right-angled triangle ABC with the right angle at B. AB = 5 cm, BC = 12 cm and AC = x cm. Not to scale.",
+              "caption": ""
+            }
+          ],
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Triangle ABC is right-angled at B. Calculate x.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "13",
+              "markingPoints": [
+                {
+                  "text": "M1 for 5² + 12²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 13",
                   "marks": 1
                 }
               ],

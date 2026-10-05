@@ -1781,6 +1781,199 @@
               "examinerComment": "Well answered."
             }
           ]
+        },
+        {
+          "number": 3,
+          "stem": "Fig. 1 is a climate graph for a location in the tropics.",
+          "figures": [
+            {
+              "src": "0460/climate-graph.svg",
+              "alt": "Climate graph for a tropical location. Monthly temperatures range from 24 °C in December and January to 31 °C in April. Rainfall is very low from November to March and highest in June at 260 mm.",
+              "caption": "Fig. 1"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.5",
+              "prompt": "Calculate the annual temperature range, in °C.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "M1 for 31 − 24",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7 °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.5",
+              "prompt": "Name the wettest month.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "June",
+                "Jun"
+              ],
+              "markingPoints": [
+                {
+                  "text": "June",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.5",
+              "prompt": "Describe the pattern of rainfall shown in Fig. 1.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a distinct wet season and dry season",
+                  "marks": 1
+                },
+                {
+                  "text": "wet season from about April/May to September, peaking at 260 mm in June",
+                  "marks": 1
+                },
+                {
+                  "text": "dry season from November to March with under 50 mm per month",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Use figures from the graph to support your description."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "Fig. 2 is a population pyramid for a country.",
+          "figures": [
+            {
+              "src": "0460/population-pyramid.svg",
+              "alt": "Population pyramid with a wide base narrowing sharply with age. Ages 0–14: 21% male, 20% female. Ages 75+: 0.5% male, 0.5% female.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.3",
+              "prompt": "What percentage of the total population is aged 0–14?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "41",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "B1 for 41%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both sides of the pyramid must be added."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.3",
+              "prompt": "Suggest two reasons for the shape of this pyramid.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "high birth rate gives the wide base",
+                  "marks": 1
+                },
+                {
+                  "text": "high death rate / low life expectancy gives the narrow top",
+                  "marks": 1
+                },
+                {
+                  "text": "limited access to healthcare or family planning",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Link each reason to a feature of the pyramid."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "Fig. 3 is a map extract at a scale of 1 : 50 000.",
+          "figures": [
+            {
+              "src": "0460/grid-map.svg",
+              "alt": "Map extract with grid lines: eastings 20 to 24 and northings 40 to 44. A church symbol is in the middle of the square east of easting 21 and north of northing 43. A school is in the square east of easting 23 and north of northing 40. A river flows west to east.",
+              "caption": "Fig. 3"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S1",
+              "prompt": "Give the four-figure grid reference of the square containing the church.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2143",
+                "21 43"
+              ],
+              "markingPoints": [
+                {
+                  "text": "2143",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Eastings first, then northings."
+            },
+            {
+              "label": "(b)",
+              "topic": "S1",
+              "prompt": "Give the four-figure grid reference of the square containing the school.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2340",
+                "23 40"
+              ],
+              "markingPoints": [
+                {
+                  "text": "2340",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "S1",
+              "prompt": "Each grid square has sides of 1 km. Estimate the straight-line distance from the church to the school, in km, to 1 decimal place.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.467",
+              "tolerance": 0.2,
+              "markingPoints": [
+                {
+                  "text": "M1 for measuring or using √(1.9² + 2.9²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.3 to 3.6 km",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Measure between the centres of the symbols."
+            }
+          ]
         }
       ]
     },

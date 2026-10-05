@@ -2308,6 +2308,149 @@
               "examinerComment": "Well answered."
             }
           ]
+        },
+        {
+          "number": 13,
+          "stem": "A solid is heated steadily. Fig. 1 shows how its temperature changes.",
+          "figures": [
+            {
+              "src": "0620/heating-curve.svg",
+              "alt": "Heating curve: temperature rises from 20 °C to 80 °C in 4 minutes, stays at 80 °C until 9 minutes, then rises to 130 °C at 14 minutes.",
+              "caption": "Fig. 1"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1",
+              "prompt": "Use Fig. 1 to find the melting point of the substance, in °C.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "80",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "B1 for 80 °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "1",
+              "prompt": "Explain why the temperature stays constant between 4 and 9 minutes.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the substance is melting",
+                  "marks": 1
+                },
+                {
+                  "text": "energy is used to overcome the forces between particles instead of raising the temperature",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many said 'no energy is being supplied', but heating continues throughout."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "Marble chips react with dilute hydrochloric acid. Fig. 2 shows the volume of carbon dioxide collected.",
+          "figures": [
+            {
+              "src": "0620/gas-volume-graph.svg",
+              "alt": "Graph of volume of gas against time: the volume rises steeply at first, then levels off at 60 cm³ after about 60 s.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "Use Fig. 2 to find the total volume of gas produced, in cm³.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "60",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "B1 for 60 cm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "Use Fig. 2 to find the volume of gas collected after 20 s, in cm³.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "48.67",
+              "tolerance": 1.5,
+              "markingPoints": [
+                {
+                  "text": "B1 for 48 to 50 cm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Read carefully from the curve."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "Fig. 3 shows the chromatogram of two dyes, A and B, and a mixture, X.",
+          "figures": [
+            {
+              "src": "0620/chromatogram.svg",
+              "alt": "Chromatogram: the solvent front is 8.0 cm above the baseline. Dye A gives one spot at 2.0 cm, dye B one spot at 6.0 cm, and mixture X two spots at 2.0 cm and 6.0 cm.",
+              "caption": "Fig. 3"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "12",
+              "prompt": "Which dyes does mixture X contain? Explain your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "A and B",
+                  "marks": 1
+                },
+                {
+                  "text": "its spots are at the same heights as the spots of A and B",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "12",
+              "prompt": "Calculate the Rf value of dye A.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.25",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "C1 for 2.0 ÷ 8.0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.25",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Measure from the baseline, not the bottom of the paper."
+            }
+          ]
         }
       ]
     },
@@ -2642,6 +2785,102 @@
                 }
               ],
               "examinerComment": "The litmus paper must be damp."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "Marble chips react with dilute hydrochloric acid. Fig. 2 shows the volume of carbon dioxide collected.",
+          "figures": [
+            {
+              "src": "0620/gas-volume-graph.svg",
+              "alt": "Graph of volume of gas against time: the volume rises steeply at first, then levels off at 60 cm³ after about 60 s.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "Explain, in terms of particles, why the rate of reaction decreases as the reaction proceeds.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the concentration of acid decreases / fewer acid particles",
+                  "marks": 1
+                },
+                {
+                  "text": "so there are fewer collisions per second",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should refer to the frequency of collisions."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "On the same axes, a student repeats the experiment with powdered marble of the same mass. Describe how the new curve would differ.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "steeper at the start (faster rate)",
+                  "marks": 1
+                },
+                {
+                  "text": "levels off at the same final volume, 60 cm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The final volume depends on the amount of reactants, not the rate."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "Fig. 3 shows the chromatogram of two dyes, A and B, and a mixture, X.",
+          "figures": [
+            {
+              "src": "0620/chromatogram.svg",
+              "alt": "Chromatogram: the solvent front is 8.0 cm above the baseline. Dye A gives one spot at 2.0 cm, dye B one spot at 6.0 cm, and mixture X two spots at 2.0 cm and 6.0 cm.",
+              "caption": "Fig. 3"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "12",
+              "prompt": "Calculate the Rf value of dye B.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.75",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "C1 for 6.0 ÷ 8.0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.75",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "12",
+              "prompt": "Explain why the baseline must be drawn in pencil, not ink.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ink would dissolve in the solvent and separate, giving extra spots",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
             }
           ]
         }

@@ -146,6 +146,16 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
 }
 ```
 
+### Figures (diagrams, graphs and maps)
+
+Questions and parts can include figures. Image files (SVG, PNG, JPEG or WebP) live in `public/figures/<subject code>/`, and a question or part lists them:
+
+```jsonc
+"figures": [{ "src": "0625/series-circuit.svg", "alt": "Circuit diagram: a 12 V cell in series with…", "caption": "Fig. 1" }]
+```
+
+`alt` is required: it describes the figure for students using screen readers. The content tests check that every figure file exists. The sample diagrams are original and are drawn by `scripts/figures/draw_figures.py` (Python with matplotlib), so the values in each graph match its mark scheme.
+
 ### Converting licensed Cambridge papers
 
 Once you have permission from Cambridge, a question paper, its mark scheme and its examiner report can be converted with Claude instead of being typed in by hand. You need an `ANTHROPIC_API_KEY` in `.env`.
@@ -156,7 +166,7 @@ npm run content:convert -- \
   --paper 0610_s24_qp_22.pdf --mark-scheme 0610_s24_ms_22.pdf --examiner-report 0610_s24_er.pdf
 ```
 
-This writes a draft to `content/drafts/`. The draft's `review` section lists parts that were skipped because they need a diagram, points Claude was unsure about, and validation problems. Check the draft against the PDFs, then add it to the subject:
+This writes a draft to `content/drafts/` and cuts each diagram, graph or map out of the question paper into `public/figures/` (Claude finds each figure's page and position; `pdftoppm` from poppler renders the page). The draft's `review` section lists anything that could not be converted, points Claude was unsure about, and validation problems. Check that each cropped figure includes its labels and nothing from neighbouring questions. Check the draft against the PDFs, then add it to the subject:
 
 ```bash
 npm run content:merge -- content/drafts/0610-june-2024-22.json

@@ -2288,6 +2288,104 @@
               "examinerComment": "Well answered."
             }
           ]
+        },
+        {
+          "number": 17,
+          "stem": "Fig. 1 shows the effect of temperature on the rate of an enzyme-controlled reaction.",
+          "figures": [
+            {
+              "src": "0610/enzyme-temperature.svg",
+              "alt": "Graph of rate of reaction against temperature for an enzyme: the rate rises from 5 at 0 °C to a peak of 90 at 40 °C, then falls to 0 at 60 °C.",
+              "caption": "Fig. 1"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5",
+              "prompt": "State the optimum temperature for this enzyme, in °C.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "40",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "B1 for 40 °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "5",
+              "prompt": "Explain why the rate of reaction is zero at 60 °C.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the enzyme is denatured",
+                  "marks": 1
+                },
+                {
+                  "text": "the shape of the active site has changed",
+                  "marks": 1
+                },
+                {
+                  "text": "the substrate no longer fits / no enzyme–substrate complexes form",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Enzymes are not 'killed'."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "Fig. 2 shows how light intensity affects the rate of photosynthesis at two concentrations of carbon dioxide.",
+          "figures": [
+            {
+              "src": "0610/photosynthesis-light.svg",
+              "alt": "Graph of rate of photosynthesis against light intensity at two carbon dioxide concentrations. Both lines rise together. At 0.04% carbon dioxide the rate levels off at 30 from light intensity 3; at 0.10% it levels off at 50 from light intensity 5.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "Find the maximum rate of photosynthesis at 0.04% carbon dioxide, in arbitrary units.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "B1 for 30",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "State the factor limiting the rate of photosynthesis at 0.04% carbon dioxide above a light intensity of 4 units. Explain how Fig. 2 shows this.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "carbon dioxide concentration",
+                  "marks": 1
+                },
+                {
+                  "text": "increasing light intensity has no effect, but increasing carbon dioxide raises the rate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Use evidence from both lines on the graph."
+            }
+          ]
         }
       ]
     }

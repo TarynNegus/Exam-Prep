@@ -2618,6 +2618,156 @@
               "examinerComment": "It is not a unit of time."
             }
           ]
+        },
+        {
+          "number": 24,
+          "stem": "Fig. 1 shows a series circuit.",
+          "figures": [
+            {
+              "src": "0625/series-circuit.svg",
+              "alt": "Circuit diagram: a 12 V cell in series with a 4.0 Ω resistor, a 2.0 Ω resistor and an ammeter.",
+              "caption": "Fig. 1"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.3",
+              "prompt": "Calculate the reading on the ammeter, in A.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "C1 for total resistance = 6.0 Ω",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 A",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Resistances in series add."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.3",
+              "prompt": "Calculate the potential difference across the 4.0 Ω resistor, in V.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "markingPoints": [
+                {
+                  "text": "C1 for V = IR",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8.0 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The p.d.s across the resistors add up to the supply voltage."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "Fig. 2 shows the speed–time graph for a cyclist.",
+          "figures": [
+            {
+              "src": "0625/speed-time-graph.svg",
+              "alt": "Speed–time graph: speed rises steadily from 0 to 10 m/s in 4 s, stays at 10 m/s until 10 s, then falls to 0 at 12 s.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.2",
+              "prompt": "Describe the motion of the cyclist between 4 s and 10 s.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "constant speed of 10 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Not moving' was a common misreading of a horizontal line."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.2",
+              "prompt": "Calculate the total distance travelled by the cyclist, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "90",
+              "markingPoints": [
+                {
+                  "text": "C1 for area under the graph",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for 20 + 60 + 10",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 90 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Splitting the area into triangles and a rectangle helps."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "Fig. 4 shows how the count rate from a radioactive source changes with time. The background count has been subtracted.",
+          "figures": [
+            {
+              "src": "0625/decay-curve.svg",
+              "alt": "Graph of count rate against time: the count rate falls from 800 counts per minute at 0 hours, halving every 2 hours.",
+              "caption": "Fig. 4"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.2",
+              "prompt": "Use Fig. 4 to find the half-life of the source, in hours.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "tolerance": 0.1,
+              "markingPoints": [
+                {
+                  "text": "C1 for reading the time for 800 to fall to 400",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 hours",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Draw lines on the graph to show your reading."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.2",
+              "prompt": "Find the count rate after 4.0 hours, in counts per minute.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "200",
+              "tolerance": 10,
+              "markingPoints": [
+                {
+                  "text": "B1 for 200",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
         }
       ]
     },
@@ -3267,6 +3417,108 @@
                 }
               ],
               "examinerComment": "Answers can be typed as 4.5e17."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "Fig. 2 shows the speed–time graph for a cyclist.",
+          "figures": [
+            {
+              "src": "0625/speed-time-graph.svg",
+              "alt": "Speed–time graph: speed rises steadily from 0 to 10 m/s in 4 s, stays at 10 m/s until 10 s, then falls to 0 at 12 s.",
+              "caption": "Fig. 2"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.2",
+              "prompt": "Calculate the acceleration of the cyclist during the first 4 s, in m/s².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.5",
+              "markingPoints": [
+                {
+                  "text": "C1 for gradient = 10 ÷ 4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.5 m/s²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.2",
+              "prompt": "Calculate the deceleration of the cyclist between 10 s and 12 s, in m/s².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "C1 for 10 ÷ 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.0 m/s²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Give the deceleration as a positive value."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "Fig. 3 shows a parallel circuit.",
+          "figures": [
+            {
+              "src": "0625/parallel-circuit.svg",
+              "alt": "Circuit diagram: a 6.0 V cell with an ammeter in the main circuit, connected to a 3.0 Ω resistor and a 6.0 Ω resistor in parallel.",
+              "caption": "Fig. 3"
+            }
+          ],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.3",
+              "prompt": "Calculate the current in the 3.0 Ω resistor, in A.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "C1 for the p.d. across each branch is 6.0 V",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 A",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each parallel branch has the full supply voltage."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.3",
+              "prompt": "Calculate the reading on the ammeter, in A.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "C1 for 2.0 A + 1.0 A",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.0 A",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The current in the main circuit is the sum of the branch currents."
             }
           ]
         }
