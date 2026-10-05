@@ -2,7 +2,7 @@
 // not tried come first, then those they scored worst on; ties are broken by
 // the set's seed, so every set is different but stays the same on reload.
 
-import { hashSeed } from "./variants";
+import { hashSeed, MAX_SEED } from "./variants";
 
 /** Number of questions in a practice set. */
 export const PRACTICE_SET_SIZE = 5;
@@ -38,7 +38,7 @@ export function parseSetParam(value: string | undefined): { seed: number; dealtA
   if (!match) return null;
   const seed = Number(match[1]);
   const dealtAt = new Date(Number(match[2]));
-  return seed > 0 && seed < 2 ** 32 && !Number.isNaN(dealtAt.getTime()) ? { seed, dealtAt } : null;
+  return seed > 0 && seed <= MAX_SEED && !Number.isNaN(dealtAt.getTime()) ? { seed, dealtAt } : null;
 }
 
 export function newSetParam(seed: number, now = Date.now()): string {

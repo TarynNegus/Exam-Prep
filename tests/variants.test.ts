@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { choosePracticeSet, newSetParam, parseSetParam, PRACTICE_SET_SIZE } from "@/lib/practice-set";
 import { partSeed, resolvePart } from "@/lib/resolve-part";
-import { formatValue, hashSeed, renderTemplate, seededRandom, shuffledOrder, variableValues } from "@/lib/variants";
+import { formatValue, hashSeed, randomSeed, renderTemplate, seededRandom, shuffledOrder, variableValues } from "@/lib/variants";
 
 describe("seeded randomness", () => {
   it("is repeatable for the same seed and differs between seeds", () => {
@@ -9,6 +9,16 @@ describe("seeded randomness", () => {
     const seqA = [a(), a(), a()];
     expect([b(), b(), b()]).toEqual(seqA);
     expect([c(), c(), c()]).not.toEqual(seqA);
+  });
+
+  it("keeps every seed within the database's 32-bit signed range", () => {
+    for (let i = 0; i < 2000; i++) {
+      for (const seed of [randomSeed(), hashSeed("set", i), partSeed(randomSeed(), `part-${i}`)]) {
+        expect(seed).toBeGreaterThan(0);
+        expect(seed).toBeLessThanOrEqual(2 ** 31 - 1);
+      }
+    }
+    expect(parseSetParam("3369013724-1700000000000")).toBeNull();
   });
 
   it("hashes to a non-zero seed", () => {

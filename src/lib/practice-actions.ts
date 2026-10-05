@@ -6,7 +6,7 @@ import { markResponse, selfMarkScore, type MarkingPoint } from "./marking";
 import { resolvePart } from "./resolve-part";
 import { requireUser } from "./session";
 import { accessibleTopic } from "./topic-access";
-import { randomSeed } from "./variants";
+import { MAX_SEED, randomSeed } from "./variants";
 
 export interface PracticeResult extends PartFeedback {
   answerId: string;
@@ -34,7 +34,7 @@ async function practisablePart(partId: string) {
  */
 export async function submitPracticeAnswer(partId: string, response: string, seed: number): Promise<PracticeResult> {
   const { user, part: stored } = await practisablePart(partId);
-  const variantSeed = Number.isInteger(seed) && seed >= 0 && seed < 2 ** 32 ? seed : 0;
+  const variantSeed = Number.isInteger(seed) && seed >= 0 && seed <= MAX_SEED ? seed : 0;
   const part = resolvePart(stored, variantSeed);
 
   const trimmed = response.slice(0, 10_000);

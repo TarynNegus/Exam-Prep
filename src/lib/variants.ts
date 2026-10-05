@@ -31,14 +31,17 @@ export interface VariableSpec {
 
 export type Variables = Record<string, VariableSpec>;
 
-/** FNV-1a hash of the inputs, as a non-zero 32-bit seed. */
+/** Seeds are stored in 32-bit signed database columns, so they stay below 2³¹. */
+export const MAX_SEED = 0x7fffffff;
+
+/** FNV-1a hash of the inputs, as a non-zero seed below 2³¹. */
 export function hashSeed(...inputs: (string | number)[]): number {
   let hash = 0x811c9dc5;
   for (const char of inputs.join("|")) {
     hash ^= char.codePointAt(0)!;
     hash = Math.imul(hash, 0x01000193);
   }
-  return hash >>> 0 || 1;
+  return (hash >>> 0) & MAX_SEED || 1;
 }
 
 /** Mulberry32: a small, fast seeded random number generator returning [0, 1). */
@@ -55,7 +58,7 @@ export function seededRandom(seed: number): () => number {
 
 /** A fresh random seed (never 0, which is reserved for the published version). */
 export function randomSeed(): number {
-  return (Math.floor(Math.random() * 0xfffffffe) + 1) >>> 0;
+  return Math.floor(Math.random() * MAX_SEED) + 1;
 }
 
 /** Removes floating-point noise, e.g. 0.30000000000000004 → 0.3. */
