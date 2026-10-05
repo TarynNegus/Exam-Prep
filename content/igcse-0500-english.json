@@ -1,0 +1,700 @@
+{
+  "subject": {
+    "code": "0500",
+    "name": "First Language English",
+    "qualification": "IGCSE",
+    "syllabusYears": "2024-2026",
+    "description": "Cambridge IGCSE First Language English. Topics follow the reading and writing skills assessed in Papers 1 and 2. All passages and questions are original practice material written in the style of Cambridge papers, not reproduced past paper material. Writing tasks are self-marked against a criteria checklist modelled on the Cambridge mark scheme split between content, structure, style and accuracy."
+  },
+  "topics": [
+    {
+      "ref": "R1",
+      "title": "Reading for meaning",
+      "summary": "Finding explicit information and explaining implicit meanings in a text, in your own words."
+    },
+    {
+      "ref": "R2",
+      "title": "Writers' use of language",
+      "summary": "Analysing how writers use words, images and structure to create effects."
+    },
+    {
+      "ref": "R3",
+      "title": "Summary writing",
+      "summary": "Selecting relevant points and writing a concise summary in your own words."
+    },
+    {
+      "ref": "W1",
+      "title": "Directed writing",
+      "summary": "Using and evaluating ideas from a text in a letter, speech or article."
+    },
+    {
+      "ref": "W2",
+      "title": "Descriptive writing",
+      "summary": "Creating atmosphere and detail with precise vocabulary and varied sentences."
+    },
+    {
+      "ref": "W3",
+      "title": "Narrative writing",
+      "summary": "Writing a well-structured story with convincing characters and setting."
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Reading)",
+      "durationMin": 120,
+      "totalMarks": 80
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Directed Writing and Composition)",
+      "durationMin": 120,
+      "totalMarks": 80
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Passage A: The Crossing\n\nI had been awake since four, listening to the generator next door cough itself into life. My school bag sat by the door, packed and repacked twice. When my mother handed me a cup of tea, my hands would not keep it still, and I left half of it cooling on the step.\n\nThe boat left the jetty at 5:40, exactly as Mr Okafor had promised. There were six of us on board: four children in pressed white shirts, a woman with a basket of mangoes, and me. Nobody spoke. At that hour the water was a sheet of hammered pewter, and the far shore was nothing more than a rumour of trees.\n\nHalfway across, the engine faltered. It did not stop; it hesitated, like a breath held too long, and then caught again. The mangoes shifted. The smallest of the children gripped the edge of the bench until her knuckles paled. Out here, beyond the shelter of the mangroves, the wind found us, and the boat began to lift and drop, lift and drop, each slap of the hull louder than the last. The lagoon kept its own counsel; it gave nothing away about what lay beneath.\n\nMr Okafor did not look worried. He had been crossing this water for thirty-one years, he told me later, twice a day, in every season. He stood at the stern with one hand resting lightly on the tiller, as if the boat were an old dog that only needed reminding. When the engine coughed again, he laughed, a short, warm sound, and patted the motor's casing. 'She complains,' he said, 'but she has never yet refused.'\n\nBy the time the island school rose out of the mist, painted blue and absurdly cheerful, the sun had broken through. I stepped onto the jetty with legs that did not quite belong to me, and I realised I was no longer afraid of the water. I was afraid of the classroom.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "Give two phrases from paragraph 1 that show the narrator was nervous.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "'awake since four'",
+                  "marks": 1
+                },
+                {
+                  "text": "'packed and repacked twice'",
+                  "marks": 1
+                },
+                {
+                  "text": "'my hands would not keep it still'",
+                  "marks": 1
+                },
+                {
+                  "text": "'left half of it cooling on the step' (too anxious to drink)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates found one phrase. Some copied the whole paragraph, which cannot be credited: select the precise words."
+            },
+            {
+              "label": "(b)",
+              "topic": "R1",
+              "prompt": "At what time did the boat leave the jetty?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "5:40",
+                "5.40",
+                "5:40 am",
+                "5.40 am",
+                "5:40am",
+                "twenty to six",
+                "540"
+              ],
+              "markingPoints": [
+                {
+                  "text": "5:40 (accept twenty to six)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "R1",
+              "prompt": "Explain, using your own words, what the writer means by 'The lagoon kept its own counsel'.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the lagoon gave no clues / revealed nothing",
+                  "marks": 1
+                },
+                {
+                  "text": "about what was under the surface / what might happen, so the passengers could not predict any danger",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who repeated words from the phrase, such as 'counsel', could not show understanding. Own words are essential."
+            },
+            {
+              "label": "(d)",
+              "topic": "R1",
+              "prompt": "For how many years had Mr Okafor been crossing the lagoon?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "31",
+              "markingPoints": [
+                {
+                  "text": "31",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "Passage A: The Crossing\n\nI had been awake since four, listening to the generator next door cough itself into life. My school bag sat by the door, packed and repacked twice. When my mother handed me a cup of tea, my hands would not keep it still, and I left half of it cooling on the step.\n\nThe boat left the jetty at 5:40, exactly as Mr Okafor had promised. There were six of us on board: four children in pressed white shirts, a woman with a basket of mangoes, and me. Nobody spoke. At that hour the water was a sheet of hammered pewter, and the far shore was nothing more than a rumour of trees.\n\nHalfway across, the engine faltered. It did not stop; it hesitated, like a breath held too long, and then caught again. The mangoes shifted. The smallest of the children gripped the edge of the bench until her knuckles paled. Out here, beyond the shelter of the mangroves, the wind found us, and the boat began to lift and drop, lift and drop, each slap of the hull louder than the last. The lagoon kept its own counsel; it gave nothing away about what lay beneath.\n\nMr Okafor did not look worried. He had been crossing this water for thirty-one years, he told me later, twice a day, in every season. He stood at the stern with one hand resting lightly on the tiller, as if the boat were an old dog that only needed reminding. When the engine coughed again, he laughed, a short, warm sound, and patted the motor's casing. 'She complains,' he said, 'but she has never yet refused.'\n\nBy the time the island school rose out of the mist, painted blue and absurdly cheerful, the sun had broken through. I stepped onto the jetty with legs that did not quite belong to me, and I realised I was no longer afraid of the water. I was afraid of the classroom.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R2",
+              "prompt": "Identify and explain the effect of the image 'the water was a sheet of hammered pewter' in paragraph 2.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies it as a metaphor",
+                  "marks": 1
+                },
+                {
+                  "text": "suggests the water is flat, still and grey / dull in the early light",
+                  "marks": 1
+                },
+                {
+                  "text": "creates a cold, heavy or unwelcoming mood that matches the narrator's anxiety",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Naming the technique earns little on its own. The best answers explained what the image makes the reader see and feel."
+            },
+            {
+              "label": "(b)",
+              "topic": "R2",
+              "prompt": "Explain how the writer uses language to create tension in paragraph 3.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the simile 'like a breath held too long' makes the reader wait anxiously with the passengers",
+                  "marks": 1
+                },
+                {
+                  "text": "'knuckles paled' shows fear through physical detail",
+                  "marks": 1
+                },
+                {
+                  "text": "repetition of 'lift and drop' recreates the relentless motion of the boat",
+                  "marks": 1
+                },
+                {
+                  "text": "'louder than the last' suggests the danger is growing",
+                  "marks": 1
+                },
+                {
+                  "text": "personification: the wind 'found us', as if hunting them",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers selected precise words and explained their effect. Weaker answers retold what happens in the paragraph."
+            },
+            {
+              "label": "(c)",
+              "topic": "R2",
+              "prompt": "How does the writer present Mr Okafor in paragraph 4? Refer to the language used.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "calm and experienced: 'thirty-one years … in every season'",
+                  "marks": 1
+                },
+                {
+                  "text": "relaxed control: 'one hand resting lightly on the tiller'",
+                  "marks": 1
+                },
+                {
+                  "text": "affectionate towards his boat: the 'old dog' simile / 'patted the motor's casing'",
+                  "marks": 1
+                },
+                {
+                  "text": "warm and humorous: 'she complains … but she has never yet refused'",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who contrasted Mr Okafor's calm with the passengers' fear showed good understanding of the writer's purpose."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "Passage B: Before You Set Out\n\nEvery summer, visitors arrive at Carrow Bay expecting a gentle seaside. The bay is beautiful, but it is not gentle. Local lifeboat crews were called out forty-three times last year, and most of the people they rescued had underestimated the water.\n\nThe first danger is the tide. At Carrow the sea goes out almost two kilometres, revealing wide sandbanks that invite walkers to explore. When the tide turns, it comes back faster than a person can walk, filling the channels behind them first, so that they find themselves stranded on shrinking islands of sand.\n\nThen there are rip currents: narrow, fast-moving channels of water flowing away from the shore. They are hard to see from the beach, where they can look like calm, darker patches between the breaking waves. A swimmer caught in one is carried out to sea, and those who try to swim straight back against it quickly become exhausted.\n\nFog is another hazard. It can roll in from the sea within minutes, hiding landmarks and leaving people unable to tell which direction leads back to land. Even on a hot day, the water itself is cold enough to cause cold-water shock, a gasp reflex that can make a person breathe in water before they have had time to think.\n\nNone of this means visitors should stay away. Check the tide times before you walk out onto the sands, and set off back well before the tide turns. Swim only between the red and yellow flags, where lifeguards are watching. If you are caught in a rip current, do not fight it: swim parallel to the shore until you are free of it. And if you see someone in trouble, call the coastguard rather than going in after them.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "How many times were lifeboat crews called out last year?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "43",
+              "markingPoints": [
+                {
+                  "text": "43",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "R3",
+              "prompt": "According to Passage B, what makes the sea at Carrow Bay dangerous? Write your answer in note form. You do not need to use your own words.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the tide comes in faster than a person can walk",
+                  "marks": 1
+                },
+                {
+                  "text": "channels fill behind walkers, stranding them on sandbanks",
+                  "marks": 1
+                },
+                {
+                  "text": "rip currents are hard to see / look calm",
+                  "marks": 1
+                },
+                {
+                  "text": "rip currents carry swimmers out to sea and exhaust those who swim against them",
+                  "marks": 1
+                },
+                {
+                  "text": "fog arrives within minutes and hides landmarks / people lose their direction",
+                  "marks": 1
+                },
+                {
+                  "text": "the water is cold enough to cause cold-water shock, even on hot days",
+                  "marks": 1
+                },
+                {
+                  "text": "visitors underestimate the water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each note should contain one distinct point. Some candidates included the safety advice, which did not answer the question."
+            },
+            {
+              "label": "(c)",
+              "topic": "R3",
+              "prompt": "Give two pieces of advice the writer gives for staying safe at Carrow Bay.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "check tide times / return well before the tide turns",
+                  "marks": 1
+                },
+                {
+                  "text": "swim only between the red and yellow flags",
+                  "marks": 1
+                },
+                {
+                  "text": "swim parallel to the shore if caught in a rip current",
+                  "marks": 1
+                },
+                {
+                  "text": "call the coastguard instead of going in after someone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "R3",
+              "prompt": "Using your notes from (b), write a summary of the dangers at Carrow Bay. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 15,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "includes at least four relevant dangers",
+                  "marks": 5
+                },
+                {
+                  "text": "includes six or more relevant dangers, accurately",
+                  "marks": 5
+                },
+                {
+                  "text": "uses own words throughout, not copied phrases",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, clearly organised and no more than 120 words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "The best summaries grouped related points, such as both effects of the tide, in a single sentence. Lifting whole sentences from the passage limits the writing marks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "A message from the Head Teacher\n\nFrom next term, mobile phones will not be allowed anywhere in school during the school day. Phones will be handed in at the gate each morning and returned at 3.30 pm. Teachers tell me that phones distract students in lessons, and some parents worry about online bullying during break times. Students who need to contact home will be able to use the telephone in the school office. I believe this change will help everyone to focus on learning and on each other.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Write a letter to the Head Teacher giving your views on the plan to ban mobile phones during the school day. In your letter you should evaluate the reasons given and explain what you think the school should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses and develops at least four relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas and gives your own judgement, rather than just repeating them",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "The best letters weighed each reason in the message instead of simply agreeing or disagreeing. Weaker responses listed the ideas without judging them."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe a market at the moment it opens in the morning. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "The most effective descriptions focused on small, precise details and changes in light and sound as the market woke up. Some candidates drifted into a narrative about buying something."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 2B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Notice to residents\n\nThe council is considering turning the unused car park on Mill Street into a community garden. The garden would include vegetable plots for local families, a play area and seating for older residents. Supporters say it would bring neighbours together and give children somewhere safe to play. Some local shopkeepers are concerned that losing the car park will mean fewer customers. A residents' meeting will be held next month before a decision is made.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "You have been asked to give a speech at the residents' meeting about the plan for a community garden. In your speech you should evaluate the arguments for and against, and say what you think the council should decide. Base your speech on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses and develops at least four relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas and gives your own judgement, rather than just repeating them",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "Successful speeches addressed the audience directly and used rhetorical techniques sparingly. Some candidates forgot the shopkeepers' concerns, which limited the evaluation."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story that begins: 'The message was only four words long.' Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Good stories made the four-word message central to the plot. Endings that were rushed or relied on 'it was all a dream' weakened otherwise strong work."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "C",
+      "title": "Sample Paper 2C (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Is homework worth it?\n\nSome teachers argue that homework helps students practise new skills, builds independence and prepares them for exams. Others point out that students already spend six hours a day in lessons, and that long homework tasks leave little time for sport, family or rest. Research suggests that short, focused tasks are more useful than long ones, and that the value of homework depends on whether teachers give feedback on it.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Write an article for your school magazine with the title 'Is homework worth it?'. In your article you should evaluate the views in the text and give your own opinion on how homework should be set. Base your article on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses and develops at least four relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas and gives your own judgement, rather than just repeating them",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "Articles that proposed a balanced, practical policy were the most convincing. A clear headline and engaging opening helped establish the magazine register."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe a place that has been abandoned. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Strong responses suggested the place's past through carefully chosen objects. Lists of adjectives without a controlling mood were less successful."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "D",
+      "title": "Sample Paper 2D (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "My year volunteering\n\nLast year I spent twelve months volunteering at a wildlife rescue centre before university. The work was exhausting: early starts, cleaning enclosures and very little pay. But I learned more about responsibility than in any classroom, and I made friends from six different countries. Some of my friends think I wasted a year that I could have spent earning money or studying. I don't regret a single day.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Your friend is deciding whether to spend a year volunteering before continuing their studies. Write a letter to your friend, evaluating the writer's experience and advising them what to do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses and develops at least four relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas and gives your own judgement, rather than just repeating them",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "An informal but controlled register suited this task well. The strongest letters considered whether the writer's experience would apply to their friend."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story with the title 'The Return'. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "The title was interpreted in many interesting ways. The best stories used a limited time frame and developed one or two characters convincingly."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
