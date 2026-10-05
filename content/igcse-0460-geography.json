@@ -192,13 +192,28 @@
             {
               "label": "(b)",
               "topic": "1.1",
-              "prompt": "A country has a birth rate of 32 per 1000 and a death rate of 12 per 1000. Calculate its natural increase, per 1000.",
+              "prompt": "A country has a birth rate of {b} per 1000 and a death rate of {d} per 1000. Calculate its natural increase, per 1000.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "20",
+              "variables": {
+                "b": {
+                  "min": 18,
+                  "max": 45,
+                  "step": 1,
+                  "value": 32
+                },
+                "d": {
+                  "min": 5,
+                  "max": 16,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "b - d",
               "markingPoints": [
                 {
-                  "text": "B1 for 20 per 1000",
+                  "text": "B1 for {=b-d} per 1000",
                   "marks": 1
                 }
               ],
@@ -337,21 +352,37 @@
             {
               "label": "(b)",
               "topic": "1.3",
-              "prompt": "A country has 450 dependants for every 600 people of working age. Calculate the dependency ratio (dependants ÷ working population × 100).",
+              "prompt": "A country has {dep} dependants for every {w} people of working age. Calculate the dependency ratio (dependants ÷ working population × 100).",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "75",
+              "variables": {
+                "dep": {
+                  "min": 300,
+                  "max": 900,
+                  "step": 10,
+                  "value": 450
+                },
+                "w": {
+                  "min": 500,
+                  "max": 1000,
+                  "step": 50,
+                  "value": 600
+                }
+              },
+              "answerExpression": "dep / w * 100",
+              "relativeTolerance": 0.005,
               "markingPoints": [
                 {
-                  "text": "M1 for 450 ÷ 600 × 100",
+                  "text": "M1 for {dep} ÷ {w} × 100",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 75",
+                  "text": "A1 for {=round(dep/w*100, 1)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Many candidates divided the wrong way round. The working population goes on the bottom."
             },
             {
               "label": "(c)",
@@ -392,17 +423,33 @@
             {
               "label": "(a)",
               "topic": "1.4",
-              "prompt": "A region has 2.4 million people living in an area of 30 000 km². Calculate its population density, in people per km².",
+              "prompt": "A region has {p} million people living in an area of {a} km². Calculate its population density, in people per km².",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "80",
+              "variables": {
+                "p": {
+                  "min": 0.5,
+                  "max": 6,
+                  "step": 0.1,
+                  "value": 2.4
+                },
+                "a": {
+                  "min": 10000,
+                  "max": 60000,
+                  "step": 2000,
+                  "value": 30000
+                }
+              },
+              "answerExpression": "p * 1000000 / a",
+              "relativeTolerance": 0.005,
               "markingPoints": [
                 {
-                  "text": "M1 for 2 400 000 ÷ 30 000",
+                  "text": "M1 for {=p*1000000} ÷ {a}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 80",
+                  "text": "A1 for {=round(p*1000000/a, 1)}",
                   "marks": 1
                 }
               ],
@@ -968,13 +1015,28 @@
             {
               "label": "(b)",
               "topic": "2.4",
-              "prompt": "On one day the maximum temperature was 31 °C and the minimum was 19 °C. Calculate the daily temperature range, in °C.",
+              "prompt": "On one day the maximum temperature was {mx} °C and the minimum was {mn} °C. Calculate the daily temperature range, in °C.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "12",
+              "variables": {
+                "mx": {
+                  "min": 20,
+                  "max": 38,
+                  "step": 1,
+                  "value": 31
+                },
+                "mn": {
+                  "min": 2,
+                  "max": 19,
+                  "step": 1,
+                  "value": 19
+                }
+              },
+              "answerExpression": "mx - mn",
               "markingPoints": [
                 {
-                  "text": "B1 for 12",
+                  "text": "B1 for {=mx-mn}",
                   "marks": 1
                 }
               ],
@@ -1644,17 +1706,27 @@
             {
               "label": "(a)",
               "topic": "S1",
-              "prompt": "On a 1 : 50 000 map, two points are 6.4 cm apart. Calculate the real distance between them, in km.",
+              "prompt": "On a 1 : 50 000 map, two points are {c} cm apart. Calculate the real distance between them, in km.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "3.2",
+              "variables": {
+                "c": {
+                  "min": 1.2,
+                  "max": 15,
+                  "step": 0.2,
+                  "value": 6.4
+                }
+              },
+              "answerExpression": "c * 0.5",
+              "relativeTolerance": 0.005,
               "markingPoints": [
                 {
-                  "text": "M1 for 6.4 × 50 000 = 320 000 cm",
+                  "text": "M1 for {c} × 50 000 = {=c*50000} cm",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 3.2 km",
+                  "text": "A1 for {=c*0.5} km",
                   "marks": 1
                 }
               ],
@@ -1720,13 +1792,52 @@
             {
               "label": "(a)",
               "topic": "S2",
-              "prompt": "Monthly rainfall from January to June was 120, 95, 80, 40, 10 and 5 mm. Calculate the total rainfall for these six months, in mm.",
+              "prompt": "Monthly rainfall from January to June was {r1}, {r2}, {r3}, {r4}, {r5} and {r6} mm. Calculate the total rainfall for these six months, in mm.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "350",
+              "variables": {
+                "r1": {
+                  "min": 80,
+                  "max": 160,
+                  "step": 5,
+                  "value": 120
+                },
+                "r2": {
+                  "min": 60,
+                  "max": 130,
+                  "step": 5,
+                  "value": 95
+                },
+                "r3": {
+                  "min": 40,
+                  "max": 110,
+                  "step": 5,
+                  "value": 80
+                },
+                "r4": {
+                  "min": 20,
+                  "max": 70,
+                  "step": 5,
+                  "value": 40
+                },
+                "r5": {
+                  "min": 0,
+                  "max": 30,
+                  "step": 5,
+                  "value": 10
+                },
+                "r6": {
+                  "min": 0,
+                  "max": 20,
+                  "step": 5,
+                  "value": 5
+                }
+              },
+              "answerExpression": "r1 + r2 + r3 + r4 + r5 + r6",
               "markingPoints": [
                 {
-                  "text": "B1 for 350",
+                  "text": "B1 for {=r1+r2+r3+r4+r5+r6}",
                   "marks": 1
                 }
               ],
@@ -1735,17 +1846,45 @@
             {
               "label": "(b)",
               "topic": "S2",
-              "prompt": "Calculate the mean of these temperatures: 24, 26, 27 and 25 °C.",
+              "prompt": "Calculate the mean of these temperatures: {t1}, {t2}, {t3} and {t4} °C.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "25.5",
+              "variables": {
+                "t1": {
+                  "min": 18,
+                  "max": 30,
+                  "step": 1,
+                  "value": 24
+                },
+                "t2": {
+                  "min": 18,
+                  "max": 30,
+                  "step": 1,
+                  "value": 26
+                },
+                "t3": {
+                  "min": 18,
+                  "max": 30,
+                  "step": 1,
+                  "value": 27
+                },
+                "t4": {
+                  "min": 18,
+                  "max": 30,
+                  "step": 1,
+                  "value": 25
+                }
+              },
+              "answerExpression": "(t1 + t2 + t3 + t4) / 4",
+              "relativeTolerance": 0.005,
               "markingPoints": [
                 {
-                  "text": "B1 for 25.5",
+                  "text": "B1 for {=(t1+t2+t3+t4)/4}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Add all four values and divide by four; a common error was dividing by three."
             },
             {
               "label": "(c)",
@@ -2016,21 +2155,37 @@
             {
               "label": "(b)",
               "topic": "S3",
-              "prompt": "A float travels 10 m in 25 s. Calculate the surface velocity of the river, in m/s.",
+              "prompt": "A float travels {d} m in {t} s. Calculate the surface velocity of the river, in m/s.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "0.4",
+              "variables": {
+                "d": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 5,
+                  "value": 10
+                },
+                "t": {
+                  "min": 10,
+                  "max": 60,
+                  "step": 1,
+                  "value": 25
+                }
+              },
+              "answerExpression": "d / t",
+              "relativeTolerance": 0.005,
               "markingPoints": [
                 {
-                  "text": "M1 for 10 ÷ 25",
+                  "text": "M1 for {d} ÷ {t}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 0.4 m/s",
+                  "text": "A1 for {=round(d/t, 3)} m/s",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Velocity is distance divided by time; some candidates divided time by distance."
             },
             {
               "label": "(c)",
@@ -2049,6 +2204,4522 @@
                 }
               ],
               "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 1",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.1",
+              "prompt": "Country X has a birth rate of {b} per 1000 and a death rate of {d} per 1000. Calculate its rate of natural increase as a percentage.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.9",
+              "variables": {
+                "b": {
+                  "min": 14,
+                  "max": 46,
+                  "step": 1,
+                  "value": 38
+                },
+                "d": {
+                  "min": 4,
+                  "max": 14,
+                  "step": 1,
+                  "value": 9
+                }
+              },
+              "answerExpression": "(b - d) / 10",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {b} − {d} = {=b-d} per 1000",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(b-d)/10} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates found the natural increase per 1000 but did not convert to a percentage by dividing by 10."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.1",
+              "prompt": "At the start of a year a town had a population of {p}. During the year there were {bi} births, {de} deaths, {im} immigrants and {em} emigrants. Calculate the population at the end of the year.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "45240",
+              "variables": {
+                "p": {
+                  "min": 20000,
+                  "max": 90000,
+                  "step": 1000,
+                  "value": 45000
+                },
+                "bi": {
+                  "min": 300,
+                  "max": 1500,
+                  "step": 10,
+                  "value": 820
+                },
+                "de": {
+                  "min": 200,
+                  "max": 900,
+                  "step": 10,
+                  "value": 410
+                },
+                "im": {
+                  "min": 100,
+                  "max": 1200,
+                  "step": 10,
+                  "value": 560
+                },
+                "em": {
+                  "min": 100,
+                  "max": 1200,
+                  "step": 10,
+                  "value": 730
+                }
+              },
+              "answerExpression": "p + bi - de + im - em",
+              "markingPoints": [
+                {
+                  "text": "M1 for {p} + {bi} − {de} + {im} − {em}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=p+bi-de+im-em}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers set out natural change and net migration separately before combining them."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.1",
+              "prompt": "State the term for the number of live births per 1000 people in a year.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "birth rate",
+                "crude birth rate",
+                "the birth rate",
+                "CBR"
+              ],
+              "markingPoints": [
+                {
+                  "text": "birth rate / crude birth rate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers of 'fertility rate' were not credited: that is the average number of children per woman."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.1",
+              "prompt": "Which term describes a country that has too many people for the resources and technology available to support them at a reasonable standard of living?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "optimum population"
+                },
+                {
+                  "key": "B",
+                  "text": "underpopulation"
+                },
+                {
+                  "key": "C",
+                  "text": "overpopulation"
+                },
+                {
+                  "key": "D",
+                  "text": "depopulation"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – overpopulation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Overpopulation depends on resources and technology, not simply on high population density."
+            },
+            {
+              "label": "(e)",
+              "topic": "1.1",
+              "prompt": "Explain why death rates have fallen in many low-income countries in recent decades.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Improved health care / more doctors, clinics and hospitals",
+                  "marks": 1
+                },
+                {
+                  "text": "Vaccination programmes reduce deaths from infectious disease",
+                  "marks": 1
+                },
+                {
+                  "text": "Cleaner water supply and better sanitation reduce waterborne disease such as cholera",
+                  "marks": 1
+                },
+                {
+                  "text": "Better nutrition / more reliable food supply",
+                  "marks": 1
+                },
+                {
+                  "text": "Improved education, e.g. about hygiene and health",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers developed each reason, linking the change to fewer deaths, rather than listing factors."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.1",
+              "prompt": "Give two problems that underpopulation can cause for a country.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Shortage of workers / labour, so resources cannot be fully developed",
+                  "marks": 1
+                },
+                {
+                  "text": "Low tax income to fund services",
+                  "marks": 1
+                },
+                {
+                  "text": "Services such as schools or hospitals close because of too few users",
+                  "marks": 1
+                },
+                {
+                  "text": "Small domestic market for businesses",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who confused underpopulation with low density gave weaker answers."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.1",
+              "prompt": "For a named country you have studied, describe a policy used to influence population growth and evaluate how successful it has been.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Country named and policy identified as anti-natalist or pro-natalist",
+                  "marks": 1
+                },
+                {
+                  "text": "Description of the measures, e.g. limits on family size, free contraception, financial incentives or penalties",
+                  "marks": 1
+                },
+                {
+                  "text": "Further detail of how the policy was promoted or enforced, e.g. education campaigns, tax benefits, childcare",
+                  "marks": 1
+                },
+                {
+                  "text": "Evidence of success, e.g. change in birth rate or fertility rate",
+                  "marks": 1
+                },
+                {
+                  "text": "Limitations or problems, e.g. unpopular, gender imbalance, ageing population, limited effect",
+                  "marks": 1
+                },
+                {
+                  "text": "Overall judgement of success supported by place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers that described a policy in general terms with no place-specific detail could not reach full marks. A judgement is needed for the final mark."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.1",
+              "prompt": "Explain how a high birth rate can affect the economic development of a low-income country.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Large numbers of young dependants increase spending on education and health",
+                  "marks": 1
+                },
+                {
+                  "text": "Less money available for investment in industry or infrastructure",
+                  "marks": 1
+                },
+                {
+                  "text": "Pressure on food, water and housing",
+                  "marks": 1
+                },
+                {
+                  "text": "Not enough jobs for young people as they reach working age / unemployment",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates described problems without linking them to economic development."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.2",
+              "prompt": "State the term for the movement of people from the countryside to towns and cities.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "rural-urban migration",
+                "rural–urban migration",
+                "rural to urban migration",
+                "rural urban migration",
+                "urban migration"
+              ],
+              "markingPoints": [
+                {
+                  "text": "rural–urban migration",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Urbanisation is the result of this movement, not the movement itself."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.2",
+              "prompt": "Which one of the following is a pull factor for a migrant?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "drought destroying crops"
+                },
+                {
+                  "key": "B",
+                  "text": "better-paid jobs in the destination"
+                },
+                {
+                  "key": "C",
+                  "text": "civil war in the home region"
+                },
+                {
+                  "key": "D",
+                  "text": "lack of health care at home"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – better-paid jobs in the destination",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Pull factors attract people to the destination; the other options are push factors."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.2",
+              "prompt": "In one year {im} thousand people moved into a country and {em} thousand people left it. Calculate the net migration for that year, in thousands.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "65",
+              "variables": {
+                "im": {
+                  "min": 40,
+                  "max": 260,
+                  "step": 5,
+                  "value": 185
+                },
+                "em": {
+                  "min": 20,
+                  "max": 250,
+                  "step": 5,
+                  "value": 120
+                }
+              },
+              "answerExpression": "im - em",
+              "markingPoints": [
+                {
+                  "text": "B1 for {=im-em} thousand (negative value means net emigration)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Net migration is immigration minus emigration; a negative answer is valid and shows a net loss."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.2",
+              "prompt": "Define the term refugee.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "A person forced to leave their home / country",
+                  "marks": 1
+                },
+                {
+                  "text": "because of persecution, war or natural disaster / fear for their life",
+                  "marks": 1
+                },
+                {
+                  "text": "and who has crossed an international border",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Forced movement is the key idea; 'someone who moves to find work' is an economic migrant."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.2",
+              "prompt": "Explain the positive and negative impacts of international migration on the destination country.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Positive: fills labour shortages, e.g. in health care or farming",
+                  "marks": 1
+                },
+                {
+                  "text": "Positive: migrants pay taxes / start businesses / cultural diversity",
+                  "marks": 1
+                },
+                {
+                  "text": "Negative: pressure on housing, schools and health services",
+                  "marks": 1
+                },
+                {
+                  "text": "Negative: possible tensions with local people / competition for low-paid jobs",
+                  "marks": 1
+                },
+                {
+                  "text": "Positive: young migrants can offset an ageing population",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both positive and negative impacts are needed for full marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.2",
+              "prompt": "For a named example of international migration, explain why the migrants left their home country and why they chose their destination.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named source and destination countries",
+                  "marks": 1
+                },
+                {
+                  "text": "Economic push factors, e.g. unemployment, low wages, poverty",
+                  "marks": 1
+                },
+                {
+                  "text": "Social or political push factors, e.g. conflict, persecution, poor services",
+                  "marks": 1
+                },
+                {
+                  "text": "Economic pull factors, e.g. job opportunities, higher wages",
+                  "marks": 1
+                },
+                {
+                  "text": "Social pull factors, e.g. family links, language, education, safety",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. numbers, dates, types of job",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Generic lists of push and pull factors scored at most four marks. Candidates should use detail from their own case study."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.3",
+              "prompt": "A country has {y} million people aged 0–14, {w} million aged 15–64 and {o} million aged 65 and over. Calculate the dependency ratio, using (young + old dependants) ÷ working population × 100.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "60",
+              "variables": {
+                "y": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 12.5
+                },
+                "w": {
+                  "min": 15,
+                  "max": 40,
+                  "step": 0.5,
+                  "value": 25
+                },
+                "o": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 0.5,
+                  "value": 2.5
+                }
+              },
+              "answerExpression": "(y + o) / w * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ({y} + {o}) ÷ {w} × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round((y+o)/w*100, 1)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates forgot to include the elderly dependants."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.3",
+              "prompt": "Which feature of a population pyramid shows an ageing population?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a wide base and a narrow top"
+                },
+                {
+                  "key": "B",
+                  "text": "a narrow base and a wide top"
+                },
+                {
+                  "key": "C",
+                  "text": "a wide base that narrows quickly"
+                },
+                {
+                  "key": "D",
+                  "text": "more males than females at every age"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a narrow base and a wide top",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A narrow base shows low birth rates and a wide top shows high life expectancy."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.3",
+              "prompt": "Explain the problems that a youthful population can cause for a country.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "High spending needed on schools / education",
+                  "marks": 1
+                },
+                {
+                  "text": "High demand for health care, e.g. vaccinations, maternal care",
+                  "marks": 1
+                },
+                {
+                  "text": "Future shortage of jobs as young people reach working age",
+                  "marks": 1
+                },
+                {
+                  "text": "Pressure on housing and food supply",
+                  "marks": 1
+                },
+                {
+                  "text": "Large future number of parents so population keeps growing (population momentum)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers explained why each demand arises rather than listing services."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.3",
+              "prompt": "Suggest two reasons why women usually outnumber men in the oldest age groups of a high-income country.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Women have a higher life expectancy than men",
+                  "marks": 1
+                },
+                {
+                  "text": "Men more likely to work in dangerous jobs / have had riskier lifestyles, e.g. smoking, alcohol",
+                  "marks": 1
+                },
+                {
+                  "text": "Men more likely to have died in wars / accidents",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered by most candidates."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.4",
+              "prompt": "State the term used to describe an area where very few people live.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "sparsely populated",
+                "sparse",
+                "sparse population",
+                "sparsely-populated",
+                "low density",
+                "low population density"
+              ],
+              "markingPoints": [
+                {
+                  "text": "sparsely populated",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The opposite term is densely populated."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.4",
+              "prompt": "Which one of the following is a human factor that encourages high population density?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "fertile soils"
+                },
+                {
+                  "key": "B",
+                  "text": "a supply of jobs in industry"
+                },
+                {
+                  "key": "C",
+                  "text": "flat land"
+                },
+                {
+                  "key": "D",
+                  "text": "a reliable water supply"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a supply of jobs in industry",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The other three are physical factors."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.4",
+              "prompt": "Explain the difference between population distribution and population density.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Distribution is the way people are spread out / where people live across an area",
+                  "marks": 1
+                },
+                {
+                  "text": "Density is the number of people per unit area, e.g. per km²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many answers defined density well but described distribution only vaguely."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.4",
+              "prompt": "For a named area of low population density you have studied, explain why few people live there.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named area",
+                  "marks": 1
+                },
+                {
+                  "text": "Physical factor, e.g. extreme cold or heat, low rainfall",
+                  "marks": 1
+                },
+                {
+                  "text": "Physical factor, e.g. steep or mountainous relief, thin infertile soils, dense forest",
+                  "marks": 1
+                },
+                {
+                  "text": "Human factor, e.g. poor accessibility, few jobs, limited services",
+                  "marks": 1
+                },
+                {
+                  "text": "Each factor linked to why it discourages settlement",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. temperatures, rainfall figures, density",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers that simply listed factors without explaining them were limited to three marks."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.5",
+              "prompt": "What is meant by the threshold population of a service?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "the maximum distance people will travel to use it"
+                },
+                {
+                  "key": "B",
+                  "text": "the minimum number of people needed to support it"
+                },
+                {
+                  "key": "C",
+                  "text": "the total population of the settlement"
+                },
+                {
+                  "key": "D",
+                  "text": "the number of people who use it each day"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – the minimum number of people needed to support it",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A describes the range of a good, a common confusion."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.5",
+              "prompt": "Define the range of a good or service.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "The maximum distance people are willing to travel to buy a good or use a service",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Confused with threshold by a number of candidates."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.5",
+              "prompt": "State the type of settlement pattern in which buildings are scattered and far apart.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "dispersed",
+                "dispersed pattern",
+                "scattered",
+                "dispersed settlement"
+              ],
+              "markingPoints": [
+                {
+                  "text": "dispersed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Nucleated and linear patterns were the most common wrong answers."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.5",
+              "prompt": "A village has a population of {p}. A supermarket chain needs a threshold population of {=p+k} people before it will open a store. How many more people does the village need?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1600",
+              "variables": {
+                "p": {
+                  "min": 400,
+                  "max": 1800,
+                  "step": 100,
+                  "value": 900
+                },
+                "k": {
+                  "min": 200,
+                  "max": 2400,
+                  "step": 100,
+                  "value": 1600
+                }
+              },
+              "answerExpression": "k",
+              "markingPoints": [
+                {
+                  "text": "B1 for {=p+k} − {p} = {k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.5",
+              "prompt": "Explain why many early settlements were built at a wet point site or at a bridging point.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Wet point: access to a reliable water supply, e.g. a spring or well",
+                  "marks": 1
+                },
+                {
+                  "text": "Water needed for drinking, cooking, livestock",
+                  "marks": 1
+                },
+                {
+                  "text": "Bridging point: a place where the river was shallow / narrow enough to cross",
+                  "marks": 1
+                },
+                {
+                  "text": "Routes met there so it became a centre for trade",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers explained the advantage of each site rather than simply defining it."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.5",
+              "prompt": "Explain why the number of services in many small rural settlements in high-income countries has decreased.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Rising car ownership lets people travel to larger centres for shopping",
+                  "marks": 1
+                },
+                {
+                  "text": "Out-of-town superstores offer lower prices and wider choice",
+                  "marks": 1
+                },
+                {
+                  "text": "Online shopping reduces demand for local shops",
+                  "marks": 1
+                },
+                {
+                  "text": "Falling or ageing population means threshold not met",
+                  "marks": 1
+                },
+                {
+                  "text": "Services close, e.g. village shop, post office, school, bus route",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Better answers linked the change to threshold population."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.6",
+              "prompt": "Which urban zone in a high-income country typically contains high-density, older terraced housing close to the city centre?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "central business district"
+                },
+                {
+                  "key": "B",
+                  "text": "inner city"
+                },
+                {
+                  "key": "C",
+                  "text": "suburbs"
+                },
+                {
+                  "key": "D",
+                  "text": "rural–urban fringe"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – inner city",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "Give two reasons why land values are highest in the central business district (CBD).",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Most accessible location / routes converge there",
+                  "marks": 1
+                },
+                {
+                  "text": "High demand for limited space / competition for land",
+                  "marks": 1
+                },
+                {
+                  "text": "Large numbers of potential customers / high footfall",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.6",
+              "prompt": "State the term for the process in which run-down inner-city areas are improved when wealthier people move in and renovate housing.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "gentrification"
+              ],
+              "markingPoints": [
+                {
+                  "text": "gentrification",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Urban redevelopment was not credited because it is led by planners rather than residents."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.6",
+              "prompt": "Explain why out-of-town shopping centres are often built on the rural–urban fringe.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Cheaper land than in the CBD",
+                  "marks": 1
+                },
+                {
+                  "text": "Large areas of space for car parking and big stores",
+                  "marks": 1
+                },
+                {
+                  "text": "Good access from ring roads / motorways",
+                  "marks": 1
+                },
+                {
+                  "text": "Less congestion than the city centre",
+                  "marks": 1
+                },
+                {
+                  "text": "Close to large suburban populations",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave the reasons but did not link them to the needs of shopping centres."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.6",
+              "prompt": "For a named urban area you have studied, describe the problems it faces and evaluate the attempts to solve them.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named urban area",
+                  "marks": 1
+                },
+                {
+                  "text": "Problem described, e.g. traffic congestion, air pollution, housing shortage",
+                  "marks": 1
+                },
+                {
+                  "text": "Second problem described, e.g. crime, lack of open space, urban sprawl",
+                  "marks": 1
+                },
+                {
+                  "text": "Solution described, e.g. public transport scheme, new housing, green belt",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation of how effective the solution has been",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. names of schemes, areas, data",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Responses that described problems only, without evaluation, could not reach full marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "In a city, land values fall from US$ {c} per m² at the city centre to US$ {e} per m² at the edge of the city, {d} km away. Calculate the mean fall in land value per km.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "400",
+              "variables": {
+                "c": {
+                  "min": 2000,
+                  "max": 8000,
+                  "step": 250,
+                  "value": 5000
+                },
+                "e": {
+                  "min": 100,
+                  "max": 900,
+                  "step": 50,
+                  "value": 200
+                },
+                "d": {
+                  "min": 4,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "(c - e) / d",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ({c} − {e}) ÷ {d}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for US$ {=round((c-e)/d, 1)} per m² per km",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates divided only the city-centre value by the distance."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.7",
+              "prompt": "A country has {u} million people living in urban areas and {r} million living in rural areas. Calculate the percentage of the population that is urban.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "40",
+              "variables": {
+                "u": {
+                  "min": 2,
+                  "max": 40,
+                  "step": 0.5,
+                  "value": 18
+                },
+                "r": {
+                  "min": 5,
+                  "max": 40,
+                  "step": 0.5,
+                  "value": 27
+                }
+              },
+              "answerExpression": "u / (u + r) * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {u} ÷ ({u} + {r}) × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(u/(u+r)*100, 1)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The urban population must be divided by the total population, not by the rural population."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.7",
+              "prompt": "Which two processes cause the rapid growth of cities in many low-income countries?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "counter-urbanisation and natural decrease"
+                },
+                {
+                  "key": "B",
+                  "text": "rural–urban migration and natural increase"
+                },
+                {
+                  "key": "C",
+                  "text": "suburbanisation and emigration"
+                },
+                {
+                  "key": "D",
+                  "text": "re-urbanisation and an ageing population"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – rural–urban migration and natural increase",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both migration and the high natural increase of a youthful urban population contribute."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.7",
+              "prompt": "State the term for unregistered and untaxed work, such as street selling or shoe shining, found in many cities in low-income countries.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "informal sector",
+                "informal economy",
+                "informal work",
+                "informal employment",
+                "informal"
+              ],
+              "markingPoints": [
+                {
+                  "text": "informal sector",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "1.7",
+              "prompt": "Explain why squatter settlements are often found on steep slopes or on river floodplains.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Land is unwanted / not owned or used by others, so less likely to be cleared",
+                  "marks": 1
+                },
+                {
+                  "text": "These are hazardous sites (landslides, floods) so they were left empty",
+                  "marks": 1
+                },
+                {
+                  "text": "Often close to jobs in the city / the only free land available",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Good answers explained why the land was available, not just that it was dangerous."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.7",
+              "prompt": "Explain the environmental problems caused by rapid urban growth.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Air pollution from traffic and factories, causing respiratory illness",
+                  "marks": 1
+                },
+                {
+                  "text": "Water pollution from untreated sewage and industrial waste in rivers",
+                  "marks": 1
+                },
+                {
+                  "text": "Uncollected rubbish / waste dumped in open spaces",
+                  "marks": 1
+                },
+                {
+                  "text": "Loss of farmland and natural habitats as the city sprawls",
+                  "marks": 1
+                },
+                {
+                  "text": "Noise pollution / visual pollution",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Explanation of the cause of each problem was needed for full marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.7",
+              "prompt": "For a named city in a low-income or middle-income country, describe the impacts of rapid urban growth on the people who live there.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named city",
+                  "marks": 1
+                },
+                {
+                  "text": "Housing impacts, e.g. growth of squatter settlements, overcrowding",
+                  "marks": 1
+                },
+                {
+                  "text": "Service impacts, e.g. lack of clean water, sanitation, electricity",
+                  "marks": 1
+                },
+                {
+                  "text": "Employment impacts, e.g. unemployment, informal sector work",
+                  "marks": 1
+                },
+                {
+                  "text": "Health or social impacts, e.g. disease, crime, traffic congestion",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. named districts, population figures",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Weaker answers described squatter settlements in general without reference to a specific city."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.1",
+              "prompt": "At which type of plate boundary does an oceanic plate sink beneath a continental plate?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "constructive"
+                },
+                {
+                  "key": "B",
+                  "text": "destructive (convergent)"
+                },
+                {
+                  "key": "C",
+                  "text": "conservative"
+                },
+                {
+                  "key": "D",
+                  "text": "collision"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – destructive (convergent)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "At collision boundaries two continental plates meet and neither sinks."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.1",
+              "prompt": "State the term for the point on the Earth's surface directly above the focus of an earthquake.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "epicentre",
+                "epicenter",
+                "the epicentre"
+              ],
+              "markingPoints": [
+                {
+                  "text": "epicentre",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.1",
+              "prompt": "On the Richter scale each increase of 1 represents a tenfold increase in the amplitude of ground shaking. How many times greater is the amplitude of a magnitude {=b+k} earthquake than a magnitude {b} earthquake?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "100",
+              "variables": {
+                "b": {
+                  "min": 3,
+                  "max": 6,
+                  "step": 1,
+                  "value": 5
+                },
+                "k": {
+                  "min": 1,
+                  "max": 3,
+                  "step": 1,
+                  "value": 2
+                }
+              },
+              "answerExpression": "10^k",
+              "markingPoints": [
+                {
+                  "text": "B1 for 10 to the power {k} = {=10^k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave the difference in magnitude instead of the multiplying factor."
+            },
+            {
+              "label": "(d)",
+              "topic": "2.1",
+              "prompt": "Describe the structure of the Earth.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Crust: thin outer layer, oceanic and continental",
+                  "marks": 1
+                },
+                {
+                  "text": "Mantle: thick layer of semi-molten rock beneath the crust",
+                  "marks": 1
+                },
+                {
+                  "text": "Outer core: liquid iron and nickel",
+                  "marks": 1
+                },
+                {
+                  "text": "Inner core: solid, very hot iron and nickel at the centre",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Names of layers with a descriptive point for each were needed."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.1",
+              "prompt": "Explain why earthquakes in low-income countries often cause more deaths than earthquakes of similar strength in high-income countries.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Buildings are less likely to be earthquake-resistant / building regulations not enforced",
+                  "marks": 1
+                },
+                {
+                  "text": "Dense squatter settlements collapse easily",
+                  "marks": 1
+                },
+                {
+                  "text": "Fewer emergency services / slower rescue",
+                  "marks": 1
+                },
+                {
+                  "text": "Poor transport links delay aid",
+                  "marks": 1
+                },
+                {
+                  "text": "Less preparation, e.g. drills, warning systems",
+                  "marks": 1
+                },
+                {
+                  "text": "Disease spreads afterwards due to lack of clean water and health care",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers made comparisons between the two types of country."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.1",
+              "prompt": "For a named earthquake or volcanic eruption you have studied, describe its causes and its impacts on people.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named event and location",
+                  "marks": 1
+                },
+                {
+                  "text": "Plate boundary type identified and plate movement described",
+                  "marks": 1
+                },
+                {
+                  "text": "Process causing the event explained, e.g. friction and sudden release of pressure, or rising magma",
+                  "marks": 1
+                },
+                {
+                  "text": "Primary impacts on people, e.g. deaths, injuries, buildings destroyed",
+                  "marks": 1
+                },
+                {
+                  "text": "Secondary impacts, e.g. homelessness, disease, economic losses, tsunami or lahars",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. figures, dates, named places",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates wrote a general account of plate tectonics without linking it to their chosen event."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.1",
+              "prompt": "Describe how the impact of earthquakes can be reduced.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Earthquake-resistant buildings, e.g. cross-bracing, rubber foundations, flexible frames",
+                  "marks": 1
+                },
+                {
+                  "text": "Land-use planning to avoid building on unstable ground",
+                  "marks": 1
+                },
+                {
+                  "text": "Education and earthquake drills",
+                  "marks": 1
+                },
+                {
+                  "text": "Emergency kits and well-trained emergency services",
+                  "marks": 1
+                },
+                {
+                  "text": "Monitoring and warning systems",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.2",
+              "prompt": "Which process of erosion occurs when stones carried by a river wear away its bed and banks?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "attrition"
+                },
+                {
+                  "key": "B",
+                  "text": "abrasion"
+                },
+                {
+                  "key": "C",
+                  "text": "solution"
+                },
+                {
+                  "key": "D",
+                  "text": "hydraulic action"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – abrasion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Attrition is the load colliding with itself and becoming smaller and rounder."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.2",
+              "prompt": "State the name of the raised bank of deposited material found alongside a river channel, formed when the river floods.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "levee",
+                "levees",
+                "natural levee",
+                "natural levees"
+              ],
+              "markingPoints": [
+                {
+                  "text": "levee",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.2",
+              "prompt": "At a river site the channel is {w} m wide, the mean depth is {d} m and the mean velocity is {v} m/s. Calculate the discharge, in m³/s, using discharge = cross-sectional area × velocity.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.2",
+              "variables": {
+                "w": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 6
+                },
+                "d": {
+                  "min": 0.2,
+                  "max": 1.5,
+                  "step": 0.1,
+                  "value": 0.4
+                },
+                "v": {
+                  "min": 0.1,
+                  "max": 1.5,
+                  "step": 0.1,
+                  "value": 0.5
+                }
+              },
+              "answerExpression": "w * d * v",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {w} × {d} = {=w*d} m² cross-sectional area",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(w*d*v, 3)} m³/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The cross-sectional area must be found first; some candidates added the values."
+            },
+            {
+              "label": "(d)",
+              "topic": "2.2",
+              "prompt": "Describe how an ox-bow lake forms.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Erosion on the outside of a meander bend / deposition on the inside",
+                  "marks": 1
+                },
+                {
+                  "text": "The neck of the meander becomes narrower",
+                  "marks": 1
+                },
+                {
+                  "text": "During a flood the river cuts through the neck",
+                  "marks": 1
+                },
+                {
+                  "text": "The river follows the shorter, straighter course",
+                  "marks": 1
+                },
+                {
+                  "text": "Deposition seals off the old meander, leaving an ox-bow lake",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Diagrams are allowed in the exam; a clear sequence was the key to high marks."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.2",
+              "prompt": "Explain how human activities can increase the risk of river flooding.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Urbanisation creates impermeable surfaces so less infiltration",
+                  "marks": 1
+                },
+                {
+                  "text": "Drains carry water quickly to the river / shorter lag time",
+                  "marks": 1
+                },
+                {
+                  "text": "Deforestation reduces interception and increases surface run-off",
+                  "marks": 1
+                },
+                {
+                  "text": "Building on floodplains reduces water storage",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each activity needed a link to more or faster run-off."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.2",
+              "prompt": "For a named river you have studied, describe the opportunities it offers people and the hazards it creates.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named river",
+                  "marks": 1
+                },
+                {
+                  "text": "Opportunity, e.g. fertile soils for farming from silt deposits",
+                  "marks": 1
+                },
+                {
+                  "text": "Opportunity, e.g. water supply, transport, fishing, HEP, tourism",
+                  "marks": 1
+                },
+                {
+                  "text": "Hazard, e.g. flooding damaging homes and crops",
+                  "marks": 1
+                },
+                {
+                  "text": "Hazard, e.g. loss of life, disease, erosion of banks",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. dates of floods, named towns, statistics",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Balanced answers covering both opportunities and hazards scored highly."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.3",
+              "prompt": "State the type of wave that has a strong backwash and removes material from a beach.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "destructive",
+                "destructive wave",
+                "destructive waves"
+              ],
+              "markingPoints": [
+                {
+                  "text": "destructive wave",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.3",
+              "prompt": "Which one of the following is a soft engineering method of coastal management?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "sea wall"
+                },
+                {
+                  "key": "B",
+                  "text": "rock armour"
+                },
+                {
+                  "key": "C",
+                  "text": "beach nourishment"
+                },
+                {
+                  "key": "D",
+                  "text": "groynes"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – beach nourishment",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Groynes are hard engineering structures even though they help to build up the beach."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.3",
+              "prompt": "A cliff top has retreated {d} m in {y} years. Calculate the mean rate of cliff retreat, in m per year.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.5",
+              "variables": {
+                "d": {
+                  "min": 5,
+                  "max": 60,
+                  "step": 1,
+                  "value": 24
+                },
+                "y": {
+                  "min": 10,
+                  "max": 50,
+                  "step": 1,
+                  "value": 16
+                }
+              },
+              "answerExpression": "d / y",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {d} ÷ {y}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(d/y, 3)} m per year",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "2.3",
+              "prompt": "Describe how a headland can be eroded to form a cave, an arch, a stack and a stump.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Waves erode lines of weakness, e.g. joints or faults, by hydraulic action and abrasion",
+                  "marks": 1
+                },
+                {
+                  "text": "A crack is enlarged to form a cave",
+                  "marks": 1
+                },
+                {
+                  "text": "The cave is eroded through the headland to form an arch",
+                  "marks": 1
+                },
+                {
+                  "text": "The roof of the arch collapses, leaving a stack",
+                  "marks": 1
+                },
+                {
+                  "text": "The stack is eroded at its base and collapses to leave a stump",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates named the landforms but did not explain the processes."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.3",
+              "prompt": "Describe the conditions needed for coral reefs to grow.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Warm water, usually above about 18 °C",
+                  "marks": 1
+                },
+                {
+                  "text": "Clear water so sunlight reaches the algae",
+                  "marks": 1
+                },
+                {
+                  "text": "Shallow water, less than about 30 m",
+                  "marks": 1
+                },
+                {
+                  "text": "Salt water / normal salinity",
+                  "marks": 1
+                },
+                {
+                  "text": "Little sediment or pollution",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave correct conditions but vague values."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.3",
+              "prompt": "Explain why mangroves are valuable to people and the environment.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Roots trap sediment and protect the coast from erosion and storm surges",
+                  "marks": 1
+                },
+                {
+                  "text": "Habitat / nursery for fish and other wildlife",
+                  "marks": 1
+                },
+                {
+                  "text": "Source of wood, fuel and food for local people",
+                  "marks": 1
+                },
+                {
+                  "text": "Store carbon / help to reduce climate change",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers that covered both people and the environment were stronger."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.3",
+              "prompt": "For a named coastline you have studied, describe how it is being managed and evaluate the success of the management.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named coastline",
+                  "marks": 1
+                },
+                {
+                  "text": "Reason management is needed, e.g. erosion threatening property",
+                  "marks": 1
+                },
+                {
+                  "text": "Hard engineering method described",
+                  "marks": 1
+                },
+                {
+                  "text": "Soft engineering or other strategy described",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation: effectiveness, cost, or effects further along the coast",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. named settlements, costs, dates",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Evaluation, including any knock-on effects down-drift, separated the strongest answers."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.4",
+              "prompt": "Which instrument is used to calculate relative humidity?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "barometer"
+                },
+                {
+                  "key": "B",
+                  "text": "anemometer"
+                },
+                {
+                  "key": "C",
+                  "text": "wet and dry bulb thermometer (hygrometer)"
+                },
+                {
+                  "key": "D",
+                  "text": "rain gauge"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – wet and dry bulb thermometer (hygrometer)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.4",
+              "prompt": "Name the instrument used to show wind direction.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "wind vane",
+                "weather vane",
+                "windvane",
+                "wind sock",
+                "windsock"
+              ],
+              "markingPoints": [
+                {
+                  "text": "wind vane",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "An anemometer measures wind speed, not direction."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.4",
+              "prompt": "State the unit used to record cloud cover.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "oktas",
+                "okta",
+                "eighths",
+                "eighths of the sky"
+              ],
+              "markingPoints": [
+                {
+                  "text": "oktas",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave percentages, which were not accepted."
+            },
+            {
+              "label": "(d)",
+              "topic": "2.4",
+              "prompt": "A rain gauge recorded {r1}, {r2}, {r3}, {r4} and {r5} mm of rain on five days. Calculate the mean daily rainfall, in mm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "variables": {
+                "r1": {
+                  "min": 0,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                },
+                "r2": {
+                  "min": 0,
+                  "max": 20,
+                  "step": 1,
+                  "value": 0
+                },
+                "r3": {
+                  "min": 0,
+                  "max": 20,
+                  "step": 1,
+                  "value": 7
+                },
+                "r4": {
+                  "min": 0,
+                  "max": 20,
+                  "step": 1,
+                  "value": 3
+                },
+                "r5": {
+                  "min": 1,
+                  "max": 20,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "(r1 + r2 + r3 + r4 + r5) / 5",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ({r1} + {r2} + {r3} + {r4} + {r5}) ÷ 5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(r1+r2+r3+r4+r5)/5} mm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Days with no rain still count when calculating the mean."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.4",
+              "prompt": "Describe how a rain gauge should be sited and used to give accurate readings.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Placed in an open area away from trees and buildings",
+                  "marks": 1
+                },
+                {
+                  "text": "Sunk into the ground with the rim above the surface to prevent splash-in",
+                  "marks": 1
+                },
+                {
+                  "text": "Read at the same time each day",
+                  "marks": 1
+                },
+                {
+                  "text": "Read at eye level in the measuring cylinder",
+                  "marks": 1
+                },
+                {
+                  "text": "Emptied after each reading",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.4",
+              "prompt": "Explain how a maximum–minimum thermometer records the highest and lowest temperatures since it was last reset.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Metal indices (markers) are pushed along the tube by the mercury / liquid",
+                  "marks": 1
+                },
+                {
+                  "text": "Index stays at the highest point on the maximum side",
+                  "marks": 1
+                },
+                {
+                  "text": "Index stays at the lowest point on the minimum side",
+                  "marks": 1
+                },
+                {
+                  "text": "Readings taken from the bottom of the indices, then reset with a magnet",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common error was to suggest that the thermometer records the temperature at a single moment."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.5",
+              "prompt": "Which layer of the tropical rainforest forms an almost continuous cover of tree crowns?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "emergent layer"
+                },
+                {
+                  "key": "B",
+                  "text": "canopy"
+                },
+                {
+                  "key": "C",
+                  "text": "under-canopy"
+                },
+                {
+                  "key": "D",
+                  "text": "shrub layer"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – canopy",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Emergents stand above the canopy."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.5",
+              "prompt": "Explain why areas with an equatorial climate have high rainfall throughout the year.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "High sun angle / intense heating all year",
+                  "marks": 1
+                },
+                {
+                  "text": "Warm air rises (convection) and cools",
+                  "marks": 1
+                },
+                {
+                  "text": "Water vapour condenses to form cumulonimbus clouds",
+                  "marks": 1
+                },
+                {
+                  "text": "Heavy convectional rain, often in the afternoon",
+                  "marks": 1
+                },
+                {
+                  "text": "Low pressure / ITCZ near the equator all year",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers set out the convectional rainfall sequence clearly."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.5",
+              "prompt": "For a named area of tropical rainforest you have studied, explain the causes and impacts of deforestation.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named area",
+                  "marks": 1
+                },
+                {
+                  "text": "Cause, e.g. logging, cattle ranching, commercial farming",
+                  "marks": 1
+                },
+                {
+                  "text": "Cause, e.g. mining, roads, HEP schemes, settlement",
+                  "marks": 1
+                },
+                {
+                  "text": "Environmental impact, e.g. loss of biodiversity, soil erosion",
+                  "marks": 1
+                },
+                {
+                  "text": "Impact on climate or people, e.g. less transpiration, carbon release, loss of indigenous land",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. rates of loss, named projects",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who used a named rainforest with specific detail scored the highest marks."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.1",
+              "prompt": "A country has a gross national income (GNI) of US$ {g} billion and a population of {p} million. Calculate its GNI per capita, in US$.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4000",
+              "variables": {
+                "g": {
+                  "min": 5,
+                  "max": 400,
+                  "step": 5,
+                  "value": 120
+                },
+                "p": {
+                  "min": 2,
+                  "max": 80,
+                  "step": 1,
+                  "value": 30
+                }
+              },
+              "answerExpression": "g * 1000 / p",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {g} 000 000 000 ÷ {p} 000 000",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for US$ {=round(g*1000/p, 1)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates lost marks by mishandling billions and millions."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.1",
+              "prompt": "Which one of the following is a social indicator of development?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "GNI per capita"
+                },
+                {
+                  "key": "B",
+                  "text": "adult literacy rate"
+                },
+                {
+                  "key": "C",
+                  "text": "percentage of workers in industry"
+                },
+                {
+                  "key": "D",
+                  "text": "energy use per person"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – adult literacy rate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Literacy measures education, a social aspect of development."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.1",
+              "prompt": "State the term for a company that has its headquarters in one country and operates in several other countries.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "transnational corporation",
+                "TNC",
+                "multinational",
+                "multinational company",
+                "multinational corporation",
+                "transnational company",
+                "MNC"
+              ],
+              "markingPoints": [
+                {
+                  "text": "transnational corporation (TNC)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.1",
+              "prompt": "Explain why infant mortality rate is a useful indicator of development.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "It reflects the quality of health care / access to doctors and vaccinations",
+                  "marks": 1
+                },
+                {
+                  "text": "It reflects access to clean water, sanitation and nutrition",
+                  "marks": 1
+                },
+                {
+                  "text": "It is easy to compare between countries",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed to link the indicator to living conditions."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.1",
+              "prompt": "Explain how improvements in transport and communications have encouraged globalisation.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Container ships and air freight make it cheaper to move goods around the world",
+                  "marks": 1
+                },
+                {
+                  "text": "The internet and mobile phones allow instant communication between offices",
+                  "marks": 1
+                },
+                {
+                  "text": "TNCs can manage factories and supply chains in different countries",
+                  "marks": 1
+                },
+                {
+                  "text": "Faster travel encourages international business and tourism",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers gave specific examples of technology."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.1",
+              "prompt": "For a named transnational corporation (TNC) you have studied, describe its global operations and evaluate its impacts on the countries where it has factories or offices.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named TNC and the product or service",
+                  "marks": 1
+                },
+                {
+                  "text": "Location of headquarters and of factories / branches described",
+                  "marks": 1
+                },
+                {
+                  "text": "Positive impact, e.g. jobs, training, investment in infrastructure",
+                  "marks": 1
+                },
+                {
+                  "text": "Positive impact, e.g. tax revenue, multiplier effect, exports",
+                  "marks": 1
+                },
+                {
+                  "text": "Negative impact, e.g. low wages, poor conditions, profits sent abroad, pollution",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation / overall judgement with place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A balanced evaluation with specific detail was needed for six marks."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.2",
+              "prompt": "Which one of the following is a physical input to a farming system?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "labour"
+                },
+                {
+                  "key": "B",
+                  "text": "machinery"
+                },
+                {
+                  "key": "C",
+                  "text": "rainfall"
+                },
+                {
+                  "key": "D",
+                  "text": "fertiliser"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – rainfall",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Labour, machinery and fertiliser are human inputs."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.2",
+              "prompt": "State the type of farming in which both crops and livestock are produced on the same farm.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "mixed",
+                "mixed farming",
+                "mixed farm"
+              ],
+              "markingPoints": [
+                {
+                  "text": "mixed farming",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.2",
+              "prompt": "A farm harvested {t} tonnes of maize from {h} hectares. Calculate the yield, in tonnes per hectare.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.5",
+              "variables": {
+                "t": {
+                  "min": 100,
+                  "max": 600,
+                  "step": 10,
+                  "value": 270
+                },
+                "h": {
+                  "min": 40,
+                  "max": 120,
+                  "step": 5,
+                  "value": 60
+                }
+              },
+              "answerExpression": "t / h",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {t} ÷ {h}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(t/h, 3)} t/ha",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.2",
+              "prompt": "Explain how drought can lead to food shortages.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Lack of water means crops fail / lower yields",
+                  "marks": 1
+                },
+                {
+                  "text": "Pasture dies so livestock die or are sold",
+                  "marks": 1
+                },
+                {
+                  "text": "Less food available so prices rise and the poor cannot afford it",
+                  "marks": 1
+                },
+                {
+                  "text": "Soil dries out and is eroded, reducing future harvests",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates described drought but did not link it to food supply."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.2",
+              "prompt": "For a named farm or type of agricultural system you have studied, describe its inputs, processes and outputs.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named farm or farming system and location",
+                  "marks": 1
+                },
+                {
+                  "text": "Physical inputs, e.g. climate, soil, relief",
+                  "marks": 1
+                },
+                {
+                  "text": "Human inputs, e.g. labour, machinery, seeds, fertiliser, money",
+                  "marks": 1
+                },
+                {
+                  "text": "Processes, e.g. ploughing, sowing, spraying, harvesting, milking",
+                  "marks": 1
+                },
+                {
+                  "text": "Outputs, e.g. crops, livestock products, waste",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail, e.g. farm size, rainfall, yields",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A systems approach, clearly organised into inputs, processes and outputs, helped candidates."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.2",
+              "prompt": "Describe how high-yielding varieties (HYVs) of crops can increase food supply, and give one disadvantage of using them.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "HYVs produce larger yields per hectare",
+                  "marks": 1
+                },
+                {
+                  "text": "Some grow faster, allowing more than one harvest a year",
+                  "marks": 1
+                },
+                {
+                  "text": "Some are resistant to drought or disease",
+                  "marks": 1
+                },
+                {
+                  "text": "Disadvantage: need expensive fertiliser, pesticides or irrigation / poorer farmers cannot afford them / loss of crop diversity",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The disadvantage was often omitted."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.3",
+              "prompt": "State the sector of industry that involves extracting raw materials from the land or sea.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "primary",
+                "primary sector",
+                "primary industry"
+              ],
+              "markingPoints": [
+                {
+                  "text": "primary",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.3",
+              "prompt": "What is meant by a footloose industry?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "an industry that must locate near its raw materials"
+                },
+                {
+                  "key": "B",
+                  "text": "an industry that is not tied to a particular location"
+                },
+                {
+                  "key": "C",
+                  "text": "an industry that relies on unskilled labour"
+                },
+                {
+                  "key": "D",
+                  "text": "an industry that is located in the informal sector"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – an industry that is not tied to a particular location",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Footloose industries often use light components and can choose from many locations."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.3",
+              "prompt": "In a country, {p}% of workers are employed in the primary sector and {s}% in the secondary sector. The rest work in the tertiary and quaternary sectors. Calculate the percentage employed in the tertiary and quaternary sectors.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "40",
+              "variables": {
+                "p": {
+                  "min": 2,
+                  "max": 55,
+                  "step": 1,
+                  "value": 38
+                },
+                "s": {
+                  "min": 10,
+                  "max": 35,
+                  "step": 1,
+                  "value": 22
+                }
+              },
+              "answerExpression": "100 - p - s",
+              "markingPoints": [
+                {
+                  "text": "B1 for 100 − {p} − {s} = {=100-p-s} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.3",
+              "prompt": "Explain why governments may offer incentives to attract new industries.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "To create jobs and reduce unemployment",
+                  "marks": 1
+                },
+                {
+                  "text": "To increase tax income",
+                  "marks": 1
+                },
+                {
+                  "text": "Multiplier effect: spending supports other businesses",
+                  "marks": 1
+                },
+                {
+                  "text": "To develop poorer regions / reduce regional inequality",
+                  "marks": 1
+                },
+                {
+                  "text": "Training raises the skills of the workforce",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some answers described the incentives rather than the reasons for offering them."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.3",
+              "prompt": "For a named factory or industrial zone you have studied, explain the factors that influenced its location.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named factory or zone and location",
+                  "marks": 1
+                },
+                {
+                  "text": "Physical factor, e.g. flat land, site, water supply",
+                  "marks": 1
+                },
+                {
+                  "text": "Access to raw materials or components",
+                  "marks": 1
+                },
+                {
+                  "text": "Labour supply, cost or skills",
+                  "marks": 1
+                },
+                {
+                  "text": "Transport links / access to markets",
+                  "marks": 1
+                },
+                {
+                  "text": "Government incentives or place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Factors had to be explained, not simply listed, for full marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.3",
+              "prompt": "Describe the inputs, processes and outputs of a manufacturing industry.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Inputs, e.g. raw materials, components, labour, energy, capital",
+                  "marks": 1
+                },
+                {
+                  "text": "Processes, e.g. assembly, cutting, packaging",
+                  "marks": 1
+                },
+                {
+                  "text": "Outputs, e.g. finished products, profit, waste",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Examples of each part of the system made answers clearer."
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.4",
+              "prompt": "Tourist arrivals in a country increased from {a} million to {=a+i} million over five years. Calculate the percentage increase.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "37.5",
+              "variables": {
+                "a": {
+                  "min": 1,
+                  "max": 10,
+                  "step": 0.5,
+                  "value": 4
+                },
+                "i": {
+                  "min": 0.5,
+                  "max": 6,
+                  "step": 0.5,
+                  "value": 1.5
+                }
+              },
+              "answerExpression": "i / a * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {i} ÷ {a} × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(i/a*100, 1)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The increase must be divided by the original value, not the new value."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.4",
+              "prompt": "Which one of the following is a negative environmental impact of tourism?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "more jobs in hotels"
+                },
+                {
+                  "key": "B",
+                  "text": "footpath erosion"
+                },
+                {
+                  "key": "C",
+                  "text": "money from entrance fees"
+                },
+                {
+                  "key": "D",
+                  "text": "improved roads"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – footpath erosion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.4",
+              "prompt": "State the term for tourism that aims to conserve the environment and benefit local people.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "ecotourism",
+                "eco-tourism",
+                "sustainable tourism",
+                "eco tourism"
+              ],
+              "markingPoints": [
+                {
+                  "text": "ecotourism",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.4",
+              "prompt": "Explain why not all of the money spent by tourists benefits the local economy.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Hotels or tour companies may be owned by foreign TNCs, so profits go abroad (leakage)",
+                  "marks": 1
+                },
+                {
+                  "text": "Food, drink and goods may be imported",
+                  "marks": 1
+                },
+                {
+                  "text": "Senior jobs may go to people from outside the area",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers used the term leakage."
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.4",
+              "prompt": "Explain the reasons for the growth of international tourism.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Cheaper air travel / budget airlines",
+                  "marks": 1
+                },
+                {
+                  "text": "Higher incomes / more disposable income",
+                  "marks": 1
+                },
+                {
+                  "text": "More paid holidays and leisure time",
+                  "marks": 1
+                },
+                {
+                  "text": "Internet makes booking and research easier",
+                  "marks": 1
+                },
+                {
+                  "text": "Package holidays and wider range of destinations",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each reason needed development for full marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.4",
+              "prompt": "For a named area you have studied, describe its attractions for tourists and evaluate the impacts of tourism on it.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named area",
+                  "marks": 1
+                },
+                {
+                  "text": "Physical attractions described",
+                  "marks": 1
+                },
+                {
+                  "text": "Human attractions described",
+                  "marks": 1
+                },
+                {
+                  "text": "Positive economic or social impacts",
+                  "marks": 1
+                },
+                {
+                  "text": "Negative environmental or social impacts",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation with place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed both description of attractions and a judgement on impacts."
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.5",
+              "prompt": "In one year a country generated {h} TWh of electricity from hydro-electric power, {w} TWh from wind and {f} TWh from fossil fuels. Calculate the percentage of its electricity that came from renewable sources.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "variables": {
+                "h": {
+                  "min": 2,
+                  "max": 60,
+                  "step": 1,
+                  "value": 18
+                },
+                "w": {
+                  "min": 1,
+                  "max": 40,
+                  "step": 1,
+                  "value": 12
+                },
+                "f": {
+                  "min": 10,
+                  "max": 150,
+                  "step": 5,
+                  "value": 70
+                }
+              },
+              "answerExpression": "(h + w) / (h + w + f) * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ({h} + {w}) ÷ ({h} + {w} + {f}) × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round((h+w)/(h+w+f)*100, 1)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both hydro-electric power and wind are renewable."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.5",
+              "prompt": "State the fossil fuel formed from the remains of plants that grew in swamps millions of years ago.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "coal"
+              ],
+              "markingPoints": [
+                {
+                  "text": "coal",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.5",
+              "prompt": "Which one of the following is a disadvantage of wind power?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "it releases carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "the supply is not constant"
+                },
+                {
+                  "key": "C",
+                  "text": "it uses a finite resource"
+                },
+                {
+                  "key": "D",
+                  "text": "it produces radioactive waste"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – the supply is not constant",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Wind is renewable and does not emit greenhouse gases while generating electricity."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.5",
+              "prompt": "Explain why fuelwood is important in many low-income countries, and describe one problem caused by its use.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Free or cheap and available locally",
+                  "marks": 1
+                },
+                {
+                  "text": "Many rural households lack an electricity or gas supply",
+                  "marks": 1
+                },
+                {
+                  "text": "Used for cooking and heating",
+                  "marks": 1
+                },
+                {
+                  "text": "Problem: deforestation / soil erosion / indoor smoke causing respiratory illness / time spent collecting",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The problem was often described only vaguely."
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.5",
+              "prompt": "Explain why global demand for energy is increasing.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Rising world population",
+                  "marks": 1
+                },
+                {
+                  "text": "Industrialisation in emerging economies",
+                  "marks": 1
+                },
+                {
+                  "text": "Rising living standards / more electrical goods and cars",
+                  "marks": 1
+                },
+                {
+                  "text": "Urbanisation increases energy use",
+                  "marks": 1
+                },
+                {
+                  "text": "Growth in transport and tourism",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers referred to specific countries or regions."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.5",
+              "prompt": "For a named country or area you have studied, describe how one source of energy is used to generate electricity, and evaluate its advantages and disadvantages.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named country or area and energy source",
+                  "marks": 1
+                },
+                {
+                  "text": "Description of how electricity is generated",
+                  "marks": 1
+                },
+                {
+                  "text": "Economic advantage, e.g. reliable, cheap running costs, jobs",
+                  "marks": 1
+                },
+                {
+                  "text": "Environmental advantage or disadvantage",
+                  "marks": 1
+                },
+                {
+                  "text": "Social or economic disadvantage, e.g. cost, displacement of people, safety",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation with place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrote about energy in general and did not name a place."
+            }
+          ]
+        },
+        {
+          "number": 32,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.6",
+              "prompt": "A town of {p} thousand people uses {v} million litres of water per day for domestic purposes. Calculate the mean domestic water use per person per day, in litres.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "150",
+              "variables": {
+                "p": {
+                  "min": 20,
+                  "max": 200,
+                  "step": 5,
+                  "value": 50
+                },
+                "v": {
+                  "min": 2,
+                  "max": 40,
+                  "step": 0.5,
+                  "value": 7.5
+                }
+              },
+              "answerExpression": "v * 1000 / p",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {=v*1000000} ÷ {=p*1000}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(v*1000/p, 1)} litres",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Careful conversion of thousands and millions was needed."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.6",
+              "prompt": "Globally, which use accounts for the largest share of fresh water?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "domestic use"
+                },
+                {
+                  "key": "B",
+                  "text": "industry"
+                },
+                {
+                  "key": "C",
+                  "text": "agriculture (irrigation)"
+                },
+                {
+                  "key": "D",
+                  "text": "leisure"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – agriculture (irrigation)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Irrigation accounts for roughly 70% of global freshwater withdrawals."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.6",
+              "prompt": "State the term for the removal of salt from sea water to make fresh water.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "desalination",
+                "desalinisation",
+                "desalinization"
+              ],
+              "markingPoints": [
+                {
+                  "text": "desalination",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.6",
+              "prompt": "Explain how wells and boreholes can provide water, and describe one problem of taking too much groundwater.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Wells or boreholes reach water stored in permeable rock (aquifers)",
+                  "marks": 1
+                },
+                {
+                  "text": "Water pumped to the surface by hand or motor pump",
+                  "marks": 1
+                },
+                {
+                  "text": "Problem: water table falls so wells dry up",
+                  "marks": 1
+                },
+                {
+                  "text": "Problem: land subsidence / salt water intrusion near coasts",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 33,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.6",
+              "prompt": "Explain why many people in low-income countries do not have access to safe water.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Lack of money to build piped supply / treatment works",
+                  "marks": 1
+                },
+                {
+                  "text": "Rapid urban growth: squatter settlements not connected",
+                  "marks": 1
+                },
+                {
+                  "text": "Rural areas remote, water must be carried long distances",
+                  "marks": 1
+                },
+                {
+                  "text": "Water sources polluted by sewage, farming or industry",
+                  "marks": 1
+                },
+                {
+                  "text": "Drought or low, unreliable rainfall",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both physical and human factors were credited."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.6",
+              "prompt": "For a named country or area you have studied, describe how the water supply has been increased and evaluate the scheme.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named country or area",
+                  "marks": 1
+                },
+                {
+                  "text": "Reason more water was needed",
+                  "marks": 1
+                },
+                {
+                  "text": "Scheme described, e.g. dam, transfer, desalination, wells",
+                  "marks": 1
+                },
+                {
+                  "text": "Benefits, e.g. reliable supply, irrigation, HEP",
+                  "marks": 1
+                },
+                {
+                  "text": "Problems, e.g. cost, displacement, environmental damage",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation with place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A judgement on the success of the scheme was needed for the top mark."
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.7",
+              "prompt": "Which greenhouse gas is released in large amounts by cattle and rice paddies?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "methane"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "D",
+                  "text": "ozone"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – methane",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.7",
+              "prompt": "State the term for replanting trees in an area where forest has been cleared.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "reforestation",
+                "replanting",
+                "re-afforestation",
+                "reafforestation"
+              ],
+              "markingPoints": [
+                {
+                  "text": "reforestation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Afforestation is planting trees where there was no forest before."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.7",
+              "prompt": "The forest area of a region fell from {a} km² to {=a-l} km² over ten years. Calculate the percentage of the forest that was lost.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7.5",
+              "variables": {
+                "a": {
+                  "min": 20000,
+                  "max": 80000,
+                  "step": 5000,
+                  "value": 40000
+                },
+                "l": {
+                  "min": 1000,
+                  "max": 9000,
+                  "step": 500,
+                  "value": 3000
+                }
+              },
+              "answerExpression": "l / a * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {l} ÷ {a} × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(l/a*100, 2)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The loss must be divided by the original area."
+            },
+            {
+              "label": "(d)",
+              "topic": "3.7",
+              "prompt": "Explain the possible impacts of climate change.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Sea-level rise floods low-lying coasts and islands",
+                  "marks": 1
+                },
+                {
+                  "text": "More frequent extreme weather, e.g. storms, heatwaves, droughts",
+                  "marks": 1
+                },
+                {
+                  "text": "Changes to crop yields and food supply",
+                  "marks": 1
+                },
+                {
+                  "text": "Loss of habitats / extinctions, e.g. coral bleaching",
+                  "marks": 1
+                },
+                {
+                  "text": "Spread of diseases such as malaria to new areas",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A wide range of impacts, each explained, scored well."
+            }
+          ]
+        },
+        {
+          "number": 35,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.7",
+              "prompt": "Explain how deforestation and overgrazing can lead to soil erosion.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Vegetation cover removed so soil exposed to rain and wind",
+                  "marks": 1
+                },
+                {
+                  "text": "Roots no longer bind the soil",
+                  "marks": 1
+                },
+                {
+                  "text": "Less interception so more surface run-off washes soil away",
+                  "marks": 1
+                },
+                {
+                  "text": "Less leaf litter so less humus / soil structure weakens",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Clear cause-and-effect chains were needed."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.7",
+              "prompt": "For a named area you have studied, describe how economic activity has damaged the environment and evaluate attempts to reduce the damage.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Named area and economic activity",
+                  "marks": 1
+                },
+                {
+                  "text": "Environmental damage described, e.g. pollution, habitat loss",
+                  "marks": 1
+                },
+                {
+                  "text": "Further damage or its effect on people",
+                  "marks": 1
+                },
+                {
+                  "text": "Strategy to reduce damage described",
+                  "marks": 1
+                },
+                {
+                  "text": "Evaluation of strategy's success or limitations",
+                  "marks": 1
+                },
+                {
+                  "text": "Place-specific detail",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who described damage only could not reach full marks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 2",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S1",
+              "prompt": "On a 1 : 25 000 map, the distance along a road between two junctions is {c} cm. Calculate the real distance, in km.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.25",
+              "variables": {
+                "c": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 9
+                }
+              },
+              "answerExpression": "c * 0.25",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {c} × 25 000 = {=c*25000} cm",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=c*0.25} km",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "On a 1 : 25 000 map, 4 cm represents 1 km."
+            },
+            {
+              "label": "(b)",
+              "topic": "S1",
+              "prompt": "Two villages are {k} km apart. How far apart would they be on a 1 : 50 000 map, in cm?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "9",
+              "variables": {
+                "k": {
+                  "min": 0.5,
+                  "max": 12,
+                  "step": 0.5,
+                  "value": 4.5
+                }
+              },
+              "answerExpression": "k * 2",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for {=k*2} cm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "On a 1 : 50 000 map, 2 cm represents 1 km."
+            },
+            {
+              "label": "(c)",
+              "topic": "S1",
+              "prompt": "A spot height at the bottom of a valley is {h} m and the summit of a hill is {=h+r} m. The horizontal distance between them is {d} km. Calculate the mean gradient, giving your answer in the form 1 in x (state x only).",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "variables": {
+                "h": {
+                  "min": 20,
+                  "max": 300,
+                  "step": 10,
+                  "value": 120
+                },
+                "r": {
+                  "min": 50,
+                  "max": 400,
+                  "step": 10,
+                  "value": 200
+                },
+                "d": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 0.5,
+                  "value": 2
+                }
+              },
+              "answerExpression": "d * 1000 / r",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for vertical interval = {r} m",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for horizontal distance = {=d*1000} m",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1 in {=round(d*1000/r, 1)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both distances must be in the same units before dividing."
+            },
+            {
+              "label": "(d)",
+              "topic": "S1",
+              "prompt": "A farm is on a bearing of 315° from a church. In which direction is the farm from the church?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "north-east"
+                },
+                {
+                  "key": "B",
+                  "text": "south-west"
+                },
+                {
+                  "key": "C",
+                  "text": "north-west"
+                },
+                {
+                  "key": "D",
+                  "text": "south-east"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – north-west",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Bearings are measured clockwise from north; 315° is north-west."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S1",
+              "prompt": "A school is on a bearing of 090° from a station. In which compass direction is the school from the station?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "east",
+                "E",
+                "due east"
+              ],
+              "markingPoints": [
+                {
+                  "text": "east",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "S1",
+              "prompt": "On a map with 1 km grid squares, a lake covers {n} complete squares and approximately {hs} half squares. Estimate the area of the lake, in km².",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7",
+              "variables": {
+                "n": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                },
+                "hs": {
+                  "min": 0,
+                  "max": 10,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "n + hs / 2",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for {n} + {hs} ÷ 2 = {=n+hs/2} km²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "S1",
+              "prompt": "On a map, contours are drawn every 20 m. Point A lies on the 140 m contour and point B lies on the fourth contour above it. State the height of point B, in metres.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "220",
+                "220 m",
+                "220m"
+              ],
+              "markingPoints": [
+                {
+                  "text": "220 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Count contour intervals, not contour lines below A."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S2",
+              "prompt": "In a survey, {a} out of {t} people said they travelled to work by bus. Calculate the percentage who travelled by bus.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "variables": {
+                "a": {
+                  "min": 10,
+                  "max": 90,
+                  "step": 1,
+                  "value": 36
+                },
+                "t": {
+                  "min": 100,
+                  "max": 250,
+                  "step": 10,
+                  "value": 120
+                }
+              },
+              "answerExpression": "a / t * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for {=round(a/t*100, 1)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "S2",
+              "prompt": "The daily maximum temperatures at a weather station over five days were {t1}, {t2}, {t3}, {t4} and {t5} °C. Calculate the range of these temperatures, in °C.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "variables": {
+                "t1": {
+                  "min": 14,
+                  "max": 30,
+                  "step": 1,
+                  "value": 22
+                },
+                "t2": {
+                  "min": 14,
+                  "max": 30,
+                  "step": 1,
+                  "value": 19
+                },
+                "t3": {
+                  "min": 14,
+                  "max": 30,
+                  "step": 1,
+                  "value": 27
+                },
+                "t4": {
+                  "min": 14,
+                  "max": 30,
+                  "step": 1,
+                  "value": 24
+                },
+                "t5": {
+                  "min": 14,
+                  "max": 30,
+                  "step": 1,
+                  "value": 17
+                }
+              },
+              "answerExpression": "max(t1, t2, t3, t4, t5) - min(t1, t2, t3, t4, t5)",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "B1 for {=max(t1,t2,t3,t4,t5)} − {=min(t1,t2,t3,t4,t5)} = {=max(t1,t2,t3,t4,t5)-min(t1,t2,t3,t4,t5)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Range is the highest value minus the lowest; it can be zero if all values are equal."
+            },
+            {
+              "label": "(c)",
+              "topic": "S2",
+              "prompt": "Which type of graph is most suitable for showing whether there is a relationship between two sets of data?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "pie chart"
+                },
+                {
+                  "key": "B",
+                  "text": "scatter graph"
+                },
+                {
+                  "key": "C",
+                  "text": "divided bar graph"
+                },
+                {
+                  "key": "D",
+                  "text": "pictogram"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – scatter graph",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "S2",
+              "prompt": "State the name of the straight line drawn on a scatter graph to show the general trend of the points.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "line of best fit",
+                "best fit line",
+                "best-fit line",
+                "trend line",
+                "line of best-fit"
+              ],
+              "markingPoints": [
+                {
+                  "text": "line of best fit",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(e)",
+              "topic": "S2",
+              "prompt": "Which type of map uses different shades or colours for areas to show values such as population density?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "choropleth map"
+                },
+                {
+                  "key": "B",
+                  "text": "isoline map"
+                },
+                {
+                  "key": "C",
+                  "text": "flow-line map"
+                },
+                {
+                  "key": "D",
+                  "text": "dot map"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – choropleth map",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Isoline maps join points of equal value with lines."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "Table 1 shows data for five countries.\n\nCountry | GNI per capita (US$) | Life expectancy (years)\nA | 900 | 59\nB | 2 400 | 64\nC | 8 500 | 71\nD | 21 000 | 77\nE | 46 000 | 82",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S2",
+              "prompt": "Using Table 1, describe the relationship between GNI per capita and life expectancy.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Positive relationship: as GNI per capita increases, life expectancy increases",
+                  "marks": 1
+                },
+                {
+                  "text": "Data quoted, e.g. country A US$ 900 and 59 years compared with country E US$ 46 000 and 82 years",
+                  "marks": 1
+                },
+                {
+                  "text": "Life expectancy rises quickly at low incomes and more slowly at higher incomes",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers used paired data from the table to support the trend."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.1",
+              "prompt": "Using Table 1, state the difference in life expectancy between country A and country E, in years.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "23",
+                "23 years"
+              ],
+              "markingPoints": [
+                {
+                  "text": "23 years",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.1",
+              "prompt": "Suggest why life expectancy is higher in countries with higher GNI per capita.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "More money for health care, doctors and hospitals",
+                  "marks": 1
+                },
+                {
+                  "text": "Better access to clean water and sanitation",
+                  "marks": 1
+                },
+                {
+                  "text": "Better diet / nutrition",
+                  "marks": 1
+                },
+                {
+                  "text": "Better education about health",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Good answers explained how wealth leads to better health."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "Table 2 shows the population of a city in a middle-income country.\n\nYear | Population (millions)\n1980 | 1.2\n2000 | 3.0\n2020 | 6.6",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.7",
+              "prompt": "Using Table 2, calculate the percentage increase in the city's population between 1980 and 2020.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "450",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for (6.6 − 1.2) ÷ 1.2 × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 450 %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The increase must be divided by the 1980 population."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.7",
+              "prompt": "Using Table 2, describe how the rate of the city's population growth changed between 1980 and 2020.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Population grew in both periods / more than doubled in each 20-year period",
+                  "marks": 1
+                },
+                {
+                  "text": "Absolute growth was faster after 2000: 3.6 million compared with 1.8 million",
+                  "marks": 1
+                },
+                {
+                  "text": "Percentage growth slowed slightly: 150% then 120%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Precise use of data was rewarded."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "Table 3 shows the population and area of three regions.\n\nRegion | Population | Area (km²)\nP | 360 000 | 1 200\nQ | 45 000 | 9 000\nR | 1 800 000 | 2 000",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.4",
+              "prompt": "Using Table 3, state which region has the highest population density.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "R",
+                "Region R"
+              ],
+              "markingPoints": [
+                {
+                  "text": "R (900 people per km²)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Density must be calculated; R has the largest population and a small area."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.4",
+              "prompt": "Using Table 3, calculate the population density of region Q, in people per km².",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "B1 for 5 people per km²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "Table 4 shows climate data for a location in a hot desert.\n\nMonth | J | F | M | A | M | J | J | A | S | O | N | D\nMean temperature (°C) | 13 | 15 | 19 | 24 | 29 | 33 | 34 | 33 | 30 | 25 | 19 | 14\nRainfall (mm) | 8 | 6 | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 3 | 7",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.5",
+              "prompt": "Using Table 4, calculate the total annual rainfall, in mm.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "markingPoints": [
+                {
+                  "text": "B1 for 30 mm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.5",
+              "prompt": "Using Table 4, calculate the annual temperature range, in °C.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "21",
+              "markingPoints": [
+                {
+                  "text": "B1 for 21 °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hot deserts can have a large annual as well as daily range."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.5",
+              "prompt": "Describe two ways in which plants in hot deserts are adapted to the climate shown in Table 4.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Long or wide-spreading roots to reach water",
+                  "marks": 1
+                },
+                {
+                  "text": "Small, waxy or spiny leaves to reduce transpiration",
+                  "marks": 1
+                },
+                {
+                  "text": "Thick stems store water, e.g. cacti",
+                  "marks": 1
+                },
+                {
+                  "text": "Seeds lie dormant until rain, then plants complete life cycle quickly",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed to describe the adaptation and link it to the dry climate."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.4",
+              "prompt": "At 14:00 the dry bulb thermometer read {d} °C and the wet bulb thermometer read {=d-k} °C. Calculate the difference between the two readings, in °C.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "variables": {
+                "d": {
+                  "min": 18,
+                  "max": 34,
+                  "step": 1,
+                  "value": 26
+                },
+                "k": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "k",
+              "markingPoints": [
+                {
+                  "text": "B1 for {k} °C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A larger difference means lower relative humidity."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.1",
+              "prompt": "A country's population increased from {a} million to {=a+i} million in ten years. Calculate the percentage increase.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "15",
+              "variables": {
+                "a": {
+                  "min": 5,
+                  "max": 60,
+                  "step": 1,
+                  "value": 20
+                },
+                "i": {
+                  "min": 1,
+                  "max": 15,
+                  "step": 0.5,
+                  "value": 3
+                }
+              },
+              "answerExpression": "i / a * 100",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for {i} ÷ {a} × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(i/a*100, 1)} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 4",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S3",
+              "prompt": "Students want to investigate how the number of pedestrians changes with distance from the centre of a town. Write a suitable hypothesis for this investigation.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "A testable statement linking two variables",
+                  "marks": 1
+                },
+                {
+                  "text": "e.g. 'Pedestrian numbers decrease as distance from the town centre increases'",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hypotheses written as questions were not credited."
+            },
+            {
+              "label": "(b)",
+              "topic": "S3",
+              "prompt": "Students interview every tenth person who walks past them. Which sampling method are they using?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "random"
+                },
+                {
+                  "key": "B",
+                  "text": "stratified"
+                },
+                {
+                  "key": "C",
+                  "text": "systematic"
+                },
+                {
+                  "key": "D",
+                  "text": "opportunistic"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – systematic",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Systematic sampling selects at regular intervals."
+            },
+            {
+              "label": "(c)",
+              "topic": "S3",
+              "prompt": "Students time a float over a {d} m stretch of river three times. The times are {t1} s, {t2} s and {t3} s. Calculate the mean velocity, in m/s.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.5",
+              "variables": {
+                "d": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 5,
+                  "value": 10
+                },
+                "t1": {
+                  "min": 12,
+                  "max": 40,
+                  "step": 1,
+                  "value": 18
+                },
+                "t2": {
+                  "min": 12,
+                  "max": 40,
+                  "step": 1,
+                  "value": 22
+                },
+                "t3": {
+                  "min": 12,
+                  "max": 40,
+                  "step": 1,
+                  "value": 20
+                }
+              },
+              "answerExpression": "d / ((t1 + t2 + t3) / 3)",
+              "relativeTolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "M1 for mean time = ({t1} + {t2} + {t3}) ÷ 3 = {=round((t1+t2+t3)/3, 2)} s",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for {d} ÷ mean time",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(d/((t1+t2+t3)/3), 3)} m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Find the mean time first; averaging three separate velocities gives a slightly different answer."
+            },
+            {
+              "label": "(d)",
+              "topic": "S3",
+              "prompt": "Name the instrument used to measure the angle of slope of a beach.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "clinometer",
+                "a clinometer",
+                "inclinometer"
+              ],
+              "markingPoints": [
+                {
+                  "text": "clinometer",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S3",
+              "prompt": "A river channel is {w} m wide. Depths measured at three equally spaced points across it were {a} m, {b} m and {c} m. Calculate the cross-sectional area, in m², using width × mean depth.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.2",
+              "variables": {
+                "w": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 0.5,
+                  "value": 4
+                },
+                "a": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.2
+                },
+                "b": {
+                  "min": 0.2,
+                  "max": 0.9,
+                  "step": 0.05,
+                  "value": 0.45
+                },
+                "c": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.25
+                }
+              },
+              "answerExpression": "w * (a + b + c) / 3",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for mean depth = ({a} + {b} + {c}) ÷ 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(w*(a+b+c)/3, 3)} m²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates multiplied the width by the deepest point only."
+            },
+            {
+              "label": "(b)",
+              "topic": "S3",
+              "prompt": "Explain why students should use a pilot study before carrying out their fieldwork.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "To test that equipment and methods work",
+                  "marks": 1
+                },
+                {
+                  "text": "To check questionnaire questions are clear",
+                  "marks": 1
+                },
+                {
+                  "text": "To find practical problems, e.g. safety, timing, access, and adjust the method",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "S3",
+              "prompt": "Suggest how students could improve the reliability of a traffic count carried out at five sites.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Count at the same time and for the same length of time at each site",
+                  "marks": 1
+                },
+                {
+                  "text": "Repeat counts on different days and calculate a mean",
+                  "marks": 1
+                },
+                {
+                  "text": "Use more sites / a larger sample",
+                  "marks": 1
+                },
+                {
+                  "text": "Avoid unusual days, e.g. market days or bad weather",
+                  "marks": 1
+                },
+                {
+                  "text": "Use tally charts / more than one counter",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Suggestions needed to be practical and linked to reliability."
+            },
+            {
+              "label": "(d)",
+              "topic": "S3",
+              "prompt": "Describe how students could carry out a questionnaire survey of shoppers to find out how far people travel to a town centre.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Choose a sampling method, e.g. systematic every 10th person",
+                  "marks": 1
+                },
+                {
+                  "text": "Stand at several locations / different times",
+                  "marks": 1
+                },
+                {
+                  "text": "Ask closed questions, e.g. 'Where have you travelled from?'",
+                  "marks": 1
+                },
+                {
+                  "text": "Be polite, explain purpose, and record answers on a recording sheet",
+                  "marks": 1
+                },
+                {
+                  "text": "Aim for a set sample size, e.g. 50 people",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Detail on sampling and question design separated stronger answers."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "Table 1 shows pedestrian counts taken for 10 minutes at sites at different distances from a town centre.\n\nSite | Distance from centre (m) | Pedestrians\n1 | 0 | 142\n2 | 200 | 118\n3 | 400 | 96\n4 | 600 | 104\n5 | 800 | 37",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "S3",
+              "prompt": "The hypothesis was 'Pedestrian numbers decrease with distance from the town centre'. To what extent does Table 1 support this hypothesis? Use data in your answer.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Largely supports: count falls from 142 at 0 m to 37 at 800 m",
+                  "marks": 1
+                },
+                {
+                  "text": "General decrease from site 1 to site 3 (142 to 96)",
+                  "marks": 1
+                },
+                {
+                  "text": "Anomaly: site 4 (104) is higher than site 3 (96)",
+                  "marks": 1
+                },
+                {
+                  "text": "Suggested reason for anomaly, e.g. a school, bus stop or shop near site 4",
+                  "marks": 1
+                },
+                {
+                  "text": "Overall conclusion: partly / mostly true",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A clear conclusion supported by data and recognition of the anomaly was needed."
+            },
+            {
+              "label": "(b)",
+              "topic": "S3",
+              "prompt": "Using Table 1, calculate the mean number of pedestrians counted per site.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "99.4",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for 99.4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "S3",
+              "prompt": "Suggest one way the students could present the data in Table 1, and give a reason for your choice.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Scatter graph / line graph of distance against pedestrian count",
+                  "marks": 1
+                },
+                {
+                  "text": "Shows the relationship / trend with distance clearly",
+                  "marks": 1
+                },
+                {
+                  "text": "Alternative: proportional symbols on a map, showing location of each site",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Pie charts were not suitable for this type of data."
             }
           ]
         }
