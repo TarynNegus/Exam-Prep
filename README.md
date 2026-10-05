@@ -63,9 +63,8 @@ Requirements: Node.js 20+ and PostgreSQL 14+.
 
 ```bash
 npm install
-cp .env.example .env            # set DATABASE_URL and SESSION_SECRET
-npx prisma migrate deploy       # create the database tables
-npm run content:import          # load every JSON file in /content
+cp .env.example .env            # set DATABASE_URL, DIRECT_URL and SESSION_SECRET
+npm run db:setup                # create the tables and load every JSON file in /content
 npm run dev                     # http://localhost:3000
 ```
 
@@ -77,6 +76,43 @@ Other commands:
 | `npm run lint` | TypeScript type check |
 | `npm run build` | Production build |
 | `npm run content:import -- path/to/file.json` | Import specific content files |
+
+## Deploying: Supabase (database) + Vercel (website)
+
+Supabase hosts the PostgreSQL database. The Next.js site itself runs on Vercel, which has a free tier and works directly with GitHub.
+
+### 1. Create the Supabase database
+
+1. Sign up at [supabase.com](https://supabase.com) and create a **New project**. Pick a region near your students and save the database password somewhere safe.
+2. Open **Connect** (top of the project dashboard) and copy two connection strings, replacing `[YOUR-PASSWORD]` with your password:
+   - **Transaction pooler** (port `6543`). Add `?pgbouncer=true&connection_limit=1` to the end. This is `DATABASE_URL`.
+   - **Session pooler** (port `5432`). This is `DIRECT_URL`.
+
+The app uses its own login system, so you don't need to set up Supabase Auth.
+
+### 2. Create the tables and load the content
+
+Either way works:
+
+- **From GitHub (no local setup):** in the GitHub repository, open **Settings → Secrets and variables → Actions** and add `DATABASE_URL` and `DIRECT_URL` as repository secrets. Then open **Actions → Update database → Run workflow**. After that, the workflow runs on its own whenever `main` changes the database schema or anything in `/content`.
+- **From your computer:** put both strings in `.env` and run `npm run db:setup`.
+
+### 3. Put the website on Vercel
+
+1. Sign up at [vercel.com](https://vercel.com) with your GitHub account and **Import** this repository. Vercel detects Next.js automatically.
+2. Under **Environment Variables**, add:
+
+   | Name | Value |
+   | --- | --- |
+   | `DATABASE_URL` | the Supabase transaction pooler string (port 6543) |
+   | `DIRECT_URL` | the Supabase session pooler string (port 5432) |
+   | `SESSION_SECRET` | a long random string, e.g. from `openssl rand -base64 32` |
+   | `APP_URL` | your site address, e.g. `https://exam-prep.vercel.app` |
+   | `STRIPE_*` | your Stripe keys (see below) |
+
+3. Click **Deploy**. Every push to `main` then redeploys the site.
+
+`DEV_FAKE_BILLING` never works in production, so subscriptions on the live site need Stripe set up.
 
 ### Setting up Stripe
 

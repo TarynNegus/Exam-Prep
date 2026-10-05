@@ -1,0 +1,25 @@
+# Applies database migrations and imports /content into the production
+# database (Supabase) whenever main changes, or when run manually.
+# Needs the repository secrets DATABASE_URL and DIRECT_URL.
+name: Update database
+
+on:
+  push:
+    branches: [main]
+    paths: ["prisma/**", "content/**", "src/lib/content-schema.ts", "src/lib/import-content.ts"]
+  workflow_dispatch:
+
+jobs:
+  migrate-and-import:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_URL: ${{ secrets.DIRECT_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run db:setup

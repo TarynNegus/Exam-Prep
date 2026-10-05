@@ -12,7 +12,8 @@
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
     "content:import": "tsx scripts/import-content.ts",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "db:setup": "prisma migrate deploy && tsx scripts/import-content.ts"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",

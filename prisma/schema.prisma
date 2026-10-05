@@ -15,9 +15,13 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// On Supabase, DATABASE_URL is the pooled connection (port 6543, used by the
+// app) and DIRECT_URL is the direct connection (port 5432, used for migrations).
+// Locally both can point at the same database.
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 enum Qualification {
