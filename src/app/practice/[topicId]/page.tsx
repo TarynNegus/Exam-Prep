@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { Figures } from "@/components/figures";
 import { PartPractice } from "@/components/part-practice";
 import { ProgressBar, StatusBadge } from "@/components/ui";
 import { db } from "@/lib/db";
@@ -60,6 +61,7 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
             {question.paper.title} · {question.paper.component.title} · Question {question.number}
           </div>
           {question.stem && <p className="whitespace-pre-line rounded-lg bg-slate-50 p-3">{question.stem}</p>}
+          <Figures figures={question.figures} />
           {question.parts.map((part) => (
             <PartPractice key={part.id} part={publicPart(part)} lastScore={latest.get(part.id) ?? null} />
           ))}

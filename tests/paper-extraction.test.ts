@@ -1,54 +1,91 @@
-import { readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
+import { mkdtempSync, readFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
+import sharp from "sharp";
 import { describe, expect, it } from "vitest";
 import { contentFileSchema } from "@/lib/content-schema";
-import { toContentPaper, type Extraction } from "@/lib/paper-extraction";
+import { createFigureCropper, pixelBox } from "@/lib/figure-crop";
+import { toContentPaper, type Extraction, type ExtractedFigure } from "@/lib/paper-extraction";
 
 const base = {
-  options: [], correctAnswer: "", tolerance: null, acceptedAnswers: [], examinerComment: "", needsDiagram: false,
+  options: [], correctAnswer: "", tolerance: null, acceptedAnswers: [], examinerComment: "", figures: [] as ExtractedFigure[],
   markingPoints: [{ text: "B1", marks: 1 }],
 };
+const graph: ExtractedFigure = { page: 2, left: 0.1, top: 0.2, right: 0.6, bottom: 0.5, caption: "Fig. 2.1", alt: "Graph of enzyme activity against temperature" };
+const map: ExtractedFigure = { page: 3, left: 0.1, top: 0.1, right: 0.9, bottom: 0.9, caption: "", alt: "Map" };
+
 const extraction: Extraction = {
   warnings: [],
   questions: [
-    {
-      number: 1,
-      stem: "",
-      parts: [
-        { ...base, label: "", topic: "2", prompt: "Which is in plant cells only?", marks: 1, answerType: "MULTIPLE_CHOICE",
-          options: [{ key: "A", text: "cell wall" }, { key: "B", text: "ribosome" }], correctAnswer: "A" },
-      ],
-    },
-    {
-      number: 2,
-      stem: "The graph shows enzyme activity.",
-      parts: [
-        { ...base, label: "(a)", topic: "5", prompt: "Read the optimum from the graph.", marks: 1, answerType: "NUMERIC", correctAnswer: "37", needsDiagram: true },
-        { ...base, label: "(b)", topic: "5", prompt: "Explain denaturation.", marks: 2, answerType: "EXTENDED" },
-      ],
-    },
-    { number: 3, stem: "", parts: [{ ...base, label: "", topic: "1", prompt: "Label the map.", marks: 2, answerType: "EXTENDED", needsDiagram: true }] },
+    { number: 1, stem: "", figures: [], parts: [
+      { ...base, label: "", topic: "2", prompt: "Which is in plant cells only?", marks: 1, answerType: "MULTIPLE_CHOICE",
+        options: [{ key: "A", text: "cell wall" }, { key: "B", text: "ribosome" }], correctAnswer: "A" },
+    ] },
+    { number: 2, stem: "The graph shows enzyme activity.", figures: [graph], parts: [
+      { ...base, label: "(a)", topic: "5", prompt: "Read the optimum from the graph.", marks: 1, answerType: "NUMERIC", correctAnswer: "37" },
+      { ...base, label: "(b)", topic: "5", prompt: "Explain denaturation.", marks: 2, answerType: "EXTENDED" },
+    ] },
+    { number: 3, stem: "", figures: [], parts: [{ ...base, label: "", topic: "1", prompt: "Label the map.", marks: 2, answerType: "EXTENDED", figures: [map] }] },
   ],
 };
+const info = { component: "2", series: "June 2024", variant: "22", title: "June 2024 Paper 22" };
 
 describe("toContentPaper", () => {
-  const info = { component: "2", series: "June 2024", variant: "22", title: "June 2024 Paper 22" };
-  const { paper, skipped } = toContentPaper(extraction, info);
+  it("attaches saved figures to the stem and parts", async () => {
+    const { paper, skipped } = await toContentPaper(extraction, info, async (_f, name) => `0610/test/${name}.png`);
+    expect(skipped).toEqual([]);
+    expect(paper.questions[1].figures).toEqual([{ src: "0610/test/q2-1.png", alt: graph.alt, caption: "Fig. 2.1" }]);
+    expect(paper.questions[2].parts[0].figures[0].src).toBe("0610/test/q3-1.png");
+  });
 
-  it("skips parts that need a diagram and drops empty questions", () => {
-    expect(skipped).toEqual(["Q2(a): needs a diagram", "Q3: needs a diagram"]);
+  it("skips questions whose figures could not be saved", async () => {
+    const { paper, skipped } = await toContentPaper(extraction, info, async (figure) => (figure === map ? null : "x/ok.png"));
+    expect(skipped).toEqual(["Q3: its figure could not be cut out of the PDF"]);
     expect(paper.questions.map((q) => q.number)).toEqual([1, 2]);
-    expect(paper.questions[1].parts.map((p) => p.label)).toEqual(["(b)"]);
   });
 
-  it("keeps only the fields each answer type uses", () => {
+  it("keeps only the fields each answer type uses", async () => {
+    const { paper } = await toContentPaper(extraction, info, async () => "x/ok.png");
     expect(paper.questions[0].parts[0]).toMatchObject({ options: [{ key: "A", text: "cell wall" }, { key: "B", text: "ribosome" }], correctAnswer: "A" });
-    expect(paper.questions[1].parts[0]).not.toHaveProperty("options");
-    expect(paper.questions[1].parts[0]).not.toHaveProperty("correctAnswer");
+    expect(paper.questions[1].parts[1]).not.toHaveProperty("options");
+    expect(paper.questions[1].parts[1]).not.toHaveProperty("correctAnswer");
   });
 
-  it("produces a paper that validates against its subject", () => {
+  it("produces a paper that validates against its subject", async () => {
+    const { paper } = await toContentPaper(extraction, info, async (_f, name) => `0610/test/${name}.png`);
     const subject = JSON.parse(readFileSync(join(__dirname, "..", "content", "igcse-0610-biology.json"), "utf8"));
     expect(contentFileSchema.safeParse({ ...subject, papers: [paper] }).success).toBe(true);
+  });
+});
+
+describe("pixelBox", () => {
+  it("pads and clamps the box to the page", () => {
+    expect(pixelBox({ page: 1, left: 0, top: 0.5, right: 0.5, bottom: 1 }, 1000, 2000)).toEqual({ left: 0, top: 980, width: 510, height: 1020 });
+  });
+
+  it("rejects boxes outside the page or inside out", () => {
+    expect(pixelBox({ page: 1, left: 0.5, top: 0, right: 0.4, bottom: 1 }, 100, 100)).toBeNull();
+    expect(pixelBox({ page: 1, left: -0.1, top: 0, right: 0.4, bottom: 1 }, 100, 100)).toBeNull();
+  });
+});
+
+describe("createFigureCropper", () => {
+  it("cuts a figure out of a real PDF page", async () => {
+    const dir = mkdtempSync(join(tmpdir(), "crop-test-"));
+    const pdf = join(dir, "paper.pdf");
+    // A white A4-shaped page with a black square in the top-left quarter.
+    const page = await sharp({ create: { width: 600, height: 800, channels: 3, background: "white" } })
+      .composite([{ input: { create: { width: 200, height: 200, channels: 3, background: "black" } }, left: 50, top: 50 }])
+      .png()
+      .toBuffer();
+    execFileSync("convert", ["png:-", pdf], { input: page });
+
+    const out = join(dir, "figure.png");
+    const crop = createFigureCropper(pdf);
+    expect(await crop({ page: 1, left: 50 / 600, top: 50 / 800, right: 250 / 600, bottom: 250 / 800 }, out)).toBe(true);
+    const { width, height } = await sharp(out).metadata();
+    expect(width! / height!).toBeCloseTo(((200 / 600 + 0.02) * 600) / ((200 / 800 + 0.02) * 800), 1);
+    expect(await crop({ page: 9, left: 0, top: 0, right: 1, bottom: 1 }, out)).toBe(false);
   });
 });

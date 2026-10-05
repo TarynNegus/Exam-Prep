@@ -4,14 +4,16 @@
 //   --subject content/igcse-0610-biology.json --component 2 --series "June 2024" --variant 22 \
 //   --paper qp.pdf --mark-scheme ms.pdf [--examiner-report er.pdf]
 //
-// Writes content/drafts/<code>-<series>-<variant>.json. Check it against the
-// PDFs, then add it to the subject with `npm run content:merge -- <draft>`.
+// Writes content/drafts/<code>-<series>-<variant>.json and crops each figure
+// into public/figures/. Check both against the PDFs, then add the paper to the
+// subject with `npm run content:merge -- <draft>`. Needs poppler's pdftoppm.
 // Needs ANTHROPIC_API_KEY.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { parseArgs } from "node:util";
 import Anthropic from "@anthropic-ai/sdk";
 import { contentFileSchema } from "../src/lib/content-schema";
+import { createFigureCropper } from "../src/lib/figure-crop";
 import { extractPaper, toContentPaper } from "../src/lib/paper-extraction";
 
 async function main() {
@@ -52,7 +54,14 @@ async function main() {
     markScheme: readFileSync(args["mark-scheme"]!),
     examinerReport: args["examiner-report"] ? readFileSync(args["examiner-report"]) : undefined,
   });
-  const { paper, skipped } = toContentPaper(extraction, info);
+  // Figures are cut out of the question paper and saved under public/figures/<code>/<paper>/.
+  const slug = `${subject.subject.code}-${info.series}-${info.variant}`.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const figureDir = `${subject.subject.code}/${slug}`;
+  const crop = createFigureCropper(args.paper!);
+  const { paper, skipped } = await toContentPaper(extraction, info, async (figure, name) => {
+    const src = `${figureDir}/${name}.png`;
+    return (await crop(figure, join("public", "figures", src))) ? src : null;
+  });
 
   // Validate as part of the subject so topic and component refs are checked.
   const check = contentFileSchema.safeParse({ ...subject, papers: [paper] });
@@ -60,7 +69,6 @@ async function main() {
 
   const dir = join("content", "drafts");
   mkdirSync(dir, { recursive: true });
-  const slug = `${subject.subject.code}-${info.series}-${info.variant}`.toLowerCase().replace(/[^a-z0-9]+/g, "-");
   const out = join(dir, `${slug}.json`);
   writeFileSync(
     out,
@@ -68,7 +76,9 @@ async function main() {
   );
 
   const parts = paper.questions.reduce((n, q) => n + q.parts.length, 0);
-  console.log(`\nDraft written to ${out}: ${paper.questions.length} questions, ${parts} parts.`);
+  const figures = paper.questions.reduce((n, q) => n + q.figures.length + q.parts.reduce((m, p) => m + p.figures.length, 0), 0);
+  console.log(`\nDraft written to ${out}: ${paper.questions.length} questions, ${parts} parts, ${figures} figures in public/figures/${figureDir}.`);
+  if (figures) console.log("Check each cropped figure includes its labels and nothing from neighbouring questions.");
   for (const [heading, list] of [["Skipped", skipped], ["Check", extraction.warnings], ["Must fix before merging", problems]] as const) {
     if (list.length) console.log(`\n${heading}:\n${list.map((l) => `  - ${l}`).join("\n")}`);
   }

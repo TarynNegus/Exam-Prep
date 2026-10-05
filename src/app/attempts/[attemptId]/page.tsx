@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExamPaper } from "@/components/exam-paper";
+import { Figures, type FigureData } from "@/components/figures";
 import { ResultPart } from "@/components/result-part";
 import { ProgressBar } from "@/components/ui";
 import { db } from "@/lib/db";
@@ -38,6 +39,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
           id: q.id,
           number: q.number,
           stem: q.stem,
+          figures: q.figures as unknown as FigureData[],
           parts: q.parts.map(publicPart),
         }))}
       />
@@ -91,6 +93,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
         <article key={question.id} className="card space-y-4">
           <h2 className="font-semibold">Question {question.number}</h2>
           {question.stem && <p className="whitespace-pre-line rounded-lg bg-slate-50 p-3">{question.stem}</p>}
+          <Figures figures={question.figures} />
           {question.parts.map((part) => {
             const answer = answerByPart.get(part.id);
             return (
@@ -102,6 +105,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
                   </p>
                   <span className="shrink-0 text-sm text-slate-500">[{part.marks}]</span>
                 </div>
+                <Figures figures={part.figures} />
                 <div className="mt-2 rounded-lg border border-slate-200 p-3 text-sm">
                   <div className="text-xs font-medium text-slate-500">Your answer</div>
                   <p className="whitespace-pre-line">{answer?.response || <em className="text-slate-400">No answer</em>}</p>

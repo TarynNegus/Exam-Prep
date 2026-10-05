@@ -5,6 +5,7 @@ import { useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { submitPracticeAnswer, submitSelfMark, type PracticeResult } from "@/lib/practice-actions";
 import { AnswerInput } from "./answer-input";
+import { Figures } from "./figures";
 import { FeedbackPanel } from "./feedback-panel";
 
 interface Props {
@@ -55,6 +56,9 @@ export function PartPractice({ part, lastScore }: Props) {
           {part.prompt}
         </p>
         <span className="shrink-0 text-sm text-slate-500">[{part.marks}]</span>
+      </div>
+      <div className="mb-3">
+        <Figures figures={part.figures} />
       </div>
       {lastScore !== null && !result && (
         <p className="mb-2 text-xs text-slate-500">Last attempt: {lastScore}/{part.marks}</p>

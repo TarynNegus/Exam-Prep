@@ -135,6 +135,7 @@ model Question {
   paper      PastPaper      @relation(fields: [paperId], references: [id], onDelete: Cascade)
   number     Int
   stem       String         @default("") // shared context for all parts
+  figures    Json           @default("[]") // [{ src, alt, caption }] shown with the stem
   parts      QuestionPart[]
 
   @@unique([paperId, number])
@@ -157,6 +158,7 @@ model QuestionPart {
   acceptedAnswers String[]   @default([]) // SHORT_TEXT accepted responses
   markingPoints   Json       // mark scheme: [{ text: "...", marks: 1 }]
   examinerComment String     @default("") // examiner's report commentary
+  figures         Json       @default("[]") // [{ src, alt, caption }] shown with the prompt
   answers         Answer[]
 
   @@unique([questionId, position])

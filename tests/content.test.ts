@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { contentFileSchema } from "@/lib/content-schema";
@@ -14,6 +14,13 @@ describe.each(readdirSync(dir).filter((f) => f.endsWith(".json")))("content/%s",
     for (const part of parts) {
       const total = part.markingPoints.reduce((sum, mp) => sum + mp.marks, 0);
       expect(total, `${part.prompt.slice(0, 40)}`).toBeGreaterThanOrEqual(part.marks);
+    }
+  });
+
+  it("has an image file for every figure", () => {
+    const figures = content.papers.flatMap((p) => p.questions.flatMap((q) => [...q.figures, ...q.parts.flatMap((part) => part.figures)]));
+    for (const figure of figures) {
+      expect(existsSync(join(__dirname, "..", "public", "figures", figure.src)), figure.src).toBe(true);
     }
   });
 

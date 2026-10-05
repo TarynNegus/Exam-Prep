@@ -4,11 +4,13 @@ import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { submitPaper } from "@/lib/paper-actions";
 import { AnswerInput } from "./answer-input";
+import { Figures, type FigureData } from "./figures";
 
 interface ExamQuestion {
   id: string;
   number: number;
   stem: string;
+  figures: FigureData[];
   parts: PublicPart[];
 }
 
@@ -109,6 +111,7 @@ export function ExamPaper({ attemptId, title, deadline, questions }: Props) {
         <article key={question.id} className="card space-y-4">
           <h2 className="font-semibold">Question {question.number}</h2>
           {question.stem && <p className="whitespace-pre-line rounded-lg bg-slate-50 p-3">{question.stem}</p>}
+          <Figures figures={question.figures} />
           {question.parts.map((part) => (
             <div key={part.id} className="space-y-2">
               <div className="flex items-start justify-between gap-4">
@@ -118,6 +121,7 @@ export function ExamPaper({ attemptId, title, deadline, questions }: Props) {
                 </p>
                 <span className="shrink-0 text-sm text-slate-500">[{part.marks}]</span>
               </div>
+              <Figures figures={part.figures} />
               <AnswerInput part={part} value={responses[part.id] ?? ""} onChange={(v) => update(part.id, v)} disabled={pending} />
             </div>
           ))}

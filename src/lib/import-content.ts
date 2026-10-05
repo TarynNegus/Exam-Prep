@@ -48,8 +48,8 @@ export async function importContent(db: PrismaClient, raw: unknown) {
         for (const q of p.questions) {
           const question = await tx.question.upsert({
             where: { paperId_number: { paperId: paper.id, number: q.number } },
-            update: { stem: q.stem },
-            create: { paperId: paper.id, number: q.number, stem: q.stem },
+            update: { stem: q.stem, figures: q.figures },
+            create: { paperId: paper.id, number: q.number, stem: q.stem, figures: q.figures },
           });
           for (const [position, part] of q.parts.entries()) {
             const data = {
@@ -64,6 +64,7 @@ export async function importContent(db: PrismaClient, raw: unknown) {
               acceptedAnswers: part.acceptedAnswers ?? [],
               markingPoints: part.markingPoints,
               examinerComment: part.examinerComment,
+              figures: part.figures,
             };
             await tx.questionPart.upsert({
               where: { questionId_position: { questionId: question.id, position } },

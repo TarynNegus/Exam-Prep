@@ -4,6 +4,17 @@ import { z } from "zod";
 
 const markingPoint = z.object({ text: z.string().min(1), marks: z.number().int().min(0) });
 
+/** An image shown with a question or part. Files live in public/figures/. */
+export const figureSchema = z.object({
+  src: z
+    .string()
+    .regex(/^[\w-]+(\/[\w.-]+)*\.(svg|png|jpe?g|webp)$/, "figure src must be a path like 0625/circuit-1.svg")
+    .describe("Path inside public/figures/"),
+  alt: z.string().min(1).describe("Text description for screen readers"),
+  caption: z.string().default("").describe('e.g. "Fig. 1.1"'),
+});
+
+
 const part = z
   .object({
     label: z.string().default(""),
@@ -17,6 +28,7 @@ const part = z
     acceptedAnswers: z.array(z.string()).optional(),
     markingPoints: z.array(markingPoint).min(1),
     examinerComment: z.string().default(""),
+    figures: z.array(figureSchema).default([]),
   })
   .superRefine((p, ctx) => {
     if (p.answerType === "MULTIPLE_CHOICE") {
@@ -33,6 +45,7 @@ const part = z
 const question = z.object({
   number: z.number().int().positive(),
   stem: z.string().default(""),
+  figures: z.array(figureSchema).default([]),
   parts: z.array(part).min(1),
 });
 

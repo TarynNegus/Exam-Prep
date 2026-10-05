@@ -1,4 +1,5 @@
 import type { QuestionPart } from "@prisma/client";
+import type { FigureData } from "@/components/figures";
 import type { MarkingPoint } from "./marking";
 
 const SUPERSCRIPT_DIGITS: Record<string, string> = {
@@ -57,6 +58,7 @@ export function publicPart(part: QuestionPart) {
     marks: part.marks,
     answerType: part.answerType,
     options: (part.options ?? null) as { key: string; text: string }[] | null,
+    figures: (part.figures ?? []) as unknown as FigureData[],
   };
 }
 
