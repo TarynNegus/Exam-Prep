@@ -18,6 +18,8 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      # pdftoppm (poppler) renders PDF pages for the paper converter's figure cropping.
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
       - run: npm ci
       - run: npm run lint
       - run: npm test

@@ -1,5 +1,4 @@
-import { execFileSync } from "node:child_process";
-import { mkdtempSync, readFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import sharp from "sharp";
@@ -70,22 +69,46 @@ describe("pixelBox", () => {
   });
 });
 
+/**
+ * A one-page PDF (600 × 800 pt) with a black 200 × 200 pt square whose top-left
+ * corner is 50 pt from the left and top edges, drawn with PDF vector operators.
+ */
+function squarePdf(): Buffer {
+  const content = "0 0 0 rg 50 550 200 200 re f";
+  const objects = [
+    "<< /Type /Catalog /Pages 2 0 R >>",
+    "<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+    "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 600 800] /Contents 4 0 R >>",
+    `<< /Length ${content.length} >>\nstream\n${content}\nendstream`,
+  ];
+  let pdf = "%PDF-1.4\n";
+  const offsets = objects.map((body, i) => {
+    const offset = pdf.length;
+    pdf += `${i + 1} 0 obj\n${body}\nendobj\n`;
+    return offset;
+  });
+  const xref = pdf.length;
+  pdf += `xref\n0 ${objects.length + 1}\n0000000000 65535 f \n`;
+  pdf += offsets.map((o) => `${String(o).padStart(10, "0")} 00000 n \n`).join("");
+  pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`;
+  return Buffer.from(pdf, "latin1");
+}
+
 describe("createFigureCropper", () => {
   it("cuts a figure out of a real PDF page", async () => {
     const dir = mkdtempSync(join(tmpdir(), "crop-test-"));
     const pdf = join(dir, "paper.pdf");
-    // A white A4-shaped page with a black square in the top-left quarter.
-    const page = await sharp({ create: { width: 600, height: 800, channels: 3, background: "white" } })
-      .composite([{ input: { create: { width: 200, height: 200, channels: 3, background: "black" } }, left: 50, top: 50 }])
-      .png()
-      .toBuffer();
-    execFileSync("convert", ["png:-", pdf], { input: page });
+    writeFileSync(pdf, squarePdf());
 
     const out = join(dir, "figure.png");
     const crop = createFigureCropper(pdf);
     expect(await crop({ page: 1, left: 50 / 600, top: 50 / 800, right: 250 / 600, bottom: 250 / 800 }, out)).toBe(true);
     const { width, height } = await sharp(out).metadata();
     expect(width! / height!).toBeCloseTo(((200 / 600 + 0.02) * 600) / ((200 / 800 + 0.02) * 800), 1);
+    // The centre of the crop is inside the black square.
+    const { data, info } = await sharp(out).raw().toBuffer({ resolveWithObject: true });
+    const centre = (Math.floor(info.height / 2) * info.width + Math.floor(info.width / 2)) * info.channels;
+    expect(data[centre]).toBeLessThan(50);
     expect(await crop({ page: 9, left: 0, top: 0, right: 1, bottom: 1 }, out)).toBe(false);
   });
 });
