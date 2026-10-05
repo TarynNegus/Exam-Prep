@@ -13,6 +13,12 @@ describe("parseNumeric", () => {
     [".5", 0.5],
     ["abc", null],
     ["1/0", null],
+    ["2.0e11", 2.0e11],
+    ["1.26e+05", 1.26e5],
+    ["2.0 × 10^11 Pa", 2.0e11],
+    ["2.0x10^-5", 2.0e-5],
+    ["6.2 × 10⁻²¹ J", 6.2e-21],
+    ["−4", -4],
   ])("parses %j", (input, expected) => {
     expect(parseNumeric(input)).toBe(expected);
   });
@@ -29,6 +35,13 @@ describe("markResponse", () => {
     const part = { ...base, correctAnswer: "6.283", tolerance: 0.01 };
     expect(markResponse(part, "6.28")).toEqual({ awardedMarks: 2, autoMarked: true });
     expect(markResponse(part, "6.3")).toEqual({ awardedMarks: 0, autoMarked: false });
+  });
+
+  it("compares very small answers by their size, not a fixed allowance", () => {
+    const part = { ...base, correctAnswer: "6.21e-21", tolerance: 0.02e-21 };
+    expect(markResponse(part, "6.2 × 10⁻²¹").awardedMarks).toBe(2);
+    expect(markResponse(part, "0").awardedMarks).toBe(0);
+    expect(markResponse(part, "6.2e-20").awardedMarks).toBe(0);
   });
 
   it("accepts equivalent numeric forms", () => {
@@ -69,4 +82,13 @@ describe("selfMarkScore", () => {
 
 describe("normaliseText", () => {
   it("lowercases, collapses spaces and trims punctuation", () => expect(normaliseText("  Hello   World. ")).toBe("hello world"));
+});
+
+describe("formatNumericAnswer", () => {
+  it("writes standard form with superscript powers", async () => {
+    const { formatNumericAnswer } = await import("@/lib/feedback");
+    expect(formatNumericAnswer("6.21e-21")).toBe("6.21 × 10⁻²¹");
+    expect(formatNumericAnswer("1.26e+05")).toBe("1.26 × 10⁵");
+    expect(formatNumericAnswer("5400")).toBe("5400");
+  });
 });

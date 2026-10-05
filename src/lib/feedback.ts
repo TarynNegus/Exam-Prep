@@ -1,6 +1,28 @@
 import type { QuestionPart } from "@prisma/client";
 import type { MarkingPoint } from "./marking";
 
+const SUPERSCRIPT_DIGITS: Record<string, string> = {
+  "-": "⁻",
+  "0": "⁰",
+  "1": "¹",
+  "2": "²",
+  "3": "³",
+  "4": "⁴",
+  "5": "⁵",
+  "6": "⁶",
+  "7": "⁷",
+  "8": "⁸",
+  "9": "⁹",
+};
+
+/** Shows "6.21e-21" as "6.21 × 10⁻²¹"; leaves other answers unchanged. */
+export function formatNumericAnswer(value: string): string {
+  const match = value.match(/^(-?[\d.]+)e([+-]?\d+)$/i);
+  if (!match) return value;
+  const exponent = String(Number(match[2])).replace(/[-\d]/g, (c) => SUPERSCRIPT_DIGITS[c]);
+  return `${match[1]} × 10${exponent}`;
+}
+
 export interface PartFeedback {
   markingPoints: MarkingPoint[];
   examinerComment: string;
@@ -15,7 +37,7 @@ export function partFeedback(part: QuestionPart): PartFeedback {
     const correct = options.find((o) => o.key === part.correctAnswer);
     modelAnswer = correct ? `${correct.key} – ${correct.text}` : part.correctAnswer;
   } else if (part.answerType === "NUMERIC") {
-    modelAnswer = part.correctAnswer;
+    modelAnswer = part.correctAnswer && formatNumericAnswer(part.correctAnswer);
   } else if (part.answerType === "SHORT_TEXT") {
     modelAnswer = part.acceptedAnswers[0] ?? null;
   }
