@@ -4,50 +4,40 @@ import { ExamPaper } from "@/components/exam-paper";
 import { Figures, type FigureData } from "@/components/figures";
 import { ResultPart } from "@/components/result-part";
 import { ProgressBar } from "@/components/ui";
+import { loadAttemptContent } from "@/lib/attempts";
 import { db } from "@/lib/db";
 import { partFeedback, publicPart } from "@/lib/feedback";
+import { partSeed, resolvePart } from "@/lib/resolve-part";
 import { requireUser } from "@/lib/session";
 
 export default async function AttemptPage({ params }: { params: Promise<{ attemptId: string }> }) {
   const { attemptId } = await params;
   const user = await requireUser();
-  const attempt = await db.paperAttempt.findUnique({
-    where: { id: attemptId },
-    include: {
-      paper: {
-        include: {
-          component: { include: { subject: true } },
-          questions: {
-            orderBy: { number: "asc" },
-            include: { parts: { orderBy: { position: "asc" }, include: { topic: true } } },
-          },
-        },
-      },
-      answers: true,
-    },
-  });
+  const attempt = await db.paperAttempt.findUnique({ where: { id: attemptId }, include: { answers: true } });
   if (!attempt || attempt.userId !== user.id) notFound();
-  const { paper } = attempt;
+  const { title, component, durationMin, questions } = await loadAttemptContent(attempt);
+  // Practice tests are numbered 1, 2, 3… in the order drawn; past papers keep their numbering.
+  const questionNumber = (index: number, number: number) => (attempt.paperId ? number : index + 1);
 
   if (!attempt.submittedAt) {
     return (
       <ExamPaper
         attemptId={attempt.id}
-        title={paper.title}
-        deadline={attempt.startedAt.getTime() + paper.component.durationMin * 60_000}
-        questions={paper.questions.map((q) => ({
+        title={title}
+        deadline={attempt.startedAt.getTime() + durationMin * 60_000}
+        questions={questions.map((q, index) => ({
           id: q.id,
-          number: q.number,
+          number: questionNumber(index, q.number),
           stem: q.stem,
           figures: q.figures as unknown as FigureData[],
-          parts: q.parts.map(publicPart),
+          parts: q.parts.map((p) => publicPart(resolvePart(p, partSeed(attempt.seed, p.id)))),
         }))}
       />
     );
   }
 
   const answerByPart = new Map(attempt.answers.map((a) => [a.partId, a]));
-  const parts = paper.questions.flatMap((q) => q.parts);
+  const parts = questions.flatMap((q) => q.parts);
   const totalMarks = parts.reduce((sum, p) => sum + p.marks, 0);
   const awarded = attempt.answers.reduce((sum, a) => sum + a.awardedMarks, 0);
   const pending = attempt.answers.filter((a) => a.pendingReview).length;
@@ -63,19 +53,21 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
 
   return (
     <div className="space-y-6">
-      <Link href={`/subjects/${paper.component.subjectId}`} className="text-sm text-brand-600 hover:underline">
-        ← {paper.component.subject.code} {paper.component.subject.name}
+      <Link href={`/subjects/${component.subjectId}`} className="text-sm text-brand-600 hover:underline">
+        ← {component.subject.code} {component.subject.name}
       </Link>
       <div className="card space-y-3">
-        <h1 className="text-2xl font-bold">{paper.title} — results</h1>
+        <h1 className="text-2xl font-bold">{title} — results</h1>
         <p className="text-4xl font-extrabold text-brand-700">
           {awarded}/{totalMarks}{" "}
-          <span className="text-lg font-medium text-slate-500">({Math.round((awarded / Math.max(1, totalMarks)) * 100)}%)</span>
+          <span className="text-lg font-medium text-slate-500">
+            ({Math.round((awarded / Math.max(1, totalMarks)) * 100)}%)
+          </span>
         </p>
         {pending > 0 && (
           <p className="text-sm text-amber-700">
-            {pending} written answer{pending === 1 ? "" : "s"} still need self-marking. Your score will update as you mark
-            them below.
+            {pending} written answer{pending === 1 ? "" : "s"} still need self-marking. Your score will update as you
+            mark them below.
           </p>
         )}
       </div>
@@ -84,18 +76,26 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
         <h2 className="mb-3 font-semibold">Score by syllabus topic</h2>
         <div className="space-y-3">
           {[...byTopic.values()].map((t) => (
-            <ProgressBar key={t.ref} percent={Math.round((t.awarded / t.marks) * 100)} label={`${t.ref}. ${t.title} — ${t.awarded}/${t.marks}`} />
+            <ProgressBar
+              key={t.ref}
+              percent={Math.round((t.awarded / t.marks) * 100)}
+              label={`${t.ref}. ${t.title} — ${t.awarded}/${t.marks}`}
+            />
           ))}
         </div>
       </section>
 
-      {paper.questions.map((question) => (
+      {questions.map((question, index) => (
         <article key={question.id} className="card space-y-4">
-          <h2 className="font-semibold">Question {question.number}</h2>
+          <h2 className="font-semibold">Question {questionNumber(index, question.number)}</h2>
           {question.stem && <p className="whitespace-pre-line rounded-lg bg-slate-50 p-3">{question.stem}</p>}
           <Figures figures={question.figures} />
-          {question.parts.map((part) => {
-            const answer = answerByPart.get(part.id);
+          {question.parts.map((stored) => {
+            const answer = answerByPart.get(stored.id);
+            // Show the version the student answered, with the letters they saw.
+            const part = resolvePart(stored, answer?.variantSeed ?? partSeed(attempt.seed, stored.id));
+            const shownOption = part.options?.find((o) => o.key === answer?.response);
+            const response = shownOption ? `${shownOption.displayKey} – ${shownOption.text}` : answer?.response;
             return (
               <div key={part.id} className="border-t border-slate-100 pt-4 first:border-0">
                 <div className="flex items-start justify-between gap-4">
@@ -108,7 +108,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
                 <Figures figures={part.figures} />
                 <div className="mt-2 rounded-lg border border-slate-200 p-3 text-sm">
                   <div className="text-xs font-medium text-slate-500">Your answer</div>
-                  <p className="whitespace-pre-line">{answer?.response || <em className="text-slate-400">No answer</em>}</p>
+                  <p className="whitespace-pre-line">{response || <em className="text-slate-400">No answer</em>}</p>
                 </div>
                 {answer && (
                   <ResultPart

@@ -20,7 +20,10 @@ export default async function DashboardPage() {
     where: { userId: user.id, submittedAt: { not: null } },
     orderBy: { submittedAt: "desc" },
     take: 5,
-    include: { paper: { include: { component: { include: { subject: true } } } } },
+    include: {
+      paper: { include: { component: { include: { subject: true } } } },
+      component: { include: { subject: true } },
+    },
   });
 
   return (
@@ -30,8 +33,10 @@ export default async function DashboardPage() {
         {!hasSubscription(user) && (
           <p className="mt-2 text-sm text-slate-600">
             You are on the free plan.{" "}
-            <Link href="/billing" className="text-brand-600 underline">Upgrade</Link> to unlock every topic and full past
-            papers.
+            <Link href="/billing" className="text-brand-600 underline">
+              Upgrade
+            </Link>{" "}
+            to unlock every topic and full past papers.
           </p>
         )}
       </div>
@@ -39,7 +44,9 @@ export default async function DashboardPage() {
       {subjects.length === 0 ? (
         <div className="card text-center">
           <p className="text-slate-600">You haven&apos;t added any subjects yet.</p>
-          <Link href="/subjects" className="btn-primary mt-4">Choose your subjects</Link>
+          <Link href="/subjects" className="btn-primary mt-4">
+            Choose your subjects
+          </Link>
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2">
@@ -53,7 +60,13 @@ export default async function DashboardPage() {
                 <h2 className="mb-3 text-lg font-semibold">{subject.name}</h2>
                 <ProgressBar percent={overallPercent} label="Syllabus complete" />
                 <p className="mt-3 text-sm text-slate-600">
-                  {next ? <>Next up: <span className="font-medium">{next.title}</span></> : "All available topics complete"}
+                  {next ? (
+                    <>
+                      Next up: <span className="font-medium">{next.title}</span>
+                    </>
+                  ) : (
+                    "All available topics complete"
+                  )}
                 </p>
               </Link>
             );
@@ -63,13 +76,20 @@ export default async function DashboardPage() {
 
       {recentAttempts.length > 0 && (
         <section>
-          <h2 className="mb-3 text-xl font-semibold">Recent past papers</h2>
+          <h2 className="mb-3 text-xl font-semibold">Recent papers and tests</h2>
           <ul className="card divide-y divide-slate-100 p-0">
             {recentAttempts.map((attempt) => (
               <li key={attempt.id}>
-                <Link href={`/attempts/${attempt.id}`} className="flex justify-between px-5 py-3 text-sm hover:bg-slate-50">
+                <Link
+                  href={`/attempts/${attempt.id}`}
+                  className="flex justify-between px-5 py-3 text-sm hover:bg-slate-50"
+                >
                   <span>
-                    {attempt.paper.component.subject.code} {attempt.paper.component.subject.name} — {attempt.paper.title}
+                    {(() => {
+                      const component = attempt.paper?.component ?? attempt.component!;
+                      const title = attempt.paper?.title ?? `${component.title} – practice test`;
+                      return `${component.subject.code} ${component.subject.name} — ${title}`;
+                    })()}
                   </span>
                   <span className="text-slate-500">{attempt.submittedAt!.toLocaleDateString("en-GB")}</span>
                 </Link>

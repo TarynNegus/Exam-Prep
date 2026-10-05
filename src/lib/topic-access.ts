@@ -23,3 +23,11 @@ export async function canSitPaper(user: User, paperId: string) {
   const data = await loadSubjectProgress(paper.component.subjectId, user);
   return !!data?.unlockedPapers.has(paperId);
 }
+
+/** Returns the component if the user may start a randomised practice test for it. */
+export async function canStartPracticeTest(user: User, componentId: string) {
+  const component = await db.component.findUnique({ where: { id: componentId } });
+  if (!component) return null;
+  const data = await loadSubjectProgress(component.subjectId, user);
+  return data?.unlockedComponents.has(componentId) ? component : null;
+}

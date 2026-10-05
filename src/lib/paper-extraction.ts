@@ -165,6 +165,7 @@ export async function toContentPaper(
         markingPoints: p.markingPoints,
         examinerComment: p.examinerComment,
         figures,
+        variables: {},
       });
     }
     if (parts.length) questions.push({ number: q.number, stem: q.stem, figures: stemFigures, parts });

@@ -14,6 +14,8 @@ export interface MarkablePart {
   marks: number;
   correctAnswer: string | null;
   tolerance: number | null;
+  /** Extra tolerance as a fraction of the answer, for questions whose numbers vary. */
+  relativeTolerance?: number | null;
   acceptedAnswers: string[];
 }
 
@@ -84,7 +86,8 @@ export function markResponse(part: MarkablePart, response: string): MarkResult {
       if (
         value !== null &&
         expected !== null &&
-        Math.abs(value - expected) <= (part.tolerance ?? 0) + Math.abs(expected) * 1e-9
+        Math.abs(value - expected) <=
+          (part.tolerance ?? 0) + Math.abs(expected) * ((part.relativeTolerance ?? 0) + 1e-9)
       ) {
         return { awardedMarks: part.marks, autoMarked: true };
       }

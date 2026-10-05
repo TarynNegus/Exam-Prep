@@ -65,6 +65,9 @@ export async function importContent(db: PrismaClient, raw: unknown) {
               markingPoints: part.markingPoints,
               examinerComment: part.examinerComment,
               figures: part.figures,
+              variables: part.variables,
+              answerExpression: part.answerExpression ?? null,
+              relativeTolerance: part.relativeTolerance ?? null,
             };
             await tx.questionPart.upsert({
               where: { questionId_position: { questionId: question.id, position } },

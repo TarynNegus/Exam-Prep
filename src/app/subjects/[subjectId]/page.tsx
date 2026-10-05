@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Badge, ProgressBar, QUALIFICATION_LABEL, StatusBadge } from "@/components/ui";
 import { chooseRoute, enrol, unenrol } from "@/lib/enrol-actions";
+import { startPracticeTest } from "@/lib/paper-actions";
 import { FREE_TOPICS_PER_SECTION, TOPIC_MIN_PARTS, TOPIC_PASS_PERCENT } from "@/lib/progress";
 import { requireUser } from "@/lib/session";
 import { loadSubjectProgress } from "@/lib/subject-progress";
@@ -24,6 +25,7 @@ export default async function SubjectPage({
     subscribed,
     overallPercent,
     unlockedPapers,
+    unlockedComponents,
     routes,
     route,
     needsRoute,
@@ -218,6 +220,23 @@ export default async function SubjectPage({
                   </li>
                 ))}
               </ul>
+              {component.papers.length > 0 && (
+                <div className="mt-4 border-t border-slate-100 pt-3">
+                  {unlockedComponents.has(component.id) ? (
+                    <form
+                      action={startPracticeTest.bind(null, component.id)}
+                      className="flex items-center justify-between gap-2"
+                    >
+                      <span className="text-sm text-slate-600">A new test drawn from every question for this paper</span>
+                      <button className="btn-primary">Practice test</button>
+                    </form>
+                  ) : (
+                    <p className="text-xs text-slate-500">
+                      Randomised practice tests unlock once you complete the topics this paper covers.
+                    </p>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>

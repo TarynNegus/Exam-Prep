@@ -29,8 +29,25 @@ const part = z
     markingPoints: z.array(markingPoint).min(1),
     examinerComment: z.string().default(""),
     figures: z.array(figureSchema).default([]),
+    // Number variants: {name} and {=expression} placeholders in the prompt,
+    // options and mark scheme take values from these variables.
+    variables: z
+      .record(
+        z.string().regex(/^[A-Za-z_]\w*$/),
+        z.object({ min: z.number(), max: z.number(), step: z.number().positive().optional(), value: z.number() }),
+      )
+      .default({}),
+    answerExpression: z.string().optional().describe("NUMERIC answer in terms of the variables, e.g. 2*pi*r"),
+    relativeTolerance: z.number().min(0).optional().describe("Tolerance as a fraction of the answer"),
   })
   .superRefine((p, ctx) => {
+    for (const [name, v] of Object.entries(p.variables)) {
+      const steps = (v.value - v.min) / (v.step ?? 1);
+      if (v.min > v.max || v.value < v.min || v.value > v.max || Math.abs(steps - Math.round(steps)) > 1e-9)
+        ctx.addIssue({ code: "custom", message: `${p.label}: variable "${name}" needs min ≤ value ≤ max on its step` });
+    }
+    if (p.answerExpression && p.answerType !== "NUMERIC")
+      ctx.addIssue({ code: "custom", message: `${p.label}: answerExpression is only for NUMERIC parts` });
     if (p.answerType === "MULTIPLE_CHOICE") {
       if (!p.options?.length) ctx.addIssue({ code: "custom", message: `${p.label}: multiple choice needs options` });
       if (!p.options?.some((o) => o.key === p.correctAnswer))

@@ -112,6 +112,7 @@ model Component {
   totalMarks  Int
   section     String      @default("") // topic section this component assesses, if topics are grouped by paper
   papers      PastPaper[]
+  attempts    PaperAttempt[]
 
   @@unique([subjectId, ref])
 }
@@ -159,6 +160,12 @@ model QuestionPart {
   markingPoints   Json       // mark scheme: [{ text: "...", marks: 1 }]
   examinerComment String     @default("") // examiner's report commentary
   figures         Json       @default("[]") // [{ src, alt, caption }] shown with the prompt
+  // Number variants: {{name}} placeholders in the text take values from
+  // variables ({ name: { min, max, step, value } }); answerExpression gives
+  // the answer for any set of values.
+  variables         Json     @default("{}")
+  answerExpression  String?
+  relativeTolerance Float?   // NUMERIC: tolerance as a fraction of the answer
   answers         Answer[]
 
   @@unique([questionId, position])
@@ -190,6 +197,7 @@ model Answer {
   awardedMarks   Int
   selfMarked     Boolean       @default(false)
   pendingReview  Boolean       @default(false) // awaiting student self-marking
+  variantSeed    Int           @default(0)     // which version of the question was shown (0 = as published)
   createdAt      DateTime      @default(now())
 
   @@index([userId, partId, createdAt])
@@ -199,9 +207,15 @@ model PaperAttempt {
   id          String    @id @default(cuid())
   userId      String
   user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
-  paperId     String
-  paper       PastPaper @relation(fields: [paperId], references: [id], onDelete: Cascade)
-  startedAt   DateTime  @default(now())
+  // A fixed past paper (paperId), or a randomised test drawn from a
+  // component's question pool (componentId + questionIds).
+  paperId     String?
+  paper       PastPaper? @relation(fields: [paperId], references: [id], onDelete: Cascade)
+  componentId String?
+  component   Component? @relation(fields: [componentId], references: [id], onDelete: Cascade)
+  questionIds Json       @default("[]")
+  seed        Int        @default(0) // 0 = as published; otherwise numbers and option order vary
+  startedAt   DateTime   @default(now())
   submittedAt DateTime?
   answers     Answer[]
 

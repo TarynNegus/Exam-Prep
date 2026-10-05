@@ -66,7 +66,12 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
 
   const parts = await db.questionPart.findMany({
     where: { topicId: { in: scopedTopicIds }, question: { paper: { componentId: { in: componentIds } } } },
-    select: { id: true, topicId: true, marks: true, question: { select: { paperId: true } } },
+    select: {
+      id: true,
+      topicId: true,
+      marks: true,
+      question: { select: { paperId: true, paper: { select: { componentId: true } } } },
+    },
   });
   const latest = await latestAwardedByPart(
     user.id,
@@ -99,6 +104,18 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
     set.add(part.topicId);
     topicsByPaper.set(part.question.paperId, set);
   }
+  // A component's randomised practice test opens when every topic in its question pool is complete.
+  const topicsByComponent = new Map<string, Set<string>>();
+  for (const part of parts) {
+    const set = topicsByComponent.get(part.question.paper.componentId) ?? new Set<string>();
+    set.add(part.topicId);
+    topicsByComponent.set(part.question.paper.componentId, set);
+  }
+  const unlockedComponents = new Set(
+    subscribed
+      ? [...topicsByComponent].filter(([, ids]) => paperUnlocked(ids, progress)).map(([componentId]) => componentId)
+      : [],
+  );
   const unlockedPapers = new Set(
     subscribed ? [...topicsByPaper].filter(([, ids]) => paperUnlocked(ids, progress)).map(([paperId]) => paperId) : [],
   );
@@ -115,5 +132,29 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
     subscribed,
     overallPercent: overallPercent(progress),
     unlockedPapers,
+    unlockedComponents,
   };
+}
+
+/**
+ * Each part's most recent marked score as a fraction of its marks, counting only
+ * answers given before a moment (e.g. when a practice set was dealt).
+ */
+export async function latestScoresBefore(
+  userId: string,
+  parts: { id: string; marks: number }[],
+  before: Date,
+): Promise<Map<string, number>> {
+  const marks = new Map(parts.map((p) => [p.id, p.marks]));
+  const answers = await db.answer.findMany({
+    where: { userId, partId: { in: [...marks.keys()] }, pendingReview: false, createdAt: { lt: before } },
+    orderBy: { createdAt: "desc" },
+    select: { partId: true, awardedMarks: true },
+  });
+  const scores = new Map<string, number>();
+  for (const answer of answers) {
+    if (!scores.has(answer.partId))
+      scores.set(answer.partId, answer.awardedMarks / Math.max(1, marks.get(answer.partId)!));
+  }
+  return scores;
 }
