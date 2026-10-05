@@ -4,34 +4,128 @@
     "name": "Biology",
     "qualification": "IGCSE",
     "syllabusYears": "2026-2028",
-    "description": "Cambridge IGCSE Biology (Extended). Sample content covers the first five syllabus topics. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+    "description": "Cambridge IGCSE Biology (Extended). Sample content covers every syllabus topic. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
   },
   "topics": [
-    { "ref": "1", "title": "Characteristics and classification of living organisms", "summary": "Characteristics of living organisms, the concept and uses of classification systems, features of organisms, dichotomous keys." },
-    { "ref": "2", "title": "Organisation of the organism", "summary": "Cell structure, specialised cells, tissues and organs, size of specimens and magnification." },
-    { "ref": "3", "title": "Movement into and out of cells", "summary": "Diffusion, osmosis and active transport." },
-    { "ref": "4", "title": "Biological molecules", "summary": "Carbohydrates, fats, proteins, food tests and the structure of DNA." },
-    { "ref": "5", "title": "Enzymes", "summary": "Enzyme action, specificity, and the effects of temperature and pH." },
-    { "ref": "6", "title": "Plant nutrition", "summary": "Photosynthesis, leaf structure and mineral requirements." },
-    { "ref": "7", "title": "Human nutrition", "summary": "Diet, digestive system, physical and chemical digestion, absorption." },
-    { "ref": "8", "title": "Transport in plants", "summary": "Xylem and phloem, water uptake, transpiration and translocation." },
-    { "ref": "9", "title": "Transport in animals", "summary": "Circulatory systems, the heart, blood vessels and blood." },
-    { "ref": "10", "title": "Diseases and immunity", "summary": "Pathogens, transmission, defences and the immune response." },
-    { "ref": "11", "title": "Gas exchange in humans", "summary": "Gas exchange surfaces, breathing and the effect of exercise." },
-    { "ref": "12", "title": "Respiration", "summary": "Aerobic and anaerobic respiration." },
-    { "ref": "13", "title": "Excretion in humans", "summary": "Excretory products, the kidney and the liver." },
-    { "ref": "14", "title": "Coordination and response", "summary": "The nervous system, sense organs, hormones, homeostasis and tropic responses." },
-    { "ref": "15", "title": "Drugs", "summary": "Medicinal drugs and antibiotics." },
-    { "ref": "16", "title": "Reproduction", "summary": "Asexual and sexual reproduction in plants and humans, sex hormones, sexually transmitted infections." },
-    { "ref": "17", "title": "Inheritance", "summary": "Chromosomes, genes and proteins, mitosis, meiosis and monohybrid inheritance." },
-    { "ref": "18", "title": "Variation and selection", "summary": "Variation, adaptive features, natural and artificial selection." },
-    { "ref": "19", "title": "Organisms and their environment", "summary": "Energy flow, food chains and webs, nutrient cycles and populations." },
-    { "ref": "20", "title": "Human influences on ecosystems", "summary": "Food supply, habitat destruction, pollution and conservation." },
-    { "ref": "21", "title": "Biotechnology and genetic engineering", "summary": "Biotechnology and genetic modification." }
+    {
+      "ref": "1",
+      "title": "Characteristics and classification of living organisms",
+      "summary": "Characteristics of living organisms, the concept and uses of classification systems, features of organisms, dichotomous keys."
+    },
+    {
+      "ref": "2",
+      "title": "Organisation of the organism",
+      "summary": "Cell structure, specialised cells, tissues and organs, size of specimens and magnification."
+    },
+    {
+      "ref": "3",
+      "title": "Movement into and out of cells",
+      "summary": "Diffusion, osmosis and active transport."
+    },
+    {
+      "ref": "4",
+      "title": "Biological molecules",
+      "summary": "Carbohydrates, fats, proteins, food tests and the structure of DNA."
+    },
+    {
+      "ref": "5",
+      "title": "Enzymes",
+      "summary": "Enzyme action, specificity, and the effects of temperature and pH."
+    },
+    {
+      "ref": "6",
+      "title": "Plant nutrition",
+      "summary": "Photosynthesis, leaf structure and mineral requirements."
+    },
+    {
+      "ref": "7",
+      "title": "Human nutrition",
+      "summary": "Diet, digestive system, physical and chemical digestion, absorption."
+    },
+    {
+      "ref": "8",
+      "title": "Transport in plants",
+      "summary": "Xylem and phloem, water uptake, transpiration and translocation."
+    },
+    {
+      "ref": "9",
+      "title": "Transport in animals",
+      "summary": "Circulatory systems, the heart, blood vessels and blood."
+    },
+    {
+      "ref": "10",
+      "title": "Diseases and immunity",
+      "summary": "Pathogens, transmission, defences and the immune response."
+    },
+    {
+      "ref": "11",
+      "title": "Gas exchange in humans",
+      "summary": "Gas exchange surfaces, breathing and the effect of exercise."
+    },
+    {
+      "ref": "12",
+      "title": "Respiration",
+      "summary": "Aerobic and anaerobic respiration."
+    },
+    {
+      "ref": "13",
+      "title": "Excretion in humans",
+      "summary": "Excretory products, the kidney and the liver."
+    },
+    {
+      "ref": "14",
+      "title": "Coordination and response",
+      "summary": "The nervous system, sense organs, hormones, homeostasis and tropic responses."
+    },
+    {
+      "ref": "15",
+      "title": "Drugs",
+      "summary": "Medicinal drugs and antibiotics."
+    },
+    {
+      "ref": "16",
+      "title": "Reproduction",
+      "summary": "Asexual and sexual reproduction in plants and humans, sex hormones, sexually transmitted infections."
+    },
+    {
+      "ref": "17",
+      "title": "Inheritance",
+      "summary": "Chromosomes, genes and proteins, mitosis, meiosis and monohybrid inheritance."
+    },
+    {
+      "ref": "18",
+      "title": "Variation and selection",
+      "summary": "Variation, adaptive features, natural and artificial selection."
+    },
+    {
+      "ref": "19",
+      "title": "Organisms and their environment",
+      "summary": "Energy flow, food chains and webs, nutrient cycles and populations."
+    },
+    {
+      "ref": "20",
+      "title": "Human influences on ecosystems",
+      "summary": "Food supply, habitat destruction, pollution and conservation."
+    },
+    {
+      "ref": "21",
+      "title": "Biotechnology and genetic engineering",
+      "summary": "Biotechnology and genetic modification."
+    }
   ],
   "components": [
-    { "ref": "2", "title": "Paper 2 (Multiple Choice, Extended)", "durationMin": 45, "totalMarks": 40 },
-    { "ref": "4", "title": "Paper 4 (Theory, Extended)", "durationMin": 75, "totalMarks": 80 }
+    {
+      "ref": "2",
+      "title": "Paper 2 (Multiple Choice, Extended)",
+      "durationMin": 45,
+      "totalMarks": 40
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (Theory, Extended)",
+      "durationMin": 75,
+      "totalMarks": 80
+    }
   ],
   "papers": [
     {
@@ -51,13 +145,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "excretion" },
-                { "key": "B", "text": "nutrition" },
-                { "key": "C", "text": "respiration" },
-                { "key": "D", "text": "sensitivity" }
+                {
+                  "key": "A",
+                  "text": "excretion"
+                },
+                {
+                  "key": "B",
+                  "text": "nutrition"
+                },
+                {
+                  "key": "C",
+                  "text": "respiration"
+                },
+                {
+                  "key": "D",
+                  "text": "sensitivity"
+                }
               ],
               "correctAnswer": "C",
-              "markingPoints": [{ "text": "C – respiration", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "C – respiration",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Candidates confused respiration with nutrition. Nutrition is taking in materials for energy, growth and development; respiration releases the energy."
             }
           ]
@@ -73,13 +184,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "Panthera" },
-                { "key": "B", "text": "leo" },
-                { "key": "C", "text": "both words together" },
-                { "key": "D", "text": "neither word" }
+                {
+                  "key": "A",
+                  "text": "Panthera"
+                },
+                {
+                  "key": "B",
+                  "text": "leo"
+                },
+                {
+                  "key": "C",
+                  "text": "both words together"
+                },
+                {
+                  "key": "D",
+                  "text": "neither word"
+                }
               ],
               "correctAnswer": "A",
-              "markingPoints": [{ "text": "A – the first word is the genus", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "A – the first word is the genus",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered."
             }
           ]
@@ -95,13 +223,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "arachnids" },
-                { "key": "B", "text": "crustaceans" },
-                { "key": "C", "text": "insects" },
-                { "key": "D", "text": "myriapods" }
+                {
+                  "key": "A",
+                  "text": "arachnids"
+                },
+                {
+                  "key": "B",
+                  "text": "crustaceans"
+                },
+                {
+                  "key": "C",
+                  "text": "insects"
+                },
+                {
+                  "key": "D",
+                  "text": "myriapods"
+                }
               ],
               "correctAnswer": "C",
-              "markingPoints": [{ "text": "C – insects", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "C – insects",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Arachnids have four pairs of legs and no antennae, a frequent distractor."
             }
           ]
@@ -117,13 +262,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "cell membrane" },
-                { "key": "B", "text": "cell wall" },
-                { "key": "C", "text": "mitochondrion" },
-                { "key": "D", "text": "ribosome" }
+                {
+                  "key": "A",
+                  "text": "cell membrane"
+                },
+                {
+                  "key": "B",
+                  "text": "cell wall"
+                },
+                {
+                  "key": "C",
+                  "text": "mitochondrion"
+                },
+                {
+                  "key": "D",
+                  "text": "ribosome"
+                }
               ],
               "correctAnswer": "B",
-              "markingPoints": [{ "text": "B – cell wall", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B – cell wall",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered."
             }
           ]
@@ -139,13 +301,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "×2" },
-                { "key": "B", "text": "×80" },
-                { "key": "C", "text": "×200" },
-                { "key": "D", "text": "×800" }
+                {
+                  "key": "A",
+                  "text": "×2"
+                },
+                {
+                  "key": "B",
+                  "text": "×80"
+                },
+                {
+                  "key": "C",
+                  "text": "×200"
+                },
+                {
+                  "key": "D",
+                  "text": "×800"
+                }
               ],
               "correctAnswer": "D",
-              "markingPoints": [{ "text": "D – 40 ÷ 0.05 = 800", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "D – 40 ÷ 0.05 = 800",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Magnification = image size ÷ actual size, with both in the same units."
             }
           ]
@@ -161,13 +340,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "They gain mass because water enters by osmosis." },
-                { "key": "B", "text": "They gain mass because sugar enters by diffusion." },
-                { "key": "C", "text": "They lose mass because water leaves by osmosis." },
-                { "key": "D", "text": "They lose mass because sugar leaves by active transport." }
+                {
+                  "key": "A",
+                  "text": "They gain mass because water enters by osmosis."
+                },
+                {
+                  "key": "B",
+                  "text": "They gain mass because sugar enters by diffusion."
+                },
+                {
+                  "key": "C",
+                  "text": "They lose mass because water leaves by osmosis."
+                },
+                {
+                  "key": "D",
+                  "text": "They lose mass because sugar leaves by active transport."
+                }
               ],
               "correctAnswer": "C",
-              "markingPoints": [{ "text": "C – water moves from higher water potential (in the cells) to lower water potential (the solution)", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "C – water moves from higher water potential (in the cells) to lower water potential (the solution)",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Answers should refer to water potential, not 'sugar concentration', when explaining osmosis."
             }
           ]
@@ -183,13 +379,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "active transport" },
-                { "key": "B", "text": "diffusion" },
-                { "key": "C", "text": "osmosis" },
-                { "key": "D", "text": "transpiration" }
+                {
+                  "key": "A",
+                  "text": "active transport"
+                },
+                {
+                  "key": "B",
+                  "text": "diffusion"
+                },
+                {
+                  "key": "C",
+                  "text": "osmosis"
+                },
+                {
+                  "key": "D",
+                  "text": "transpiration"
+                }
               ],
               "correctAnswer": "A",
-              "markingPoints": [{ "text": "A – active transport moves ions against a concentration gradient using energy from respiration", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "A – active transport moves ions against a concentration gradient using energy from respiration",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered."
             }
           ]
@@ -205,13 +418,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "fat" },
-                { "key": "B", "text": "protein" },
-                { "key": "C", "text": "reducing sugar" },
-                { "key": "D", "text": "starch" }
+                {
+                  "key": "A",
+                  "text": "fat"
+                },
+                {
+                  "key": "B",
+                  "text": "protein"
+                },
+                {
+                  "key": "C",
+                  "text": "reducing sugar"
+                },
+                {
+                  "key": "D",
+                  "text": "starch"
+                }
               ],
               "correctAnswer": "B",
-              "markingPoints": [{ "text": "B – protein", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B – protein",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Candidates should learn each food test with its positive result."
             }
           ]
@@ -227,13 +457,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "adenine" },
-                { "key": "B", "text": "cytosine" },
-                { "key": "C", "text": "guanine" },
-                { "key": "D", "text": "thymine" }
+                {
+                  "key": "A",
+                  "text": "adenine"
+                },
+                {
+                  "key": "B",
+                  "text": "cytosine"
+                },
+                {
+                  "key": "C",
+                  "text": "guanine"
+                },
+                {
+                  "key": "D",
+                  "text": "thymine"
+                }
               ],
               "correctAnswer": "D",
-              "markingPoints": [{ "text": "D – thymine", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "D – thymine",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered."
             }
           ]
@@ -249,13 +496,30 @@
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
-                { "key": "A", "text": "The enzyme molecules have less kinetic energy." },
-                { "key": "B", "text": "The active site changes shape so the substrate no longer fits." },
-                { "key": "C", "text": "The substrate is used up more quickly." },
-                { "key": "D", "text": "The enzyme is killed." }
+                {
+                  "key": "A",
+                  "text": "The enzyme molecules have less kinetic energy."
+                },
+                {
+                  "key": "B",
+                  "text": "The active site changes shape so the substrate no longer fits."
+                },
+                {
+                  "key": "C",
+                  "text": "The substrate is used up more quickly."
+                },
+                {
+                  "key": "D",
+                  "text": "The enzyme is killed."
+                }
               ],
               "correctAnswer": "B",
-              "markingPoints": [{ "text": "B – denaturation changes the shape of the active site", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B – denaturation changes the shape of the active site",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Enzymes are proteins, not living organisms, so they are denatured, not 'killed'."
             }
           ]
@@ -279,8 +543,14 @@
               "marks": 2,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "substrate: starch", "marks": 1 },
-                { "text": "product: maltose / simple reducing sugar", "marks": 1 }
+                {
+                  "text": "substrate: starch",
+                  "marks": 1
+                },
+                {
+                  "text": "product: maltose / simple reducing sugar",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Many candidates gave 'glucose' as the product, which was not accepted."
             },
@@ -291,9 +561,18 @@
               "marks": 3,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "molecules gain kinetic energy / move faster", "marks": 1 },
-                { "text": "more (successful) collisions between enzyme and substrate", "marks": 1 },
-                { "text": "more enzyme–substrate complexes formed (per unit time)", "marks": 1 }
+                {
+                  "text": "molecules gain kinetic energy / move faster",
+                  "marks": 1
+                },
+                {
+                  "text": "more (successful) collisions between enzyme and substrate",
+                  "marks": 1
+                },
+                {
+                  "text": "more enzyme–substrate complexes formed (per unit time)",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Strong answers used the terms kinetic energy, collisions and enzyme–substrate complex. Vague references to enzymes 'working harder' gained no credit."
             }
@@ -310,11 +589,1703 @@
               "marks": 3,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "net movement of water molecules", "marks": 1 },
-                { "text": "from a region of higher water potential to lower water potential", "marks": 1 },
-                { "text": "through a partially permeable membrane", "marks": 1 }
+                {
+                  "text": "net movement of water molecules",
+                  "marks": 1
+                },
+                {
+                  "text": "from a region of higher water potential to lower water potential",
+                  "marks": 1
+                },
+                {
+                  "text": "through a partially permeable membrane",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Definitions must refer to water molecules and a partially permeable membrane. 'Semi-permeable' was accepted."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 2B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Which substance enters a leaf through the stomata and is used in photosynthesis?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "C",
+                  "text": "nitrogen"
+                },
+                {
+                  "key": "D",
+                  "text": "water vapour"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – carbon dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Oxygen was a common wrong answer. Oxygen is a product of photosynthesis and leaves through the stomata."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Why do plants need magnesium ions?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to make chlorophyll"
+                },
+                {
+                  "key": "B",
+                  "text": "to make amino acids"
+                },
+                {
+                  "key": "C",
+                  "text": "to make starch"
+                },
+                {
+                  "key": "D",
+                  "text": "to open the stomata"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – to make chlorophyll",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates often confused magnesium with nitrate ions, which are needed to make amino acids."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Where in the body is bile made?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "gall bladder"
+                },
+                {
+                  "key": "B",
+                  "text": "liver"
+                },
+                {
+                  "key": "C",
+                  "text": "pancreas"
+                },
+                {
+                  "key": "D",
+                  "text": "small intestine"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – liver",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many chose the gall bladder. Bile is made in the liver and only stored in the gall bladder."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Which enzyme digests protein in the stomach?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "amylase"
+                },
+                {
+                  "key": "B",
+                  "text": "lipase"
+                },
+                {
+                  "key": "C",
+                  "text": "pepsin"
+                },
+                {
+                  "key": "D",
+                  "text": "trypsin"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – pepsin",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Trypsin also digests protein, but it works in the small intestine, not the stomach."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Which tissue transports sucrose from the leaves to other parts of a plant?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "epidermis"
+                },
+                {
+                  "key": "B",
+                  "text": "palisade mesophyll"
+                },
+                {
+                  "key": "C",
+                  "text": "phloem"
+                },
+                {
+                  "key": "D",
+                  "text": "xylem"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – phloem",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Xylem transports water and mineral ions; phloem transports sucrose and amino acids."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Which condition increases the rate of transpiration?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "high humidity"
+                },
+                {
+                  "key": "B",
+                  "text": "high wind speed"
+                },
+                {
+                  "key": "C",
+                  "text": "low light intensity"
+                },
+                {
+                  "key": "D",
+                  "text": "low temperature"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – high wind speed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Wind removes water vapour from around the leaf, keeping the concentration gradient steep."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which blood vessel carries blood from the lungs to the heart?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "aorta"
+                },
+                {
+                  "key": "B",
+                  "text": "pulmonary artery"
+                },
+                {
+                  "key": "C",
+                  "text": "pulmonary vein"
+                },
+                {
+                  "key": "D",
+                  "text": "vena cava"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – pulmonary vein",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Remember that veins carry blood towards the heart, even when that blood is oxygenated."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which component of blood transports oxygen?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "phagocytes"
+                },
+                {
+                  "key": "B",
+                  "text": "plasma"
+                },
+                {
+                  "key": "C",
+                  "text": "platelets"
+                },
+                {
+                  "key": "D",
+                  "text": "red blood cells"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – red blood cells",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "What is a pathogen?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a disease-causing organism"
+                },
+                {
+                  "key": "B",
+                  "text": "a chemical that kills bacteria"
+                },
+                {
+                  "key": "C",
+                  "text": "a protein made by lymphocytes"
+                },
+                {
+                  "key": "D",
+                  "text": "a white blood cell"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – a disease-causing organism",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. Option C describes an antibody."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "How does a vaccine protect a person against a disease?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It contains antibiotics that kill the pathogen."
+                },
+                {
+                  "key": "B",
+                  "text": "It contains antibodies that destroy the pathogen."
+                },
+                {
+                  "key": "C",
+                  "text": "It contains antigens that stimulate lymphocytes to make antibodies and memory cells."
+                },
+                {
+                  "key": "D",
+                  "text": "It contains white blood cells that engulf the pathogen."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – It contains antigens that stimulate lymphocytes to make antibodies and memory cells.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option B describes passive immunity. A vaccine gives active immunity because the body makes its own antibodies."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Which feature of the alveoli increases the rate of gas exchange?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "few blood capillaries"
+                },
+                {
+                  "key": "B",
+                  "text": "small surface area"
+                },
+                {
+                  "key": "C",
+                  "text": "thick walls"
+                },
+                {
+                  "key": "D",
+                  "text": "thin walls"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – thin walls",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A thin wall gives a short diffusion distance. Candidates should be able to list all the features of a gas exchange surface."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What happens to the ribcage when the external intercostal muscles contract?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It moves down and in."
+                },
+                {
+                  "key": "B",
+                  "text": "It moves up and out."
+                },
+                {
+                  "key": "C",
+                  "text": "It moves down and out."
+                },
+                {
+                  "key": "D",
+                  "text": "It stays still."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It moves up and out.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "What is produced by anaerobic respiration in human muscle cells?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide and water"
+                },
+                {
+                  "key": "B",
+                  "text": "ethanol"
+                },
+                {
+                  "key": "C",
+                  "text": "glucose"
+                },
+                {
+                  "key": "D",
+                  "text": "lactic acid"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – lactic acid",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Ethanol and carbon dioxide are produced by anaerobic respiration in yeast, not in muscles."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "In which part of a cell does most aerobic respiration take place?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "cell membrane"
+                },
+                {
+                  "key": "B",
+                  "text": "mitochondria"
+                },
+                {
+                  "key": "C",
+                  "text": "nucleus"
+                },
+                {
+                  "key": "D",
+                  "text": "ribosomes"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – mitochondria",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Which organ breaks down excess amino acids to form urea?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "bladder"
+                },
+                {
+                  "key": "B",
+                  "text": "kidney"
+                },
+                {
+                  "key": "C",
+                  "text": "liver"
+                },
+                {
+                  "key": "D",
+                  "text": "pancreas"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – liver",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many chose the kidney. The kidney removes urea from the blood, but urea is made in the liver."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Which substance is normally absent from the urine of a healthy person?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "glucose"
+                },
+                {
+                  "key": "B",
+                  "text": "salts"
+                },
+                {
+                  "key": "C",
+                  "text": "urea"
+                },
+                {
+                  "key": "D",
+                  "text": "water"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – glucose",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Glucose is filtered out of the blood in the kidney, but all of it is normally reabsorbed."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Which hormone lowers the concentration of glucose in the blood?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "adrenaline"
+                },
+                {
+                  "key": "B",
+                  "text": "glucagon"
+                },
+                {
+                  "key": "C",
+                  "text": "insulin"
+                },
+                {
+                  "key": "D",
+                  "text": "testosterone"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – insulin",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Glucagon raises blood glucose. Learning the two hormones as a pair helps avoid confusion."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Which part of the eye contains the light-sensitive receptor cells?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "cornea"
+                },
+                {
+                  "key": "B",
+                  "text": "iris"
+                },
+                {
+                  "key": "C",
+                  "text": "lens"
+                },
+                {
+                  "key": "D",
+                  "text": "retina"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – retina",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Which statement describes a drug?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "any substance that kills bacteria"
+                },
+                {
+                  "key": "B",
+                  "text": "any substance taken into the body that modifies or affects chemical reactions in the body"
+                },
+                {
+                  "key": "C",
+                  "text": "any substance made by a doctor"
+                },
+                {
+                  "key": "D",
+                  "text": "any substance that is illegal"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – any substance taken into the body that modifies or affects chemical reactions in the body",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The syllabus definition is broad and includes medicines and recreational substances."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Why should patients finish a full course of antibiotics?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to make the antibiotic work faster"
+                },
+                {
+                  "key": "B",
+                  "text": "to prevent viruses from multiplying"
+                },
+                {
+                  "key": "C",
+                  "text": "to reduce the chance of resistant bacteria surviving and spreading"
+                },
+                {
+                  "key": "D",
+                  "text": "to stop the body making antibodies"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – to reduce the chance of resistant bacteria surviving and spreading",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option B was a common error. Antibiotics have no effect on viruses."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Where does fertilisation usually take place in humans?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ovary"
+                },
+                {
+                  "key": "B",
+                  "text": "oviduct"
+                },
+                {
+                  "key": "C",
+                  "text": "uterus"
+                },
+                {
+                  "key": "D",
+                  "text": "vagina"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – oviduct",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many chose the uterus. The embryo implants in the uterus after fertilisation in the oviduct."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Which is a feature of insect-pollinated flowers?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "anthers hanging outside the flower"
+                },
+                {
+                  "key": "B",
+                  "text": "feathery stigmas"
+                },
+                {
+                  "key": "C",
+                  "text": "large, brightly coloured petals"
+                },
+                {
+                  "key": "D",
+                  "text": "large amounts of light pollen"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – large, brightly coloured petals",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The other three options are features of wind-pollinated flowers."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "What is an allele?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a length of DNA that codes for a protein"
+                },
+                {
+                  "key": "B",
+                  "text": "a version of a gene"
+                },
+                {
+                  "key": "C",
+                  "text": "a type of chromosome"
+                },
+                {
+                  "key": "D",
+                  "text": "a change in a base sequence"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a version of a gene",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A describes a gene. Candidates should use the terms gene and allele precisely."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Two heterozygous tall plants (Tt) are crossed. T (tall) is dominant to t (short). What is the expected ratio of tall to short offspring?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1 : 1"
+                },
+                {
+                  "key": "B",
+                  "text": "1 : 3"
+                },
+                {
+                  "key": "C",
+                  "text": "3 : 1"
+                },
+                {
+                  "key": "D",
+                  "text": "all tall"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 3 : 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A Punnett square gives TT, Tt, Tt and tt: three tall to one short."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Which is an example of continuous variation in humans?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ABO blood group"
+                },
+                {
+                  "key": "B",
+                  "text": "ability to roll the tongue"
+                },
+                {
+                  "key": "C",
+                  "text": "height"
+                },
+                {
+                  "key": "D",
+                  "text": "sex"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – height",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Continuous variation has a range of values with no distinct categories."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "What is the original source of new alleles in a population?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "artificial selection"
+                },
+                {
+                  "key": "B",
+                  "text": "mutation"
+                },
+                {
+                  "key": "C",
+                  "text": "natural selection"
+                },
+                {
+                  "key": "D",
+                  "text": "sexual reproduction"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – mutation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sexual reproduction creates new combinations of alleles, but only mutation creates new alleles."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "In the food chain grass → rabbit → fox, which organism is the secondary consumer?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "fox"
+                },
+                {
+                  "key": "B",
+                  "text": "grass"
+                },
+                {
+                  "key": "C",
+                  "text": "rabbit"
+                },
+                {
+                  "key": "D",
+                  "text": "Sun"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – fox",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "Why is the transfer of energy between trophic levels inefficient?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Energy is destroyed at each level."
+                },
+                {
+                  "key": "B",
+                  "text": "Energy is lost to the environment, for example as heat from respiration."
+                },
+                {
+                  "key": "C",
+                  "text": "Producers do not absorb any light energy."
+                },
+                {
+                  "key": "D",
+                  "text": "Consumers make their own energy."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – Energy is lost to the environment, for example as heat from respiration.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A was a common error. Energy is not destroyed; it is transferred to the environment."
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Which gas released by burning fossil fuels contributes most to the enhanced greenhouse effect?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "nitrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "oxygen"
+                },
+                {
+                  "key": "D",
+                  "text": "sulfur dioxide"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – carbon dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sulfur dioxide was a common distractor. It causes acid rain, not the enhanced greenhouse effect."
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Fertiliser runs off farmland into a lake. What happens first?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Algae grow rapidly."
+                },
+                {
+                  "key": "B",
+                  "text": "Bacteria die."
+                },
+                {
+                  "key": "C",
+                  "text": "Fish die."
+                },
+                {
+                  "key": "D",
+                  "text": "The water becomes colder."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Algae grow rapidly.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should learn the sequence of eutrophication in order: algal growth, light blocked, plants die, decomposers respire, oxygen falls, fish die."
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Why are bacteria useful in biotechnology?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They are all pathogens."
+                },
+                {
+                  "key": "B",
+                  "text": "They have no DNA."
+                },
+                {
+                  "key": "C",
+                  "text": "They reproduce rapidly."
+                },
+                {
+                  "key": "D",
+                  "text": "They photosynthesise."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – They reproduce rapidly.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Other good reasons are that they have plasmids and there are few ethical concerns over their use."
+            }
+          ]
+        },
+        {
+          "number": 32,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Which enzyme is used to cut DNA at specific sites in genetic modification?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "amylase"
+                },
+                {
+                  "key": "B",
+                  "text": "DNA ligase"
+                },
+                {
+                  "key": "C",
+                  "text": "pectinase"
+                },
+                {
+                  "key": "D",
+                  "text": "restriction enzyme"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – restriction enzyme",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "DNA ligase joins pieces of DNA; restriction enzymes cut them."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 4B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Write the balanced chemical equation for photosynthesis.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "correct formulae: CO₂ and H₂O → C₆H₁₂O₆ and O₂",
+                  "marks": 1
+                },
+                {
+                  "text": "correctly balanced: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Light and chlorophyll may be written above the arrow. The most common error was balancing oxygen incorrectly."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Explain how bile helps in the digestion of fats.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "bile emulsifies fats",
+                  "marks": 1
+                },
+                {
+                  "text": "breaks fats into small droplets",
+                  "marks": 1
+                },
+                {
+                  "text": "increases the surface area for lipase to act on",
+                  "marks": 1
+                },
+                {
+                  "text": "bile neutralises stomach acid, giving the optimum pH for enzymes in the small intestine",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates wrote that bile digests fats. Bile is not an enzyme: it emulsifies fats so that lipase works faster."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Define transpiration.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "loss of water vapour from leaves",
+                  "marks": 1
+                },
+                {
+                  "text": "by evaporation from mesophyll cell surfaces and diffusion of water vapour through the stomata",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Definitions that said only 'loss of water' did not gain full credit. The answer must refer to water vapour."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A person's heart beats 72 times per minute. It pumps 70 cm³ of blood with each beat. Calculate the volume of blood pumped in one minute, in cm³.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5040",
+              "markingPoints": [
+                {
+                  "text": "M1 for 72 × 70",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5040",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates multiplied correctly. A few divided, giving an answer smaller than one beat's volume."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Explain why antibiotics cannot be used to treat diseases caused by viruses.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "antibiotics act on structures or processes found in bacteria, e.g. the cell wall",
+                  "marks": 1
+                },
+                {
+                  "text": "viruses do not have these structures / are not cells",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers saying viruses are 'too strong' or 'immune' gained no credit."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "State two differences between the composition of inspired air and expired air.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "expired air contains more carbon dioxide",
+                  "marks": 1
+                },
+                {
+                  "text": "expired air contains less oxygen",
+                  "marks": 1
+                },
+                {
+                  "text": "expired air contains more water vapour",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers must be comparative: 'expired air has carbon dioxide' was not enough, since inspired air contains some too."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Write the word equation for aerobic respiration.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "glucose + oxygen →",
+                  "marks": 1
+                },
+                {
+                  "text": "carbon dioxide + water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates added 'energy' as a product. This was ignored, but energy is not a substance."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Explain why glucose is not normally found in the urine of a healthy person.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "glucose is filtered out of the blood in the glomerulus",
+                  "marks": 1
+                },
+                {
+                  "text": "all of it is reabsorbed (into the blood) in the tubule of the nephron",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many said glucose is 'not filtered'. It is filtered, then reabsorbed."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Describe the pathway of a nerve impulse in a reflex arc, from receptor to effector.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "impulse travels from the receptor along a sensory neurone",
+                  "marks": 1
+                },
+                {
+                  "text": "to a relay neurone in the spinal cord / CNS",
+                  "marks": 1
+                },
+                {
+                  "text": "then along a motor neurone to the effector (muscle or gland)",
+                  "marks": 1
+                },
+                {
+                  "text": "impulses cross synapses between neurones",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers named all three types of neurone in the correct order."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Explain how overuse of antibiotics can lead to populations of antibiotic-resistant bacteria.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a random mutation makes some bacteria resistant",
+                  "marks": 1
+                },
+                {
+                  "text": "the antibiotic kills the non-resistant bacteria",
+                  "marks": 1
+                },
+                {
+                  "text": "resistant bacteria survive and reproduce",
+                  "marks": 1
+                },
+                {
+                  "text": "passing on the resistance allele / gene",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should avoid saying bacteria 'become used to' or 'learn to resist' antibiotics."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "State two advantages of asexual reproduction for a plant.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "only one parent is needed",
+                  "marks": 1
+                },
+                {
+                  "text": "it is faster",
+                  "marks": 1
+                },
+                {
+                  "text": "offspring are identical, so are well suited to the same environment",
+                  "marks": 1
+                },
+                {
+                  "text": "no pollinators are needed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "A plant with genotype Tt is crossed with a plant with genotype tt. T (tall) is dominant to t (short). What percentage of the offspring are expected to be short?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "50",
+              "markingPoints": [
+                {
+                  "text": "B1 for 50 (%)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who drew a Punnett square were more successful."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Explain the difference between natural selection and artificial selection.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "in natural selection, the environment / selection pressures decide which individuals survive and reproduce",
+                  "marks": 1
+                },
+                {
+                  "text": "in artificial selection, humans choose individuals with desired features to breed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both processes needed to be described for full marks."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "A producer contains 10 000 kJ of energy. 10% of this energy passes to the primary consumer. How much energy does the primary consumer receive, in kJ?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1000",
+              "markingPoints": [
+                {
+                  "text": "B1 for 1000",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Describe how deforestation can increase the concentration of carbon dioxide in the atmosphere.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "fewer trees photosynthesise, so less carbon dioxide is absorbed",
+                  "marks": 1
+                },
+                {
+                  "text": "burning trees releases carbon dioxide",
+                  "marks": 1
+                },
+                {
+                  "text": "decomposers break down dead wood and release carbon dioxide by respiration",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many described only one process. Questions worth three marks usually need three distinct points."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Explain why pectinase is used in the production of fruit juice.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "pectinase breaks down pectin in plant cell walls",
+                  "marks": 1
+                },
+                {
+                  "text": "so more juice is extracted / the juice is clearer",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
             }
           ]
         }

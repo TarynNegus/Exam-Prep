@@ -162,7 +162,7 @@ npm run content:merge -- content/drafts/0610-june-2024-22.json
 npm run content:import
 ```
 
-Each conversion is one Claude API request using Claude Opus 5.5. It typically costs well under $1 per paper; long papers with many pages cost more.
+Each conversion is one Claude API request using Claude Opus 5.5. It typically costs about $1–3 per paper, depending on how many pages the three PDFs have.
 
 The content tests (`tests/content.test.ts`) run on every file in `/content`. They check that each mark scheme covers the part's marks and that each auto-marked part accepts its own model answer.
 
