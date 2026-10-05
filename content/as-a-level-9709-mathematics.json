@@ -4,20 +4,275 @@
     "name": "Mathematics",
     "qualification": "AS_A_LEVEL",
     "syllabusYears": "2026-2027",
-    "description": "Cambridge International AS & A Level Mathematics. This sample covers Paper 1 (Pure Mathematics 1) only. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+    "description": "Cambridge International AS & A Level Mathematics, covering all six papers: Pure Mathematics 1, 2 and 3, Mechanics, and Probability & Statistics 1 and 2. Each paper's topics form their own section, so you can follow the papers you are taking. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
   },
   "topics": [
-    { "ref": "1.1", "title": "Quadratics", "summary": "Completing the square, the discriminant, solving quadratic equations and inequalities." },
-    { "ref": "1.2", "title": "Functions", "summary": "Domain and range, composite and inverse functions, transformations of graphs." },
-    { "ref": "1.3", "title": "Coordinate geometry", "summary": "Equations of lines and circles, intersections of lines and curves." },
-    { "ref": "1.4", "title": "Circular measure", "summary": "Radians, arc length and sector area." },
-    { "ref": "1.5", "title": "Trigonometry", "summary": "Graphs of trigonometric functions, exact values, identities and equations." },
-    { "ref": "1.6", "title": "Series", "summary": "Binomial expansion, arithmetic and geometric progressions, sum to infinity." },
-    { "ref": "1.7", "title": "Differentiation", "summary": "Gradients, the chain rule, tangents and normals, stationary points, rates of change." },
-    { "ref": "1.8", "title": "Integration", "summary": "Integration as the reverse of differentiation, definite integrals, areas and volumes of revolution." }
+    {
+      "ref": "1.1",
+      "title": "Quadratics",
+      "summary": "Completing the square, the discriminant, solving quadratic equations and inequalities.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.2",
+      "title": "Functions",
+      "summary": "Domain and range, composite and inverse functions, transformations of graphs.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.3",
+      "title": "Coordinate geometry",
+      "summary": "Equations of lines and circles, intersections of lines and curves.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.4",
+      "title": "Circular measure",
+      "summary": "Radians, arc length and sector area.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.5",
+      "title": "Trigonometry",
+      "summary": "Graphs of trigonometric functions, exact values, identities and equations.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.6",
+      "title": "Series",
+      "summary": "Binomial expansion, arithmetic and geometric progressions, sum to infinity.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.7",
+      "title": "Differentiation",
+      "summary": "Gradients, the chain rule, tangents and normals, stationary points, rates of change.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "1.8",
+      "title": "Integration",
+      "summary": "Integration as the reverse of differentiation, definite integrals, areas and volumes of revolution.",
+      "section": "Pure Mathematics 1"
+    },
+    {
+      "ref": "2.1",
+      "title": "Algebra",
+      "summary": "Modulus, polynomial division, the factor and remainder theorems.",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "2.2",
+      "title": "Logarithmic and exponential functions",
+      "summary": "Laws of logarithms, exponential equations, ln and e, linear forms.",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "2.3",
+      "title": "Trigonometry",
+      "summary": "sec, cosec, cot, identities, addition and double angle formulae, R cos(θ ± α).",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "2.4",
+      "title": "Differentiation",
+      "summary": "Exponentials, logarithms, trigonometric functions, product, quotient, parametric and implicit.",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "2.5",
+      "title": "Integration",
+      "summary": "Integrating eˣ, 1/x, trigonometric functions; the trapezium rule.",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "2.6",
+      "title": "Numerical solution of equations",
+      "summary": "Locating roots by sign change and iterative methods.",
+      "section": "Pure Mathematics 2"
+    },
+    {
+      "ref": "3.1",
+      "title": "Algebra",
+      "summary": "Modulus inequalities, binomial expansion for any rational n, partial fractions.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.2",
+      "title": "Logarithmic and exponential functions",
+      "summary": "Solving exponential and logarithmic equations.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.3",
+      "title": "Trigonometry",
+      "summary": "Identities, compound and double angles, R cos(θ ± α).",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.4",
+      "title": "Differentiation",
+      "summary": "Product, quotient and chain rules, parametric and implicit differentiation.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.5",
+      "title": "Integration",
+      "summary": "Partial fractions, substitution, integration by parts.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.6",
+      "title": "Numerical solution of equations",
+      "summary": "Iteration and convergence.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.7",
+      "title": "Vectors",
+      "summary": "Lines in 3D, scalar product, angles, intersections and skew lines.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.8",
+      "title": "Differential equations",
+      "summary": "Forming and solving first-order separable equations.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "3.9",
+      "title": "Complex numbers",
+      "summary": "Arithmetic, modulus and argument, Argand diagrams, roots of polynomials.",
+      "section": "Pure Mathematics 3"
+    },
+    {
+      "ref": "4.1",
+      "title": "Forces and equilibrium",
+      "summary": "Resolving forces, friction, equilibrium of a particle.",
+      "section": "Mechanics"
+    },
+    {
+      "ref": "4.2",
+      "title": "Kinematics of motion in a straight line",
+      "summary": "Displacement, velocity, acceleration, constant acceleration and calculus.",
+      "section": "Mechanics"
+    },
+    {
+      "ref": "4.3",
+      "title": "Momentum",
+      "summary": "Conservation of linear momentum in collisions.",
+      "section": "Mechanics"
+    },
+    {
+      "ref": "4.4",
+      "title": "Newton's laws of motion",
+      "summary": "Applying F = ma, connected particles, pulleys and lifts.",
+      "section": "Mechanics"
+    },
+    {
+      "ref": "4.5",
+      "title": "Energy, work and power",
+      "summary": "Work, kinetic and potential energy, power.",
+      "section": "Mechanics"
+    },
+    {
+      "ref": "5.1",
+      "title": "Representation of data",
+      "summary": "Graphs, averages, measures of spread.",
+      "section": "Probability & Statistics 1"
+    },
+    {
+      "ref": "5.2",
+      "title": "Permutations and combinations",
+      "summary": "Arrangements and selections.",
+      "section": "Probability & Statistics 1"
+    },
+    {
+      "ref": "5.3",
+      "title": "Probability",
+      "summary": "Combined events, independence, conditional probability.",
+      "section": "Probability & Statistics 1"
+    },
+    {
+      "ref": "5.4",
+      "title": "Discrete random variables",
+      "summary": "Probability distributions, binomial and geometric distributions.",
+      "section": "Probability & Statistics 1"
+    },
+    {
+      "ref": "5.5",
+      "title": "The normal distribution",
+      "summary": "Normal probabilities and the normal approximation to the binomial.",
+      "section": "Probability & Statistics 1"
+    },
+    {
+      "ref": "6.1",
+      "title": "The Poisson distribution",
+      "summary": "Poisson probabilities and approximations.",
+      "section": "Probability & Statistics 2"
+    },
+    {
+      "ref": "6.2",
+      "title": "Linear combinations of random variables",
+      "summary": "Expectation and variance of combinations.",
+      "section": "Probability & Statistics 2"
+    },
+    {
+      "ref": "6.3",
+      "title": "Continuous random variables",
+      "summary": "Probability density functions, mean, variance and median.",
+      "section": "Probability & Statistics 2"
+    },
+    {
+      "ref": "6.4",
+      "title": "Sampling and estimation",
+      "summary": "Unbiased estimates, sampling distributions, confidence intervals.",
+      "section": "Probability & Statistics 2"
+    },
+    {
+      "ref": "6.5",
+      "title": "Hypothesis tests",
+      "summary": "Tests using binomial, Poisson and normal distributions; errors.",
+      "section": "Probability & Statistics 2"
+    }
   ],
   "components": [
-    { "ref": "1", "title": "Paper 1 (Pure Mathematics 1)", "durationMin": 110, "totalMarks": 75 }
+    {
+      "ref": "1",
+      "title": "Paper 1 (Pure Mathematics 1)",
+      "durationMin": 110,
+      "totalMarks": 75
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Pure Mathematics 2)",
+      "durationMin": 75,
+      "totalMarks": 50
+    },
+    {
+      "ref": "3",
+      "title": "Paper 3 (Pure Mathematics 3)",
+      "durationMin": 110,
+      "totalMarks": 75
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (Mechanics)",
+      "durationMin": 75,
+      "totalMarks": 50
+    },
+    {
+      "ref": "5",
+      "title": "Paper 5 (Probability & Statistics 1)",
+      "durationMin": 75,
+      "totalMarks": 50
+    },
+    {
+      "ref": "6",
+      "title": "Paper 6 (Probability & Statistics 2)",
+      "durationMin": 75,
+      "totalMarks": 50
+    }
   ],
   "papers": [
     {
@@ -36,11 +291,25 @@
               "prompt": "Express 2x² − 12x + 7 in the form a(x + b)² + c. Give your answer in that form.",
               "marks": 3,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["2(x - 3)^2 - 11", "2(x-3)^2-11", "2(x − 3)² − 11", "2(x-3)²-11"],
+              "acceptedAnswers": [
+                "2(x - 3)^2 - 11",
+                "2(x-3)^2-11",
+                "2(x − 3)² − 11",
+                "2(x-3)²-11"
+              ],
               "markingPoints": [
-                { "text": "B1 for a = 2", "marks": 1 },
-                { "text": "B1 for b = −3", "marks": 1 },
-                { "text": "B1 for c = −11", "marks": 1 }
+                {
+                  "text": "B1 for a = 2",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for b = −3",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for c = −11",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates who first took out the factor of 2 from the x terms were usually successful. A common error was c = −2, from failing to multiply 9 by 2."
             },
@@ -51,9 +320,18 @@
               "marks": 3,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "M1 for using the discriminant: k² − 36", "marks": 1 },
-                { "text": "M1 for setting k² − 36 < 0 and finding critical values ±6", "marks": 1 },
-                { "text": "A1 for −6 < k < 6", "marks": 1 }
+                {
+                  "text": "M1 for using the discriminant: k² − 36",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for setting k² − 36 < 0 and finding critical values ±6",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −6 < k < 6",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Many candidates found the critical values but then gave the incorrect region k < −6, k > 6, or used ≤."
             }
@@ -71,8 +349,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "-0.5",
               "markingPoints": [
-                { "text": "M1 for g(1) = 1/2", "marks": 1 },
-                { "text": "A1 for −1/2", "marks": 1 }
+                {
+                  "text": "M1 for g(1) = 1/2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −1/2",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Some candidates found gf(1) instead. fg(x) means apply g first."
             },
@@ -82,10 +366,20 @@
               "prompt": "Find an expression for f⁻¹(x).",
               "marks": 2,
               "answerType": "SHORT_TEXT",
-              "acceptedAnswers": ["(x + 2)/3", "(x+2)/3", "x/3 + 2/3"],
+              "acceptedAnswers": [
+                "(x + 2)/3",
+                "(x+2)/3",
+                "x/3 + 2/3"
+              ],
               "markingPoints": [
-                { "text": "M1 for a correct first step, e.g. x = 3y − 2", "marks": 1 },
-                { "text": "A1 for (x + 2)/3", "marks": 1 }
+                {
+                  "text": "M1 for a correct first step, e.g. x = 3y − 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for (x + 2)/3",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Well answered."
             }
@@ -103,8 +397,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "5",
               "markingPoints": [
-                { "text": "M1 for (x − 3)² + (y + 2)² = 25", "marks": 1 },
-                { "text": "A1 for radius 5", "marks": 1 }
+                {
+                  "text": "M1 for (x − 3)² + (y + 2)² = 25",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for radius 5",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Most candidates completed the square correctly. Sign errors in the centre were common."
             },
@@ -115,10 +415,22 @@
               "marks": 4,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "B1 for centre (3, −2)", "marks": 1 },
-                { "text": "M1 for gradient of radius = 4/3", "marks": 1 },
-                { "text": "M1 for tangent gradient = −3/4 and use of (6, 2)", "marks": 1 },
-                { "text": "A1 for y − 2 = −3/4(x − 6) oe, e.g. 3x + 4y = 26", "marks": 1 }
+                {
+                  "text": "B1 for centre (3, −2)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for gradient of radius = 4/3",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for tangent gradient = −3/4 and use of (6, 2)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y − 2 = −3/4(x − 6) oe, e.g. 3x + 4y = 26",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates should remember the tangent is perpendicular to the radius at the point of contact."
             }
@@ -135,7 +447,12 @@
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "38.4",
-              "markingPoints": [{ "text": "B1 for ½ × 8² × 1.2 = 38.4", "marks": 1 }],
+              "markingPoints": [
+                {
+                  "text": "B1 for ½ × 8² × 1.2 = 38.4",
+                  "marks": 1
+                }
+              ],
               "examinerComment": "Well answered."
             },
             {
@@ -147,9 +464,18 @@
               "correctAnswer": "8.57",
               "tolerance": 0.01,
               "markingPoints": [
-                { "text": "M1 for triangle area ½ × 8² × sin 1.2", "marks": 1 },
-                { "text": "M1 for sector area − triangle area", "marks": 1 },
-                { "text": "A1 for 8.57", "marks": 1 }
+                {
+                  "text": "M1 for triangle area ½ × 8² × sin 1.2",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for sector area − triangle area",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8.57",
+                  "marks": 1
+                }
               ],
               "examinerComment": "A significant number of candidates had their calculators in degree mode, giving sin 1.2° and an incorrect answer."
             }
@@ -166,10 +492,22 @@
               "marks": 4,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "M1 for factorising: (2 sin θ + 1)(sin θ − 1) = 0", "marks": 1 },
-                { "text": "A1 for sin θ = 1 giving θ = 90°", "marks": 1 },
-                { "text": "A1 for sin θ = −1/2 giving θ = 210°", "marks": 1 },
-                { "text": "A1 for θ = 330° and no extra solutions in range", "marks": 1 }
+                {
+                  "text": "M1 for factorising: (2 sin θ + 1)(sin θ − 1) = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for sin θ = 1 giving θ = 90°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for sin θ = −1/2 giving θ = 210°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for θ = 330° and no extra solutions in range",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Most candidates factorised correctly. Many lost the final mark by missing 330° or including extra solutions."
             },
@@ -181,8 +519,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "0",
               "markingPoints": [
-                { "text": "M1 for √3 − 2 × (√3/2)", "marks": 1 },
-                { "text": "A1 for 0", "marks": 1 }
+                {
+                  "text": "M1 for √3 − 2 × (√3/2)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Exact values should be recalled rather than found by calculator."
             }
@@ -200,8 +544,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "-160",
               "markingPoints": [
-                { "text": "M1 for ⁶C₃ × 2³ × (−x)³", "marks": 1 },
-                { "text": "A1 for −160", "marks": 1 }
+                {
+                  "text": "M1 for ⁶C₃ × 2³ × (−x)³",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −160",
+                  "marks": 1
+                }
               ],
               "examinerComment": "The negative sign was frequently lost."
             },
@@ -213,8 +563,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "96",
               "markingPoints": [
-                { "text": "M1 for 24 ÷ (1 − 0.75)", "marks": 1 },
-                { "text": "A1 for 96", "marks": 1 }
+                {
+                  "text": "M1 for 24 ÷ (1 − 0.75)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 96",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Well answered."
             }
@@ -232,8 +588,14 @@
               "answerType": "NUMERIC",
               "correctAnswer": "9",
               "markingPoints": [
-                { "text": "M1 for dy/dx = 3x² − 12x + 9", "marks": 1 },
-                { "text": "A1 for 9", "marks": 1 }
+                {
+                  "text": "M1 for dy/dx = 3x² − 12x + 9",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 9",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Well answered."
             },
@@ -244,11 +606,26 @@
               "marks": 5,
               "answerType": "EXTENDED",
               "markingPoints": [
-                { "text": "M1 for setting 3x² − 12x + 9 = 0", "marks": 1 },
-                { "text": "A1 for x = 1 and x = 3", "marks": 1 },
-                { "text": "A1 for (1, 6) and (3, 2)", "marks": 1 },
-                { "text": "M1 for using d²y/dx² = 6x − 12 or another valid method", "marks": 1 },
-                { "text": "A1 for (1, 6) maximum and (3, 2) minimum", "marks": 1 }
+                {
+                  "text": "M1 for setting 3x² − 12x + 9 = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 1 and x = 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for (1, 6) and (3, 2)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for using d²y/dx² = 6x − 12 or another valid method",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for (1, 6) maximum and (3, 2) minimum",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Candidates must give a reason for the nature of each point; stating 'maximum' without justification did not earn the final mark."
             }
@@ -266,9 +643,18 @@
               "answerType": "NUMERIC",
               "correctAnswer": "36",
               "markingPoints": [
-                { "text": "B1 for 2x³ − 2x²", "marks": 1 },
-                { "text": "M1 for substituting limits correctly", "marks": 1 },
-                { "text": "A1 for 36", "marks": 1 }
+                {
+                  "text": "B1 for 2x³ − 2x²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for substituting limits correctly",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 36",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Arithmetic errors when substituting the lower limit were common."
             },
@@ -280,11 +666,2420 @@
               "answerType": "NUMERIC",
               "correctAnswer": "8",
               "markingPoints": [
-                { "text": "M1 for π ∫ x dx", "marks": 1 },
-                { "text": "M1 for π[x²/2] from 0 to 4", "marks": 1 },
-                { "text": "A1 for 8π", "marks": 1 }
+                {
+                  "text": "M1 for π ∫ x dx",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for π[x²/2] from 0 to 4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8π",
+                  "marks": 1
+                }
               ],
               "examinerComment": "Some candidates integrated √x rather than (√x)². The volume formula requires y²."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 1B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Find the set of values of x for which 2x² − 5x − 3 > 0.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for factorising or solving 2x² − 5x − 3 = 0: (2x + 1)(x − 3)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for critical values −1/2 and 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x < −1/2, x > 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates found the critical values but then gave the region between them. A sketch of the parabola avoids this."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.2",
+              "prompt": "The function f is defined by f(x) = (x − 2)² + 1 for x ≥ 2. Find an expression for f⁻¹(x).",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2 + √(x − 1)",
+                "2 + √(x-1)",
+                "2+√(x-1)",
+                "2 + sqrt(x - 1)",
+                "2+sqrt(x-1)",
+                "√(x − 1) + 2",
+                "sqrt(x-1)+2",
+                "√(x-1)+2"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for swapping x and y or making x the subject",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for (x − 2)² = y − 1 and square rooting",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for f⁻¹(x) = 2 + √(x − 1)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers with ± were not accepted: the domain x ≥ 2 means only the positive root applies."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.3",
+              "prompt": "Find the equation of the line through (1, 4) that is perpendicular to the line 2x + 3y = 7. Give your answer in the form y = mx + c.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "y = 1.5x + 2.5",
+                "y=1.5x+2.5",
+                "y = 3/2x + 5/2",
+                "y=3/2x+5/2",
+                "y = (3/2)x + 5/2",
+                "y=(3/2)x+(5/2)",
+                "y = 3x/2 + 5/2"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for gradient of given line = −2/3",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for perpendicular gradient 3/2 and use of (1, 4)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = 1.5x + 2.5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used the gradient 2/3, forgetting the negative reciprocal."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.4",
+              "prompt": "A sector of a circle has radius 5 cm and arc length 12 cm. Find the area of the sector, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "markingPoints": [
+                {
+                  "text": "M1 for angle = 12/5 = 2.4 rad, or area = ½ × r × arc length",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 30",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who first found the angle in radians usually succeeded."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.5",
+              "prompt": "Prove the identity (1 − cos²θ) / (sin θ cos θ) ≡ tan θ.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for using 1 − cos²θ = sin²θ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for simplifying sin²θ / (sin θ cos θ) = sin θ / cos θ = tan θ, with no errors",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Proofs should start from one side and work clearly to the other. Working on both sides at once is not a valid proof."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.6",
+              "prompt": "An arithmetic progression has first term 7 and common difference 4. Find the sum of the first 20 terms.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "900",
+              "markingPoints": [
+                {
+                  "text": "M1 for 20/2 × (2 × 7 + 19 × 4)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 900",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using (n − 1)d with n = 20 was essential; some used 20d."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.7",
+              "prompt": "A curve has equation y = (3x − 1)⁵. Find the gradient of the curve at the point where x = 1.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "240",
+              "markingPoints": [
+                {
+                  "text": "M1 for 5(3x − 1)⁴",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for multiplying by 3 (chain rule)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 240",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The factor of 3 from the chain rule was frequently omitted, giving 80."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.8",
+              "prompt": "Find the area of the region enclosed by the curve y = 6x − x² and the x-axis.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "36",
+              "markingPoints": [
+                {
+                  "text": "B1 for limits 0 and 6",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for integrating: 3x² − x³/3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 36",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates needed to find where the curve meets the x-axis before integrating."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.1",
+              "prompt": "Solve the equation |2x − 3| = 5.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for 2x − 3 = 5 or 2x − 3 = −5 (or squaring both sides)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = −1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates found x = 4. The negative case was often forgotten."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.1",
+              "prompt": "Find the remainder when x³ − 4x² + x + 6 is divided by (x − 1).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "markingPoints": [
+                {
+                  "text": "M1 for substituting x = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered using the remainder theorem."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.1",
+              "prompt": "Given that (x + 1) is a factor of x³ + ax² − x − 2, find the value of a.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "M1 for substituting x = −1 and setting equal to 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for a = 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sign errors when substituting −1 were the main source of lost marks."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.2",
+              "prompt": "Solve the equation 3ˣ = 20, giving your answer correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.7268",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for x ln 3 = ln 20 or equivalent",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.73",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers to fewer significant figures than asked lost the accuracy mark."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.2",
+              "prompt": "Solve the equation ln(x + 2) − ln x = ln 3.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "M1 for combining: ln((x + 2)/x)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for (x + 2)/x = 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrote ln(x + 2) − ln x = ln 2, a misuse of the laws of logarithms."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.2",
+              "prompt": "The variables x and y satisfy y = Ae^(kx). The graph of ln y against x is a straight line with gradient 0.4 and intercept 1.2 on the ln y axis. Find A, correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.3201",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ln A = 1.2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for A = 3.32",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should state ln y = ln A + kx before comparing with the straight-line form."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.3",
+              "prompt": "Express 3 sin θ + 4 cos θ in the form R sin(θ + α), where R > 0. State the value of R.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "B1 for R = 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.3",
+              "prompt": "For the expression in part (a), find α in degrees, correct to 2 decimal places, where 0° < α < 90°.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "53.1301",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "M1 for tan α = 4/3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 53.13°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some used tan α = 3/4, giving 36.87°."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.3",
+              "prompt": "Solve the equation 2 sec²θ − 3 tan θ − 1 = 0 for 0° < θ < 90°. Show your working.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for using sec²θ = 1 + tan²θ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2tan²θ − 3 tan θ + 1 = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for solving: tan θ = 1 or 1/2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for θ = 45° and 26.57°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who did not use the identity could make no progress."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.4",
+              "prompt": "Find the gradient of the curve y = x²e^(3x) at the point where x = 1, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "100.4277",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "M1 for using the product rule",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2xe^(3x) + 3x²e^(3x)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5e³ = 100",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates forgot the factor of 3 when differentiating e^(3x)."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.4",
+              "prompt": "A curve has parametric equations x = t², y = 2t³. Find dy/dx when t = 2.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "B1 for dx/dt = 2t and dy/dt = 6t²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for dy/dx = (dy/dt) ÷ (dx/dt)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered by those who remembered to divide in the right order."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.4",
+              "prompt": "Find the gradient of y = ln(3x + 2) at the point where x = 1.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.6",
+              "markingPoints": [
+                {
+                  "text": "M1 for 3/(3x + 2)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3/5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The numerator 3 was often missing."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.5",
+              "prompt": "Find the value of the integral of e^(2x) from x = 0 to x = 1, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.1945",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for ½e^(2x)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for correct use of limits",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.19",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave e^(2x)/2 evaluated at 1 only, forgetting the lower limit."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.5",
+              "prompt": "Find the exact value of the integral of 2/(2x + 1) from x = 0 to x = 1, then give it correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.0986",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for ln(2x + 1)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for using limits: ln 3 − ln 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ln 3 = 1.10",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.5",
+              "prompt": "Use the trapezium rule with 2 intervals to estimate the integral of √(1 + x²) from x = 0 to x = 2. Give your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.0322",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for y-values 1, √2, √5",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for ½ × 1 × (1 + 2√2 + √5)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.03",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using 2 intervals means h = 1. A common error was taking h = 2."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2.6",
+              "prompt": "Show that the equation x³ − 2x − 5 = 0 has a root between x = 2 and x = 3.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for evaluating f(2) = −1 and f(3) = 16",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for stating the sign change, so a root lies between 2 and 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A conclusion referring to the change of sign is required for the second mark."
+            },
+            {
+              "label": "(b)",
+              "topic": "2.6",
+              "prompt": "Use the iterative formula xₙ₊₁ = ∛(2xₙ + 5), with x₁ = 2, to find the root correct to 3 decimal places.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.094551",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for using the iteration correctly at least once",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for continuing until values agree to 3 d.p.",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.095",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should show each iterate to at least 5 decimal places."
+            },
+            {
+              "label": "(c)",
+              "topic": "2.6",
+              "prompt": "Show that the equation ln x = 3 − x has a root between x = 2 and x = 3.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for considering f(x) = ln x + x − 3 and evaluating f(2) ≈ −0.31 and f(3) ≈ 1.10",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for sign change stated",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Rearranging to f(x) = 0 first makes the sign change argument clearer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "3",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 3A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.1",
+              "prompt": "Expand (1 + 2x)^(−1/2) in ascending powers of x, up to and including the term in x².",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for the binomial form with n = −1/2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1 − x",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for + (3/2)x²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The most common error was not squaring the 2 in the x² term."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.1",
+              "prompt": "Express (5x + 1) / ((x + 1)(x − 1)) in partial fractions.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for A/(x + 1) + B/(x − 1) and a method to find A or B",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for A = 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for B = 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Substituting x = 1 and x = −1 was the quickest method."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.1",
+              "prompt": "Solve the inequality |x − 2| < |2x + 1|.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for squaring both sides",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3x² + 8x − 3 > 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for critical values −3 and 1/3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x < −3 or x > 1/3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who solved only x − 2 = 2x + 1 missed half the solution."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.2",
+              "prompt": "Solve the equation 2^(2x) − 5(2^x) + 6 = 0.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for substituting u = 2^x to get u² − 5u + 6 = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for u = 2 or 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = ln 3 / ln 2 = 1.58",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Recognising the hidden quadratic is the key step."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.2",
+              "prompt": "Solve the equation ln(2x − 1) = 2, giving your answer correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.1945",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for 2x − 1 = e²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.19",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.2",
+              "prompt": "Solve the equation 5^(x + 1) = 3^(2x), giving your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.7381",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for taking logarithms: (x + 1) ln 5 = 2x ln 3",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for collecting x terms",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.74",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Errors in rearranging after taking logs were common."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.3",
+              "prompt": "Solve the equation cos 2θ + 3 cos θ = 1 for 0° < θ < 360°.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for using cos 2θ = 2cos²θ − 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2cos²θ + 3 cos θ − 2 = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for cos θ = 1/2 (rejecting −2)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for θ = 60° and 300°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should state why cos θ = −2 has no solutions."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.3",
+              "prompt": "Given that tan A = 1/2 and tan B = 1/3, find the exact value of tan(A + B).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "M1 for (1/2 + 1/3) / (1 − 1/6)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.3",
+              "prompt": "Express cos x − √3 sin x in the form R cos(x + α), where R > 0 and 0° < α < 90°. Give the exact values of R and α.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for R = 2",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for tan α = √3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for α = 60°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.4",
+              "prompt": "Find the gradient of y = x/(x + 1) at the point where x = 1.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.25",
+              "markingPoints": [
+                {
+                  "text": "M1 for using the quotient rule",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1/4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.4",
+              "prompt": "The curve x² + xy + y² = 7 passes through (1, 2). Find dy/dx at this point.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "-0.8",
+              "markingPoints": [
+                {
+                  "text": "B1 for 2x + 2y dy/dx",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y + x dy/dx",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for substituting (1, 2) and solving",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −4/5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The product rule on xy was the most common source of error."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.4",
+              "prompt": "Find the exact coordinates of the stationary point on the curve y = xe^(−x).",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for product rule: e^(−x) − xe^(−x)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = 1/e",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Exact means leaving the answer as 1/e rather than 0.368."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.5",
+              "prompt": "Find the exact value of the integral of xeˣ from x = 0 to x = 1.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1",
+              "markingPoints": [
+                {
+                  "text": "M1 for integrating by parts with u = x",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for xeˣ − eˣ",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for correct use of limits",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Choosing u = eˣ makes the integral harder."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.5",
+              "prompt": "Find the value of the integral of sin²x from x = 0 to x = π/2, correct to 3 significant figures.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.7854",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "M1 for sin²x = ½(1 − cos 2x)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ½x − ¼ sin 2x",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for limits",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for π/4 = 0.785",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The double angle identity is essential here."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.5",
+              "prompt": "Find the value of the integral of 2x/(x² + 1) from x = 0 to x = 1, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.69315",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "M1 for recognising the f'(x)/f(x) form",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ln(x² + 1)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ln 2 = 0.693",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.6",
+              "prompt": "Use the iteration xₙ₊₁ = cos xₙ, with x₁ = 0.7 and x in radians, to find the root of x = cos x correct to 3 decimal places.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.739085",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for at least one correct iterate",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for continuing to convergence",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.739",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Calculators in degree mode gave nonsense answers."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.6",
+              "prompt": "Show that the equation eˣ = 3 − x has a root between x = 0.7 and x = 0.8.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for evaluating eˣ + x − 3 at both values: −0.286 and 0.026",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for sign change stated",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Values should be given to enough accuracy to show the sign."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.6",
+              "prompt": "Use the iteration xₙ₊₁ = ln(3 − xₙ), with x₁ = 0.8, to find this root correct to 2 decimal places.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.79206",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for a correct iterate",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for continuing to convergence",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.79",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.7",
+              "prompt": "Find the angle between the vectors a = i + 2j + 2k and b = 2i − j + 2k, in degrees, correct to 1 decimal place.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "63.6122",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "B1 for a·b = 4",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for cos θ = 4 / (3 × 3)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 63.6°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.7",
+              "prompt": "The line l has equation r = (i + 2k) + t(2i + j − k). Find the value of t for which l passes through the point (5, 2, 0).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "M1 for forming an equation in t from one component",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for t = 2, checked in all three components",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "All three components should be checked."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.7",
+              "prompt": "Lines l₁: r = (i + j) + s(i + k) and l₂: r = (2i + 3k) + t(j + k). Determine whether the lines intersect, are parallel, or are skew.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for stating the directions are not parallel",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for equating components: 1 + s = 2, 1 = t, s = 3 + t",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for s = 1, t = 1 from two equations",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for showing the third equation fails (1 ≠ 4), so the lines are skew",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "To show lines are skew, you must show they are not parallel and do not intersect."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.8",
+              "prompt": "Solve dy/dx = 2xy, given that y = 1 when x = 0. Find y when x = 1, correct to 3 significant figures.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.7183",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for separating variables: ∫ 1/y dy = ∫ 2x dx",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ln y = x² + c",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for using y = 1 at x = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = e = 2.72",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Missing the constant of integration made it impossible to use the initial condition."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.8",
+              "prompt": "Solve dy/dx = (y + 1)/x for x > 0, given that y = 1 when x = 1. Find y when x = 3.",
+              "marks": 5,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "M1 for separating variables",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ln(y + 1) = ln x + c",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for using the condition",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = 2x − 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who combined logs carefully reached y + 1 = 2x efficiently."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.8",
+              "prompt": "The temperature θ °C of a cooling liquid decreases at a rate proportional to (θ − 20). Write down a differential equation relating θ and time t.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for dθ/dt = k(θ − 20) with a constant",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for a negative sign or a statement that k < 0 for a decrease",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The sign of the constant must reflect that the temperature decreases."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3.9",
+              "prompt": "Find the modulus of the complex number z = 3 + 4i.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "B1 for 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "3.9",
+              "prompt": "Express (2 + i)/(1 − i) in the form x + iy.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "0.5 + 1.5i",
+                "0.5+1.5i",
+                "1/2 + 3/2 i",
+                "1/2+3/2i",
+                "1/2 + (3/2)i",
+                "(1+3i)/2",
+                "(1 + 3i)/2"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for multiplying numerator and denominator by 1 + i",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for numerator 1 + 3i",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1/2 + (3/2)i",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Multiplying by the conjugate of the denominator is the standard method."
+            },
+            {
+              "label": "(c)",
+              "topic": "3.9",
+              "prompt": "Solve the equation z² + 4z + 13 = 0.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for using the quadratic formula or completing the square",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for discriminant −36",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for z = −2 ± 3i",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both roots are required."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.1",
+              "prompt": "A particle of mass 2 kg rests on a smooth plane inclined at 30° to the horizontal. It is held in equilibrium by a force P N acting up the plane, parallel to it. Find P.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "markingPoints": [
+                {
+                  "text": "M1 for resolving parallel to the plane: P = 2g sin 30°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 10",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Use g = 10 m s⁻². Resolving vertically instead of along the plane was a common error."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.1",
+              "prompt": "A box of mass 5 kg rests on rough horizontal ground. The coefficient of friction is 0.4. Find the least horizontal force needed to move the box, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "20",
+              "markingPoints": [
+                {
+                  "text": "M1 for F = μR with R = 50",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 20",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "4.1",
+              "prompt": "Forces of 6 N and 8 N act at right angles on a particle. Find the magnitude of the third force needed to keep it in equilibrium, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10",
+              "markingPoints": [
+                {
+                  "text": "M1 for √(6² + 8²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 10",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.2",
+              "prompt": "A car accelerates uniformly from 5 m s⁻¹ to 25 m s⁻¹ in 8 s. Find the distance travelled, in m.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "120",
+              "markingPoints": [
+                {
+                  "text": "M1 for s = (u + v)t / 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 120",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.2",
+              "prompt": "A stone is thrown vertically upwards at 15 m s⁻¹. Find its greatest height above the point of projection, in m.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "11.25",
+              "markingPoints": [
+                {
+                  "text": "M1 for 0 = 15² − 2 × 10 × s",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 11.25",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used g = 9.8; the syllabus uses g = 10."
+            },
+            {
+              "label": "(c)",
+              "topic": "4.2",
+              "prompt": "A particle moves in a straight line with velocity v = 3t² − 12t m s⁻¹ at time t s. Find the distance travelled between t = 0 and t = 2, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "16",
+              "markingPoints": [
+                {
+                  "text": "M1 for integrating: t³ − 6t²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for using limits 0 and 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 16 (distance is positive)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The displacement is −16 m; the question asks for distance, which is positive."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.3",
+              "prompt": "A particle of mass 3 kg moving at 4 m s⁻¹ collides with a particle of mass 1 kg at rest. They coalesce. Find their common speed, in m s⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "M1 for 3 × 4 = 4v",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.3",
+              "prompt": "A 2 kg particle moving at 6 m s⁻¹ collides directly with a 4 kg particle moving at 1 m s⁻¹ in the opposite direction. After the collision the 2 kg particle moves at 2 m s⁻¹ in the opposite direction to its original motion. Find the speed of the 4 kg particle after the collision, in m s⁻¹.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3",
+              "markingPoints": [
+                {
+                  "text": "M1 for conservation of momentum with correct signs",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 12 − 4 = −4 + 4v",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Choosing a positive direction and sticking to it avoids sign errors."
+            },
+            {
+              "label": "(c)",
+              "topic": "4.3",
+              "prompt": "For the collision in part (a), find the loss of kinetic energy, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "M1 for ½ × 3 × 4² − ½ × 4 × 3²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.4",
+              "prompt": "A horizontal force of 12 N acts on a particle of mass 3 kg on a smooth horizontal surface. Find its acceleration, in m s⁻².",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "markingPoints": [
+                {
+                  "text": "B1 for 4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.4",
+              "prompt": "A lift of mass 500 kg accelerates upwards at 0.8 m s⁻². Find the tension in the cable, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5400",
+              "markingPoints": [
+                {
+                  "text": "M1 for T − 500g = 500 × 0.8",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5400",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates omitted the weight."
+            },
+            {
+              "label": "(c)",
+              "topic": "4.4",
+              "prompt": "Particles of mass 3 kg and 2 kg are connected by a light inextensible string over a smooth fixed pulley and released from rest. Find the acceleration of the particles, in m s⁻².",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "M1 for an equation of motion for one particle",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for a second equation or the whole system: 3g − 2g = 5a",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4.5",
+              "prompt": "A force of 20 N acting at 60° above the horizontal pulls a box 5 m along horizontal ground. Find the work done by the force, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "50",
+              "markingPoints": [
+                {
+                  "text": "M1 for 20 cos 60° × 5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 50",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Only the component in the direction of motion does work."
+            },
+            {
+              "label": "(b)",
+              "topic": "4.5",
+              "prompt": "A car's engine works at 30 kW while the car moves at a constant 25 m s⁻¹ on a level road. Find the resistance to motion, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1200",
+              "markingPoints": [
+                {
+                  "text": "M1 for P = Fv",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1200",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting kW to W was essential."
+            },
+            {
+              "label": "(c)",
+              "topic": "4.5",
+              "prompt": "A particle is released from rest at the top of a smooth slope of vertical height 3.2 m. Find its speed at the bottom, in m s⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "markingPoints": [
+                {
+                  "text": "M1 for mgh = ½mv²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "5",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 5A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.1",
+              "prompt": "Find the interquartile range of the data 3, 7, 7, 9, 12, 14, 18.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "7",
+              "markingPoints": [
+                {
+                  "text": "B1 for lower quartile 7 and upper quartile 14",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for IQR = 7",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.1",
+              "prompt": "For 10 values, Σx = 52 and Σx² = 300. Find the standard deviation, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.7205",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "B1 for mean = 5.2",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 300/10 − 5.2²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.72",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some forgot to square root the variance."
+            },
+            {
+              "label": "(c)",
+              "topic": "5.1",
+              "prompt": "In a histogram, the class 10 ≤ x < 15 has frequency 30. Find its frequency density.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "B1 for 6",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Frequency density = frequency ÷ class width."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.2",
+              "prompt": "Find the number of different arrangements of the letters of the word LETTER.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "180",
+              "markingPoints": [
+                {
+                  "text": "M1 for 6! divided by 2! × 2!",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 180",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both repeated letters (E and T) must be accounted for."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.2",
+              "prompt": "A committee of 4 is chosen from 6 men and 5 women. In how many ways can it be chosen with exactly 2 women?",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "150",
+              "markingPoints": [
+                {
+                  "text": "M1 for ⁵C₂ × ⁶C₂",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 150",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Adding instead of multiplying was a common error."
+            },
+            {
+              "label": "(c)",
+              "topic": "5.2",
+              "prompt": "In how many ways can 7 people sit in a row if two particular people must sit next to each other?",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1440",
+              "markingPoints": [
+                {
+                  "text": "M1 for 6! × 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1440",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Treating the pair as one unit is the key idea."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.3",
+              "prompt": "Events A and B are independent, with P(A) = 0.4 and P(B) = 0.5. Find P(A ∪ B).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.7",
+              "markingPoints": [
+                {
+                  "text": "M1 for 0.4 + 0.5 − 0.4 × 0.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.7",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.3",
+              "prompt": "Two fair six-sided dice are thrown. Find the probability that the total is 8. Give your answer as a fraction.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "5/36"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for listing the 5 outcomes",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5/36",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sample space diagram helps."
+            },
+            {
+              "label": "(c)",
+              "topic": "5.3",
+              "prompt": "P(A ∩ B) = 0.12 and P(B) = 0.3. Find P(A | B).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.4",
+              "markingPoints": [
+                {
+                  "text": "M1 for 0.12 ÷ 0.3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.4",
+              "prompt": "X ~ B(10, 0.3). Find P(X = 2), correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.23347",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ¹⁰C₂ × 0.3² × 0.7⁸",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for correct expression evaluated",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.233",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.4",
+              "prompt": "The probability of success in each trial is 0.2. Find the probability that the first success occurs on the 4th trial.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.1024",
+              "tolerance": 0.0001,
+              "markingPoints": [
+                {
+                  "text": "M1 for 0.8³ × 0.2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.1024",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "This is a geometric distribution."
+            },
+            {
+              "label": "(c)",
+              "topic": "5.4",
+              "prompt": "A random variable X takes values 1, 2 and 3 with probabilities 0.2, 0.5 and 0.3. Find E(X).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.1",
+              "markingPoints": [
+                {
+                  "text": "M1 for Σxp",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.1",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "5.5",
+              "prompt": "X ~ N(50, 16). Find P(X < 56), correct to 4 decimal places.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.933193",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for standardising: (56 − 50)/4",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for z = 1.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.9332",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Dividing by the variance (16) instead of the standard deviation (4) was the most common error."
+            },
+            {
+              "label": "(b)",
+              "topic": "5.5",
+              "prompt": "X ~ N(μ, 25) and P(X > 60) = 0.1. Find μ, correct to 4 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "53.5922",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "B1 for z = 1.282",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for (60 − μ)/5 = 1.282",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 53.59",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "5.5",
+              "prompt": "X ~ B(100, 0.4). Use a suitable normal approximation to find P(X ≥ 45), correct to 3 significant figures.",
+              "marks": 4,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.17916",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "B1 for mean 40 and variance 24",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for continuity correction 44.5",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for standardising",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.179",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Omitting the continuity correction lost a mark."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "6",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 6A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6.1",
+              "prompt": "X ~ Po(3). Find P(X = 2), correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.22404",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for e⁻³ × 3²/2!",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.224",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "6.1",
+              "prompt": "X ~ Po(2.5). Find P(X ≤ 1), correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.2873",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for e⁻²·⁵(1 + 2.5)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.287",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "6.1",
+              "prompt": "Emails arrive at random at an average rate of 4 per hour. Find the probability that exactly 2 arrive in a 30-minute period, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.27067",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "B1 for λ = 2",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for e⁻² × 2²/2!",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.271",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The rate must be scaled to the time period."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6.2",
+              "prompt": "X ~ N(10, 4) and Y ~ N(15, 9) are independent. Find Var(2X − Y).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "25",
+              "markingPoints": [
+                {
+                  "text": "M1 for 4Var(X) + Var(Y)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 25",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Variances add, even when the variables are subtracted."
+            },
+            {
+              "label": "(b)",
+              "topic": "6.2",
+              "prompt": "For the X in part (a), find E(3X + 2).",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "32",
+              "markingPoints": [
+                {
+                  "text": "B1 for 32",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "6.2",
+              "prompt": "For X and Y in part (a), find P(X + Y > 28), correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.20269",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "B1 for X + Y ~ N(25, 13)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for standardising",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.203",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6.3",
+              "prompt": "The continuous random variable X has probability density function f(x) = kx² for 0 ≤ x ≤ 3, and 0 otherwise. Find k.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.111111",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ∫ kx² dx from 0 to 3 = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for k = 1/9",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "6.3",
+              "prompt": "For this distribution, find E(X).",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.25",
+              "markingPoints": [
+                {
+                  "text": "M1 for ∫ x · x²/9 dx",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for limits 0 and 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 9/4 = 2.25",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "6.3",
+              "prompt": "Find the median of X, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.3811",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "M1 for ∫ from 0 to m of x²/9 dx = 0.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for m³ = 13.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.38",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6.4",
+              "prompt": "A random sample of 50 values gives Σx = 1250 and Σx² = 32 000. Find an unbiased estimate of the population variance, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "15.3061",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "M1 for (Σx² − (Σx)²/n) ÷ (n − 1)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 750/49",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 15.3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Dividing by n instead of n − 1 lost marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "6.4",
+              "prompt": "A random sample of 64 values from a population with standard deviation 4 has mean 25. Find a 95% confidence interval for the population mean.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for z = 1.96",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 25 ± 1.96 × 4/√64",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for (24.02, 25.98)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "6.4",
+              "prompt": "X ~ N(80, 144). A random sample of 36 values is taken. Find the probability that the sample mean exceeds 83, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.06681",
+              "tolerance": 0.0005,
+              "markingPoints": [
+                {
+                  "text": "B1 for X̄ ~ N(80, 4)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for standardising: z = 1.5",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.0668",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The variance of the sample mean is σ²/n."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6.5",
+              "prompt": "A coin is thought to be biased towards heads. State suitable null and alternative hypotheses for a test, where p is the probability of a head.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for H₀: p = 0.5",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for H₁: p > 0.5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hypotheses must be stated in terms of the parameter p."
+            },
+            {
+              "label": "(b)",
+              "topic": "6.5",
+              "prompt": "The coin is thrown 20 times and shows 15 heads. Assuming H₀, find P(X ≥ 15), correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.020695",
+              "tolerance": 0.0002,
+              "markingPoints": [
+                {
+                  "text": "M1 for 1 − P(X ≤ 14) using B(20, 0.5)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.0207",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "6.5",
+              "prompt": "Carry out the test at the 5% significance level, stating your conclusion in context.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "M1 for comparing 0.0207 with 0.05",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for rejecting H₀: there is evidence that the coin is biased towards heads",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Conclusions must be in context and should not be stated as certain."
             }
           ]
         }
