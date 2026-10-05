@@ -13,7 +13,8 @@
     "db:deploy": "prisma migrate deploy",
     "content:import": "tsx scripts/import-content.ts",
     "postinstall": "prisma generate",
-    "db:setup": "prisma migrate deploy && tsx scripts/import-content.ts"
+    "db:setup": "node scripts/check-db-url.mjs && prisma migrate deploy && tsx scripts/import-content.ts",
+    "db:check": "node scripts/check-db-url.mjs"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",
