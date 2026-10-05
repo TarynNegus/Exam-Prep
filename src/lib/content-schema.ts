@@ -53,7 +53,16 @@ export const contentFileSchema = z
       syllabusYears: z.string().min(1),
       description: z.string().default(""),
     }),
-    topics: z.array(z.object({ ref: z.string().min(1), title: z.string().min(1), summary: z.string().default("") })).min(1),
+    topics: z
+      .array(
+        z.object({
+          ref: z.string().min(1),
+          title: z.string().min(1),
+          summary: z.string().default(""),
+          section: z.string().default("").describe("Group of topics that unlock in order, e.g. a paper's content"),
+        }),
+      )
+      .min(1),
     components: z.array(
       z.object({
         ref: z.string().min(1),

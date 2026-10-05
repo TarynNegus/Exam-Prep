@@ -91,6 +91,7 @@ model Topic {
   ref         String         // syllabus reference, e.g. "1" or "C2"
   title       String
   summary     String         @default("")
+  section     String         @default("") // e.g. "Pure Mathematics 1"; topics unlock in order within a section
   position    Int
   parts       QuestionPart[]
 

@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
 import {
   computeTopicProgress,
-  fullPapersUnlocked,
   isTopicInPlan,
   overallPercent,
+  paperUnlocked,
   unlockedTopicIds,
-  FREE_TOPICS_PER_SUBJECT,
+  FREE_TOPICS_PER_SECTION,
 } from "@/lib/progress";
 
 const topics = ["t1", "t2", "t3"];
@@ -49,22 +49,35 @@ describe("computeTopicProgress", () => {
 });
 
 describe("unlocking", () => {
+  const ordered = topics.map((id) => ({ id, section: "" }));
+
   it("unlocks topics in order up to the first incomplete one", () => {
     const p = computeTopicProgress(topics, parts, new Map([["a", 2], ["b", 2], ["c", 2]]));
-    expect([...unlockedTopicIds(topics, p)]).toEqual(["t1", "t2"]);
+    expect([...unlockedTopicIds(ordered, p)]).toEqual(["t1", "t2"]);
   });
 
-  it("unlocks full papers only when every topic is complete", () => {
+  it("unlocks each section independently", () => {
+    const sectioned = [
+      { id: "t1", section: "Pure" },
+      { id: "t2", section: "Pure" },
+      { id: "t3", section: "Statistics" },
+    ];
+    const p = computeTopicProgress(topics, parts, new Map());
+    expect([...unlockedTopicIds(sectioned, p)]).toEqual(["t1", "t3"]);
+  });
+
+  it("unlocks a paper only when every topic it assesses is complete", () => {
     const partial = computeTopicProgress(topics, parts, new Map([["a", 2], ["b", 2], ["c", 2]]));
-    expect(fullPapersUnlocked(partial)).toBe(false);
+    expect(paperUnlocked(["t1"], partial)).toBe(true);
+    expect(paperUnlocked(["t1", "t2"], partial)).toBe(false);
     const done = computeTopicProgress(topics, parts, new Map([["a", 2], ["b", 2], ["c", 2], ["e", 3]]));
-    expect(fullPapersUnlocked(done)).toBe(true);
+    expect(paperUnlocked(["t1", "t2"], done)).toBe(true);
     expect(overallPercent(done)).toBe(100);
   });
 
-  it("limits free users to the first topics", () => {
-    expect(isTopicInPlan(FREE_TOPICS_PER_SUBJECT - 1, false)).toBe(true);
-    expect(isTopicInPlan(FREE_TOPICS_PER_SUBJECT, false)).toBe(false);
+  it("limits free users to the first topics of each section", () => {
+    expect(isTopicInPlan(FREE_TOPICS_PER_SECTION - 1, false)).toBe(true);
+    expect(isTopicInPlan(FREE_TOPICS_PER_SECTION, false)).toBe(false);
     expect(isTopicInPlan(10, true)).toBe(true);
   });
 });

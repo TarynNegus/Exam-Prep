@@ -13,7 +13,7 @@ export async function accessibleTopic(user: User, topicId: string) {
   return { topic, view, subject: data.subject };
 }
 
-/** Full papers require a subscription and every topic in the subject complete. */
+/** Full papers require a subscription and every topic the paper assesses complete. */
 export async function canSitPaper(user: User, paperId: string) {
   const paper = await db.pastPaper.findUnique({
     where: { id: paperId },
@@ -21,5 +21,5 @@ export async function canSitPaper(user: User, paperId: string) {
   });
   if (!paper) return false;
   const data = await loadSubjectProgress(paper.component.subjectId, user);
-  return !!data?.papersUnlocked;
+  return !!data?.unlockedPapers.has(paperId);
 }

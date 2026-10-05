@@ -21,7 +21,7 @@ export async function importContent(db: PrismaClient, raw: unknown) {
       for (const [position, t] of content.topics.entries()) {
         const topic = await tx.topic.upsert({
           where: { subjectId_ref: { subjectId: subject.id, ref: t.ref } },
-          update: { title: t.title, summary: t.summary, position },
+          update: { title: t.title, summary: t.summary, section: t.section, position },
           create: { ...t, position, subjectId: subject.id },
         });
         topicIds.set(t.ref, topic.id);
