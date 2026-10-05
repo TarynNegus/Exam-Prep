@@ -297,35 +297,43 @@
             {
               "label": "",
               "topic": "2",
-              "prompt": "A cell is 0.05 mm long. In a drawing it is 40 mm long. What is the magnification of the drawing?",
+              "prompt": "A cell is 0.05 mm long. In a drawing it is {d} mm long. What is the magnification of the drawing?",
               "marks": 1,
               "answerType": "MULTIPLE_CHOICE",
               "options": [
                 {
                   "key": "A",
-                  "text": "×2"
+                  "text": "×{=d*0.05}"
                 },
                 {
                   "key": "B",
-                  "text": "×80"
+                  "text": "×{=d/0.05/10}"
                 },
                 {
                   "key": "C",
-                  "text": "×200"
+                  "text": "×{=d/0.05/4}"
                 },
                 {
                   "key": "D",
-                  "text": "×800"
+                  "text": "×{=d/0.05}"
                 }
               ],
               "correctAnswer": "D",
               "markingPoints": [
                 {
-                  "text": "D – 40 ÷ 0.05 = 800",
+                  "text": "D – {d} ÷ 0.05 = {=d/0.05}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Magnification = image size ÷ actual size, with both in the same units."
+              "examinerComment": "Magnification = image size ÷ actual size, with both in the same units.",
+              "variables": {
+                "d": {
+                  "min": 20,
+                  "max": 80,
+                  "step": 5,
+                  "value": 40
+                }
+              }
             }
           ]
         },
@@ -1957,17 +1965,32 @@
             {
               "label": "",
               "topic": "9",
-              "prompt": "A person's heart beats 72 times per minute. It pumps 70 cm³ of blood with each beat. Calculate the volume of blood pumped in one minute, in cm³.",
+              "prompt": "A person's heart beats {b} times per minute. It pumps {v} cm³ of blood with each beat. Calculate the volume of blood pumped in one minute, in cm³.",
               "marks": 2,
               "answerType": "NUMERIC",
+              "variables": {
+                "b": {
+                  "min": 60,
+                  "max": 90,
+                  "step": 1,
+                  "value": 72
+                },
+                "v": {
+                  "min": 60,
+                  "max": 80,
+                  "step": 1,
+                  "value": 70
+                }
+              },
+              "answerExpression": "b * v",
               "correctAnswer": "5040",
               "markingPoints": [
                 {
-                  "text": "M1 for 72 × 70",
+                  "text": "volume = {b} × {v}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 5040",
+                  "text": "= {=b*v} cm³",
                   "marks": 1
                 }
               ],
@@ -2223,13 +2246,28 @@
             {
               "label": "",
               "topic": "19",
-              "prompt": "A producer contains 10 000 kJ of energy. 10% of this energy passes to the primary consumer. How much energy does the primary consumer receive, in kJ?",
+              "prompt": "A producer contains {E} kJ of energy. {p}% of this energy passes to the primary consumer. How much energy does the primary consumer receive, in kJ?",
               "marks": 1,
               "answerType": "NUMERIC",
+              "variables": {
+                "E": {
+                  "min": 5000,
+                  "max": 20000,
+                  "step": 1000,
+                  "value": 10000
+                },
+                "p": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 10
+                }
+              },
+              "answerExpression": "E * p / 100",
               "correctAnswer": "1000",
               "markingPoints": [
                 {
-                  "text": "B1 for 1000",
+                  "text": "{E} × {p} ÷ 100 = {=E*p/100} kJ",
                   "marks": 1
                 }
               ],
@@ -2384,6 +2422,4987 @@
                 }
               ],
               "examinerComment": "Use evidence from both lines on the graph."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 2",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which list contains only characteristics shown by all living organisms?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "breathing, excretion, nutrition, photosynthesis"
+                },
+                {
+                  "key": "B",
+                  "text": "digestion, growth, reproduction, sensitivity"
+                },
+                {
+                  "key": "C",
+                  "text": "movement, respiration, sensitivity, growth"
+                },
+                {
+                  "key": "D",
+                  "text": "excretion, feeding, photosynthesis, respiration"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – movement, respiration, sensitivity, growth",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Breathing, digestion and photosynthesis are not carried out by all organisms. Candidates should learn the seven characteristics exactly."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Why are the base sequences of DNA now used to help classify organisms?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Organisms with more similar base sequences share a more recent common ancestor."
+                },
+                {
+                  "key": "B",
+                  "text": "Only organisms in the same kingdom contain DNA."
+                },
+                {
+                  "key": "C",
+                  "text": "The base sequence of DNA is identical in all members of a genus."
+                },
+                {
+                  "key": "D",
+                  "text": "DNA base sequences show the external features of an organism."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Organisms with more similar base sequences share a more recent common ancestor.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers link similarity of DNA (or amino acid sequences in proteins) to how closely related organisms are through evolution."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which feature is found in mammals but not in birds?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a four-chambered heart"
+                },
+                {
+                  "key": "B",
+                  "text": "fur and external ears (pinnae)"
+                },
+                {
+                  "key": "C",
+                  "text": "lungs for gas exchange"
+                },
+                {
+                  "key": "D",
+                  "text": "an internal skeleton"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – fur and external ears (pinnae)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Birds also have four-chambered hearts, lungs and a skeleton; fur, pinnae and mammary glands are distinctive mammal features."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which feature is shown by all prokaryotes?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "cells with no nucleus"
+                },
+                {
+                  "key": "B",
+                  "text": "cell walls made of cellulose"
+                },
+                {
+                  "key": "C",
+                  "text": "multicellular bodies"
+                },
+                {
+                  "key": "D",
+                  "text": "chloroplasts for photosynthesis"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – cells with no nucleus",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Prokaryotes (bacteria) have circular DNA and plasmids but no nucleus. Many candidates wrongly gave cellulose cell walls, which are a plant feature."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which cell structure is the site of protein synthesis?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "mitochondrion"
+                },
+                {
+                  "key": "B",
+                  "text": "nucleus"
+                },
+                {
+                  "key": "C",
+                  "text": "vacuole"
+                },
+                {
+                  "key": "D",
+                  "text": "ribosome"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – ribosome",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The nucleus holds the genes, but proteins are assembled on ribosomes in the cytoplasm."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which sequence shows increasing levels of organisation?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "tissue → cell → organ → organ system"
+                },
+                {
+                  "key": "B",
+                  "text": "cell → tissue → organ → organ system"
+                },
+                {
+                  "key": "C",
+                  "text": "cell → organ → tissue → organ system"
+                },
+                {
+                  "key": "D",
+                  "text": "organ → tissue → cell → organ system"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – cell → tissue → organ → organ system",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A tissue is a group of similar cells; an organ is made of several tissues; an organ system is a group of organs working together."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Which specialised cell is correctly matched with its function?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ciliated cell – moves mucus in the trachea and bronchi"
+                },
+                {
+                  "key": "B",
+                  "text": "root hair cell – photosynthesis"
+                },
+                {
+                  "key": "C",
+                  "text": "palisade mesophyll cell – absorption of mineral ions"
+                },
+                {
+                  "key": "D",
+                  "text": "red blood cell – production of antibodies"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – ciliated cell – moves mucus in the trachea and bronchi",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each distractor gives a function belonging to a different cell type; learn one feature and one function for each specialised cell."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Which change would increase the rate of diffusion of oxygen into a cell?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "decreasing the temperature"
+                },
+                {
+                  "key": "B",
+                  "text": "increasing the thickness of the cell surface"
+                },
+                {
+                  "key": "C",
+                  "text": "increasing the concentration gradient"
+                },
+                {
+                  "key": "D",
+                  "text": "decreasing the surface area of the cell"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – increasing the concentration gradient",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Rate of diffusion increases with a steeper concentration gradient, a higher temperature, a larger surface area and a shorter diffusion distance."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "A plant cell is placed in distilled water for one hour. What happens to the cell?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It becomes plasmolysed."
+                },
+                {
+                  "key": "B",
+                  "text": "It bursts."
+                },
+                {
+                  "key": "C",
+                  "text": "It becomes flaccid."
+                },
+                {
+                  "key": "D",
+                  "text": "It becomes turgid."
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – It becomes turgid.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Water enters by osmosis and the cell wall resists further expansion, so plant cells do not burst. Many candidates confused plant and animal cells."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Which statement about active transport is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It moves particles from a higher concentration to a lower concentration without energy."
+                },
+                {
+                  "key": "B",
+                  "text": "It moves particles against a concentration gradient using energy from respiration."
+                },
+                {
+                  "key": "C",
+                  "text": "It only moves water molecules through a partially permeable membrane."
+                },
+                {
+                  "key": "D",
+                  "text": "It moves particles against a concentration gradient using energy from sunlight."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It moves particles against a concentration gradient using energy from respiration.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Active transport uses carrier proteins in the membrane and energy released by respiration."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Which chemical elements are present in fats?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "carbon, hydrogen and oxygen only"
+                },
+                {
+                  "key": "B",
+                  "text": "carbon, hydrogen, oxygen and nitrogen"
+                },
+                {
+                  "key": "C",
+                  "text": "carbon, hydrogen and nitrogen only"
+                },
+                {
+                  "key": "D",
+                  "text": "carbon, oxygen and nitrogen only"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – carbon, hydrogen and oxygen only",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Fats, like carbohydrates, contain only C, H and O. Proteins also contain nitrogen."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Which molecules are joined together to make a protein?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "fatty acids"
+                },
+                {
+                  "key": "B",
+                  "text": "glucose"
+                },
+                {
+                  "key": "C",
+                  "text": "amino acids"
+                },
+                {
+                  "key": "D",
+                  "text": "glycerol"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – amino acids",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Proteins are chains of amino acids; fats are made from fatty acids and glycerol; starch from glucose."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Which test shows that a solution contains a reducing sugar?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Add iodine solution; it turns blue-black."
+                },
+                {
+                  "key": "B",
+                  "text": "Add Benedict's solution and heat; it turns from blue to brick-red."
+                },
+                {
+                  "key": "C",
+                  "text": "Shake with ethanol then add water; a white emulsion forms."
+                },
+                {
+                  "key": "D",
+                  "text": "Add biuret solution; it turns from blue to purple."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – Add Benedict's solution and heat; it turns from blue to brick-red.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Benedict's solution must be heated in a water bath. The colour change can be green, yellow, orange or brick-red depending on concentration."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Which statement describes the structure of a DNA molecule?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "one strand folded into a ball with bases on the outside"
+                },
+                {
+                  "key": "B",
+                  "text": "two strands coiled into a double helix, with A pairing with C and G with T"
+                },
+                {
+                  "key": "C",
+                  "text": "two strands coiled into a double helix, with A pairing with T and C with G"
+                },
+                {
+                  "key": "D",
+                  "text": "three strands twisted together, held by bonds between sugars"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – two strands coiled into a double helix, with A pairing with T and C with G",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each strand carries a sequence of bases; bonds between complementary bases (A–T, C–G) hold the two strands together."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "What is an enzyme?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a carbohydrate that speeds up digestion"
+                },
+                {
+                  "key": "B",
+                  "text": "a protein that functions as a biological catalyst"
+                },
+                {
+                  "key": "C",
+                  "text": "a fat that is used up in chemical reactions"
+                },
+                {
+                  "key": "D",
+                  "text": "a hormone that controls metabolism"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a protein that functions as a biological catalyst",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Enzymes are proteins and are not used up in the reactions they catalyse."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "The enzyme pepsin works best at pH 2. Some pepsin is placed in a solution at pH 9. Why does it stop working?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "The enzyme molecules are killed."
+                },
+                {
+                  "key": "B",
+                  "text": "The substrate is used up."
+                },
+                {
+                  "key": "C",
+                  "text": "The shape of the active site changes, so the substrate no longer fits."
+                },
+                {
+                  "key": "D",
+                  "text": "The enzyme molecules move too slowly."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – The shape of the active site changes, so the substrate no longer fits.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Enzymes are molecules, not living things, so they cannot be 'killed'. An unsuitable pH denatures the enzyme."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "When testing a leaf for starch, why is the leaf placed in hot ethanol?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to kill the leaf cells"
+                },
+                {
+                  "key": "B",
+                  "text": "to soften the cell walls"
+                },
+                {
+                  "key": "C",
+                  "text": "to break down the starch to glucose"
+                },
+                {
+                  "key": "D",
+                  "text": "to remove the chlorophyll"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – to remove the chlorophyll",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Removing the green colour lets the blue-black colour of iodine solution be seen. Boiling in water is the step that kills the cells."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Why do plants need nitrate ions?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to make amino acids"
+                },
+                {
+                  "key": "B",
+                  "text": "to make chlorophyll only"
+                },
+                {
+                  "key": "C",
+                  "text": "to make glucose"
+                },
+                {
+                  "key": "D",
+                  "text": "to open the stomata"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – to make amino acids",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Nitrate ions supply nitrogen for amino acids (and therefore proteins). Magnesium is needed for chlorophyll."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A child has soft, weak bones. Which nutrient is most likely missing from the diet?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "vitamin C"
+                },
+                {
+                  "key": "B",
+                  "text": "fibre"
+                },
+                {
+                  "key": "C",
+                  "text": "vitamin D"
+                },
+                {
+                  "key": "D",
+                  "text": "iron"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – vitamin D",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Vitamin D (with calcium) is needed for strong bones; lack of it causes rickets. Vitamin C deficiency causes scurvy."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "What are the functions of hydrochloric acid in the stomach?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to digest fats and neutralise bile"
+                },
+                {
+                  "key": "B",
+                  "text": "to kill pathogens in food and give a low pH for pepsin"
+                },
+                {
+                  "key": "C",
+                  "text": "to emulsify fats and absorb water"
+                },
+                {
+                  "key": "D",
+                  "text": "to digest starch and kill pathogens"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – to kill pathogens in food and give a low pH for pepsin",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Hydrochloric acid does not digest food itself; it provides the acid pH that is optimum for protease in the stomach."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Which organ absorbs most of the water from food and drink?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "small intestine"
+                },
+                {
+                  "key": "B",
+                  "text": "colon"
+                },
+                {
+                  "key": "C",
+                  "text": "stomach"
+                },
+                {
+                  "key": "D",
+                  "text": "oesophagus"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – small intestine",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates choose the colon. Most water is absorbed in the small intestine; the colon absorbs most of what remains."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "What is the product of the digestion of starch by amylase?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "amino acids"
+                },
+                {
+                  "key": "B",
+                  "text": "fatty acids"
+                },
+                {
+                  "key": "C",
+                  "text": "glycerol"
+                },
+                {
+                  "key": "D",
+                  "text": "maltose"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – maltose",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Amylase breaks starch into maltose; maltase on the membranes of the small intestine epithelium then breaks maltose into glucose."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Which sequence shows the pathway taken by water through a plant?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "root hair cell → root cortex cells → xylem → mesophyll cells"
+                },
+                {
+                  "key": "B",
+                  "text": "root hair cell → phloem → xylem → mesophyll cells"
+                },
+                {
+                  "key": "C",
+                  "text": "xylem → root hair cell → mesophyll cells → stomata"
+                },
+                {
+                  "key": "D",
+                  "text": "root cortex cells → root hair cell → phloem → mesophyll cells"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – root hair cell → root cortex cells → xylem → mesophyll cells",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Water travels in the xylem, not the phloem. It evaporates from mesophyll cells and diffuses out through the stomata."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Which feature of xylem vessels helps them to transport water?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They contain many chloroplasts."
+                },
+                {
+                  "key": "B",
+                  "text": "They are living cells with a large vacuole."
+                },
+                {
+                  "key": "C",
+                  "text": "They are hollow tubes with no cross walls, strengthened with lignin."
+                },
+                {
+                  "key": "D",
+                  "text": "They have sieve plates between cells."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – They are hollow tubes with no cross walls, strengthened with lignin.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sieve plates are found in phloem. Xylem vessels are dead, hollow and continuous."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Which part of a plant is acting as a sink for sucrose?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a mature leaf in bright light"
+                },
+                {
+                  "key": "B",
+                  "text": "a fruit that is developing"
+                },
+                {
+                  "key": "C",
+                  "text": "a stoma that is open"
+                },
+                {
+                  "key": "D",
+                  "text": "a xylem vessel in the stem"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a fruit that is developing",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sink is where sucrose is used or stored, such as growing regions, developing fruits and storage organs."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "What is meant by a double circulation?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Blood flows through the heart twice in each complete circuit of the body."
+                },
+                {
+                  "key": "B",
+                  "text": "Blood flows through two hearts."
+                },
+                {
+                  "key": "C",
+                  "text": "Blood flows in arteries and veins."
+                },
+                {
+                  "key": "D",
+                  "text": "Blood is pumped twice by each ventricle in every beat."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Blood flows through the heart twice in each complete circuit of the body.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "In a double circulation one circuit goes to the lungs and the other to the rest of the body."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Why is the muscle wall of the left ventricle thicker than the wall of the right ventricle?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It pumps blood to the lungs."
+                },
+                {
+                  "key": "B",
+                  "text": "It holds a larger volume of blood."
+                },
+                {
+                  "key": "C",
+                  "text": "It pumps blood at a higher pressure around the whole body."
+                },
+                {
+                  "key": "D",
+                  "text": "It receives deoxygenated blood."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – It pumps blood at a higher pressure around the whole body.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both ventricles hold similar volumes. The left ventricle must generate a higher pressure to send blood around the systemic circulation."
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "What is the function of the valves in the heart?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to make the heart beat"
+                },
+                {
+                  "key": "B",
+                  "text": "to prevent backflow of blood"
+                },
+                {
+                  "key": "C",
+                  "text": "to separate oxygenated and deoxygenated blood"
+                },
+                {
+                  "key": "D",
+                  "text": "to supply the heart muscle with oxygen"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – to prevent backflow of blood",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The septum separates the two sides; the coronary arteries supply the heart muscle."
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which type of blood cell produces antibodies?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "lymphocyte"
+                },
+                {
+                  "key": "B",
+                  "text": "phagocyte"
+                },
+                {
+                  "key": "C",
+                  "text": "platelet"
+                },
+                {
+                  "key": "D",
+                  "text": "red blood cell"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – lymphocyte",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Phagocytes engulf pathogens; lymphocytes produce antibodies."
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "How is cholera usually transmitted?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "by mosquito bites"
+                },
+                {
+                  "key": "B",
+                  "text": "in droplets from coughs and sneezes"
+                },
+                {
+                  "key": "C",
+                  "text": "in water contaminated with faeces"
+                },
+                {
+                  "key": "D",
+                  "text": "by sexual contact"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – in water contaminated with faeces",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Treatment of sewage and a clean water supply prevent the spread of cholera."
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "A baby receives antibodies from its mother in breast milk. What type of immunity is this?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "active immunity"
+                },
+                {
+                  "key": "B",
+                  "text": "passive immunity"
+                },
+                {
+                  "key": "C",
+                  "text": "immunity from vaccination"
+                },
+                {
+                  "key": "D",
+                  "text": "immunity from memory cells"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – passive immunity",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The baby has not made the antibodies itself, so no memory cells form and the protection is short-term."
+            }
+          ]
+        },
+        {
+          "number": 32,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Which is a chemical barrier against pathogens?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "skin"
+                },
+                {
+                  "key": "B",
+                  "text": "hairs in the nose"
+                },
+                {
+                  "key": "C",
+                  "text": "stomach acid"
+                },
+                {
+                  "key": "D",
+                  "text": "phagocytes"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – stomach acid",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Skin and nose hairs are mechanical barriers; phagocytes are cells, not barriers."
+            }
+          ]
+        },
+        {
+          "number": 33,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Which sequence shows the path of air into the lungs?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "trachea → bronchi → bronchioles → alveoli"
+                },
+                {
+                  "key": "B",
+                  "text": "bronchi → trachea → bronchioles → alveoli"
+                },
+                {
+                  "key": "C",
+                  "text": "trachea → bronchioles → bronchi → alveoli"
+                },
+                {
+                  "key": "D",
+                  "text": "larynx → bronchioles → trachea → alveoli"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – trachea → bronchi → bronchioles → alveoli",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The trachea divides into two bronchi, which branch into many bronchioles ending in alveoli."
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "During exercise, what causes the rate and depth of breathing to increase?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "a fall in the carbon dioxide concentration of the blood"
+                },
+                {
+                  "key": "B",
+                  "text": "an increase in the carbon dioxide concentration of the blood, detected by the brain"
+                },
+                {
+                  "key": "C",
+                  "text": "an increase in the oxygen concentration of the blood"
+                },
+                {
+                  "key": "D",
+                  "text": "a decrease in the temperature of the lungs"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – an increase in the carbon dioxide concentration of the blood, detected by the brain",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Extra respiration in muscles releases more carbon dioxide. The brain detects the rise and increases the breathing rate and depth."
+            }
+          ]
+        },
+        {
+          "number": 35,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What is the function of goblet cells in the trachea?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to move mucus upwards"
+                },
+                {
+                  "key": "B",
+                  "text": "to absorb oxygen"
+                },
+                {
+                  "key": "C",
+                  "text": "to produce mucus that traps pathogens and particles"
+                },
+                {
+                  "key": "D",
+                  "text": "to keep the trachea open"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – to produce mucus that traps pathogens and particles",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Ciliated cells move the mucus; cartilage keeps the trachea open."
+            }
+          ]
+        },
+        {
+          "number": 36,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "What are the products of anaerobic respiration in yeast?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ethanol and carbon dioxide"
+                },
+                {
+                  "key": "B",
+                  "text": "lactic acid only"
+                },
+                {
+                  "key": "C",
+                  "text": "lactic acid and carbon dioxide"
+                },
+                {
+                  "key": "D",
+                  "text": "carbon dioxide and water"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – ethanol and carbon dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Lactic acid is produced by anaerobic respiration in muscle cells, not in yeast."
+            }
+          ]
+        },
+        {
+          "number": 37,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Which process in the human body does not use energy released by respiration?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "muscle contraction"
+                },
+                {
+                  "key": "B",
+                  "text": "protein synthesis"
+                },
+                {
+                  "key": "C",
+                  "text": "diffusion of oxygen into red blood cells"
+                },
+                {
+                  "key": "D",
+                  "text": "active transport"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – diffusion of oxygen into red blood cells",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Diffusion is a passive process. Energy from respiration is used for muscle contraction, protein synthesis, cell division, active transport, growth, nerve impulses and keeping body temperature constant."
+            }
+          ]
+        },
+        {
+          "number": 38,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Why does anaerobic respiration release less energy per glucose molecule than aerobic respiration?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Glucose is broken down completely."
+                },
+                {
+                  "key": "B",
+                  "text": "Glucose is only partly broken down."
+                },
+                {
+                  "key": "C",
+                  "text": "Anaerobic respiration happens only in mitochondria."
+                },
+                {
+                  "key": "D",
+                  "text": "Oxygen is used up too quickly."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – Glucose is only partly broken down.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The products (lactic acid or ethanol) still contain much of the chemical energy from glucose."
+            }
+          ]
+        },
+        {
+          "number": 39,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "What is deamination?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "the removal of the nitrogen-containing part of amino acids to form urea"
+                },
+                {
+                  "key": "B",
+                  "text": "the filtration of blood in the kidney"
+                },
+                {
+                  "key": "C",
+                  "text": "the breakdown of glucose to release energy"
+                },
+                {
+                  "key": "D",
+                  "text": "the removal of water from urine"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – the removal of the nitrogen-containing part of amino acids to form urea",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Deamination happens in the liver; the urea formed is carried in the blood plasma to the kidneys."
+            }
+          ]
+        },
+        {
+          "number": 40,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Which structure carries urine from a kidney to the bladder?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "urethra"
+                },
+                {
+                  "key": "B",
+                  "text": "renal vein"
+                },
+                {
+                  "key": "C",
+                  "text": "ureter"
+                },
+                {
+                  "key": "D",
+                  "text": "renal artery"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – ureter",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates often confuse the ureter (kidney to bladder) with the urethra (bladder to outside)."
+            }
+          ]
+        },
+        {
+          "number": 41,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "In which part of a nephron is blood filtered?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "the collecting duct"
+                },
+                {
+                  "key": "B",
+                  "text": "the loop of Henle"
+                },
+                {
+                  "key": "C",
+                  "text": "the glomerulus"
+                },
+                {
+                  "key": "D",
+                  "text": "the ureter"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – the glomerulus",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "High pressure in the glomerulus forces small molecules into the Bowman's capsule (renal capsule)."
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "A person walks from a dark room into bright sunlight. What happens in the iris?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Circular muscles contract and radial muscles relax, so the pupil gets smaller."
+                },
+                {
+                  "key": "B",
+                  "text": "Circular muscles relax and radial muscles contract, so the pupil gets smaller."
+                },
+                {
+                  "key": "C",
+                  "text": "Circular muscles contract and radial muscles relax, so the pupil gets larger."
+                },
+                {
+                  "key": "D",
+                  "text": "Both sets of muscles contract, so the pupil gets larger."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Circular muscles contract and radial muscles relax, so the pupil gets smaller.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The two muscle sets are antagonistic: when one contracts the other relaxes."
+            }
+          ]
+        },
+        {
+          "number": 43,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "A shoot is lit from one side. Why does it bend towards the light?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Auxin is destroyed on the shaded side."
+                },
+                {
+                  "key": "B",
+                  "text": "Auxin collects on the shaded side and cells there elongate more."
+                },
+                {
+                  "key": "C",
+                  "text": "Auxin collects on the lit side and cells there elongate more."
+                },
+                {
+                  "key": "D",
+                  "text": "Cells on the lit side divide faster."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – Auxin collects on the shaded side and cells there elongate more.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Auxin stimulates cell elongation in shoots. More elongation on the shaded side bends the shoot towards the light."
+            }
+          ]
+        },
+        {
+          "number": 44,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "How does an impulse pass across a synapse?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Electrical impulses jump across the gap."
+                },
+                {
+                  "key": "B",
+                  "text": "Neurotransmitter molecules diffuse across the gap and bind to receptors."
+                },
+                {
+                  "key": "C",
+                  "text": "Neurotransmitter is actively transported along the axon."
+                },
+                {
+                  "key": "D",
+                  "text": "The two neurones join together."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – Neurotransmitter molecules diffuse across the gap and bind to receptors.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Synapses ensure impulses travel in one direction only, because receptors are only on the next neurone."
+            }
+          ]
+        },
+        {
+          "number": 45,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Which effects are caused by adrenaline?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "decreased heart rate and increased pupil diameter"
+                },
+                {
+                  "key": "B",
+                  "text": "increased heart rate and decreased breathing rate"
+                },
+                {
+                  "key": "C",
+                  "text": "decreased blood glucose and decreased heart rate"
+                },
+                {
+                  "key": "D",
+                  "text": "increased heart rate, breathing rate and pupil diameter"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – increased heart rate, breathing rate and pupil diameter",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Adrenaline prepares the body for 'fight or flight', including raising blood glucose concentration."
+            }
+          ]
+        },
+        {
+          "number": 46,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Which disease can be treated with antibiotics?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "influenza"
+                },
+                {
+                  "key": "B",
+                  "text": "cholera"
+                },
+                {
+                  "key": "C",
+                  "text": "HIV/AIDS"
+                },
+                {
+                  "key": "D",
+                  "text": "the common cold"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – cholera",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Cholera is caused by a bacterium. The others are caused by viruses, which antibiotics do not affect."
+            }
+          ]
+        },
+        {
+          "number": 47,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Why can some antibiotics kill bacteria without harming human cells?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Human cells are too large to be affected."
+                },
+                {
+                  "key": "B",
+                  "text": "The antibiotics act on structures, such as the cell wall, that human cells do not have."
+                },
+                {
+                  "key": "C",
+                  "text": "Human cells contain antibodies that destroy the antibiotic."
+                },
+                {
+                  "key": "D",
+                  "text": "Antibiotics only work outside the body."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – The antibiotics act on structures, such as the cell wall, that human cells do not have.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Antibiotics target processes or structures found in bacteria but not in human cells."
+            }
+          ]
+        },
+        {
+          "number": 48,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Which action helps to reduce the development of antibiotic-resistant bacteria such as MRSA?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "using antibiotics to treat viral infections"
+                },
+                {
+                  "key": "B",
+                  "text": "stopping a course of antibiotics as soon as symptoms go"
+                },
+                {
+                  "key": "C",
+                  "text": "using antibiotics only when they are essential"
+                },
+                {
+                  "key": "D",
+                  "text": "giving antibiotics to all healthy farm animals"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – using antibiotics only when they are essential",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each use of an antibiotic selects for resistant bacteria, so limiting their use slows the spread of resistance."
+            }
+          ]
+        },
+        {
+          "number": 49,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "What is the function of the anther in a flower?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to receive pollen"
+                },
+                {
+                  "key": "B",
+                  "text": "to produce pollen"
+                },
+                {
+                  "key": "C",
+                  "text": "to produce nectar"
+                },
+                {
+                  "key": "D",
+                  "text": "to contain the ovules"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – to produce pollen",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The stigma receives pollen; ovules are inside the ovary."
+            }
+          ]
+        },
+        {
+          "number": 50,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "What is a function of the placenta?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to let maternal blood mix with fetal blood"
+                },
+                {
+                  "key": "B",
+                  "text": "to protect the fetus from mechanical shocks"
+                },
+                {
+                  "key": "C",
+                  "text": "to exchange dissolved nutrients, gases and wastes between mother and fetus"
+                },
+                {
+                  "key": "D",
+                  "text": "to produce eggs"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – to exchange dissolved nutrients, gases and wastes between mother and fetus",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Maternal and fetal blood do not mix. Amniotic fluid protects the fetus from shocks."
+            }
+          ]
+        },
+        {
+          "number": 51,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Which hormone maintains the lining of the uterus after ovulation?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "FSH"
+                },
+                {
+                  "key": "B",
+                  "text": "LH"
+                },
+                {
+                  "key": "C",
+                  "text": "testosterone"
+                },
+                {
+                  "key": "D",
+                  "text": "progesterone"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – progesterone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "FSH and LH are made by the pituitary gland and control egg development and ovulation; progesterone maintains the uterus lining."
+            }
+          ]
+        },
+        {
+          "number": 52,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Which method reduces the spread of HIV?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "using condoms during sexual intercourse"
+                },
+                {
+                  "key": "B",
+                  "text": "taking antibiotics"
+                },
+                {
+                  "key": "C",
+                  "text": "boiling drinking water"
+                },
+                {
+                  "key": "D",
+                  "text": "using mosquito nets"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – using condoms during sexual intercourse",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "HIV is spread in body fluids, such as during sexual intercourse or by sharing needles."
+            }
+          ]
+        },
+        {
+          "number": 53,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "How many chromosomes are present in a human egg cell?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "22"
+                },
+                {
+                  "key": "B",
+                  "text": "23"
+                },
+                {
+                  "key": "C",
+                  "text": "46"
+                },
+                {
+                  "key": "D",
+                  "text": "92"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 23",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Gametes are haploid, with one chromosome from each of the 23 pairs."
+            }
+          ]
+        },
+        {
+          "number": 54,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Which statement about mitosis is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It produces four genetically different cells."
+                },
+                {
+                  "key": "B",
+                  "text": "It halves the chromosome number."
+                },
+                {
+                  "key": "C",
+                  "text": "It produces genetically identical cells."
+                },
+                {
+                  "key": "D",
+                  "text": "It only takes place in the ovaries and testes."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – It produces genetically identical cells.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Mitosis is used for growth, repair of tissues, replacement of cells and asexual reproduction."
+            }
+          ]
+        },
+        {
+          "number": 55,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "A man with genotype IᴬIᴼ and a woman with genotype IᴮIᴼ have a child. What is the probability that the child has blood group O?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0"
+                },
+                {
+                  "key": "B",
+                  "text": "0.25"
+                },
+                {
+                  "key": "C",
+                  "text": "0.5"
+                },
+                {
+                  "key": "D",
+                  "text": "0.75"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 0.25",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Only the IᴼIᴼ combination gives group O; it is one of four equally likely combinations."
+            }
+          ]
+        },
+        {
+          "number": 56,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Which human feature shows discontinuous variation?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "height"
+                },
+                {
+                  "key": "B",
+                  "text": "body mass"
+                },
+                {
+                  "key": "C",
+                  "text": "ABO blood group"
+                },
+                {
+                  "key": "D",
+                  "text": "hand span"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – ABO blood group",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Discontinuous variation falls into distinct groups with no intermediates, and is usually caused by genes alone."
+            }
+          ]
+        },
+        {
+          "number": 57,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Which factor increases the rate of mutation?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "ionising radiation"
+                },
+                {
+                  "key": "B",
+                  "text": "a balanced diet"
+                },
+                {
+                  "key": "C",
+                  "text": "natural selection"
+                },
+                {
+                  "key": "D",
+                  "text": "selective breeding"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – ionising radiation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Ionising radiation and some chemicals increase the rate of mutation."
+            }
+          ]
+        },
+        {
+          "number": 58,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Which adaptive features are found in a xerophyte?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "thin cuticle and many stomata on the upper surface"
+                },
+                {
+                  "key": "B",
+                  "text": "large air spaces in stems and leaves"
+                },
+                {
+                  "key": "C",
+                  "text": "thick waxy cuticle and sunken stomata"
+                },
+                {
+                  "key": "D",
+                  "text": "wide, thin leaves floating on water"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – thick waxy cuticle and sunken stomata",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The other options describe hydrophytes or features that would increase water loss."
+            }
+          ]
+        },
+        {
+          "number": 59,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "What is the role of decomposers in the carbon cycle?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They absorb carbon dioxide by photosynthesis."
+                },
+                {
+                  "key": "B",
+                  "text": "They release carbon dioxide by respiration."
+                },
+                {
+                  "key": "C",
+                  "text": "They turn carbon dioxide into fossil fuels."
+                },
+                {
+                  "key": "D",
+                  "text": "They release carbon dioxide by combustion."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – They release carbon dioxide by respiration.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Decomposers feed on dead organic matter and release carbon dioxide when they respire."
+            }
+          ]
+        },
+        {
+          "number": 60,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "What do nitrogen-fixing bacteria do?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "convert nitrogen gas into nitrogen compounds such as ammonium ions"
+                },
+                {
+                  "key": "B",
+                  "text": "convert nitrates into nitrogen gas"
+                },
+                {
+                  "key": "C",
+                  "text": "convert proteins into ammonium ions"
+                },
+                {
+                  "key": "D",
+                  "text": "absorb nitrates from the soil"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – convert nitrogen gas into nitrogen compounds such as ammonium ions",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting nitrates into nitrogen gas is denitrification; converting proteins to ammonium is decomposition."
+            }
+          ]
+        },
+        {
+          "number": 61,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "Which statement describes the stationary phase of a population growth curve?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "The birth rate is much higher than the death rate."
+                },
+                {
+                  "key": "B",
+                  "text": "The birth rate and death rate are approximately equal."
+                },
+                {
+                  "key": "C",
+                  "text": "The death rate is much higher than the birth rate."
+                },
+                {
+                  "key": "D",
+                  "text": "There are no deaths."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – The birth rate and death rate are approximately equal.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Limiting factors such as food, space or predators stop the population increasing."
+            }
+          ]
+        },
+        {
+          "number": 62,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "Why can a pyramid of numbers have a narrow base, unlike a pyramid of biomass?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Producers contain less energy than consumers."
+                },
+                {
+                  "key": "B",
+                  "text": "One large producer, such as a tree, can feed many consumers."
+                },
+                {
+                  "key": "C",
+                  "text": "Energy is gained at each trophic level."
+                },
+                {
+                  "key": "D",
+                  "text": "Consumers are always larger than producers."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – One large producer, such as a tree, can feed many consumers.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A pyramid of biomass is almost always a true pyramid because biomass decreases at each level."
+            }
+          ]
+        },
+        {
+          "number": 63,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "What is a negative effect of growing crops as large monocultures?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "increased biodiversity"
+                },
+                {
+                  "key": "B",
+                  "text": "reduced biodiversity"
+                },
+                {
+                  "key": "C",
+                  "text": "reduced use of pesticides"
+                },
+                {
+                  "key": "D",
+                  "text": "increased soil nutrients"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – reduced biodiversity",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Monocultures remove habitats for many species and pests can spread quickly, so more pesticide is often used."
+            }
+          ]
+        },
+        {
+          "number": 64,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "During eutrophication, why does the oxygen concentration of the water fall?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Algae use oxygen for photosynthesis."
+                },
+                {
+                  "key": "B",
+                  "text": "Fertiliser reacts with oxygen."
+                },
+                {
+                  "key": "C",
+                  "text": "Decomposers increase and use oxygen in aerobic respiration as they break down dead plants."
+                },
+                {
+                  "key": "D",
+                  "text": "Fish absorb more oxygen."
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – Decomposers increase and use oxygen in aerobic respiration as they break down dead plants.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Light is blocked by surface algae, so plants below die; decomposition by bacteria then uses up dissolved oxygen."
+            }
+          ]
+        },
+        {
+          "number": 65,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Which method helps to make fishing sustainable?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "using nets with very small mesh"
+                },
+                {
+                  "key": "B",
+                  "text": "setting quotas on the mass of fish caught"
+                },
+                {
+                  "key": "C",
+                  "text": "fishing during the breeding season"
+                },
+                {
+                  "key": "D",
+                  "text": "removing protected areas"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – setting quotas on the mass of fish caught",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Quotas, larger mesh sizes and closed seasons allow fish populations to replace themselves."
+            }
+          ]
+        },
+        {
+          "number": 66,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Which human activity is a major source of methane?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "burning coal in power stations"
+                },
+                {
+                  "key": "B",
+                  "text": "rearing cattle"
+                },
+                {
+                  "key": "C",
+                  "text": "cutting down forests"
+                },
+                {
+                  "key": "D",
+                  "text": "using nuclear power"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – rearing cattle",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Methane is released by cattle and from rice fields and landfill sites. Burning coal mainly releases carbon dioxide."
+            }
+          ]
+        },
+        {
+          "number": 67,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Why is yeast added to bread dough?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It produces lactic acid that flavours the bread."
+                },
+                {
+                  "key": "B",
+                  "text": "It produces carbon dioxide that makes the dough rise."
+                },
+                {
+                  "key": "C",
+                  "text": "It digests the starch completely."
+                },
+                {
+                  "key": "D",
+                  "text": "It kills bacteria in the flour."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It produces carbon dioxide that makes the dough rise.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Yeast respires anaerobically, producing carbon dioxide; the ethanol evaporates during baking."
+            }
+          ]
+        },
+        {
+          "number": 68,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Which enzyme joins a gene into a plasmid during genetic modification?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "amylase"
+                },
+                {
+                  "key": "B",
+                  "text": "restriction enzyme"
+                },
+                {
+                  "key": "C",
+                  "text": "lipase"
+                },
+                {
+                  "key": "D",
+                  "text": "DNA ligase"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – DNA ligase",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Restriction enzymes cut DNA; DNA ligase joins the sticky ends."
+            }
+          ]
+        },
+        {
+          "number": 69,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "What are 'sticky ends' in genetic modification?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "short lengths of unpaired, complementary bases left after DNA is cut"
+                },
+                {
+                  "key": "B",
+                  "text": "proteins that hold plasmids together"
+                },
+                {
+                  "key": "C",
+                  "text": "the ends of chromosomes"
+                },
+                {
+                  "key": "D",
+                  "text": "parts of the cell membrane"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – short lengths of unpaired, complementary bases left after DNA is cut",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using the same restriction enzyme on both pieces of DNA gives complementary sticky ends that can pair up."
+            }
+          ]
+        },
+        {
+          "number": 70,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Which enzyme is used to produce milk suitable for people who are lactose intolerant?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "lactase"
+                },
+                {
+                  "key": "B",
+                  "text": "pectinase"
+                },
+                {
+                  "key": "C",
+                  "text": "protease"
+                },
+                {
+                  "key": "D",
+                  "text": "amylase"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – lactase",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Lactase breaks lactose into glucose and galactose."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 4",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Four animals have these features:\n• P – six legs, wings\n• Q – eight legs, no wings\n• R – six legs, no wings\n• S – more than ten pairs of legs\nConstruct a dichotomous key to identify the four animals.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "first question splits the animals into two groups, e.g. more than 8 legs? (S) / 8 or fewer",
+                  "marks": 1
+                },
+                {
+                  "text": "question separating Q (eight legs) from the six-legged animals",
+                  "marks": 1
+                },
+                {
+                  "text": "question about wings separating P from R",
+                  "marks": 1
+                },
+                {
+                  "text": "each question has two paired, opposite answers that lead to a name or the next question",
+                  "marks": 1
+                },
+                {
+                  "text": "all four animals correctly identified at the end of the key",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers used numbered paired statements based on visible features. Weaker answers asked about features not given, or wrote questions with more than two outcomes."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Explain why viruses are not placed in any of the five kingdoms.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "viruses are not made of cells / have no cell structure",
+                  "marks": 1
+                },
+                {
+                  "text": "they consist only of genetic material inside a protein coat",
+                  "marks": 1
+                },
+                {
+                  "text": "they do not show all the characteristics of living organisms / can only reproduce inside host cells",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates simply said viruses are 'not alive' without explaining why."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "State the term for a group of organisms that can reproduce to produce fertile offspring.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "species",
+                "a species"
+              ],
+              "markingPoints": [
+                {
+                  "text": "species",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers such as 'genus' or 'population' were not accepted."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "A student measures a red blood cell in a photomicrograph.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "2",
+              "prompt": "The image of the cell is {I} mm wide. The magnification of the photomicrograph is ×{M}. Calculate the actual width of the cell in micrometres (µm).",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "variables": {
+                "I": {
+                  "min": 28,
+                  "max": 40,
+                  "step": 1,
+                  "value": 30
+                },
+                "M": {
+                  "min": 4000,
+                  "max": 5000,
+                  "step": 250,
+                  "value": 4000
+                }
+              },
+              "answerExpression": "I * 1000 / M",
+              "correctAnswer": "7.5",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "actual size = image size ÷ magnification",
+                  "marks": 1
+                },
+                {
+                  "text": "{I} mm = {=I*1000} µm",
+                  "marks": 1
+                },
+                {
+                  "text": "{=I*1000} ÷ {M} = {=I*1000/M} µm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The most common error was not converting millimetres to micrometres (1 mm = 1000 µm)."
+            },
+            {
+              "label": "(b)",
+              "topic": "2",
+              "prompt": "State the functions of the mitochondria and the ribosomes in a cell.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "mitochondria: site of (aerobic) respiration / release energy",
+                  "marks": 1
+                },
+                {
+                  "text": "ribosomes: protein synthesis",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Mitochondria make energy' was not accepted: energy is released, not made."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "A student draws a pollen grain. The drawing is {d} mm across. The actual pollen grain is {a} µm across. Calculate the magnification of the drawing.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "d": {
+                  "min": 40,
+                  "max": 120,
+                  "step": 5,
+                  "value": 60
+                },
+                "a": {
+                  "min": 20,
+                  "max": 80,
+                  "step": 5,
+                  "value": 40
+                }
+              },
+              "answerExpression": "d * 1000 / a",
+              "correctAnswer": "1500",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "{d} mm = {=d*1000} µm",
+                  "marks": 1
+                },
+                {
+                  "text": "magnification = {=d*1000} ÷ {a} = ×{=d*1000/a}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Magnification has no units. Both measurements must be in the same unit before dividing."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Name the cell structure that controls the movement of substances into and out of the cell.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "cell membrane",
+                "membrane",
+                "cell surface membrane",
+                "plasma membrane"
+              ],
+              "markingPoints": [
+                {
+                  "text": "cell membrane",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Cell wall' was a common incorrect answer; the cell wall is fully permeable."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Explain how a root hair cell is adapted for its function.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "long extension / root hair gives a large surface area",
+                  "marks": 1
+                },
+                {
+                  "text": "for absorption of water and mineral ions",
+                  "marks": 1
+                },
+                {
+                  "text": "no chloroplasts as it is underground / many mitochondria for active transport",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should link each feature to the function it helps."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "A student cuts cylinders from a potato, weighs them and places them in a concentrated salt solution for 30 minutes.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "3",
+              "prompt": "The total mass of the cylinders decreased from {m0} g to {m1} g. Calculate the percentage decrease in mass.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "m0": {
+                  "min": 4.0,
+                  "max": 5.0,
+                  "step": 0.1,
+                  "value": 4.5
+                },
+                "m1": {
+                  "min": 3.0,
+                  "max": 3.9,
+                  "step": 0.1,
+                  "value": 3.6
+                }
+              },
+              "answerExpression": "(m0 - m1) / m0 * 100",
+              "correctAnswer": "20",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "decrease = {m0} − {m1} = {=round(m0-m1, 1)} g",
+                  "marks": 1
+                },
+                {
+                  "text": "({=round(m0-m1, 1)} ÷ {m0}) × 100 = {=(m0-m1)/m0*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Divide the change by the original mass, not the final mass."
+            },
+            {
+              "label": "(b)",
+              "topic": "3",
+              "prompt": "Explain the decrease in mass of the cylinders.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the salt solution has a lower water potential than the potato cells",
+                  "marks": 1
+                },
+                {
+                  "text": "water leaves the cells by osmosis",
+                  "marks": 1
+                },
+                {
+                  "text": "through the partially permeable (cell) membrane",
+                  "marks": 1
+                },
+                {
+                  "text": "from a higher to a lower water potential / down a water potential gradient",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers used the term water potential correctly. Answers referring to salt moving into the cells did not gain credit."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Red blood cells placed in distilled water burst, but plant cells in distilled water do not. Explain this difference.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "water enters both types of cell by osmosis",
+                  "marks": 1
+                },
+                {
+                  "text": "red blood cells have no cell wall, so the membrane stretches until it bursts",
+                  "marks": 1
+                },
+                {
+                  "text": "plant cells have a cell wall that resists expansion / pressure",
+                  "marks": 1
+                },
+                {
+                  "text": "so plant cells become turgid",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates stated that plant cells have a cell wall but did not explain how the wall prevents bursting."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Describe how a student could test a sample of food for the presence of fat.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "mix / shake the food with ethanol",
+                  "marks": 1
+                },
+                {
+                  "text": "pour the liquid into (cold) water",
+                  "marks": 1
+                },
+                {
+                  "text": "a cloudy white emulsion shows fat is present",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who described the Sudan III or Benedict's test did not gain credit; the ethanol emulsion test is required."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Name the carbohydrate made of many glucose molecules that is stored in plant cells.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "starch"
+              ],
+              "markingPoints": [
+                {
+                  "text": "starch",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Glycogen is the storage carbohydrate in animals; cellulose forms cell walls."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "Part of one strand of a DNA molecule has the base sequence ATTGCAC.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "4",
+              "prompt": "State the base sequence of the corresponding part of the complementary strand.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "TAACGTG",
+                "T A A C G T G",
+                "T-A-A-C-G-T-G"
+              ],
+              "markingPoints": [
+                {
+                  "text": "TAACGTG",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A pairs with T and C pairs with G. Some candidates wrote U, which is not found in DNA."
+            },
+            {
+              "label": "(b)",
+              "topic": "4",
+              "prompt": "In another DNA molecule, {A}% of the bases are adenine. Calculate the percentage of the bases that are guanine.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "A": {
+                  "min": 15,
+                  "max": 35,
+                  "step": 1,
+                  "value": 30
+                }
+              },
+              "answerExpression": "50 - A",
+              "correctAnswer": "20",
+              "markingPoints": [
+                {
+                  "text": "thymine is also {A}% (A pairs with T)",
+                  "marks": 1
+                },
+                {
+                  "text": "guanine = (100 − {=2*A}) ÷ 2 = {=50-A} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates forgot that thymine must equal adenine, and gave 100 − {A} or similar."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Explain why an enzyme can only catalyse one type of reaction.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the active site has a specific shape",
+                  "marks": 1
+                },
+                {
+                  "text": "only one substrate is complementary to the active site",
+                  "marks": 1
+                },
+                {
+                  "text": "enzyme–substrate complex forms",
+                  "marks": 1
+                },
+                {
+                  "text": "other molecules do not fit the active site",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers used 'complementary' rather than 'the same shape'."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "The enzyme catalase breaks down hydrogen peroxide to release oxygen. In one experiment, {v} cm³ of oxygen was collected in {t} seconds. Calculate the mean rate of oxygen production in cm³ per minute.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "v": {
+                  "min": 12,
+                  "max": 48,
+                  "step": 2,
+                  "value": 30
+                },
+                "t": {
+                  "min": 60,
+                  "max": 180,
+                  "step": 30,
+                  "value": 120
+                }
+              },
+              "answerExpression": "v / t * 60",
+              "correctAnswer": "15",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "{v} ÷ {t} = {=v/t} cm³ per second",
+                  "marks": 1
+                },
+                {
+                  "text": "× 60 = {=v/t*60} cm³ per minute",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Read the units asked for carefully: the time was given in seconds but the rate is per minute."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Describe an experiment using a variegated leaf (with green and white areas) to show that chlorophyll is needed for photosynthesis.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "destarch the plant by keeping it in the dark for 48 hours",
+                  "marks": 1
+                },
+                {
+                  "text": "then place it in light for several hours",
+                  "marks": 1
+                },
+                {
+                  "text": "test the leaf for starch: boil in water, then in ethanol, then add iodine solution",
+                  "marks": 1
+                },
+                {
+                  "text": "green areas turn blue-black / white areas stay orange-brown",
+                  "marks": 1
+                },
+                {
+                  "text": "so starch is only made where chlorophyll is present",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The destarching step was often omitted, which means the starch could have been made before the experiment."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "A student investigates the rate of photosynthesis of a piece of pondweed by counting the bubbles of gas it releases.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "6",
+              "prompt": "The student counts {n} bubbles in {t} minutes. Calculate the rate of bubble production in bubbles per minute.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "variables": {
+                "n": {
+                  "min": 24,
+                  "max": 90,
+                  "step": 1,
+                  "value": 54
+                },
+                "t": {
+                  "min": 3,
+                  "max": 6,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "n / t",
+              "correctAnswer": "13.5",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "{n} ÷ {t} = {=n/t} bubbles per minute",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers to three significant figures were accepted."
+            },
+            {
+              "label": "(b)",
+              "topic": "6",
+              "prompt": "The student moves a lamp closer to the pondweed and the rate of bubble production increases. Explain why.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "light intensity increases",
+                  "marks": 1
+                },
+                {
+                  "text": "light intensity is the limiting factor",
+                  "marks": 1
+                },
+                {
+                  "text": "more energy is available / absorbed by chlorophyll for photosynthesis",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers identified light intensity as the limiting factor."
+            },
+            {
+              "label": "(c)",
+              "topic": "6",
+              "prompt": "Suggest two variables that should be kept constant during this investigation.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "temperature (of the water)",
+                  "marks": 1
+                },
+                {
+                  "text": "carbon dioxide concentration / amount of hydrogencarbonate",
+                  "marks": 1
+                },
+                {
+                  "text": "same piece / species / length of pondweed",
+                  "marks": 1
+                },
+                {
+                  "text": "time allowed to adjust before counting",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Light intensity was not accepted because it is the independent variable."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Explain how the palisade mesophyll cells of a leaf are adapted for photosynthesis.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "contain many chloroplasts",
+                  "marks": 1
+                },
+                {
+                  "text": "to absorb light energy",
+                  "marks": 1
+                },
+                {
+                  "text": "found near the upper surface of the leaf, where light is brightest",
+                  "marks": 1
+                },
+                {
+                  "text": "tall cells packed closely together so many fit near the surface",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should link each feature to how it helps the cell trap light."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Describe how a student could investigate the effect of pH on the activity of amylase, using starch and iodine solution.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "mix amylase and starch solution in buffers of different pH",
+                  "marks": 1
+                },
+                {
+                  "text": "keep temperature constant using a water bath",
+                  "marks": 1
+                },
+                {
+                  "text": "take samples at regular intervals, e.g. every 30 s, and add to iodine solution on a spotting tile",
+                  "marks": 1
+                },
+                {
+                  "text": "record the time until iodine no longer turns blue-black / stays orange-brown",
+                  "marks": 1
+                },
+                {
+                  "text": "same volumes / concentrations of amylase and starch at each pH",
+                  "marks": 1
+                },
+                {
+                  "text": "shortest time shows the optimum pH",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers explained how the end point was identified and controlled the temperature."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Explain how the structure of villi increases the rate of absorption of digested food.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "villi (and microvilli) give a large surface area",
+                  "marks": 1
+                },
+                {
+                  "text": "wall is one cell thick / short diffusion distance",
+                  "marks": 1
+                },
+                {
+                  "text": "good blood supply / many capillaries maintains a concentration gradient",
+                  "marks": 1
+                },
+                {
+                  "text": "lacteal absorbs fatty acids and glycerol",
+                  "marks": 1
+                },
+                {
+                  "text": "many mitochondria in epithelial cells for active transport",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed to link each feature to faster absorption, not just list features."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Explain why chewing food increases the rate of chemical digestion.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "breaks food into smaller pieces",
+                  "marks": 1
+                },
+                {
+                  "text": "increases surface area",
+                  "marks": 1
+                },
+                {
+                  "text": "for enzymes to act on",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Chewing is physical digestion: it does not break chemical bonds."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A food label states that 100 g of a breakfast cereal contains {e} kJ of energy. A student eats {m} g of the cereal. Calculate the energy the student obtains, in kJ.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "e": {
+                  "min": 1300,
+                  "max": 1700,
+                  "step": 50,
+                  "value": 1500
+                },
+                "m": {
+                  "min": 30,
+                  "max": 80,
+                  "step": 10,
+                  "value": 40
+                }
+              },
+              "answerExpression": "e * m / 100",
+              "correctAnswer": "600",
+              "markingPoints": [
+                {
+                  "text": "{e} × {m} ÷ 100",
+                  "marks": 1
+                },
+                {
+                  "text": "= {=e*m/100} kJ",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates scaled correctly from 100 g."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "A student uses a potometer to measure water uptake by a leafy shoot.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "8",
+              "prompt": "The air bubble moves {d} mm along the capillary tube in {t} minutes. The cross-sectional area of the capillary tube is {A} mm². Calculate the rate of water uptake in mm³ per minute.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "variables": {
+                "d": {
+                  "min": 20,
+                  "max": 80,
+                  "step": 5,
+                  "value": 45
+                },
+                "t": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "A": {
+                  "min": 0.5,
+                  "max": 2.0,
+                  "step": 0.1,
+                  "value": 0.8
+                }
+              },
+              "answerExpression": "d * A / t",
+              "correctAnswer": "12",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "volume = {d} × {A} = {=d*A} mm³",
+                  "marks": 1
+                },
+                {
+                  "text": "÷ {t} min",
+                  "marks": 1
+                },
+                {
+                  "text": "= {=d*A/t} mm³ per minute",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates forgot to multiply by the cross-sectional area and gave a distance per minute."
+            },
+            {
+              "label": "(b)",
+              "topic": "8",
+              "prompt": "Explain why the rate of water uptake increases when the temperature increases.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "water molecules have more kinetic energy",
+                  "marks": 1
+                },
+                {
+                  "text": "faster evaporation from mesophyll cell surfaces",
+                  "marks": 1
+                },
+                {
+                  "text": "faster diffusion of water vapour out through stomata",
+                  "marks": 1
+                },
+                {
+                  "text": "so transpiration rate increases and more water is pulled up",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers linked the increased transpiration to water uptake by the shoot."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Explain how water moves up the xylem from the roots to the leaves.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "water evaporates from mesophyll cells and diffuses out through stomata (transpiration)",
+                  "marks": 1
+                },
+                {
+                  "text": "this creates a transpiration pull / tension",
+                  "marks": 1
+                },
+                {
+                  "text": "water molecules are attracted to each other (cohesion)",
+                  "marks": 1
+                },
+                {
+                  "text": "so a continuous column of water is pulled up the xylem",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Water is sucked up' without reference to evaporation and cohesion gained little credit."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Explain how the structure of an artery is related to its function.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "thick muscular wall to withstand high pressure",
+                  "marks": 1
+                },
+                {
+                  "text": "elastic tissue stretches and recoils",
+                  "marks": 1
+                },
+                {
+                  "text": "to even out / maintain blood pressure / flow",
+                  "marks": 1
+                },
+                {
+                  "text": "narrow lumen maintains high pressure",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should describe a feature and then explain its purpose."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Name the blood vessels that supply the heart muscle with oxygenated blood.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "coronary arteries",
+                "coronary artery",
+                "the coronary arteries"
+              ],
+              "markingPoints": [
+                {
+                  "text": "coronary arteries",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Blood inside the chambers does not supply the heart muscle; 'aorta' was a common incorrect answer."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "State three risk factors for coronary heart disease.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "diet high in saturated fat",
+                  "marks": 1
+                },
+                {
+                  "text": "lack of exercise",
+                  "marks": 1
+                },
+                {
+                  "text": "smoking",
+                  "marks": 1
+                },
+                {
+                  "text": "stress",
+                  "marks": 1
+                },
+                {
+                  "text": "genetic predisposition",
+                  "marks": 1
+                },
+                {
+                  "text": "age / being male",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Vague answers such as 'unhealthy lifestyle' were not credited."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Explain how the cholera bacterium causes diarrhoea and dehydration.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "bacterium produces a toxin",
+                  "marks": 1
+                },
+                {
+                  "text": "toxin causes secretion of chloride ions into the small intestine",
+                  "marks": 1
+                },
+                {
+                  "text": "this lowers the water potential of the gut contents",
+                  "marks": 1
+                },
+                {
+                  "text": "water moves into the gut by osmosis",
+                  "marks": 1
+                },
+                {
+                  "text": "water is lost in faeces / diarrhoea, causing loss of water and ions from the blood",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Only the strongest answers referred to chloride ions and water potential."
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Explain why antibodies made against the measles virus do not protect a person against the influenza virus.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "antibodies are specific",
+                  "marks": 1
+                },
+                {
+                  "text": "antibody shape is complementary to one antigen only",
+                  "marks": 1
+                },
+                {
+                  "text": "influenza virus has different antigens",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates should refer to antigens, not to the virus 'not fitting'."
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Explain why a person who has been vaccinated is unlikely to become ill if later infected with the same pathogen.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "memory cells were produced after vaccination",
+                  "marks": 1
+                },
+                {
+                  "text": "on infection, memory cells recognise the antigen",
+                  "marks": 1
+                },
+                {
+                  "text": "antibodies are produced more quickly",
+                  "marks": 1
+                },
+                {
+                  "text": "and in larger quantities, so pathogen destroyed before symptoms",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "This is active immunity: it is long-term because memory cells remain."
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "stem": "A student measures their breathing rate at rest and immediately after exercise.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "11",
+              "prompt": "At rest the breathing rate was {r} breaths per minute. Immediately after exercise it was {e} breaths per minute. Calculate the percentage increase in breathing rate.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "r": {
+                  "min": 12,
+                  "max": 18,
+                  "step": 1,
+                  "value": 15
+                },
+                "e": {
+                  "min": 24,
+                  "max": 40,
+                  "step": 1,
+                  "value": 33
+                }
+              },
+              "answerExpression": "(e - r) / r * 100",
+              "correctAnswer": "120",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "increase = {e} − {r} = {=e-r}",
+                  "marks": 1
+                },
+                {
+                  "text": "({=e-r} ÷ {r}) × 100 = {=(e-r)/r*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Divide by the resting value, which is the original value."
+            },
+            {
+              "label": "(b)",
+              "topic": "11",
+              "prompt": "Describe how limewater could be used to show that expired air contains more carbon dioxide than inspired air.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "breathe out through one tube of limewater and draw air in through another tube",
+                  "marks": 1
+                },
+                {
+                  "text": "limewater turns milky / cloudy faster with expired air",
+                  "marks": 1
+                },
+                {
+                  "text": "same volume of limewater in each tube",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A fair test needs the same volume of limewater; stronger answers compared the time taken to turn cloudy."
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Describe the roles of the muscles in breathing out forcefully, for example during exercise.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "internal intercostal muscles contract",
+                  "marks": 1
+                },
+                {
+                  "text": "ribcage moves down and in",
+                  "marks": 1
+                },
+                {
+                  "text": "diaphragm relaxes and moves up / becomes dome-shaped",
+                  "marks": 1
+                },
+                {
+                  "text": "volume of thorax decreases, pressure increases, air forced out",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates confused the roles of the internal and external intercostal muscles."
+            }
+          ]
+        },
+        {
+          "number": 32,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Write the balanced chemical equation for aerobic respiration.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "correct formulae: C₆H₁₂O₆ + O₂ → CO₂ + H₂O",
+                  "marks": 1
+                },
+                {
+                  "text": "balanced: C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Energy is not a substance and should not be written as a product in a symbol equation."
+            }
+          ]
+        },
+        {
+          "number": 33,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "After a sprint, an athlete continues to breathe deeply and quickly. Explain why.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "anaerobic respiration during sprint produced lactic acid",
+                  "marks": 1
+                },
+                {
+                  "text": "oxygen debt",
+                  "marks": 1
+                },
+                {
+                  "text": "lactic acid transported in the blood to the liver",
+                  "marks": 1
+                },
+                {
+                  "text": "extra oxygen needed for aerobic respiration of lactic acid / to break it down",
+                  "marks": 1
+                },
+                {
+                  "text": "fast heart rate continues to transport lactic acid",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers described how the oxygen debt is removed, not just that it exists."
+            }
+          ]
+        },
+        {
+          "number": 34,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "12",
+              "prompt": "Yeast in a sugar solution produced {a} bubbles of carbon dioxide per minute at 20 °C and {b} bubbles per minute at 30 °C. Calculate the percentage increase in the rate of respiration.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "a": {
+                  "min": 8,
+                  "max": 14,
+                  "step": 1,
+                  "value": 10
+                },
+                "b": {
+                  "min": 18,
+                  "max": 30,
+                  "step": 1,
+                  "value": 24
+                }
+              },
+              "answerExpression": "(b - a) / a * 100",
+              "correctAnswer": "140",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "increase = {b} − {a} = {=b-a}",
+                  "marks": 1
+                },
+                {
+                  "text": "({=b-a} ÷ {a}) × 100 = {=(b-a)/a*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates divided by the final value instead of the initial value."
+            }
+          ]
+        },
+        {
+          "number": 35,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Explain what happens to excess amino acids in the body.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "amino acids cannot be stored",
+                  "marks": 1
+                },
+                {
+                  "text": "deaminated in the liver",
+                  "marks": 1
+                },
+                {
+                  "text": "nitrogen-containing part removed / converted to urea",
+                  "marks": 1
+                },
+                {
+                  "text": "urea carried in the blood plasma to the kidneys and excreted in urine",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers stating that the kidneys make urea were not credited."
+            }
+          ]
+        },
+        {
+          "number": 36,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "The kidneys of a person filter {f} dm³ of fluid from the blood each day. The person produces {u} dm³ of urine each day. Calculate the percentage of the filtered fluid that is reabsorbed.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "f": {
+                  "min": 160,
+                  "max": 190,
+                  "step": 5,
+                  "value": 180
+                },
+                "u": {
+                  "min": 1.0,
+                  "max": 2.5,
+                  "step": 0.1,
+                  "value": 1.5
+                }
+              },
+              "answerExpression": "(f - u) / f * 100",
+              "correctAnswer": "99.1667",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "reabsorbed = {f} − {u} = {=round(f-u, 1)} dm³",
+                  "marks": 1
+                },
+                {
+                  "text": "({=round(f-u, 1)} ÷ {f}) × 100 = {=(f-u)/f*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers to three significant figures were accepted; rounding to 100% was not."
+            }
+          ]
+        },
+        {
+          "number": 37,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "13",
+              "prompt": "Name the excretory product removed from the body by the lungs.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "carbon dioxide",
+                "CO2",
+                "CO₂"
+              ],
+              "markingPoints": [
+                {
+                  "text": "carbon dioxide",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates answered correctly. Carbon dioxide is a waste product of respiration, so its removal is excretion. Answers of 'oxygen' or 'air' gained no credit."
+            }
+          ]
+        },
+        {
+          "number": 38,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Describe how the body responds to lower its temperature when it becomes too hot.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "hypothalamus / brain detects increase in temperature",
+                  "marks": 1
+                },
+                {
+                  "text": "vasodilation of arterioles near the skin surface",
+                  "marks": 1
+                },
+                {
+                  "text": "more blood flows near the skin, so more heat is lost by radiation",
+                  "marks": 1
+                },
+                {
+                  "text": "sweat glands produce more sweat",
+                  "marks": 1
+                },
+                {
+                  "text": "evaporation of sweat removes heat",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Blood vessels do not move up and down in the skin; 'veins dilate' was also not credited."
+            }
+          ]
+        },
+        {
+          "number": 39,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Compare nervous control with hormonal control in the body.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "nervous uses electrical impulses; hormonal uses chemicals in the blood",
+                  "marks": 1
+                },
+                {
+                  "text": "nervous is faster",
+                  "marks": 1
+                },
+                {
+                  "text": "nervous effects are shorter-lasting",
+                  "marks": 1
+                },
+                {
+                  "text": "nervous acts on a specific area; hormones can affect several target organs",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A comparison needs both sides stated, or comparative words such as 'faster'."
+            }
+          ]
+        },
+        {
+          "number": 40,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "14",
+              "prompt": "Name the type of neurone that passes impulses from a sensory neurone to a motor neurone in the spinal cord.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "relay neurone",
+                "relay",
+                "relay neuron",
+                "interneurone",
+                "intermediate neurone"
+              ],
+              "markingPoints": [
+                {
+                  "text": "relay neurone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates answered this correctly."
+            }
+          ]
+        },
+        {
+          "number": 41,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Give the name of a strain of bacteria that is resistant to many antibiotics and is a problem in hospitals.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "MRSA",
+                "methicillin-resistant Staphylococcus aureus"
+              ],
+              "markingPoints": [
+                {
+                  "text": "MRSA",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The abbreviation was accepted."
+            }
+          ]
+        },
+        {
+          "number": 42,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "Suggest why antibiotic-resistant bacteria are more common in hospitals than in other places.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "antibiotics are used more often in hospitals",
+                  "marks": 1
+                },
+                {
+                  "text": "this kills non-resistant bacteria / selects resistant bacteria",
+                  "marks": 1
+                },
+                {
+                  "text": "resistant bacteria survive, reproduce and pass on resistance",
+                  "marks": 1
+                },
+                {
+                  "text": "many patients are close together / have weak immune systems, so bacteria spread easily",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed to refer to selection, not to bacteria 'becoming immune'."
+            }
+          ]
+        },
+        {
+          "number": 43,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "15",
+              "prompt": "One antibiotic-resistant bacterium survives a course of antibiotics. It divides into two every 20 minutes. Calculate how many bacteria there would be after {t} minutes, assuming none die.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "t": {
+                  "min": 60,
+                  "max": 240,
+                  "step": 20,
+                  "value": 120
+                }
+              },
+              "answerExpression": "2^(t/20)",
+              "correctAnswer": "64",
+              "markingPoints": [
+                {
+                  "text": "number of divisions = {t} ÷ 20 = {=t/20}",
+                  "marks": 1
+                },
+                {
+                  "text": "2 to the power {=t/20} = {=2^(t/20)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common error was to multiply 2 by the number of divisions instead of doubling repeatedly."
+            }
+          ]
+        },
+        {
+          "number": 44,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Describe three ways in which wind-pollinated flowers differ from insect-pollinated flowers.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "small / dull petals (not brightly coloured)",
+                  "marks": 1
+                },
+                {
+                  "text": "no scent or nectar",
+                  "marks": 1
+                },
+                {
+                  "text": "anthers hang outside the flower",
+                  "marks": 1
+                },
+                {
+                  "text": "large, feathery stigmas outside the flower",
+                  "marks": 1
+                },
+                {
+                  "text": "large amounts of small, light, smooth pollen",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should describe the wind-pollinated flower, not just state 'the opposite'."
+            }
+          ]
+        },
+        {
+          "number": 45,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Explain how a sperm cell is adapted for its function.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "flagellum for swimming",
+                  "marks": 1
+                },
+                {
+                  "text": "many mitochondria release energy for movement",
+                  "marks": 1
+                },
+                {
+                  "text": "acrosome contains enzymes to digest the jelly coat of the egg",
+                  "marks": 1
+                },
+                {
+                  "text": "haploid nucleus",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers linked each feature to its role in reaching or fertilising the egg."
+            }
+          ]
+        },
+        {
+          "number": 46,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "16",
+              "prompt": "Name the part of a flower that receives pollen during pollination.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "stigma",
+                "the stigma"
+              ],
+              "markingPoints": [
+                {
+                  "text": "stigma",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave 'ovary' or 'style'."
+            }
+          ]
+        },
+        {
+          "number": 47,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "In guinea pigs, the allele for black fur (B) is dominant to the allele for white fur (b). Explain how a test cross could show whether a black guinea pig is homozygous or heterozygous.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "cross the black guinea pig with a white (bb) guinea pig",
+                  "marks": 1
+                },
+                {
+                  "text": "if all offspring are black, the parent is BB",
+                  "marks": 1
+                },
+                {
+                  "text": "if about half are white, the parent is Bb",
+                  "marks": 1
+                },
+                {
+                  "text": "white offspring must receive b from both parents",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Genetic diagrams were helpful when clearly labelled with parent genotypes and gametes."
+            }
+          ]
+        },
+        {
+          "number": 48,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Describe how a gene controls the production of a protein.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the sequence of bases in DNA codes for the sequence of amino acids",
+                  "marks": 1
+                },
+                {
+                  "text": "a copy of the gene is made as mRNA in the nucleus",
+                  "marks": 1
+                },
+                {
+                  "text": "mRNA moves to a ribosome in the cytoplasm",
+                  "marks": 1
+                },
+                {
+                  "text": "ribosome assembles amino acids in the order coded by mRNA",
+                  "marks": 1
+                },
+                {
+                  "text": "forming a specific protein",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers made clear that DNA stays in the nucleus."
+            }
+          ]
+        },
+        {
+          "number": 49,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Name the type of cell division that produces gametes.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "meiosis",
+                "reduction division"
+              ],
+              "markingPoints": [
+                {
+                  "text": "meiosis",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Mitosis was a common wrong answer."
+            }
+          ]
+        },
+        {
+          "number": 50,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "17",
+              "prompt": "Two plants that are both heterozygous for flower colour (Rr) are crossed. R (red) is dominant to r (white). {=4*k} offspring are produced. Calculate the expected number of white-flowered plants.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "k": {
+                  "min": 10,
+                  "max": 60,
+                  "step": 1,
+                  "value": 25
+                }
+              },
+              "answerExpression": "k",
+              "correctAnswer": "25",
+              "markingPoints": [
+                {
+                  "text": "ratio of red to white is 3 : 1 / 1 in 4 are rr",
+                  "marks": 1
+                },
+                {
+                  "text": "{=4*k} ÷ 4 = {k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Expected numbers are rarely seen exactly in real crosses because fertilisation is random."
+            }
+          ]
+        },
+        {
+          "number": 51,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "A population of beetles lives on dark soil. Most beetles are dark brown, but a few are pale. Explain how natural selection keeps most of the beetles dark brown.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "there is variation in colour",
+                  "marks": 1
+                },
+                {
+                  "text": "pale beetles are more easily seen by predators and eaten",
+                  "marks": 1
+                },
+                {
+                  "text": "dark beetles are more likely to survive and reproduce",
+                  "marks": 1
+                },
+                {
+                  "text": "pass on alleles for dark colour to offspring",
+                  "marks": 1
+                },
+                {
+                  "text": "frequency of the dark allele stays high",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers used 'alleles' and 'reproduce' in the explanation."
+            }
+          ]
+        },
+        {
+          "number": 52,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "Describe how a farmer could use selective breeding to produce cattle with a high milk yield.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "choose cows with the highest milk yield",
+                  "marks": 1
+                },
+                {
+                  "text": "breed with bulls whose mothers had high milk yield",
+                  "marks": 1
+                },
+                {
+                  "text": "select the best offspring and breed them",
+                  "marks": 1
+                },
+                {
+                  "text": "repeat over many generations",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers describing genetic modification were not credited."
+            }
+          ]
+        },
+        {
+          "number": 53,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "18",
+              "prompt": "In a survey of {n} students, {k} could roll their tongue. Calculate the percentage of students who could roll their tongue.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "variables": {
+                "n": {
+                  "min": 80,
+                  "max": 120,
+                  "step": 5,
+                  "value": 80
+                },
+                "k": {
+                  "min": 30,
+                  "max": 70,
+                  "step": 1,
+                  "value": 52
+                }
+              },
+              "answerExpression": "k / n * 100",
+              "correctAnswer": "65",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "{k} ÷ {n} × 100 = {=k/n*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Tongue rolling is often given as an example of discontinuous variation."
+            }
+          ]
+        },
+        {
+          "number": 54,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "In a food chain, the primary consumers receive {a} kJ of energy and the secondary consumers receive {b} kJ. Calculate the percentage efficiency of energy transfer from the primary to the secondary consumers.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "a": {
+                  "min": 800,
+                  "max": 2000,
+                  "step": 100,
+                  "value": 1200
+                },
+                "b": {
+                  "min": 60,
+                  "max": 180,
+                  "step": 10,
+                  "value": 90
+                }
+              },
+              "answerExpression": "b / a * 100",
+              "correctAnswer": "7.5",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "efficiency = energy transferred ÷ energy available × 100",
+                  "marks": 1
+                },
+                {
+                  "text": "{b} ÷ {a} × 100 = {=b/a*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates inverted the fraction, giving a value over 100%."
+            }
+          ]
+        },
+        {
+          "number": 55,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "Explain why food chains usually have fewer than five trophic levels.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "energy is lost at each trophic level",
+                  "marks": 1
+                },
+                {
+                  "text": "by respiration / as heat / movement / excretion / undigested material",
+                  "marks": 1
+                },
+                {
+                  "text": "not enough energy left to support another level",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Energy is not 'used up'; it is transferred to the environment."
+            }
+          ]
+        },
+        {
+          "number": 56,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "19",
+              "prompt": "State the term for all the populations of different species living in the same area.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "community",
+                "a community"
+              ],
+              "markingPoints": [
+                {
+                  "text": "community",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Ecosystem' includes the non-living environment and was not accepted."
+            }
+          ]
+        },
+        {
+          "number": 57,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Satellite images show that the area of a forest fell from {a} km² to {b} km² in ten years. Calculate the percentage decrease in the area of the forest.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "variables": {
+                "a": {
+                  "min": 400,
+                  "max": 600,
+                  "step": 10,
+                  "value": 500
+                },
+                "b": {
+                  "min": 250,
+                  "max": 390,
+                  "step": 5,
+                  "value": 350
+                }
+              },
+              "answerExpression": "(a - b) / a * 100",
+              "correctAnswer": "30",
+              "relativeTolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "decrease = {a} − {b} = {=a-b} km²",
+                  "marks": 1
+                },
+                {
+                  "text": "({=a-b} ÷ {a}) × 100 = {=(a-b)/a*100} %",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates calculated this correctly."
+            }
+          ]
+        },
+        {
+          "number": 58,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Describe methods used to conserve an endangered species.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "protect habitats / set up reserves",
+                  "marks": 1
+                },
+                {
+                  "text": "captive breeding programmes",
+                  "marks": 1
+                },
+                {
+                  "text": "seed banks / sperm and egg banks",
+                  "marks": 1
+                },
+                {
+                  "text": "education",
+                  "marks": 1
+                },
+                {
+                  "text": "laws against hunting / trade",
+                  "marks": 1
+                },
+                {
+                  "text": "monitoring populations",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should give named methods, not just 'protect them'."
+            }
+          ]
+        },
+        {
+          "number": 59,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "20",
+              "prompt": "Explain how non-biodegradable plastics can harm aquatic organisms.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "not broken down by decomposers so remain for a long time",
+                  "marks": 1
+                },
+                {
+                  "text": "animals become trapped / entangled",
+                  "marks": 1
+                },
+                {
+                  "text": "animals eat plastic, blocking the gut / causing starvation",
+                  "marks": 1
+                },
+                {
+                  "text": "small plastic particles pass along food chains",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers explained why plastic persists in the environment."
+            }
+          ]
+        },
+        {
+          "number": 60,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Explain why biological washing powders remove stains better at 40 °C than at 15 °C.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "washing powder contains enzymes such as proteases / lipases",
+                  "marks": 1
+                },
+                {
+                  "text": "40 °C is closer to the optimum temperature",
+                  "marks": 1
+                },
+                {
+                  "text": "more kinetic energy, more frequent collisions between enzyme and substrate",
+                  "marks": 1
+                },
+                {
+                  "text": "more enzyme–substrate complexes formed",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrongly said the enzymes are denatured at 15 °C."
+            }
+          ]
+        },
+        {
+          "number": 61,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Describe how bacteria can be genetically modified to produce human insulin.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "human insulin gene cut out using restriction enzymes",
+                  "marks": 1
+                },
+                {
+                  "text": "leaving sticky ends",
+                  "marks": 1
+                },
+                {
+                  "text": "plasmid cut with the same restriction enzyme",
+                  "marks": 1
+                },
+                {
+                  "text": "gene inserted into plasmid using DNA ligase",
+                  "marks": 1
+                },
+                {
+                  "text": "recombinant plasmid inserted into bacteria",
+                  "marks": 1
+                },
+                {
+                  "text": "bacteria multiply and express the gene / make insulin",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers described the steps in the correct sequence and named both enzymes."
+            }
+          ]
+        },
+        {
+          "number": 62,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "21",
+              "prompt": "Discuss the advantages and disadvantages of growing genetically modified crops.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "advantage: higher yield / resistance to insect pests or herbicides",
+                  "marks": 1
+                },
+                {
+                  "text": "advantage: fewer pesticides needed / improved nutritional value",
+                  "marks": 1
+                },
+                {
+                  "text": "disadvantage: reduced biodiversity / genes may spread to wild plants",
+                  "marks": 1
+                },
+                {
+                  "text": "disadvantage: seeds may be expensive / possible health concerns",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A discussion needs both advantages and disadvantages."
             }
           ]
         }
