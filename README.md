@@ -39,6 +39,7 @@ After answering, the student always sees the answer, the mark scheme points and 
 ### Progress and unlocking (`src/lib/progress.ts`)
 
 - A topic is **complete** when the student has answered at least 3 of its questions (or all of them, if it has fewer) with an overall score of at least 60%. The latest attempt at each question counts.
+- **Paper combinations:** a subject can list the combinations of papers students may take (`routes` in the content file). 9709 offers Papers 1+2, 1+4 or 1+5 at AS Level, and 1+3+4+5 or 1+3+5+6 at A Level. Students choose theirs when they add the subject and only see those topics and papers.
 - Completing a topic unlocks the next one. Topics can be grouped into **sections** (for example one per 9709 paper), and each section unlocks independently, so students can follow the papers they are taking.
 - **Full past papers** each unlock when every topic that paper assesses is complete. They require a subscription.
 - **Free plan:** the first 2 topics of each section. **Subscription:** everything.

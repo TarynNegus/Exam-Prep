@@ -111,3 +111,23 @@ export function overallPercent(progress: Map<string, TopicProgress>): number {
   if (all.length === 0) return 0;
   return Math.round((all.filter((p) => p.status === "COMPLETE").length / all.length) * 100);
 }
+
+export interface Route {
+  id: string;
+  name: string;
+  components: string[];
+}
+
+/**
+ * The components and topic sections a student studies. Subjects without routes
+ * include everything; with routes, only the chosen papers and the sections they assess.
+ */
+export function routeScope<C extends { ref: string; section: string }>(
+  route: Route | null,
+  components: C[],
+): { components: C[]; includesSection: (section: string) => boolean } {
+  if (!route) return { components, includesSection: () => true };
+  const chosen = components.filter((c) => route.components.includes(c.ref));
+  const sections = new Set(chosen.map((c) => c.section));
+  return { components: chosen, includesSection: (section) => sections.has(section) };
+}

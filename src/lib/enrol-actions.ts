@@ -19,3 +19,18 @@ export async function unenrol(subjectId: string) {
   await db.enrolment.deleteMany({ where: { userId: user.id, subjectId } });
   redirect("/dashboard");
 }
+
+/** Saves the combination of papers a student is taking, enrolling them if needed. */
+export async function chooseRoute(subjectId: string, form: FormData) {
+  const user = await requireUser();
+  const routeId = String(form.get("routeId") ?? "");
+  const subject = await db.subject.findUnique({ where: { id: subjectId }, select: { routes: true } });
+  const routes = (subject?.routes ?? []) as { id: string }[];
+  if (!routes.some((r) => r.id === routeId)) redirect(`/subjects/${subjectId}`);
+  await db.enrolment.upsert({
+    where: { userId_subjectId: { userId: user.id, subjectId } },
+    update: { routeId },
+    create: { userId: user.id, subjectId, routeId },
+  });
+  redirect(`/subjects/${subjectId}`);
+}

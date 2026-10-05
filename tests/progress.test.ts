@@ -4,6 +4,7 @@ import {
   isTopicInPlan,
   overallPercent,
   paperUnlocked,
+  routeScope,
   unlockedTopicIds,
   FREE_TOPICS_PER_SECTION,
 } from "@/lib/progress";
@@ -79,5 +80,28 @@ describe("unlocking", () => {
     expect(isTopicInPlan(FREE_TOPICS_PER_SECTION - 1, false)).toBe(true);
     expect(isTopicInPlan(FREE_TOPICS_PER_SECTION, false)).toBe(false);
     expect(isTopicInPlan(10, true)).toBe(true);
+  });
+});
+
+describe("routeScope", () => {
+  const components = [
+    { ref: "1", section: "Pure Mathematics 1" },
+    { ref: "3", section: "Pure Mathematics 3" },
+    { ref: "4", section: "Mechanics" },
+    { ref: "5", section: "Probability & Statistics 1" },
+  ];
+
+  it("includes everything when the subject has no routes", () => {
+    const scope = routeScope(null, components);
+    expect(scope.components).toHaveLength(4);
+    expect(scope.includesSection("Mechanics")).toBe(true);
+  });
+
+  it("keeps only the chosen papers and the sections they assess", () => {
+    const scope = routeScope({ id: "as-1-5", name: "AS Level: Papers 1 and 5", components: ["1", "5"] }, components);
+    expect(scope.components.map((c) => c.ref)).toEqual(["1", "5"]);
+    expect(scope.includesSection("Pure Mathematics 1")).toBe(true);
+    expect(scope.includesSection("Probability & Statistics 1")).toBe(true);
+    expect(scope.includesSection("Mechanics")).toBe(false);
   });
 });

@@ -13,8 +13,8 @@ export async function importContent(db: PrismaClient, raw: unknown) {
     async (tx) => {
       const subject = await tx.subject.upsert({
         where: { code_syllabusYears: { code: s.code, syllabusYears: s.syllabusYears } },
-        update: { name: s.name, qualification: s.qualification, description: s.description },
-        create: s,
+        update: { name: s.name, qualification: s.qualification, description: s.description, routes: content.routes },
+        create: { ...s, routes: content.routes },
       });
 
       const topicIds = new Map<string, string>();
@@ -31,7 +31,7 @@ export async function importContent(db: PrismaClient, raw: unknown) {
       for (const c of content.components) {
         const component = await tx.component.upsert({
           where: { subjectId_ref: { subjectId: subject.id, ref: c.ref } },
-          update: { title: c.title, durationMin: c.durationMin, totalMarks: c.totalMarks },
+          update: { title: c.title, durationMin: c.durationMin, totalMarks: c.totalMarks, section: c.section },
           create: { ...c, subjectId: subject.id },
         });
         componentIds.set(c.ref, component.id);

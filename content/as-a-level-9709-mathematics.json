@@ -4,8 +4,54 @@
     "name": "Mathematics",
     "qualification": "AS_A_LEVEL",
     "syllabusYears": "2026-2027",
-    "description": "Cambridge International AS & A Level Mathematics, covering all six papers: Pure Mathematics 1, 2 and 3, Mechanics, and Probability & Statistics 1 and 2. Each paper's topics form their own section, so you can follow the papers you are taking. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+    "description": "Cambridge International AS & A Level Mathematics. AS Level students take Paper 1 and one of Papers 2, 4 or 5. A Level students take Papers 1 and 3 with either Papers 4 and 5 or Papers 5 and 6. Choose your combination and you will only see its topics and past papers. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
   },
+  "routes": [
+    {
+      "id": "as-1-2",
+      "name": "AS Level: Papers 1 and 2",
+      "components": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "id": "as-1-4",
+      "name": "AS Level: Papers 1 and 4",
+      "components": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "id": "as-1-5",
+      "name": "AS Level: Papers 1 and 5",
+      "components": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "id": "a-1-3-4-5",
+      "name": "A Level: Papers 1, 3, 4 and 5",
+      "components": [
+        "1",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "id": "a-1-3-5-6",
+      "name": "A Level: Papers 1, 3, 5 and 6",
+      "components": [
+        "1",
+        "3",
+        "5",
+        "6"
+      ]
+    }
+  ],
   "topics": [
     {
       "ref": "1.1",
@@ -241,37 +287,43 @@
       "ref": "1",
       "title": "Paper 1 (Pure Mathematics 1)",
       "durationMin": 110,
-      "totalMarks": 75
+      "totalMarks": 75,
+      "section": "Pure Mathematics 1"
     },
     {
       "ref": "2",
       "title": "Paper 2 (Pure Mathematics 2)",
       "durationMin": 75,
-      "totalMarks": 50
+      "totalMarks": 50,
+      "section": "Pure Mathematics 2"
     },
     {
       "ref": "3",
       "title": "Paper 3 (Pure Mathematics 3)",
       "durationMin": 110,
-      "totalMarks": 75
+      "totalMarks": 75,
+      "section": "Pure Mathematics 3"
     },
     {
       "ref": "4",
       "title": "Paper 4 (Mechanics)",
       "durationMin": 75,
-      "totalMarks": 50
+      "totalMarks": 50,
+      "section": "Mechanics"
     },
     {
       "ref": "5",
       "title": "Paper 5 (Probability & Statistics 1)",
       "durationMin": 75,
-      "totalMarks": 50
+      "totalMarks": 50,
+      "section": "Probability & Statistics 1"
     },
     {
       "ref": "6",
       "title": "Paper 6 (Probability & Statistics 2)",
       "durationMin": 75,
-      "totalMarks": 50
+      "totalMarks": 50,
+      "section": "Probability & Statistics 2"
     }
   ],
   "papers": [

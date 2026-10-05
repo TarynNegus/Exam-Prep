@@ -53,6 +53,16 @@ export const contentFileSchema = z
       syllabusYears: z.string().min(1),
       description: z.string().default(""),
     }),
+    routes: z
+      .array(
+        z.object({
+          id: z.string().min(1),
+          name: z.string().min(1).describe('e.g. "AS Level: Papers 1 and 5"'),
+          components: z.array(z.string().min(1)).min(1),
+        }),
+      )
+      .default([])
+      .describe("Allowed combinations of papers. Leave empty if every student takes every component."),
     topics: z
       .array(
         z.object({
@@ -69,6 +79,7 @@ export const contentFileSchema = z
         title: z.string().min(1),
         durationMin: z.number().int().positive(),
         totalMarks: z.number().int().positive(),
+        section: z.string().default("").describe("Topic section this component assesses"),
       }),
     ),
     papers: z.array(paper).default([]),
@@ -76,13 +87,20 @@ export const contentFileSchema = z
   .superRefine((file, ctx) => {
     const topicRefs = new Set(file.topics.map((t) => t.ref));
     const componentRefs = new Set(file.components.map((c) => c.ref));
+    for (const route of file.routes)
+      for (const ref of route.components)
+        if (!componentRefs.has(ref))
+          ctx.addIssue({ code: "custom", message: `Route "${route.name}": unknown component "${ref}"` });
     for (const p of file.papers) {
       if (!componentRefs.has(p.component))
         ctx.addIssue({ code: "custom", message: `${p.title}: unknown component "${p.component}"` });
       for (const q of p.questions)
         for (const part of q.parts)
           if (!topicRefs.has(part.topic))
-            ctx.addIssue({ code: "custom", message: `${p.title} Q${q.number}${part.label}: unknown topic "${part.topic}"` });
+            ctx.addIssue({
+              code: "custom",
+              message: `${p.title} Q${q.number}${part.label}: unknown topic "${part.topic}"`,
+            });
     }
   });
 

@@ -7,7 +7,9 @@ import {
   isTopicInPlan,
   overallPercent,
   paperUnlocked,
+  routeScope,
   unlockedTopicIds,
+  type Route,
   type TopicProgress,
 } from "./progress";
 
@@ -49,21 +51,31 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
   });
   if (!subject) return null;
 
+  // Subjects with routes only show the papers in the student's chosen combination.
+  const routes = (subject.routes ?? []) as unknown as Route[];
+  const enrolment = await db.enrolment.findUnique({
+    where: { userId_subjectId: { userId: user.id, subjectId } },
+  });
+  const route = routes.find((r) => r.id === enrolment?.routeId) ?? null;
+  const needsRoute = routes.length > 0 && !route;
+  const scope = routeScope(route, subject.components);
+  const scopedTopics = needsRoute ? [] : subject.topics.filter((t) => scope.includesSection(t.section));
+  const scopedTopicIds = scopedTopics.map((t) => t.id);
+
   const parts = await db.questionPart.findMany({
-    where: { topic: { subjectId } },
+    where: { topicId: { in: scopedTopicIds } },
     select: { id: true, topicId: true, marks: true, question: { select: { paperId: true } } },
   });
   const latest = await latestAwardedByPart(
     user.id,
     parts.map((p) => p.id),
   );
-  const topicIds = subject.topics.map((t) => t.id);
-  const progress = computeTopicProgress(topicIds, parts, latest);
-  const unlocked = unlockedTopicIds(subject.topics, progress);
+  const progress = computeTopicProgress(scopedTopicIds, parts, latest);
+  const unlocked = unlockedTopicIds(scopedTopics, progress);
   const subscribed = hasSubscription(user);
 
   const sectionCounts = new Map<string, number>();
-  const topics: TopicView[] = subject.topics.map((topic) => {
+  const topics: TopicView[] = scopedTopics.map((topic) => {
     const indexInSection = sectionCounts.get(topic.section) ?? 0;
     sectionCounts.set(topic.section, indexInSection + 1);
     return {
@@ -86,13 +98,16 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
     topicsByPaper.set(part.question.paperId, set);
   }
   const unlockedPapers = new Set(
-    subscribed
-      ? [...topicsByPaper].filter(([, ids]) => paperUnlocked(ids, progress)).map(([paperId]) => paperId)
-      : [],
+    subscribed ? [...topicsByPaper].filter(([, ids]) => paperUnlocked(ids, progress)).map(([paperId]) => paperId) : [],
   );
 
   return {
     subject,
+    routes,
+    route,
+    needsRoute,
+    components: needsRoute ? [] : scope.components,
+    enrolled: !!enrolment,
     topics,
     subscribed,
     overallPercent: overallPercent(progress),
