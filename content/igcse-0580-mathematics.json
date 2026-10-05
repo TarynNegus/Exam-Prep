@@ -132,21 +132,36 @@
             {
               "label": "(b)",
               "topic": "1",
-              "prompt": "Work out 15% of 240.",
+              "prompt": "Work out {p}% of {n}.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "36",
               "markingPoints": [
                 {
-                  "text": "M1 for 10% = 24 and 5% = 12, or equivalent",
+                  "text": "M1 for 10% = {=n/10} or 1% = {=n/100}, or equivalent",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 36",
+                  "text": "A1 for {=p*n/100}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "p": {
+                  "min": 5,
+                  "max": 45,
+                  "step": 5,
+                  "value": 15
+                },
+                "n": {
+                  "min": 120,
+                  "max": 480,
+                  "step": 20,
+                  "value": 240
+                }
+              },
+              "answerExpression": "p * n / 100"
             }
           ]
         },
@@ -181,21 +196,42 @@
             {
               "label": "(b)",
               "topic": "2",
-              "prompt": "Solve 4x − 7 = 13.",
+              "prompt": "Solve {a}x − {b} = {=a*x-b}.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "5",
               "markingPoints": [
                 {
-                  "text": "M1 for 4x = 20",
+                  "text": "M1 for {a}x = {=a*x}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for x = 5",
+                  "text": "A1 for x = {x}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "b": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 7
+                },
+                "x": {
+                  "min": 1,
+                  "max": 10,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "x"
             }
           ]
         },
@@ -206,36 +242,78 @@
             {
               "label": "(a)",
               "topic": "3",
-              "prompt": "Find the gradient of the line through (1, 2) and (3, 8).",
+              "prompt": "Find the gradient of the line through ({x1}, {y1}) and ({=x1+d}, {=y1+m*d}).",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "3",
               "markingPoints": [
                 {
-                  "text": "M1 for (8 − 2) ÷ (3 − 1)",
+                  "text": "M1 for ({=y1+m*d} − {y1}) ÷ ({=x1+d} − {x1})",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 3",
+                  "text": "A1 for {m}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Some candidates divided the change in x by the change in y."
+              "examinerComment": "Some candidates divided the change in x by the change in y.",
+              "variables": {
+                "x1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 1
+                },
+                "y1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "d": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                },
+                "m": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "m"
             },
             {
               "label": "(b)",
               "topic": "3",
-              "prompt": "Write down the y-intercept of the line y = 2x − 5.",
+              "prompt": "Write down the y-intercept of the line y = {m}x − {c}.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "-5",
               "markingPoints": [
                 {
-                  "text": "B1 for −5",
+                  "text": "B1 for −{c}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "m": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 2
+                },
+                "c": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "-c"
             }
           ]
         },
@@ -246,36 +324,60 @@
             {
               "label": "(a)",
               "topic": "4",
-              "prompt": "Two angles of a triangle are 47° and 68°. Find the third angle, in degrees.",
+              "prompt": "Two angles of a triangle are {a}° and {b}°. Find the third angle, in degrees.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "65",
               "markingPoints": [
                 {
-                  "text": "B1 for 65",
+                  "text": "B1 for {=180-a-b}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "a": {
+                  "min": 30,
+                  "max": 80,
+                  "step": 1,
+                  "value": 47
+                },
+                "b": {
+                  "min": 30,
+                  "max": 80,
+                  "step": 1,
+                  "value": 68
+                }
+              },
+              "answerExpression": "180 - a - b"
             },
             {
               "label": "(b)",
               "topic": "4",
-              "prompt": "Find the sum of the interior angles of a pentagon, in degrees.",
+              "prompt": "Find the sum of the interior angles of a polygon with {n} sides, in degrees.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "540",
               "markingPoints": [
                 {
-                  "text": "M1 for (5 − 2) × 180",
+                  "text": "M1 for ({n} − 2) × 180",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 540",
+                  "text": "A1 for {=(n-2)*180}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "n": {
+                  "min": 5,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "(n - 2) * 180"
             }
           ]
         },
@@ -286,36 +388,72 @@
             {
               "label": "(a)",
               "topic": "5",
-              "prompt": "Find the area of a triangle with base 8 cm and perpendicular height 5 cm, in cm².",
+              "prompt": "Find the area of a triangle with base {b} cm and perpendicular height {h} cm, in cm².",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "20",
               "markingPoints": [
                 {
-                  "text": "M1 for ½ × 8 × 5",
+                  "text": "M1 for ½ × {b} × {h}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 20",
+                  "text": "A1 for {=b*h/2}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Forgetting the ½ was the most common error."
+              "examinerComment": "Forgetting the ½ was the most common error.",
+              "variables": {
+                "b": {
+                  "min": 4,
+                  "max": 20,
+                  "step": 2,
+                  "value": 8
+                },
+                "h": {
+                  "min": 3,
+                  "max": 15,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "b * h / 2"
             },
             {
               "label": "(b)",
               "topic": "5",
-              "prompt": "Find the volume of a cuboid measuring 3 cm by 4 cm by 5 cm, in cm³.",
+              "prompt": "Find the volume of a cuboid measuring {a} cm by {b} cm by {c} cm, in cm³.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "60",
               "markingPoints": [
                 {
-                  "text": "B1 for 60",
+                  "text": "B1 for {=a*b*c}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "c": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "a * b * c"
             }
           ]
         },
@@ -326,40 +464,58 @@
             {
               "label": "(a)",
               "topic": "6",
-              "prompt": "A right-angled triangle has shorter sides 6 cm and 8 cm. Find the length of the hypotenuse, in cm.",
+              "prompt": "A right-angled triangle has shorter sides {=3*k} cm and {=4*k} cm. Find the length of the hypotenuse, in cm.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "10",
               "markingPoints": [
                 {
-                  "text": "M1 for 6² + 8²",
+                  "text": "M1 for {=3*k}² + {=4*k}²",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 10",
+                  "text": "A1 for {=5*k}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "k": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                }
+              },
+              "answerExpression": "5 * k"
             },
             {
               "label": "(b)",
               "topic": "6",
-              "prompt": "The bearing of B from A is 070°. Find the bearing of A from B, in degrees.",
+              "prompt": "The bearing of B from A is {b}°. Find the bearing of A from B, in degrees.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "250",
               "markingPoints": [
                 {
-                  "text": "M1 for 70 + 180",
+                  "text": "M1 for {b} + 180",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 250",
+                  "text": "A1 for {=b+180}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "A sketch with north lines at both points helps."
+              "examinerComment": "A sketch with north lines at both points helps.",
+              "variables": {
+                "b": {
+                  "min": 20,
+                  "max": 170,
+                  "step": 5,
+                  "value": 70
+                }
+              },
+              "answerExpression": "b + 180"
             }
           ]
         },
@@ -422,17 +578,27 @@
             {
               "label": "(a)",
               "topic": "8",
-              "prompt": "The probability that it rains tomorrow is 0.35. Find the probability that it does not rain.",
+              "prompt": "The probability that it rains tomorrow is {p}. Find the probability that it does not rain.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "0.65",
               "markingPoints": [
                 {
-                  "text": "B1 for 0.65",
+                  "text": "B1 for {=1-p}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "p": {
+                  "min": 0.05,
+                  "max": 0.95,
+                  "step": 0.05,
+                  "value": 0.35
+                }
+              },
+              "answerExpression": "1 - p",
+              "tolerance": 0.001
             },
             {
               "label": "(b)",
@@ -476,17 +642,32 @@
             {
               "label": "(b)",
               "topic": "9",
-              "prompt": "Find the range of 12, 7, 19, 4, 15.",
+              "prompt": "Find the range of 12, 7, {h}, {l}, 15.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "15",
               "markingPoints": [
                 {
-                  "text": "B1 for 15",
+                  "text": "B1 for {=h-l}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "The range is a single value, not '4 to 19'."
+              "examinerComment": "The range is a single value, not '4 to 19'.",
+              "variables": {
+                "h": {
+                  "min": 16,
+                  "max": 30,
+                  "step": 1,
+                  "value": 19
+                },
+                "l": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "h - l"
             }
           ]
         },
@@ -572,21 +753,30 @@
             {
               "label": "",
               "topic": "1",
-              "prompt": "Find the value of 27^(2/3).",
+              "prompt": "Find the value of {=a^3}^(2/3).",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "9",
               "markingPoints": [
                 {
-                  "text": "M1 for ∛27 = 3",
+                  "text": "M1 for ∛{=a^3} = {a}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 9",
+                  "text": "A1 for {=a^2}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Find the root first, then the power."
+              "examinerComment": "Find the root first, then the power.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "a^2"
             }
           ]
         },
@@ -684,21 +874,30 @@
             {
               "label": "",
               "topic": "5",
-              "prompt": "Find the volume of a sphere of radius 3 cm as a multiple of π. Enter the multiple only (for 10π enter 10).",
+              "prompt": "Find the volume of a sphere of radius {r} cm as a multiple of π. Enter the multiple only (for 10π enter 10).",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "36",
               "markingPoints": [
                 {
-                  "text": "M1 for (4/3) × π × 3³",
+                  "text": "M1 for (4/3) × π × {r}³",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 36π",
+                  "text": "A1 for {=4*r^3/3}π",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "r": {
+                  "min": 3,
+                  "max": 9,
+                  "step": 3,
+                  "value": 3
+                }
+              },
+              "answerExpression": "4 * r^3 / 3"
             }
           ]
         },
@@ -791,17 +990,32 @@
             {
               "label": "",
               "topic": "9",
-              "prompt": "From a cumulative frequency curve, the lower quartile is 23 and the upper quartile is 41. Find the interquartile range.",
+              "prompt": "From a cumulative frequency curve, the lower quartile is {q} and the upper quartile is {=q+d}. Find the interquartile range.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "18",
               "markingPoints": [
                 {
-                  "text": "B1 for 18",
+                  "text": "B1 for {d}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "q": {
+                  "min": 10,
+                  "max": 40,
+                  "step": 1,
+                  "value": 23
+                },
+                "d": {
+                  "min": 8,
+                  "max": 30,
+                  "step": 1,
+                  "value": 18
+                }
+              },
+              "answerExpression": "d"
             }
           ]
         },
@@ -851,21 +1065,42 @@
             {
               "label": "",
               "topic": "1",
-              "prompt": "Share $360 in the ratio 4 : 5. Find the larger share, in dollars.",
+              "prompt": "Share ${=(2*a+d)*u} in the ratio {a} : {=a+d}. Find the larger share, in dollars.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "200",
               "markingPoints": [
                 {
-                  "text": "M1 for 360 ÷ 9",
+                  "text": "M1 for {=(2*a+d)*u} ÷ {=2*a+d}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 200",
+                  "text": "A1 for {=(a+d)*u}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "a": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 4
+                },
+                "d": {
+                  "min": 1,
+                  "max": 4,
+                  "step": 1,
+                  "value": 1
+                },
+                "u": {
+                  "min": 10,
+                  "max": 60,
+                  "step": 5,
+                  "value": 40
+                }
+              },
+              "answerExpression": "(a + d) * u"
             }
           ]
         },
@@ -876,21 +1111,42 @@
             {
               "label": "",
               "topic": "2",
-              "prompt": "Find the value of 3x² − 2 when x = −4.",
+              "prompt": "Find the value of {a}x² − {c} when x = −{k}.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "46",
               "markingPoints": [
                 {
-                  "text": "M1 for 3 × (−4)²",
+                  "text": "M1 for {a} × (−{k})²",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 46",
+                  "text": "A1 for {=a*k^2-c}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Calculating (3 × −4)² gave 142, an order of operations error."
+              "examinerComment": "Squaring after multiplying by the coefficient, i.e. ({a} × −{k})², is an order of operations error.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "c": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 2
+                },
+                "k": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "a * k^2 - c"
             }
           ]
         },
@@ -952,22 +1208,31 @@
             {
               "label": "",
               "topic": "5",
-              "prompt": "Find the circumference of a circle of radius 7 cm, correct to 1 decimal place, in cm.",
+              "prompt": "Find the circumference of a circle of radius {r} cm, correct to 1 decimal place, in cm.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "43.98",
-              "tolerance": 0.05,
+              "correctAnswer": "43.9823",
               "markingPoints": [
                 {
-                  "text": "M1 for 2 × π × 7",
+                  "text": "M1 for 2 × π × {r}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 44.0",
+                  "text": "A1 for {=round(2*pi*r, 1)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Using the diameter formula with the radius halved the answer."
+              "examinerComment": "Using the diameter formula with the radius halved the answer.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 7
+                }
+              },
+              "answerExpression": "2 * pi * r",
+              "tolerance": 0.05
             }
           ]
         },
@@ -978,22 +1243,37 @@
             {
               "label": "",
               "topic": "6",
-              "prompt": "In a right-angled triangle the hypotenuse is 12 cm and one angle is 35°. Find the side opposite the 35° angle, correct to 1 decimal place, in cm.",
+              "prompt": "In a right-angled triangle the hypotenuse is {h} cm and one angle is {t}°. Find the side opposite the {t}° angle, correct to 1 decimal place, in cm.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "6.883",
-              "tolerance": 0.05,
+              "correctAnswer": "6.88292",
               "markingPoints": [
                 {
-                  "text": "M1 for 12 × sin 35°",
+                  "text": "M1 for {h} × sin {t}°",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 6.9",
+                  "text": "A1 for {=round(h*sin(t*pi/180), 1)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Labelling the sides before choosing sin, cos or tan helps."
+              "examinerComment": "Labelling the sides before choosing sin, cos or tan helps.",
+              "variables": {
+                "h": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                },
+                "t": {
+                  "min": 20,
+                  "max": 70,
+                  "step": 1,
+                  "value": 35
+                }
+              },
+              "answerExpression": "h * sin(t * pi / 180)",
+              "tolerance": 0.05
             }
           ]
         },
@@ -1004,17 +1284,33 @@
             {
               "label": "",
               "topic": "7",
-              "prompt": "A shape is enlarged by scale factor 3. One side is 2.5 cm long. Find the length of the corresponding side of the image, in cm.",
+              "prompt": "A shape is enlarged by scale factor {k}. One side is {s} cm long. Find the length of the corresponding side of the image, in cm.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "7.5",
               "markingPoints": [
                 {
-                  "text": "B1 for 7.5",
+                  "text": "B1 for {=k*s}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "k": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 3
+                },
+                "s": {
+                  "min": 1.5,
+                  "max": 6,
+                  "step": 0.5,
+                  "value": 2.5
+                }
+              },
+              "answerExpression": "k * s",
+              "tolerance": 0.001
             }
           ]
         },
@@ -1025,17 +1321,33 @@
             {
               "label": "",
               "topic": "8",
-              "prompt": "The probability that a spinner lands on red is 0.2. It is spun 150 times. Find the expected number of times it lands on red.",
+              "prompt": "The probability that a spinner lands on red is {p}. It is spun {n} times. Find the expected number of times it lands on red.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "30",
               "markingPoints": [
                 {
-                  "text": "B1 for 30",
+                  "text": "B1 for {=p*n}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "p": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.1,
+                  "value": 0.2
+                },
+                "n": {
+                  "min": 50,
+                  "max": 400,
+                  "step": 10,
+                  "value": 150
+                }
+              },
+              "answerExpression": "p * n",
+              "tolerance": 0.001
             }
           ]
         },
@@ -1106,46 +1418,88 @@
       "questions": [
         {
           "number": 1,
-          "stem": "Amira invests $2500 in a savings account paying compound interest at a rate of 3.2% per year.",
+          "stem": "",
           "parts": [
             {
               "label": "(a)",
               "topic": "1",
-              "prompt": "Calculate the value of the investment at the end of 4 years. Give your answer correct to the nearest cent.",
+              "prompt": "Amira invests ${P} in a savings account paying compound interest at a rate of {r}% per year. Calculate the value of the investment at the end of {n} years. Give your answer correct to the nearest cent.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "2835.69",
-              "tolerance": 0.01,
               "markingPoints": [
                 {
-                  "text": "M1 for 2500 × 1.032^4 oe",
+                  "text": "M1 for {P} × (1 + {r}/100)^{n} oe",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 2835.69 cao",
+                  "text": "A1 for {=round(P*(1+r/100)^n, 2)} cao",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Most candidates used the multiplier 1.032 correctly. A common error was to calculate simple interest (2500 × 0.032 × 4) and add it to the principal, giving 2820."
+              "examinerComment": "Most candidates used the multiplier 1 + {r}/100 correctly. A common error was to calculate simple interest ({P} × {r}/100 × {n}) and add it to the principal, giving {=P+P*r*n/100}.",
+              "variables": {
+                "P": {
+                  "min": 1000,
+                  "max": 5000,
+                  "step": 100,
+                  "value": 2500
+                },
+                "r": {
+                  "min": 1.5,
+                  "max": 5,
+                  "step": 0.1,
+                  "value": 3.2
+                },
+                "n": {
+                  "min": 2,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "P * (1 + r/100)^n",
+              "tolerance": 0.01
             },
             {
               "label": "(b)",
               "topic": "1",
-              "prompt": "Find the smallest whole number of years after which the investment will first be worth more than $3000.",
+              "prompt": "Amira invests ${P} in a savings account paying compound interest at a rate of {r}% per year. Find the smallest whole number of years after which the investment will first be worth more than ${=P*f}.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "6",
               "markingPoints": [
                 {
-                  "text": "M1 for a trial such as 2500 × 1.032^n with n = 5 or 6, or a correct logarithmic method",
+                  "text": "M1 for a trial such as {P} × (1 + {r}/100)^n, or a correct logarithmic method",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 6",
+                  "text": "A1 for {=ceil(log(f)/log(1+r/100))}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Candidates who showed their trials clearly usually earned the method mark even when they misread their calculator display. Some stopped at 5 years without checking the value exceeded $3000."
+              "examinerComment": "Candidates who showed their trials clearly usually earned the method mark. Some stopped one year too early without checking that the value exceeded ${=P*f}.",
+              "variables": {
+                "P": {
+                  "min": 1000,
+                  "max": 4000,
+                  "step": 500,
+                  "value": 2500
+                },
+                "r": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 0.1,
+                  "value": 3.2
+                },
+                "f": {
+                  "min": 1.1,
+                  "max": 1.5,
+                  "step": 0.1,
+                  "value": 1.2
+                }
+              },
+              "answerExpression": "ceil(log(f) / log(1 + r/100))"
             }
           ]
         },
@@ -1178,17 +1532,27 @@
             {
               "label": "(b)",
               "topic": "1",
-              "prompt": "The length of a rod is 12.4 cm, correct to the nearest millimetre. Write down the lower bound of the length.",
+              "prompt": "The length of a rod is {L} cm, correct to the nearest millimetre. Write down the lower bound of the length.",
               "marks": 1,
               "answerType": "NUMERIC",
               "correctAnswer": "12.35",
               "markingPoints": [
                 {
-                  "text": "B1 for 12.35",
+                  "text": "B1 for {=L-0.05}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Many candidates gave 12.3 or 12.45. Remember the bounds are half a unit of accuracy either side of the stated value."
+              "examinerComment": "Many candidates gave {=L-0.1} or {=L+0.05}. Remember the bounds are half a unit of accuracy either side of the stated value.",
+              "variables": {
+                "L": {
+                  "min": 5,
+                  "max": 30,
+                  "step": 0.1,
+                  "value": 12.4
+                }
+              },
+              "answerExpression": "L - 0.05",
+              "tolerance": 0.001
             }
           ]
         },
@@ -1199,25 +1563,52 @@
             {
               "label": "(a)",
               "topic": "2",
-              "prompt": "Solve the equation 5(x − 3) = 2x + 9.",
+              "prompt": "Solve the equation {a}(x − {b}) = {c}x + {=a*(x-b)-c*x}.",
               "marks": 3,
               "answerType": "NUMERIC",
               "correctAnswer": "8",
               "markingPoints": [
                 {
-                  "text": "M1 for expanding brackets: 5x − 15",
+                  "text": "M1 for expanding brackets: {a}x − {=a*b}",
                   "marks": 1
                 },
                 {
-                  "text": "M1 for collecting terms correctly: 3x = 24",
+                  "text": "M1 for collecting terms correctly: {=a-c}x = {=(a-c)*x}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for x = 8",
+                  "text": "A1 for x = {x}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Generally well done. Weaker candidates expanded 5(x − 3) as 5x − 3."
+              "examinerComment": "Generally well done. Weaker candidates expanded {a}(x − {b}) as {a}x − {b}.",
+              "variables": {
+                "a": {
+                  "min": 4,
+                  "max": 7,
+                  "step": 1,
+                  "value": 5
+                },
+                "b": {
+                  "min": 1,
+                  "max": 3,
+                  "step": 1,
+                  "value": 3
+                },
+                "c": {
+                  "min": 1,
+                  "max": 2,
+                  "step": 1,
+                  "value": 2
+                },
+                "x": {
+                  "min": 8,
+                  "max": 12,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "x"
             },
             {
               "label": "(b)",
@@ -1292,38 +1683,65 @@
         },
         {
           "number": 4,
-          "stem": "A is the point (2, 5) and B is the point (8, −3).",
+          "stem": "",
           "parts": [
             {
               "label": "(a)",
               "topic": "3",
-              "prompt": "Find the gradient of the line AB.",
+              "prompt": "A is the point ({x1}, {y1}) and B is the point ({=x1+dx}, {=y1-dy}). Find the gradient of the line AB.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "-1.3333333",
-              "tolerance": 0.001,
+              "correctAnswer": "-1.33333",
               "markingPoints": [
                 {
-                  "text": "M1 for (−3 − 5) ÷ (8 − 2)",
+                  "text": "M1 for ({=y1-dy} − {y1}) ÷ ({=x1+dx} − {x1})",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for −4/3 oe",
+                  "text": "A1 for {=-dy/dx} oe",
                   "marks": 1
                 }
               ],
-              "examinerComment": "A frequent error was inverting the fraction (change in x over change in y). Sign errors were also common."
+              "examinerComment": "A frequent error was inverting the fraction (change in x over change in y). Sign errors were also common.",
+              "variables": {
+                "x1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "y1": {
+                  "min": 2,
+                  "max": 8,
+                  "step": 1,
+                  "value": 5
+                },
+                "dx": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 6
+                },
+                "dy": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "-dy / dx",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(b)",
               "topic": "3",
-              "prompt": "Find the length of AB.",
+              "prompt": "A is the point ({x1}, {y1}) and B is the point ({=x1+dx}, {=y1-dy}). Find the length of AB.",
               "marks": 3,
               "answerType": "NUMERIC",
               "correctAnswer": "10",
               "markingPoints": [
                 {
-                  "text": "M1 for 6² + 8² or (8 − 2)² + (−3 − 5)²",
+                  "text": "M1 for {dx}² + {dy}² or ({=x1+dx} − {x1})² + ({=y1-dy} − {y1})²",
                   "marks": 1
                 },
                 {
@@ -1331,16 +1749,44 @@
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 10",
+                  "text": "A1 for {=sqrt(dx^2+dy^2)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered by most. Some candidates added the coordinates instead of subtracting."
+              "examinerComment": "Well answered by most. Some candidates added the coordinates instead of subtracting.",
+              "variables": {
+                "x1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "y1": {
+                  "min": 2,
+                  "max": 8,
+                  "step": 1,
+                  "value": 5
+                },
+                "dx": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 6
+                },
+                "dy": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "sqrt(dx^2 + dy^2)",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(c)",
               "topic": "3",
-              "prompt": "Find the coordinates of the midpoint of AB. Give your answer in the form (x, y).",
+              "prompt": "A is the point (2, 5) and B is the point (8, −3). Find the coordinates of the midpoint of AB. Give your answer in the form (x, y).",
               "marks": 2,
               "answerType": "SHORT_TEXT",
               "acceptedAnswers": [
@@ -1407,21 +1853,43 @@
             {
               "label": "(c)",
               "topic": "4",
-              "prompt": "Two similar bottles have heights 12 cm and 18 cm. The smaller bottle holds 400 ml. Calculate the volume the larger bottle holds, in ml.",
+              "prompt": "Two similar bottles have heights {a} cm and {b} cm. The smaller bottle holds {v} ml. Calculate the volume the larger bottle holds, in ml.",
               "marks": 2,
               "answerType": "NUMERIC",
               "correctAnswer": "1350",
               "markingPoints": [
                 {
-                  "text": "M1 for 400 × (18/12)³ oe",
+                  "text": "M1 for {v} × ({b}/{a})³ oe",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 1350",
+                  "text": "A1 for {=v*(b/a)^3}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Many candidates used the linear or area scale factor instead of cubing the length ratio for volume."
+              "examinerComment": "Many candidates used the linear or area scale factor instead of cubing the length ratio for volume.",
+              "variables": {
+                "a": {
+                  "min": 8,
+                  "max": 15,
+                  "step": 1,
+                  "value": 12
+                },
+                "b": {
+                  "min": 16,
+                  "max": 30,
+                  "step": 1,
+                  "value": 18
+                },
+                "v": {
+                  "min": 200,
+                  "max": 800,
+                  "step": 50,
+                  "value": 400
+                }
+              },
+              "answerExpression": "v * (b / a)^3",
+              "relativeTolerance": 0.005
             }
           ]
         },
@@ -1432,66 +1900,111 @@
             {
               "label": "(a)",
               "topic": "5",
-              "prompt": "A sector of a circle has radius 9 cm and angle 40°. Calculate the arc length, in cm.",
+              "prompt": "A sector of a circle has radius {r} cm and angle {t}°. Calculate the arc length, in cm.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "6.283",
-              "tolerance": 0.01,
+              "correctAnswer": "6.28319",
               "markingPoints": [
                 {
-                  "text": "M1 for (40/360) × 2 × π × 9",
+                  "text": "M1 for ({t}/360) × 2 × π × {r}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 6.28 or 6.283…",
+                  "text": "A1 for {=t/360*2*pi*r}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Some candidates calculated the sector area instead of the arc length."
+              "examinerComment": "Some candidates calculated the sector area instead of the arc length.",
+              "variables": {
+                "r": {
+                  "min": 3,
+                  "max": 15,
+                  "step": 0.5,
+                  "value": 9
+                },
+                "t": {
+                  "min": 20,
+                  "max": 160,
+                  "step": 5,
+                  "value": 40
+                }
+              },
+              "answerExpression": "t / 360 * 2 * pi * r",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(b)",
               "topic": "5",
-              "prompt": "A solid cylinder has radius 4 cm and height 10 cm. Calculate its total surface area, in cm².",
+              "prompt": "A solid cylinder has radius {r} cm and height {h} cm. Calculate its total surface area, in cm².",
               "marks": 3,
               "answerType": "NUMERIC",
-              "correctAnswer": "351.86",
-              "tolerance": 0.5,
+              "correctAnswer": "351.858",
               "markingPoints": [
                 {
-                  "text": "M1 for curved surface 2 × π × 4 × 10",
+                  "text": "M1 for curved surface 2 × π × {r} × {h}",
                   "marks": 1
                 },
                 {
-                  "text": "M1 for 2 × π × 4²",
+                  "text": "M1 for 2 × π × {r}²",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 351.9 or 352 (accept 351.8 to 352)",
+                  "text": "A1 for {=2*pi*r*h+2*pi*r^2}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "The most common error was to include only one circular end."
+              "examinerComment": "The most common error was to include only one circular end.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 0.5,
+                  "value": 4
+                },
+                "h": {
+                  "min": 4,
+                  "max": 20,
+                  "step": 1,
+                  "value": 10
+                }
+              },
+              "answerExpression": "2 * pi * r * h + 2 * pi * r^2",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(c)",
               "topic": "5",
-              "prompt": "A cone has volume 300 cm³ and base radius 6 cm. Calculate the height of the cone, in cm.",
+              "prompt": "A cone has volume {v} cm³ and base radius {r} cm. Calculate the height of the cone, in cm.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "7.958",
-              "tolerance": 0.01,
+              "correctAnswer": "7.95775",
               "markingPoints": [
                 {
-                  "text": "M1 for (1/3) × π × 6² × h = 300",
+                  "text": "M1 for (1/3) × π × {r}² × h = {v}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 7.96 or 7.957…",
+                  "text": "A1 for {=3*v/(pi*r^2)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Candidates who forgot the 1/3 obtained 2.65."
+              "examinerComment": "Candidates who forgot the 1/3 obtained {=v/(pi*r^2)}.",
+              "variables": {
+                "v": {
+                  "min": 100,
+                  "max": 600,
+                  "step": 10,
+                  "value": 300
+                },
+                "r": {
+                  "min": 3,
+                  "max": 9,
+                  "step": 0.5,
+                  "value": 6
+                }
+              },
+              "answerExpression": "3 * v / (pi * r^2)",
+              "relativeTolerance": 0.005
             }
           ]
         },
@@ -1502,62 +2015,119 @@
             {
               "label": "(a)",
               "topic": "6",
-              "prompt": "In triangle PQR, angle Q = 90°, PQ = 7 cm and QR = 11 cm. Calculate angle QPR, in degrees.",
+              "prompt": "In triangle PQR, angle Q = 90°, PQ = {a} cm and QR = {b} cm. Calculate angle QPR, in degrees.",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "57.53",
-              "tolerance": 0.05,
+              "correctAnswer": "57.5288",
               "markingPoints": [
                 {
-                  "text": "M1 for tan QPR = 11/7",
+                  "text": "M1 for tan QPR = {b}/{a}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 57.5 or 57.52…",
+                  "text": "A1 for {=atan(b/a)*180/pi}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Labelling the opposite and adjacent sides on a sketch helped candidates choose the correct ratio."
+              "examinerComment": "Labelling the opposite and adjacent sides on a sketch helped candidates choose the correct ratio.",
+              "variables": {
+                "a": {
+                  "min": 4,
+                  "max": 15,
+                  "step": 1,
+                  "value": 7
+                },
+                "b": {
+                  "min": 4,
+                  "max": 15,
+                  "step": 1,
+                  "value": 11
+                }
+              },
+              "answerExpression": "atan(b / a) * 180 / pi",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(b)",
               "topic": "6",
-              "prompt": "In triangle ABC, AB = 8 cm, AC = 13 cm and angle BAC = 60°. Calculate the length of BC, in cm.",
+              "prompt": "In triangle ABC, AB = {b} cm, AC = {c} cm and angle BAC = {A}°. Calculate the length of BC, in cm.",
               "marks": 3,
               "answerType": "NUMERIC",
-              "correctAnswer": "11.36",
-              "tolerance": 0.01,
+              "correctAnswer": "11.3578",
               "markingPoints": [
                 {
-                  "text": "M2 for 8² + 13² − 2 × 8 × 13 × cos 60",
+                  "text": "M2 for {b}² + {c}² − 2 × {b} × {c} × cos {A}",
                   "marks": 2
                 },
                 {
-                  "text": "A1 for 11.4 or 11.35…",
+                  "text": "A1 for {=sqrt(b^2+c^2-2*b*c*cos(A*pi/180))}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "A common error was evaluating (8² + 13² − 2 × 8 × 13) × cos 60, which shows a misunderstanding of the order of operations."
+              "examinerComment": "A common error was evaluating ({b}² + {c}² − 2 × {b} × {c}) × cos {A}, which shows a misunderstanding of the order of operations.",
+              "variables": {
+                "b": {
+                  "min": 5,
+                  "max": 12,
+                  "step": 1,
+                  "value": 8
+                },
+                "c": {
+                  "min": 6,
+                  "max": 15,
+                  "step": 1,
+                  "value": 13
+                },
+                "A": {
+                  "min": 35,
+                  "max": 120,
+                  "step": 5,
+                  "value": 60
+                }
+              },
+              "answerExpression": "sqrt(b^2 + c^2 - 2*b*c*cos(A*pi/180))",
+              "relativeTolerance": 0.005
             },
             {
               "label": "(c)",
               "topic": "6",
-              "prompt": "Find the area of triangle ABC in part (b), in cm².",
+              "prompt": "In triangle ABC, AB = {b} cm, AC = {c} cm and angle BAC = {A}°. Calculate the area of triangle ABC, in cm².",
               "marks": 2,
               "answerType": "NUMERIC",
-              "correctAnswer": "45.03",
-              "tolerance": 0.05,
+              "correctAnswer": "45.0333",
               "markingPoints": [
                 {
-                  "text": "M1 for 0.5 × 8 × 13 × sin 60",
+                  "text": "M1 for 0.5 × {b} × {c} × sin {A}",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 45.0 or 45.03…",
+                  "text": "A1 for {=0.5*b*c*sin(A*pi/180)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Well answered."
+              "examinerComment": "Well answered.",
+              "variables": {
+                "b": {
+                  "min": 5,
+                  "max": 12,
+                  "step": 1,
+                  "value": 8
+                },
+                "c": {
+                  "min": 6,
+                  "max": 15,
+                  "step": 1,
+                  "value": 13
+                },
+                "A": {
+                  "min": 35,
+                  "max": 120,
+                  "step": 5,
+                  "value": 60
+                }
+              },
+              "answerExpression": "0.5 * b * c * sin(A*pi/180)",
+              "relativeTolerance": 0.005
             }
           ]
         },
@@ -1590,25 +2160,53 @@
             {
               "label": "(b)",
               "topic": "7",
-              "prompt": "a = (3, −2) and b = (−1, 4) written as column vectors. Find |2a + b|, giving your answer correct to 3 significant figures.",
+              "prompt": "a = ({p}, −{q}) and b = ({r}, {s}) written as column vectors. Find |2a + b|, giving your answer correct to 3 significant figures.",
               "marks": 3,
               "answerType": "NUMERIC",
               "correctAnswer": "5",
               "markingPoints": [
                 {
-                  "text": "B1 for 2a + b = (5, 0)",
+                  "text": "B1 for 2a + b = ({=2*p+r}, {=s-2*q})",
                   "marks": 1
                 },
                 {
-                  "text": "M1 for √(5² + 0²)",
+                  "text": "M1 for √({=2*p+r}² + ({=s-2*q})²)",
                   "marks": 1
                 },
                 {
-                  "text": "A1 for 5",
+                  "text": "A1 for {=sqrt((2*p+r)^2+(s-2*q)^2)}",
                   "marks": 1
                 }
               ],
-              "examinerComment": "Most candidates found 2a + b correctly. Some then gave the vector rather than its magnitude."
+              "examinerComment": "Most candidates found 2a + b correctly. Some then gave the vector rather than its magnitude.",
+              "variables": {
+                "p": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 1,
+                  "value": 3
+                },
+                "q": {
+                  "min": 1,
+                  "max": 4,
+                  "step": 1,
+                  "value": 2
+                },
+                "r": {
+                  "min": -1,
+                  "max": 3,
+                  "step": 1,
+                  "value": -1
+                },
+                "s": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "sqrt((2*p + r)^2 + (s - 2*q)^2)",
+              "relativeTolerance": 0.005
             }
           ]
         },
@@ -1758,6 +2356,4047 @@
                 }
               ],
               "examinerComment": "With unequal class widths the modal class is the one with the highest frequency density. Here 2 < m ≤ 4 has density 7, the highest."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 1",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Write 84 as a product of its prime factors.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2² × 3 × 7",
+                "2^2 × 3 × 7",
+                "2^2 x 3 x 7",
+                "2^2*3*7",
+                "2²×3×7",
+                "2 × 2 × 3 × 7",
+                "2x2x3x7",
+                "2*2*3*7",
+                "2^2×3×7",
+                "2 x 2 x 3 x 7"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for a correct factor tree or repeated division, e.g. 84 = 2 × 42 = 2 × 2 × 21",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2² × 3 × 7 oe",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates found the correct primes but listed them (2, 2, 3, 7) instead of writing a product. Some included 1 as a factor."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Find the highest common factor (HCF) of {=4*g} and {=7*g}.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for listing factors of both numbers or using prime factors",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {g}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave the lowest common multiple, {=28*g}, instead of the highest common factor.",
+              "variables": {
+                "g": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 6
+                }
+              },
+              "answerExpression": "g",
+              "correctAnswer": "6"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Work out 3/4 of {=4*k}.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for {=3*k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. Dividing by 4 and then multiplying by 3 is the most efficient method.",
+              "variables": {
+                "k": {
+                  "min": 5,
+                  "max": 30,
+                  "step": 1,
+                  "value": 15
+                }
+              },
+              "answerExpression": "3 * k",
+              "correctAnswer": "45"
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Write 5 600 000 in standard form.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "5.6 × 10^6",
+                "5.6 x 10^6",
+                "5.6×10^6",
+                "5.6x10^6",
+                "5.6 × 10⁶",
+                "5.6*10^6",
+                "5.6e6"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 5.6 × 10⁶",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrote 56 × 10⁵, which is not in standard form because 56 is not between 1 and 10."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "A map has a scale of 1 : {s}. A road is {d} cm long on the map. Find the real length of the road, in kilometres.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {d} × {s} (= {=d*s} cm) or a conversion of 1 cm to {=s/100000} km",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=d*s/100000}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates multiplied correctly but many made errors converting centimetres to kilometres. There are 100 000 cm in 1 km.",
+              "variables": {
+                "s": {
+                  "min": 25000,
+                  "max": 100000,
+                  "step": 5000,
+                  "value": 50000
+                },
+                "d": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 6
+                }
+              },
+              "answerExpression": "d * s / 100000",
+              "correctAnswer": "3",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Expand 4(2x − 3).",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "8x − 12",
+                "8x - 12",
+                "8x-12",
+                "8x−12",
+                "-12 + 8x"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 8x − 12",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common error was 8x − 3, multiplying only the first term in the bracket."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Factorise completely 6y + 15.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "3(2y + 5)",
+                "3(2y+5)",
+                "3(5 + 2y)",
+                "3(5+2y)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B2 for 3(2y + 5)",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for a correct partial factorisation with a common factor",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates identified 3 as the common factor. Check by expanding your answer."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "The nth term of a sequence is {a}n + {b}. Find term number {k} of the sequence.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {a} × {k} + {b}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=a*k+b}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. A few candidates substituted n = {=k+1} or found the first {k} terms one at a time, which is slow and error-prone.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 4
+                },
+                "k": {
+                  "min": 10,
+                  "max": 50,
+                  "step": 1,
+                  "value": 20
+                }
+              },
+              "answerExpression": "a * k + b",
+              "correctAnswer": "64"
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Solve x/{a} + {b} = {=m+b}.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for x/{a} = {m}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x = {=a*m}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates multiplied only the x term by {a}, forgetting to multiply the {b} as well, when they cleared the fraction first.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "m": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "a * m",
+              "correctAnswer": "15"
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Solve the inequality 3x + 2 < 17.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "x < 5",
+                "x<5",
+                "5 > x"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 3x < 15",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for x < 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates solved correctly but then gave the answer as x = 5. The inequality sign must be kept."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Write down the gradient of the line y = {c} − {m}x.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for −{m}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who rearranged mentally into the form y = mx + c rarely made errors. A common wrong answer was {c}.",
+              "variables": {
+                "c": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 7
+                },
+                "m": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "-m",
+              "correctAnswer": "-4"
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "The point (p, {=m*p-c}) lies on the line y = {m}x − {c}. Find the value of p.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {=m*p-c} = {m}p − {c}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for p = {p}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Substituting the y-coordinate and solving the resulting equation was well done. Some candidates substituted {=m*p-c} for x instead of y.",
+              "variables": {
+                "m": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "c": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                },
+                "p": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "p",
+              "correctAnswer": "4"
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the coordinates of the point where the line y = 2x − 6 crosses the x-axis. Give your answer in the form (x, y).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(3, 0)",
+                "(3,0)",
+                "3, 0",
+                "3,0"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 2x − 6 = 0",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for (3, 0)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common error was to give the y-intercept (0, −6). On the x-axis, y = 0."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "P is the point ({px}, 7). M is the midpoint of PQ and M is the point ({=px+d/2}, 4). Find the x-coordinate of Q.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for ({px} + x)/2 = {=px+d/2} or a correct use of the change from P to M",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=px+d}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates found the midpoint of P and M instead of using M as the midpoint of PQ.",
+              "variables": {
+                "px": {
+                  "min": -4,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "d": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 2,
+                  "value": 6
+                }
+              },
+              "answerExpression": "px + d",
+              "correctAnswer": "8"
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Four angles meet at a point. Three of the angles are {a}°, {b}° and {c}°. Find the fourth angle, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for 360 − ({a} + {b} + {c})",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=360-a-b-c}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used 180° (angles on a straight line) instead of 360° (angles around a point).",
+              "variables": {
+                "a": {
+                  "min": 40,
+                  "max": 110,
+                  "step": 5,
+                  "value": 85
+                },
+                "b": {
+                  "min": 40,
+                  "max": 110,
+                  "step": 5,
+                  "value": 95
+                },
+                "c": {
+                  "min": 40,
+                  "max": 110,
+                  "step": 5,
+                  "value": 70
+                }
+              },
+              "answerExpression": "360 - a - b - c",
+              "correctAnswer": "110"
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "In an isosceles triangle, the angle between the two equal sides is {a}°. Find the size of one of the other two angles, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for (180 − {a}) ÷ 2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(180-a)/2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sketch marking the two equal angles helped candidates avoid giving {=180-2*a}, which comes from doubling the given angle.",
+              "variables": {
+                "a": {
+                  "min": 20,
+                  "max": 140,
+                  "step": 2,
+                  "value": 40
+                }
+              },
+              "answerExpression": "(180 - a) / 2",
+              "correctAnswer": "70"
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Lines AB and CD are parallel. A straight line crosses AB at P and CD at Q, with B and C on opposite sides of PQ. Angle BPQ = 64°. Find angle PQC. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for 64°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for alternate angles (are equal)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The reason must use the correct term. 'Z angles' is not accepted; 'alternate angles' is."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Write down the order of rotational symmetry of a rhombus that is not a square.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "B1 for 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common answer was 4, which is the order for a square."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A trapezium has parallel sides of length {a} cm and {b} cm. The perpendicular distance between them is {h} cm. Find the area, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for ½ × ({a} + {b}) × {h}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(a+b)*h/2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates multiplied all three lengths together. The formula is given on the formula sheet.",
+              "variables": {
+                "a": {
+                  "min": 3,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                },
+                "b": {
+                  "min": 4,
+                  "max": 15,
+                  "step": 1,
+                  "value": 9
+                },
+                "h": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 2,
+                  "value": 6
+                }
+              },
+              "answerExpression": "(a + b) * h / 2",
+              "correctAnswer": "42"
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A rectangle has area {=l*w} cm². Its length is {l} cm. Find its perimeter, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for width = {=l*w} ÷ {l} = {w}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=2*(l+w)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates found the width correctly but then added only two sides.",
+              "variables": {
+                "l": {
+                  "min": 6,
+                  "max": 15,
+                  "step": 1,
+                  "value": 9
+                },
+                "w": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "2 * (l + w)",
+              "correctAnswer": "26"
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A cuboid measures {a} cm by {b} cm by {c} cm. Find its total surface area, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {=a*b}, {=b*c} and {=a*c} seen",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=2*(a*b+b*c+a*c)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates calculated the volume, or included each face only once.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 4
+                },
+                "c": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                }
+              },
+              "answerExpression": "2*(a*b + b*c + a*c)",
+              "correctAnswer": "108"
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Write down the bearing of a point that is due south-west of another point.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "225",
+                "225°",
+                "225 degrees",
+                "225 °"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 225°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Bearings are measured clockwise from north. Some candidates gave 135°, which is south-east."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "The point (4, 3) is reflected in the line x = 1. Write down the coordinates of its image.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(-2, 3)",
+                "(-2,3)",
+                "(−2, 3)",
+                "(−2,3)",
+                "-2, 3"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for x = −2",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y = 3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who sketched the line x = 1 as a vertical line usually succeeded. Some reflected in the line y = 1."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "The point (3, 1) is rotated 90° clockwise about the origin. Write down the coordinates of its image.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(1, -3)",
+                "(1,-3)",
+                "(1, −3)",
+                "(1,−3)",
+                "1, -3"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for x = 1",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y = −3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using tracing paper, or a sketch, helps. The anticlockwise answer (−1, 3) was a common error."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "a = (3, −1) and b = (2, 5) as column vectors. Find a + b, giving your answer as (x, y).",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(5, 4)",
+                "(5,4)",
+                "5, 4",
+                "5,4"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for (5, 4)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Triangle A has vertices (1, 1), (3, 1) and (3, 2). Triangle B has vertices (4, −1), (6, −1) and (6, 0). Describe fully the single transformation that maps triangle A onto triangle B.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for translation",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for vector (3, −2) written as a column vector",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The vector must be given as a column vector. Descriptions such as 'moved 3 right and 2 down' do not earn the second mark."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "The point (3, −1) is enlarged with scale factor 2 and centre (0, 0). Write down the coordinates of its image.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(6, -2)",
+                "(6,-2)",
+                "(6, −2)",
+                "(6,−2)",
+                "6, -2"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for (6, −2)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "A spinner can land on red, blue, green or yellow. P(red) = {a}, P(blue) = {b} and P(yellow) = {c}. Find P(green).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for 1 − ({a} + {b} + {c})",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=1-a-b-c}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. The probabilities of all the possible outcomes add up to 1.",
+              "variables": {
+                "a": {
+                  "min": 0.1,
+                  "max": 0.35,
+                  "step": 0.05,
+                  "value": 0.3
+                },
+                "b": {
+                  "min": 0.1,
+                  "max": 0.3,
+                  "step": 0.05,
+                  "value": 0.25
+                },
+                "c": {
+                  "min": 0.05,
+                  "max": 0.2,
+                  "step": 0.05,
+                  "value": 0.15
+                }
+              },
+              "answerExpression": "1 - a - b - c",
+              "correctAnswer": "0.3",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Two fair six-sided dice are thrown and the scores are added. Find the probability that the total is 10. Give your answer as a fraction.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "1/12",
+                "3/36"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 3 favourable outcomes out of 36, e.g. (4, 6), (5, 5), (6, 4)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3/36 or 1/12",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A possibility diagram helps. Many candidates counted (4, 6) but not (6, 4), giving 2/36."
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "The probability that a bus is late on any day is {p}, independently of other days. Find the probability that the bus is late on two particular days.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {p} × {p}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=p^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates added the probabilities, giving {=2*p}. For independent events, multiply.",
+              "variables": {
+                "p": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.2
+                }
+              },
+              "answerExpression": "p^2",
+              "correctAnswer": "0.04",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 31,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Find the median of 9, 3, 7, 12, 4, 10.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "markingPoints": [
+                {
+                  "text": "M1 for ordering: 3, 4, 7, 9, 10, 12",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates must put the values in order first. With an even number of values, the median is halfway between the middle two."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 2",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Simplify √75 + √12.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "7√3",
+                "7 √3",
+                "7sqrt3",
+                "7sqrt(3)",
+                "7 sqrt 3",
+                "7root3",
+                "7 × √3"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 5√3 or 2√3 seen",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7√3",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates wrote √87, incorrectly adding the numbers under the root signs."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "y is directly proportional to the square of x. When x = {a}, y = {=k*a^2}. Find y when x = {b}.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for y = kx²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for k = {k}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=k*b^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used y = kx, ignoring 'the square of'.",
+              "variables": {
+                "k": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 3
+                },
+                "a": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                },
+                "b": {
+                  "min": 3,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "k * b^2",
+              "correctAnswer": "75"
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Write the recurring decimal 0.454545… as a fraction in its simplest form.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "5/11"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 100x − x = 45 oe",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5/11",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave 45/99 without simplifying, losing the final mark."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Factorise x² − 5x − 14.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(x − 7)(x + 2)",
+                "(x - 7)(x + 2)",
+                "(x-7)(x+2)",
+                "(x + 2)(x − 7)",
+                "(x + 2)(x - 7)",
+                "(x+2)(x-7)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B2 for (x − 7)(x + 2)",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for factors giving two correct terms when expanded",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sign errors were common, such as (x + 7)(x − 2). Expanding to check is quick."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "f(x) = {a}x − {b} and g(x) = x² + {c}. Find fg({k}).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for g({k}) = {=k^2+c}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=a*(k^2+c)-b}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates applied f first. In fg(x), g is applied first.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "c": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 1
+                },
+                "k": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "a * (k^2 + c) - b",
+              "correctAnswer": "26"
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "f(x) = (x + {b})/{a}. Find f⁻¹({k}).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for f⁻¹(x) = {a}x − {b} or solving (x + {b})/{a} = {k}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=a*k-b}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates calculated f({k}) instead of the inverse.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                },
+                "b": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                },
+                "k": {
+                  "min": 2,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "a * k - b",
+              "correctAnswer": "7"
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "y = {a}x³ − {b}x. Find the gradient of the curve when x = {k}.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for dy/dx = {=3*a}x² − {b}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for substituting x = {k}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=3*a*k^2-b}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates substituted into y instead of dy/dx.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                },
+                "b": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                },
+                "k": {
+                  "min": 1,
+                  "max": 4,
+                  "step": 1,
+                  "value": 2
+                }
+              },
+              "answerExpression": "3*a*k^2 - b",
+              "correctAnswer": "19"
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Simplify (2x³y)⁴.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "16x^12y^4",
+                "16x¹²y⁴",
+                "16x^12 y^4",
+                "16 x^12 y^4",
+                "16x^(12)y^(4)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B2 for 16x¹²y⁴",
+                  "marks": 2
+                },
+                {
+                  "text": "or B1 for two of 16, x¹², y⁴ in a product",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A frequent error was 8x¹²y⁴, multiplying 2 by 4 instead of raising it to the power 4."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the equation of the line that is perpendicular to y = 2x + 1 and passes through (4, 3). Give your answer in the form y = mx + c.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "y = -0.5x + 5",
+                "y = −0.5x + 5",
+                "y = -1/2x + 5",
+                "y = −1/2x + 5",
+                "y = -x/2 + 5",
+                "y=-0.5x+5",
+                "y=-1/2x+5",
+                "y = 5 - 0.5x",
+                "y = -½x + 5",
+                "y = −½x + 5"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for gradient −½",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 3 = −½ × 4 + c oe",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = −½x + 5",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates knew that the product of perpendicular gradients is −1. Some used ½ instead of −½."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the gradient of the line {a}x + {b}y = {c}.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for rearranging to y = {=-a/b}x + {=c/b} or equivalent",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −{a}/{b} oe",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A common error was {a}/{b}, ignoring the sign change when rearranging.",
+              "variables": {
+                "a": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 2
+                },
+                "b": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 3
+                },
+                "c": {
+                  "min": 1,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "-a / b",
+              "correctAnswer": "-0.666667",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "A is ({x1}, {y1}) and B is ({=x1+d}, {=y1+m*d}). Find the gradient of a line perpendicular to AB.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for gradient AB = {m}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for −1/{m} oe",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates stopped after finding the gradient of AB.",
+              "variables": {
+                "x1": {
+                  "min": -3,
+                  "max": 4,
+                  "step": 1,
+                  "value": 1
+                },
+                "y1": {
+                  "min": -3,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                },
+                "d": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 1,
+                  "value": 4
+                },
+                "m": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                }
+              },
+              "answerExpression": "-1 / m",
+              "correctAnswer": "-0.5",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the equation of the line through (−1, 4) and (3, −4). Give your answer in the form y = mx + c.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "y = -2x + 2",
+                "y = −2x + 2",
+                "y=-2x+2",
+                "y = 2 - 2x",
+                "y=2-2x"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for gradient (−4 − 4) ÷ (3 − (−1))",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for m = −2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for y = −2x + 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Errors with negative coordinates were common, particularly 3 − (−1)."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "ABCD is a cyclic quadrilateral. Angle ABC = 104°. Find angle ADC. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for 76°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for opposite angles of a cyclic quadrilateral add up to 180°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Reasons must use correct geometrical language. 'Opposite angles are equal' is a property of parallelograms, not cyclic quadrilaterals."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "PT is a tangent to a circle with centre O, touching the circle at T. Angle TOP = 58°. Find angle OPT. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for 32°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for the tangent is perpendicular to the radius (angle OTP = 90°)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates found 32°. The reason needs to mention both the tangent and the radius."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "The sum of the interior angles of a polygon is {=(n-2)*180}°. Find the number of sides of the polygon.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for (n − 2) × 180 = {=(n-2)*180}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates divided by 180 and forgot to add 2.",
+              "variables": {
+                "n": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 9
+                }
+              },
+              "answerExpression": "n",
+              "correctAnswer": "9"
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "A, B and C are points on a circle. The tangent to the circle at A makes an angle of 47° with the chord AB. C lies on the major arc AB. Find angle ACB. Give a geometrical reason for your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for 47°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for the alternate segment theorem",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Few candidates named the alternate segment theorem. Learn the names of the circle theorems."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A sector of a circle has radius {r} cm and angle 90°. Find the area of the sector as a multiple of π. Enter the multiple only (for 10π enter 10).",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for (90/360) × π × {r}²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=r^2/4}π",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates found the arc length instead of the area.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 2,
+                  "value": 6
+                }
+              },
+              "answerExpression": "r^2 / 4",
+              "correctAnswer": "9"
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Solve sin x = 0.5 for 90° < x < 180°.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "150",
+              "markingPoints": [
+                {
+                  "text": "B1 for 30° seen",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 150",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave 30°, which is outside the given range. Use the symmetry of the sine graph about x = 90°."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "O is the origin, OA = a and OB = b. M is the midpoint of AB. Find OM in terms of a and b, in its simplest form.",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "½a + ½b",
+                "1/2a + 1/2b",
+                "0.5a + 0.5b",
+                "(a + b)/2",
+                "½(a + b)",
+                "1/2(a + b)",
+                "(a+b)/2",
+                "1/2a+1/2b",
+                "½(a+b)",
+                "0.5(a + b)"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for AB = b − a or a correct route OA + ½AB",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for ½a + ½b oe",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrote AB = a − b, reversing the direction."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Triangle P has vertices (2, 2), (4, 2) and (2, 6). Triangle Q has vertices (1, 1), (2, 1) and (1, 3). Describe fully the single transformation that maps triangle P onto triangle Q.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for enlargement",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for scale factor ½",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for centre (0, 0)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave a scale factor of 2, mixing up the object and the image."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "The point (5, −2) is reflected in the line y = x. Write down the coordinates of its image.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(-2, 5)",
+                "(-2,5)",
+                "(−2, 5)",
+                "(−2,5)",
+                "-2, 5"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for (−2, 5)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Reflection in y = x swaps the coordinates."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A is the point (2, −3) and B is the point (7, 1). Find the vector AB, giving your answer as (x, y).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "(5, 4)",
+                "(5,4)",
+                "5, 4",
+                "5,4"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for 5",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates found the vector BA, (−5, −4), by subtracting the wrong way round."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Triangle T has vertices (2, 3), (4, 3) and (2, 4). Triangle U has vertices (0, 1), (−2, 1) and (0, 0). Describe fully the single transformation that maps triangle T onto triangle U.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for rotation",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for 180°",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for centre (1, 2)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Finding the midpoint of each object point and its image locates the centre of a 180° rotation."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "In a class of 30 students, 18 study French, 14 study Spanish and 5 study neither. A student is chosen at random. Find the probability that the student studies both French and Spanish. Give your answer as a fraction.",
+              "marks": 3,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "7/30"
+              ],
+              "markingPoints": [
+                {
+                  "text": "M1 for 18 + 14 + 5 − 30",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7 students",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 7/30",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A Venn diagram helps. Some candidates forgot to include the 5 students who study neither."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "The mean of six numbers is {m}. One number is removed and the mean of the remaining five numbers is {=m-d}. Find the number that was removed.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for 6 × {m} = {=6*m}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 5 × {=m-d} = {=5*(m-d)}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=m+5*d}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Working with totals rather than means is the key step.",
+              "variables": {
+                "m": {
+                  "min": 10,
+                  "max": 30,
+                  "step": 1,
+                  "value": 14
+                },
+                "d": {
+                  "min": 1,
+                  "max": 4,
+                  "step": 1,
+                  "value": 2
+                }
+              },
+              "answerExpression": "m + 5*d",
+              "correctAnswer": "24"
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A cumulative frequency table shows: time ≤ 10 minutes: 8 people; ≤ 20: 23; ≤ 30: 41; ≤ 40: 50. Find how many people took more than 20 minutes.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "27",
+              "markingPoints": [
+                {
+                  "text": "B1 for 27",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave 41 − 23 = 18, the number in the 20 to 30 minute class only."
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A scatter diagram shows the daily temperature and the number of hot drinks sold at a café. As the temperature increases, the number of hot drinks sold decreases.\n(i) Write down the type of correlation.\n(ii) Explain why a line of best fit should not be used to estimate sales on a day when the temperature is much higher than any in the data.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for negative (correlation)",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for it would be extrapolation / outside the range of the data, so the trend may not continue",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most identified negative correlation. Stronger answers used the word extrapolation in part (ii)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "3",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 3",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "The price of a jacket is ${P}. The price is increased by {r}%. Find the new price, in dollars.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {P} × {=1+r/100} oe",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=P*(1+r/100)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates found the increase, ${=P*r/100}, but did not add it to the original price.",
+              "variables": {
+                "P": {
+                  "min": 20,
+                  "max": 200,
+                  "step": 5,
+                  "value": 80
+                },
+                "r": {
+                  "min": 5,
+                  "max": 40,
+                  "step": 5,
+                  "value": 15
+                }
+              },
+              "answerExpression": "P * (1 + r/100)",
+              "correctAnswer": "92",
+              "tolerance": 0.01
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Ravi invests ${P} at {r}% per year simple interest. Calculate the total interest he receives after {n} years, in dollars.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {P} × {r} × {n} ÷ 100",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=P*r*n/100}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave the total value of the investment, ${=P+P*r*n/100}, instead of the interest.",
+              "variables": {
+                "P": {
+                  "min": 200,
+                  "max": 2000,
+                  "step": 100,
+                  "value": 600
+                },
+                "r": {
+                  "min": 1.5,
+                  "max": 6,
+                  "step": 0.5,
+                  "value": 4
+                },
+                "n": {
+                  "min": 2,
+                  "max": 8,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "P * r * n / 100",
+              "correctAnswer": "72",
+              "tolerance": 0.01
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "In a sale, all prices are reduced by {r}%. A coat costs ${=O*(1-r/100)} in the sale. Find the price of the coat before the sale, in dollars.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for recognising {=100-r}% = {=O*(1-r/100)}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for {=O*(1-r/100)} ÷ {=1-r/100}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {O}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The most common error was to increase the sale price by {r}%, giving {=O*(1-r/100)*(1+r/100)}.",
+              "variables": {
+                "O": {
+                  "min": 40,
+                  "max": 200,
+                  "step": 20,
+                  "value": 120
+                },
+                "r": {
+                  "min": 10,
+                  "max": 40,
+                  "step": 5,
+                  "value": 25
+                }
+              },
+              "answerExpression": "O",
+              "correctAnswer": "120",
+              "tolerance": 0.01
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "A car travels {d} km in {t} hours. Calculate its average speed, in km/h.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {d} ÷ {t}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=d/t}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. A few candidates multiplied distance by time.",
+              "variables": {
+                "d": {
+                  "min": 60,
+                  "max": 400,
+                  "step": 10,
+                  "value": 210
+                },
+                "t": {
+                  "min": 1.5,
+                  "max": 5,
+                  "step": 0.5,
+                  "value": 3
+                }
+              },
+              "answerExpression": "d / t",
+              "correctAnswer": "70",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "v = u + at. Find v when u = {u}, a = {a} and t = {t}.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {u} + {a} × {t}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=u+a*t}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates substituted correctly. Some added {u} and {a} before multiplying by {t}.",
+              "variables": {
+                "u": {
+                  "min": 2,
+                  "max": 20,
+                  "step": 1,
+                  "value": 5
+                },
+                "a": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 0.5,
+                  "value": 3.5
+                },
+                "t": {
+                  "min": 3,
+                  "max": 12,
+                  "step": 1,
+                  "value": 6
+                }
+              },
+              "answerExpression": "u + a * t",
+              "correctAnswer": "26",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Make r the subject of the formula C = 2πr.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "r = C/(2π)",
+                "r = C/2π",
+                "r=C/(2π)",
+                "r=C/2π",
+                "r = C ÷ 2π",
+                "r = C/(2pi)",
+                "r = c/(2π)",
+                "r = C/2pi"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for r = C/(2π) oe",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates wrote r = C − 2π, subtracting instead of dividing."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the length of the line segment joining ({x1}, {y1}) and ({=x1+dx}, {=y1+dy}). Give your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {dx}² + {dy}²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for √{=dx^2+dy^2}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt(dx^2+dy^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sketch of the right-angled triangle formed by the two points helped many candidates.",
+              "variables": {
+                "x1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 1
+                },
+                "y1": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "dx": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "dy": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "sqrt(dx^2 + dy^2)",
+              "correctAnswer": "6.40312",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Find the equation of the line that is parallel to y = 3x − 1 and passes through (0, 4).",
+              "marks": 2,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "y = 3x + 4",
+                "y=3x+4",
+                "y = 4 + 3x",
+                "y=4+3x"
+              ],
+              "markingPoints": [
+                {
+                  "text": "B1 for gradient 3",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for y-intercept 4",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Parallel lines have the same gradient. Some candidates used −1 as the gradient."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "A regular polygon has {n} sides. Calculate the size of each interior angle, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for exterior angle 360 ÷ {n}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=180-360/n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave the exterior angle, {=360/n}°, as their final answer.",
+              "variables": {
+                "n": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "180 - 360 / n",
+              "correctAnswer": "135",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Triangles ABC and PQR are similar. AB = {a} cm, PQ = {=a*k} cm and BC = {b} cm. Find QR, in cm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for scale factor {=a*k} ÷ {a} = {k}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=b*k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates added the difference in lengths instead of multiplying by the scale factor.",
+              "variables": {
+                "a": {
+                  "min": 3,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                },
+                "k": {
+                  "min": 1.5,
+                  "max": 3,
+                  "step": 0.5,
+                  "value": 2.5
+                },
+                "b": {
+                  "min": 4,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                }
+              },
+              "answerExpression": "b * k",
+              "correctAnswer": "15",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Calculate the area of a circle of radius {r} cm, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for π × {r}²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=pi*r^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used 2πr, which gives the circumference.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 15,
+                  "step": 0.5,
+                  "value": 6
+                }
+              },
+              "answerExpression": "pi * r^2",
+              "correctAnswer": "113.097",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A cylinder has radius {r} cm and height {h} cm. Calculate its volume, in cm³.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for π × {r}² × {h}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=pi*r^2*h}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 0.5,
+                  "value": 3
+                },
+                "h": {
+                  "min": 5,
+                  "max": 25,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "pi * r^2 * h",
+              "correctAnswer": "339.292",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "Convert {a} m² into cm².",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for {=a*10000}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The most common error was multiplying by 100 instead of 100² = 10 000.",
+              "variables": {
+                "a": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 0.1,
+                  "value": 3.2
+                }
+              },
+              "answerExpression": "a * 10000",
+              "correctAnswer": "32000",
+              "relativeTolerance": 1e-06
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "In a right-angled triangle, the side opposite angle x is {o} cm and the side adjacent to angle x is {a} cm. Calculate x, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for tan x = {o}/{a}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=atan(o/a)*180/pi}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who labelled the sides first usually chose the correct ratio.",
+              "variables": {
+                "o": {
+                  "min": 3,
+                  "max": 15,
+                  "step": 1,
+                  "value": 5
+                },
+                "a": {
+                  "min": 3,
+                  "max": 15,
+                  "step": 1,
+                  "value": 8
+                }
+              },
+              "answerExpression": "atan(o / a) * 180 / pi",
+              "correctAnswer": "32.0054",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A right-angled triangle has hypotenuse {=a+d} cm and one of the shorter sides {a} cm. Calculate the length of the third side, in cm.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {=a+d}² − {a}²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for √{=(a+d)^2-a^2}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt((a+d)^2-a^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates added the squares instead of subtracting. The hypotenuse is always the longest side.",
+              "variables": {
+                "a": {
+                  "min": 3,
+                  "max": 12,
+                  "step": 1,
+                  "value": 7
+                },
+                "d": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "sqrt((a + d)^2 - a^2)",
+              "correctAnswer": "9.74679",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A ladder of length {L} m leans against a vertical wall. The foot of the ladder is on horizontal ground, {d} m from the wall. Calculate the angle between the ladder and the ground, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for cos x = {d}/{L}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=acos(d/L)*180/pi}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used sin instead of cos and found the angle between the ladder and the wall.",
+              "variables": {
+                "L": {
+                  "min": 3,
+                  "max": 7,
+                  "step": 0.5,
+                  "value": 5
+                },
+                "d": {
+                  "min": 0.8,
+                  "max": 2,
+                  "step": 0.1,
+                  "value": 1.2
+                }
+              },
+              "answerExpression": "acos(d / L) * 180 / pi",
+              "correctAnswer": "76.1135",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "From a point on level ground {d} m from the foot of a vertical tower, the angle of elevation of the top of the tower is {t}°. Calculate the height of the tower, in m.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {d} × tan {t}°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=d*tan(t*pi/180)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Check that your calculator is in degree mode. Answers from radian mode were seen.",
+              "variables": {
+                "d": {
+                  "min": 20,
+                  "max": 80,
+                  "step": 5,
+                  "value": 40
+                },
+                "t": {
+                  "min": 20,
+                  "max": 60,
+                  "step": 1,
+                  "value": 32
+                }
+              },
+              "answerExpression": "d * tan(t * pi / 180)",
+              "correctAnswer": "24.9948",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A shape is enlarged. A side of length {a} cm becomes a side of length {=a*k} cm. Find the scale factor of the enlargement.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for {k}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates subtracted the lengths. The scale factor is image length ÷ object length.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "k": {
+                  "min": 1.5,
+                  "max": 4,
+                  "step": 0.5,
+                  "value": 2.5
+                }
+              },
+              "answerExpression": "k",
+              "correctAnswer": "2.5",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "A dice is thrown {n} times. It shows a six {k} times. Find the relative frequency of throwing a six. Give your answer as a decimal correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {k} ÷ {n}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=k/n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates gave 1/6, which is the theoretical probability for a fair dice.",
+              "variables": {
+                "n": {
+                  "min": 50,
+                  "max": 200,
+                  "step": 10,
+                  "value": 120
+                },
+                "k": {
+                  "min": 10,
+                  "max": 40,
+                  "step": 1,
+                  "value": 27
+                }
+              },
+              "answerExpression": "k / n",
+              "correctAnswer": "0.225",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "The probability that a light bulb is faulty is {p}. Find the expected number of faulty bulbs in a batch of {n}.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {p} × {n}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=p*n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered.",
+              "variables": {
+                "p": {
+                  "min": 0.02,
+                  "max": 0.1,
+                  "step": 0.01,
+                  "value": 0.04
+                },
+                "n": {
+                  "min": 200,
+                  "max": 1000,
+                  "step": 100,
+                  "value": 600
+                }
+              },
+              "answerExpression": "p * n",
+              "correctAnswer": "24",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "A bag contains {r} red, {b} blue and {g} green counters. A counter is taken at random. Find the probability that it is not blue. Give your answer as a decimal correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for ({r} + {g}) ÷ {=r+b+g} or 1 − {b}/{=r+b+g}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(r+g)/(r+b+g)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates found the probability of blue and did not subtract from 1.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                },
+                "b": {
+                  "min": 2,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                },
+                "g": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "(r + g) / (r + b + g)",
+              "correctAnswer": "0.666667",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A frequency table shows scores of 1, 2, 3 and 4 with frequencies {a}, {b}, {c} and {d} respectively. Calculate the mean score.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for Σfx = {=a+2*b+3*c+4*d}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for their Σfx ÷ {=a+b+c+d}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(a+2*b+3*c+4*d)/(a+b+c+d)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Dividing by 4, the number of different scores, was a common error.",
+              "variables": {
+                "a": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 4
+                },
+                "b": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 7
+                },
+                "c": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                },
+                "d": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "(a + 2*b + 3*c + 4*d) / (a + b + c + d)",
+              "correctAnswer": "2.4",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "In a survey, {k} out of {n} people chose tea as their favourite drink. The results are shown in a pie chart. Calculate the sector angle for tea, in degrees.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {k}/{n} × 360",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=360*k/n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered.",
+              "variables": {
+                "k": {
+                  "min": 5,
+                  "max": 25,
+                  "step": 1,
+                  "value": 12
+                },
+                "n": {
+                  "min": 40,
+                  "max": 120,
+                  "step": 10,
+                  "value": 60
+                }
+              },
+              "answerExpression": "360 * k / n",
+              "correctAnswer": "72",
+              "relativeTolerance": 0.005
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 4",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "A car is bought for ${P}. Its value depreciates by {r}% each year. Calculate its value after {n} years, correct to the nearest dollar.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {=1-r/100} seen",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for {P} × {=1-r/100}^{n}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round(P*(1-r/100)^n)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using a multiplier of 1.{r} instead of {=1-r/100} was a common error.",
+              "variables": {
+                "P": {
+                  "min": 8000,
+                  "max": 30000,
+                  "step": 500,
+                  "value": 15000
+                },
+                "r": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                },
+                "n": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "P * (1 - r/100)^n",
+              "correctAnswer": "10222.1",
+              "tolerance": 0.5
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "The length and width of a rectangle are {L} cm and {W} cm, each correct to the nearest centimetre. Calculate the upper bound of the area, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {=L+0.5} × {=W+0.5}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(L+0.5)*(W+0.5)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates calculated the area first and then added 0.5.",
+              "variables": {
+                "L": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                },
+                "W": {
+                  "min": 3,
+                  "max": 12,
+                  "step": 1,
+                  "value": 7
+                }
+              },
+              "answerExpression": "(L + 0.5) * (W + 0.5)",
+              "correctAnswer": "93.75",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "Solve {a}x² + {b}x − {c} = 0, giving the positive solution correct to 2 decimal places.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for √({b}² − 4 × {a} × (−{c})) = √{=b^2+4*a*c}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for (−{b} + √{=b^2+4*a*c}) ÷ (2 × {a})",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=round((-b+sqrt(b^2+4*a*c))/(2*a), 2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sign errors with −4ac when c is negative were common. Write down the values of a, b and c before substituting.",
+              "variables": {
+                "a": {
+                  "min": 1,
+                  "max": 5,
+                  "step": 1,
+                  "value": 2
+                },
+                "b": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 5
+                },
+                "c": {
+                  "min": 1,
+                  "max": 9,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "(-b + sqrt(b^2 + 4*a*c)) / (2*a)",
+              "correctAnswer": "0.637459",
+              "tolerance": 0.01
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "The lines y = {m}x + {c} and y = {n} − x intersect at P. Find the x-coordinate of P.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {m}x + {c} = {n} − x",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(n-c)/(m+1)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates equated the expressions. Errors came from moving terms across the equals sign.",
+              "variables": {
+                "m": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 2
+                },
+                "c": {
+                  "min": 1,
+                  "max": 7,
+                  "step": 1,
+                  "value": 3
+                },
+                "n": {
+                  "min": 8,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "(n - c) / (m + 1)",
+              "correctAnswer": "3",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "Two triangles are similar. Corresponding sides have lengths {a} cm and {b} cm. The area of the smaller triangle is {A} cm². Calculate the area of the larger triangle, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {A} × ({b}/{a})²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=A*(b/a)^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using the length scale factor without squaring was the most common error.",
+              "variables": {
+                "a": {
+                  "min": 3,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                },
+                "b": {
+                  "min": 9,
+                  "max": 15,
+                  "step": 1,
+                  "value": 10
+                },
+                "A": {
+                  "min": 10,
+                  "max": 60,
+                  "step": 2,
+                  "value": 24
+                }
+              },
+              "answerExpression": "A * (b / a)^2",
+              "correctAnswer": "150",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A sector of a circle has radius {r} cm and angle {t}°. Calculate the area of the sector, in cm².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for ({t}/360) × π × {r}²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=t/360*pi*r^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered.",
+              "variables": {
+                "r": {
+                  "min": 3,
+                  "max": 15,
+                  "step": 0.5,
+                  "value": 8
+                },
+                "t": {
+                  "min": 20,
+                  "max": 300,
+                  "step": 5,
+                  "value": 75
+                }
+              },
+              "answerExpression": "t / 360 * pi * r^2",
+              "correctAnswer": "41.8879",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A solid hemisphere has radius {r} cm. Calculate its total surface area, including the flat face, in cm².",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for curved surface ½ × 4 × π × {r}²",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for flat face π × {r}²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=3*pi*r^2}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates omitted the circular flat face.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 0.5,
+                  "value": 5
+                }
+              },
+              "answerExpression": "3 * pi * r^2",
+              "correctAnswer": "235.619",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A cone has base radius {r} cm and perpendicular height {h} cm. Calculate its curved surface area, in cm².",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for slant height l = √({r}² + {h}²)",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for π × {r} × their l",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=pi*r*sqrt(r^2+h^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using the perpendicular height instead of the slant height was a common error.",
+              "variables": {
+                "r": {
+                  "min": 3,
+                  "max": 10,
+                  "step": 1,
+                  "value": 5
+                },
+                "h": {
+                  "min": 6,
+                  "max": 20,
+                  "step": 1,
+                  "value": 12
+                }
+              },
+              "answerExpression": "pi * r * sqrt(r^2 + h^2)",
+              "correctAnswer": "204.204",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A cylinder of radius {=r+d} cm contains water. A solid metal sphere of radius {r} cm is placed in the water and is completely covered. Calculate the rise in the water level, in cm.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for volume of sphere (4/3) × π × {r}³",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for their volume ÷ (π × {=r+d}²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=4*r^3/(3*(r+d)^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Equating the volume of the sphere with the volume of water displaced is the key idea.",
+              "variables": {
+                "r": {
+                  "min": 1,
+                  "max": 4,
+                  "step": 0.5,
+                  "value": 3
+                },
+                "d": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "4 * r^3 / (3 * (r + d)^2)",
+              "correctAnswer": "1",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "In triangle ABC, angle A = {A}°, angle B = {B}° and BC = {a} cm. Calculate AC, in cm.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for AC/sin {B} = {a}/sin {A}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for AC = {a} × sin {B} ÷ sin {A}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=a*sin(B*pi/180)/sin(A*pi/180)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who labelled sides with the opposite angles' letters made fewer errors pairing them up.",
+              "variables": {
+                "A": {
+                  "min": 30,
+                  "max": 80,
+                  "step": 1,
+                  "value": 50
+                },
+                "B": {
+                  "min": 30,
+                  "max": 80,
+                  "step": 1,
+                  "value": 65
+                },
+                "a": {
+                  "min": 5,
+                  "max": 20,
+                  "step": 0.5,
+                  "value": 9
+                }
+              },
+              "answerExpression": "a * sin(B*pi/180) / sin(A*pi/180)",
+              "correctAnswer": "10.6479",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "In triangle PQR, PQ = {c} cm, QR = {a} cm and PR = {b} cm. Calculate angle PRQ, in degrees.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M2 for cos R = ({a}² + {b}² − {c}²) ÷ (2 × {a} × {b})",
+                  "marks": 2
+                },
+                {
+                  "text": "A1 for {=acos((a^2+b^2-c^2)/(2*a*b))*180/pi}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The angle must be opposite the side that appears with the minus sign. Some used the wrong side.",
+              "variables": {
+                "a": {
+                  "min": 5,
+                  "max": 9,
+                  "step": 1,
+                  "value": 7
+                },
+                "b": {
+                  "min": 6,
+                  "max": 10,
+                  "step": 1,
+                  "value": 8
+                },
+                "c": {
+                  "min": 6,
+                  "max": 10,
+                  "step": 1,
+                  "value": 9
+                }
+              },
+              "answerExpression": "acos((a^2 + b^2 - c^2) / (2*a*b)) * 180 / pi",
+              "correctAnswer": "73.3985",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A cuboid measures {l} cm by {w} cm by {h} cm. Calculate the length of a diagonal joining opposite corners of the cuboid, in cm.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {l}² + {w}² (= {=l^2+w^2})",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for adding {h}² and taking the square root",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt(l^2+w^2+h^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates found only the diagonal of the base.",
+              "variables": {
+                "l": {
+                  "min": 4,
+                  "max": 15,
+                  "step": 1,
+                  "value": 8
+                },
+                "w": {
+                  "min": 3,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                },
+                "h": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "sqrt(l^2 + w^2 + h^2)",
+              "correctAnswer": "11.1803",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A cuboid measures {l} cm by {w} cm by {h} cm. Calculate the angle between a diagonal of the cuboid and its base, in degrees.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for base diagonal √({l}² + {w}²) = {=sqrt(l^2+w^2)}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for tan θ = {h} ÷ their base diagonal",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=atan(h/sqrt(l^2+w^2))*180/pi}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Identifying the right-angled triangle containing the required angle is the key step. A sketch helps.",
+              "variables": {
+                "l": {
+                  "min": 4,
+                  "max": 15,
+                  "step": 1,
+                  "value": 8
+                },
+                "w": {
+                  "min": 3,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                },
+                "h": {
+                  "min": 2,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                }
+              },
+              "answerExpression": "atan(h / sqrt(l^2 + w^2)) * 180 / pi",
+              "correctAnswer": "26.5651",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A ship sails {a} km on a bearing of 040° and then {b} km on a bearing of 130°. Calculate its distance from the starting point, in km.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for recognising the angle between the two legs is 90°",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for √({a}² + {b}²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt(a^2+b^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sketch with north lines shows the right angle. Some candidates used the cosine rule with an incorrect angle.",
+              "variables": {
+                "a": {
+                  "min": 5,
+                  "max": 30,
+                  "step": 1,
+                  "value": 12
+                },
+                "b": {
+                  "min": 5,
+                  "max": 30,
+                  "step": 1,
+                  "value": 9
+                }
+              },
+              "answerExpression": "sqrt(a^2 + b^2)",
+              "correctAnswer": "15",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "p = ({x}, −{y}) as a column vector. Calculate |p|, in its simplest form or correct to 3 significant figures.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for √({x}² + {y}²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt(x^2+y^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates subtracted the squares because of the negative component.",
+              "variables": {
+                "x": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 5
+                },
+                "y": {
+                  "min": 1,
+                  "max": 12,
+                  "step": 1,
+                  "value": 7
+                }
+              },
+              "answerExpression": "sqrt(x^2 + y^2)",
+              "correctAnswer": "8.60233",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "a = ({p}, {q}) and b = ({r}, −{s}) as column vectors. Calculate |a − b|, correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for a − b = ({=p-r}, {=q+s})",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for √(({=p-r})² + {=q+s}²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=sqrt((p-r)^2+(q+s)^2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Errors in subtracting a negative component were common.",
+              "variables": {
+                "p": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 4
+                },
+                "q": {
+                  "min": 1,
+                  "max": 8,
+                  "step": 1,
+                  "value": 2
+                },
+                "r": {
+                  "min": -4,
+                  "max": 4,
+                  "step": 1,
+                  "value": 1
+                },
+                "s": {
+                  "min": 1,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "sqrt((p - r)^2 + (q + s)^2)",
+              "correctAnswer": "5.83095",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "The probability that it rains on a given day is {p}. If it rains, the probability that Ana is late is {a}. If it does not rain, the probability that she is late is {b}. Find the probability that Ana is late.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {p} × {a}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for {=1-p} × {b}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=p*a+(1-p)*b}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A tree diagram helps. Many candidates found only one of the two branches.",
+              "variables": {
+                "p": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.3
+                },
+                "a": {
+                  "min": 0.3,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.4
+                },
+                "b": {
+                  "min": 0.05,
+                  "max": 0.25,
+                  "step": 0.05,
+                  "value": 0.1
+                }
+              },
+              "answerExpression": "p*a + (1 - p)*b",
+              "correctAnswer": "0.19",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "The probability that it rains on a given day is {p}. If it rains, the probability that Ana is late is {a}. If it does not rain, the probability that she is late is {b}. Given that Ana is late, find the probability that it rained.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for P(late) = {=p*a+(1-p)*b}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for {=p*a} ÷ their P(late)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=p*a/(p*a+(1-p)*b)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger candidates recognised the conditional probability and divided by P(late). Many simply gave {=p*a}.",
+              "variables": {
+                "p": {
+                  "min": 0.1,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.3
+                },
+                "a": {
+                  "min": 0.3,
+                  "max": 0.6,
+                  "step": 0.05,
+                  "value": 0.4
+                },
+                "b": {
+                  "min": 0.05,
+                  "max": 0.25,
+                  "step": 0.05,
+                  "value": 0.1
+                }
+              },
+              "answerExpression": "p*a / (p*a + (1 - p)*b)",
+              "correctAnswer": "0.631579",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "A box contains {r} red pens and {b} blue pens. Two pens are taken at random without replacement. Find the probability that both are blue. Give your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {b}/{=r+b}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for × {=b-1}/{=r+b-1}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=b*(b-1)/((r+b)*(r+b-1))}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates forgot that there are fewer pens for the second pick.",
+              "variables": {
+                "r": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 6
+                },
+                "b": {
+                  "min": 2,
+                  "max": 10,
+                  "step": 1,
+                  "value": 4
+                }
+              },
+              "answerExpression": "b * (b - 1) / ((r + b) * (r + b - 1))",
+              "correctAnswer": "0.133333",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "A fair six-sided dice is thrown {n} times. Find the probability of getting at least one six. Give your answer correct to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for (5/6)^{n}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for 1 − their probability",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=1-(5/6)^n}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using 1 − P(no sixes) is much quicker than listing all the cases.",
+              "variables": {
+                "n": {
+                  "min": 2,
+                  "max": 6,
+                  "step": 1,
+                  "value": 3
+                }
+              },
+              "answerExpression": "1 - (5/6)^n",
+              "correctAnswer": "0.421296",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "On a histogram, the class 10 < t ≤ 25 has a frequency density of {d}. Find the frequency of this class.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {d} × 15",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=15*d}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Frequency = frequency density × class width. Some candidates used 25 as the class width.",
+              "variables": {
+                "d": {
+                  "min": 0.4,
+                  "max": 4,
+                  "step": 0.2,
+                  "value": 1.6
+                }
+              },
+              "answerExpression": "15 * d",
+              "correctAnswer": "24",
+              "tolerance": 0.001
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A group of {n1} students has a mean mark of {m1}. Another group of {n2} students has a mean mark of {m2}. Calculate the mean mark of all {=n1+n2} students.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "M1 for {n1} × {m1} + {n2} × {m2}",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for their total ÷ {=n1+n2}",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for {=(n1*m1+n2*m2)/(n1+n2)}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Averaging the two means, giving {=(m1+m2)/2}, ignores the different group sizes.",
+              "variables": {
+                "n1": {
+                  "min": 10,
+                  "max": 30,
+                  "step": 1,
+                  "value": 20
+                },
+                "m1": {
+                  "min": 40,
+                  "max": 80,
+                  "step": 1,
+                  "value": 62
+                },
+                "n2": {
+                  "min": 10,
+                  "max": 30,
+                  "step": 1,
+                  "value": 15
+                },
+                "m2": {
+                  "min": 40,
+                  "max": 80,
+                  "step": 1,
+                  "value": 55
+                }
+              },
+              "answerExpression": "(n1*m1 + n2*m2) / (n1 + n2)",
+              "correctAnswer": "59",
+              "relativeTolerance": 0.005
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "On a histogram, the class 20 < m ≤ 50 has frequency {f}. Calculate the frequency density of this class.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "markingPoints": [
+                {
+                  "text": "B1 for {=f/30}",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates divided by the upper class boundary, 50, instead of the class width.",
+              "variables": {
+                "f": {
+                  "min": 6,
+                  "max": 60,
+                  "step": 3,
+                  "value": 24
+                }
+              },
+              "answerExpression": "f / 30",
+              "correctAnswer": "0.8",
+              "relativeTolerance": 0.005
             }
           ]
         }
