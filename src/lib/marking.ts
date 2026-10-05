@@ -40,7 +40,7 @@ const SUPERSCRIPTS: Record<string, string> = {
 };
 
 /**
- * Parses "1,250", "-3.5", "3/4", "12 cm", and standard form such as "2.0e11",
+ * Parses "1,250", "-3.5", "3/4", "12 cm", "$31,667", and standard form such as "2.0e11",
  * "2.0 × 10^11", "2.0x10^-5" or "2.0 × 10⁻⁵". Returns null if no number is found.
  */
 export function parseNumeric(raw: string): number | null {
@@ -48,7 +48,8 @@ export function parseNumeric(raw: string): number | null {
     .trim()
     .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]+/g, (sup) => "^" + [...sup].map((c) => SUPERSCRIPTS[c]).join(""))
     .replace(/[\s,]/g, "")
-    .replace(/[−–]/g, "-");
+    .replace(/[−–]/g, "-")
+    .replace(/^(-?)[$£€¥]/, "$1"); // currency sign before the number
   const fraction = text.match(/^(-?\d+(?:\.\d+)?)\/(\d+(?:\.\d+)?)/);
   if (fraction) {
     const denominator = Number(fraction[2]);

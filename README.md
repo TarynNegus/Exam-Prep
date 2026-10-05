@@ -154,7 +154,7 @@ Questions and parts can include figures. Image files (SVG, PNG, JPEG or WebP) li
 "figures": [{ "src": "0625/series-circuit.svg", "alt": "Circuit diagram: a 12 V cell in series with…", "caption": "Fig. 1" }]
 ```
 
-`alt` is required: it describes the figure for students using screen readers. The content tests check that every figure file exists. The sample diagrams are original and are drawn by `scripts/figures/draw_figures.py` (Python with matplotlib), so the values in each graph match its mark scheme.
+`alt` is required: it describes the figure for students using screen readers. The content tests check that every figure file exists. The sample diagrams are original and are drawn by the scripts in `scripts/figures/` (Python with matplotlib, and RDKit for skeletal formulae), so the values in each graph match its mark scheme.
 
 ### Converting licensed Cambridge papers
 
@@ -181,7 +181,7 @@ The content tests (`tests/content.test.ts`) run on every file in `/content`. The
 
 Cambridge past papers, mark schemes, examiner reports and syllabus documents are **copyright of Cambridge University Press & Assessment**. Using them in a commercial, subscription product needs **written permission or a licence from Cambridge**. Do not import real past paper content until you have that permission.
 
-The sample content in `/content` (IGCSE 0460 Geography, 0500 First Language English, 0580 Mathematics, 0610 Biology, 0620 Chemistry and 0625 Physics; AS & A Level 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
+The sample content in `/content` (IGCSE 0460 Geography, 0500 First Language English, 0580 Mathematics, 0610 Biology, 0620 Chemistry and 0625 Physics; AS Level 8021 English General Paper; AS & A Level 9701 Chemistry, 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
 
 The site footer states that the product is not affiliated with or endorsed by Cambridge.
 

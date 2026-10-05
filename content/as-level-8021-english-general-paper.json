@@ -1,0 +1,1221 @@
+{
+  "subject": {
+    "code": "8021",
+    "name": "English General Paper",
+    "qualification": "AS_A_LEVEL",
+    "syllabusYears": "2025-2027",
+    "description": "Cambridge International AS Level English General Paper. Paper 1 is an essay; Paper 2 tests comprehension and the evaluation of information and arguments. Essays are self-marked against a checklist covering selection of evidence, analysis and evaluation, and communication. All passages, scenarios and questions are original practice material written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "topics": [
+    {
+      "ref": "E1",
+      "title": "Essay skills",
+      "summary": "Understanding the question, planning, building an argument and concluding.",
+      "section": "Paper 1: Essay"
+    },
+    {
+      "ref": "E2",
+      "title": "Science, technology and the environment",
+      "summary": "Essays on technology, scientific progress and environmental responsibility.",
+      "section": "Paper 1: Essay"
+    },
+    {
+      "ref": "E3",
+      "title": "Society, culture and the individual",
+      "summary": "Essays on law, family, generations, identity and social change.",
+      "section": "Paper 1: Essay"
+    },
+    {
+      "ref": "E4",
+      "title": "Economics, politics and globalisation",
+      "summary": "Essays on development, trade, tourism, government and international relations.",
+      "section": "Paper 1: Essay"
+    },
+    {
+      "ref": "E5",
+      "title": "The arts, media and language",
+      "summary": "Essays on the arts, news and social media, and language.",
+      "section": "Paper 1: Essay"
+    },
+    {
+      "ref": "C1",
+      "title": "Evaluating information",
+      "summary": "Using data and information to make and justify a decision (Section A).",
+      "section": "Paper 2: Comprehension"
+    },
+    {
+      "ref": "C2",
+      "title": "Understanding a text",
+      "summary": "Explaining the writer's meaning in your own words.",
+      "section": "Paper 2: Comprehension"
+    },
+    {
+      "ref": "C3",
+      "title": "Vocabulary in context",
+      "summary": "The meaning of words and phrases as they are used in a passage.",
+      "section": "Paper 2: Comprehension"
+    },
+    {
+      "ref": "C4",
+      "title": "Summary",
+      "summary": "Selecting relevant points and writing a concise summary in your own words.",
+      "section": "Paper 2: Comprehension"
+    },
+    {
+      "ref": "C5",
+      "title": "Evaluating arguments",
+      "summary": "Assessing how convincing a writer's argument and evidence are.",
+      "section": "Paper 2: Comprehension"
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Essay)",
+      "durationMin": 75,
+      "totalMarks": 30
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Comprehension)",
+      "durationMin": 105,
+      "totalMarks": 50
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: 'Technology has made us more connected but less close.' How far do you agree?",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E2",
+              "prompt": "'Technology has made us more connected but less close.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Strong essays distinguished between the quantity and the quality of contact. Weaker answers listed apps without evaluating their effects."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 1B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: To what extent should individuals, rather than governments, be responsible for protecting the environment?",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E2",
+              "prompt": "To what extent should individuals, rather than governments, be responsible for protecting the environment? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The best responses considered the scale of the problem and what individual action can and cannot achieve, with examples from more than one country."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "C",
+      "title": "Sample Paper 1C (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: Is it ever right to break the law? Discuss.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E3",
+              "prompt": "Is it ever right to break the law? Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Successful essays used historical and contemporary examples and considered who decides whether a law is just."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "D",
+      "title": "Sample Paper 1D (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: 'Older people have more to teach the young than the young have to teach the old.' How far do you agree?",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E3",
+              "prompt": "'Older people have more to teach the young than the young have to teach the old.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Answers that explored different kinds of knowledge, such as experience and technology, produced a more balanced argument."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "E",
+      "title": "Sample Paper 1E (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: Should wealthy countries have a duty to help poorer ones? Discuss.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E4",
+              "prompt": "Should wealthy countries have a duty to help poorer ones? Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Candidates should define what 'help' means: aid, trade, debt relief or migration. Unsupported generalisations limited marks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "F",
+      "title": "Sample Paper 1F (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: To what extent is tourism a benefit to the countries that depend on it?",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E4",
+              "prompt": "To what extent is tourism a benefit to the countries that depend on it? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The strongest answers weighed economic gains against environmental and cultural costs using specific examples."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "G",
+      "title": "Sample Paper 1G (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: 'The arts are a luxury that governments cannot afford.' Discuss.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E5",
+              "prompt": "'The arts are a luxury that governments cannot afford.' Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective essays challenged the word 'luxury' and considered the economic and social value of the arts as well as their cost."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "H",
+      "title": "Sample Paper 1H (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a thesis statement and a four-paragraph plan for an essay on this question: How far can we trust what we read in the news today?",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "a thesis statement that answers the question directly",
+                  "marks": 2
+                },
+                {
+                  "text": "at least three distinct, relevant arguments",
+                  "marks": 2
+                },
+                {
+                  "text": "a counter-argument that is addressed, not just mentioned",
+                  "marks": 1
+                },
+                {
+                  "text": "a logical order that builds towards the conclusion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A plan should show the line of argument, not just a list of ideas. Decide your conclusion before you start writing."
+            },
+            {
+              "label": "(b)",
+              "topic": "E5",
+              "prompt": "How far can we trust what we read in the news today? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Good answers distinguished between types of news source and discussed how readers can evaluate reliability."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Riverside Town Council owns a disused warehouse in the town centre and must choose one of three proposals for it. The council's requirements are:\n• the building cost must be no more than $2.0 million\n• the project must open within 18 months\n• it should benefit as many residents as possible.\n\nProposal A – Youth centre: building cost $1.6 million; opens in 12 months; about 900 visits per week expected; running costs $150 000 per year; supported by 62% of survey respondents aged 16–24 and 35% of all respondents.\nProposal B – Market hall: building cost $2.3 million; opens in 20 months; about 4000 visitors per week expected; would create 40 jobs; supported by 48% of all respondents.\nProposal C – Affordable flats: building cost $1.9 million; opens in 18 months; would house 60 families (about 200 people); supported by 55% of all respondents. There are 1200 families on the town's housing waiting list.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C1",
+              "prompt": "Which proposal does not meet the council's requirements? Give two reasons.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Proposal B: its cost of $2.3 million is over the $2.0 million limit",
+                  "marks": 1
+                },
+                {
+                  "text": "it would take 20 months, longer than 18 months",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "C1",
+              "prompt": "Calculate the building cost of Proposal C per family housed, to the nearest dollar.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "31667",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "M1 for 1 900 000 ÷ 60",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for $31 667",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "C1",
+              "prompt": "The council must choose between Proposals A and C. Which should it choose? Justify your answer using the information provided.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "clear choice",
+                  "marks": 1
+                },
+                {
+                  "text": "uses the cost information, e.g. A is cheaper but has running costs of $150 000 a year",
+                  "marks": 1
+                },
+                {
+                  "text": "uses the timescale, e.g. A opens 6 months sooner",
+                  "marks": 1
+                },
+                {
+                  "text": "compares how many people benefit and how: 900 visits a week vs 60 families",
+                  "marks": 1
+                },
+                {
+                  "text": "uses the survey support figures, noting C has wider support (55% vs 35%)",
+                  "marks": 1
+                },
+                {
+                  "text": "considers the scale of need: 1200 families waiting",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a justified conclusion that weighs the criteria against each other",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best answers weighed both proposals against all three requirements rather than listing advantages of one."
+            },
+            {
+              "label": "(d)",
+              "topic": "C1",
+              "prompt": "Identify two further pieces of information that would help the council make its decision, and explain why each would be useful.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "e.g. the running costs of Proposal C",
+                  "marks": 1
+                },
+                {
+                  "text": "e.g. how many different young people would use the youth centre, rather than total visits",
+                  "marks": 1
+                },
+                {
+                  "text": "e.g. the size and representativeness of the survey",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each piece of information must be linked to the decision."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "The Case for Slow Cities\n\n1 Walk through the centre of almost any large city at eight in the morning and you will feel it: the relentless push of traffic, the commuters checking their phones as they hurry between appointments, the sense that everyone is late for something. For many residents, the city has become a machine designed to move people as quickly as possible, rather than a place in which to live.\n\n2 The slow city movement, which began in a handful of small Italian towns in the late 1990s, offers an alternative. Member towns commit to reducing traffic, protecting local shops and markets, and creating public spaces where people are encouraged to linger rather than pass through. Speed limits are lowered, pavements are widened, and new buildings must respect the character of the old.\n\n3 Supporters point to striking results. Where streets have been given back to pedestrians, local businesses often report higher takings, because people who walk tend to stop and spend more than people who drive past. Paradoxically, slowing traffic can make journeys feel shorter: residents who once spent an hour in queues find they can walk to most of what they need in fifteen minutes.\n\n4 There are health benefits too. Cities that curtail car use see measurable falls in air pollution and road injuries, and residents who walk or cycle every day are less likely to suffer from heart disease. Some studies suggest that people in quieter neighbourhoods also know more of their neighbours and feel less lonely.\n\n5 Critics argue that the model works only in small, wealthy towns. Large cities, they say, depend on fast transport to function, and lower speed limits simply push congestion elsewhere. Yet the ubiquitous assumption that faster is always better deserves to be questioned. A city that moves a little more slowly may, in the end, be one that works better for the people who live in it.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain why the writer says many cities feel 'relentless' (paragraph 1).",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "traffic and people are constantly in a hurry / there is no let-up",
+                  "marks": 1
+                },
+                {
+                  "text": "the city is organised for moving people quickly rather than for living in",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Lifting phrases from the passage limits the marks."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "Explain the paradox the writer describes in paragraph 3.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "slowing traffic would be expected to make journeys longer",
+                  "marks": 1
+                },
+                {
+                  "text": "but journeys feel shorter because people can walk to what they need quickly instead of queuing in traffic",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A paradox needs both halves: what is expected and what actually happens."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'curtail' as used in paragraph 4?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "celebrate"
+                },
+                {
+                  "key": "B",
+                  "text": "extend"
+                },
+                {
+                  "key": "C",
+                  "text": "limit"
+                },
+                {
+                  "key": "D",
+                  "text": "measure"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – limit",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'ubiquitous' as used in paragraph 5?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "dangerous"
+                },
+                {
+                  "key": "B",
+                  "text": "found everywhere"
+                },
+                {
+                  "key": "C",
+                  "text": "old-fashioned"
+                },
+                {
+                  "key": "D",
+                  "text": "rarely questioned"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – found everywhere",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Rarely questioned' fits the context but is not the meaning of the word."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 2 to 5, summarise the benefits of the slow city approach. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "less traffic",
+                  "marks": 1
+                },
+                {
+                  "text": "local shops and markets protected",
+                  "marks": 1
+                },
+                {
+                  "text": "public spaces where people spend time",
+                  "marks": 1
+                },
+                {
+                  "text": "local businesses earn more",
+                  "marks": 1
+                },
+                {
+                  "text": "everyday needs within a short walk / journeys feel shorter",
+                  "marks": 1
+                },
+                {
+                  "text": "cleaner air",
+                  "marks": 1
+                },
+                {
+                  "text": "fewer road injuries",
+                  "marks": 1
+                },
+                {
+                  "text": "lower risk of heart disease",
+                  "marks": 1
+                },
+                {
+                  "text": "residents know their neighbours and are less lonely",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within 120 words",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Including the critics' views from paragraph 5 did not answer the question."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "How convincing do you find the writer's argument for slow cities? Refer to the passage and your own knowledge.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the writer's main claims accurately",
+                  "marks": 1
+                },
+                {
+                  "text": "assesses the evidence offered, e.g. whether examples are specific or general",
+                  "marks": 2
+                },
+                {
+                  "text": "considers counter-arguments or limitations the writer acknowledges or ignores",
+                  "marks": 1
+                },
+                {
+                  "text": "refers to your own knowledge or experience to test the argument",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified overall judgement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers noted that the evidence is often general ('some studies suggest') and tested it against cities they knew."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "Identify one assumption the writer makes in paragraph 3, and explain why it might be questioned.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "e.g. that pedestrians spend more than drivers in all kinds of town",
+                  "marks": 1
+                },
+                {
+                  "text": "explains why it may not hold, e.g. large purchases need cars, or results may differ in big cities",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "B",
+      "title": "Sample Paper 2B (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "A school must choose an electricity supplier for the next three years. It uses 50 000 kWh of electricity per year. The governors require:\n• a total cost over three years of less than $28 000\n• at least 50% of the electricity from renewable sources.\n\nSupplier X: $0.18 per kWh, fixed for three years; standing charge $500 per year; 100% renewable.\nSupplier Y: $0.15 per kWh, fixed for three years; standing charge $800 per year; 40% renewable.\nSupplier Z: $0.16 per kWh in the first year, rising by 10% each year; no standing charge; 70% renewable. Supplier Z has been trading for only one year.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C1",
+              "prompt": "Calculate the total cost of Supplier X over three years, in dollars.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "28500",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "M1 for 3 × (0.18 × 50 000 + 500)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for $28 500",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "C1",
+              "prompt": "Calculate the total cost of Supplier Z over three years, in dollars.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "26480",
+              "tolerance": 1,
+              "markingPoints": [
+                {
+                  "text": "M1 for year 1 cost of $8000",
+                  "marks": 1
+                },
+                {
+                  "text": "M1 for $8800 and $9680 in years 2 and 3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for $26 480",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A 10% rise each year compounds: the third year is 0.16 × 1.1²."
+            },
+            {
+              "label": "(c)",
+              "topic": "C1",
+              "prompt": "Which supplier should the school choose? Justify your answer.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Supplier Z",
+                  "marks": 1
+                },
+                {
+                  "text": "X fails the cost requirement ($28 500)",
+                  "marks": 1
+                },
+                {
+                  "text": "Y fails the renewable requirement (40%)",
+                  "marks": 1
+                },
+                {
+                  "text": "Z meets both: $26 480 and 70% renewable",
+                  "marks": 1
+                },
+                {
+                  "text": "notes a risk, e.g. Z has traded for only one year, or prices may rise further after three years",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best answers checked every supplier against both requirements."
+            },
+            {
+              "label": "(d)",
+              "topic": "C1",
+              "prompt": "Identify one weakness of the information provided and explain how it could affect the decision.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "e.g. the school's electricity use may change",
+                  "marks": 1
+                },
+                {
+                  "text": "explains the effect, e.g. higher use would increase Z's cost more because of rising prices",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "The Quiet Value of Boredom\n\n1 We have never been less bored. A phone in every pocket means that any moment of waiting – at a bus stop, in a queue, during an advertisement break – can be filled instantly with messages, videos or games. For most people this seems an unambiguous improvement. Why endure ten empty minutes when you could fill them?\n\n2 Yet psychologists are increasingly wary of this constant stimulation. In one widely reported experiment, volunteers who were first given a dull task, such as copying numbers from a telephone directory, then came up with more creative ideas than volunteers who had not been bored. Boredom, it seems, prompts the mind to wander, and a wandering mind makes unexpected connections.\n\n3 Boredom may also be a useful signal. Just as hunger tells us to eat, the restless discomfort of boredom tells us that what we are doing is no longer meeting our needs. People who never allow themselves to feel bored may miss that signal, drifting from one distraction to the next without asking whether they would rather be doing something else entirely.\n\n4 None of this means that boredom is always beneficial. Chronic boredom, at school or in an unfulfilling job, is associated with lower motivation and poorer wellbeing, and it would be absurd to romanticise it. The point is subtler: brief periods of unoccupied time are not a problem to be eliminated, but an opportunity.\n\n5 Parents and teachers might therefore resist the urge to fill every gap in a child's day with organised activities. A child left alone on a rainy afternoon with nothing to do may complain loudly at first, but will often end up inventing a game, building something or simply thinking. Those moments are harder to come by than ever, and they may be worth protecting.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "According to paragraph 1, why do most people see having fewer moments of boredom as an improvement? Use your own words.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "any waiting time can be filled immediately",
+                  "marks": 1
+                },
+                {
+                  "text": "so time no longer feels empty or wasted",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain what the experiment in paragraph 2 suggested.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "people who first did a tedious task produced more original ideas",
+                  "marks": 1
+                },
+                {
+                  "text": "because boredom lets the mind wander and make new links",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Explain the result and the reason for it."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'unambiguous' as used in paragraph 1?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "clear"
+                },
+                {
+                  "key": "B",
+                  "text": "doubtful"
+                },
+                {
+                  "key": "C",
+                  "text": "recent"
+                },
+                {
+                  "key": "D",
+                  "text": "small"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – clear",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'romanticise' as used in paragraph 4?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "fall in love with"
+                },
+                {
+                  "key": "B",
+                  "text": "make something seem better than it really is"
+                },
+                {
+                  "key": "C",
+                  "text": "write about"
+                },
+                {
+                  "key": "D",
+                  "text": "complain about"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – make something seem better than it really is",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A is a common meaning of 'romance' but does not fit this context."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 2 to 4, summarise what the writer says about the benefits and drawbacks of boredom. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "boredom can lead to more creative thinking",
+                  "marks": 1
+                },
+                {
+                  "text": "a wandering mind makes new connections",
+                  "marks": 1
+                },
+                {
+                  "text": "boredom signals that an activity no longer meets our needs",
+                  "marks": 1
+                },
+                {
+                  "text": "people who avoid boredom may never question what they are doing",
+                  "marks": 1
+                },
+                {
+                  "text": "long-term boredom reduces motivation",
+                  "marks": 1
+                },
+                {
+                  "text": "and harms wellbeing",
+                  "marks": 1
+                },
+                {
+                  "text": "short spells of unoccupied time are an opportunity",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within 120 words",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Both benefits and drawbacks were required for full marks."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "How far do you agree with the writer's view in paragraph 5? Refer to the passage and your own experience.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the writer's main claims accurately",
+                  "marks": 1
+                },
+                {
+                  "text": "assesses the evidence offered, e.g. whether examples are specific or general",
+                  "marks": 2
+                },
+                {
+                  "text": "considers counter-arguments or limitations the writer acknowledges or ignores",
+                  "marks": 1
+                },
+                {
+                  "text": "refers to your own knowledge or experience to test the argument",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified overall judgement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Personal experience is valuable when it is used to test the writer's claims, not simply described."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "Explain why the writer compares boredom to hunger in paragraph 3. How effective is the comparison?",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "both are uncomfortable feelings that signal a need",
+                  "marks": 1
+                },
+                {
+                  "text": "the comparison makes boredom seem natural and useful rather than a problem",
+                  "marks": 1
+                },
+                {
+                  "text": "evaluation, e.g. effective because familiar, but hunger has a clear solution while boredom's 'need' is vague",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Evaluation should consider limits of the comparison as well as its strengths."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

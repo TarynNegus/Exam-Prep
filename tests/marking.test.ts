@@ -19,6 +19,9 @@ describe("parseNumeric", () => {
     ["2.0x10^-5", 2.0e-5],
     ["6.2 × 10⁻²¹ J", 6.2e-21],
     ["−4", -4],
+    ["$31,667", 31667],
+    ["£4.50", 4.5],
+    ["-$20", -20],
   ])("parses %j", (input, expected) => {
     expect(parseNumeric(input)).toBe(expected);
   });
