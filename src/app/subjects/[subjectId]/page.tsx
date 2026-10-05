@@ -157,7 +157,7 @@ export default async function SubjectPage({
                       </div>
                       <div className="shrink-0">
                         {topic.progress.totalParts === 0 ? (
-                          <Badge>Questions coming soon</Badge>
+                          <Badge>{route ? "Not in your papers" : "Questions coming soon"}</Badge>
                         ) : !topic.inPlan ? (
                           <Link href="/billing" className="btn-secondary">
                             Upgrade to unlock

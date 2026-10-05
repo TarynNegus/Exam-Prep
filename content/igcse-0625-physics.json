@@ -1,0 +1,3276 @@
+{
+  "subject": {
+    "code": "0625",
+    "name": "Physics",
+    "qualification": "IGCSE",
+    "syllabusYears": "2026-2028",
+    "description": "Cambridge IGCSE Physics. Core students take Papers 1 and 3; Extended students take Papers 2 and 4. Momentum (1.6) is Extended content only. Calculations use g = 9.8 N/kg, and you can type answers in standard form, for example 3.0e8. The practical papers (5 and 6) are not included. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "routes": [
+    {
+      "id": "core",
+      "name": "Core: Papers 1 and 3",
+      "components": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "id": "extended",
+      "name": "Extended: Papers 2 and 4",
+      "components": [
+        "2",
+        "4"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "ref": "1.1",
+      "title": "Physical quantities and measurement techniques",
+      "summary": "Measuring length, volume and time; scalars and vectors.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.2",
+      "title": "Motion",
+      "summary": "Speed, velocity, acceleration, distance–time and speed–time graphs.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.3",
+      "title": "Mass and weight",
+      "summary": "Mass, weight and gravitational field strength.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.4",
+      "title": "Density",
+      "summary": "Calculating and measuring density; floating and sinking.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.5",
+      "title": "Forces",
+      "summary": "Effects of forces, turning effect, centre of gravity.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.6",
+      "title": "Momentum",
+      "summary": "Momentum, impulse and conservation of momentum (Extended).",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.7",
+      "title": "Energy, work and power",
+      "summary": "Energy stores and transfers, work, power, energy resources.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "1.8",
+      "title": "Pressure",
+      "summary": "Pressure on surfaces and in liquids.",
+      "section": "Motion, forces and energy"
+    },
+    {
+      "ref": "2.1",
+      "title": "Kinetic particle model of matter",
+      "summary": "States of matter, particle model, gases and pressure.",
+      "section": "Thermal physics"
+    },
+    {
+      "ref": "2.2",
+      "title": "Thermal properties and temperature",
+      "summary": "Thermal expansion, specific heat capacity, melting, boiling and evaporation.",
+      "section": "Thermal physics"
+    },
+    {
+      "ref": "2.3",
+      "title": "Transfer of thermal energy",
+      "summary": "Conduction, convection and radiation.",
+      "section": "Thermal physics"
+    },
+    {
+      "ref": "3.1",
+      "title": "General properties of waves",
+      "summary": "Wave motion, transverse and longitudinal waves, reflection, refraction, diffraction.",
+      "section": "Waves"
+    },
+    {
+      "ref": "3.2",
+      "title": "Light",
+      "summary": "Reflection, refraction, thin lenses, dispersion.",
+      "section": "Waves"
+    },
+    {
+      "ref": "3.3",
+      "title": "Electromagnetic spectrum",
+      "summary": "Regions, uses and dangers of electromagnetic waves.",
+      "section": "Waves"
+    },
+    {
+      "ref": "3.4",
+      "title": "Sound",
+      "summary": "Production, speed and reflection of sound; ultrasound.",
+      "section": "Waves"
+    },
+    {
+      "ref": "4.1",
+      "title": "Simple phenomena of magnetism",
+      "summary": "Magnets, magnetic fields and materials.",
+      "section": "Electricity and magnetism"
+    },
+    {
+      "ref": "4.2",
+      "title": "Electrical quantities",
+      "summary": "Charge, current, e.m.f., potential difference, resistance, energy and power.",
+      "section": "Electricity and magnetism"
+    },
+    {
+      "ref": "4.3",
+      "title": "Electric circuits",
+      "summary": "Series and parallel circuits, potential dividers.",
+      "section": "Electricity and magnetism"
+    },
+    {
+      "ref": "4.4",
+      "title": "Electrical safety",
+      "summary": "Hazards, fuses, circuit breakers and earthing.",
+      "section": "Electricity and magnetism"
+    },
+    {
+      "ref": "4.5",
+      "title": "Electromagnetic effects",
+      "summary": "Induction, the a.c. generator, motors, transformers.",
+      "section": "Electricity and magnetism"
+    },
+    {
+      "ref": "5.1",
+      "title": "The nuclear model of the atom",
+      "summary": "Atomic structure, nuclide notation, the nucleus.",
+      "section": "Nuclear physics"
+    },
+    {
+      "ref": "5.2",
+      "title": "Radioactivity",
+      "summary": "Detection, types of emission, decay, half-life, safety.",
+      "section": "Nuclear physics"
+    },
+    {
+      "ref": "6.1",
+      "title": "Earth and the Solar System",
+      "summary": "The Earth, the Moon, the Sun and planets, orbits.",
+      "section": "Space physics"
+    },
+    {
+      "ref": "6.2",
+      "title": "Stars and the Universe",
+      "summary": "The Sun as a star, stellar life cycles, the Universe and the Big Bang.",
+      "section": "Space physics"
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Multiple Choice, Core)",
+      "durationMin": 45,
+      "totalMarks": 40
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (Multiple Choice, Extended)",
+      "durationMin": 45,
+      "totalMarks": 40
+    },
+    {
+      "ref": "3",
+      "title": "Paper 3 (Theory, Core)",
+      "durationMin": 75,
+      "totalMarks": 80
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (Theory, Extended)",
+      "durationMin": 75,
+      "totalMarks": 80
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Which quantity is a vector?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "energy"
+                },
+                {
+                  "key": "B",
+                  "text": "mass"
+                },
+                {
+                  "key": "C",
+                  "text": "speed"
+                },
+                {
+                  "key": "D",
+                  "text": "velocity"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – velocity",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Velocity has direction; speed does not."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.2",
+              "prompt": "A car travels 150 m in 10 s. What is its average speed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.067 m/s"
+                },
+                {
+                  "key": "B",
+                  "text": "15 m/s"
+                },
+                {
+                  "key": "C",
+                  "text": "140 m/s"
+                },
+                {
+                  "key": "D",
+                  "text": "1500 m/s"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 15 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "speed = distance ÷ time."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.3",
+              "prompt": "What is the weight of a 5.0 kg mass on Earth? (g = 9.8 N/kg)",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.51 N"
+                },
+                {
+                  "key": "B",
+                  "text": "5.0 N"
+                },
+                {
+                  "key": "C",
+                  "text": "14.8 N"
+                },
+                {
+                  "key": "D",
+                  "text": "49 N"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 49 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "W = mg."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.4",
+              "prompt": "A block has a mass of 200 g and a volume of 25 cm³. What is its density?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.125 g/cm³"
+                },
+                {
+                  "key": "B",
+                  "text": "8.0 g/cm³"
+                },
+                {
+                  "key": "C",
+                  "text": "175 g/cm³"
+                },
+                {
+                  "key": "D",
+                  "text": "5000 g/cm³"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 8.0 g/cm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "density = mass ÷ volume."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.5",
+              "prompt": "A spring extends by 2.0 cm for each 1.0 N of load, within its limit of proportionality. What is its extension with a 3.0 N load?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1.5 cm"
+                },
+                {
+                  "key": "B",
+                  "text": "3.0 cm"
+                },
+                {
+                  "key": "C",
+                  "text": "5.0 cm"
+                },
+                {
+                  "key": "D",
+                  "text": "6.0 cm"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 6.0 cm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The extension is proportional to the load."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.7",
+              "prompt": "In which energy store is energy kept in a stretched spring?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chemical"
+                },
+                {
+                  "key": "B",
+                  "text": "elastic (strain)"
+                },
+                {
+                  "key": "C",
+                  "text": "gravitational potential"
+                },
+                {
+                  "key": "D",
+                  "text": "kinetic"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – elastic (strain)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.8",
+              "prompt": "A force of 600 N acts on an area of 0.20 m². What is the pressure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "120 Pa"
+                },
+                {
+                  "key": "B",
+                  "text": "600 Pa"
+                },
+                {
+                  "key": "C",
+                  "text": "3000 Pa"
+                },
+                {
+                  "key": "D",
+                  "text": "6000 Pa"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 3000 Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "p = F ÷ A."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "What causes the pressure of a gas on the walls of its container?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "particles colliding with the walls"
+                },
+                {
+                  "key": "B",
+                  "text": "particles expanding"
+                },
+                {
+                  "key": "C",
+                  "text": "particles attracting the walls"
+                },
+                {
+                  "key": "D",
+                  "text": "particles stopping at the walls"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – particles colliding with the walls",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.2",
+              "prompt": "Why are small gaps left between sections of railway track?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to allow for thermal expansion"
+                },
+                {
+                  "key": "B",
+                  "text": "to drain rainwater"
+                },
+                {
+                  "key": "C",
+                  "text": "to reduce friction"
+                },
+                {
+                  "key": "D",
+                  "text": "to save metal"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – to allow for thermal expansion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.3",
+              "prompt": "Which process can transfer thermal energy through a vacuum?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "conduction"
+                },
+                {
+                  "key": "B",
+                  "text": "convection"
+                },
+                {
+                  "key": "C",
+                  "text": "evaporation"
+                },
+                {
+                  "key": "D",
+                  "text": "radiation"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – radiation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Conduction and convection need particles."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.1",
+              "prompt": "A wave has a frequency of 5.0 Hz and a wavelength of 2.0 m. What is its speed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.40 m/s"
+                },
+                {
+                  "key": "B",
+                  "text": "2.5 m/s"
+                },
+                {
+                  "key": "C",
+                  "text": "7.0 m/s"
+                },
+                {
+                  "key": "D",
+                  "text": "10 m/s"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 10 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "v = fλ."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.2",
+              "prompt": "Light strikes a plane mirror with an angle of incidence of 30°. What is the angle of reflection?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "30°"
+                },
+                {
+                  "key": "B",
+                  "text": "60°"
+                },
+                {
+                  "key": "C",
+                  "text": "90°"
+                },
+                {
+                  "key": "D",
+                  "text": "120°"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – 30°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Angles are measured from the normal."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.3",
+              "prompt": "Which part of the electromagnetic spectrum has the longest wavelength?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "gamma rays"
+                },
+                {
+                  "key": "B",
+                  "text": "radio waves"
+                },
+                {
+                  "key": "C",
+                  "text": "ultraviolet"
+                },
+                {
+                  "key": "D",
+                  "text": "X-rays"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – radio waves",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.4",
+              "prompt": "What is the approximate range of human hearing?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "2 Hz to 2000 Hz"
+                },
+                {
+                  "key": "B",
+                  "text": "20 Hz to 20 000 Hz"
+                },
+                {
+                  "key": "C",
+                  "text": "200 Hz to 200 000 Hz"
+                },
+                {
+                  "key": "D",
+                  "text": "20 kHz to 200 kHz"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 20 Hz to 20 000 Hz",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.1",
+              "prompt": "Two magnets are placed with their north poles facing each other. What happens?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They attract."
+                },
+                {
+                  "key": "B",
+                  "text": "They repel."
+                },
+                {
+                  "key": "C",
+                  "text": "Nothing happens."
+                },
+                {
+                  "key": "D",
+                  "text": "They attract, then repel."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – They repel.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Like poles repel."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.2",
+              "prompt": "How is an ammeter connected to measure the current through a lamp?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "in parallel with the lamp"
+                },
+                {
+                  "key": "B",
+                  "text": "in series with the lamp"
+                },
+                {
+                  "key": "C",
+                  "text": "across the battery"
+                },
+                {
+                  "key": "D",
+                  "text": "in parallel with the battery"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – in series with the lamp",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Voltmeters are connected in parallel."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.3",
+              "prompt": "A 2.0 Ω resistor and a 4.0 Ω resistor are connected in series. What is the combined resistance?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1.3 Ω"
+                },
+                {
+                  "key": "B",
+                  "text": "2.0 Ω"
+                },
+                {
+                  "key": "C",
+                  "text": "6.0 Ω"
+                },
+                {
+                  "key": "D",
+                  "text": "8.0 Ω"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 6.0 Ω",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Resistances in series add."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.4",
+              "prompt": "What is the purpose of a fuse in a plug?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to earth the appliance"
+                },
+                {
+                  "key": "B",
+                  "text": "to increase the current"
+                },
+                {
+                  "key": "C",
+                  "text": "to melt and break the circuit if the current is too high"
+                },
+                {
+                  "key": "D",
+                  "text": "to switch the appliance on"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – to melt and break the circuit if the current is too high",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.5",
+              "prompt": "A magnet is pushed into a coil connected to a meter. Which change increases the induced e.m.f.?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "moving the magnet faster"
+                },
+                {
+                  "key": "B",
+                  "text": "moving the magnet more slowly"
+                },
+                {
+                  "key": "C",
+                  "text": "using fewer turns"
+                },
+                {
+                  "key": "D",
+                  "text": "using a weaker magnet"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – moving the magnet faster",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.1",
+              "prompt": "What does the nucleus of an atom contain?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "electrons and neutrons"
+                },
+                {
+                  "key": "B",
+                  "text": "electrons and protons"
+                },
+                {
+                  "key": "C",
+                  "text": "protons and neutrons"
+                },
+                {
+                  "key": "D",
+                  "text": "protons only"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – protons and neutrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.2",
+              "prompt": "Which type of radiation is the most strongly ionising?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "alpha"
+                },
+                {
+                  "key": "B",
+                  "text": "beta"
+                },
+                {
+                  "key": "C",
+                  "text": "gamma"
+                },
+                {
+                  "key": "D",
+                  "text": "X-rays"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – alpha",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Alpha is the most ionising and the least penetrating."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.1",
+              "prompt": "How long does the Earth take to orbit the Sun?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1 day"
+                },
+                {
+                  "key": "B",
+                  "text": "about 28 days"
+                },
+                {
+                  "key": "C",
+                  "text": "about 365 days"
+                },
+                {
+                  "key": "D",
+                  "text": "about 12 years"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – about 365 days",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.2",
+              "prompt": "Which statement about the Sun is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It is a planet."
+                },
+                {
+                  "key": "B",
+                  "text": "It is a medium-sized star made mostly of hydrogen and helium."
+                },
+                {
+                  "key": "C",
+                  "text": "It is the largest star in the Universe."
+                },
+                {
+                  "key": "D",
+                  "text": "It produces energy by burning coal."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It is a medium-sized star made mostly of hydrogen and helium.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Which quantity is a vector?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "energy"
+                },
+                {
+                  "key": "B",
+                  "text": "mass"
+                },
+                {
+                  "key": "C",
+                  "text": "speed"
+                },
+                {
+                  "key": "D",
+                  "text": "velocity"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – velocity",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Velocity has direction; speed does not."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.2",
+              "prompt": "A car travels 150 m in 10 s. What is its average speed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.067 m/s"
+                },
+                {
+                  "key": "B",
+                  "text": "15 m/s"
+                },
+                {
+                  "key": "C",
+                  "text": "140 m/s"
+                },
+                {
+                  "key": "D",
+                  "text": "1500 m/s"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 15 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "speed = distance ÷ time."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.3",
+              "prompt": "What is the weight of a 5.0 kg mass on Earth? (g = 9.8 N/kg)",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.51 N"
+                },
+                {
+                  "key": "B",
+                  "text": "5.0 N"
+                },
+                {
+                  "key": "C",
+                  "text": "14.8 N"
+                },
+                {
+                  "key": "D",
+                  "text": "49 N"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 49 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "W = mg."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.4",
+              "prompt": "A block has a mass of 200 g and a volume of 25 cm³. What is its density?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.125 g/cm³"
+                },
+                {
+                  "key": "B",
+                  "text": "8.0 g/cm³"
+                },
+                {
+                  "key": "C",
+                  "text": "175 g/cm³"
+                },
+                {
+                  "key": "D",
+                  "text": "5000 g/cm³"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 8.0 g/cm³",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "density = mass ÷ volume."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.5",
+              "prompt": "A spring extends by 2.0 cm for each 1.0 N of load, within its limit of proportionality. What is its extension with a 3.0 N load?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1.5 cm"
+                },
+                {
+                  "key": "B",
+                  "text": "3.0 cm"
+                },
+                {
+                  "key": "C",
+                  "text": "5.0 cm"
+                },
+                {
+                  "key": "D",
+                  "text": "6.0 cm"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 6.0 cm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The extension is proportional to the load."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.7",
+              "prompt": "In which energy store is energy kept in a stretched spring?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "chemical"
+                },
+                {
+                  "key": "B",
+                  "text": "elastic (strain)"
+                },
+                {
+                  "key": "C",
+                  "text": "gravitational potential"
+                },
+                {
+                  "key": "D",
+                  "text": "kinetic"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – elastic (strain)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.8",
+              "prompt": "A force of 600 N acts on an area of 0.20 m². What is the pressure?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "120 Pa"
+                },
+                {
+                  "key": "B",
+                  "text": "600 Pa"
+                },
+                {
+                  "key": "C",
+                  "text": "3000 Pa"
+                },
+                {
+                  "key": "D",
+                  "text": "6000 Pa"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 3000 Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "p = F ÷ A."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "What causes the pressure of a gas on the walls of its container?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "particles colliding with the walls"
+                },
+                {
+                  "key": "B",
+                  "text": "particles expanding"
+                },
+                {
+                  "key": "C",
+                  "text": "particles attracting the walls"
+                },
+                {
+                  "key": "D",
+                  "text": "particles stopping at the walls"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – particles colliding with the walls",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.2",
+              "prompt": "Why are small gaps left between sections of railway track?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to allow for thermal expansion"
+                },
+                {
+                  "key": "B",
+                  "text": "to drain rainwater"
+                },
+                {
+                  "key": "C",
+                  "text": "to reduce friction"
+                },
+                {
+                  "key": "D",
+                  "text": "to save metal"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – to allow for thermal expansion",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.3",
+              "prompt": "Which process can transfer thermal energy through a vacuum?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "conduction"
+                },
+                {
+                  "key": "B",
+                  "text": "convection"
+                },
+                {
+                  "key": "C",
+                  "text": "evaporation"
+                },
+                {
+                  "key": "D",
+                  "text": "radiation"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – radiation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Conduction and convection need particles."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.1",
+              "prompt": "A wave has a frequency of 5.0 Hz and a wavelength of 2.0 m. What is its speed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.40 m/s"
+                },
+                {
+                  "key": "B",
+                  "text": "2.5 m/s"
+                },
+                {
+                  "key": "C",
+                  "text": "7.0 m/s"
+                },
+                {
+                  "key": "D",
+                  "text": "10 m/s"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 10 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "v = fλ."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.2",
+              "prompt": "Light strikes a plane mirror with an angle of incidence of 30°. What is the angle of reflection?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "30°"
+                },
+                {
+                  "key": "B",
+                  "text": "60°"
+                },
+                {
+                  "key": "C",
+                  "text": "90°"
+                },
+                {
+                  "key": "D",
+                  "text": "120°"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – 30°",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Angles are measured from the normal."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.3",
+              "prompt": "Which part of the electromagnetic spectrum has the longest wavelength?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "gamma rays"
+                },
+                {
+                  "key": "B",
+                  "text": "radio waves"
+                },
+                {
+                  "key": "C",
+                  "text": "ultraviolet"
+                },
+                {
+                  "key": "D",
+                  "text": "X-rays"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – radio waves",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.4",
+              "prompt": "What is the approximate range of human hearing?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "2 Hz to 2000 Hz"
+                },
+                {
+                  "key": "B",
+                  "text": "20 Hz to 20 000 Hz"
+                },
+                {
+                  "key": "C",
+                  "text": "200 Hz to 200 000 Hz"
+                },
+                {
+                  "key": "D",
+                  "text": "20 kHz to 200 kHz"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 20 Hz to 20 000 Hz",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.1",
+              "prompt": "Two magnets are placed with their north poles facing each other. What happens?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They attract."
+                },
+                {
+                  "key": "B",
+                  "text": "They repel."
+                },
+                {
+                  "key": "C",
+                  "text": "Nothing happens."
+                },
+                {
+                  "key": "D",
+                  "text": "They attract, then repel."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – They repel.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Like poles repel."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.2",
+              "prompt": "How is an ammeter connected to measure the current through a lamp?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "in parallel with the lamp"
+                },
+                {
+                  "key": "B",
+                  "text": "in series with the lamp"
+                },
+                {
+                  "key": "C",
+                  "text": "across the battery"
+                },
+                {
+                  "key": "D",
+                  "text": "in parallel with the battery"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – in series with the lamp",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Voltmeters are connected in parallel."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.3",
+              "prompt": "A 2.0 Ω resistor and a 4.0 Ω resistor are connected in series. What is the combined resistance?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1.3 Ω"
+                },
+                {
+                  "key": "B",
+                  "text": "2.0 Ω"
+                },
+                {
+                  "key": "C",
+                  "text": "6.0 Ω"
+                },
+                {
+                  "key": "D",
+                  "text": "8.0 Ω"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 6.0 Ω",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Resistances in series add."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.4",
+              "prompt": "What is the purpose of a fuse in a plug?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to earth the appliance"
+                },
+                {
+                  "key": "B",
+                  "text": "to increase the current"
+                },
+                {
+                  "key": "C",
+                  "text": "to melt and break the circuit if the current is too high"
+                },
+                {
+                  "key": "D",
+                  "text": "to switch the appliance on"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – to melt and break the circuit if the current is too high",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.5",
+              "prompt": "A magnet is pushed into a coil connected to a meter. Which change increases the induced e.m.f.?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "moving the magnet faster"
+                },
+                {
+                  "key": "B",
+                  "text": "moving the magnet more slowly"
+                },
+                {
+                  "key": "C",
+                  "text": "using fewer turns"
+                },
+                {
+                  "key": "D",
+                  "text": "using a weaker magnet"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – moving the magnet faster",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.1",
+              "prompt": "What does the nucleus of an atom contain?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "electrons and neutrons"
+                },
+                {
+                  "key": "B",
+                  "text": "electrons and protons"
+                },
+                {
+                  "key": "C",
+                  "text": "protons and neutrons"
+                },
+                {
+                  "key": "D",
+                  "text": "protons only"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – protons and neutrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.2",
+              "prompt": "Which type of radiation is the most strongly ionising?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "alpha"
+                },
+                {
+                  "key": "B",
+                  "text": "beta"
+                },
+                {
+                  "key": "C",
+                  "text": "gamma"
+                },
+                {
+                  "key": "D",
+                  "text": "X-rays"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – alpha",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Alpha is the most ionising and the least penetrating."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.1",
+              "prompt": "How long does the Earth take to orbit the Sun?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1 day"
+                },
+                {
+                  "key": "B",
+                  "text": "about 28 days"
+                },
+                {
+                  "key": "C",
+                  "text": "about 365 days"
+                },
+                {
+                  "key": "D",
+                  "text": "about 12 years"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – about 365 days",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.2",
+              "prompt": "Which statement about the Sun is correct?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It is a planet."
+                },
+                {
+                  "key": "B",
+                  "text": "It is a medium-sized star made mostly of hydrogen and helium."
+                },
+                {
+                  "key": "C",
+                  "text": "It is the largest star in the Universe."
+                },
+                {
+                  "key": "D",
+                  "text": "It produces energy by burning coal."
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – It is a medium-sized star made mostly of hydrogen and helium.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.6",
+              "prompt": "What is the momentum of a 2.0 kg trolley moving at 3.0 m/s?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.67 kg m/s"
+                },
+                {
+                  "key": "B",
+                  "text": "1.5 kg m/s"
+                },
+                {
+                  "key": "C",
+                  "text": "5.0 kg m/s"
+                },
+                {
+                  "key": "D",
+                  "text": "6.0 kg m/s"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 6.0 kg m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "p = mv."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "3",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 3A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "A stack of 50 sheets of paper is 4.0 mm thick. Calculate the thickness of one sheet, in mm.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.08",
+              "markingPoints": [
+                {
+                  "text": "C1 for 4.0 ÷ 50",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.080 mm",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Measuring many sheets and dividing reduces the uncertainty."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.2",
+              "prompt": "A cyclist accelerates from rest to 20 m/s in 8.0 s. Calculate the acceleration, in m/s².",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2.5",
+              "markingPoints": [
+                {
+                  "text": "C1 for a = Δv ÷ t",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.5 m/s²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.3",
+              "prompt": "State two differences between mass and weight.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "mass is the quantity of matter; weight is a gravitational force",
+                  "marks": 1
+                },
+                {
+                  "text": "mass is measured in kg; weight in N",
+                  "marks": 1
+                },
+                {
+                  "text": "weight changes with gravitational field strength; mass does not",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates gave units only. Defining each quantity earns more credit."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.4",
+              "prompt": "Describe how to find the density of an irregularly shaped stone.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "measure the mass using a balance",
+                  "marks": 1
+                },
+                {
+                  "text": "find the volume by displacement: the rise in water level in a measuring cylinder",
+                  "marks": 1
+                },
+                {
+                  "text": "density = mass ÷ volume",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should name the measuring instruments."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.5",
+              "prompt": "A force of 20 N acts 0.30 m from a pivot. Calculate its moment, in N m.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6",
+              "markingPoints": [
+                {
+                  "text": "C1 for moment = force × perpendicular distance",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.0 N m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.7",
+              "prompt": "A crate of weight 50 N is lifted through a height of 2.0 m. Calculate the work done, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "100",
+              "markingPoints": [
+                {
+                  "text": "C1 for W = Fd",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 100 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.8",
+              "prompt": "Explain why tractors used on soft ground have wide tyres.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "wide tyres give a larger area",
+                  "marks": 1
+                },
+                {
+                  "text": "so the pressure on the ground is smaller and the tractor sinks less",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers must link area to pressure."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "Describe the motion of particles in a gas.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "random motion",
+                  "marks": 1
+                },
+                {
+                  "text": "at high speed, in straight lines between collisions",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.2",
+              "prompt": "Name the process in which a liquid changes to a gas at its surface, at a temperature below its boiling point.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "evaporation",
+                "evaporating"
+              ],
+              "markingPoints": [
+                {
+                  "text": "evaporation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Boiling happens throughout the liquid at its boiling point."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.3",
+              "prompt": "Explain why a metal spoon in a cup of hot tea quickly feels hot.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "thermal energy is transferred by conduction",
+                  "marks": 1
+                },
+                {
+                  "text": "metals are good conductors because they have free (delocalised) electrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.1",
+              "prompt": "Define the wavelength of a wave.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the distance between two adjacent crests (or corresponding points)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.2",
+              "prompt": "State two characteristics of the image formed by a plane mirror.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "virtual",
+                  "marks": 1
+                },
+                {
+                  "text": "same size as the object",
+                  "marks": 1
+                },
+                {
+                  "text": "upright",
+                  "marks": 1
+                },
+                {
+                  "text": "same distance behind the mirror as the object is in front",
+                  "marks": 1
+                },
+                {
+                  "text": "laterally inverted",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.3",
+              "prompt": "Give one use of microwaves.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "cooking / satellite communication / mobile phones",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.4",
+              "prompt": "A student claps near a cliff and hears the echo 0.40 s later. The speed of sound is 340 m/s. Calculate the distance to the cliff, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "68",
+              "markingPoints": [
+                {
+                  "text": "C1 for distance travelled = 340 × 0.40 = 136 m",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for halving: the sound travels there and back",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 68 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many forgot that the sound travels to the cliff and back."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.1",
+              "prompt": "Name a magnetic material.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "iron",
+                "nickel",
+                "cobalt",
+                "steel"
+              ],
+              "markingPoints": [
+                {
+                  "text": "iron, nickel, cobalt or steel",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Aluminium and copper are not magnetic."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.2",
+              "prompt": "The potential difference across a resistor is 12 V and the current is 0.50 A. Calculate its resistance, in Ω.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "24",
+              "markingPoints": [
+                {
+                  "text": "C1 for R = V ÷ I",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 24 Ω",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.3",
+              "prompt": "Two 10 Ω resistors are connected in series to a 6.0 V battery. Calculate the current, in A.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.3",
+              "markingPoints": [
+                {
+                  "text": "C1 for total resistance = 20 Ω",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.30 A",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.4",
+              "prompt": "Explain why the earth wire is connected to the metal case of an appliance.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "if a live wire touches the case, current flows to earth",
+                  "marks": 1
+                },
+                {
+                  "text": "the large current melts the fuse, so the case does not stay live and the user is not electrocuted",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Good answers linked the earth wire to the fuse."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.5",
+              "prompt": "State one way to increase the force on a current-carrying wire in a magnetic field.",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "increase the current / use a stronger magnet",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.1",
+              "prompt": "A nuclide of uranium is ²³⁸₉₂U. How many neutrons does its nucleus contain?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "146",
+              "markingPoints": [
+                {
+                  "text": "B1 for 146",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Neutrons = nucleon number − proton number."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.2",
+              "prompt": "A radioactive sample has a half-life of 6.0 hours. Its count rate is 800 counts/minute. Calculate the count rate after 18 hours, in counts/minute.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "100",
+              "markingPoints": [
+                {
+                  "text": "C1 for 3 half-lives",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 100 counts/minute",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.1",
+              "prompt": "Explain why the Earth has day and night.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the Earth rotates on its axis",
+                  "marks": 1
+                },
+                {
+                  "text": "once every 24 hours, so each side faces towards and then away from the Sun",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some said the Earth orbits the Sun once a day."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.2",
+              "prompt": "What does a light-year measure?",
+              "marks": 1,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "distance (the distance light travels in one year)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "It is not a unit of time."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Forces of 3.0 N east and 4.0 N north act on an object. Calculate the magnitude of the resultant force, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5",
+              "markingPoints": [
+                {
+                  "text": "C1 for √(3.0² + 4.0²)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.0 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Forces at right angles are added using Pythagoras' theorem, not by adding."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.2",
+              "prompt": "A train accelerates uniformly from rest to 12 m/s in 6.0 s. Calculate the distance travelled in this time, in m.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "36",
+              "markingPoints": [
+                {
+                  "text": "C1 for area under the speed–time graph: ½ × 6.0 × 12",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 36 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Multiplying final speed by time gives twice the correct answer."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.3",
+              "prompt": "An astronaut has a mass of 70 kg. The gravitational field strength on the Moon is 1.6 N/kg. Calculate the astronaut's weight on the Moon, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "112",
+              "markingPoints": [
+                {
+                  "text": "C1 for W = mg",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 112 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The astronaut's mass does not change."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.4",
+              "prompt": "An object of density 0.90 g/cm³ is placed in water of density 1.0 g/cm³. State and explain whether it floats or sinks.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "it floats",
+                  "marks": 1
+                },
+                {
+                  "text": "because its density is less than that of water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.5",
+              "prompt": "Calculate the resultant force needed to give a car of mass 1200 kg an acceleration of 2.5 m/s², in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3000",
+              "markingPoints": [
+                {
+                  "text": "C1 for F = ma",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3000 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.6",
+              "prompt": "A force of 400 N acts on a ball for 0.050 s. Calculate the impulse, in N s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "20",
+              "markingPoints": [
+                {
+                  "text": "C1 for impulse = FΔt",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 20 N s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.6",
+              "prompt": "A 2.0 kg trolley moving at 3.0 m/s collides with a stationary 1.0 kg trolley and they stick together. Calculate their speed after the collision, in m/s.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "C1 for momentum before = 6.0 kg m/s",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for 6.0 = 3.0 × v",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Momentum is conserved; kinetic energy is not."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.7",
+              "prompt": "Calculate the kinetic energy of a 0.50 kg ball moving at 8.0 m/s, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "16",
+              "markingPoints": [
+                {
+                  "text": "C1 for Eₖ = ½mv²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 16 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Squaring only the speed, not the product mv, was essential."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.8",
+              "prompt": "Calculate the change in pressure at a depth of 5.0 m in water of density 1000 kg/m³, in Pa. (g = 9.8 N/kg)",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "49000",
+              "tolerance": 50,
+              "markingPoints": [
+                {
+                  "text": "C1 for Δp = ρgΔh",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 49 000 Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "A fixed mass of gas at constant temperature has a pressure of 100 kPa and a volume of 2.0 m³. It is compressed to 0.50 m³. Calculate the new pressure, in kPa.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "400",
+              "markingPoints": [
+                {
+                  "text": "C1 for p₁V₁ = p₂V₂",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 400 kPa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.2",
+              "prompt": "Calculate the energy needed to raise the temperature of 2.0 kg of water by 15 °C, in J. (specific heat capacity of water = 4200 J/(kg °C))",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "126000",
+              "tolerance": 100,
+              "markingPoints": [
+                {
+                  "text": "C1 for ΔE = mcΔθ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 126 000 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.3",
+              "prompt": "Water in a pan is heated from below. Explain how a convection current forms.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "water near the heat source expands",
+                  "marks": 1
+                },
+                {
+                  "text": "becomes less dense and rises",
+                  "marks": 1
+                },
+                {
+                  "text": "cooler, denser water sinks to take its place",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Heat rises' is not acceptable. It is the less dense water that rises."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.1",
+              "prompt": "Water waves travel from deep water into shallow water. State what happens to their speed, wavelength and frequency.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "speed decreases",
+                  "marks": 1
+                },
+                {
+                  "text": "wavelength decreases",
+                  "marks": 1
+                },
+                {
+                  "text": "frequency stays the same",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Frequency is set by the source and does not change."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.2",
+              "prompt": "A ray of light passes from air into glass. The angle of incidence is 40° and the angle of refraction is 25°. Calculate the refractive index of the glass, to 3 significant figures.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.521",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "C1 for n = sin i ÷ sin r",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for sin 40° ÷ sin 25°",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.52",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Calculators must be in degree mode."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.3",
+              "prompt": "State the speed of electromagnetic waves in a vacuum, in m/s.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3e8",
+              "tolerance": 5000000.0,
+              "markingPoints": [
+                {
+                  "text": "B1 for 3.0 × 10⁸ m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers can be typed as 3.0e8 or 3.0 × 10^8."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3.4",
+              "prompt": "Explain why sound cannot travel through a vacuum.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "sound needs a medium / particles",
+                  "marks": 1
+                },
+                {
+                  "text": "because it travels as vibrations of particles (a longitudinal wave)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.1",
+              "prompt": "Describe how to plot the magnetic field lines around a bar magnet using a plotting compass.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "place the compass near one pole and mark the direction the needle points",
+                  "marks": 1
+                },
+                {
+                  "text": "move the compass so its tail is at the last mark and repeat",
+                  "marks": 1
+                },
+                {
+                  "text": "join the dots to form a line, from N to S, and repeat from other starting points",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.2",
+              "prompt": "A current of 0.25 A flows for 2.0 minutes. Calculate the charge that passes, in C.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "30",
+              "markingPoints": [
+                {
+                  "text": "C1 for Q = It with t = 120 s",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 30 C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Minutes must be converted to seconds."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.3",
+              "prompt": "Calculate the combined resistance of a 6.0 Ω resistor and a 3.0 Ω resistor connected in parallel, in Ω.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2",
+              "markingPoints": [
+                {
+                  "text": "C1 for 1/R = 1/6 + 1/3",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 Ω",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The combined resistance must be less than the smallest resistor."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.4",
+              "prompt": "A kettle is rated at 2300 W, 230 V. Calculate the current and choose a suitable fuse from 3 A, 5 A and 13 A.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "current = 2300 ÷ 230 = 10 A",
+                  "marks": 1
+                },
+                {
+                  "text": "13 A fuse (the next value above the normal current)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4.5",
+              "prompt": "A transformer has 2000 turns on its primary coil and 100 turns on its secondary coil. The primary voltage is 230 V. Calculate the secondary voltage, in V.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "11.5",
+              "markingPoints": [
+                {
+                  "text": "C1 for Vₛ/Vₚ = Nₛ/Nₚ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 11.5 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.1",
+              "prompt": "Describe what the alpha-particle scattering experiment showed about the structure of the atom.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "most alpha particles passed straight through, so the atom is mostly empty space",
+                  "marks": 1
+                },
+                {
+                  "text": "a few were deflected through large angles",
+                  "marks": 1
+                },
+                {
+                  "text": "so the nucleus is very small, dense and positively charged",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5.2",
+              "prompt": "Radium-226 (²²⁶₈₈Ra) decays by alpha emission to radon (Rn). Write the nuclide equation.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "²²⁶₈₈Ra → ²²²₈₆Rn + ⁴₂α",
+                  "marks": 1
+                },
+                {
+                  "text": "nucleon and proton numbers balance on both sides",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.1",
+              "prompt": "The Earth orbits the Sun at an average radius of 1.5 × 10¹¹ m with a period of 3.2 × 10⁷ s. Calculate its average orbital speed, in m/s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "29450",
+              "tolerance": 500.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for v = 2πr ÷ T",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.9 × 10⁴ m/s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers can be typed as 2.9e4."
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6.2",
+              "prompt": "The Hubble constant is about 2.2 × 10⁻¹⁸ s⁻¹. Estimate the age of the Universe, in s, using 1 ÷ H₀.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.545e17",
+              "tolerance": 5000000000000000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for 1 ÷ 2.2 × 10⁻¹⁸",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.5 × 10¹⁷ s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers can be typed as 4.5e17."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
