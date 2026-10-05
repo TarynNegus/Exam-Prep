@@ -94,13 +94,17 @@ export default async function PracticePage({
           </div>
           {question.stem && <p className="whitespace-pre-line rounded-lg bg-slate-50 p-3">{question.stem}</p>}
           <Figures figures={question.figures} />
-          {question.parts.map((part) => (
-            <PartPractice
-              key={part.id}
-              part={publicPart(resolvePart(part, partSeed(set.seed, part.id)))}
-              lastScore={latest.get(part.id) ?? null}
-            />
-          ))}
+          {question.parts.map((part) => {
+            const seed = partSeed(set.seed, part.id);
+            // Keyed by seed too, so a new set replaces the state of the previous one.
+            return (
+              <PartPractice
+                key={`${part.id}-${seed}`}
+                part={publicPart(resolvePart(part, seed))}
+                lastScore={latest.get(part.id) ?? null}
+              />
+            );
+          })}
         </article>
       ))}
     </div>

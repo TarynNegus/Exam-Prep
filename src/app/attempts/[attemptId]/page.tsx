@@ -22,6 +22,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
   if (!attempt.submittedAt) {
     return (
       <ExamPaper
+        key={attempt.id}
         attemptId={attempt.id}
         title={title}
         deadline={attempt.startedAt.getTime() + durationMin * 60_000}
