@@ -1216,6 +1216,1655 @@
           ]
         }
       ]
+    },
+    {
+      "component": "1",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 1",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E2",
+              "prompt": "'Space exploration is a luxury the world can no longer afford.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger essays weighed the cost against practical returns such as satellite weather forecasting and communications. Weaker answers treated all space activity as crewed missions to other planets."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E2",
+              "prompt": "'Nuclear power is essential if the world is to reduce carbon emissions.' Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger essays compared nuclear power with renewable sources on cost, reliability, safety and waste, and recognised that circumstances differ between countries. Weaker answers relied on a single well-known accident as their only evidence."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E2",
+              "prompt": "Evaluate the claim that artificial intelligence will create more jobs than it destroys. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective responses distinguished between the short and long term and between different kinds of work. Answers that predicted the future with certainty, without evidence from past technological change, were less convincing."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E2",
+              "prompt": "'Scientific research should be free from commercial interests.' Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger answers recognised that much research is funded by business and asked whether this distorts priorities or results. Weaker essays did not define 'commercial interests'."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E2",
+              "prompt": "How far is it justifiable to keep animals in zoos in the twenty-first century? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Good essays considered conservation, education and animal welfare, and distinguished between well-run and poorly run zoos. Purely emotional responses without evidence scored lower for selection."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E3",
+              "prompt": "Should the age at which young people are treated as adults be the same for all purposes, such as voting, driving and marriage? Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The best essays considered why different responsibilities might need different levels of maturity, and used examples of how the law varies between countries. Weaker answers discussed only one of the purposes named."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E3",
+              "prompt": "To what extent should parents be held responsible for the actions of their teenage children? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger candidates considered age, the degree of parental control and the role of schools and peers. Many answers would have benefited from examples of how different legal systems approach the question."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E3",
+              "prompt": "'Prison does more harm than good.' Discuss with reference to your own country. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective essays weighed the purposes of prison (punishment, protection, deterrence and rehabilitation) against evidence about reoffending. Answers that ignored the instruction to refer to their own country limited their selection mark."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E3",
+              "prompt": "Assess the view that cities offer a better quality of life than rural areas. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Candidates who defined 'quality of life' early on produced more focused essays. Weaker answers described city and country life without ever reaching a judgement."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E3",
+              "prompt": "How important is it for a society to preserve its traditions? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The strongest essays recognised that some traditions are worth keeping and others may be harmful, and explained the criteria they were using to decide. Lists of festivals did not, on their own, answer the question."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E4",
+              "prompt": "'Large multinational companies now have more power than national governments.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Good answers defined 'power' and considered tax, employment, lobbying and the ability of governments to regulate or break up companies, using named examples. Many essays asserted the claim without testing it."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E4",
+              "prompt": "To what extent should a country protect its own industries from foreign competition? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger essays weighed jobs and national security against higher prices and the risk of retaliation, and distinguished between new and established industries. Weaker responses did not explain how protection works, for example through tariffs or quotas."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E4",
+              "prompt": "'Voting should be compulsory.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The best answers considered both the democratic case for high turnout and the argument that the freedom not to vote is itself a right. Examples of countries with compulsory voting strengthened selection."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E4",
+              "prompt": "Evaluate the benefits and drawbacks for a country of hosting a major international sporting event. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective essays looked beyond the event itself to what happened to stadiums, transport and public finances afterwards. Answers that described a single tournament at length without evaluating it scored less well."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E4",
+              "prompt": "How far is economic growth the best measure of a country's success? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Strong candidates proposed alternative measures, such as life expectancy, education or well-being, and assessed their strengths and limitations. Weaker essays did not explain what economic growth measures."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E5",
+              "prompt": "'Museums should return objects to the countries from which they were taken.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Stronger essays distinguished between objects taken by force and those acquired legally, and considered conservation, access and national identity. Weaker answers discussed a single famous case without reaching a general judgement."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E5",
+              "prompt": "To what extent has social media made people better informed? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The best answers distinguished between access to information and the quality of that information, discussing speed, misinformation and the way feeds are personalised."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E5",
+              "prompt": "'Everyone should learn at least two languages.' Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective essays considered practical, cultural and cognitive arguments and recognised that circumstances differ between countries. Many candidates assumed that English would always be one of the languages without justifying this."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E5",
+              "prompt": "How far should there be limits on what comedians and artists may say? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Strong essays explored where a line might be drawn and who should draw it, considering free expression, offence and harm. Weaker answers stated a view without testing it against difficult cases."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "",
+              "topic": "E5",
+              "prompt": "'Advertising does more harm than good.' Evaluate this view. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Good answers recognised that advertising funds much free media and informs consumers, while examining its effects on children, debt and body image. Answers about a single advertisement lacked range."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write the introduction (about 100 words) for an essay on this question: 'Aid makes poorer countries dependent rather than helping them to develop.' How far do you agree?",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "engages directly with the question rather than giving general background",
+                  "marks": 1
+                },
+                {
+                  "text": "defines or clarifies a key term, e.g. 'aid' or 'dependent'",
+                  "marks": 1
+                },
+                {
+                  "text": "indicates the range the essay will cover, e.g. emergency and development aid, aid to governments and to projects",
+                  "marks": 1
+                },
+                {
+                  "text": "states a clear position or line of argument",
+                  "marks": 1
+                },
+                {
+                  "text": "concise and fluent; no lengthy dictionary definitions or rhetorical questions",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "An introduction should show where the essay is going. Many candidates spent too long on background and did not reveal their view until the conclusion."
+            },
+            {
+              "label": "(b)",
+              "topic": "E4",
+              "prompt": "'Aid makes poorer countries dependent rather than helping them to develop.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "The best essays distinguished between emergency aid and long-term development aid, and between aid given to governments and to projects. Weaker answers assumed all aid works in the same way."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "For the essay question 'How far is it justifiable to keep animals in zoos in the twenty-first century?', write one paragraph that presents a counter-argument to your own view and then responds to it.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "states a counter-argument clearly and fairly",
+                  "marks": 1
+                },
+                {
+                  "text": "supports the counter-argument with a relevant example",
+                  "marks": 1
+                },
+                {
+                  "text": "responds by evaluating the counter-argument, e.g. showing its limits",
+                  "marks": 2
+                },
+                {
+                  "text": "links the paragraph back to the essay's overall line of argument",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A counter-argument that is mentioned and then simply dismissed adds little. Stronger paragraphs conceded what was valid before explaining why their own view still held."
+            },
+            {
+              "label": "(b)",
+              "topic": "E2",
+              "prompt": "'Protecting endangered species is a waste of resources when humans are suffering.' Discuss. Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Strong essays challenged the assumption that the two aims are in competition, citing ecosystems on which people depend. Weaker answers were descriptive accounts of particular species."
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "stem": "",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "E1",
+              "prompt": "Write a conclusion (about 100 words) for an essay on this question: 'How important is it for a society to preserve its traditions?'",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "gives a clear, direct answer to the question",
+                  "marks": 1
+                },
+                {
+                  "text": "draws together the main strands of the argument without repeating them at length",
+                  "marks": 1
+                },
+                {
+                  "text": "shows a qualified judgement, e.g. the conditions under which traditions should be kept",
+                  "marks": 1
+                },
+                {
+                  "text": "introduces no new evidence or arguments",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A good conclusion follows from the argument already made. Weaker conclusions sat on the fence or introduced a new point."
+            },
+            {
+              "label": "(b)",
+              "topic": "E3",
+              "prompt": "'Celebrating the past prevents a society from moving forward.' How far do you agree? Write 600 to 700 words.",
+              "marks": 30,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Selection: relevant, accurate examples and evidence from a range of contexts and countries",
+                  "marks": 10
+                },
+                {
+                  "text": "Analysis and evaluation: a clear, sustained argument that weighs different views and reaches a justified conclusion",
+                  "marks": 10
+                },
+                {
+                  "text": "Communication: well organised, fluent and accurate, with precise vocabulary",
+                  "marks": 10
+                }
+              ],
+              "examinerComment": "Effective essays considered heritage, national identity and the risk of avoiding uncomfortable history. Many candidates would have benefited from more specific examples."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 2",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "The Lost Art of Repair\n\n1 My grandfather owned a single radio for forty years. When it fell silent, he opened the back, found the faulty part and replaced it with one bought for a few coins at the market. Today, when my phone's battery begins to fade after two or three years, the manufacturer's advice is, in effect, to buy a new phone. The battery is glued in place, the screws require a special tool, and the repair manual is not available to the public.\n\n2 This is not an accident. Many products are now designed in ways that make repair difficult or uneconomic, and some manufacturers restrict the supply of spare parts to their own approved workshops, which charge accordingly. Critics call this 'planned obsolescence', though companies insist that sealed designs are simply thinner, lighter and more resistant to water.\n\n3 The costs of this throwaway culture are considerable. Electronic waste is one of the fastest-growing kinds of waste in the world, and only a fraction of it is properly recycled; much is shipped abroad, where it is dismantled by hand, often by young workers exposed to toxic metals. Manufacturing a new device also consumes far more energy and raw material than mending an old one.\n\n4 There are signs of change. Several governments have introduced 'right to repair' laws requiring manufacturers to make spare parts and manuals available for a number of years after a product is sold. Volunteer-run repair cafés, where people bring broken toasters, lamps and bicycles to be mended free of charge, have spread to thousands of towns. Those who attend often say that the experience is as much social as practical: neighbours meet, skills are passed on, and an object that might have been discarded is given a second life.\n\n5 Repair will not solve the problem of waste on its own, and not every product is worth saving. But a society that knows how to mend things is, perhaps, less likely to treat everything – and everyone – as disposable.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain the contrast the writer draws between the grandfather's radio and the writer's phone (paragraph 1).",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the radio could be mended easily and cheaply by its owner, so it lasted for decades",
+                  "marks": 1
+                },
+                {
+                  "text": "the phone cannot be opened or fixed by its owner (parts glued, special tools, no manual), so it is replaced after a few years",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both sides of the contrast are needed for full marks. Candidates who copied 'glued in place' and 'special tool' without explaining their effect gained less credit."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "Paragraph 2 gives two different explanations for why products are difficult to repair. Explain both, using your own words.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "critics believe products are deliberately made to stop working or be replaced, so that people buy more",
+                  "marks": 1
+                },
+                {
+                  "text": "limiting spare parts to approved workshops lets those workshops charge high prices",
+                  "marks": 1
+                },
+                {
+                  "text": "companies claim that sealed designs make products slimmer, lighter and better protected against water",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates explained 'planned obsolescence' well but overlooked the companies' side of the argument."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'uneconomic' as used in paragraph 2?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "not worth the cost"
+                },
+                {
+                  "key": "B",
+                  "text": "against the law"
+                },
+                {
+                  "key": "C",
+                  "text": "unsafe"
+                },
+                {
+                  "key": "D",
+                  "text": "old-fashioned"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – not worth the cost",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who chose 'old-fashioned' were thinking of the radio rather than the word in context."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'disposable' as used in paragraph 5?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "inexpensive to buy"
+                },
+                {
+                  "key": "B",
+                  "text": "meant to be thrown away after use"
+                },
+                {
+                  "key": "C",
+                  "text": "freely available"
+                },
+                {
+                  "key": "D",
+                  "text": "harmful to the environment"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – meant to be thrown away after use",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A describes many disposable items but is not the meaning of the word."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 2 to 4, summarise the problems caused by the throwaway culture and the ways in which repair is being encouraged. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "products are made hard or too costly to fix",
+                  "marks": 1
+                },
+                {
+                  "text": "spare parts are limited to expensive approved workshops",
+                  "marks": 1
+                },
+                {
+                  "text": "electronic waste is increasing rapidly",
+                  "marks": 1
+                },
+                {
+                  "text": "little of it is recycled properly",
+                  "marks": 1
+                },
+                {
+                  "text": "much is sent overseas and taken apart by hand",
+                  "marks": 1
+                },
+                {
+                  "text": "young workers are exposed to poisonous metals",
+                  "marks": 1
+                },
+                {
+                  "text": "making new devices uses more energy and materials than repairing",
+                  "marks": 1
+                },
+                {
+                  "text": "laws force makers to supply parts and manuals for several years",
+                  "marks": 1
+                },
+                {
+                  "text": "free volunteer repair cafés have spread widely",
+                  "marks": 1
+                },
+                {
+                  "text": "repair cafés bring neighbours together and pass on skills",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "The best summaries organised points under 'problems' and 'solutions'. The anecdote in paragraph 1 is not relevant and should not be included."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "The writer opens with a personal anecdote about a grandfather's radio. How effective is this as the opening of the argument?",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "it engages the reader with a concrete, relatable example",
+                  "marks": 1
+                },
+                {
+                  "text": "the contrast with the modern phone introduces the problem clearly",
+                  "marks": 1
+                },
+                {
+                  "text": "but it is a single example and may be nostalgic: an old radio is far simpler than a modern phone",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers both acknowledged the anecdote's impact and questioned how far one personal story can support a general claim."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "How convincing do you find the writer's argument that society should return to repairing things? Refer to the passage and your own knowledge.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the writer's main claims accurately",
+                  "marks": 1
+                },
+                {
+                  "text": "assesses the evidence, e.g. the waste and energy claims are plausible but no figures are given",
+                  "marks": 2
+                },
+                {
+                  "text": "notes counter-arguments the writer acknowledges (sealed designs, not everything worth saving) or ignores (cost, safety, time)",
+                  "marks": 1
+                },
+                {
+                  "text": "tests the argument against own knowledge or experience",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified overall judgement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers noticed that the writer concedes repair 'will not solve the problem of waste on its own' and considered whether this strengthens or weakens the case."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "A Shorter Week\n\n1 For most of the last century, the five-day working week has been treated almost as a law of nature. Yet it is a relatively recent invention: a hundred and fifty years ago, many factory workers laboured six days a week for twelve hours a day, and the weekend as we know it was won only after long campaigns. Now some employers are asking whether the next step is a week of four days.\n\n2 The idea is simple. Staff work four days instead of five but receive the same pay, on the understanding that they will achieve the same amount. In trials run by companies in several countries, managers have reported that productivity held steady or even rose. Employees, freed from a day of commuting and with more time to rest, took fewer sick days and were less likely to resign. Some firms found recruitment easier, since a shorter week proved a powerful lure for talented applicants.\n\n3 Advocates argue that the benefits extend beyond the workplace. An extra day at home gives parents more time with their children, allows people to care for elderly relatives, and offers opportunities for volunteering, study or exercise. Fewer commuting journeys could also reduce traffic and emissions.\n\n4 Sceptics, however, sound a note of caution. Most of the trials so far have involved office-based businesses whose staff volunteered to take part, and such workers are perhaps more motivated than average. It is hard to see how a hospital, a school or a bus company could close for an extra day; such services would need more staff, at greater cost. Some employees in the trials also reported that squeezing five days of work into four left them more exhausted, not less.\n\n5 The four-day week may not suit every job. But the history of working hours suggests that what seems impossible to one generation can become ordinary to the next.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain why the writer calls the five-day week 'a relatively recent invention' (paragraph 1).",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "in the nineteenth century / 150 years ago, many people worked much longer: six long days a week",
+                  "marks": 1
+                },
+                {
+                  "text": "the two-day weekend was gained only after a lengthy struggle",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates needed to explain why the phrase is apt, not just repeat the figures."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain how the companies in the trials benefited from a four-day week (paragraph 2).",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "output stayed the same or increased",
+                  "marks": 1
+                },
+                {
+                  "text": "staff were absent through illness less often",
+                  "marks": 1
+                },
+                {
+                  "text": "fewer staff left their jobs",
+                  "marks": 1
+                },
+                {
+                  "text": "it was easier to attract able job candidates",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Benefits to employees (such as less commuting) were not what the question asked for unless linked to the company."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'lure' as used in paragraph 2?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "reward"
+                },
+                {
+                  "key": "B",
+                  "text": "trap"
+                },
+                {
+                  "key": "C",
+                  "text": "attraction"
+                },
+                {
+                  "key": "D",
+                  "text": "obstacle"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – attraction",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Trap' reflects another meaning of 'lure' but does not fit this context."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'sceptics' as used in paragraph 4?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "people who oppose all change"
+                },
+                {
+                  "key": "B",
+                  "text": "people who doubt the claims being made"
+                },
+                {
+                  "key": "C",
+                  "text": "the researchers who ran the trials"
+                },
+                {
+                  "key": "D",
+                  "text": "employers who lost money"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – people who doubt the claims being made",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A sceptic questions a claim; this is not the same as rejecting all change."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 2 and 3, summarise the advantages of a four-day working week for employers, employees and society. Write no more than 100 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "productivity stays the same or improves",
+                  "marks": 1
+                },
+                {
+                  "text": "fewer days lost to sickness",
+                  "marks": 1
+                },
+                {
+                  "text": "staff more likely to stay",
+                  "marks": 1
+                },
+                {
+                  "text": "easier recruitment of able staff",
+                  "marks": 1
+                },
+                {
+                  "text": "less time spent commuting",
+                  "marks": 1
+                },
+                {
+                  "text": "more time to rest",
+                  "marks": 1
+                },
+                {
+                  "text": "more time with children",
+                  "marks": 1
+                },
+                {
+                  "text": "time to look after older relatives",
+                  "marks": 1
+                },
+                {
+                  "text": "opportunities for volunteering, learning or exercise",
+                  "marks": 1
+                },
+                {
+                  "text": "less traffic and pollution",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Many summaries exceeded the word limit by explaining what a four-day week is. The points should be stated briefly."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "Explain why the evidence from the trials may not show that a four-day week would work across the whole economy. Use paragraph 4.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "trials were mostly in office jobs, not representative of all work",
+                  "marks": 1
+                },
+                {
+                  "text": "staff chose to take part, so may have been unusually motivated",
+                  "marks": 1
+                },
+                {
+                  "text": "essential services such as hospitals and schools cannot simply close for a day / would need more staff at extra cost",
+                  "marks": 1
+                },
+                {
+                  "text": "some workers found the compressed week more tiring, so results may not last",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers explained why each limitation matters for the reliability of the evidence, not just what it is."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "How balanced is the writer's presentation of the four-day week? Refer closely to the passage.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "recognises the space given to benefits in paragraphs 2 and 3",
+                  "marks": 1
+                },
+                {
+                  "text": "recognises that sceptics' views are presented fairly in paragraph 4",
+                  "marks": 1
+                },
+                {
+                  "text": "comments on word choice that reveals the writer's position, e.g. 'freed', 'powerful lure'",
+                  "marks": 1
+                },
+                {
+                  "text": "notes that the conclusion leans in favour, using history to dismiss doubts",
+                  "marks": 1
+                },
+                {
+                  "text": "notes that evidence is reported by managers without figures or named sources",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified judgement on how balanced the passage is",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best answers looked at structure as well as content: the writer gives the final word to the supporters."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "Science for Everyone\n\n1 When a volunteer at her kitchen table identifies a galaxy in a blurry telescope image, or a retired teacher counts the butterflies in his garden every summer, they are doing science. Not the science of laboratories and expensive equipment, but 'citizen science': research in which members of the public collect or analyse data for professional projects.\n\n2 Such collaborations are not new. For more than a century, amateur birdwatchers have recorded sightings that now form some of the longest records of how wildlife populations change. What is new is the scale. The internet allows projects to recruit hundreds of thousands of volunteers, who can classify photographs, transcribe old weather logs or monitor the quality of local rivers using their phones.\n\n3 For scientists, the attraction is obvious. Some tasks are simply too vast for any research team: no university could afford to pay people to examine millions of images, and no team could be present in every village to record the first frost or the arrival of migrating birds. Human eyes, moreover, remain better than computers at certain kinds of pattern recognition, and volunteers have spotted unusual objects that automated programs had overlooked.\n\n4 The benefits flow both ways. Participants learn about the scientific method, often develop a lasting interest in their subject, and may come to trust research more because they have seen how it is done. In some communities, residents who measured pollution in their own streets have used the data to persuade local authorities to act.\n\n5 Not all researchers are enthusiastic. Data collected by untrained volunteers can be inconsistent, and checking it takes time. Volunteers tend to record what they find interesting, so common species may be under-reported, and most participants come from wealthier, better-educated groups, which means that some places are studied far more than others. There is also a risk that unpaid volunteers are used as cheap labour, doing work that professionals would once have been paid for.\n\n6 Even so, citizen science has a rare virtue: it turns the public from passive recipients of scientific findings into active contributors. At a time when trust in experts is often fragile, that may be its most valuable result.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain what is meant by 'citizen science' (paragraph 1).",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "ordinary people / non-professionals take part in research",
+                  "marks": 1
+                },
+                {
+                  "text": "by gathering or examining information for projects run by professional scientists",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates understood the idea; the second mark required the link to professional research."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "According to paragraph 2, what is new about citizen science today? Use your own words.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the very large numbers of people now involved",
+                  "marks": 1
+                },
+                {
+                  "text": "made possible by the internet, so volunteers can take part remotely in many different tasks",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who wrote about birdwatching had not noticed that the writer says this is 'not new'."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'overlooked' as used in paragraph 3?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "looked down on from above"
+                },
+                {
+                  "key": "B",
+                  "text": "failed to notice"
+                },
+                {
+                  "key": "C",
+                  "text": "rejected"
+                },
+                {
+                  "key": "D",
+                  "text": "supervised"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – failed to notice",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Supervised' and 'looked down on from above' are other uses of the word that do not fit here."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'fragile' as used in paragraph 6?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "easily damaged"
+                },
+                {
+                  "key": "B",
+                  "text": "highly valued"
+                },
+                {
+                  "key": "C",
+                  "text": "steadily growing"
+                },
+                {
+                  "key": "D",
+                  "text": "kept secret"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – easily damaged",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 3 and 4, summarise the advantages of citizen science for scientists and for the volunteers and communities who take part. Write no more than 100 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "some tasks are too large for research teams",
+                  "marks": 1
+                },
+                {
+                  "text": "it would be too expensive to pay staff to do them",
+                  "marks": 1
+                },
+                {
+                  "text": "volunteers can record events in many places at once",
+                  "marks": 1
+                },
+                {
+                  "text": "people are better than computers at recognising some patterns",
+                  "marks": 1
+                },
+                {
+                  "text": "volunteers have found things that software missed",
+                  "marks": 1
+                },
+                {
+                  "text": "participants learn how science works",
+                  "marks": 1
+                },
+                {
+                  "text": "many gain a long-term interest",
+                  "marks": 1
+                },
+                {
+                  "text": "participants trust research more",
+                  "marks": 1
+                },
+                {
+                  "text": "communities can use their own data to make officials take action",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Points from paragraph 5 are disadvantages and were not credited. The best answers grouped the advantages by who benefits."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "Choose one weakness of citizen-science data mentioned in paragraph 5. Explain why it matters and suggest how a research project might reduce it.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies a weakness, e.g. inconsistent data / bias towards interesting species / uneven participation",
+                  "marks": 1
+                },
+                {
+                  "text": "explains its effect, e.g. conclusions may be distorted or unrepresentative",
+                  "marks": 1
+                },
+                {
+                  "text": "suggests a realistic remedy, e.g. training and clear instructions, recording all species, recruiting in under-represented areas",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Suggestions needed to address the specific weakness chosen."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "The writer claims that the 'most valuable result' of citizen science may be its effect on public trust. How far does the passage support this claim? Use evidence from the passage and your own ideas.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the evidence for increased trust (paragraph 4)",
+                  "marks": 1
+                },
+                {
+                  "text": "notes that this evidence is tentative ('may come to trust')",
+                  "marks": 1
+                },
+                {
+                  "text": "weighs trust against other benefits given greater emphasis, e.g. scientific discoveries",
+                  "marks": 1
+                },
+                {
+                  "text": "considers whether the weaknesses in paragraph 5 might undermine trust",
+                  "marks": 1
+                },
+                {
+                  "text": "draws on own knowledge or ideas",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified judgement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers saw that the final claim is asserted rather than demonstrated, and that the writer hedges with 'may'."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "In Praise of Silence\n\n1 It has become surprisingly difficult to find silence. Roads hum through the night, aircraft pass overhead, and in shops, cafés and even lifts, music plays whether anyone wants it or not. Many of us add to the din ourselves, filling every quiet moment with podcasts and notifications.\n\n2 Noise is more than an irritation. Long-term exposure to traffic and aircraft noise has been linked to disturbed sleep, raised blood pressure and a greater risk of heart disease. Children who attend schools under busy flight paths have, in several studies, been found to read less well than similar children in quieter schools, perhaps because they struggle to concentrate or because lessons are repeatedly interrupted.\n\n3 Wildlife suffers too. Birds in cities have been observed singing at higher pitches, or at night, in order to be heard above the traffic, and the sound of ships' engines can interfere with whales, which rely on sound to communicate over long distances.\n\n4 By contrast, quiet appears to be restorative. People who spend time in calm natural surroundings often report lower stress, and some research suggests that periods of silence help the brain to process information and form memories. Libraries, places of worship and remote landscapes have long offered refuge from the clamour of daily life; it is no coincidence that they are often described as places for reflection.\n\n5 Some cities are beginning to treat quiet as a resource worth protecting. They map noise levels, set aside 'quiet areas' in parks, limit night flights, and resurface roads with materials that reduce the roar of tyres. Electric vehicles, which are almost silent at low speeds, may help further, although their quietness has raised concerns about the safety of pedestrians who cannot hear them approach.\n\n6 Silence cannot be bought in a shop. But it can be planned for, protected and, perhaps, valued as highly as clean air and water.",
+          "figures": [],
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "C2",
+              "prompt": "Using your own words, explain how, according to paragraph 1, people 'add to the din' themselves.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "they choose to listen to recorded audio all the time",
+                  "marks": 1
+                },
+                {
+                  "text": "they allow their devices to interrupt them / never leave a moment quiet",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Filling every quiet moment' needed to be explained, not copied."
+            },
+            {
+              "label": "(b)",
+              "topic": "C2",
+              "prompt": "Using your own words, give two reasons suggested in paragraph 2 why children in schools under flight paths may read less well.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "they find it hard to focus",
+                  "marks": 1
+                },
+                {
+                  "text": "teaching is frequently disrupted by the noise",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered, though some candidates lifted 'struggle to concentrate' directly."
+            },
+            {
+              "label": "(c)",
+              "topic": "C3",
+              "prompt": "Which word or phrase is closest in meaning to 'restorative' as used in paragraph 4?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "helping people to recover their health or energy"
+                },
+                {
+                  "key": "B",
+                  "text": "bringing back old customs"
+                },
+                {
+                  "key": "C",
+                  "text": "causing sleepiness"
+                },
+                {
+                  "key": "D",
+                  "text": "difficult to find"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – helping people to recover their health or energy",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who chose 'bringing back old customs' confused 'restorative' with the restoration of buildings or traditions."
+            },
+            {
+              "label": "(d)",
+              "topic": "C3",
+              "prompt": "Give one word from paragraph 4 that means 'loud and continuous noise'.",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "clamour",
+                "clamor",
+                "the clamour"
+              ],
+              "markingPoints": [
+                {
+                  "text": "clamour",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "'Din' has a similar meaning but appears in paragraph 1, so it was not accepted."
+            },
+            {
+              "label": "(e)",
+              "topic": "C4",
+              "prompt": "Using material from paragraphs 2, 3 and 5, summarise the harmful effects of noise and the steps some cities are taking to reduce it. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "poor sleep",
+                  "marks": 1
+                },
+                {
+                  "text": "higher blood pressure",
+                  "marks": 1
+                },
+                {
+                  "text": "greater likelihood of heart disease",
+                  "marks": 1
+                },
+                {
+                  "text": "children's reading suffers",
+                  "marks": 1
+                },
+                {
+                  "text": "birds change when or how they sing",
+                  "marks": 1
+                },
+                {
+                  "text": "ship noise disrupts communication between whales",
+                  "marks": 1
+                },
+                {
+                  "text": "cities measure and map noise",
+                  "marks": 1
+                },
+                {
+                  "text": "quiet zones in parks",
+                  "marks": 1
+                },
+                {
+                  "text": "restrictions on night-time flights",
+                  "marks": 1
+                },
+                {
+                  "text": "quieter road surfaces",
+                  "marks": 1
+                },
+                {
+                  "text": "electric vehicles may reduce noise",
+                  "marks": 1
+                },
+                {
+                  "text": "uses own words as far as possible",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Material from paragraph 4 about the benefits of quiet was not relevant to this question."
+            },
+            {
+              "label": "(f)",
+              "topic": "C5",
+              "prompt": "In paragraph 5 the writer mentions a safety concern about electric vehicles. Explain how including this affects the argument.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "it shows the writer is fair / acknowledges that reducing noise can have drawbacks, making the argument more credible",
+                  "marks": 1
+                },
+                {
+                  "text": "but it is mentioned briefly and not answered, so it raises a question the writer leaves unresolved",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers commented on the effect of the concession on the reader, not just what it says."
+            },
+            {
+              "label": "(g)",
+              "topic": "C5",
+              "prompt": "How effectively does the writer persuade the reader that quiet should be 'valued as highly as clean air and water'? Refer to the passage and your own knowledge.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the main strands: harm to health, learning and wildlife; benefits of quiet; practical measures",
+                  "marks": 1
+                },
+                {
+                  "text": "assesses the evidence: 'linked to', 'several studies', 'some research' are vague and unsourced",
+                  "marks": 2
+                },
+                {
+                  "text": "comments on persuasive techniques, e.g. relatable opening, contrast in paragraph 4, short final sentence",
+                  "marks": 1
+                },
+                {
+                  "text": "tests the comparison with clean air and water, e.g. whether noise is as serious a threat to life",
+                  "marks": 1
+                },
+                {
+                  "text": "reaches a clear, justified overall judgement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best answers questioned whether the final comparison was justified by the evidence presented."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
