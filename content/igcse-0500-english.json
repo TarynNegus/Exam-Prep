@@ -695,6 +695,1172 @@
           ]
         }
       ]
+    },
+    {
+      "component": "1",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 1",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "Passage C: The Ovens\n\nThe bakery on Saltmarket Lane opened at six, but my grandfather's day began at half past two. That summer I was fourteen and had begged to help him, imagining warm bread and quiet conversation. Instead there was a bare bulb, a floor gritty with flour and a silence so complete that I could hear the clock above the sink deciding each second.\n\nGrandad did not talk while he worked. His hands did the talking. They folded and turned the dough with a rhythm that never hurried and never paused, the way a tide comes in. When I tried to copy him, my dough tore and stuck to my fingers like wet cloth. He watched for a while, then reached across without a word and laid his floury hand over mine, pressing once, twice, until I felt what he meant.\n\nAt four the ovens were ready. He swung the iron doors open and the heat leapt out at us, a dry, roaring animal that had been waiting all night. My eyebrows prickled. Grandad slid the first trays in with a long wooden paddle, as calmly as if he were posting letters.\n\nThen came the smell. It crept out of the ovens slowly at first and then filled every corner of the room, sweet and dark and faintly burnt at the edges, until the whole bakery seemed to be breathing it. Outside, the street was still black. A single delivery van grumbled past. Somewhere a dog barked once and thought better of it.\n\nBy six the shelves were full and the first customers were stamping their feet on the step. Grandad wiped his hands on his apron, nodded at the loaves I had shaped, crooked and lumpy among his perfect ones, and said the only full sentence I heard from him all morning: 'Those will sell first. People like bread that looks as if somebody made it.'",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "At what time did the narrator's grandfather begin work each day?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "2:30",
+                "2.30",
+                "half past two",
+                "2:30 am",
+                "2.30 am",
+                "2:30am",
+                "two thirty",
+                "half two"
+              ],
+              "markingPoints": [
+                {
+                  "text": "half past two / 2.30 (am)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. A few candidates gave six o'clock, which is when the bakery opened, not when work began."
+            },
+            {
+              "label": "(b)",
+              "topic": "R1",
+              "prompt": "Explain, using your own words, how the narrator's expectations of working in the bakery differed from what the narrator found, in paragraph 1.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the narrator expected it to be cosy / pleasant (warm bread)",
+                  "marks": 1
+                },
+                {
+                  "text": "the narrator expected to chat / spend time talking with the grandfather",
+                  "marks": 1
+                },
+                {
+                  "text": "in fact it was bleak / basic / dusty (bare bulb, floury floor)",
+                  "marks": 1
+                },
+                {
+                  "text": "in fact it was totally silent / there was no conversation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers made both sides of the contrast clear. Copying 'warm bread and quiet conversation' without explanation showed only partial understanding."
+            },
+            {
+              "label": "(c)",
+              "topic": "R1",
+              "prompt": "What does the grandfather's final comment suggest about what he thinks of the narrator's loaves? Explain your answer.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "he values them / is quietly proud of the narrator / approves of the narrator's work",
+                  "marks": 1
+                },
+                {
+                  "text": "he suggests their imperfection shows they are hand-made, which customers prefer / he is kindly turning a weakness into a strength",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates saw that the comment was kind. Fewer explained why the 'crooked and lumpy' shape becomes a selling point."
+            },
+            {
+              "label": "(d)",
+              "topic": "R2",
+              "prompt": "Identify and explain the effect of the image 'the heat leapt out at us, a dry, roaring animal that had been waiting all night' in paragraph 3.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "identifies the metaphor / personification of the heat as an animal",
+                  "marks": 1
+                },
+                {
+                  "text": "'leapt' suggests the heat is sudden and forceful, almost attacking them",
+                  "marks": 1
+                },
+                {
+                  "text": "'roaring' conveys the noise and fierce intensity of the ovens",
+                  "marks": 1
+                },
+                {
+                  "text": "'waiting all night' makes the ovens seem alive, patient and slightly menacing / creates a sense of danger for the young narrator",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Effective answers explored individual words such as 'leapt' and 'roaring' rather than simply saying the image was 'vivid'."
+            },
+            {
+              "label": "(e)",
+              "topic": "R2",
+              "prompt": "Explain how the writer uses language to present the grandfather as skilled and calm in paragraphs 2 and 3.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "'His hands did the talking' suggests skill is expressed through action not words / he is expert and wordless",
+                  "marks": 1
+                },
+                {
+                  "text": "tide simile: his rhythm is natural, steady and unstoppable",
+                  "marks": 1
+                },
+                {
+                  "text": "'never hurried and never paused': balanced repetition shows unbroken control",
+                  "marks": 1
+                },
+                {
+                  "text": "contrast with the narrator's dough 'like wet cloth' highlights his expertise",
+                  "marks": 1
+                },
+                {
+                  "text": "'as calmly as if he were posting letters' shows that a dangerous task is routine to him",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best responses selected short quotations and explained what each word suggests. Some candidates only listed techniques."
+            },
+            {
+              "label": "(f)",
+              "topic": "R2",
+              "prompt": "Explain how the writer uses the senses to create the atmosphere of the early morning in paragraph 4.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "smell 'crept' / 'filled every corner': personification shows it spreading gradually until it dominates",
+                  "marks": 1
+                },
+                {
+                  "text": "'sweet and dark and faintly burnt': layered adjectives (polysyndeton) make the smell rich and precise",
+                  "marks": 1
+                },
+                {
+                  "text": "'the whole bakery seemed to be breathing it': the room is alive / warmth inside contrasts with the dark street",
+                  "marks": 1
+                },
+                {
+                  "text": "sounds of the van 'grumbled' and the single bark emphasise the stillness / quiet of the town",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers noticed the contrast between the warm, full bakery and the empty street outside. The humour of the dog that 'thought better of it' was well explained by some."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "Passage D: Screaming Parties\n\nEvery May, the skies above our town fill with dark, sickle-shaped birds that race between the rooftops in noisy groups. Locals call these gatherings 'screaming parties'. The birds are swifts, and they have just completed a journey of several thousand kilometres from Africa. Yet each year fewer of them arrive.\n\nSwifts are astonishingly well suited to life in the air. They feed, drink and even sleep on the wing, and a young swift may not land at all for its first two or three years. The one thing they cannot do in the sky is raise their young. For that they need a dark, dry gap high up on a building: a hole under the roof tiles, a crack beneath the gutter. Swifts are loyal to these sites and return to the same hole year after year.\n\nThat loyalty has become a problem. When old houses are repaired, the gaps under their roofs are often sealed to keep heat in. New buildings are designed with smooth, tight surfaces that offer nowhere to nest. A pair of swifts returning from Africa may simply find their doorway bricked up, and with no time to search, they fail to breed that summer.\n\nFood is a second difficulty. Swifts eat only flying insects, catching thousands a day to feed their chicks. Where gardens are paved over and pesticides are used heavily, there are fewer insects in the air, and the parents must fly further to find enough.\n\nThe good news is that helping swifts is cheap and simple. Special swift bricks, with a hollow nesting space inside, can be built into new walls at almost no extra cost. Nest boxes can be fixed under the eaves of existing houses. Builders can be asked to leave old nest holes open when they repair a roof. Gardeners can plant flowers that attract insects and avoid sprays. In our town, a survey last summer recorded 26 nesting pairs; the volunteers who counted them hope that, with a little help, the screaming parties will grow louder again.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "How many nesting pairs of swifts did the survey in the writer's town record last summer?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "26",
+              "markingPoints": [
+                {
+                  "text": "26",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "R3",
+              "prompt": "According to Passage D, why are fewer swifts returning each year? Write your answer in note form. You do not need to use your own words.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "swifts need dark, dry gaps high on buildings to nest",
+                  "marks": 1
+                },
+                {
+                  "text": "gaps are sealed when old houses are repaired / to keep heat in",
+                  "marks": 1
+                },
+                {
+                  "text": "new buildings have smooth, tight surfaces with nowhere to nest",
+                  "marks": 1
+                },
+                {
+                  "text": "swifts return to the same site, so if it is blocked they fail to breed (no time to search)",
+                  "marks": 1
+                },
+                {
+                  "text": "fewer flying insects because gardens are paved over",
+                  "marks": 1
+                },
+                {
+                  "text": "pesticides reduce insects, so parents must fly further for food",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each note should contain a single, distinct point. Some candidates included the solutions from paragraph 5, which do not answer this question."
+            },
+            {
+              "label": "(c)",
+              "topic": "R3",
+              "prompt": "Write a summary of the ways people can help swifts, as described in Passage D. Write no more than 100 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "includes at least three relevant ways of helping",
+                  "marks": 4
+                },
+                {
+                  "text": "includes five relevant ways: swift bricks in new walls; nest boxes under eaves; keep old nest holes open during roof repairs; plant insect-attracting flowers; avoid pesticide sprays",
+                  "marks": 3
+                },
+                {
+                  "text": "uses own words throughout, not copied phrases",
+                  "marks": 1
+                },
+                {
+                  "text": "concise, clearly organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "Good summaries grouped the building measures and the garden measures together. Including the reasons for decline wasted words and was not credited."
+            },
+            {
+              "label": "(d)",
+              "topic": "R3",
+              "prompt": "Explain, using your own words, why swifts are described in paragraph 2 as 'astonishingly well suited to life in the air'. Give two details from the paragraph.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "they eat / drink in flight",
+                  "marks": 1
+                },
+                {
+                  "text": "they can sleep while flying",
+                  "marks": 1
+                },
+                {
+                  "text": "young birds can stay airborne for two or three years without landing",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates found two details. Answers that simply repeated 'well suited to life in the air' could not be credited."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "Passage E: The Year the River Came\n\nThat year the rain did not fall so much as lean on us. For eleven days it pressed against the windows, drummed on the tin roof of the shed and turned the lane outside our house into a brown, muttering stream.\n\nMy father spent those days pretending to be calm. He moved the photograph albums upstairs 'just in case', then the rugs, then, with a little laugh that did not reach his eyes, the television. My mother filled every pan we owned with clean water and lined them up on the landing like soldiers.\n\nOn the twelfth night the river arrived. It did not crash through the door as I had imagined. It slid under it, quiet as a thief, and spread across the kitchen floor in a thin, glittering sheet that grew a centimetre at a time. By morning the chairs were standing up to their knees in it. Our shoes floated past the bottom stair like small, abandoned boats.\n\nWhen the water finally sank away, it left behind a tidemark on the walls at exactly the height of my shoulder, and a smell that I can still summon if I close my eyes: mud, rot and something sweetish, like fruit left too long in a bowl. Everything we had not carried upstairs was ruined. The sofa was a sodden carcass. My mother's piano, which nobody played but everybody loved, gave a single drowned note when she touched it and never made a sound again.\n\nWhat I remember most, though, is not the damage. It is the morning after, when neighbours we had barely spoken to arrived with buckets, brooms and flasks of tea, and stayed until dark.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "Explain, using your own words, what the writer means by the phrase 'with a little laugh that did not reach his eyes' in paragraph 2.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "the father's laugh was forced / not genuine",
+                  "marks": 1
+                },
+                {
+                  "text": "he was hiding his anxiety / fear about the flood from his family",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates understood that the father was worried. Stronger answers linked this to 'pretending to be calm'."
+            },
+            {
+              "label": "(b)",
+              "topic": "R2",
+              "prompt": "Explain how the writer uses language to convey the arrival of the flood water in paragraph 3.",
+              "marks": 4,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "contrast with expectation: it did 'not crash' but 'slid', making it quieter and more unsettling",
+                  "marks": 1
+                },
+                {
+                  "text": "simile 'quiet as a thief' suggests something sly, unwelcome, stealing the family's possessions",
+                  "marks": 1
+                },
+                {
+                  "text": "'thin, glittering sheet' is deceptively beautiful / harmless-looking",
+                  "marks": 1
+                },
+                {
+                  "text": "'a centimetre at a time' conveys a slow, relentless rise",
+                  "marks": 1
+                },
+                {
+                  "text": "chairs 'up to their knees' / shoes 'like small, abandoned boats': personification and simile show how familiar objects are overwhelmed and lost",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong answers explored how the writer makes the flood frightening because it is quiet. Weaker answers retold events."
+            },
+            {
+              "label": "(c)",
+              "topic": "R2",
+              "prompt": "Re-read paragraphs 1 and 4. Select four powerful words or phrases from these paragraphs, including imagery, and explain how the writer uses them to convey the power and effects of the flood.",
+              "marks": 15,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "selects at least four precise, relevant words or phrases, including imagery, drawn from both paragraphs",
+                  "marks": 3
+                },
+                {
+                  "text": "explains the meaning of each choice accurately in context",
+                  "marks": 3
+                },
+                {
+                  "text": "explores connotations and effects precisely, showing how images work (not just naming techniques)",
+                  "marks": 6
+                },
+                {
+                  "text": "shows how the choices combine to create an overall impression of the flood's power and its aftermath",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Useful choices included 'lean on us' (the rain as a heavy, oppressive weight); 'drummed' (relentless noise); 'brown, muttering stream' (the lane transformed, threatening voice); 'tidemark … at exactly the height of my shoulder' (the scale measured against the child's body); 'sodden carcass' (sofa as a dead animal, decay); 'single drowned note' (the piano 'dies', loss of something loved). The best answers treated each image separately and explored its connotations in detail. Answers that named techniques without explaining the effect stayed in the middle levels. Selecting overlong quotations made precise comment difficult."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "Passage F: Two Wheels, One City\n\nThree years ago, the city of Harlow Vale introduced a bicycle-sharing scheme. Anyone with a mobile phone can unlock one of 800 bicycles from a docking station, ride it across the city and leave it at any other station. The council says the scheme has changed the way people travel, and most of the evidence supports that claim.\n\nThe most obvious benefit is cost. A ride of up to thirty minutes is free for members, and an annual membership costs less than a month of bus tickets. Students and shift workers, who often travel when buses are infrequent, have been among the keenest users.\n\nJourneys are also quicker than many people expect. In the crowded centre, where traffic crawls during the rush hour, a bicycle is often the fastest way to cross town, and riders never have to search for a parking space.\n\nThere are benefits for health, too. Regular cycling builds fitness without the need for a gym, and a local doctors' group reports that patients who began cycling to work say they feel less stressed. Fewer car journeys have also meant cleaner air on the main roads, which matters to the many residents with asthma.\n\nThe scheme is not perfect. Docking stations in the city centre are sometimes empty at peak times, while those on the outskirts are full, and riders complain that some cycle lanes stop suddenly at busy junctions. The council has promised more stations and safer, joined-up routes by next year.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "Give two reasons from paragraph 2 why students and shift workers have been keen users of the scheme.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "short rides (up to thirty minutes) are free / membership costs less than a month of bus tickets",
+                  "marks": 1
+                },
+                {
+                  "text": "they often travel when buses are infrequent / the bicycles are available when buses are not",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Most candidates found the cost point. Fewer noticed the link to infrequent buses."
+            },
+            {
+              "label": "(b)",
+              "topic": "R3",
+              "prompt": "Write a summary of the advantages of the bicycle-sharing scheme in Harlow Vale, according to Passage F. Write no more than 100 words, using your own words as far as possible.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "includes at least three relevant advantages",
+                  "marks": 4
+                },
+                {
+                  "text": "includes six or more relevant advantages, e.g. flexible (any station); free short rides; cheaper than the bus; available when buses are not; fastest across the congested centre; no parking needed; builds fitness without a gym; reduces stress; cleaner air from fewer car journeys",
+                  "marks": 3
+                },
+                {
+                  "text": "uses own words throughout, not copied phrases",
+                  "marks": 1
+                },
+                {
+                  "text": "concise, clearly organised and within the word limit",
+                  "marks": 2
+                }
+              ],
+              "examinerComment": "The final paragraph describes problems, not advantages, and should have been left out. Stronger summaries were written in fluent, linked sentences rather than a list."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "Passage G: Mend It, Don't End It\n\nWhen the zip on a coat breaks or a lamp stops working, most of us do not even consider repairing it. Things are cheap, repair shops have vanished from the high street, and we have been taught to shrug and buy another. A growing movement of Repair Cafés is trying to change that habit.\n\nThe idea is simple. On the first Saturday of every month, our local community hall fills with long tables, toolboxes and sewing machines. Anyone can bring in something broken, put their name on a list and wait with a cup of tea until a volunteer is free. There is no charge, although a jar by the door accepts donations towards spare parts.\n\nThe volunteers are the heart of the café. There is a retired electrician, a seamstress who once made costumes for the theatre and a bicycle mechanic who arrives with grease still on his hands. They work with the patience of surgeons, and they have coaxed radios, kettles and children's toys back to life. They refuse to take a penny; their only payment, one told me, is the grin on someone's face when a dead machine hums again.\n\nThe benefits go well beyond fixing things. Every item mended is one less thing thrown into landfill, and visitors save money they would have spent on replacements. Crucially, owners are encouraged to sit beside the volunteer and watch, so they leave knowing how to do the repair themselves next time. In this way, skills that older people learnt decades ago are being handed on to teenagers who have never held a soldering iron.\n\nThe café is also a place to meet. Neighbours who have lived on the same street for years without speaking now chat while they wait, and several regular visitors say it is the only time in the month they talk to anyone outside their family. For the volunteers, many of them retired, it offers a sense of being useful again.\n\nLast month, a woman brought in a toaster that had belonged to her mother. It took two volunteers an hour to find the fault, but when the first slice popped up, the whole hall applauded. 'Some things you just can't replace,' she said.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "R1",
+              "prompt": "On which day of the month does the Repair Café meet?",
+              "marks": 1,
+              "answerType": "SHORT_TEXT",
+              "acceptedAnswers": [
+                "the first Saturday",
+                "first Saturday",
+                "first Saturday of the month",
+                "the first Saturday of every month",
+                "1st Saturday"
+              ],
+              "markingPoints": [
+                {
+                  "text": "the first Saturday (of each month)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered. A small number gave 'Saturday' without 'first', which was not specific enough."
+            },
+            {
+              "label": "(b)",
+              "topic": "R1",
+              "prompt": "Explain, using your own words, what the writer means by the phrase 'we have been taught to shrug and buy another' in paragraph 1.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "people have learnt / become used to not caring when something breaks / accepting it without concern",
+                  "marks": 1
+                },
+                {
+                  "text": "people replace broken things automatically instead of trying to mend them",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Stronger answers explained both 'shrug' (indifference) and 'buy another' (automatic replacement)."
+            },
+            {
+              "label": "(c)",
+              "topic": "R2",
+              "prompt": "Explain how the writer uses language to present the volunteers as skilled and generous in paragraph 3.",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "'with the patience of surgeons': comparison suggests precision, expertise and care, as if saving a life",
+                  "marks": 1
+                },
+                {
+                  "text": "'coaxed … back to life': personification of the objects shows gentle, persistent skill",
+                  "marks": 1
+                },
+                {
+                  "text": "'refuse to take a penny' / 'only payment is the grin': emphasises generosity and the pleasure they take in helping",
+                  "marks": 1
+                },
+                {
+                  "text": "list of trades (retired electrician, seamstress, bicycle mechanic) shows the range of expertise on offer",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Effective answers commented on the surgical comparison in some detail. Simply stating that the volunteers are 'kind' without reference to language could not be credited."
+            },
+            {
+              "label": "(d)",
+              "topic": "R3",
+              "prompt": "According to Passage G, what are the benefits of Repair Cafés? Write your answer in note form. You do not need to use your own words.",
+              "marks": 6,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "they keep items out of landfill / reduce waste",
+                  "marks": 1
+                },
+                {
+                  "text": "they save people money (repairs are free)",
+                  "marks": 1
+                },
+                {
+                  "text": "visitors learn how to mend things themselves",
+                  "marks": 1
+                },
+                {
+                  "text": "skills of older people are passed on to younger people / not lost",
+                  "marks": 1
+                },
+                {
+                  "text": "they bring together neighbours who would otherwise not meet / reduce loneliness",
+                  "marks": 1
+                },
+                {
+                  "text": "they give volunteers a sense of purpose / usefulness",
+                  "marks": 1
+                },
+                {
+                  "text": "they keep sentimental objects in use / preserve things people love",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Each note should contain a single, distinct point. Descriptions of how the café is organised (tables, waiting area) are not benefits and should be left out."
+            },
+            {
+              "label": "(e)",
+              "topic": "R3",
+              "prompt": "Write a summary of the benefits of Repair Cafés, according to Passage G. Write no more than 120 words, using your own words as far as possible.",
+              "marks": 15,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "includes at least four relevant benefits",
+                  "marks": 5
+                },
+                {
+                  "text": "includes six or more relevant benefits, accurately",
+                  "marks": 5
+                },
+                {
+                  "text": "uses own words throughout, not copied phrases",
+                  "marks": 2
+                },
+                {
+                  "text": "concise, clearly organised and no more than 120 words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Good summaries grouped the environmental and financial benefits together, then the social ones. Some candidates retold the anecdote of the toaster at length, which used up words without adding points."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Bank",
+      "variant": "1",
+      "title": "Question bank – Paper 2",
+      "questionBank": true,
+      "questions": [
+        {
+          "number": 1,
+          "stem": "A proposal from the town council\n\nThe council plans to close the public library on Mill Street and replace it with a 'digital hub' inside the shopping centre. The council says that most people now read on screens and that visitor numbers at the library have fallen by a third in five years. The hub would be open later in the evening, offer free computers and wifi, and save money on maintaining the old building, which needs a new roof. Printed books would be available to order online and collected from the hub. Some residents have objected, saying the library is a quiet place to study, that older people rely on its staff for help, and that a shopping centre is not a welcoming place for everyone.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Write a letter to the editor of your local newspaper giving your views on the council's plan to replace the library with a digital hub. In your letter you should evaluate the arguments on both sides and explain what you think the council should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: selects and develops a range of relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas, identifying weaknesses or assumptions and giving a reasoned judgement",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "Strong letters questioned the council's evidence, for example asking whether falling visitor numbers reflected cuts to opening hours. Weaker responses repeated both sides without reaching a judgement."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "From a website for parents: 'Should teenagers have part-time jobs?'\n\nSupporters of part-time work for students aged fifteen and over say a weekend job teaches responsibility, punctuality and how to deal with the public. Earning money helps young people understand its value and can reduce pressure on family budgets. Employers often say that applicants with work experience stand out. However, some teachers report that students with jobs arrive tired and fall behind with homework, especially in examination years. Jobs in shops and cafés can involve late finishes, and some young people say they feel pressured to take extra shifts. A few parents argue that the teenage years are short and should be spent on study, sport and friendship.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Write an article for a website for young people with the title 'Work or homework?'. In your article you should evaluate the views given about teenagers having part-time jobs and give your own opinion. Base your article on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: selects and develops a range of relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas, identifying weaknesses or assumptions and giving a reasoned judgement",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "The best articles addressed a teenage audience directly and suggested sensible limits, such as a maximum number of hours in examination years. Some candidates wrote a letter, which did not suit the task."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "From a school newsletter: the end-of-year trip\n\nThis year the school has a choice to make for the end-of-year trip. Option one is a three-day outdoor activity camp in the hills: climbing, kayaking and camping, at a cost of $180 per student. Organisers say it builds confidence and teamwork, and that many students have never spent time in the countryside. Option two is a one-day visit to a theme park, costing $45. It is popular with students, involves no overnight stay and is easier for families to afford. Some teachers worry that the camp would exclude students whose families cannot pay, while others argue that a theme park teaches nothing and is something families can do on their own.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "You are a member of the student council. Write the speech you will give to your year group to persuade them to vote for one of the two trip options. In your speech you should evaluate the arguments for both options and explain your choice. Base your speech on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: selects and develops a range of relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas, identifying weaknesses or assumptions and giving a reasoned judgement",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "Effective speeches used direct address and rhetorical questions while still weighing the cost issue fairly. Responses that ignored the concern about families who cannot pay missed a key point for evaluation."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe a railway station during a delay, when a train has been cancelled and passengers are waiting. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Strong responses moved between the wide view of the crowded platform and close details of individual travellers. Some candidates drifted into a story about their own journey."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe the scene as a storm approaches and then breaks over a town or village. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "The best descriptions structured the writing around the changing light, sound and air pressure before and after the storm broke. Weaker answers relied on clichés such as 'the sky turned black'."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe a kitchen during the preparation of a large family meal. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Successful writing used precise sensory details of food, heat and voices. Lists of dishes without atmosphere, or long passages of dialogue, limited the marks."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe the view from a high place, such as a hilltop, tower or the top floor of a building, at dusk. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Stronger responses used the fading light to structure the piece, moving from what could still be seen clearly to what was disappearing. Some candidates described the climb at length and never reached the view."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Write the opening paragraph (about 120 to 150 words) of a description titled 'The Empty Swimming Pool'. Focus on creating atmosphere through precise detail.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: precise, original sensory detail that builds a clear atmosphere",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: ambitious, precise vocabulary and at least one effective image",
+                  "marks": 3
+                },
+                {
+                  "text": "Style: sentence lengths and openings varied for effect",
+                  "marks": 2
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Good openings chose one or two unusual details, such as dry leaves in the deep end, rather than trying to describe everything. Accurate, controlled sentences mattered as much as ambitious vocabulary."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story with the title 'The Wrong Bag'. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "The most successful stories kept the plot simple and focused on a character's reaction to what was in the bag. Stories crowded with too many events often had rushed endings."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story in which a character has to keep a promise that becomes difficult to keep. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Strong stories made the difficulty of the promise grow gradually, revealing character through choices. Weaker responses explained the character's feelings directly instead of showing them."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story that ends with the words: '... and for the first time, I understood why she had stayed.' Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Candidates who planned backwards from the ending wrote tightly structured stories. Some stories reached the given words abruptly, without preparing the reader for the realisation."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story with the title 'Power Cut'. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Effective stories used the darkness to build tension or to bring characters together in an unexpected way. Very long descriptions of the dark with no development of plot were less successful."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write the opening (about 120 to 150 words) of a story called 'The Last Customer'. Your opening should introduce a character and a setting and make the reader want to continue.",
+              "marks": 10,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: establishes character and situation quickly through detail rather than explanation",
+                  "marks": 4
+                },
+                {
+                  "text": "Structure: a deliberate opening hook and a sense of where the story will go",
+                  "marks": 2
+                },
+                {
+                  "text": "Style: precise vocabulary and varied sentences; any dialogue is purposeful and correctly punctuated",
+                  "marks": 3
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The best openings began in the middle of the action or with a striking detail and revealed the character through what they noticed or did. Openings that started with the character waking up were common and rarely effective."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "From a local news website: 'A car-free town centre?'\n\nCouncillors are considering banning cars from the main shopping streets of the town centre between 10 a.m. and 6 p.m. Supporters say the streets would be safer and quieter, that air pollution near the schools on the high street would fall, and that cafés could put tables outside. They point to other towns where shoppers stayed longer once the traffic had gone. Opponents include some shopkeepers, who fear that customers will drive to out-of-town retail parks instead, and disabled residents, who say they need to park close to the shops. Delivery drivers would have to arrive before 10 a.m., which some businesses say is impractical. Bus services would continue to run along the edge of the area.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W1",
+              "prompt": "Write a letter to your local councillor giving your views on the plan to make the town centre car-free during the day. In your letter you should evaluate the arguments for and against the plan and suggest what the council should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: selects and develops a range of relevant ideas from the text",
+                  "marks": 6
+                },
+                {
+                  "text": "Reading: evaluates the ideas, identifying weaknesses or assumptions and giving a reasoned judgement",
+                  "marks": 9
+                },
+                {
+                  "text": "Writing: register and format suit the audience and purpose",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: well structured, with a clear sequence and linked paragraphs",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: precise, varied vocabulary and sentence structures",
+                  "marks": 8
+                },
+                {
+                  "text": "Writing: accurate spelling, punctuation and grammar",
+                  "marks": 7
+                }
+              ],
+              "examinerComment": "Stronger letters proposed workable compromises, such as exemptions for blue-badge holders or early delivery windows, which showed genuine evaluation. Weaker letters simply listed points for and against. A formal register suited the audience; some letters were too casual for a councillor."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W2",
+              "prompt": "Describe a busy open-air market in the moments just before it closes for the day. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: creates a clear, consistent atmosphere",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: uses precise, original detail that appeals to several senses, avoiding clichés",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: organised deliberately, with controlled shifts of focus, viewpoint or time; avoids drifting into a story",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "Strong responses used the closing of the market to give the writing a clear shape, contrasting the last burst of noise with the emptying stalls. Lists of goods for sale, without atmosphere, limited the marks."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "W3",
+              "prompt": "Write a story in which a character returns to a place they have not visited since childhood. Write 350 to 450 words.",
+              "marks": 40,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Content: a convincing plot with a clear purpose and a satisfying ending",
+                  "marks": 6
+                },
+                {
+                  "text": "Content: believable characters and setting, developed through detail",
+                  "marks": 6
+                },
+                {
+                  "text": "Structure: carefully paced, with an effective opening and controlled tension",
+                  "marks": 4
+                },
+                {
+                  "text": "Style: wide, precise vocabulary chosen for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Style: varied sentence structures used for effect",
+                  "marks": 8
+                },
+                {
+                  "text": "Accuracy: spelling, punctuation and grammar are accurate throughout",
+                  "marks": 8
+                }
+              ],
+              "examinerComment": "The best stories used the contrast between memory and the present to reveal something about the character. Some candidates spent too long on the journey and left little room for the return itself."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
