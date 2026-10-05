@@ -39,9 +39,9 @@ After answering, the student always sees the answer, the mark scheme points and 
 ### Progress and unlocking (`src/lib/progress.ts`)
 
 - A topic is **complete** when the student has answered at least 3 of its questions (or all of them, if it has fewer) with an overall score of at least 60%. The latest attempt at each question counts.
-- Completing a topic unlocks the next one.
-- **Full past papers** unlock when every topic in the subject is complete. They require a subscription.
-- **Free plan:** the first 2 topics of every subject. **Subscription:** everything.
+- Completing a topic unlocks the next one. Topics can be grouped into **sections** (for example one per 9709 paper), and each section unlocks independently, so students can follow the papers they are taking.
+- **Full past papers** each unlock when every topic that paper assesses is complete. They require a subscription.
+- **Free plan:** the first 2 topics of each section. **Subscription:** everything.
 
 All of these thresholds are constants at the top of `src/lib/progress.ts`.
 
@@ -128,7 +128,7 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
 ```jsonc
 {
   "subject":    { "code": "0580", "name": "Mathematics", "qualification": "IGCSE", "syllabusYears": "2025-2027" },
-  "topics":     [{ "ref": "1", "title": "Number", "summary": "…" }],
+  "topics":     [{ "ref": "1", "title": "Number", "summary": "…", "section": "" }],  // section is optional
   "components": [{ "ref": "4", "title": "Paper 4 (Extended, calculator)", "durationMin": 120, "totalMarks": 100 }],
   "papers": [{
     "component": "4", "series": "June 2024", "variant": "42", "title": "June 2024 Paper 42",
@@ -170,7 +170,7 @@ The content tests (`tests/content.test.ts`) run on every file in `/content`. The
 
 Cambridge past papers, mark schemes, examiner reports and syllabus documents are **copyright of Cambridge University Press & Assessment**. Using them in a commercial, subscription product needs **written permission or a licence from Cambridge**. Do not import real past paper content until you have that permission.
 
-The sample content in `/content` (0580 Mathematics, 0610 Biology and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
+The sample content in `/content` (IGCSE 0500 First Language English, 0580 Mathematics and 0610 Biology; AS & A Level 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
 
 The site footer states that the product is not affiliated with or endorsed by Cambridge.
 

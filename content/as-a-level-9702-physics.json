@@ -1,0 +1,2315 @@
+{
+  "subject": {
+    "code": "9702",
+    "name": "Physics",
+    "qualification": "AS_A_LEVEL",
+    "syllabusYears": "2025-2027",
+    "description": "Cambridge International AS & A Level Physics. Topics 1–11 are assessed at AS Level (Papers 1 and 2) and topics 12–25 at A Level (Paper 4). Values use the constants on the Cambridge data sheet, with g = 9.81 m s⁻². You can type answers in standard form, for example 2.0e11 or 2.0 × 10^11. The practical papers (3 and 5) are not included. The questions are original practice questions written in the style of Cambridge papers, not reproduced past paper material."
+  },
+  "topics": [
+    {
+      "ref": "1",
+      "title": "Physical quantities and units",
+      "summary": "SI units, estimates, scalars and vectors, errors and uncertainties.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "2",
+      "title": "Kinematics",
+      "summary": "Equations of motion, graphs, projectile motion.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "3",
+      "title": "Dynamics",
+      "summary": "Momentum, Newton's laws, non-uniform motion, conservation of momentum.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "4",
+      "title": "Forces, density and pressure",
+      "summary": "Turning effects, equilibrium, density, pressure and upthrust.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "5",
+      "title": "Work, energy and power",
+      "summary": "Energy conservation, gravitational potential and kinetic energy, efficiency, power.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "6",
+      "title": "Deformation of solids",
+      "summary": "Stress, strain, Young modulus, elastic and plastic behaviour.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "7",
+      "title": "Waves",
+      "summary": "Progressive waves, transverse and longitudinal waves, Doppler effect, electromagnetic spectrum, polarisation.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "8",
+      "title": "Superposition",
+      "summary": "Stationary waves, diffraction, interference, the diffraction grating.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "9",
+      "title": "Electricity",
+      "summary": "Charge, current, potential difference, resistance and resistivity.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "10",
+      "title": "D.C. circuits",
+      "summary": "Kirchhoff's laws, e.m.f., internal resistance, potential dividers.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "11",
+      "title": "Particle physics",
+      "summary": "Atomic structure, radioactive decay, fundamental particles and quarks.",
+      "section": "AS Level"
+    },
+    {
+      "ref": "12",
+      "title": "Motion in a circle",
+      "summary": "Angular speed, centripetal acceleration and force.",
+      "section": "A Level"
+    },
+    {
+      "ref": "13",
+      "title": "Gravitational fields",
+      "summary": "Newton's law of gravitation, field strength, potential, orbits.",
+      "section": "A Level"
+    },
+    {
+      "ref": "14",
+      "title": "Temperature",
+      "summary": "Thermal equilibrium, temperature scales, specific heat capacity and latent heat.",
+      "section": "A Level"
+    },
+    {
+      "ref": "15",
+      "title": "Ideal gases",
+      "summary": "The ideal gas equation and the kinetic theory of gases.",
+      "section": "A Level"
+    },
+    {
+      "ref": "16",
+      "title": "Thermodynamics",
+      "summary": "Internal energy and the first law of thermodynamics.",
+      "section": "A Level"
+    },
+    {
+      "ref": "17",
+      "title": "Oscillations",
+      "summary": "Simple harmonic motion, energy in SHM, damping and resonance.",
+      "section": "A Level"
+    },
+    {
+      "ref": "18",
+      "title": "Electric fields",
+      "summary": "Field strength, Coulomb's law, electric potential.",
+      "section": "A Level"
+    },
+    {
+      "ref": "19",
+      "title": "Capacitance",
+      "summary": "Capacitors in circuits, energy stored, charging and discharging.",
+      "section": "A Level"
+    },
+    {
+      "ref": "20",
+      "title": "Magnetic fields",
+      "summary": "Force on currents and moving charges, electromagnetic induction.",
+      "section": "A Level"
+    },
+    {
+      "ref": "21",
+      "title": "Alternating currents",
+      "summary": "Characteristics of a.c., r.m.s. values, rectification and smoothing.",
+      "section": "A Level"
+    },
+    {
+      "ref": "22",
+      "title": "Quantum physics",
+      "summary": "Photons, the photoelectric effect, wave-particle duality, energy levels.",
+      "section": "A Level"
+    },
+    {
+      "ref": "23",
+      "title": "Nuclear physics",
+      "summary": "Mass defect, binding energy, radioactive decay and half-life.",
+      "section": "A Level"
+    },
+    {
+      "ref": "24",
+      "title": "Medical physics",
+      "summary": "Ultrasound, X-rays, PET scanning.",
+      "section": "A Level"
+    },
+    {
+      "ref": "25",
+      "title": "Astronomy and cosmology",
+      "summary": "Standard candles, stellar radii, Hubble's law and the Big Bang.",
+      "section": "A Level"
+    }
+  ],
+  "components": [
+    {
+      "ref": "1",
+      "title": "Paper 1 (Multiple Choice)",
+      "durationMin": 75,
+      "totalMarks": 40
+    },
+    {
+      "ref": "2",
+      "title": "Paper 2 (AS Level Structured Questions)",
+      "durationMin": 75,
+      "totalMarks": 60
+    },
+    {
+      "ref": "4",
+      "title": "Paper 4 (A Level Structured Questions)",
+      "durationMin": 120,
+      "totalMarks": 100
+    }
+  ],
+  "papers": [
+    {
+      "component": "1",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 1A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which of the following is an SI base unit?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "newton"
+                },
+                {
+                  "key": "B",
+                  "text": "joule"
+                },
+                {
+                  "key": "C",
+                  "text": "ampere"
+                },
+                {
+                  "key": "D",
+                  "text": "volt"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – ampere",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The newton, joule and volt are derived units. The seven base units should be learned."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "Which expresses the joule in SI base units?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "kg m s⁻²"
+                },
+                {
+                  "key": "B",
+                  "text": "kg m² s⁻²"
+                },
+                {
+                  "key": "C",
+                  "text": "kg m² s⁻¹"
+                },
+                {
+                  "key": "D",
+                  "text": "kg m s⁻¹"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – kg m² s⁻²",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Work = force × distance, so J = (kg m s⁻²) × m."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "A ball is dropped from rest. Air resistance is negligible. How far does it fall in the first 2.0 s?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "4.9 m"
+                },
+                {
+                  "key": "B",
+                  "text": "9.8 m"
+                },
+                {
+                  "key": "C",
+                  "text": "19.6 m"
+                },
+                {
+                  "key": "D",
+                  "text": "39.2 m"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 19.6 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using s = ½gt² gives 19.6 m. Option D comes from forgetting the ½."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "What does the gradient of a velocity–time graph represent?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "acceleration"
+                },
+                {
+                  "key": "B",
+                  "text": "displacement"
+                },
+                {
+                  "key": "C",
+                  "text": "distance"
+                },
+                {
+                  "key": "D",
+                  "text": "speed"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – acceleration",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The area under the graph gives displacement; the gradient gives acceleration."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "A book rests on a table. Which force forms a Newton's third law pair with the weight of the book?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "the gravitational pull of the book on the Earth"
+                },
+                {
+                  "key": "B",
+                  "text": "the normal contact force of the table on the book"
+                },
+                {
+                  "key": "C",
+                  "text": "the normal contact force of the book on the table"
+                },
+                {
+                  "key": "D",
+                  "text": "the weight of the table"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – the gravitational pull of the book on the Earth",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option B was the most common answer. Third law pairs act on different bodies and are the same type of force."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "Which is a unit of momentum?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "J s"
+                },
+                {
+                  "key": "B",
+                  "text": "N s"
+                },
+                {
+                  "key": "C",
+                  "text": "N s⁻¹"
+                },
+                {
+                  "key": "D",
+                  "text": "kg m s⁻²"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – N s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Momentum change equals impulse, which is force × time."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "What is the pressure due to water at a depth of 5.0 m? (density of water = 1000 kg m⁻³)",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "4.9 × 10² Pa"
+                },
+                {
+                  "key": "B",
+                  "text": "4.9 × 10³ Pa"
+                },
+                {
+                  "key": "C",
+                  "text": "4.9 × 10⁴ Pa"
+                },
+                {
+                  "key": "D",
+                  "text": "4.9 × 10⁵ Pa"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 4.9 × 10⁴ Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Δp = ρgΔh = 1000 × 9.81 × 5.0."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "An object is fully submerged in a liquid. What is the upthrust on the object equal to?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "the weight of the object"
+                },
+                {
+                  "key": "B",
+                  "text": "the weight of liquid displaced"
+                },
+                {
+                  "key": "C",
+                  "text": "the mass of liquid displaced"
+                },
+                {
+                  "key": "D",
+                  "text": "the pressure at the bottom of the object"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – the weight of liquid displaced",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Upthrust is a force, so it equals the weight (not mass) of the displaced liquid."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A motor uses 500 J of electrical energy to lift a load and gives the load 350 J of potential energy. What is its efficiency?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "30%"
+                },
+                {
+                  "key": "B",
+                  "text": "70%"
+                },
+                {
+                  "key": "C",
+                  "text": "143%"
+                },
+                {
+                  "key": "D",
+                  "text": "150%"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 70%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Efficiency = useful output ÷ total input."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "What is the kinetic energy of a mass of 0.20 kg moving at 15 m s⁻¹?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "1.5 J"
+                },
+                {
+                  "key": "B",
+                  "text": "3.0 J"
+                },
+                {
+                  "key": "C",
+                  "text": "22.5 J"
+                },
+                {
+                  "key": "D",
+                  "text": "45 J"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 22.5 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option D comes from omitting the ½ in ½mv²."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "Which expression defines the Young modulus?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "force ÷ extension"
+                },
+                {
+                  "key": "B",
+                  "text": "stress ÷ strain"
+                },
+                {
+                  "key": "C",
+                  "text": "strain ÷ stress"
+                },
+                {
+                  "key": "D",
+                  "text": "force ÷ area"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – stress ÷ strain",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option A is the spring constant; option D is stress."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A force of 6.0 N extends a spring by 0.030 m. What is the spring constant?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.18 N m⁻¹"
+                },
+                {
+                  "key": "B",
+                  "text": "5.0 N m⁻¹"
+                },
+                {
+                  "key": "C",
+                  "text": "200 N m⁻¹"
+                },
+                {
+                  "key": "D",
+                  "text": "500 N m⁻¹"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – 200 N m⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "k = F ÷ x. Candidates should check that the extension is in metres."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A wave has frequency 50 Hz and wavelength 0.40 m. What is its speed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.008 m s⁻¹"
+                },
+                {
+                  "key": "B",
+                  "text": "20 m s⁻¹"
+                },
+                {
+                  "key": "C",
+                  "text": "50 m s⁻¹"
+                },
+                {
+                  "key": "D",
+                  "text": "125 m s⁻¹"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 20 m s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "v = fλ."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "Which type of wave is longitudinal?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "light"
+                },
+                {
+                  "key": "B",
+                  "text": "microwaves"
+                },
+                {
+                  "key": "C",
+                  "text": "sound"
+                },
+                {
+                  "key": "D",
+                  "text": "waves on a string"
+                }
+              ],
+              "correctAnswer": "C",
+              "markingPoints": [
+                {
+                  "text": "C – sound",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "All electromagnetic waves are transverse."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "Two coherent sources produce an interference pattern. What is the path difference at a point of maximum intensity?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "any odd number of half wavelengths"
+                },
+                {
+                  "key": "B",
+                  "text": "a whole number of wavelengths"
+                },
+                {
+                  "key": "C",
+                  "text": "a quarter of a wavelength"
+                },
+                {
+                  "key": "D",
+                  "text": "zero only"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – a whole number of wavelengths",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Option D is one case of option B but not the only one."
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "What is the distance between adjacent nodes in a stationary wave?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "λ/4"
+                },
+                {
+                  "key": "B",
+                  "text": "λ/2"
+                },
+                {
+                  "key": "C",
+                  "text": "λ"
+                },
+                {
+                  "key": "D",
+                  "text": "2λ"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – λ/2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Node to adjacent antinode is λ/4; node to node is λ/2."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A current of 2.0 A flows for 30 s. How much charge passes a point?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.067 C"
+                },
+                {
+                  "key": "B",
+                  "text": "15 C"
+                },
+                {
+                  "key": "C",
+                  "text": "32 C"
+                },
+                {
+                  "key": "D",
+                  "text": "60 C"
+                }
+              ],
+              "correctAnswer": "D",
+              "markingPoints": [
+                {
+                  "text": "D – 60 C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Q = It."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "Which change doubles the resistance of a wire?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "doubling its cross-sectional area"
+                },
+                {
+                  "key": "B",
+                  "text": "doubling its length"
+                },
+                {
+                  "key": "C",
+                  "text": "halving its length"
+                },
+                {
+                  "key": "D",
+                  "text": "doubling its diameter"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – doubling its length",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "R = ρL/A. Doubling the diameter quarters the resistance."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Two 6.0 Ω resistors are connected in parallel. What is the combined resistance?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "0.33 Ω"
+                },
+                {
+                  "key": "B",
+                  "text": "3.0 Ω"
+                },
+                {
+                  "key": "C",
+                  "text": "6.0 Ω"
+                },
+                {
+                  "key": "D",
+                  "text": "12 Ω"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 3.0 Ω",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "For identical resistors in parallel, the total is the value divided by the number of resistors."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "Kirchhoff's first law is a consequence of the conservation of which quantity?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "charge"
+                },
+                {
+                  "key": "B",
+                  "text": "energy"
+                },
+                {
+                  "key": "C",
+                  "text": "momentum"
+                },
+                {
+                  "key": "D",
+                  "text": "voltage"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – charge",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Kirchhoff's second law follows from conservation of energy."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What is an α-particle made of?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "2 protons only"
+                },
+                {
+                  "key": "B",
+                  "text": "2 protons and 2 neutrons"
+                },
+                {
+                  "key": "C",
+                  "text": "2 neutrons and 2 electrons"
+                },
+                {
+                  "key": "D",
+                  "text": "1 proton and 1 neutron"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – 2 protons and 2 neutrons",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "An α-particle is a helium nucleus."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "What is the quark composition of a proton?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "udd"
+                },
+                {
+                  "key": "B",
+                  "text": "uud"
+                },
+                {
+                  "key": "C",
+                  "text": "uuu"
+                },
+                {
+                  "key": "D",
+                  "text": "ud̄"
+                }
+              ],
+              "correctAnswer": "B",
+              "markingPoints": [
+                {
+                  "text": "B – uud",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "A neutron is udd. Charges: u = +⅔e, d = −⅓e."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "2",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 2A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1",
+              "prompt": "The length of a rectangle is measured as 25.0 ± 0.5 cm and its width as 10.0 ± 0.2 cm. Calculate the percentage uncertainty in its area.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "C1 for 2% + 2%",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4%",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Percentage uncertainties add when quantities are multiplied."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2",
+              "prompt": "A ball is thrown horizontally at 12 m s⁻¹ from the top of a cliff 20 m high. Air resistance is negligible. Calculate the horizontal distance the ball travels before hitting the ground, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "24.23",
+              "tolerance": 0.3,
+              "markingPoints": [
+                {
+                  "text": "C1 for 20 = ½ × 9.81 × t²",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for t = 2.02 s",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 24 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Horizontal and vertical motion must be treated separately. The horizontal velocity stays constant."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "3",
+              "prompt": "A constant resultant force of 15 N acts on a mass of 2.5 kg, initially at rest, for 4.0 s. Calculate the final momentum of the mass, in N s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "60",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "C1 for impulse = F × t",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 60 N s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "4",
+              "prompt": "A weight of 60 N hangs 0.40 m from a pivot on a light rod. Calculate the vertical force needed 1.2 m from the pivot on the other side to balance the rod, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "20",
+              "tolerance": 0.1,
+              "markingPoints": [
+                {
+                  "text": "C1 for 60 × 0.40 = F × 1.2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 20 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "State the principle of moments when using it."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "5",
+              "prompt": "A crane lifts a load of mass 800 kg vertically through 12 m in 20 s at constant speed. Calculate the useful output power of the crane, in W.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4709",
+              "tolerance": 15,
+              "markingPoints": [
+                {
+                  "text": "C1 for work done = mgh = 9.4 × 10⁴ J",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for power = work ÷ time",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.7 × 10³ W",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates used mass instead of weight."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "6",
+              "prompt": "A wire of length 2.0 m and cross-sectional area 1.0 × 10⁻⁶ m² extends by 1.0 mm under a tension of 100 N. Calculate the Young modulus of the material, in Pa.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2e11",
+              "tolerance": 2000000000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for stress = 1.0 × 10⁸ Pa",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for strain = 5.0 × 10⁻⁴",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.0 × 10¹¹ Pa",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting the extension from mm to m was essential. Answers can be typed as 2.0e11 or 2.0 × 10^11."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "7",
+              "prompt": "A source emits sound of frequency 400 Hz and moves directly towards a stationary observer at 20 m s⁻¹. The speed of sound is 340 m s⁻¹. Calculate the frequency heard by the observer, in Hz.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "425",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "C1 for f = fₛv / (v − vₛ)",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for 400 × 340 / 320",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 425 Hz",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using (v + vₛ) for an approaching source gave a frequency lower than 400 Hz, which candidates should have recognised as wrong."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "8",
+              "prompt": "In a double-slit experiment the slit separation is 0.50 mm, the screen is 2.0 m from the slits, and the fringe separation is 2.4 mm. Calculate the wavelength of the light, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6e-7",
+              "tolerance": 1e-09,
+              "markingPoints": [
+                {
+                  "text": "C1 for λ = ax / D",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for correct unit conversions",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.0 × 10⁻⁷ m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Unit conversion from mm was the main source of error."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "9",
+              "prompt": "A 12 V supply provides a current of 3.0 A to a heater. Calculate the energy transferred in 5.0 minutes, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "10800",
+              "tolerance": 50,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = VIt with t = 300 s",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.08 × 10⁴ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Minutes must be converted to seconds."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "10",
+              "prompt": "A battery of e.m.f. 9.0 V and internal resistance 0.50 Ω is connected to a 4.0 Ω resistor. Calculate the potential difference across the resistor, in V.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "8",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "C1 for I = 9.0 / 4.5 = 2.0 A",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for V = IR",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 8.0 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some candidates ignored the internal resistance and gave 9.0 V."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "11",
+              "prompt": "Describe the change in quark composition that occurs in β⁻ decay, and name the leptons emitted.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for a down quark changing into an up quark (udd → uud)",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for an electron and an electron antineutrino emitted",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many candidates wrote 'neutrino' rather than 'antineutrino' for β⁻ decay."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "4",
+      "series": "Sample",
+      "variant": "A",
+      "title": "Sample Paper 4A (illustrative)",
+      "questions": [
+        {
+          "number": 1,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "12",
+              "prompt": "Calculate the angular speed, in rad s⁻¹, of a wheel rotating at 300 revolutions per minute.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "31.42",
+              "tolerance": 0.05,
+              "markingPoints": [
+                {
+                  "text": "C1 for 300 × 2π / 60",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 31.4 rad s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "12",
+              "prompt": "A car of mass 1200 kg travels round a horizontal bend of radius 50 m at a constant speed of 15 m s⁻¹. Calculate the resultant force on the car, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5400",
+              "tolerance": 5,
+              "markingPoints": [
+                {
+                  "text": "C1 for F = mv²/r",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5400 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "12",
+              "prompt": "Explain why an object moving in a circle at constant speed is accelerating.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for its velocity changes because its direction changes",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for the acceleration (and resultant force) is towards the centre of the circle",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers must refer to velocity, not speed, changing."
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "13",
+              "prompt": "The Earth has mass 5.97 × 10²⁴ kg and radius 6.37 × 10⁶ m. Calculate the gravitational field strength at its surface, in N kg⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "9.813",
+              "tolerance": 0.02,
+              "markingPoints": [
+                {
+                  "text": "C1 for g = GM/r²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 9.81 N kg⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "13",
+              "prompt": "A geostationary satellite orbits the Earth (mass 5.97 × 10²⁴ kg) with a period of 24 hours. Calculate the radius of its orbit, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.223e7",
+              "tolerance": 100000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for GMm/r² = mω²r or r³ = GMT²/4π²",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for T = 86 400 s",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.22 × 10⁷ m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Many forgot to convert the period to seconds."
+            },
+            {
+              "label": "(c)",
+              "topic": "13",
+              "prompt": "Define gravitational potential at a point.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for work done per unit mass",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for bringing a small test mass from infinity to the point",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both 'per unit mass' and 'from infinity' are required."
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "14",
+              "prompt": "Convert a temperature of 27 °C to kelvin.",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "300.1",
+              "tolerance": 0.2,
+              "markingPoints": [
+                {
+                  "text": "B1 for 300 K",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "14",
+              "prompt": "Calculate the energy needed to heat 0.50 kg of water from 20 °C to 80 °C. The specific heat capacity of water is 4200 J kg⁻¹ K⁻¹. Give your answer in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "126000",
+              "tolerance": 100,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = mcΔθ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.26 × 10⁵ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "14",
+              "prompt": "Calculate the energy needed to melt 0.20 kg of ice at 0 °C. The specific latent heat of fusion of ice is 3.34 × 10⁵ J kg⁻¹. Give your answer in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "66800",
+              "tolerance": 50,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = mL",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.68 × 10⁴ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "15",
+              "prompt": "A gas at a pressure of 1.0 × 10⁵ Pa occupies 0.024 m³ at 290 K. Calculate the amount of gas, in mol.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.9959",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "C1 for n = pV/RT",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.0 mol",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Temperatures must be in kelvin."
+            },
+            {
+              "label": "(b)",
+              "topic": "15",
+              "prompt": "Calculate the mean translational kinetic energy of a gas molecule at 300 K, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "6.21e-21",
+              "tolerance": 2e-23,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = (3/2)kT",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 6.21 × 10⁻²¹ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers can be typed as 6.21e-21."
+            },
+            {
+              "label": "(c)",
+              "topic": "15",
+              "prompt": "State two assumptions of the kinetic theory of gases.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for molecules have negligible volume compared with the container",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for no intermolecular forces (except during collisions)",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for collisions are elastic",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for the time of a collision is negligible compared with the time between collisions",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for molecules move randomly / there are a very large number of molecules",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Statements such as 'molecules are small' were not precise enough."
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "16",
+              "prompt": "A gas is supplied with 500 J of thermal energy and does 200 J of work on its surroundings. Calculate the increase in its internal energy, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "300",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "C1 for ΔU = q + W with W = −200 J",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 300 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Sign conventions caused difficulty. Work done by the gas is negative in ΔU = q + W."
+            },
+            {
+              "label": "(b)",
+              "topic": "16",
+              "prompt": "A gas expands at a constant pressure of 2.0 × 10⁵ Pa and its volume increases by 0.010 m³. Calculate the work done by the gas, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2000",
+              "tolerance": 5,
+              "markingPoints": [
+                {
+                  "text": "C1 for W = pΔV",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2000 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "16",
+              "prompt": "Explain what is meant by the internal energy of a system.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for the sum of the random kinetic and potential energies",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 of the molecules in the system",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Both kinetic and potential energy must be mentioned, and 'random' is required."
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "17",
+              "prompt": "A mass of 0.50 kg on a spring of spring constant 200 N m⁻¹ oscillates with simple harmonic motion. Calculate the period, in s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.3142",
+              "tolerance": 0.002,
+              "markingPoints": [
+                {
+                  "text": "C1 for T = 2π√(m/k)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.314 s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "17",
+              "prompt": "An object performs simple harmonic motion with amplitude 0.040 m and angular frequency 20 rad s⁻¹. Calculate its maximum speed, in m s⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.8",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "C1 for v₀ = ωx₀",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.80 m s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "17",
+              "prompt": "Define simple harmonic motion.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for acceleration proportional to displacement from a fixed point",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for acceleration directed towards that point / in the opposite direction to displacement",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The direction of the acceleration must be stated."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "18",
+              "prompt": "Two parallel plates 2.0 cm apart have a potential difference of 500 V between them. Calculate the electric field strength, in V m⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "25000",
+              "tolerance": 50,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = V/d with d in metres",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.5 × 10⁴ V m⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Converting cm to m was essential."
+            },
+            {
+              "label": "(b)",
+              "topic": "18",
+              "prompt": "Two point charges of +2.0 μC and +3.0 μC are 0.10 m apart in a vacuum. Calculate the force between them, in N.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5.394",
+              "tolerance": 0.02,
+              "markingPoints": [
+                {
+                  "text": "C1 for F = Qq / 4πε₀r²",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for correct substitution with μC converted",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.4 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "18",
+              "prompt": "An electron is accelerated from rest through a potential difference of 200 V. Calculate its kinetic energy, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.2e-17",
+              "tolerance": 1e-19,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = QV",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.2 × 10⁻¹⁷ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "19",
+              "prompt": "A 470 μF capacitor is charged to 12 V. Calculate the charge stored, in C.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.00564",
+              "tolerance": 1e-05,
+              "markingPoints": [
+                {
+                  "text": "C1 for Q = CV",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.64 × 10⁻³ C",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "19",
+              "prompt": "Calculate the energy stored in the capacitor in part (a), in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.03384",
+              "tolerance": 0.0002,
+              "markingPoints": [
+                {
+                  "text": "C1 for W = ½CV²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.0338 J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "19",
+              "prompt": "The capacitor discharges through a 10 kΩ resistor. Calculate the time constant, in s.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.7",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "C1 for τ = RC",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.7 s",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "20",
+              "prompt": "A wire of length 0.50 m carries a current of 3.0 A at right angles to a magnetic field of flux density 0.20 T. Calculate the force on the wire, in N.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.3",
+              "tolerance": 0.005,
+              "markingPoints": [
+                {
+                  "text": "C1 for F = BIL",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.30 N",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "20",
+              "prompt": "An electron moves at 2.0 × 10⁷ m s⁻¹ at right angles to a magnetic field of flux density 5.0 × 10⁻³ T. Calculate the radius of its circular path, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.02278",
+              "tolerance": 0.0002,
+              "markingPoints": [
+                {
+                  "text": "C1 for Bqv = mv²/r",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for r = mv/Bq",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.0228 m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "20",
+              "prompt": "The magnetic flux through a 50-turn coil changes by 0.060 Wb in 0.020 s. Calculate the average induced e.m.f., in V.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "150",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = NΔΦ/Δt",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 150 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Some forgot to multiply by the number of turns."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "21",
+              "prompt": "An alternating voltage has a peak value of 325 V. Calculate its r.m.s. value, in V.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "229.8",
+              "tolerance": 0.5,
+              "markingPoints": [
+                {
+                  "text": "C1 for V₀/√2",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 230 V",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "21",
+              "prompt": "This voltage is applied across a 50 Ω resistor. Calculate the mean power dissipated, in W.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1056",
+              "tolerance": 5,
+              "markingPoints": [
+                {
+                  "text": "C1 for P = V²ᵣₘₛ/R",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1060 W",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Using the peak voltage doubled the answer."
+            },
+            {
+              "label": "(c)",
+              "topic": "21",
+              "prompt": "Explain how a capacitor connected across the output of a rectifier smooths the output voltage.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for the capacitor charges when the output voltage rises",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for it discharges through the load when the voltage falls, reducing the ripple",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Good answers referred to the time constant being much longer than the period of the supply."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "22",
+              "prompt": "Calculate the energy of a photon of wavelength 500 nm, in J.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.978e-19",
+              "tolerance": 1e-21,
+              "markingPoints": [
+                {
+                  "text": "C1 for E = hc/λ",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.98 × 10⁻¹⁹ J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "22",
+              "prompt": "Light with photon energy 3.0 eV falls on a metal with work function 2.3 eV. Calculate the maximum kinetic energy of the emitted electrons, in eV.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.7",
+              "tolerance": 0.01,
+              "markingPoints": [
+                {
+                  "text": "C1 for hf = Φ + KEmax",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.70 eV",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "22",
+              "prompt": "Calculate the de Broglie wavelength of an electron moving at 2.0 × 10⁶ m s⁻¹, in m.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "3.639e-10",
+              "tolerance": 5e-12,
+              "markingPoints": [
+                {
+                  "text": "C1 for λ = h/p",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for p = mv",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 3.6 × 10⁻¹⁰ m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "23",
+              "prompt": "A radioactive isotope has a half-life of 8.0 days. What fraction of the original nuclei remains after 24 days?",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.125",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "C1 for 3 half-lives",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.125 (1/8)",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "23",
+              "prompt": "Carbon-14 has a half-life of 5730 years. Calculate its decay constant, in year⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.21e-4",
+              "tolerance": 1e-06,
+              "markingPoints": [
+                {
+                  "text": "C1 for λ = ln 2 / t½",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.21 × 10⁻⁴ year⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "23",
+              "prompt": "In a nuclear reaction the mass decreases by 0.0300 u. Calculate the energy released, in J.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "4.482e-12",
+              "tolerance": 2e-14,
+              "markingPoints": [
+                {
+                  "text": "C1 for converting u to kg",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for E = Δmc²",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 4.48 × 10⁻¹² J",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "24",
+              "prompt": "An X-ray beam passes through 3.0 cm of tissue with linear attenuation coefficient 0.50 cm⁻¹. Calculate the fraction of the intensity transmitted.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "0.2231",
+              "tolerance": 0.001,
+              "markingPoints": [
+                {
+                  "text": "C1 for I = I₀e^(−μx)",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 0.223",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "24",
+              "prompt": "Soft tissue has density 1060 kg m⁻³ and the speed of ultrasound in it is 1580 m s⁻¹. Calculate its specific acoustic impedance, in kg m⁻² s⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1675000",
+              "tolerance": 10000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for Z = ρc",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 1.67 × 10⁶ kg m⁻² s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "24",
+              "prompt": "Explain why a gel is used between the ultrasound transducer and the skin.",
+              "marks": 2,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "B1 for it removes the air between the transducer and the skin",
+                  "marks": 1
+                },
+                {
+                  "text": "B1 for air and skin have very different acoustic impedances, so without gel most ultrasound would be reflected",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers should refer to acoustic impedance matching."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "25",
+              "prompt": "Using a Hubble constant of 2.3 × 10⁻¹⁸ s⁻¹, calculate the recession speed of a galaxy 1.0 × 10²⁴ m away, in m s⁻¹.",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2300000",
+              "tolerance": 10000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for v = H₀d",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.3 × 10⁶ m s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(b)",
+              "topic": "25",
+              "prompt": "Use Wien's displacement law to find the peak wavelength emitted by a star with surface temperature 5800 K, in m. (λmax T = 2.9 × 10⁻³ m K)",
+              "marks": 2,
+              "answerType": "NUMERIC",
+              "correctAnswer": "5e-7",
+              "tolerance": 1e-09,
+              "markingPoints": [
+                {
+                  "text": "C1 for λmax = 2.9 × 10⁻³ / T",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 5.0 × 10⁻⁷ m",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            },
+            {
+              "label": "(c)",
+              "topic": "25",
+              "prompt": "A spectral line with laboratory wavelength 656 nm is observed at 662 nm in light from a galaxy. Calculate the speed of the galaxy relative to the Earth, in m s⁻¹.",
+              "marks": 3,
+              "answerType": "NUMERIC",
+              "correctAnswer": "2744000",
+              "tolerance": 50000.0,
+              "markingPoints": [
+                {
+                  "text": "C1 for Δλ/λ = v/c",
+                  "marks": 1
+                },
+                {
+                  "text": "C1 for Δλ = 6 nm",
+                  "marks": 1
+                },
+                {
+                  "text": "A1 for 2.7 × 10⁶ m s⁻¹",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Well answered."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
