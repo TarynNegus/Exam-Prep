@@ -25,7 +25,18 @@ Subject (e.g. 0580 Mathematics, syllabus 2025-2027, IGCSE)
                           └─ examinerComment  commentary from the examiner's report
 ```
 
-Every question part is tagged with a syllabus topic. The same past paper question is used in two places: in **topic practice** (only the parts for that topic are shown) and in **full past paper** mode.
+Every question part is tagged with a syllabus topic. The same past paper question is used in two places: in **topic practice** (only the parts for that topic are shown) and in **full past paper** mode. Papers marked `questionBank` hold extra questions that feed topic practice and randomised tests but are never sat as a full paper.
+
+### Keeping practice fresh (`src/lib/variants.ts`, `src/lib/practice-set.ts`)
+
+So that students can't simply learn the answers:
+
+- **Practice sets.** Each visit to a topic deals a set of 5 questions from every question on that topic, starting with ones the student hasn't tried or scored lowest on. The set lives in the URL (`?set=<seed>-<time>`), so reloading after answering shows the same set. **New set** deals another.
+- **Shuffled options.** Multiple-choice options appear in a different order in each set, relabelled A–D. The mark scheme line is relabelled to match.
+- **Number variants.** A numeric part can be a template whose numbers change in each set and when the student presses **Try again**. The answer and mark scheme are recalculated for the numbers shown.
+- **Randomised practice tests.** Once every topic a component covers is complete, subscribers can start a timed practice test. Questions are drawn at random from that component's papers and question banks, and use shuffled options and new numbers.
+
+Seed 0 always means "as published". Full past papers are sat exactly as published. Each answer stores the seed of the version the student saw, so it can be re-marked and reviewed later.
 
 ### Marking
 
@@ -145,6 +156,24 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
   }]
 }
 ```
+
+### Number templates
+
+A numeric part becomes a template by adding `variables` and an `answerExpression`. In the prompt, marking points, options and examiner comment, `{name}` shows a variable and `{=expression}` shows a calculated value (evaluated with [mathjs](https://mathjs.org)):
+
+```jsonc
+{
+  "prompt": "A car of mass {m} kg travels at {v} m/s. Calculate its kinetic energy.",
+  "answerType": "NUMERIC",
+  "variables": { "m": { "min": 800, "max": 1600, "step": 100, "value": 1200 }, "v": { "min": 10, "max": 30, "step": 1, "value": 15 } },
+  "answerExpression": "0.5 * m * v^2",
+  "correctAnswer": "135000",          // the answer at the published values
+  "relativeTolerance": 0.005,         // accepts answers to 3 significant figures
+  "markingPoints": [{ "text": "KE = ½ × {m} × {v}² = {=0.5*m*v^2} J", "marks": 2 }]
+}
+```
+
+`value` is the number used in the published version. The content tests render 40 versions of every template. They check that no placeholders are left and that each version's own answer earns full marks. `python3 scripts/content_coverage.py content/<file>.json` reports how many parts each topic has on each paper route.
 
 ### Figures (diagrams, graphs and maps)
 
