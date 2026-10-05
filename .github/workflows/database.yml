@@ -12,6 +12,8 @@ on:
 jobs:
   migrate-and-import:
     runs-on: ubuntu-latest
+    # Stops a hung connection instead of waiting for GitHub's 6-hour limit.
+    timeout-minutes: 30
     env:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       DIRECT_URL: ${{ secrets.DIRECT_URL }}

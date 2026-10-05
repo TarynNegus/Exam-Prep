@@ -81,6 +81,8 @@ export async function importContent(db: PrismaClient, raw: unknown) {
 
       return { subject: `${s.code} ${s.name} (${s.syllabusYears})`, topics: content.topics.length, parts: partCount };
     },
-    { timeout: 60_000 },
+    // Each part is a separate round trip, so a large subject over a remote
+    // connection pooler can take a few minutes.
+    { timeout: 600_000, maxWait: 60_000 },
   );
 }
