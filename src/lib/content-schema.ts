@@ -71,6 +71,8 @@ const paper = z.object({
   series: z.string().min(1),
   variant: z.string().min(1),
   title: z.string().min(1),
+  /** Extra questions that feed topic practice and randomised tests but are never sat as a full paper. */
+  questionBank: z.boolean().default(false),
   questions: z.array(question).min(1),
 });
 

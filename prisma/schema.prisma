@@ -124,6 +124,8 @@ model PastPaper {
   series       String         // e.g. "June 2024" or "Sample"
   variant      String         // e.g. "22"
   title        String
+  /// Extra questions for practice and randomised tests, not sat as a full paper.
+  questionBank Boolean        @default(false)
   questions    Question[]
   attempts     PaperAttempt[]
 

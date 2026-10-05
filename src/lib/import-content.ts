@@ -42,8 +42,8 @@ export async function importContent(db: PrismaClient, raw: unknown) {
         const componentId = componentIds.get(p.component)!;
         const paper = await tx.pastPaper.upsert({
           where: { componentId_series_variant: { componentId, series: p.series, variant: p.variant } },
-          update: { title: p.title },
-          create: { componentId, series: p.series, variant: p.variant, title: p.title },
+          update: { title: p.title, questionBank: p.questionBank },
+          create: { componentId, series: p.series, variant: p.variant, title: p.title, questionBank: p.questionBank },
         });
         for (const q of p.questions) {
           const question = await tx.question.upsert({

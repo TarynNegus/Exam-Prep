@@ -171,5 +171,5 @@ export async function toContentPaper(
     if (parts.length) questions.push({ number: q.number, stem: q.stem, figures: stemFigures, parts });
   }
 
-  return { paper: { ...paper, questions } satisfies PaperContent, skipped };
+  return { paper: { ...paper, questionBank: false, questions } satisfies PaperContent, skipped };
 }

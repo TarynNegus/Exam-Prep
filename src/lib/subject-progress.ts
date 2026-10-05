@@ -45,7 +45,8 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
       topics: { orderBy: { position: "asc" } },
       components: {
         orderBy: { ref: "asc" },
-        include: { papers: { orderBy: [{ series: "asc" }, { variant: "asc" }] } },
+        // Question banks feed practice and randomised tests but are not listed as full papers.
+        include: { papers: { where: { questionBank: false }, orderBy: [{ series: "asc" }, { variant: "asc" }] } },
       },
     },
   });
@@ -70,7 +71,7 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
       id: true,
       topicId: true,
       marks: true,
-      question: { select: { paperId: true, paper: { select: { componentId: true } } } },
+      question: { select: { paperId: true, paper: { select: { componentId: true, questionBank: true } } } },
     },
   });
   const latest = await latestAwardedByPart(
@@ -100,6 +101,7 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
   // Each full paper opens when every topic it assesses is complete.
   const topicsByPaper = new Map<string, Set<string>>();
   for (const part of parts) {
+    if (part.question.paper.questionBank) continue;
     const set = topicsByPaper.get(part.question.paperId) ?? new Set<string>();
     set.add(part.topicId);
     topicsByPaper.set(part.question.paperId, set);
