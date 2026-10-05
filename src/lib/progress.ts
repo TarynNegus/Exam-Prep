@@ -128,6 +128,8 @@ export function routeScope<C extends { ref: string; section: string }>(
 ): { components: C[]; includesSection: (section: string) => boolean } {
   if (!route) return { components, includesSection: () => true };
   const chosen = components.filter((c) => route.components.includes(c.ref));
+  // A component without a section (e.g. a Core or Extended tier paper) assesses every topic.
+  if (chosen.some((c) => c.section === "")) return { components: chosen, includesSection: () => true };
   const sections = new Set(chosen.map((c) => c.section));
   return { components: chosen, includesSection: (section) => sections.has(section) };
 }

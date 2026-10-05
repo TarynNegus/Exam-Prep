@@ -61,9 +61,11 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
   const scope = routeScope(route, subject.components);
   const scopedTopics = needsRoute ? [] : subject.topics.filter((t) => scope.includesSection(t.section));
   const scopedTopicIds = scopedTopics.map((t) => t.id);
+  // Only questions from the student's papers count, e.g. Core students practise Core papers.
+  const componentIds = (needsRoute ? [] : scope.components).map((c) => c.id);
 
   const parts = await db.questionPart.findMany({
-    where: { topicId: { in: scopedTopicIds } },
+    where: { topicId: { in: scopedTopicIds }, question: { paper: { componentId: { in: componentIds } } } },
     select: { id: true, topicId: true, marks: true, question: { select: { paperId: true } } },
   });
   const latest = await latestAwardedByPart(
@@ -107,6 +109,7 @@ export async function loadSubjectProgress(subjectId: string, user: User) {
     route,
     needsRoute,
     components: needsRoute ? [] : scope.components,
+    componentIds,
     enrolled: !!enrolment,
     topics,
     subscribed,

@@ -104,4 +104,14 @@ describe("routeScope", () => {
     expect(scope.includesSection("Probability & Statistics 1")).toBe(true);
     expect(scope.includesSection("Mechanics")).toBe(false);
   });
+
+  it("treats tier papers without a section as covering every topic", () => {
+    const tiers = [
+      { ref: "1", section: "" },
+      { ref: "2", section: "" },
+    ];
+    const scope = routeScope({ id: "core", name: "Core", components: ["1"] }, tiers);
+    expect(scope.components.map((c) => c.ref)).toEqual(["1"]);
+    expect(scope.includesSection("Motion, forces and energy")).toBe(true);
+  });
 });

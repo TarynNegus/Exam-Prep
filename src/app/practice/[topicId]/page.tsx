@@ -17,11 +17,11 @@ export default async function PracticePage({ params }: { params: Promise<{ topic
     if (!topic) notFound();
     redirect(`/subjects/${topic.subjectId}`);
   }
-  const { topic, view, subject } = access;
+  const { topic, view, subject, componentIds } = access;
 
   // Questions containing at least one part on this topic, showing only those parts.
   const questions = await db.question.findMany({
-    where: { parts: { some: { topicId } } },
+    where: { parts: { some: { topicId } }, paper: { componentId: { in: componentIds } } },
     orderBy: [{ paper: { series: "asc" } }, { paper: { variant: "asc" } }, { number: "asc" }],
     include: {
       paper: { include: { component: true } },

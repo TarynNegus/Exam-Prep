@@ -15,8 +15,14 @@ export interface PracticeResult extends PartFeedback {
 
 export async function submitPracticeAnswer(partId: string, response: string): Promise<PracticeResult> {
   const user = await requireUser();
-  const part = await db.questionPart.findUnique({ where: { id: partId } });
-  if (!part || !(await accessibleTopic(user, part.topicId))) throw new Error("Question not available");
+  const part = await db.questionPart.findUnique({
+    where: { id: partId },
+    include: { question: { select: { paper: { select: { componentId: true } } } } },
+  });
+  const access = part && (await accessibleTopic(user, part.topicId));
+  if (!part || !access || !access.componentIds.includes(part.question.paper.componentId)) {
+    throw new Error("Question not available");
+  }
 
   const trimmed = response.slice(0, 10_000);
   const result = markResponse(part, trimmed);
