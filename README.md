@@ -145,6 +145,25 @@ Content lives in `/content`, one JSON file per subject syllabus. The format is d
 }
 ```
 
+### Converting licensed Cambridge papers
+
+Once you have permission from Cambridge, a question paper, its mark scheme and its examiner report can be converted with Claude instead of being typed in by hand. You need an `ANTHROPIC_API_KEY` in `.env`.
+
+```bash
+npm run content:convert -- \
+  --subject content/igcse-0610-biology.json --component 2 --series "June 2024" --variant 22 \
+  --paper 0610_s24_qp_22.pdf --mark-scheme 0610_s24_ms_22.pdf --examiner-report 0610_s24_er.pdf
+```
+
+This writes a draft to `content/drafts/`. The draft's `review` section lists parts that were skipped because they need a diagram, points Claude was unsure about, and validation problems. Check the draft against the PDFs, then add it to the subject:
+
+```bash
+npm run content:merge -- content/drafts/0610-june-2024-22.json
+npm run content:import
+```
+
+Each conversion is one Claude API request using Claude Opus 5.5. It typically costs well under $1 per paper; long papers with many pages cost more.
+
 The content tests (`tests/content.test.ts`) run on every file in `/content`. They check that each mark scheme covers the part's marks and that each auto-marked part accepts its own model answer.
 
 ## ⚠️ Licensing of Cambridge material
