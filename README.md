@@ -39,7 +39,7 @@ After answering, the student always sees the answer, the mark scheme points and 
 ### Progress and unlocking (`src/lib/progress.ts`)
 
 - A topic is **complete** when the student has answered at least 3 of its questions (or all of them, if it has fewer) with an overall score of at least 60%. The latest attempt at each question counts.
-- **Paper combinations:** a subject can list the combinations of papers students may take (`routes` in the content file). 9709 offers Papers 1+2, 1+4 or 1+5 at AS Level, and 1+3+4+5 or 1+3+5+6 at A Level. Students choose theirs when they add the subject and only see those topics and papers.
+- **Paper combinations:** a subject can list the combinations of papers students may take (`routes` in the content file). 9709 offers Papers 1+2, 1+4 or 1+5 at AS Level, and 1+3+4+5 or 1+3+5+6 at A Level. IGCSE Chemistry, Physics and Mathematics offer Core and Extended tiers, and students only practise questions from their own papers. Students choose theirs when they add the subject and only see those topics and papers.
 - Completing a topic unlocks the next one. Topics can be grouped into **sections** (for example one per 9709 paper), and each section unlocks independently, so students can follow the papers they are taking.
 - **Full past papers** each unlock when every topic that paper assesses is complete. They require a subscription.
 - **Free plan:** the first 2 topics of each section. **Subscription:** everything.
@@ -171,7 +171,7 @@ The content tests (`tests/content.test.ts`) run on every file in `/content`. The
 
 Cambridge past papers, mark schemes, examiner reports and syllabus documents are **copyright of Cambridge University Press & Assessment**. Using them in a commercial, subscription product needs **written permission or a licence from Cambridge**. Do not import real past paper content until you have that permission.
 
-The sample content in `/content` (IGCSE 0500 First Language English, 0580 Mathematics and 0610 Biology; AS & A Level 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
+The sample content in `/content` (IGCSE 0460 Geography, 0500 First Language English, 0580 Mathematics, 0610 Biology, 0620 Chemistry and 0625 Physics; AS & A Level 9702 Physics and 9709 Mathematics) is made of **original practice questions written in the Cambridge style**. It contains no reproduced past paper material, and the sample papers are labelled "illustrative". Topic headings follow the published syllabus structure. Check them against the current syllabus documents before launch.
 
 The site footer states that the product is not affiliated with or endorsed by Cambridge.
 
