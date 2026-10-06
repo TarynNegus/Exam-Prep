@@ -1,6 +1,7 @@
 import type Stripe from "stripe";
 import { db } from "@/lib/db";
-import { mapSubscriptionStatus, stripe } from "@/lib/stripe";
+import { stripe } from "@/lib/stripe";
+import { applySubscription } from "@/lib/subscriptions";
 
 // Keeps users' subscription status in sync with Stripe.
 export async function POST(request: Request) {
@@ -28,20 +29,9 @@ export async function POST(request: Request) {
     }
     case "customer.subscription.created":
     case "customer.subscription.updated":
-    case "customer.subscription.deleted": {
-      const subscription = event.data.object;
-      const customerId = typeof subscription.customer === "string" ? subscription.customer : subscription.customer.id;
-      const periodEnd = subscription.items.data[0]?.current_period_end;
-      await db.user.updateMany({
-        where: { stripeCustomerId: customerId },
-        data: {
-          subscriptionStatus: mapSubscriptionStatus(subscription.status),
-          subscriptionPlan: subscription.metadata.plan ?? null,
-          currentPeriodEnd: periodEnd ? new Date(periodEnd * 1000) : null,
-        },
-      });
+    case "customer.subscription.deleted":
+      await applySubscription(event.data.object);
       break;
-    }
   }
   return Response.json({ received: true });
 }

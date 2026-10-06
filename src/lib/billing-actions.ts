@@ -45,7 +45,8 @@ export async function startCheckout(planId: string) {
     line_items: [{ price, quantity: 1 }],
     subscription_data: { metadata: { userId: user.id, plan: plan.id } },
     allow_promotion_codes: true,
-    success_url: appUrl("/billing?success=1"),
+    // Stripe fills in {CHECKOUT_SESSION_ID}, so it must not be URL-encoded.
+    success_url: `${appUrl("/billing")}?success=1&session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: appUrl("/billing"),
   });
   redirect(session.url!);
