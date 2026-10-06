@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Figures } from "@/components/figures";
 import { PartPractice } from "@/components/part-practice";
+import { TopicNav } from "@/components/topic-nav";
 import { ProgressBar, StatusBadge } from "@/components/ui";
 import { db } from "@/lib/db";
 import { publicPart } from "@/lib/feedback";
@@ -11,6 +12,7 @@ import { requireUser } from "@/lib/session";
 import { latestAwardedByPart, latestScoresBefore } from "@/lib/subject-progress";
 import { keyboardFor } from "@/lib/keyboards";
 import { accessibleTopic } from "@/lib/topic-access";
+import { topicNeighbours } from "@/lib/progress";
 import { randomSeed } from "@/lib/variants";
 
 export default async function PracticePage({
@@ -28,7 +30,8 @@ export default async function PracticePage({
     if (!topic) notFound();
     redirect(`/subjects/${topic.subjectId}`);
   }
-  const { topic, view, subject, componentIds } = access;
+  const { topic, view, subject, componentIds, topics } = access;
+  const { previous, next } = topicNeighbours(topics, topic.id);
 
   // Each visit deals a new set; the set is kept in the URL so reloading
   // (for example after answering) shows the same questions.
@@ -109,6 +112,8 @@ export default async function PracticePage({
           })}
         </article>
       ))}
+
+      <TopicNav subjectId={subject.id} subjectLabel={`${subject.code} ${subject.name}`} previous={previous} next={next} />
     </div>
   );
 }

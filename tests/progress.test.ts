@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   computeTopicProgress,
   isTopicInPlan,
+  topicNeighbours,
   overallPercent,
   paperUnlocked,
   routeScope,
@@ -113,5 +114,39 @@ describe("routeScope", () => {
     const scope = routeScope({ id: "core", name: "Core", components: ["1"] }, tiers);
     expect(scope.components.map((c) => c.ref)).toEqual(["1"]);
     expect(scope.includesSection("Motion, forces and energy")).toBe(true);
+  });
+});
+
+describe("topicNeighbours", () => {
+  const t = (id: string, extra: Partial<{ unlocked: boolean; inPlan: boolean; totalParts: number; section: string }> = {}) => ({
+    id,
+    ref: id,
+    title: `Topic ${id}`,
+    section: extra.section ?? "",
+    unlocked: extra.unlocked ?? true,
+    inPlan: extra.inPlan ?? true,
+    progress: { totalParts: extra.totalParts ?? 5 },
+  });
+
+  it("finds the topics either side", () => {
+    const { previous, next } = topicNeighbours([t("1"), t("2"), t("3")], "2");
+    expect(previous?.id).toBe("1");
+    expect(next?.id).toBe("3");
+    expect(next?.open).toBe(true);
+  });
+
+  it("has no previous topic at the start and no next topic at the end", () => {
+    expect(topicNeighbours([t("1"), t("2")], "1").previous).toBeNull();
+    expect(topicNeighbours([t("1"), t("2")], "2").next).toBeNull();
+  });
+
+  it("explains why a neighbour cannot be opened", () => {
+    expect(topicNeighbours([t("1"), t("2", { unlocked: false })], "1").next?.reason).toBe("Complete the previous topic to unlock");
+    expect(topicNeighbours([t("1"), t("2", { inPlan: false })], "1").next?.reason).toBe("Subscribe to unlock");
+    expect(topicNeighbours([t("1"), t("2", { totalParts: 0 })], "1").next?.open).toBe(false);
+  });
+
+  it("returns nothing for an unknown topic", () => {
+    expect(topicNeighbours([t("1")], "x")).toEqual({ previous: null, next: null });
   });
 });
