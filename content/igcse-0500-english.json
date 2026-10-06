@@ -4,38 +4,68 @@
     "name": "First Language English",
     "qualification": "IGCSE",
     "syllabusYears": "2024-2026",
-    "description": "Cambridge IGCSE First Language English. Topics follow the reading and writing skills assessed in Papers 1 and 2. All passages and questions are original practice material written in the style of Cambridge papers, not reproduced past paper material. Writing tasks are self-marked against a criteria checklist modelled on the Cambridge mark scheme split between content, structure, style and accuracy."
+    "description": "Cambridge IGCSE First Language English. Topics follow the questions of Paper 1 (Reading) and Paper 2 (Directed Writing and Composition), so you can practise each part of each paper. All passages and questions are original practice material written in the style of Cambridge papers, not reproduced past paper material. Writing tasks are self-marked against a criteria checklist modelled on the Cambridge mark scheme split between content, structure, style and accuracy."
   },
   "topics": [
     {
-      "ref": "R1",
-      "title": "Reading for meaning",
-      "summary": "Finding explicit information and explaining implicit meanings in a text, in your own words."
+      "ref": "1.1",
+      "title": "Paper 1 overview and exam technique",
+      "summary": "How Paper 1 is organised, how to use your time and what each type of question rewards.",
+      "section": "Paper 1: Reading"
     },
     {
-      "ref": "R2",
-      "title": "Writers' use of language",
-      "summary": "Analysing how writers use words, images and structure to create effects."
+      "ref": "1.2",
+      "title": "Question 1: comprehension",
+      "summary": "Short-answer questions on Text A: finding explicit information and explaining what is implied.",
+      "section": "Paper 1: Reading"
     },
     {
-      "ref": "R3",
-      "title": "Summary writing",
-      "summary": "Selecting relevant points and writing a concise summary in your own words."
+      "ref": "1.3",
+      "title": "Question 1(f): summary",
+      "summary": "Selecting relevant points from Text B and writing a concise summary in your own words.",
+      "section": "Paper 1: Reading"
     },
     {
-      "ref": "W1",
-      "title": "Directed writing",
-      "summary": "Using and evaluating ideas from a text in a letter, speech or article."
+      "ref": "1.4",
+      "title": "Question 2(a)–(c): vocabulary and explaining meaning",
+      "summary": "Explaining the meaning of words and phrases in your own words, and the effect of a single image.",
+      "section": "Paper 1: Reading"
     },
     {
-      "ref": "W2",
-      "title": "Descriptive writing",
-      "summary": "Creating atmosphere and detail with precise vocabulary and varied sentences."
+      "ref": "1.5",
+      "title": "Question 2(d): language analysis",
+      "summary": "Selecting powerful words and images and explaining how the writer uses them to create effects.",
+      "section": "Paper 1: Reading"
     },
     {
-      "ref": "W3",
-      "title": "Narrative writing",
-      "summary": "Writing a well-structured story with convincing characters and setting."
+      "ref": "1.6",
+      "title": "Question 3: extended response to reading",
+      "summary": "Writing as a character (a letter, journal, interview or speech) using and developing ideas from the text.",
+      "section": "Paper 1: Reading"
+    },
+    {
+      "ref": "2.1",
+      "title": "Paper 2 overview and exam technique",
+      "summary": "How Paper 2 is organised, planning your time and choosing the right composition task.",
+      "section": "Paper 2: Directed Writing and Composition"
+    },
+    {
+      "ref": "2.2",
+      "title": "Question 1: directed writing",
+      "summary": "Evaluating ideas from one or two texts in a letter, article or speech for a given audience.",
+      "section": "Paper 2: Directed Writing and Composition"
+    },
+    {
+      "ref": "2.3",
+      "title": "Composition: descriptive writing",
+      "summary": "Creating atmosphere and detail with precise vocabulary and varied sentences.",
+      "section": "Paper 2: Directed Writing and Composition"
+    },
+    {
+      "ref": "2.4",
+      "title": "Composition: narrative writing",
+      "summary": "Writing a well-structured story with convincing characters and setting.",
+      "section": "Paper 2: Directed Writing and Composition"
     }
   ],
   "components": [
@@ -43,13 +73,15 @@
       "ref": "1",
       "title": "Paper 1 (Reading)",
       "durationMin": 120,
-      "totalMarks": 80
+      "totalMarks": 80,
+      "section": "Paper 1: Reading"
     },
     {
       "ref": "2",
       "title": "Paper 2 (Directed Writing and Composition)",
       "durationMin": 120,
-      "totalMarks": 80
+      "totalMarks": 80,
+      "section": "Paper 2: Directed Writing and Composition"
     }
   ],
   "papers": [
@@ -65,7 +97,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "Give two phrases from paragraph 1 that show the narrator was nervous.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -91,7 +123,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "At what time did the boat leave the jetty?",
               "marks": 1,
               "answerType": "SHORT_TEXT",
@@ -114,7 +146,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R1",
+              "topic": "1.4",
               "prompt": "Explain, using your own words, what the writer means by 'The lagoon kept its own counsel'.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -132,7 +164,7 @@
             },
             {
               "label": "(d)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "For how many years had Mr Okafor been crossing the lagoon?",
               "marks": 1,
               "answerType": "NUMERIC",
@@ -153,7 +185,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R2",
+              "topic": "1.4",
               "prompt": "Identify and explain the effect of the image 'the water was a sheet of hammered pewter' in paragraph 2.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -175,7 +207,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Explain how the writer uses language to create tension in paragraph 3.",
               "marks": 4,
               "answerType": "EXTENDED",
@@ -205,7 +237,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "How does the writer present Mr Okafor in paragraph 4? Refer to the language used.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -237,7 +269,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "How many times were lifeboat crews called out last year?",
               "marks": 1,
               "answerType": "NUMERIC",
@@ -252,7 +284,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "According to Passage B, what makes the sea at Carrow Bay dangerous? Write your answer in note form. You do not need to use your own words.",
               "marks": 6,
               "answerType": "EXTENDED",
@@ -290,7 +322,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "Give two pieces of advice the writer gives for staying safe at Carrow Bay.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -316,7 +348,7 @@
             },
             {
               "label": "(d)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "Using your notes from (b), write a summary of the dangers at Carrow Bay. Write no more than 120 words, using your own words as far as possible.",
               "marks": 15,
               "answerType": "EXTENDED",
@@ -356,7 +388,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Write a letter to the Head Teacher giving your views on the plan to ban mobile phones during the school day. In your letter you should evaluate the reasons given and explain what you think the school should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -396,7 +428,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe a market at the moment it opens in the morning. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -444,7 +476,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "You have been asked to give a speech at the residents' meeting about the plan for a community garden. In your speech you should evaluate the arguments for and against, and say what you think the council should decide. Base your speech on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -484,7 +516,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story that begins: 'The message was only four words long.' Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -532,7 +564,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Write an article for your school magazine with the title 'Is homework worth it?'. In your article you should evaluate the views in the text and give your own opinion on how homework should be set. Base your article on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -572,7 +604,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe a place that has been abandoned. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -620,7 +652,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Your friend is deciding whether to spend a year volunteering before continuing their studies. Write a letter to your friend, evaluating the writer's experience and advising them what to do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -660,7 +692,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story with the title 'The Return'. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -709,7 +741,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "At what time did the narrator's grandfather begin work each day?",
               "marks": 1,
               "answerType": "SHORT_TEXT",
@@ -733,7 +765,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "Explain, using your own words, how the narrator's expectations of working in the bakery differed from what the narrator found, in paragraph 1.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -759,7 +791,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "What does the grandfather's final comment suggest about what he thinks of the narrator's loaves? Explain your answer.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -777,7 +809,7 @@
             },
             {
               "label": "(d)",
-              "topic": "R2",
+              "topic": "1.4",
               "prompt": "Identify and explain the effect of the image 'the heat leapt out at us, a dry, roaring animal that had been waiting all night' in paragraph 3.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -803,7 +835,7 @@
             },
             {
               "label": "(e)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Explain how the writer uses language to present the grandfather as skilled and calm in paragraphs 2 and 3.",
               "marks": 4,
               "answerType": "EXTENDED",
@@ -833,7 +865,7 @@
             },
             {
               "label": "(f)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Explain how the writer uses the senses to create the atmosphere of the early morning in paragraph 4.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -865,7 +897,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "How many nesting pairs of swifts did the survey in the writer's town record last summer?",
               "marks": 1,
               "answerType": "NUMERIC",
@@ -880,7 +912,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "According to Passage D, why are fewer swifts returning each year? Write your answer in note form. You do not need to use your own words.",
               "marks": 5,
               "answerType": "EXTENDED",
@@ -914,7 +946,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "Write a summary of the ways people can help swifts, as described in Passage D. Write no more than 100 words, using your own words as far as possible.",
               "marks": 10,
               "answerType": "EXTENDED",
@@ -940,7 +972,7 @@
             },
             {
               "label": "(d)",
-              "topic": "R3",
+              "topic": "1.4",
               "prompt": "Explain, using your own words, why swifts are described in paragraph 2 as 'astonishingly well suited to life in the air'. Give two details from the paragraph.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -968,7 +1000,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.4",
               "prompt": "Explain, using your own words, what the writer means by the phrase 'with a little laugh that did not reach his eyes' in paragraph 2.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -986,7 +1018,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Explain how the writer uses language to convey the arrival of the flood water in paragraph 3.",
               "marks": 4,
               "answerType": "EXTENDED",
@@ -1016,7 +1048,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Re-read paragraphs 1 and 4. Select four powerful words or phrases from these paragraphs, including imagery, and explain how the writer uses them to convey the power and effects of the flood.",
               "marks": 15,
               "answerType": "EXTENDED",
@@ -1048,7 +1080,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "Give two reasons from paragraph 2 why students and shift workers have been keen users of the scheme.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -1066,7 +1098,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "Write a summary of the advantages of the bicycle-sharing scheme in Harlow Vale, according to Passage F. Write no more than 100 words, using your own words as far as possible.",
               "marks": 10,
               "answerType": "EXTENDED",
@@ -1098,7 +1130,7 @@
           "parts": [
             {
               "label": "(a)",
-              "topic": "R1",
+              "topic": "1.2",
               "prompt": "On which day of the month does the Repair Café meet?",
               "marks": 1,
               "answerType": "SHORT_TEXT",
@@ -1119,7 +1151,7 @@
             },
             {
               "label": "(b)",
-              "topic": "R1",
+              "topic": "1.4",
               "prompt": "Explain, using your own words, what the writer means by the phrase 'we have been taught to shrug and buy another' in paragraph 1.",
               "marks": 2,
               "answerType": "EXTENDED",
@@ -1137,7 +1169,7 @@
             },
             {
               "label": "(c)",
-              "topic": "R2",
+              "topic": "1.5",
               "prompt": "Explain how the writer uses language to present the volunteers as skilled and generous in paragraph 3.",
               "marks": 3,
               "answerType": "EXTENDED",
@@ -1163,7 +1195,7 @@
             },
             {
               "label": "(d)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "According to Passage G, what are the benefits of Repair Cafés? Write your answer in note form. You do not need to use your own words.",
               "marks": 6,
               "answerType": "EXTENDED",
@@ -1201,7 +1233,7 @@
             },
             {
               "label": "(e)",
-              "topic": "R3",
+              "topic": "1.3",
               "prompt": "Write a summary of the benefits of Repair Cafés, according to Passage G. Write no more than 120 words, using your own words as far as possible.",
               "marks": 15,
               "answerType": "EXTENDED",
@@ -1226,6 +1258,458 @@
               "examinerComment": "Good summaries grouped the environmental and financial benefits together, then the social ones. Some candidates retold the anecdote of the toaster at length, which used up words without adding points."
             }
           ]
+        },
+        {
+          "number": 6,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "A Paper 1 question asks you to explain a phrase 'using your own words'. What should you do?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Restate its meaning in different words, without repeating the key words of the phrase"
+                },
+                {
+                  "key": "B",
+                  "text": "Copy the phrase in quotation marks and say whether you like it"
+                },
+                {
+                  "key": "C",
+                  "text": "Name the technique the writer has used, such as a metaphor"
+                },
+                {
+                  "key": "D",
+                  "text": "Give the dictionary definition of every word in the phrase"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Restate its meaning in different words, without repeating the key words of the phrase",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Repeating the writer's key words shows that you have found the phrase, not that you understand it. Credit goes to answers that show the meaning in fresh words."
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Paper 1 lasts 2 hours and has 80 marks. Roughly how many minutes can you spend per mark?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "1.5",
+              "markingPoints": [
+                {
+                  "text": "120 ÷ 80 = 1.5 minutes per mark",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Timing by marks stops you spending too long on short questions. A 25-mark question deserves about 35 to 40 minutes; a 1-mark question needs a minute or so."
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "Which is the best first step when answering the summary question?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Note the relevant points from the part of the text named in the question before you start writing"
+                },
+                {
+                  "key": "B",
+                  "text": "Start writing straight away so that you do not run out of words"
+                },
+                {
+                  "key": "C",
+                  "text": "Copy the topic sentence of each paragraph in order"
+                },
+                {
+                  "key": "D",
+                  "text": "Write an introduction explaining what the text is about"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Note the relevant points from the part of the text named in the question before you start writing",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Strong summaries begin with a quick list of points that answer the exact question. Candidates who started writing straight away often included irrelevant detail and ran out of words."
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "In the language analysis question, what earns the most credit?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Explaining what each chosen word or image suggests and the effect it creates in context"
+                },
+                {
+                  "key": "B",
+                  "text": "Naming as many literary techniques as possible"
+                },
+                {
+                  "key": "C",
+                  "text": "Choosing long quotations so that nothing important is missed"
+                },
+                {
+                  "key": "D",
+                  "text": "Retelling what happens in the paragraph"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Explaining what each chosen word or image suggests and the effect it creates in context",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Naming a technique earns little on its own. The best answers explored the connotations of short, precise quotations and linked them to the overall impression."
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "In the extended response question you write as a character from the passage. What matters most?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Using and developing ideas from the passage while staying true to the character and situation"
+                },
+                {
+                  "key": "B",
+                  "text": "Inventing an exciting new plot so the answer is original"
+                },
+                {
+                  "key": "C",
+                  "text": "Copying the most important sentences from the passage"
+                },
+                {
+                  "key": "D",
+                  "text": "Writing as much as possible, whatever the word guidance"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Using and developing ideas from the passage while staying true to the character and situation",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Reading marks reward ideas taken from the passage and developed with inference. Answers that drifted into invented events lost reading marks, however lively the writing."
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.1",
+              "prompt": "A short-answer question refers to 'paragraph 2'. Where should your answer come from?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Only from paragraph 2"
+                },
+                {
+                  "key": "B",
+                  "text": "Anywhere in the passage, as long as it is relevant"
+                },
+                {
+                  "key": "C",
+                  "text": "Your own knowledge of the topic"
+                },
+                {
+                  "key": "D",
+                  "text": "The paragraph that follows paragraph 2"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Only from paragraph 2",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers taken from the wrong paragraph receive no credit, even if they are true. Mark the paragraph on the insert before you start looking."
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "stem": "Passage A: The Crossing\n\nI had been awake since four, listening to the generator next door cough itself into life. My school bag sat by the door, packed and repacked twice. When my mother handed me a cup of tea, my hands would not keep it still, and I left half of it cooling on the step.\n\nThe boat left the jetty at 5:40, exactly as Mr Okafor had promised. There were six of us on board: four children in pressed white shirts, a woman with a basket of mangoes, and me. Nobody spoke. At that hour the water was a sheet of hammered pewter, and the far shore was nothing more than a rumour of trees.\n\nHalfway across, the engine faltered. It did not stop; it hesitated, like a breath held too long, and then caught again. The mangoes shifted. The smallest of the children gripped the edge of the bench until her knuckles paled. Out here, beyond the shelter of the mangroves, the wind found us, and the boat began to lift and drop, lift and drop, each slap of the hull louder than the last. The lagoon kept its own counsel; it gave nothing away about what lay beneath.\n\nMr Okafor did not look worried. He had been crossing this water for thirty-one years, he told me later, twice a day, in every season. He stood at the stern with one hand resting lightly on the tiller, as if the boat were an old dog that only needed reminding. When the engine coughed again, he laughed, a short, warm sound, and patted the motor's casing. 'She complains,' he said, 'but she has never yet refused.'\n\nBy the time the island school rose out of the mist, painted blue and absurdly cheerful, the sun had broken through. I stepped onto the jetty with legs that did not quite belong to me, and I realised I was no longer afraid of the water. I was afraid of the classroom.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.5",
+              "prompt": "Re-read paragraphs 2 and 3. Select four powerful words or phrases from these paragraphs, including imagery, and explain how the writer uses them to convey the crossing and the passengers' fear.",
+              "marks": 15,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "selects at least four precise, relevant words or phrases, including imagery, drawn from both paragraphs",
+                  "marks": 3
+                },
+                {
+                  "text": "explains the meaning of each choice accurately in context",
+                  "marks": 3
+                },
+                {
+                  "text": "explores connotations and effects precisely, showing how images work (not just naming techniques)",
+                  "marks": 6
+                },
+                {
+                  "text": "shows how the choices combine to create an overall impression of the crossing and the passengers' fear",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Useful choices included 'a sheet of hammered pewter' (cold, hard, grey and still, an uninviting surface); 'a rumour of trees' (the shore barely visible, uncertain); 'hesitated, like a breath held too long' (the engine personified, mirroring the passengers' suspense); 'until her knuckles paled' (physical fear shown through a small detail); 'lift and drop, lift and drop' (repetition imitating the boat's motion); 'kept its own counsel' (the lagoon as secretive, hiding danger). The best answers explored each image separately."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "You are going to write Question 3 as Mr Okafor. Before you write, list five details from Passage A that you could develop in his journal, and for each say what it suggests about him or his passengers.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "each relevant detail from the passage with a sensible inference about Mr Okafor or a passenger (1 mark each, up to 5)",
+                  "marks": 5
+                }
+              ],
+              "examinerComment": "Good details included the thirty-one years of crossings (experience and pride), his hand 'resting lightly' on the tiller (calm control), patting the motor (affection for the boat), the silent passengers (nerves) and the child gripping the bench (fear he would have noticed)."
+            },
+            {
+              "label": "(c)",
+              "topic": "1.6",
+              "prompt": "Imagine you are Mr Okafor. That evening you write a journal entry about the morning's crossing.\n\nIn your journal entry you should:\n• describe the passengers and how they behaved during the crossing\n• explain what you think about your boat and its engine\n• reveal your thoughts about the narrator and their first day at the island school.\n\nBase your journal entry on what you have read in Passage A, but be careful to use your own words. Write 250 to 350 words.",
+              "marks": 25,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses several relevant ideas from the passage, covering all three bullet points",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: develops the ideas and makes inferences, e.g. feelings and attitudes that are implied, not stated",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: stays consistent with the passage and the character's situation, without inventing unrelated events",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: voice and register suit the character, the form and the audience",
+                  "marks": 4
+                },
+                {
+                  "text": "Writing: clear structure, with ideas sequenced and linked",
+                  "marks": 3
+                },
+                {
+                  "text": "Writing: accurate, varied and precise language in your own words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Strong answers caught Mr Okafor's calm, affectionate voice and used details such as the faltering engine and the frightened child, developing them into his reflections. Weaker answers retold the crossing from the narrator's point of view."
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "stem": "Passage C: The Ovens\n\nThe bakery on Saltmarket Lane opened at six, but my grandfather's day began at half past two. That summer I was fourteen and had begged to help him, imagining warm bread and quiet conversation. Instead there was a bare bulb, a floor gritty with flour and a silence so complete that I could hear the clock above the sink deciding each second.\n\nGrandad did not talk while he worked. His hands did the talking. They folded and turned the dough with a rhythm that never hurried and never paused, the way a tide comes in. When I tried to copy him, my dough tore and stuck to my fingers like wet cloth. He watched for a while, then reached across without a word and laid his floury hand over mine, pressing once, twice, until I felt what he meant.\n\nAt four the ovens were ready. He swung the iron doors open and the heat leapt out at us, a dry, roaring animal that had been waiting all night. My eyebrows prickled. Grandad slid the first trays in with a long wooden paddle, as calmly as if he were posting letters.\n\nThen came the smell. It crept out of the ovens slowly at first and then filled every corner of the room, sweet and dark and faintly burnt at the edges, until the whole bakery seemed to be breathing it. Outside, the street was still black. A single delivery van grumbled past. Somewhere a dog barked once and thought better of it.\n\nBy six the shelves were full and the first customers were stamping their feet on the step. Grandad wiped his hands on his apron, nodded at the loaves I had shaped, crooked and lumpy among his perfect ones, and said the only full sentence I heard from him all morning: 'Those will sell first. People like bread that looks as if somebody made it.'",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.4",
+              "prompt": "Using your own words, explain what the writer means by each of these words as they are used in the passage:\n(i) 'gritty' (paragraph 1)\n(ii) 'rhythm' (paragraph 2)\n(iii) 'crooked' (paragraph 5)",
+              "marks": 3,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "(i) rough or covered in small hard bits (of flour)",
+                  "marks": 1
+                },
+                {
+                  "text": "(ii) a regular, repeated pattern of movement",
+                  "marks": 1
+                },
+                {
+                  "text": "(iii) bent, uneven or not straight",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Answers needed to fit the word's meaning in this context. Using the word itself in the explanation ('gritty means it was gritty') gained no credit."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "You are the narrator's grandfather. At the end of the summer you write a letter to your daughter, the narrator's mother, about the mornings you spent together at the bakery.\n\nIn your letter you should:\n• describe what the work involves and why it must start so early\n• explain how the narrator coped with the work\n• suggest what you hope the narrator has learnt.\n\nBase your letter on what you have read in Passage C, but be careful to use your own words. Write 250 to 350 words.",
+              "marks": 25,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses several relevant ideas from the passage, covering all three bullet points",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: develops the ideas and makes inferences, e.g. feelings and attitudes that are implied, not stated",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: stays consistent with the passage and the character's situation, without inventing unrelated events",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: voice and register suit the character, the form and the audience",
+                  "marks": 4
+                },
+                {
+                  "text": "Writing: clear structure, with ideas sequenced and linked",
+                  "marks": 3
+                },
+                {
+                  "text": "Writing: accurate, varied and precise language in your own words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "The best letters let a quiet, warm voice show through and used details such as the torn dough and the crooked loaves to suggest pride in the narrator. Some answers made the grandfather far more talkative than the passage allows, which did not fit the character."
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "stem": "Passage E: The Year the River Came\n\nThat year the rain did not fall so much as lean on us. For eleven days it pressed against the windows, drummed on the tin roof of the shed and turned the lane outside our house into a brown, muttering stream.\n\nMy father spent those days pretending to be calm. He moved the photograph albums upstairs 'just in case', then the rugs, then, with a little laugh that did not reach his eyes, the television. My mother filled every pan we owned with clean water and lined them up on the landing like soldiers.\n\nOn the twelfth night the river arrived. It did not crash through the door as I had imagined. It slid under it, quiet as a thief, and spread across the kitchen floor in a thin, glittering sheet that grew a centimetre at a time. By morning the chairs were standing up to their knees in it. Our shoes floated past the bottom stair like small, abandoned boats.\n\nWhen the water finally sank away, it left behind a tidemark on the walls at exactly the height of my shoulder, and a smell that I can still summon if I close my eyes: mud, rot and something sweetish, like fruit left too long in a bowl. Everything we had not carried upstairs was ruined. The sofa was a sodden carcass. My mother's piano, which nobody played but everybody loved, gave a single drowned note when she touched it and never made a sound again.\n\nWhat I remember most, though, is not the damage. It is the morning after, when neighbours we had barely spoken to arrived with buckets, brooms and flasks of tea, and stayed until dark.",
+          "parts": [
+            {
+              "label": "",
+              "topic": "1.6",
+              "prompt": "A few weeks after the flood, a local radio station interviews the narrator's mother about what happened.\n\nWrite the interview. The interviewer asks:\n• what the family did in the days before the river arrived\n• what the house was like once the water had gone\n• how the neighbours helped and what that meant to the family.\n\nBase your interview on what you have read in Passage E, but be careful to use your own words. Write 250 to 350 words.",
+              "marks": 25,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses several relevant ideas from the passage, covering all three bullet points",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: develops the ideas and makes inferences, e.g. feelings and attitudes that are implied, not stated",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: stays consistent with the passage and the character's situation, without inventing unrelated events",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: voice and register suit the character, the form and the audience",
+                  "marks": 4
+                },
+                {
+                  "text": "Writing: clear structure, with ideas sequenced and linked",
+                  "marks": 3
+                },
+                {
+                  "text": "Writing: accurate, varied and precise language in your own words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Effective interviews gave the mother a convincing voice and developed implied details, such as the father's forced calm and the loss of the piano. Answers that only listed the damage missed the third bullet, which carries the passage's emotional turn."
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "stem": "Passage G: Mend It, Don't End It\n\nWhen the zip on a coat breaks or a lamp stops working, most of us do not even consider repairing it. Things are cheap, repair shops have vanished from the high street, and we have been taught to shrug and buy another. A growing movement of Repair Cafés is trying to change that habit.\n\nThe idea is simple. On the first Saturday of every month, our local community hall fills with long tables, toolboxes and sewing machines. Anyone can bring in something broken, put their name on a list and wait with a cup of tea until a volunteer is free. There is no charge, although a jar by the door accepts donations towards spare parts.\n\nThe volunteers are the heart of the café. There is a retired electrician, a seamstress who once made costumes for the theatre and a bicycle mechanic who arrives with grease still on his hands. They work with the patience of surgeons, and they have coaxed radios, kettles and children's toys back to life. They refuse to take a penny; their only payment, one told me, is the grin on someone's face when a dead machine hums again.\n\nThe benefits go well beyond fixing things. Every item mended is one less thing thrown into landfill, and visitors save money they would have spent on replacements. Crucially, owners are encouraged to sit beside the volunteer and watch, so they leave knowing how to do the repair themselves next time. In this way, skills that older people learnt decades ago are being handed on to teenagers who have never held a soldering iron.\n\nThe café is also a place to meet. Neighbours who have lived on the same street for years without speaking now chat while they wait, and several regular visitors say it is the only time in the month they talk to anyone outside their family. For the volunteers, many of them retired, it offers a sense of being useful again.\n\nLast month, a woman brought in a toaster that had belonged to her mother. It took two volunteers an hour to find the fault, but when the first slice popped up, the whole hall applauded. 'Some things you just can't replace,' she said.",
+          "parts": [
+            {
+              "label": "(a)",
+              "topic": "1.6",
+              "prompt": "You are going to write a speech for Question 3 based on Passage G. List five ideas from the passage you could use to persuade an audience, and for each say how you would develop it.",
+              "marks": 5,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "each relevant idea from the passage with a sensible way of developing it persuasively (1 mark each, up to 5)",
+                  "marks": 5
+                }
+              ],
+              "examinerComment": "Useful ideas included the free service, the volunteers' skills, saving money, reducing landfill, learning to repair things yourself, meeting neighbours and the story of the toaster."
+            },
+            {
+              "label": "(b)",
+              "topic": "1.6",
+              "prompt": "You are one of the volunteers at the Repair Café. You have been asked to give a speech at a community meeting to persuade more people to visit and to volunteer.\n\nIn your speech you should:\n• explain how the Repair Café works\n• describe what volunteers and visitors gain from it\n• persuade your audience that repairing things matters.\n\nBase your speech on what you have read in Passage G, but be careful to use your own words. Write 250 to 350 words.",
+              "marks": 25,
+              "answerType": "EXTENDED",
+              "markingPoints": [
+                {
+                  "text": "Reading: uses several relevant ideas from the passage, covering all three bullet points",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: develops the ideas and makes inferences, e.g. feelings and attitudes that are implied, not stated",
+                  "marks": 5
+                },
+                {
+                  "text": "Reading: stays consistent with the passage and the character's situation, without inventing unrelated events",
+                  "marks": 5
+                },
+                {
+                  "text": "Writing: voice and register suit the character, the form and the audience",
+                  "marks": 4
+                },
+                {
+                  "text": "Writing: clear structure, with ideas sequenced and linked",
+                  "marks": 3
+                },
+                {
+                  "text": "Writing: accurate, varied and precise language in your own words",
+                  "marks": 3
+                }
+              ],
+              "examinerComment": "Strong speeches addressed the audience directly and turned the passage's details into persuasive points, for example using the toaster story as an emotional appeal. Weaker answers repeated the passage's information in order without any sense of a speaker or audience."
+            }
+          ]
         }
       ]
     },
@@ -1242,7 +1726,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Write a letter to the editor of your local newspaper giving your views on the council's plan to replace the library with a digital hub. In your letter you should evaluate the arguments on both sides and explain what you think the council should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1282,7 +1766,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Write an article for a website for young people with the title 'Work or homework?'. In your article you should evaluate the views given about teenagers having part-time jobs and give your own opinion. Base your article on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1322,7 +1806,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "You are a member of the student council. Write the speech you will give to your year group to persuade them to vote for one of the two trip options. In your speech you should evaluate the arguments for both options and explain your choice. Base your speech on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1362,7 +1846,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe a railway station during a delay, when a train has been cancelled and passengers are waiting. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1402,7 +1886,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe the scene as a storm approaches and then breaks over a town or village. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1442,7 +1926,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe a kitchen during the preparation of a large family meal. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1482,7 +1966,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe the view from a high place, such as a hilltop, tower or the top floor of a building, at dusk. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1522,7 +2006,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Write the opening paragraph (about 120 to 150 words) of a description titled 'The Empty Swimming Pool'. Focus on creating atmosphere through precise detail.",
               "marks": 10,
               "answerType": "EXTENDED",
@@ -1554,7 +2038,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story with the title 'The Wrong Bag'. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1594,7 +2078,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story in which a character has to keep a promise that becomes difficult to keep. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1634,7 +2118,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story that ends with the words: '... and for the first time, I understood why she had stayed.' Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1674,7 +2158,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story with the title 'Power Cut'. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1714,7 +2198,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write the opening (about 120 to 150 words) of a story called 'The Last Customer'. Your opening should introduce a character and a setting and make the reader want to continue.",
               "marks": 10,
               "answerType": "EXTENDED",
@@ -1746,7 +2230,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W1",
+              "topic": "2.2",
               "prompt": "Write a letter to your local councillor giving your views on the plan to make the town centre car-free during the day. In your letter you should evaluate the arguments for and against the plan and suggest what the council should do. Base your letter on what you have read, but use your own words. Write 250 to 350 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1786,7 +2270,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W2",
+              "topic": "2.3",
               "prompt": "Describe a busy open-air market in the moments just before it closes for the day. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1826,7 +2310,7 @@
           "parts": [
             {
               "label": "",
-              "topic": "W3",
+              "topic": "2.4",
               "prompt": "Write a story in which a character returns to a place they have not visited since childhood. Write 350 to 450 words.",
               "marks": 40,
               "answerType": "EXTENDED",
@@ -1857,6 +2341,222 @@
                 }
               ],
               "examinerComment": "The best stories used the contrast between memory and the present to reveal something about the character. Some candidates spent too long on the journey and left little room for the return itself."
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "Question 1 asks you to write a letter to your head teacher. Which register is most appropriate?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Formal and polite, with a clear, reasoned argument"
+                },
+                {
+                  "key": "B",
+                  "text": "Chatty and informal, as if writing to a friend"
+                },
+                {
+                  "key": "C",
+                  "text": "Neutral and factual, like a dictionary entry"
+                },
+                {
+                  "key": "D",
+                  "text": "Dramatic and emotional, like a story"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Formal and polite, with a clear, reasoned argument",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Writing marks reward register that suits the audience and purpose. A head teacher should be addressed formally and persuaded with reasons, not slang or exaggeration."
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "Which of these composition titles is a descriptive task?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Describe a hospital waiting room late at night."
+                },
+                {
+                  "key": "B",
+                  "text": "Write a story called 'The Last Train'."
+                },
+                {
+                  "key": "C",
+                  "text": "Write a story that ends with the words '…and then the lights came on.'"
+                },
+                {
+                  "key": "D",
+                  "text": "Write a story in which a character makes a difficult choice."
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Describe a hospital waiting room late at night.",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Descriptive tasks ask you to describe a place, scene or moment. If you choose one, focus on atmosphere and detail rather than plot."
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "In a descriptive composition, what should you avoid?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Letting it turn into a story driven by a sequence of events"
+                },
+                {
+                  "key": "B",
+                  "text": "Using all five senses"
+                },
+                {
+                  "key": "C",
+                  "text": "Varying the length of your sentences"
+                },
+                {
+                  "key": "D",
+                  "text": "Focusing closely on small, precise details"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Letting it turn into a story driven by a sequence of events",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Descriptions that became stories lost focus, and with it marks for content and structure. Strong answers moved around the scene or through a short period of time instead."
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "Paper 2 lasts 2 hours, and you write two tasks worth 40 marks each. If you spend half the time on each task and, within that, 10 minutes planning and 5 minutes checking, how many minutes are left for writing each task?",
+              "marks": 1,
+              "answerType": "NUMERIC",
+              "correctAnswer": "45",
+              "markingPoints": [
+                {
+                  "text": "120 ÷ 2 = 60 minutes per task; 60 − 10 − 5 = 45 minutes",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Candidates who planned briefly and left time to check produced better-organised, more accurate work than those who wrote from the first minute."
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "In Question 1 (directed writing), what earns the highest reading marks?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Evaluating the ideas in the texts and developing your own judgement about them"
+                },
+                {
+                  "key": "B",
+                  "text": "Copying the most important sentences from the texts"
+                },
+                {
+                  "key": "C",
+                  "text": "Ignoring the texts and writing only your own opinions"
+                },
+                {
+                  "key": "D",
+                  "text": "Summarising each text in turn"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – Evaluating the ideas in the texts and developing your own judgement about them",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "Reading marks rise when you weigh up the ideas in the texts, for example questioning a claim or comparing views, rather than just repeating them."
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "stem": "",
+          "parts": [
+            {
+              "label": "",
+              "topic": "2.1",
+              "prompt": "You are planning a story of 350 to 450 words. Which plan is most likely to succeed?",
+              "marks": 1,
+              "answerType": "MULTIPLE_CHOICE",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "One main character, one focused situation and a clear turning point"
+                },
+                {
+                  "key": "B",
+                  "text": "Many characters and several different settings over many years"
+                },
+                {
+                  "key": "C",
+                  "text": "A long introduction explaining every character's background"
+                },
+                {
+                  "key": "D",
+                  "text": "A series of exciting events with no ending, to keep the reader guessing"
+                }
+              ],
+              "correctAnswer": "A",
+              "markingPoints": [
+                {
+                  "text": "A – One main character, one focused situation and a clear turning point",
+                  "marks": 1
+                }
+              ],
+              "examinerComment": "The most successful stories were tightly focused, with a developed character and a satisfying shape. Over-ambitious plots were often rushed or left unfinished."
             }
           ]
         }

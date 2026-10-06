@@ -116,6 +116,12 @@ export async function importContent(db: PrismaClient, raw: unknown) {
         }
       }
 
+      // Topics dropped from the file (e.g. after restructuring a subject) are removed once
+      // no question parts point at them any more.
+      await tx.topic.deleteMany({
+        where: { subjectId: subject.id, ref: { notIn: [...topicIds.keys()] }, parts: { none: {} } },
+      });
+
       return { subject: `${s.code} ${s.name} (${s.syllabusYears})`, topics: content.topics.length, parts: partCount };
     },
     // Each part is a separate round trip, so a large subject over a remote
