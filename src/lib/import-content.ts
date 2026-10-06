@@ -114,6 +114,11 @@ export async function importContent(db: PrismaClient, raw: unknown) {
             });
           }
         }
+        // Questions removed from the file are deleted, with their parts and any answers to them.
+        // Remaining questions keep their numbers, so their saved answers are unaffected.
+        const keptNumbers = new Set(p.questions.map((q) => q.number));
+        const removed = (existingPaper?.questions ?? []).filter((q) => !keptNumbers.has(q.number));
+        if (removed.length) await tx.question.deleteMany({ where: { id: { in: removed.map((q) => q.id) } } });
       }
 
       // Topics dropped from the file (e.g. after restructuring a subject) are removed once

@@ -1,16 +1,45 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
 import type { PublicPart } from "@/lib/feedback";
+import type { KeyboardKind } from "@/lib/keyboards";
+import { SymbolKeys } from "./symbol-keys";
 
 interface Props {
   part: PublicPart;
   value: string;
   onChange: (value: string) => void;
   disabled?: boolean;
+  /** Symbol keys shown under typed answers, e.g. for maths and science subjects. */
+  keyboard?: KeyboardKind | null;
 }
 
-export function AnswerInput({ part, value, onChange, disabled }: Props) {
+export function AnswerInput({ part, value, onChange, disabled, keyboard }: Props) {
   const name = `answer-${part.id}`;
+  const field = useRef<HTMLInputElement & HTMLTextAreaElement>(null);
+  const pendingCaret = useRef<number | null>(null);
+
+  // Put the cursor after an inserted symbol as soon as the new value is on screen,
+  // so typing straight afterwards lands in the right place (e.g. inside √( )).
+  useLayoutEffect(() => {
+    const el = field.current;
+    if (el && pendingCaret.current !== null) {
+      el.focus();
+      el.setSelectionRange(pendingCaret.current, pendingCaret.current);
+      pendingCaret.current = null;
+    }
+  }, [value]);
+
+  // Inserts a symbol at the cursor; with `after` (e.g. "√(" … ")") any selected text is wrapped.
+  function insert(text: string, after = "") {
+    const el = field.current;
+    const start = el?.selectionStart ?? value.length;
+    const end = el?.selectionEnd ?? value.length;
+    const selected = value.slice(start, end);
+    onChange(value.slice(0, start) + text + selected + after + value.slice(end));
+    pendingCaret.current = start + text.length + selected.length;
+  }
+  const keys = keyboard && !disabled ? <SymbolKeys kind={keyboard} onKey={insert} /> : null;
 
   if (part.answerType === "MULTIPLE_CHOICE") {
     return (
@@ -42,28 +71,36 @@ export function AnswerInput({ part, value, onChange, disabled }: Props) {
 
   if (part.answerType === "EXTENDED") {
     return (
-      <textarea
-        className="input min-h-32 font-mono"
-        name={name}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        disabled={disabled}
-        placeholder="Write your answer, showing all your working"
-        aria-label="Your answer"
-      />
+      <div className="space-y-2">
+        <textarea
+          ref={field}
+          className="input min-h-32 font-mono"
+          name={name}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          disabled={disabled}
+          placeholder="Write your answer, showing all your working"
+          aria-label="Your answer"
+        />
+        {keys}
+      </div>
     );
   }
 
   return (
-    <input
-      className="input max-w-sm"
-      name={name}
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      disabled={disabled}
-      inputMode={part.answerType === "NUMERIC" ? "decimal" : "text"}
-      placeholder={part.answerType === "NUMERIC" ? "Enter a number" : "Your answer"}
-      aria-label="Your answer"
-    />
+    <div className="space-y-2">
+      <input
+        ref={field}
+        className="input max-w-sm"
+        name={name}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        disabled={disabled}
+        inputMode={part.answerType === "NUMERIC" ? "decimal" : "text"}
+        placeholder={part.answerType === "NUMERIC" ? "Enter a number" : "Your answer"}
+        aria-label="Your answer"
+      />
+      {keys}
+    </div>
   );
 }

@@ -9,6 +9,7 @@ import { choosePracticeSet, newSetParam, parseSetParam, PRACTICE_SET_SIZE } from
 import { partSeed, resolvePart } from "@/lib/resolve-part";
 import { requireUser } from "@/lib/session";
 import { latestAwardedByPart, latestScoresBefore } from "@/lib/subject-progress";
+import { keyboardFor } from "@/lib/keyboards";
 import { accessibleTopic } from "@/lib/topic-access";
 import { randomSeed } from "@/lib/variants";
 
@@ -102,6 +103,7 @@ export default async function PracticePage({
                 key={`${part.id}-${seed}`}
                 part={publicPart(resolvePart(part, seed))}
                 lastScore={latest.get(part.id) ?? null}
+                keyboard={keyboardFor(subject.code)}
               />
             );
           })}

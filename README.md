@@ -41,8 +41,10 @@ Seed 0 always means "as published". Full past papers are sat exactly as publishe
 ### Marking
 
 - **Multiple choice** is marked automatically.
-- **Numeric** answers are marked automatically, within a tolerance, and accept forms like `1,250`, `3/4` and `12 cm`. If the final answer is wrong, the student checks their working against the mark scheme so they can still claim method marks.
+- **Numeric** answers are marked automatically, within a tolerance. They accept forms like `1,250`, `3/4`, `12 cm` and `2.4 × 10⁻³`, and calculations such as `2√3`, `5²` or `3π`, which are worked out before marking. If the final answer is wrong, the student checks their working against the mark scheme so they can still claim method marks.
 - **Short text** is marked automatically when it matches an accepted answer. Otherwise it goes to self-marking.
+  Subscripts and superscripts count as plain characters, so `H₂O` matches `H2O` and `Fe³⁺` matches `Fe3+`.
+- **Symbol keys:** Maths, Physics and Chemistry show a row of keys under each typed answer (`src/lib/keyboards.ts`). Maths has √, powers and π; Physics has ×10ⁿ, units and Greek letters; Chemistry has subscripts, charges, arrows and state symbols.
 - **Extended** written answers are self-marked: the student ticks each mark scheme point their answer meets.
 
 After answering, the student always sees the answer, the mark scheme points and the examiner's report comment.

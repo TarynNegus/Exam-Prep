@@ -1,17 +1,30 @@
 import { hasSubscription } from "@/lib/access";
+import { db } from "@/lib/db";
 import { openBillingPortal, startCheckout } from "@/lib/billing-actions";
 import { findPlan, PLANS } from "@/lib/plans";
 import { requireUser } from "@/lib/session";
-import { fakeBillingEnabled, stripeConfigured } from "@/lib/stripe";
+import { fakeBillingEnabled, planPurchasable } from "@/lib/stripe";
+import { syncCheckoutSession } from "@/lib/subscriptions";
 
 export const metadata = { title: "Subscription" };
 
-export default async function BillingPage({ searchParams }: { searchParams: Promise<{ success?: string }> }) {
-  const user = await requireUser();
-  const { success } = await searchParams;
+export default async function BillingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ success?: string; unavailable?: string; session_id?: string }>;
+}) {
+  const { success, unavailable, session_id: sessionId } = await searchParams;
+  let user = await requireUser();
+  // Returning from Stripe Checkout: activate straight away rather than waiting for the
+  // webhook, then re-read the user (currentUser is cached for this request).
+  if (sessionId) {
+    await syncCheckoutSession(user.id, sessionId);
+    user = await db.user.findUniqueOrThrow({ where: { id: user.id } });
+  }
   const subscribed = hasSubscription(user);
   const fake = fakeBillingEnabled();
-  const available = fake || stripeConfigured();
+  const purchasable = (plan: (typeof PLANS)[number]) => fake || planPurchasable(plan);
+  const available = PLANS.some(purchasable);
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
@@ -51,12 +64,16 @@ export default async function BillingPage({ searchParams }: { searchParams: Prom
                 <p className="my-2 text-3xl font-bold">{plan.priceLabel}</p>
                 <p className="flex-1 text-sm text-slate-600">{plan.description}</p>
                 <form action={startCheckout.bind(null, plan.id)} className="mt-4">
-                  <button className="btn-primary w-full" disabled={!available}>Subscribe</button>
+                  <button className="btn-primary w-full" disabled={!purchasable(plan)}>
+                    Subscribe
+                  </button>
                 </form>
               </div>
             ))}
           </div>
-          {!available && <p className="text-sm text-slate-500">Billing is not configured yet.</p>}
+          {(!available || unavailable) && (
+            <p className="text-sm text-slate-500">Subscriptions are not available yet. Please check back soon.</p>
+          )}
         </>
       )}
     </div>

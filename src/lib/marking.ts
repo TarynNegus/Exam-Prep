@@ -2,6 +2,8 @@
 // that matches an accepted answer) are marked automatically. Everything else is
 // marked by the student against the mark scheme's marking points.
 
+import { all, create } from "mathjs";
+
 export type AnswerType = "MULTIPLE_CHOICE" | "NUMERIC" | "SHORT_TEXT" | "EXTENDED";
 
 export interface MarkingPoint {
@@ -63,8 +65,66 @@ export function parseNumeric(raw: string): number | null {
   return Number(exponent === undefined ? number[1] : `${number[1]}e${exponent}`);
 }
 
+const SUBSCRIPTS: Record<string, string> = {
+  "₀": "0", "₁": "1", "₂": "2", "₃": "3", "₄": "4", "₅": "5", "₆": "6", "₇": "7", "₈": "8", "₉": "9", "ₙ": "n",
+};
+
+// A separate mathjs instance for students' answers, with the functions that change mathjs itself disabled.
+const answerMath = create(all, {});
+answerMath.import(
+  {
+    import: () => {
+      throw new Error("disabled");
+    },
+    createUnit: () => {
+      throw new Error("disabled");
+    },
+  },
+  { override: true },
+);
+
+/**
+ * Evaluates an answer typed as a calculation, e.g. "2√3", "5²", "3π", "√(50)",
+ * "2.4 × 10⁻³" or "12 cm". Returns null if it is not a number.
+ */
+export function evaluateResponse(raw: string): number | null {
+  const text = raw.trim();
+  if (text === "" || text.length > 80) return null;
+  const expression = text
+    .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]+/g, (sup) => `^(${[...sup].map((c) => SUPERSCRIPTS[c]).join("")})`)
+    .replace(/(\d),(?=\d{3}\b)/g, "$1") // thousands separators
+    .replace(/[−–]/g, "-")
+    .replace(/(\d)\s*[xX]\s*(?=10\s*\^)/g, "$1*") // "2.4x10^-5" uses the letter x for times
+    .replace(/×/g, "*")
+    .replace(/÷/g, "/")
+    .replace(/π/g, " pi ")
+    .replace(/√\s*([\d.]+)/g, " sqrt($1)")
+    .replace(/∛\s*([\d.]+)/g, " cbrt($1)")
+    .replace(/√/g, " sqrt")
+    .replace(/∛/g, " cbrt")
+    .replace(/%/g, "") // "45%" means 45 here, not 0.45
+    .replace(/^(-?)\s*[$£€¥]/, "$1");
+  // Try the whole answer, then drop trailing unit words one at a time ("cm", "m/s", "J").
+  let candidate = expression.replace(/°+\s*$/, "").trim();
+  for (let attempt = 0; attempt < 4 && candidate; attempt++) {
+    try {
+      const result = answerMath.evaluate(candidate);
+      if (typeof result === "number" && Number.isFinite(result)) return result;
+    } catch {
+      // not a calculation in this form
+    }
+    const lastWord = candidate.match(/\s+(\S+)$/);
+    if (!lastWord || !/[A-Za-zµμΩ]/.test(lastWord[1]) || /^(pi|sqrt|cbrt)\b/.test(lastWord[1])) break;
+    candidate = candidate.slice(0, lastWord.index).trim();
+  }
+  return parseNumeric(text);
+}
+
 export function normaliseText(raw: string): string {
   return raw
+    .replace(/[₀₁₂₃₄₅₆₇₈₉ₙ]/g, (c) => SUBSCRIPTS[c])
+    .replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺]/g, (c) => SUPERSCRIPTS[c])
+    .replace(/[−–]/g, "-")
     .toLowerCase()
     .replace(/\s+/g, " ")
     .replace(/^[\s.,;:!?"']+|[\s.,;:!?"']+$/g, "");
@@ -79,7 +139,7 @@ export function markResponse(part: MarkablePart, response: string): MarkResult {
       return { awardedMarks: correct ? part.marks : 0, autoMarked: true };
     }
     case "NUMERIC": {
-      const value = parseNumeric(response);
+      const value = evaluateResponse(response);
       const expected = parseNumeric(part.correctAnswer ?? "");
       // The tiny relative allowance absorbs floating-point error without
       // accepting wrong answers to very small quantities.
