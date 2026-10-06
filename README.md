@@ -124,6 +124,8 @@ Either way works:
 
 3. Click **Deploy**. Every push to `main` then redeploys the site.
 
+`vercel.json` runs the site in Vercel's Mumbai region (`bom1`), next to the Supabase database (`ap-south-1`), so each database query stays local. If you move the database to another region, change it to the [matching Vercel region](https://vercel.com/docs/edge-network/regions).
+
 `DEV_FAKE_BILLING` never works in production, so subscriptions on the live site need Stripe set up.
 
 ### Setting up Stripe

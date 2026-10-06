@@ -68,10 +68,6 @@ export default async function Home() {
           ))}
         </div>
       </section>
-
-      <p className="text-center text-xs text-slate-500">
-        Not affiliated with or endorsed by Cambridge University Press &amp; Assessment.
-      </p>
     </div>
   );
 }
