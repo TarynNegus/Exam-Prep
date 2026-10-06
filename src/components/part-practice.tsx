@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { newPracticeVariant, submitPracticeAnswer, submitSelfMark, type PracticeResult } from "@/lib/practice-actions";
+import type { KeyboardKind } from "@/lib/keyboards";
 import { AnswerInput } from "./answer-input";
 import { Figures } from "./figures";
 import { FeedbackPanel } from "./feedback-panel";
@@ -11,9 +12,10 @@ import { FeedbackPanel } from "./feedback-panel";
 interface Props {
   part: PublicPart;
   lastScore: number | null;
+  keyboard?: KeyboardKind | null;
 }
 
-export function PartPractice({ part: initialPart, lastScore }: Props) {
+export function PartPractice({ part: initialPart, lastScore, keyboard }: Props) {
   // The version on screen: "Try again" swaps in a new one with different numbers.
   const [part, setPart] = useState(initialPart);
   const [response, setResponse] = useState("");
@@ -76,7 +78,7 @@ export function PartPractice({ part: initialPart, lastScore }: Props) {
         </p>
       )}
 
-      <AnswerInput part={part} value={response} onChange={setResponse} disabled={!!result} />
+      <AnswerInput part={part} value={response} onChange={setResponse} disabled={!!result} keyboard={keyboard} />
 
       {!result ? (
         <button className="btn-primary mt-3" onClick={submit} disabled={pending || response.trim() === ""}>

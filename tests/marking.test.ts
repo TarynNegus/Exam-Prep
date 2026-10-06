@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { markResponse, normaliseText, parseNumeric, selfMarkScore, type MarkablePart } from "@/lib/marking";
+import { evaluateResponse, markResponse, normaliseText, parseNumeric, selfMarkScore, type MarkablePart } from "@/lib/marking";
 
 const base: MarkablePart = { answerType: "NUMERIC", marks: 2, correctAnswer: null, tolerance: null, acceptedAnswers: [] };
 
@@ -93,5 +93,52 @@ describe("formatNumericAnswer", () => {
     expect(formatNumericAnswer("6.21e-21")).toBe("6.21 × 10⁻²¹");
     expect(formatNumericAnswer("1.26e+05")).toBe("1.26 × 10⁵");
     expect(formatNumericAnswer("5400")).toBe("5400");
+  });
+});
+
+describe("evaluateResponse", () => {
+  it.each([
+    ["42", 42],
+    ["1,250", 1250],
+    ["3/4", 0.75],
+    ["12 cm", 12],
+    ["2.0 × 10^11 Pa", 2.0e11],
+    ["2.0x10^-5", 2.0e-5],
+    ["2.4X10^3", 2400],
+    ["6.2 × 10⁻²¹ J", 6.2e-21],
+    ["$31,667", 31667],
+    ["-$20", -20],
+    ["45%", 45],
+    ["30°", 30],
+    ["3.2 m/s", 3.2],
+    ["√50", Math.sqrt(50)],
+    ["2√3", 2 * Math.sqrt(3)],
+    ["√(16)", 4],
+    ["∛27", 3],
+    ["5²", 25],
+    ["2³", 8],
+    ["3π", 3 * Math.PI],
+    ["2π cm", 2 * Math.PI],
+    ["4^(1/2)", 2],
+    ["(3+5)÷2", 4],
+    ["7 − 2", 5],
+    ["abc", null],
+    ["1/0", null],
+    ["", null],
+  ])("evaluates %j", (input, expected) => {
+    const value = evaluateResponse(input);
+    if (expected === null) expect(value).toBeNull();
+    else expect(value).toBeCloseTo(expected as number, 9);
+  });
+});
+
+describe("marking typed calculations", () => {
+  it("accepts a surd for a decimal answer", () => {
+    expect(markResponse({ ...base, correctAnswer: "3.4641", tolerance: 0.001 }, "2√3").awardedMarks).toBe(2);
+  });
+  it("accepts symbols in chemical formulae", () => {
+    const part = { ...base, answerType: "SHORT_TEXT" as const, acceptedAnswers: ["H2O", "Fe3+"] };
+    expect(markResponse(part, "H₂O").awardedMarks).toBe(2);
+    expect(markResponse(part, "Fe³⁺").awardedMarks).toBe(2);
   });
 });

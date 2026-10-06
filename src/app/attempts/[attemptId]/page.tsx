@@ -5,6 +5,7 @@ import { Figures, type FigureData } from "@/components/figures";
 import { ResultPart } from "@/components/result-part";
 import { ProgressBar } from "@/components/ui";
 import { loadAttemptContent } from "@/lib/attempts";
+import { keyboardFor } from "@/lib/keyboards";
 import { db } from "@/lib/db";
 import { partFeedback, publicPart } from "@/lib/feedback";
 import { partSeed, resolvePart } from "@/lib/resolve-part";
@@ -26,6 +27,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
         attemptId={attempt.id}
         title={title}
         deadline={attempt.startedAt.getTime() + durationMin * 60_000}
+        keyboard={keyboardFor(component.subject.code)}
         questions={questions.map((q, index) => ({
           id: q.id,
           number: questionNumber(index, q.number),

@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { submitPaper } from "@/lib/paper-actions";
+import type { KeyboardKind } from "@/lib/keyboards";
 import { AnswerInput } from "./answer-input";
 import { Figures, type FigureData } from "./figures";
 
@@ -19,6 +20,7 @@ interface Props {
   title: string;
   deadline: number; // epoch ms
   questions: ExamQuestion[];
+  keyboard?: KeyboardKind | null;
 }
 
 function formatTime(ms: number) {
@@ -29,7 +31,7 @@ function formatTime(ms: number) {
   return `${h > 0 ? `${h}:` : ""}${String(m).padStart(h > 0 ? 2 : 1, "0")}:${String(s).padStart(2, "0")}`;
 }
 
-export function ExamPaper({ attemptId, title, deadline, questions }: Props) {
+export function ExamPaper({ attemptId, title, deadline, questions, keyboard }: Props) {
   const storageKey = `attempt-${attemptId}`;
   const [responses, setResponses] = useState<Record<string, string>>({});
   const [remaining, setRemaining] = useState(() => deadline - Date.now());
@@ -122,7 +124,13 @@ export function ExamPaper({ attemptId, title, deadline, questions }: Props) {
                 <span className="shrink-0 text-sm text-slate-500">[{part.marks}]</span>
               </div>
               <Figures figures={part.figures} />
-              <AnswerInput part={part} value={responses[part.id] ?? ""} onChange={(v) => update(part.id, v)} disabled={pending} />
+              <AnswerInput
+                part={part}
+                value={responses[part.id] ?? ""}
+                onChange={(v) => update(part.id, v)}
+                disabled={pending}
+                keyboard={keyboard}
+              />
             </div>
           ))}
         </article>
