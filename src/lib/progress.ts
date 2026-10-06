@@ -133,3 +133,36 @@ export function routeScope<C extends { ref: string; section: string }>(
   const sections = new Set(chosen.map((c) => c.section));
   return { components: chosen, includesSection: (section) => sections.has(section) };
 }
+
+export interface NeighbourTopic {
+  id: string;
+  ref: string;
+  title: string;
+  section: string;
+  /** False when the topic is locked, outside the plan, or has no questions yet. */
+  open: boolean;
+  /** Why it cannot be opened, for the button's hint. */
+  reason: string | null;
+}
+
+/** The topics before and after `topicId` in the student's ordered topic list. */
+export function topicNeighbours(
+  topics: { id: string; ref: string; title: string; section: string; unlocked: boolean; inPlan: boolean; progress: { totalParts: number } }[],
+  topicId: string,
+): { previous: NeighbourTopic | null; next: NeighbourTopic | null } {
+  const index = topics.findIndex((t) => t.id === topicId);
+  const describe = (i: number): NeighbourTopic | null => {
+    const t = topics[i];
+    if (index < 0 || !t) return null;
+    const reason =
+      t.progress.totalParts === 0
+        ? "No questions yet"
+        : !t.inPlan
+          ? "Subscribe to unlock"
+          : !t.unlocked
+            ? "Complete the previous topic to unlock"
+            : null;
+    return { id: t.id, ref: t.ref, title: t.title, section: t.section, open: reason === null, reason };
+  };
+  return { previous: describe(index - 1), next: describe(index + 1) };
+}

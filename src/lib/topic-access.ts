@@ -10,7 +10,7 @@ export async function accessibleTopic(user: User, topicId: string) {
   const data = await loadSubjectProgress(topic.subjectId, user);
   const view = data?.topics.find((t) => t.id === topicId);
   if (!data || !view || !view.unlocked || !view.inPlan) return null;
-  return { topic, view, subject: data.subject, componentIds: data.componentIds };
+  return { topic, view, subject: data.subject, componentIds: data.componentIds, topics: data.topics };
 }
 
 /** Full papers require a subscription and every topic the paper assesses complete. */
