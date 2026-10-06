@@ -49,6 +49,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </nav>
         </header>
         <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
+        <footer className="border-t border-slate-200">
+          <p className="mx-auto max-w-6xl px-4 py-6 text-center text-xs text-slate-500">
+            ExamPrep is independent and is not affiliated with, endorsed by or connected to Cambridge University Press
+            &amp; Assessment or Cambridge International Education. Cambridge IGCSE and Cambridge International AS &amp; A
+            Level are their trademarks. All practice questions are original.
+          </p>
+        </footer>
         <SpeedInsights />
       </body>
     </html>
