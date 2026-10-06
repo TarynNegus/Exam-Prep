@@ -6,6 +6,16 @@ export function stripeConfigured(): boolean {
   return !!process.env.STRIPE_SECRET_KEY;
 }
 
+/** The Stripe price id for a plan, or null if its environment variable is not set. */
+export function stripePrice(plan: { stripePriceEnv: string }): string | null {
+  return process.env[plan.stripePriceEnv] || null;
+}
+
+/** True when a plan can be bought: Stripe has a secret key and the plan has a price. */
+export function planPurchasable(plan: { stripePriceEnv: string }): boolean {
+  return stripeConfigured() && stripePrice(plan) !== null;
+}
+
 let client: Stripe | null = null;
 export function stripe(): Stripe {
   if (!process.env.STRIPE_SECRET_KEY) throw new Error("STRIPE_SECRET_KEY is not set");

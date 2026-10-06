@@ -2,16 +2,17 @@ import { hasSubscription } from "@/lib/access";
 import { openBillingPortal, startCheckout } from "@/lib/billing-actions";
 import { findPlan, PLANS } from "@/lib/plans";
 import { requireUser } from "@/lib/session";
-import { fakeBillingEnabled, stripeConfigured } from "@/lib/stripe";
+import { fakeBillingEnabled, planPurchasable } from "@/lib/stripe";
 
 export const metadata = { title: "Subscription" };
 
-export default async function BillingPage({ searchParams }: { searchParams: Promise<{ success?: string }> }) {
+export default async function BillingPage({ searchParams }: { searchParams: Promise<{ success?: string; unavailable?: string }> }) {
   const user = await requireUser();
-  const { success } = await searchParams;
+  const { success, unavailable } = await searchParams;
   const subscribed = hasSubscription(user);
   const fake = fakeBillingEnabled();
-  const available = fake || stripeConfigured();
+  const purchasable = (plan: (typeof PLANS)[number]) => fake || planPurchasable(plan);
+  const available = PLANS.some(purchasable);
 
   return (
     <div className="mx-auto max-w-3xl space-y-6">
@@ -51,12 +52,16 @@ export default async function BillingPage({ searchParams }: { searchParams: Prom
                 <p className="my-2 text-3xl font-bold">{plan.priceLabel}</p>
                 <p className="flex-1 text-sm text-slate-600">{plan.description}</p>
                 <form action={startCheckout.bind(null, plan.id)} className="mt-4">
-                  <button className="btn-primary w-full" disabled={!available}>Subscribe</button>
+                  <button className="btn-primary w-full" disabled={!purchasable(plan)}>
+                    Subscribe
+                  </button>
                 </form>
               </div>
             ))}
           </div>
-          {!available && <p className="text-sm text-slate-500">Billing is not configured yet.</p>}
+          {(!available || unavailable) && (
+            <p className="text-sm text-slate-500">Subscriptions are not available yet. Please check back soon.</p>
+          )}
         </>
       )}
     </div>

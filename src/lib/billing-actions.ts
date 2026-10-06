@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { db } from "./db";
 import { findPlan } from "./plans";
 import { requireUser } from "./session";
-import { appUrl, fakeBillingEnabled, stripe, stripeConfigured } from "./stripe";
+import { appUrl, fakeBillingEnabled, planPurchasable, stripe, stripePrice } from "./stripe";
 
 export async function startCheckout(planId: string) {
   const user = await requireUser();
@@ -23,10 +23,13 @@ export async function startCheckout(planId: string) {
     });
     redirect("/billing?success=1");
   }
-  if (!stripeConfigured()) throw new Error("Billing is not configured");
-
-  const price = process.env[plan.stripePriceEnv];
-  if (!price) throw new Error(`${plan.stripePriceEnv} is not set`);
+  // Half-finished Stripe set-up (e.g. a secret key but no price ids) shows a
+  // message on the billing page instead of an error page.
+  if (!planPurchasable(plan)) {
+    console.error(`Cannot start checkout: STRIPE_SECRET_KEY or ${plan.stripePriceEnv} is not set`);
+    redirect("/billing?unavailable=1");
+  }
+  const price = stripePrice(plan)!;
 
   let customerId = user.stripeCustomerId;
   if (!customerId) {
