@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { newPracticeVariant, submitPracticeAnswer, submitSelfMark, type PracticeResult } from "@/lib/practice-actions";
-import type { KeyboardKind } from "@/lib/keyboards";
+import type { KeyboardSpec } from "@/lib/keyboards";
 import { AnswerInput } from "./answer-input";
 import { Figures } from "./figures";
 import { FeedbackPanel } from "./feedback-panel";
@@ -12,7 +12,7 @@ import { FeedbackPanel } from "./feedback-panel";
 interface Props {
   part: PublicPart;
   lastScore: number | null;
-  keyboard?: KeyboardKind | null;
+  keyboard?: KeyboardSpec | null;
 }
 
 export function PartPractice({ part: initialPart, lastScore, keyboard }: Props) {

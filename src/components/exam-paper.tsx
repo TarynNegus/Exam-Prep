@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import type { PublicPart } from "@/lib/feedback";
 import { submitPaper } from "@/lib/paper-actions";
-import type { KeyboardKind } from "@/lib/keyboards";
+import type { KeyboardSpec } from "@/lib/keyboards";
 import { AnswerInput } from "./answer-input";
 import { Figures, type FigureData } from "./figures";
 
@@ -20,7 +20,7 @@ interface Props {
   title: string;
   deadline: number; // epoch ms
   questions: ExamQuestion[];
-  keyboard?: KeyboardKind | null;
+  keyboard?: KeyboardSpec | null;
 }
 
 function formatTime(ms: number) {

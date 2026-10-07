@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useRef } from "react";
 import type { PublicPart } from "@/lib/feedback";
-import type { KeyboardKind } from "@/lib/keyboards";
+import type { KeyboardSpec } from "@/lib/keyboards";
 import { SymbolKeys } from "./symbol-keys";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
   onChange: (value: string) => void;
   disabled?: boolean;
   /** Symbol keys shown under typed answers, e.g. for maths and science subjects. */
-  keyboard?: KeyboardKind | null;
+  keyboard?: KeyboardSpec | null;
 }
 
 export function AnswerInput({ part, value, onChange, disabled, keyboard }: Props) {
@@ -39,7 +39,7 @@ export function AnswerInput({ part, value, onChange, disabled, keyboard }: Props
     onChange(value.slice(0, start) + text + selected + after + value.slice(end));
     pendingCaret.current = start + text.length + selected.length;
   }
-  const keys = keyboard && !disabled ? <SymbolKeys kind={keyboard} onKey={insert} /> : null;
+  const keys = keyboard && !disabled ? <SymbolKeys keyboard={keyboard} onKey={insert} /> : null;
 
   if (part.answerType === "MULTIPLE_CHOICE") {
     return (
