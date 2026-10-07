@@ -1,18 +1,19 @@
 "use client";
 
-import { KEYBOARDS, type KeyboardKind } from "@/lib/keyboards";
+import { KEYBOARDS, type KeyboardSpec } from "@/lib/keyboards";
+import { PeriodicTableButton } from "./periodic-table";
 
 interface Props {
-  kind: KeyboardKind;
+  keyboard: KeyboardSpec;
   disabled?: boolean;
   onKey: (insert: string, after?: string) => void;
 }
 
 /** A row of symbol buttons that type into the answer box above it. */
-export function SymbolKeys({ kind, disabled, onKey }: Props) {
+export function SymbolKeys({ keyboard, disabled, onKey }: Props) {
   return (
     <div className="flex flex-wrap gap-1" role="toolbar" aria-label="Symbols">
-      {KEYBOARDS[kind].map((key) => (
+      {KEYBOARDS[keyboard.kind].map((key) => (
         <button
           key={key.label}
           type="button"
@@ -27,6 +28,9 @@ export function SymbolKeys({ kind, disabled, onKey }: Props) {
           {key.label}
         </button>
       ))}
+      {keyboard.kind === "chemistry" && (
+        <PeriodicTableButton level={keyboard.level} onPick={(symbol) => onKey(symbol)} />
+      )}
     </div>
   );
 }

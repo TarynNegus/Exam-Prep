@@ -1,6 +1,8 @@
 // On-screen symbol keys shown under answer boxes, so students can type square
 // roots, powers, standard form, units and chemical formulae on any device.
 
+import type { DataSheetLevel } from "./periodic-table";
+
 export type KeyboardKind = "maths" | "physics" | "chemistry";
 
 export interface SymbolKey {
@@ -62,10 +64,23 @@ export const KEYBOARDS: Record<KeyboardKind, SymbolKey[]> = {
     key("Δ", "delta"),
   ],
   chemistry: [
+    key("₀", "subscript zero"),
+    key("₁", "subscript one"),
     key("₂", "subscript two"),
     key("₃", "subscript three"),
     key("₄", "subscript four"),
+    key("₅", "subscript five"),
+    key("₆", "subscript six"),
+    key("₇", "subscript seven"),
+    key("₈", "subscript eight"),
+    key("₉", "subscript nine"),
     key("ₙ", "subscript n"),
+    key("x²", "squared", "²"),
+    key("x³", "cubed", "³"),
+    key("xⁿ", "to the power", "^"),
+    key("⁻¹", "to the power minus one"),
+    key("⁻³", "to the power minus three"),
+    key("×10ⁿ", "times ten to the power", "×10^"),
     key("⁺", "plus charge"),
     key("⁻", "minus charge"),
     key("²⁺", "two plus charge"),
@@ -77,7 +92,6 @@ export const KEYBOARDS: Record<KeyboardKind, SymbolKey[]> = {
     key("(s)", "solid"),
     key("(l)", "liquid"),
     key("(g)", "gas"),
-    key("×10ⁿ", "times ten to the power", "×10^"),
     key("Δ", "delta"),
     key("°", "degrees"),
   ],
@@ -92,7 +106,14 @@ const SUBJECT_KEYBOARDS: Record<string, KeyboardKind> = {
   "9701": "chemistry",
 };
 
-/** The symbol keyboard for a subject code, or null for subjects that do not need one. */
-export function keyboardFor(subjectCode: string): KeyboardKind | null {
-  return SUBJECT_KEYBOARDS[subjectCode] ?? null;
+export interface KeyboardSpec {
+  kind: KeyboardKind;
+  /** Decides how the periodic table shows masses and groups (IGCSE or A Level data sheet). */
+  level: DataSheetLevel;
+}
+
+/** The symbol keyboard for a subject, or null for subjects that do not need one. */
+export function keyboardFor(subject: { code: string; qualification: DataSheetLevel }): KeyboardSpec | null {
+  const kind = SUBJECT_KEYBOARDS[subject.code];
+  return kind ? { kind, level: subject.qualification } : null;
 }

@@ -27,7 +27,7 @@ export default async function AttemptPage({ params }: { params: Promise<{ attemp
         attemptId={attempt.id}
         title={title}
         deadline={attempt.startedAt.getTime() + durationMin * 60_000}
-        keyboard={keyboardFor(component.subject.code)}
+        keyboard={keyboardFor(component.subject)}
         questions={questions.map((q, index) => ({
           id: q.id,
           number: questionNumber(index, q.number),

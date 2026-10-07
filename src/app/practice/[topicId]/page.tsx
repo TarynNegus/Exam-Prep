@@ -106,7 +106,7 @@ export default async function PracticePage({
                 key={`${part.id}-${seed}`}
                 part={publicPart(resolvePart(part, seed))}
                 lastScore={latest.get(part.id) ?? null}
-                keyboard={keyboardFor(subject.code)}
+                keyboard={keyboardFor(subject)}
               />
             );
           })}
